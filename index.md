@@ -12,13 +12,12 @@ layout: page
 
 <p style="text-indent: 1.5em;">Hi there! Welcome to my personal website!</p>
 
-I'm **Jie Wu**, a PhD candidate in physics (still working hard at it).
+I'm **Jie Wu**, a PhD candidate in physics (still working hard at it). 
+I'm really excited about diving into the mysteries of the universe and can't wait to learn more about what we don't know. 
+I love physics, astronomy, and aerospace because they give me a great insight into how nature and the universe work.
 
-Currently, I'm studying at the College of Physics at Chongqing University, and my supervisor is [Prof. Jin Li](https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true). 
-My main research focus is on simulating space gravitational wave signals, evaluating detector performance, and processing and analyzing gravitational wave data. 
-I am interested in physics, astronomy, and aerospace.
-
-
+Right now, I'm studying Physics at Chongqing University, and my supervisor is [Prof. Jin Li](https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true). 
+In the last few years, I've been diving into gravitational wave research. It not only helped me get a better grasp of the subject but also equipped me with some essential research skills. Looking ahead, I’m excited to take my research further, explore new technologies and methods for detecting space gravitational waves, and contribute to advancing this field.
 
 If you are interested in any aspect of me, I would love to chat and collaborate, please email me at **wujie3375@gmail.com**.
 
@@ -26,13 +25,36 @@ If you are interested in any aspect of me, I would love to chat and collaborate,
 
 ## Research Interests
 
-- Gravity
-- Gravitational wave astronomy
-- Compact binary system
-- Cosmology
+- **Gravitational wave:** 
+  
+  signal simulation, post-Newtonian waveform.
 
-Over the past few years, I've been involved in gravitational wave research. It not only deepened my understanding of this area but also gave me basic research skills. 
-In the future, I hope to expand my research further, explore new technologies and methods for space gravitational wave detection, and push forward the development of this field.
+- **Detection:** 
+  
+  Space- and ground-based detectors, Time-delay interferometry, Noise.
+
+- **Binary system:** 
+  
+  Stellar binary black hole, Massive black hole binary, Galactic binary.
+
+- **Data processing:** 
+  
+  Parameter estimation, Fisher information matrix, Bayesian analysis.
+
+- **Gravity:** 
+  
+  Beyond general relativity, Cosmology.
+
+- **Astronomy:** 
+  
+  Electromagnetic observation, Multi-messenger observation.
+
+
+
+
+
+Currently, my primary research focus is on the simulation of gravitational wave signals in space, assessment of detector performance, and the processing and analysis of gravitational wave data.
+
 
 ---
 
