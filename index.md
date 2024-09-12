@@ -25,33 +25,17 @@ If you are interested in any aspect of me, I would love to chat and collaborate,
 
 ## Research Interests
 
-- **Gravitational wave:** 
-  
-  signal simulation, post-Newtonian waveform.
+- **Gravitational wave:**  signal simulation, post-Newtonian waveform.
 
-- **Detection:** 
-  
-  Space- and ground-based detectors, Time-delay interferometry, Noise.
+- **Detection:** Space- and ground-based detectors, Time-delay interferometry, Noise.
 
-- **Binary system:** 
-  
-  Stellar binary black hole, Massive black hole binary, Galactic binary.
+- **Binary system:** Stellar binary black hole, Massive black hole binary, Galactic binary.
 
-- **Data processing:** 
-  
-  Parameter estimation, Fisher information matrix, Bayesian analysis.
+- **Data processing:** Parameter estimation, Fisher information matrix, Bayesian analysis.
 
-- **Gravity:** 
-  
-  Beyond general relativity, Cosmology.
+- **Gravity:** Beyond general relativity, Cosmology.
 
-- **Astronomy:** 
-  
-  Electromagnetic observation, Multi-messenger observation.
-
-
-
-
+- **Astronomy:** Electromagnetic observation, Multi-messenger observation.
 
 Currently, my primary research focus is on the simulation of gravitational wave signals in space, assessment of detector performance, and the processing and analysis of gravitational wave data.
 
@@ -96,17 +80,8 @@ Currently, my primary research focus is on the simulation of gravitational wave 
     Experienced in handling and analyzing large datasets, including statistical analysis, data visualization, and signal processing.
 
 ---
+## News and Updates
 
-> **Update:** September 12, 2024
+- **Sep 10, 2024:** It's the first day of making my personal homepage, and I'm really excited about it!
 
-<!-- ## News and Updates
-
-- **June 2024：**Very excited to be selected as [KDD UC Scholar](https://kdd2024.kdd.org/call-for-undergraduate-consortium/). See you in Spain!
-- **May 2024：**My undergraduate thesis won the Best Project Award (Top 1/300).
-- **April 2024：**Our work *BLEGuard* has been accepted to [MobiSys 2024](https://www.sigmobile.org/mobisys/2024/) as a poster paper. See you in Japan!
-- **March 2024：**Very excited to get a MPhil offer from Engineering department at Cambridge University!
-- **Dec 2023：**Very excited to be selected as [AAAI UC Scholar](https://aaai.org/aaai-conference/undergraduate-consortium-program/). See you in Canada!
-- **Aug 2023：**Happy to be awarded the FEPG Scholarship.
-- **May 2023：**Happy to be awarded the XiamenAir Scholarship.
-- **May 2023：**Collected the Finalist Award in MCM 2023 (Top 1%).
-- **Jun 2022：**Started research programme at [Cambridge AI Group](https://www.cl.cam.ac.uk/research/ai/), advised by Prof. Pietro Liò. -->
+> **Last Update:** September 12, 2024
