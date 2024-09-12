@@ -1,0 +1,122 @@
+<img src="{{ site.url }}/images/{{ site.owner.avatar }}" class="bio-photo" alt="{{ site.owner.name }} bio photo" width="170"></a>
+
+<h4>{{ site.owner.name }}</h4>
+
+<pre style="text-indent:0; font-family: 'Arial'; font-size: 14px;">{{ site.owner.bio }}</pre>
+
+{% if site.owner.email %}
+<p style="text-align: left; text-indent:0; font-size: 16px; line-height: 20px; margin-left: 3px;">
+  <a href="mailto:{{ site.owner.email }}" style="display: inline-flex; align-items: center;">
+    <img src="https://wujie3375.github.io/images/logo/icons8-email-100.png" height="33" style="vertical-align: middle;">
+    <span style="margin-left: 8px;">wujie3375@gmail.com</span>
+  </a>
+</p>
+{% endif %}
+
+{% if site.owner.inspirehep %}
+<p style="text-align: left; text-indent:0; font-size: 16px; line-height: 20px; margin-left: -1px;">
+  <a href="{{ site.owner.inspirehep }}" style="display: inline-flex; align-items: center;">
+    <img src="https://wujie3375.github.io/images/logo/icons8-inspirehep-1002.png" height="32" style="vertical-align: middle;">
+    
+  </a>
+</p>
+{% endif %}
+
+{% if site.owner.ORCID %}
+<p style="text-align: left; text-indent:0; font-size: 16px; line-height: 20px;">
+  <a href="https://orcid.org/my-orcid?orcid={{ site.owner.ORCID }}" style="display: inline-flex; align-items: center;">
+    <img src="https://wujie3375.github.io/images/logo/icons8-orcid-1012.png" height="32" style="vertical-align: middle;">
+    
+  </a>
+</p>
+{% endif %}
+
+{% if site.owner.scholar %}
+<p style="text-align: left; text-indent:0; font-size: 16px; line-height: 20px;">
+  <a href="{{ site.owner.scholar}}" style="display: inline-flex; align-items: center;">
+    <img src="https://wujie3375.github.io/images/logo/icons8-scholar-1002.png" height="33" style="vertical-align: middle;">
+    
+  </a>
+</p>
+{% endif %}
+
+{% if site.owner.web %}
+<p style="text-align: left; text-indent:0; font-size: 16px; line-height: 20px; margin-left: 3px;">
+  <a href="{{ site.owner.web}}" style="display: inline-flex; align-items: center;">
+    <img src="https://wujie3375.github.io/images/logo/icons8-web-1002.png" height="30" style="vertical-align: middle;">
+    
+  </a>
+</p>
+{% endif %}
+
+{% if site.owner.researchgate %}
+<p style="text-align: left; text-indent:0; font-size: 16px; line-height: 20px;">
+  <a href="{{ site.owner.researchgate}}" style="display: inline-flex; align-items: center;">
+    <img src="https://wujie3375.github.io/images/logo/icons8-rg2.png" height="31" style="vertical-align: middle;">
+    
+  </a>
+</p>
+{% endif %}
+
+{% if site.owner.github %}
+<p style="text-align: left; text-indent:0; font-size: 16px; line-height: 20px;">
+  <a href="https://github.com/{{ site.owner.github }}" style="display: inline-flex; align-items: center;">
+    <img src="https://wujie3375.github.io/images/logo/icons8-github2.png" height="32" style="vertical-align: middle;">
+    
+  </a>
+</p>
+{% endif %}
+
+<!-- {% if site.owner.inspirehep %}
+<p style="text-indent:0; font-size: 16px; line-height: 20px;">
+  <a href="{{ site.owner.inspirehep }}" style="display: inline-flex; align-items: center;">
+    <img src="https://wujie3375.github.io/images/logo/icons8-inspirehep-100.png" height="16" style="vertical-align: middle;">
+    <span style="margin-left: 8px;">INSPIRE</span>
+  </a>
+</p>
+{% endif %}
+
+{% if site.owner.ORCID %}
+<p style="text-indent:0; font-size: 16px; line-height: 20px;">
+  <a href="https://orcid.org/my-orcid?orcid={{ site.owner.ORCID }}" style="display: inline-flex; align-items: center;">
+    <img src="https://wujie3375.github.io/images/logo/icons8-orcid-101.png" height="19" style="vertical-align: middle;">
+    <span style="margin-left: 7.5px;">ORCID</span>
+  </a>
+</p>
+{% endif %}
+
+{% if site.owner.scholar %}
+<p style="text-indent:0; font-size: 16px; line-height: 20px;">
+  <a href="{{ site.owner.scholar}}" style="display: inline-flex; align-items: center;">
+    <img src="https://wujie3375.github.io/images/logo/icons8-scholar-100.png" height="20" style="vertical-align: middle;">
+    <span style="margin-left: 10px;">Google Scholar</span>
+  </a>
+</p>
+{% endif %}
+
+{% if site.owner.web %}
+<p style="text-indent:0; font-size: 16px; line-height: 20px;">
+  <a href="{{ site.owner.web}}" style="display: inline-flex; align-items: center;">
+    <img src="https://wujie3375.github.io/images/logo/icons8-web-100.png" height="18" style="vertical-align: middle;">
+    <span style="margin-left: 7.5px;">Web of Science</span>
+  </a>
+</p>
+{% endif %}
+
+{% if site.owner.researchgate %}
+<p style="text-indent:0; font-size: 16px; line-height: 20px;">
+  <a href="{{ site.owner.researchgate}}" style="display: inline-flex; align-items: center;">
+    <img src="https://wujie3375.github.io/images/logo/icons8-rg.png" height="20" style="vertical-align: middle;">
+    <span style="margin-left: 8px;">ResearchGate</span>
+  </a>
+</p>
+{% endif %}
+
+{% if site.owner.github %}
+<p style="text-indent:0; font-size: 16px; line-height: 20px;">
+  <a href="https://github.com/{{ site.owner.github }}" style="display: inline-flex; align-items: center;">
+    <img src="https://wujie3375.github.io/images/logo/icons8-github.png" height="19" style="vertical-align: middle;">
+    <span style="margin-left: 7.3px;">Github</span>
+  </a>
+</p>
+{% endif %} -->
