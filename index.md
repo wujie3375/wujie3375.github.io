@@ -47,7 +47,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 -  **Sep 2022 - Jun 2028** (expected) **:** 
   
    **PHD**, *Chongqing University* (supervised by [Prof. Jin Li (李瑾)](https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true))
-   
+
 -  **Sep 2018 - Jun 2022:** 
 
    **UNDERGRADUATE**, *China West Normal University* (supervised by [Dr. Di Wu (吴迪)](https://inspirehep.net/authors/1647692?ui-citation-summary=true&ui-exclude-self-citations=true) and [Assoc. Prof. Guo-Ping Li (李国平)](https://inspirehep.net/authors/1275221?ui-citation-summary=true&ui-exclude-self-citations=true))
@@ -62,7 +62,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 -  **Sep 2020 - Sep 2021:** 
 
-   **PARTICIPANT**, College Student Innovation and Practice Program, *University of Chinese Academy of Sciences* (supervised by [Assoc. Prof. Yong Tang (汤勇)](https://inspirehep.net/authors/1040919?ui-citation-summary=true&ui-exclude-self-citations=true))
+   **PARTICIPANT**, *University of Chinese Academy of Sciences*, College Student Innovation and Practice Program (supervised by [Assoc. Prof. Yong Tang (汤勇)](https://inspirehep.net/authors/1040919?ui-citation-summary=true&ui-exclude-self-citations=true))
 
 ---
 
