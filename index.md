@@ -25,15 +25,15 @@ If you are interested in any aspect of me, I would love to chat and collaborate,
 
 ## Research Interests
 
-- **Gravitational wave:**  signal simulation, post-Newtonian waveform.
+- **Gravitational wave:**  Signal simulation, Post-Newtonian waveform.
 
 - **Detection:** Space- and ground-based detectors, Time-delay interferometry, Noise.
 
 - **Binary system:** Stellar binary black hole, Massive black hole binary, Galactic binary.
 
-- **Data processing:** Parameter estimation, Fisher information matrix, Bayesian analysis.
+- **Data processing:** Parameter estimation, Fisher matrix, Bayesian analysis.
 
-- **Gravity:** Beyond general relativity, Cosmology.
+- **Gravitation:** Modified theory of gravity, Cosmology, Dark matter.
 
 - **Astronomy:** Electromagnetic observation, Multi-messenger observation.
 
