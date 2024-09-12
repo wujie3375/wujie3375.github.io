@@ -1,0 +1,96 @@
+title: Jie Wu
+# tagline: Here is personal website of Jie Wu. Powered by Jekyll, based on the Minimal Mistakes theme.
+# description: Two roads diverged in woods, I took the one less traveled by.
+#Comment out url when working locally to resolve base urls correctly
+url: https://wujie3375.github.io/
+
+# Owner/author information
+owner:
+  name: Jie Wu (吴洁)
+  avatar: wujie.jpg
+  bio: |
+    PhD candidate
+    Chongqing University
+    China
+  email: wujie3375@gmail.com
+  inspirehep: https://inspirehep.net/authors/2685895?ui-citation-summary=true
+  ORCID: 0000-0002-9672-8711
+  scholar: https://scholar.google.com/citations?hl=zh-CN&view_op=list_works&gmla=AOAOcb2ctigGF-IBRD0P23rmx1s64uttrVDjShN3xiF1Ke9Y3EbOy9icgpcKdptaoWgjikAUbjcoaTcoys6AtltTvX4&user=AkklhIoAAAAJ
+  web: https://webofscience.clarivate.cn/wos/author/record/HDL-7535-2022
+  researchgate: https://www.researchgate.net/profile/Jie-Wu-168
+  github: wujie3375
+  # cv: https://wujie3375.github.io/file/CV-HanlinCAI.pdf
+  # Social networking links are used in author-bio sidebar. Update and remove as you like.
+  # twitter: lancecai2002
+  # github: wujie3375
+  # linkedin: hanlincai
+  # scholar: https://scholar.google.com/citations?hl=zh-CN&view_op=list_works&gmla=AOAOcb2ctigGF-IBRD0P23rmx1s64uttrVDjShN3xiF1Ke9Y3EbOy9icgpcKdptaoWgjikAUbjcoaTcoys6AtltTvX4&user=AkklhIoAAAAJ
+  # bilibili: 594030035
+  # researchgate: https://www.researchgate.net/profile/Jie-Wu-168
+  # zhihu: https://www.zhihu.com/people/chlire
+  # facebook: caihanlin2002
+  # instagram: lancecai2002
+  # lastfm:
+  # tumblr:
+  # For Google Authorship https://plus.google.com/authorship
+  # google_plus:
+
+# Analytics and webmaster tools stuff goes here
+# https://search.google.com/search-console/ownership
+google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
+
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+# bing_verify: ""
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: About
+    url: /
+  - title: Publications
+    url: /publications/
+  # - title: Awards
+  #   url: /awards/
+  # - title: Hobbies
+  #   url: /hobbies/
+  # - title: Blogs
+  #   url: /blogs/
+  # - title: Teams
+  #   url: /teams/
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: China/Beijing
+future: true
+highlighter: rouge
+# markdown: kramdown
+# markdown: redcarpet
+# pygments: true
+
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title
+
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+  # coderay:
+  #   coderay_line_numbers:
+  #   coderay_line_numbers_start: 1
+  #   coderay_tab_width: 4
+  #   coderay_bold_every: 10
+  #   coderay_css: class
+
+
+# disqus settings:
+disqus:
+  shortname: lancecai
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "minimal-mistakes.sublime-project", "minimal-mistakes.sublime-workspace"]
+
+# Latest update in 2023/12/10 by Hanlin Cai.
