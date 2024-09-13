@@ -27,37 +27,37 @@
 
 <body class="page" itemscope itemtype="http://schema.org/WebPage">
 
-  {% include chrome-frame.html %}
-  
-  {% include navigation.html %}
-  
-  <!-- {% include toc.html %} -->
-  
-  {% if page.image.feature %}<div class="image-wrap">
-    <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
-  </div><!-- /.image-wrap -->{% endif %}
-  
-  <div id="main" role="main"  itemprop="mainContentOfPage">
-    <div class="article-author-top">
-      {% include author-bio.html %}
-    </div>
-    <article itemscope itemtype="http://schema.org/CreativeWork">
-      <div class="headline-wrap">
-        <h1 itemprop="headline">{{ page.title }}</h1>
-      </div><!--/ .headline-wrap -->
-      <div class="article-wrap" itemprop="text">
-        {{ content }}
-      </div><!-- /.article-wrap -->
-    </article>
-  </div><!-- /#index -->
-  
-  <div class="footer-wrap">
-    <footer>
-      {% include footer.html %}
-    </footer>
-  </div><!-- /.footer-wrap -->
-  
-  {% include scripts.html %}
-  
-  </body>
+{% include chrome-frame.html %}
+
+{% include navigation.html %}
+
+{% if page.image.feature %}<div class="image-wrap">
+  <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
+</div><!-- /.image-wrap -->{% endif %}
+
+<div id="main" role="main"  itemprop="mainContentOfPage">
+  <div class="article-author-top">
+    {% include author-bio.html %}
+  </div>
+  <article itemscope itemtype="http://schema.org/CreativeWork">
+  {% comment %}
+    <div class="headline-wrap">
+      <h1 itemprop="headline">{{ page.title }}</h1>
+    </div><!--/ .headline-wrap -->
+  {% endcomment %}
+    <div class="article-wrap" itemprop="text">
+      {{ content }}
+    </div><!-- /.article-wrap -->
+  </article>
+</div><!-- /#index -->
+
+<div class="footer-wrap">
+  <footer>
+    {% include footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include scripts.html %}
+
+</body>
 </html>
