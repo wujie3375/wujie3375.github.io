@@ -48,11 +48,17 @@ Currently, my primary research focus is on the simulation of gravitational wave 
   
    **PHD**, *Chongqing University* (supervised by [Prof. Jin Li (李瑾)](https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true)) -->
 
-<div style="display: flex; align-items: center; position: relative;">
-  <!-- 点 -->
-  <div style="width: 0; height: 100%; position: absolute; left: -20px; display: flex; align-items: center;">
-    <div style="background-color: black; width: 8px; height: 8px; border-radius: 50%;"></div>
-    <div style="background-color: black; width: 2px; height: calc(100% + 20px); position: absolute; top: 8px;"></div>
+<div style="display: flex; align-items: center; position: relative; padding-left: 20px;">
+  <!-- 左侧垂直线和点 -->
+  <div style="position: absolute; left: 0; top: 0; bottom: 0; display: flex; align-items: center;">
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <!-- 垂直线 -->
+      <div style="flex-grow: 1; width: 1px; background-color: black;"></div>
+      <!-- 圆点 -->
+      <div style="width: 10px; height: 10px; background-color: black; border-radius: 50%;"></div>
+      <!-- 垂直线 -->
+      <div style="flex-grow: 1; width: 1px; background-color: black;"></div>
+    </div>
   </div>
   
   <!-- 学校的 logo -->
@@ -73,20 +79,26 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
    **UNDERGRADUATE**, *China West Normal University* (supervised by [Dr. Di Wu (吴迪)](https://inspirehep.net/authors/1647692?ui-citation-summary=true&ui-exclude-self-citations=true) and [Assoc. Prof. Guo-Ping Li (李国平)](https://inspirehep.net/authors/1275221?ui-citation-summary=true&ui-exclude-self-citations=true)) -->
 
-<div style="display: flex; align-items: center; position: relative;">
-  <!-- 点 -->
-  <div style="width: 0; height: 100%; position: absolute; left: -20px; display: flex; align-items: center;">
-    <div style="background-color: black; width: 8px; height: 8px; border-radius: 50%;"></div>
-    <div style="background-color: black; width: 2px; height: calc(100% + 20px); position: absolute; top: 8px;"></div>
+<div style="display: flex; align-items: center; position: relative; padding-left: 20px;">
+  <!-- 左侧垂直线和点 -->
+  <div style="position: absolute; left: 0; top: 0; bottom: 0; display: flex; align-items: center;">
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <!-- 垂直线 -->
+      <div style="flex-grow: 1; width: 1px; background-color: black;"></div>
+      <!-- 圆点 -->
+      <div style="width: 10px; height: 10px; background-color: black; border-radius: 50%;"></div>
+      <!-- 垂直线 -->
+      <div style="flex-grow: 1; width: 1px; background-color: black;"></div>
+    </div>
   </div>
   
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/cwnu.png" alt="CQU" style="height: 60px; margin-right: 10px;">
+  <img src="https://wujie3375.github.io/images/logo2/cwnu.png" alt="CWNU" style="height: 60px; margin-right: 10px;">
   
   <!-- 文字内容 -->
   <div>
-    <p><strong>Sep 2022 - Jun 2028</strong> (expected):</p>
-    <p><strong>Chongqing University</strong></p>
+    <p><strong>Sep 2018 - Jun 2022:</strong>
+    <p><strong>China West Normal University</strong></p>
     <p><em>B.S. in Physics</em> (supervised by 
     <a href="https://inspirehep.net/authors/1647692?ui-citation-summary=true&ui-exclude-self-citations=true">
         Dr. Di Wu (吴迪)
