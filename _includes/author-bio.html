@@ -4,7 +4,7 @@
 
 <pre style="text-indent:0; font-family: 'Arial'; font-size: 14px;">{{ site.owner.bio }}</pre>
 
-{% if site.owner.email %}
+<!-- {% if site.owner.email %}
 <p style="text-align: left; text-indent:0; font-size: 16px; line-height: 20px; margin-left: 3px;">
   <a href="mailto:{{ site.owner.email }}" style="display: inline-flex; align-items: center;">
     <img src="https://wujie3375.github.io/images/logo/icons8-email-100.png" height="33" style="vertical-align: middle;">
@@ -65,9 +65,20 @@
     
   </a>
 </p>
+{% endif %} -->
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+{% if site.owner.email %}
+<p style="text-indent:0; font-size: 16px; line-height: 20px；">
+  <a href="mailto:{{ site.owner.email }}" style="display: inline-flex; align-items: center;">
+    <img src="https://wujie3375.github.io/images/logo/icons8-email-100.png" height="18" style="vertical-align: middle;">
+    <span style="margin-left: 8px;">wujie3375@gmail.com</span>
+  </a>
+</p>
 {% endif %}
 
-<!-- {% if site.owner.inspirehep %}
+{% if site.owner.inspirehep %}
 <p style="text-indent:0; font-size: 16px; line-height: 20px;">
   <a href="{{ site.owner.inspirehep }}" style="display: inline-flex; align-items: center;">
     <img src="https://wujie3375.github.io/images/logo/icons8-inspirehep-100.png" height="16" style="vertical-align: middle;">
@@ -119,4 +130,4 @@
     <span style="margin-left: 7.3px;">Github</span>
   </a>
 </p>
-{% endif %} -->
+{% endif %}
