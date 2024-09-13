@@ -6,19 +6,27 @@
   <script>
     window.addEventListener("DOMContentLoaded", function () {
       var toc = document.getElementById('toc-list');
+      // 只选择一级和二级标题
       var headers = document.querySelectorAll('#main h1, #main h2');
+      
       headers.forEach(function (header, index) {
         if (!header.id) {
           header.id = 'section-' + index;
         }
+        
         var link = document.createElement('a');
         link.href = '#' + header.id;
         link.textContent = header.textContent;
   
-        var indent = header.tagName === 'H2' ? '20px' : '0px';
-        link.style.marginLeft = indent;
+        // 设置缩进, 使二级标题缩进
+        if (header.tagName === 'H2') {
+          link.style.marginLeft = '20px';  // 缩进二级标题
+        } else {
+          link.style.marginLeft = '0px';   // 一级标题不缩进
+        }
+  
         toc.appendChild(link);
-        toc.appendChild(document.createElement('br'));
+        toc.appendChild(document.createElement('br')); // 换行
       });
     });
   </script>
