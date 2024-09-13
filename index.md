@@ -23,7 +23,7 @@ If you are interested in any aspect of me, I would love to chat and collaborate,
 
 ---
 
-## Research Interests
+# Research Interests
 
 - **Gravitational wave:**  Signal simulation, Post-Newtonian waveform.
 
@@ -42,7 +42,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 ---
 
-## Educational Background
+# Educational Background
 
 <!-- -  **Sep 2022 - Jun 2028** (expected) **:** 
   
@@ -91,7 +91,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 ---
 
-## Experience
+# Experience
 
 <!-- -  **Feb 2024 - Apr 2024:** 
 
@@ -137,7 +137,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 ---
 
-## Skills
+# Skills
 
 - **Languages**
   
@@ -152,8 +152,8 @@ Currently, my primary research focus is on the simulation of gravitational wave 
     Experienced in handling and analyzing large datasets, including statistical analysis, data visualization, and signal processing.
 
 ---
-## News and Updates
+# News and Updates
 
 - **Sep 10, 2024:** It's the first day of making my personal homepage, and I'm really excited about it!
 
-> **Last Update:** September 12, 2024
+> **Last Update:** September 13, 2024
