@@ -5,7 +5,7 @@ title: Publications
 ---
 
 
-# Publicationsss
+# Publications
 
 <p style="text-indent: 0;">publications by categories in reversed chronological order.</p>
 
