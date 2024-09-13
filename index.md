@@ -44,9 +44,17 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 ## Educational Background
 
--  **Sep 2022 - Jun 2028** (expected) **:** 
+<!-- -  **Sep 2022 - Jun 2028** (expected) **:** 
   
-   **PHD**, *Chongqing University* (supervised by [Prof. Jin Li (李瑾)](https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true))
+   **PHD**, *Chongqing University* (supervised by [Prof. Jin Li (李瑾)](https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true)) -->
+
+<div style="display: inline-block;">
+  <img src="path_to_logo_image.png" alt="Chongqing University Logo" width="50" height="50" style="vertical-align: middle; margin-right: 10px;">
+  <span>
+    **Sep 2022 - Jun 2028** (expected) **:**  
+    **PHD**, *Chongqing University* (supervised by [Prof. Jin Li (李瑾)](https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true))
+  </span>
+</div>
 
 -  **Sep 2018 - Jun 2022:** 
 
