@@ -1,15 +1,15 @@
 ---
 layout: page
 permalink: /publications/index.html
-title: Publications
+# title: Publications
 ---
 
 
 # Publications
 
-<!-- <p style="text-indent: 0;">publications by categories in reversed chronological order.</p>
+<p style="text-indent: 0;">publications by categories in reversed chronological order.</p>
 
-<p style="text-indent: 0;">(*: corresponding author)</p> -->
+<p style="text-indent: 0;">(*: corresponding author)</p>
 
 ---
 
