@@ -69,7 +69,17 @@
   
         toc.appendChild(link);
         toc.appendChild(document.createElement('br')); // 换行
-      });
+        });
+
+        // 显示屏幕宽度
+        function updateScreenWidth() {
+        var width = window.innerWidth;
+        document.getElementById('width-value').textContent = width;
+        }
+
+        // 初始化时和窗口尺寸变化时更新屏幕宽度
+        updateScreenWidth();
+        window.addEventListener('resize', updateScreenWidth);
     });
   </script>
 </body>
