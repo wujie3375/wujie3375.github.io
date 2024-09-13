@@ -6,9 +6,9 @@
     /* 基本样式 */
     #toc {
       position: fixed;
-      right: 10px; /* 默认右侧位置 */
-      top: 100px;  /* 默认顶部位置 */
-      width: 200px; /* 默认宽度 */
+      right: 70px; /* 默认右侧位置 */
+      top: 150px;  /* 默认顶部位置 */
+      width: 250px; /* 默认宽度 */
       background-color: #f9f9f9;
       padding: 10px;
       border: 1px solid #ddd;
@@ -21,7 +21,7 @@
     @media (max-width: 768px) {
       #toc {
         right: 5px; /* 较小屏幕时更靠近右边 */
-        top: 80px;  /* 较小屏幕时位置稍微调整 */
+        top: 100px;  /* 较小屏幕时位置稍微调整 */
         width: 150px; /* 较小屏幕时更窄 */
       }
     }
@@ -42,6 +42,7 @@
   <div id="toc">
     <h3>Contents</h3>
     <div id="toc-list"></div>
+    <p id="screen-width">Screen width: <span id="width-value"></span>px</p>
   </div>
 
   <!-- 其他内容 -->
