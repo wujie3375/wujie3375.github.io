@@ -50,11 +50,11 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 <div style="display: flex; align-items: flex-start; position: relative; padding-left: 20px;">
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/cqu.png" alt="CQU" style="height: 60px; margin-right: 10px;">
+  <img src="https://wujie3375.github.io/images/logo2/cqu.png" alt="CQU" style="height: 90px; margin-right: 10px;">
   
   <!-- 文字内容 -->
   <div>
-    <p><strong>Sep 2022 - Jun 2028</strong> (expected):</p>
+    <p><strong>Sep 2022 - Jun 2028</strong> (expected)<strong>:</strong></p>
     <p><strong>Chongqing University</strong></p>
     <p><em>Ph.D. in Physics</em> (supervised by 
     <a href="https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true">
@@ -70,7 +70,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 <div style="display: flex; align-items: flex-start; position: relative; padding-left: 20px;">
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/cwnu.png" alt="CWNU" style="height: 60px; margin-right: 10px;">
+  <img src="https://wujie3375.github.io/images/logo2/cwnu.png" alt="CWNU" style="height: 90px; margin-right: 10px;">
   
   <!-- 文字内容 -->
   <div>
@@ -93,13 +93,43 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 ## Experience
 
--  **Feb 2024 - Apr 2024:** 
+<!-- -  **Feb 2024 - Apr 2024:** 
 
-   **VISITOR**, *Beijing Normal University* (supervised by [Prof. Zhoujian Cao (曹周键)](https://inspirehep.net/authors/1060083?ui-citation-summary=true&ui-exclude-self-citations=true))
+   **VISITOR**, *Beijing Normal University* (supervised by [Prof. Zhoujian Cao (曹周键)](https://inspirehep.net/authors/1060083?ui-citation-summary=true&ui-exclude-self-citations=true)) -->
 
--  **Sep 2020 - Sep 2021:** 
+<div style="display: flex; align-items: flex-start; position: relative; padding-left: 20px;">
+  <!-- 学校的 logo -->
+  <img src="https://wujie3375.github.io/images/logo2/bnu.png" alt="BNU" style="height: 90px; margin-right: 10px;">
+  
+  <!-- 文字内容 -->
+  <div>
+    <p><strong>Feb 2024 - Apr 2024:</strong></p>
+    <p><strong>Beijing Normal University</strong></p>
+    <p><em>VISITOR</em> (supervised by 
+    <a href="https://inspirehep.net/authors/1060083?ui-citation-summary=true&ui-exclude-self-citations=true">
+        Prof. Zhoujian Cao (曹周键)
+    </a>)</p>
+  </div>
+</div>
 
-   **PARTICIPANT**, *University of Chinese Academy of Sciences*, College Student Innovation and Practice Program (supervised by [Assoc. Prof. Yong Tang (汤勇)](https://inspirehep.net/authors/1040919?ui-citation-summary=true&ui-exclude-self-citations=true))
+<!-- -  **Sep 2020 - Sep 2021:** 
+
+   **PARTICIPANT**, *University of Chinese Academy of Sciences*, College Student Innovation and Practice Program (supervised by [Assoc. Prof. Yong Tang (汤勇)](https://inspirehep.net/authors/1040919?ui-citation-summary=true&ui-exclude-self-citations=true)) -->
+
+<div style="display: flex; align-items: flex-start; position: relative; padding-left: 20px;">
+  <!-- 学校的 logo -->
+  <img src="https://wujie3375.github.io/images/logo2/ucas.png" alt="UCAS" style="height: 90px; margin-right: 10px;">
+  
+  <!-- 文字内容 -->
+  <div>
+    <p><strong>Sep 2020 - Sep 2021:</strong></p>
+    <p><strong>University of Chinese Academy of Sciences</strong></p>
+    <p><em>PARTICIPANT</em>, College Student Innovation and Practice Program (supervised by 
+    <a href="https://inspirehep.net/authors/1040919?ui-citation-summary=true&ui-exclude-self-citations=true">
+        Assoc. Prof. Yong Tang (汤勇)
+    </a>)</p>
+  </div>
+</div>
 
 ---
 
