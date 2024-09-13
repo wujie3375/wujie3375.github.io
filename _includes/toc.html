@@ -1,6 +1,6 @@
-<div id="toc" style="position: fixed; right: 60px; top: 150px; width: 200px; background-color: #f9f9f9; 
-padding: 20px; border: 2px solid #ddd; max-height: 80vh; overflow-y: auto;">
-    <h4>Contents</h4>
+<div id="toc" style="position: fixed; right: 50px; top: 150px; width: 150px; background-color: #f9f9f9; 
+padding: 10px; border: 2px solid #ddd; max-height: 80vh; overflow-y: auto;">
+    <h3>Contents</h3>
     <div id="toc-list"></div>
   </div>
   
@@ -21,11 +21,11 @@ padding: 20px; border: 2px solid #ddd; max-height: 80vh; overflow-y: auto;">
   
         // 设置缩进, 使二级标题缩进
         if (header.tagName === 'H2') {
-        link.style.marginLeft = '10px';  // 缩进二级标题
-        link.style.fontSize = '10px';     // 二级标题字体大小
+        link.style.marginLeft = '12px';  // 缩进二级标题
+        link.style.fontSize = '16px';     // 二级标题字体大小
       } else {
         link.style.marginLeft = '0px';   // 一级标题不缩进
-        link.style.fontSize = '10px';     // 一级标题字体大小
+        link.style.fontSize = '16px';     // 一级标题字体大小
       }
   
         toc.appendChild(link);
