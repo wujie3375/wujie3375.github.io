@@ -124,7 +124,11 @@ Currently, my primary research focus is on the simulation of gravitational wave 
   <div>
     <p><strong>Sep 2020 - Sep 2021:</strong></p>
     <p><strong>University of Chinese Academy of Sciences</strong></p>
-    <p><em>PARTICIPANT</em>, College Student Innovation and Practice Program (supervised by 
+    <p><em>PARTICIPANT</em>, 
+    <a href="https://astro.ucas.ac.cn/index.php/cn/home/2016-03-17-03-00-27/314-2020-3">
+        College Student Innovation and Practice Program
+    </a>
+     (supervised by 
     <a href="https://inspirehep.net/authors/1040919?ui-citation-summary=true&ui-exclude-self-citations=true">
         Assoc. Prof. Yong Tang (汤勇)
     </a>)</p>
