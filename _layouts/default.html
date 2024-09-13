@@ -29,56 +29,64 @@
 
 <body class="page" itemscope itemtype="http://schema.org/WebPage">
 
-{% include chrome-frame.html %}
-{% include navigation.html %}
-
-<!-- 固定导航栏 -->
-<div id="toc" style="position: fixed; right: 10px; top: 100px; width: 200px; background-color: #f9f9f9; padding: 10px; border: 1px solid #ddd; max-height: 80vh; overflow-y: auto;">
-  <h3>Table of Contents</h3>
-  <div id="toc-list"></div>
-</div>
-
-<div id="main" role="main"  itemprop="mainContentOfPage">
-  <div class="article-author-top">
-    {% include author-bio.html %}
+  {% include chrome-frame.html %}
+  {% include navigation.html %}
+  
+  <!-- 固定导航栏 -->
+  <div id="toc" style="position: fixed; right: 10px; top: 100px; width: 200px; background-color: #f9f9f9; padding: 10px; border: 1px solid #ddd; max-height: 80vh; overflow-y: auto;">
+    <h3>Table of Contents</h3>
+    <div id="toc-list"></div>
   </div>
-  <article itemscope itemtype="http://schema.org/CreativeWork">
-    <div class="headline-wrap">
-      <h1 itemprop="headline">{{ page.title }}</h1>
-    </div><!--/ .headline-wrap -->
-    <div class="article-wrap" itemprop="text">
-      {{ content }}
-    </div><!-- /.article-wrap -->
-  </article>
-</div><!-- /#index -->
-
-<div class="footer-wrap">
-  <footer>
-    {% include footer.html %}
-  </footer>
-</div><!-- /.footer-wrap -->
-
-{% include scripts.html %}
-
-<!-- 生成目录的 JavaScript -->
-<script>
-  window.addEventListener("DOMContentLoaded", function () {
-    var toc = document.getElementById('toc-list');
-    var headers = document.querySelectorAll('#main h1, #main h2, #main h3');
-    headers.forEach(function (header, index) {
-      if (!header.id) {
-        header.id = 'section-' + index;
-      }
-      var link = document.createElement('a');
-      link.href = '#' + header.id;
-      link.textContent = header.textContent;
-      toc.appendChild(link);
-      toc.appendChild(document.createElement('br'));
+  
+  <div id="main" role="main"  itemprop="mainContentOfPage">
+    <div class="article-author-top">
+      {% include author-bio.html %}
+    </div>
+    <article itemscope itemtype="http://schema.org/CreativeWork">
+      <div class="headline-wrap">
+        <h1 itemprop="headline">{{ page.title }}</h1>
+      </div><!--/ .headline-wrap -->
+      <div class="article-wrap" itemprop="text">
+        {{ content }}
+      </div><!-- /.article-wrap -->
+    </article>
+  </div><!-- /#index -->
+  
+  <div class="footer-wrap">
+    <footer>
+      {% include footer.html %}
+    </footer>
+  </div><!-- /.footer-wrap -->
+  
+  {% include scripts.html %}
+  
+  <!-- 生成目录的 JavaScript -->
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      var toc = document.getElementById('toc-list');
+      var headers = document.querySelectorAll('#main h1, #main h2');
+      
+      headers.forEach(function (header, index) {
+        if (!header.id) {
+          header.id = 'section-' + index;
+        }
+        
+        var link = document.createElement('a');
+        link.href = '#' + header.id;
+        link.textContent = header.textContent;
+        
+        // 根据标题级别设置缩进
+        if (header.tagName === 'H2') {
+          link.style.marginLeft = '20px'; // 二级标题缩进
+        }
+        
+        toc.appendChild(link);
+        toc.appendChild(document.createElement('br'));
+      });
     });
-  });
-</script>
-
-</body>
+  </script>
+  
+  </body>
   
 
 
