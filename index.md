@@ -48,13 +48,23 @@ Currently, my primary research focus is on the simulation of gravitational wave 
   
    **PHD**, *Chongqing University* (supervised by [Prof. Jin Li (李瑾)](https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true)) -->
 
-<div style="display: inline-block;">
-  <img src="https://wujie3375.github.io/images/logo2/cqu.png" alt="Chongqing University Logo" width="50" height="50" style="vertical-align: middle; margin-right: 10px;">
-  <span>
-    **Sep 2022 - Jun 2028** (expected) **:**  
-    **PHD**, *Chongqing University* (supervised by [Prof. Jin Li (李瑾)](https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true))
-  </span>
+<div style="display: flex; align-items: center;">
+  <!-- 学校的 logo -->
+  <img src="[logo_url](https://wujie3375.github.io/images/logo2/cqu.png)" alt="CQU" style="height: 40px; margin-right: 10px;">
+  
+  <!-- 文字内容 -->
+  <ul style="list-style-type: none; padding-left: 0; margin-left: 0;">
+    <li>
+      <strong>Sep 2022 - Jun 2028</strong> (expected) <strong>:</strong><br>
+      <strong>PHD</strong>, <em>Chongqing University</em> (supervised by 
+      <a href="https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true">
+        Prof. Jin Li (李瑾)
+      </a>)
+    </li>
+  </ul>
 </div>
+
+
 
 -  **Sep 2018 - Jun 2022:** 
 
