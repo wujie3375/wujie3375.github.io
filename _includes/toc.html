@@ -1,4 +1,5 @@
-<div id="toc" style="position: fixed; right: 10px; top: 100px; width: 200px; background-color: #f9f9f9; padding: 10px; border: 1px solid #ddd; max-height: 80vh; overflow-y: auto;">
+<div id="toc" style="position: fixed; right: 30px; top: 100px; width: 300px; background-color: #f9f9f9; 
+padding: 10px; border: 1px solid #ddd; max-height: 80vh; overflow-y: auto;">
     <h3>Table of Contents</h3>
     <div id="toc-list"></div>
   </div>
@@ -6,29 +7,19 @@
   <script>
     window.addEventListener("DOMContentLoaded", function () {
       var toc = document.getElementById('toc-list');
+      // 只选择一级和二级标题
       var headers = document.querySelectorAll('#main h1, #main h2');
-  
-      // 记录已经添加到 TOC 的标题 ID
-      var addedIds = new Set();
-  
+      
       headers.forEach(function (header, index) {
         if (!header.id) {
           header.id = 'section-' + index;
         }
-  
-        // 检查是否已经添加过这个 ID
-        if (addedIds.has(header.id)) {
-          console.warn('Duplicate ID found:', header.id);  // 调试信息
-          return;  // 如果 ID 已经添加过，跳过
-        }
-  
-        addedIds.add(header.id);
-  
+        
         var link = document.createElement('a');
         link.href = '#' + header.id;
         link.textContent = header.textContent;
   
-        // 设置缩进，使二级标题缩进
+        // 设置缩进, 使二级标题缩进
         if (header.tagName === 'H2') {
           link.style.marginLeft = '20px';  // 缩进二级标题
         } else {
