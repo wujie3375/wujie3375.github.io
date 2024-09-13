@@ -42,7 +42,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 ---
 
-## Educational Background
+## Education
 
 <!-- -  **Sep 2022 - Jun 2028** (expected) **:** 
   
@@ -152,7 +152,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
     Experienced in handling and analyzing large datasets, including statistical analysis, data visualization, and signal processing.
 
 ---
-## News and Updates
+## News
 
 - **Sep 10, 2024:** It's the first day of making my personal homepage, and I'm really excited about it!
 
