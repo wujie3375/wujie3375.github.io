@@ -16,7 +16,7 @@ I'm **Jie Wu**, a PhD candidate in physics (still working hard at it).
 I'm really excited about diving into the mysteries of the universe and can't wait to learn more about what we don't know. 
 I love physics, astronomy, and aerospace because they give me a great insight into how nature and the universe work.
 
-Right now, I'm studying Physics at Chongqing University, and my supervisor is [Prof. Jin Li](https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true). 
+Right now, I'm studying physics at Chongqing University, and my supervisor is [Prof. Jin Li](https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true). 
 In the last few years, I've been diving into gravitational wave research. It not only helped me get a better grasp of the subject but also equipped me with some essential research skills. Looking ahead, I’m excited to take my research further, explore new technologies and methods for detecting space gravitational waves, and contribute to advancing this field.
 
 If you are interested in any aspect of me, I would love to chat and collaborate, please email me at **wujie3375@gmail.com**.
