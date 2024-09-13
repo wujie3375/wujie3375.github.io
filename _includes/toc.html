@@ -1,0 +1,25 @@
+<div id="toc" style="position: fixed; right: 30px; top: 100px; width: 300px; background-color: #f9f9f9; padding: 10px; border: 1px solid #ddd; max-height: 80vh; overflow-y: auto;">
+    <h3>Table of Contents</h3>
+    <div id="toc-list"></div>
+  </div>
+  
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      var toc = document.getElementById('toc-list');
+      var headers = document.querySelectorAll('#main h1, #main h2');
+      headers.forEach(function (header, index) {
+        if (!header.id) {
+          header.id = 'section-' + index;
+        }
+        var link = document.createElement('a');
+        link.href = '#' + header.id;
+        link.textContent = header.textContent;
+  
+        var indent = header.tagName === 'H2' ? '20px' : '0px';
+        link.style.marginLeft = indent;
+        toc.appendChild(link);
+        toc.appendChild(document.createElement('br'));
+      });
+    });
+  </script>
+  
