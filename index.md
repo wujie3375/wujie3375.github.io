@@ -48,27 +48,56 @@ Currently, my primary research focus is on the simulation of gravitational wave 
   
    **PHD**, *Chongqing University* (supervised by [Prof. Jin Li (李瑾)](https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true)) -->
 
-<div style="display: flex; align-items: center;">
+<div style="display: flex; align-items: center; position: relative;">
+  <!-- 点 -->
+  <div style="width: 0; height: 100%; position: absolute; left: -20px; display: flex; align-items: center;">
+    <div style="background-color: black; width: 8px; height: 8px; border-radius: 50%;"></div>
+    <div style="background-color: black; width: 2px; height: calc(100% + 20px); position: absolute; top: 8px;"></div>
+  </div>
+  
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/cqu.png" alt="CQU" style="height: 40px; margin-right: 10px;">
+  <img src="https://wujie3375.github.io/images/logo2/cqu.png" alt="CQU" style="height: 60px; margin-right: 10px;">
   
   <!-- 文字内容 -->
-  <ul style="list-style-type: none; padding-left: 0; margin-left: 0;">
-    <li>
-      <strong>Sep 2022 - Jun 2028</strong> (expected) <strong>:</strong><br>
-      <strong>PHD</strong>, <em>Chongqing University</em> (supervised by 
-      <a href="https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true">
+  <div>
+    <p><strong>Sep 2022 - Jun 2028</strong> (expected):</p>
+    <p><strong>Chongqing University</strong></p>
+    <p><em>Ph.D. in Physics</em> (supervised by 
+    <a href="https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true">
         Prof. Jin Li (李瑾)
-      </a>)
-    </li>
-  </ul>
+    </a>)</p>
+  </div>
 </div>
 
+<!-- -  **Sep 2018 - Jun 2022:** 
 
+   **UNDERGRADUATE**, *China West Normal University* (supervised by [Dr. Di Wu (吴迪)](https://inspirehep.net/authors/1647692?ui-citation-summary=true&ui-exclude-self-citations=true) and [Assoc. Prof. Guo-Ping Li (李国平)](https://inspirehep.net/authors/1275221?ui-citation-summary=true&ui-exclude-self-citations=true)) -->
 
--  **Sep 2018 - Jun 2022:** 
+<div style="display: flex; align-items: center; position: relative;">
+  <!-- 点 -->
+  <div style="width: 0; height: 100%; position: absolute; left: -20px; display: flex; align-items: center;">
+    <div style="background-color: black; width: 8px; height: 8px; border-radius: 50%;"></div>
+    <div style="background-color: black; width: 2px; height: calc(100% + 20px); position: absolute; top: 8px;"></div>
+  </div>
+  
+  <!-- 学校的 logo -->
+  <img src="https://wujie3375.github.io/images/logo2/cwnu.png" alt="CQU" style="height: 60px; margin-right: 10px;">
+  
+  <!-- 文字内容 -->
+  <div>
+    <p><strong>Sep 2022 - Jun 2028</strong> (expected):</p>
+    <p><strong>Chongqing University</strong></p>
+    <p><em>B.S. in Physics</em> (supervised by 
+    <a href="https://inspirehep.net/authors/1647692?ui-citation-summary=true&ui-exclude-self-citations=true">
+        Dr. Di Wu (吴迪)
+    </a>
+    and
+    <a href="https://inspirehep.net/authors/1275221?ui-citation-summary=true&ui-exclude-self-citations=true">
+        Assoc. Prof. Guo-Ping Li (李国平)
+    </a>)</p>
+  </div>
+</div>
 
-   **UNDERGRADUATE**, *China West Normal University* (supervised by [Dr. Di Wu (吴迪)](https://inspirehep.net/authors/1647692?ui-citation-summary=true&ui-exclude-self-citations=true) and [Assoc. Prof. Guo-Ping Li (李国平)](https://inspirehep.net/authors/1275221?ui-citation-summary=true&ui-exclude-self-citations=true))
 
 ---
 
