@@ -49,10 +49,11 @@ links:
     url: /
   - title: Publications
     url: /publications/
-  - title: CV
-    url: /file/my_CV.pdf
   - title: Awards
     url: /awards/
+  - title: CV
+    url: /file/my_CV.pdf
+  
   # - title: Hobbies
   #   url: /hobbies/
   # - title: Blogs
