@@ -11,6 +11,8 @@ title: Publications
 
 <p style="text-indent: 0;">(*: corresponding author)</p>
 
+> **Last Update:** September 10, 2024
+
 ---
 
 ## 2024

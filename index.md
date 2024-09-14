@@ -152,8 +152,8 @@ Currently, my primary research focus is on the simulation of gravitational wave 
     Experienced in handling and analyzing large datasets, including statistical analysis, data visualization, and signal processing.
 
 ---
-## News
+<!-- ## News
 
-- **Sep 10, 2024:** It's the first day of making my personal homepage, and I'm really excited about it!
+- **Sep 10, 2024:** It's the first day of making my personal homepage, and I'm really excited about it! -->
 
-> **Last Update:** September 13, 2024
+> **Last Update:** September 14, 2024

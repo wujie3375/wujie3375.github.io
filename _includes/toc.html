@@ -6,42 +6,46 @@
     /* 基本样式 */
     #toc {
       position: fixed;
-      right: 90px; /* 默认右侧位置 */
-      top: 150px;  /* 默认顶部位置 */
-      width: 280px; /* 默认宽度 */
+      right: 5rem;  /* 默认右侧位置 */
+      top: 9rem;  /* 默认顶部位置 */
+      width: 17.5rem;  /* 默认宽度 */
       background-color: #f9f9f9;
-      padding: 10px;
+      padding: 1rem;
       border: 1px solid #ddd;
       max-height: 80vh;
       overflow-y: auto;
-      z-index: 1000; /* 确保在其他内容之上 */
+      z-index: 1000;  /* 确保在其他内容之上 */
     }
 
-    /* 当屏幕宽度小于 768px 时 */
+    /* 当屏幕宽度小于 1300px 时 */
     @media (max-width: 1300px) {
       #toc {
-        right: 40px; /* 较小屏幕时更靠近右边 */
-        top: 120px;  /* 较小屏幕时位置稍微调整 */
-        width: 160px; /* 较小屏幕时更窄 */
+        right: 2.5rem;
+        top: 7.5rem;
+        width: 10rem;
       }
     }
 
-    /* 当屏幕宽度小于 480px 时 */
+    /* 当屏幕宽度小于 900px 时 */
     @media (max-width: 900px) {
       #toc {
-        right: 20px; /* 极小屏幕时靠近边缘 */
-        top: 100px;  /* 极小屏幕时位置调整 */
-        width: 120px; /* 极小屏幕时最窄 */
+        right: 1rem;
+        top: 6rem;
+        width: 7.5rem;
       }
+    }
+
+    /* 平滑滚动效果 */
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
 <body>
-  <!-- 导航栏代码 -->
-  <div id="toc">
+  <!-- 导航栏 -->
+  <div id="toc" aria-label="Contents">
     <h3>Contents</h3>
     <div id="toc-list"></div>
-    <!-- <p id="screen-width">Screen width: <span id="width-value"></span>px</p> -->
   </div>
 
   <!-- 其他内容 -->
@@ -50,35 +54,26 @@
     window.addEventListener("DOMContentLoaded", function () {
       var toc = document.getElementById('toc-list');
       var headers = document.querySelectorAll('#main h1, #main h2');
-      
+      var fragment = document.createDocumentFragment(); // 创建一个DocumentFragment
+
       headers.forEach(function (header, index) {
         if (!header.id) {
           header.id = 'section-' + index;
         }
-        
+
         var link = document.createElement('a');
         link.href = '#' + header.id;
         link.textContent = header.textContent;
-  
+
         if (header.tagName === 'H2') {
           link.style.marginLeft = '13px';  // 缩进二级标题
-        } else {
-          link.style.marginLeft = '0px';   // 一级标题不缩进
         }
-  
-        toc.appendChild(link);
-        toc.appendChild(document.createElement('br')); // 换行
-        });
 
-     // 显示屏幕宽度
-        // function updateScreenWidth() {
-        // var width = window.innerWidth;
-        // document.getElementById('width-value').textContent = width;
-        // }
+        fragment.appendChild(link);
+        fragment.appendChild(document.createElement('br'));  // 添加换行
+      });
 
-        // // 初始化时和窗口尺寸变化时更新屏幕宽度
-        // updateScreenWidth();
-        // window.addEventListener('resize', updateScreenWidth);
+      toc.appendChild(fragment);  // 一次性添加到DOM中
     });
   </script>
 </body>
