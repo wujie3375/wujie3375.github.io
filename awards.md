@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /awards/index.html
-title: Awards
+title: Achievements & Participation
 ---
 
 > **Last Update:** September 14, 2024
