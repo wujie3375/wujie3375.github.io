@@ -158,18 +158,17 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 - **Sep 10, 2024:** It's the first day of making my personal homepage, and I'm really excited about it! 🎉🎉 -->
 
 ---
-<div style="font-size: 14px; text-align: left;">
+<div style="font-size: 15px; text-align: left;">
   <s>People say that adding some poems at the end makes you look cool, but honestly, no one really pays attention to them anyway. So I just casually whipped up a few with AI. Who knows if they're any good or not.</s>
 </div>
 
 
-
-<div style="font-family: 'Comic Sans MS'; font-size: 17px; text-align: center;">
+<div style="font-family: 'Comic Sans MS'; font-size: 19px; text-align: center;">
   Never lose sight of your dreams so bright,   <br>
 Walk your own path with all of your might.   <br>
 Keep striving onward, let passion ignite,   <br>
 Chase after the visions that fill you with light.
 </div>
-<div style="font-family: 'Comic Sans MS'; font-size: 17px; text-align: right;">
+<div style="font-family: 'Comic Sans MS'; font-size: 19px; text-align: right;">
   —— April 2022
 </div>
