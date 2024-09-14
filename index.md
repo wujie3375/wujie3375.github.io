@@ -50,7 +50,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 <div style="display: flex; align-items: flex-start; position: relative; padding-left: 0px;">
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/cqu.png" alt="CQU" style="height: 90px; margin-right: 10px;">
+  <img src="https://wujie3375.github.io/images/logo2/cqu.svg" alt="CQU" style="height: 90px; margin-right: 10px;">
   
   <!-- 文字内容 -->
   <div>
@@ -99,7 +99,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 <div style="display: flex; align-items: flex-start; position: relative; padding-left: 0px;">
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/bnu.png" alt="BNU" style="height: 90px; margin-right: 10px;">
+  <img src="https://wujie3375.github.io/images/logo2/bnu.svg" alt="BNU" style="height: 90px; margin-right: 10px;">
   
   <!-- 文字内容 -->
   <div>
