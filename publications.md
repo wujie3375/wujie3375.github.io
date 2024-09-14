@@ -4,14 +4,13 @@ permalink: /publications/index.html
 title: Publications
 ---
 
+> **Last Update:** September 11, 2024
 
 # Publications
 
 <p style="text-indent: 0;">publications by categories in reversed chronological order.</p>
 
 <p style="text-indent: 0;">(*: corresponding author)</p>
-
-> **Last Update:** September 10, 2024
 
 ---
 
@@ -24,7 +23,6 @@ title: Publications
    <u><strong>Jie Wu</strong></u> and Jin Li\*
 
    *arXiv*:2407.13590
-
 -  **May 7, 2024:** <span style="border: 1px solid black; padding: 3px;">[DOI](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.104014)</span> <span style="border: 1px solid black; padding: 3px;">[arXiv](https://arxiv.org/abs/2401.03113)</span> <span style="border: 1px solid black; padding: 3px;">[PDF](https://wujie3375.github.io\file\3.pdf)</span>
 
   
@@ -46,7 +44,6 @@ title: Publications
    <u><strong>Jie Wu</strong></u> and Jin Li\*
 
    *Physical Review D* **108** 12, 124047
-
 -  **Sep 27, 2023:** <span style="border: 1px solid black; padding: 3px;">[DOI](https://cpb.iphy.ac.cn/EN/10.1088/1674-1056/acd8a3)</span> <span style="border: 1px solid black; padding: 3px;">[PDF](https://wujie3375.github.io\file\1.pdf)</span>
 
   
