@@ -141,7 +141,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 - **Languages**
   
-    Chinese (native), English (CET-6).
+    Chinese (native), English.
 
 - **Programming**
   
