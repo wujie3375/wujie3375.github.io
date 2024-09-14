@@ -51,8 +51,8 @@ links:
     url: /publications/
   - title: CV
     url: /file/my_CV.pdf
-  # - title: Awards
-  #   url: /awards/
+  - title: Awards
+    url: /awards/
   # - title: Hobbies
   #   url: /hobbies/
   # - title: Blogs
