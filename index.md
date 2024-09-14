@@ -157,4 +157,13 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 - **Sep 10, 2024:** It's the first day of making my personal homepage, and I'm really excited about it! 🎉🎉 -->
 
-> **Last Update:** September 14, 2024
+<div style="font-family: 'Dancing Script', cursive, sans-serif; font-size: 17px; text-align: center;">
+  Stay true to your heart, <br>
+  Walk the path that's yours, <br>
+  Keep moving forward, <br>
+  And chase after your dreams.
+</div>
+
+<div style="font-family: 'Dancing Script', cursive, sans-serif; font-size: 15px; text-align: right;">
+  —— April 2022
+</div>
