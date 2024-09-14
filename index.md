@@ -145,7 +145,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 - **Programming**
   
-    ```Python```, ```Mathematica```, ```MATLAB```.
+    `Python`, `Mathematica`, `MATLAB`.
 
 - **Data Analysis**
   
