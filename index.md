@@ -26,15 +26,10 @@ If you are interested in any aspect of me, I would love to chat and collaborate,
 ## Research Interests
 
 - **Gravitational wave:**  Signal simulation, Post-Newtonian waveform.
-
 - **Detection:** Space- and ground-based detectors, Time-delay interferometry, Noise.
-
 - **Binary system:** Stellar binary black hole, Massive black hole binary, Galactic binary.
-
 - **Data processing:** Parameter estimation, Fisher matrix, Bayesian analysis.
-
 - **Gravitation:** Modified theory of gravity, Cosmology, Dark matter.
-
 - **Astronomy:** Electromagnetic observation, Multi-messenger observation.
 
 Currently, my primary research focus is on the simulation of gravitational wave signals in space, assessment of detector performance, and the processing and analysis of gravitational wave data.
@@ -142,15 +137,12 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 - **Languages**
   
     Chinese (native), English.
-
 - **Programming**
   
     `Python`, `Mathematica`, `MATLAB`.
-
 - **Data Analysis**
   
     Experienced in handling and analyzing large datasets, including statistical analysis, data visualization, and signal processing.
-
 ---
 <!-- ## News
 
