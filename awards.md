@@ -17,6 +17,7 @@ title: Awards
 
 # Scholarships
 
+-  **Spe, 2024:** Theoretical Physics Graduate Scholarship
 -  **Dec, 2020:** Haotian Astronomy Scholarship
--  **2020 - 2021:** Fist-class scholarship (Twice)
--  **2018 - 2021:** Second-class scholarship (Four times)
+-  **2020 - 2021:** Fist-class Scholarship (Three times)
+-  **2018 - 2021:** Second-class Scholarship (Four times)
