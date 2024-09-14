@@ -67,3 +67,7 @@ title: Publications
    <u><strong>Jie Wu</strong></u> (Advisor: Dr. Di Wu) 
 
    *Undergraduate Thesis* (Excellent Graduation Thesis)
+
+---
+
+> I’m hoping that by listing these, it'll be easier for me to find them later on. 😊😊

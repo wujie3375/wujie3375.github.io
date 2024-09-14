@@ -140,20 +140,16 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 ## Skills
 
-- **Languages**
-  
+- **Languages**    
     Chinese (native), English.
 
-- **Programming**
-  
+- **Programming**  
     `Python`, `Mathematica`, `MATLAB`.
 
-- **Data Analysis**
-  
+- **Data Analysis**  
     Experienced in handling and analyzing large datasets, including statistical analysis, data visualization, and signal processing.
 
-- **Teaching**
-  
+- **Teaching**  
     High School Physics Teacher Qualification Certificate.
 
 ---

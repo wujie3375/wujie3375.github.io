@@ -49,4 +49,4 @@ title: Achievements & Participation
 
 ---
 
-I don't really see the point in writing these; just think of them as a way to keep track, kind of like collecting stamps. 😉
+> I don't really see the point in writing these; just think of them as a way to keep track, kind of like collecting stamps. 😉😉
