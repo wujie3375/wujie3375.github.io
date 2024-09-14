@@ -46,3 +46,7 @@ title: Achievements & Participation
   **VOLUNTEER**, *2023 Annual Meeting of the Chinese Physical Society, Division of Gravitation  and Relativity Astrophysics*, Chongqing, China   
 -  **Apr 2023:**  
   **PARTICIPANT**, *Chongqing Theoretical Physics Frontier Academic Seminar*, Chongqing, China
+
+---
+
+I don't really see the point in writing these; just think of them as a way to keep track, kind of like collecting stamps. 😉
