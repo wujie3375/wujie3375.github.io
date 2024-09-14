@@ -28,11 +28,7 @@ title: Achievements & Participation
 # Meetings
 
 -  **Apr 2024:** PRESENTER, *2024 Annual Meeting of Gravitation  and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting*, Hengyang, Hunan, China
-
 -  **Apr 2024:** PARTICIPANT, *The 2nd International Workshop on Gravitational Waves and the Early Universe*, Beijing, China
-
 -  **Oct 2023:** PARTICIPANT, *2023 Academic Symposium on the Frontiers of Theoretical Physics in Sichuan Chongqing Region*, Chengdu, Sichuan, China
-
--  **Apr 2023:** VOLUNTEER, *2023 Annual Meeting of the Chinese Physical Society, Division of Gravitation  and Relativity Astrophysics*, Chongqing, China
-  
+-  **Apr 2023:** VOLUNTEER, *2023 Annual Meeting of the Chinese Physical Society, Division of Gravitation  and Relativity Astrophysics*, Chongqing, China 
 -  **Apr 2023:** PARTICIPANT, *Chongqing Theoretical Physics Frontier Academic Seminar*, Chongqing, China
