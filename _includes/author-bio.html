@@ -79,6 +79,15 @@ alt="{{ site.owner.name }} bio photo" width="160"></a>
 </p>
 {% endif %}
 
+{% if site.owner.twitter %}
+<p style="text-indent:0; font-size: 16px; line-height: 20px; margin-bottom: 30px;">
+  <a href="https://{{ site.owner.twitter }}" style="display: inline-flex; align-items: center;">
+    <img src="https://wujie3375.github.io/images/logo/icons8-twitter.png" height="19" style="vertical-align: middle;">
+    <span style="margin-left: 7.3px;">Twitter</span>
+  </a>
+</p>
+{% endif %}
+
 {% if site.owner.inspirehep %}
 <p style="text-indent:0; font-size: 16px; line-height: 20px; margin-bottom: 30px;">
   <a href="{{ site.owner.inspirehep }}" style="display: inline-flex; align-items: center; margin-left: 3px;">
@@ -133,11 +142,3 @@ alt="{{ site.owner.name }} bio photo" width="160"></a>
 </p>
 {% endif %}
 
-{% if site.owner.twitter %}
-<p style="text-indent:0; font-size: 16px; line-height: 20px; margin-bottom: 30px;">
-  <a href="https://{{ site.owner.twitter }}" style="display: inline-flex; align-items: center;">
-    <img src="https://wujie3375.github.io/images/logo/icons8-twitter.png" height="19" style="vertical-align: middle;">
-    <span style="margin-left: 7.3px;">Twitter</span>
-  </a>
-</p>
-{% endif %}
