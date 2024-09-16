@@ -37,69 +37,20 @@ title: Honors & Participation
 # Meetings
 
 -  **Apr 19, 2024:**   
-  **PRESENTER**, *2024 Annual Meeting of Gravitation  and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting*, Hengyang, Hunan, China   
--  **Apr 9, 2024:**  
-  **PARTICIPANT**, *The 2nd International Workshop on Gravitational Waves and the Early Universe*, Beijing, China  
+  **PRESENTER**, *2024 Annual Meeting of Gravitation  and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting*, Hengyang, Hunan, China. <span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; position: relative; z-index: 2000;">[Photo](https://wujie3375.github.io\images\meeting\230419.jpg)</span>  <span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; position: relative; z-index: 2000;">[PPT](https://wujie3375.github.io\images\meeting\240419.pdf)</span>  
+-  **Apr 9, 2024:**   
+  **PARTICIPANT**, *The 2nd International Workshop on Gravitational Waves and the Early Universe*, Beijing, China.  <span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; position: relative; z-index: 2000;">[Photo](https://wujie3375.github.io\images\meeting\240409.jpg)</span>
 -  **Oct 28, 2023:**  
-  **PARTICIPANT**, *2023 Electrodynamics textbook and course construction seminar*, Chongqing, China 
+  **PARTICIPANT**, *2023 Electrodynamics textbook and course construction seminar*, Chongqing, China. 
 -  **Oct 13, 2023:**  
-  **PARTICIPANT**, *2023 Academic Symposium on the Frontiers of Theoretical Physics in Sichuan Chongqing Region*, Chengdu, Sichuan, China  
+  **PARTICIPANT**, *2023 Academic Symposium on the Frontiers of Theoretical Physics in Sichuan Chongqing Region*, Chengdu, Sichuan, China. <span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; position: relative; z-index: 2000;">[Photo](https://wujie3375.github.io\images\meeting\231013.jpg)</span>  
 -  **Apr 22, 2023:**  
-  **VOLUNTEER**, *2023 Annual Meeting of the Chinese Physical Society, Division of Gravitation  and Relativity Astrophysics*, Chongqing, China 
+  **VOLUNTEER**, *2023 Annual Meeting of the Chinese Physical Society, Division of Gravitation  and Relativity Astrophysics*, Chongqing, China. 
 -  **Apr 21, 2023:**  
-  **VOLUNTEER**, *Template Library and Signal Recognition Technology for Space Gravitational Wave Detection 2022 Annual Progress Conference*, Chongqing, China   
--  **Apr 1, 2023:** <span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; position: relative; z-index: 2000;" onclick="showImage()">[Photo](https://wujie3375.github.io\images\meeting\230401.jpg)</span>  
-  **PARTICIPANT**, *Chongqing Theoretical Physics Frontier Academic Seminar*, Chongqing, China
+  **VOLUNTEER**, *Template Library and Signal Recognition Technology for Space Gravitational Wave Detection 2022 Annual Progress Conference*, Chongqing, China.   
+-  **Apr 1, 2023:**   
+  **PARTICIPANT**, *Chongqing Theoretical Physics Frontier Academic Seminar*, Chongqing, China. <span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; position: relative; z-index: 2000;">[Photo](https://wujie3375.github.io\images\meeting\230401.jpg)</span>
 
 ---
 
 > I don't really see the point in writing these; just think of them as a way to keep track, kind of like collecting stamps. 😉😉
-
-
-
-<style>
-  #image-popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999; /* 确保在其他元素上方 */
-    background-color: rgba(0, 0, 0, 0.8); /* 背景色和透明度 */
-    padding: 20px;
-    border-radius: 8px;
-  }
-  #image-popup img {
-    max-width: 100%;
-    height: auto;
-  }
-  #image-popup .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: white;
-    cursor: pointer;
-    font-size: 24px;
-  }
-</style>
-
-<!-- 文本链接，点击后显示图片
-<span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; cursor: pointer;" onclick="showImage()">
-  [Photo](https://wujie3375.github.io/images/meeting/230401.jpg)
-</span>
-
-<!-- 图片的弹出窗口 -->
-<!-- <div id="image-popup">
-  <span class="close-btn" onclick="closeImage()">×</span>
-  <img src="https://wujie3375.github.io/images/meeting/230401.jpg" alt="Photo">
-</div> -->
-
-<script>
-  function showImage() {
-    document.getElementById('image-popup').style.display = 'block';
-  }
-
-  function closeImage() {
-    document.getElementById('image-popup').style.display = 'none';
-  }
-</script>
