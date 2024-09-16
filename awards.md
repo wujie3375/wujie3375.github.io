@@ -37,19 +37,19 @@ title: Honors & Participation
 # Meetings
 
 -  **Apr 19, 2024:**   
-  **PRESENTER**, *2024 Annual Meeting of Gravitation  and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting*, Hengyang, Hunan, China. <span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; position: relative; z-index: 2000;">[Photo](https://wujie3375.github.io\images\meeting\230419.jpg)</span>  <span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; position: relative; z-index: 2000;">[PPT](https://wujie3375.github.io\images\meeting\240419.pdf)</span>  
+  **PRESENTER**, *2024 Annual Meeting of Gravitation  and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting*, Hengyang, Hunan, China. <span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; position: relative;">[Photo](https://wujie3375.github.io\images\meeting\240419.jpg)</span>  <span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; position: relative;">[PPT](https://wujie3375.github.io\images\meeting\240419.pdf)</span>  
 -  **Apr 9, 2024:**   
-  **PARTICIPANT**, *The 2nd International Workshop on Gravitational Waves and the Early Universe*, Beijing, China.  <span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; position: relative; z-index: 2000;">[Photo](https://wujie3375.github.io\images\meeting\240409.jpg)</span>
+  **PARTICIPANT**, *The 2nd International Workshop on Gravitational Waves and the Early Universe*, Beijing, China.  <span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; position: relative;">[Photo](https://wujie3375.github.io\images\meeting\240409.jpg)</span>
 -  **Oct 28, 2023:**  
-  **PARTICIPANT**, *2023 Electrodynamics textbook and course construction seminar*, Chongqing, China. 
+  **PARTICIPANT**, *2023 Electrodynamics textbook and course construction seminar*, Chongqing, China. <span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; position: relative;">[Photo](https://wujie3375.github.io\images\meeting\231028.jpg)</span> 
 -  **Oct 13, 2023:**  
-  **PARTICIPANT**, *2023 Academic Symposium on the Frontiers of Theoretical Physics in Sichuan Chongqing Region*, Chengdu, Sichuan, China. <span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; position: relative; z-index: 2000;">[Photo](https://wujie3375.github.io\images\meeting\231013.jpg)</span>  
+  **PARTICIPANT**, *2023 Academic Symposium on the Frontiers of Theoretical Physics in Sichuan Chongqing Region*, Chengdu, Sichuan, China. <span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; position: relative;">[Photo](https://wujie3375.github.io\images\meeting\231013.jpg)</span>  
 -  **Apr 22, 2023:**  
   **VOLUNTEER**, *2023 Annual Meeting of the Chinese Physical Society, Division of Gravitation  and Relativity Astrophysics*, Chongqing, China. 
 -  **Apr 21, 2023:**  
   **VOLUNTEER**, *Template Library and Signal Recognition Technology for Space Gravitational Wave Detection 2022 Annual Progress Conference*, Chongqing, China.   
 -  **Apr 1, 2023:**   
-  **PARTICIPANT**, *Chongqing Theoretical Physics Frontier Academic Seminar*, Chongqing, China. <span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; position: relative; z-index: 2000;">[Photo](https://wujie3375.github.io\images\meeting\230401.jpg)</span>
+  **PARTICIPANT**, *Chongqing Theoretical Physics Frontier Academic Seminar*, Chongqing, China. <span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; position: relative;">[Photo](https://wujie3375.github.io\images\meeting\230401.jpg)</span>
 
 ---
 
