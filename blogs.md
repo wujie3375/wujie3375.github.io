@@ -8,7 +8,7 @@ title: Blogs
 
 # Micro-Content
 
-<div style="height: 200px; overflow-y: scroll; border: 0px solid #ccc; padding: 10px;">
+<div style="height: 250px; overflow-y: scroll; border: 0px solid #ccc; padding: 10px;">
 
   <p>Just writing down some thoughts and feelings here.</p>
   
@@ -27,3 +27,4 @@ title: Blogs
 
 # Long Text
 
+- **Sep 10, 2024:** [测试test](https://wujie3375.github.io\blogs\test.md)
