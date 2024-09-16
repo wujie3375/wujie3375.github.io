@@ -10,26 +10,23 @@ title: Blogs
 
 <div style="height: 200px; overflow-y: scroll; border: 0px solid #ccc; padding: 10px;">
 
-  <p>This is the first line.
-  <br>This is the second line after a break.</p>
+  <p>Just writing down some thoughts and feelings here.</p>
   
+  <h2>2024</h2>
+
   <ul>
-    <li>First item</li>
-    <li>Second item</li>
-    <li>Third item</li>
-    <li>First item</li>
-    <li>Second item</li>
-    <li>Third item</li>
-    <li>First item</li>
-    <li>Second item</li>
-    <li>Third item</li>
-    <li>First item</li>
-    <li>Second item</li>
-    <li>Third item</li>
+    <li>
+      <strong>Sep 10, 2024:</strong> It's the first day of making my personal homepage, and I'm really excited about it! 🎉🎉
+    </li>
+    
   </ul>
 </div>
 
 
 ---
+
+# Gallery
+
+
 
 <!-- > I don't really see the point in writing these; just think of them as a way to keep track, kind of like collecting stamps. 😉😉 -->

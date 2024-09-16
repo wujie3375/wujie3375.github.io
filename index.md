@@ -45,9 +45,6 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 ## Education
 
-<!-- -  **Sep 2022 - Jun 2028** (expected) **:** 
-  
-   **PHD**, *Chongqing University* (supervised by [Prof. Jin Li (李瑾)](https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true)) -->
 
 <div style="display: flex; align-items: flex-start; position: relative; padding-left: 0px;">
   <!-- 学校的 logo -->
@@ -65,9 +62,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 </div>
 
 
-<!-- -  **Sep 2018 - Jun 2022:** 
 
-   **UNDERGRADUATE**, *China West Normal University* (supervised by [Dr. Di Wu (吴迪)](https://inspirehep.net/authors/1647692?ui-citation-summary=true&ui-exclude-self-citations=true) and [Assoc. Prof. Guo-Ping Li (李国平)](https://inspirehep.net/authors/1275221?ui-citation-summary=true&ui-exclude-self-citations=true)) -->
 
 <div style="display: flex; align-items: flex-start; position: relative; padding-left: 0px;">
   <!-- 学校的 logo -->
@@ -94,10 +89,6 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 ## Experience
 
-<!-- -  **Feb 2024 - Apr 2024:** 
-
-   **VISITOR**, *Beijing Normal University* (supervised by [Prof. Zhoujian Cao (曹周键)](https://inspirehep.net/authors/1060083?ui-citation-summary=true&ui-exclude-self-citations=true)) -->
-
 <div style="display: flex; align-items: flex-start; position: relative; padding-left: 0px;">
   <!-- 学校的 logo -->
   <img src="https://wujie3375.github.io/images/logo2/bnu.png" alt="BNU" style="height: 90px; margin-right: 10px;">
@@ -113,9 +104,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
   </div>
 </div>
 
-<!-- -  **Sep 2020 - Sep 2021:** 
 
-   **PARTICIPANT**, *University of Chinese Academy of Sciences*, College Student Innovation and Practice Program (supervised by [Assoc. Prof. Yong Tang (汤勇)](https://inspirehep.net/authors/1040919?ui-citation-summary=true&ui-exclude-self-citations=true)) -->
 
 <div style="display: flex; align-items: flex-start; position: relative; padding-left: 0px;">
   <!-- 学校的 logo -->
