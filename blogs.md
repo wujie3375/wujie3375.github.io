@@ -30,7 +30,7 @@ title: Blogs
 <div class="gallery-container">
   <!-- Gallery Item 1 -->
   <div class="gallery-item" onclick="openModal('img1')">
-    <img src="https://wujie3375.github.io\images\gallery\220725.jpg" alt="Photo 1 Thumbnail" />
+    <img src="https://wujie3375.github.io/images/gallery/220725.jpg" alt="Photo 1 Thumbnail" />
     <div class="gallery-caption">
       <p><strong>Description:</strong> This is a description of Photo 1.</p>
       <p><strong>Date:</strong> April 1, 2024</p>
@@ -40,7 +40,7 @@ title: Blogs
 
   <!-- Gallery Item 2 -->
   <div class="gallery-item" onclick="openModal('img2')">
-    <img src="https://wujie3375.github.io\images\gallery\220601.jpg" alt="Photo 2 Thumbnail" />
+    <img src="https://wujie3375.github.io/images/gallery/220601.jpg" alt="Photo 2 Thumbnail" />
     <div class="gallery-caption">
       <p><strong>Description:</strong> This is a description of Photo 2.</p>
       <p><strong>Date:</strong> May 1, 2024</p>
@@ -71,15 +71,17 @@ title: Blogs
   .gallery-item {
     position: relative;
     width: 150px; /* Width of the thumbnail */
+    height: 150px; /* Height of the thumbnail to ensure 1:1 ratio */
     cursor: pointer;
     overflow: hidden;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .gallery-item img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
   }
   
   .gallery-caption {
@@ -98,6 +100,7 @@ title: Blogs
     background: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
+    z-index: 1000;
   }
   
   .modal-content {
@@ -132,3 +135,4 @@ title: Blogs
     document.getElementById('modal').style.display = 'none';
   }
 </script>
+
