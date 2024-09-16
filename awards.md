@@ -48,9 +48,58 @@ title: Honors & Participation
   **VOLUNTEER**, *2023 Annual Meeting of the Chinese Physical Society, Division of Gravitation  and Relativity Astrophysics*, Chongqing, China 
 -  **Apr 21, 2023:**  
   **VOLUNTEER**, *Template Library and Signal Recognition Technology for Space Gravitational Wave Detection 2022 Annual Progress Conference*, Chongqing, China   
--  **Apr 1, 2023:** <span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; position: relative; z-index: 2000;">[Photo](https://wujie3375.github.io\images\meeting\230401.jpg)</span>  
+-  **Apr 1, 2023:** <span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; position: relative; z-index: 2000;" onclick="showImage()">[Photo](https://wujie3375.github.io\images\meeting\230401.jpg)</span>  
   **PARTICIPANT**, *Chongqing Theoretical Physics Frontier Academic Seminar*, Chongqing, China
 
 ---
 
 > I don't really see the point in writing these; just think of them as a way to keep track, kind of like collecting stamps. 😉😉
+
+
+
+<style>
+  #image-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* 确保在其他元素上方 */
+    background-color: rgba(0, 0, 0, 0.8); /* 背景色和透明度 */
+    padding: 20px;
+    border-radius: 8px;
+  }
+  #image-popup img {
+    max-width: 100%;
+    height: auto;
+  }
+  #image-popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+  }
+</style>
+
+<!-- 文本链接，点击后显示图片
+<span style="font-size: 13px;border: 0.8px solid black; padding: 1.5px; cursor: pointer;" onclick="showImage()">
+  [Photo](https://wujie3375.github.io/images/meeting/230401.jpg)
+</span>
+
+<!-- 图片的弹出窗口 -->
+<!-- <div id="image-popup">
+  <span class="close-btn" onclick="closeImage()">×</span>
+  <img src="https://wujie3375.github.io/images/meeting/230401.jpg" alt="Photo">
+</div> -->
+
+<script>
+  function showImage() {
+    document.getElementById('image-popup').style.display = 'block';
+  }
+
+  function closeImage() {
+    document.getElementById('image-popup').style.display = 'none';
+  }
+</script>
