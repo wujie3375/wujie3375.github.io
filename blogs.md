@@ -27,4 +27,4 @@ title: Blogs
 
 # Long Text
 
-- **Sep 10, 2024:** [测试test](https://wujie3375.github.io\blogs\test.md)
+- **Sep 10, 2024:** [测试test](https://wujie3375.github.io\blogs\test)

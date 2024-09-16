@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /blogs/test/index.html
-title: Blogs
+title: test
 ---
 
 # test
