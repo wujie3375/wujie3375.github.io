@@ -9,13 +9,13 @@ title: Achievements & Participation
 # Awards
 
 -  **Dec 2023:**  
-  **Second Prize** (Ranked 2th/3th),  *The 7th Sichuan Chongqing Astronomy Knowledge Competition*
+  **Second Prize** (Ranked 2th/3th),  *The 7th Sichuan Chongqing Astronomy Competition*
 -  **Jun 2022:**  
   **Excellent Graduation Thesis**, *China West Normal University*
 -  **May 2022:**  
   **Outstanding Graduate**, *China West Normal University*
 -  **Nov 2018:**  
-  **Third Prize** (Ranked 7th/8th),  *The 5th Sichuan Chongqing Astronomy Knowledge Competition* 
+  **Third Prize** (Ranked 7th/8th),  *The 5th Sichuan Chongqing Astronomy Competition* 
 
 ---
 
