@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /awards/index.html
-title: Achievements & Participation
+title: Honors & Participation
 ---
 
 > **Last Update:** September 14, 2024
@@ -36,15 +36,19 @@ title: Achievements & Participation
 
 # Meetings
 
--  **Apr 2024:**   
+-  **Apr 19, 2024:**   
   **PRESENTER**, *2024 Annual Meeting of Gravitation  and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting*, Hengyang, Hunan, China   
--  **Apr 2024:**  
+-  **Apr 9, 2024:**  
   **PARTICIPANT**, *The 2nd International Workshop on Gravitational Waves and the Early Universe*, Beijing, China  
--  **Oct 2023:**  
+-  **Oct 28, 2023:**  
+  **PARTICIPANT**, *2023 Electrodynamics textbook and course construction seminar*, Chongqing, China 
+-  **Oct 13, 2023:**  
   **PARTICIPANT**, *2023 Academic Symposium on the Frontiers of Theoretical Physics in Sichuan Chongqing Region*, Chengdu, Sichuan, China  
--  **Apr 2023:**  
-  **VOLUNTEER**, *2023 Annual Meeting of the Chinese Physical Society, Division of Gravitation  and Relativity Astrophysics*, Chongqing, China   
--  **Apr 2023:**  
+-  **Apr 22, 2023:**  
+  **VOLUNTEER**, *2023 Annual Meeting of the Chinese Physical Society, Division of Gravitation  and Relativity Astrophysics*, Chongqing, China 
+-  **Apr 21, 2023:**  
+  **VOLUNTEER**, *Template Library and Signal Recognition Technology for Space Gravitational Wave Detection 2022 Annual Progress Conference*, Chongqing, China   
+-  **Apr 1, 2023:**<span style="border: 1px solid black; padding: 3px;">[Photo](https://wujie3375.github.io\images\meeting\230401.jpg)</span>  
   **PARTICIPANT**, *Chongqing Theoretical Physics Frontier Academic Seminar*, Chongqing, China
 
 ---
