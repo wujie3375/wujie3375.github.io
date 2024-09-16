@@ -64,7 +64,7 @@ title: Publications
   
    <p style="text-indent: 0;">An Analysis of the LIGO Gravitational Waves Data Based on Newtonian Approximate Model </p>
 
-   <u><strong>Jie Wu</strong></u> (Advisor: Dr. Di Wu) 
+   <u><strong>Jie Wu</strong></u> (Advisor: Assoc. Prof. Di Wu) 
 
    *Undergraduate Thesis* (Excellent Graduation Thesis)
 

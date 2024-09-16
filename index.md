@@ -79,7 +79,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
     <p><strong>China West Normal University</strong></p>
     <p><em>B.S. in Physics</em> (supervised by 
     <a href="https://inspirehep.net/authors/1647692?ui-citation-summary=true&ui-exclude-self-citations=true">
-        Dr. Di Wu (吴迪)
+        Assoc. Prof. Di Wu (吴迪)
     </a>
     and
     <a href="https://inspirehep.net/authors/1275221?ui-citation-summary=true&ui-exclude-self-citations=true">
