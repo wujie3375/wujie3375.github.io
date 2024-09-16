@@ -46,7 +46,7 @@ title: Honors & Participation
     <strong>PRESENTER</strong>, <em>2024 Annual Meeting of Gravitation and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting</em>, Hengyang, Hunan, China. 
     <span style="font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
       <a href="https://wujie3375.github.io/images/meeting/240419.jpg" target="_blank">Photo</a>
-    </span>
+    </span> &nbsp
     <span style="font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
       <a href="https://wujie3375.github.io/images/meeting/240419.pdf" target="_blank">PPT</a>
     </span>
