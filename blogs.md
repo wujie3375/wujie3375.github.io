@@ -6,7 +6,7 @@ title: Blogs
 
 > **Last Update:** September 16, 2024
 
-# Micro-Content
+# Micro Text
 
 <div style="height: 250px; overflow-y: scroll; border: 0px solid #ccc; padding: 10px;">
 
