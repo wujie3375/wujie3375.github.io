@@ -16,8 +16,12 @@ title: Blogs
 
   <ul>
     <li>
+      <strong>Sep 17, 2024:</strong> On Mid-Autumn Festival, me and my friends headed to Nan'an District. Despite the scorching heat, we we still had a blast.
+    </li>
+    <li>
       <strong>Sep 10, 2024:</strong> It's the first day of making my personal homepage, and I'm really excited about it! 🎉🎉
     </li>
+    
     
 
 
