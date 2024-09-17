@@ -52,17 +52,10 @@ links:
     url: /publications/
   - title: Honors & Participation
     url: /awards/
-  - title: Blogs
-    url: /blogs/
-  - title: CV
-    url: /file/my_CV.pdf
-  
-  # - title: Hobbies
-  #   url: /hobbies/
   # - title: Blogs
   #   url: /blogs/
-  # - title: Teams
-  #   url: /teams/
+  - title: CV
+    url: /file/my_CV.pdf
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone: China/Beijing
