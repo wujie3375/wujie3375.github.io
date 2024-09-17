@@ -52,8 +52,8 @@ links:
     url: /publications/
   - title: Honors & Participation
     url: /awards/
-  # - title: Blogs
-  #   url: /blogs/
+  - title: Blogs
+    url: /blogs/blogs
   - title: CV
     url: /file/my_CV.pdf
 
