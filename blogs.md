@@ -38,4 +38,4 @@ Writing down some long essays sounds pretty cool. It would be really interesting
 
 ---
 
-> The faintest ink is better than the strongest memory.
+> The best way to predict the future is to create it.

@@ -141,14 +141,11 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 - **Teaching**  
     High School Physics Teacher Qualification Certificate.
 
----
-<!-- ## News
 
-- **Sep 10, 2024:** It's the first day of making my personal homepage, and I'm really excited about it! 🎉🎉 -->
 
 ---
 <div style="font-size: 15px; text-align: left;">
-  <s>People say that adding some poems at the end makes you look cool, but honestly, no one really pays attention to them anyway. So I just casually whipped up a few with AI. Who knows if they're any good or not.</s>
+  <s>People say that adding some poems at the end makes you look cool, but honestly, no one really cares them anyway. So I just casually whipped up a few with AI. Who knows if they're any good or not.</s>
 </div>
 
 
