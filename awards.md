@@ -41,16 +41,17 @@ title: Honors & Participation
   <p>Keep track of the meetings I've been to.</p>
 
   <ul>
-  <li style="margin-bottom: 15px;">
-    <strong>Apr 19, 2024:</strong> <br>
-    <strong>PRESENTER</strong>, <em>2024 Annual Meeting of Gravitation and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting</em>, Hengyang, Hunan, China. 
-    <span style="font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
-      <a href="https://wujie3375.github.io/images/meeting/240419.jpg" target="_blank">Photo</a>
-    </span> &nbsp
-    <span style="font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
-      <a href="https://wujie3375.github.io/images/meeting/240419.pdf" target="_blank">PPT</a>
-    </span>
-  </li>
+    <li style="margin-bottom: 15px;">
+      <strong>Apr 19, 2024:</strong> <br>
+      <strong>PRESENTER</strong>, <em>2024 Annual Meeting of Gravitation and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting</em>, Hengyang, Hunan, China. 
+      <span style="font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
+        <a href="https://wujie3375.github.io/images/meeting/240419.jpg" target="_blank">Photo</a>
+      </span> 
+      <span style="margin-left: 5px; font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
+        <a href="https://wujie3375.github.io/images/meeting/240419.pdf" target="_blank">PPT</a>
+      </span>
+    </li>
+
 
   <li style="margin-bottom: 15px;">
     <strong>Apr 9, 2024:</strong> <br>

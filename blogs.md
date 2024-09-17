@@ -19,6 +19,8 @@ title: Blogs
       <strong>Sep 10, 2024:</strong> It's the first day of making my personal homepage, and I'm really excited about it! 🎉🎉
     </li>
     
+
+
   </ul>
 </div>
 
@@ -29,4 +31,4 @@ title: Blogs
 
 Writing down some long essays sounds pretty cool. It would be really interesting to check it out again in a few decades and see how things have changed.
 
-- **Sep 10, 2024:** [测试test](https://wujie3375.github.io\blogs\240917)
+- **Sep 17, 2024:** [测试test](https://wujie3375.github.io\blogs\240917)
