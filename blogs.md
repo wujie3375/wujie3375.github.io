@@ -25,6 +25,8 @@ title: Blogs
 
 ---
 
-# Long Text
+# Long Essays
 
-- **Sep 10, 2024:** [测试test](https://wujie3375.github.io\blogs\test)
+Writing down some long essays sounds pretty cool. It would be really interesting to check it out again in a few decades and see how things have changed.
+
+- **Sep 10, 2024:** [测试test](https://wujie3375.github.io\blogs\240917)
