@@ -36,9 +36,9 @@ title: Honors & Participation
 
 # Meetings
 
-<div style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 10px;">
+Keep track of the meetings I've been to.
 
-  <p>Keep track of the meetings I've been to.</p>
+<div style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 10px;">
 
   <ul>
     <li style="margin-bottom: 15px;">
