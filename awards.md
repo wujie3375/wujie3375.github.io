@@ -37,11 +37,10 @@ title: Honors & Participation
 # Meetings
 
 Keep track of the meetings I've been to.
-
 <div style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 10px;">
-
   <ul>
-    <li style="margin-bottom: 15px;">
+
+  <li style="margin-bottom: 15px;">
       <strong>Apr 19, 2024:</strong> <br>
       <strong>PRESENTER</strong>, <em>2024 Annual Meeting of Gravitation and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting</em>, Hengyang, Hunan, China. 
       <span style="font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
