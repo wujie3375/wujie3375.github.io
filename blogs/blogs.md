@@ -35,7 +35,7 @@ title: Blogs
 
 Writing down some long essays sounds pretty cool. It would be really interesting to check it out again in a few decades and see how things have changed.
 
-- **Sep 18, 2024:** [博士生的奇幻冒险——序章](https://wujie3375.github.io\blogs\240918)
+- **Sep 18, 2024:** [博士生涯系列——序章](https://wujie3375.github.io\blogs\240918)
   
 
 
