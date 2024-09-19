@@ -35,8 +35,8 @@ Just writing down some thoughts and feelings here.
 
 Writing down some long essays sounds pretty cool. It would be really interesting to check it out again in a few decades and see how things have changed.
 
-- **Sep 19, 2024:** [博士生涯系列——序章](https://wujie3375.github.io\blogs\240919)
-- **Sep 18, 2024:** [研路回望：研究生两年汇总](https://wujie3375.github.io\blogs\240918)
+- **Sep 20, 2024:** [博士生涯系列——序章](https://wujie3375.github.io\blogs\240920)
+- **Sep 15, 2024:** [研路回望：研究生两年汇总](https://wujie3375.github.io\blogs\240915)
   
 
 
