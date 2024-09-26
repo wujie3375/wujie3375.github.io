@@ -17,13 +17,15 @@ Just writing down some thoughts and feelings here.
   <ul>
 
 
-
   <li>
-      <strong>Sep 17, 2024:</strong> On Mid-Autumn Festival, me and my friends headed to Nan'an District. Despite the scorching heat, we we still had a blast.
+      <strong>Sep 25:</strong> The good news is that my paper got accepted today! I'm so happy about it. It's actually the first paper of my doctoral stage.
+    </li>
+  <li>
+      <strong>Sep 17:</strong> On Mid-Autumn Festival, me and my friends headed to Nan'an District. Despite the scorching heat, we we still had a blast.
     </li>
 
   <li>
-      <strong>Sep 10, 2024:</strong> It's the first day of making my personal homepage, and I'm really excited about it! 🎉🎉
+      <strong>Sep 10:</strong> It's the first day of making my personal homepage, and I'm really excited about it! 🎉🎉
     </li>
   </ul>
 </div>
