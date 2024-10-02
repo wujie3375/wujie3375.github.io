@@ -159,7 +159,19 @@ Chase after the visions that fill you with light.
   —— April 2022
 </div> -->
 
-$$\begin{array}{c}
+<!-- $$\begin{array}{c}
   {\huge B>\frac{1}{N}\sum_{i=1}^{N} {X_i}}  \\
 \mathrm{(be\ greater\ than\ average)} 
-\end{array}$$
+\end{array}$$ -->
+
+<body>
+  <!-- 公式，字号为20，居中对齐 -->
+  <div style="text-align: center; font-size: 20px;">
+    $$B>\frac{1}{N}\sum_{i=1}^{N} {X_i}$$
+  </div>
+
+  <!-- 换行并显示文字，字号为20，居中对齐 -->
+  <div style="text-align: center; font-size: 20px; margin-top: 10px;">
+    (be greater than average)
+  </div>
+</body>
