@@ -159,19 +159,4 @@ Chase after the visions that fill you with light.
   —— April 2022
 </div> -->
 
-<!-- $$\begin{array}{c}
-  {\huge B>\frac{1}{N}\sum_{i=1}^{N} {X_i}}  \\
-\mathrm{(be\ greater\ than\ average)} 
-\end{array}$$ -->
-
-<body>
-  <!-- 公式，字号为20，居中对齐 -->
-  <div style="text-align: center; font-size: 20px;">
-    $$B>\frac{1}{N}\sum_{i=1}^{N} {X_i}$$
-  </div>
-
-  <!-- 换行并显示文字，字号为20，居中对齐 -->
-  <div style="text-align: center; font-size: 20px; margin-top: 10px;">
-    (be greater than average)
-  </div>
-</body>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable columnspacing="1em" rowspacing="4pt"><mtr><mtd><mrow><mstyle mathsize="2.07em"><mi>B</mi><mo>&gt;</mo><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover><mo data-mjx-texclass="OP">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>N</mi></mrow></munderover><mrow><msub><mi>X</mi><mi>i</mi></msub></mrow></mstyle></mrow></mtd></mtr><mtr><mtd><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">b</mi><mi mathvariant="normal">e</mi><mtext>&nbsp;</mtext><mi mathvariant="normal">g</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi><mtext>&nbsp;</mtext><mi mathvariant="normal">t</mi><mi mathvariant="normal">h</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">n</mi><mtext>&nbsp;</mtext><mi mathvariant="normal">a</mi><mi mathvariant="normal">v</mi><mi mathvariant="normal">e</mi><mi mathvariant="normal">r</mi><mi mathvariant="normal">a</mi><mi mathvariant="normal">g</mi><mi mathvariant="normal">e</mi><mo stretchy="false">)</mo></mrow></mtd></mtr></mtable></math>
