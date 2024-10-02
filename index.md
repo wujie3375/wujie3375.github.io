@@ -158,13 +158,12 @@ Chase after the visions that fill you with light.
 <div style="font-family: 'Comic Sans MS'; font-size: 19px; text-align: right;">
   —— April 2022
 </div> -->
+Try to
 
 <div style="text-align: center;">
   <!-- 插入名字图片 -->
-  <img src="https://wujie3375.github.io\images\eq.png" alt="eq" style="width: 250px; vertical-align: middle;">
+  <img src="https://wujie3375.github.io\images\eq.png" alt="eq" style="width: 200px; vertical-align: middle;">
   
   <!-- 日期和地点 -->
-  <p style="margin: 20px 0;">(be greater than average)</p>
+  <p style="margin: 25px 0;">(be greater than average)</p>
 </div>
-
-</body>
