@@ -144,7 +144,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 
 ---
-<div style="font-size: 15px; text-align: left;">
+<!-- <div style="font-size: 15px; text-align: left;">
   <s>People say that adding some poems at the end makes you look cool, but honestly, no one really cares them anyway. So I just casually whipped up a few with AI. Who knows if they're any good or not.</s>
 </div>
 
@@ -157,4 +157,9 @@ Chase after the visions that fill you with light.
 </div>
 <div style="font-family: 'Comic Sans MS'; font-size: 19px; text-align: right;">
   —— April 2022
-</div>
+</div> -->
+
+$$\begin{array}{c}
+  {\huge B>\frac{1}{N}\sum_{i=1}^{N} {X_i}}  \\
+\mathrm{(be\ greater\ than\ average)} 
+\end{array}$$

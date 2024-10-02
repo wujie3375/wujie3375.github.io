@@ -16,7 +16,7 @@ title: Publications
 
 ## 2024
 
--  **Dec 18, 2023:**  <span style="border: 1px solid black; padding: 3px;">[arXiv](https://arxiv.org/abs/2407.13590)</span> <span style="border: 1px solid black; padding: 3px;">[PDF](https://wujie3375.github.io\file\4.pdf)</span>
+-  **Dec 18, 2024:**  <span style="border: 1px solid black; padding: 3px;">[arXiv](https://arxiv.org/abs/2407.13590)</span> <span style="border: 1px solid black; padding: 3px;">[PDF](https://wujie3375.github.io\file\4.pdf)</span>
 
    <p style="text-indent: 0;">Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors</p>
 
