@@ -26,7 +26,7 @@ title: Publications
    <span style="float: right;">#4</span>
    
 
-<hr style="width: 90%; margin-left: auto;">
+<hr style="width: 92%; margin-left: auto;">
 
 
 -  Comparison and application of different post-Newtonian models for inspiralling stellar-mass binary black holes with space-based GW detectors
@@ -53,7 +53,7 @@ title: Publications
    <span style="float: right;">#2</span>
    
 
-<hr style="width: 90%; margin-left: auto;">
+<hr style="width: 92%; margin-left: auto;">
 
 
 -  Application of Newtonian approximate model to LIGO gravitational wave data processing (Suggested by editors) 
