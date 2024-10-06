@@ -16,6 +16,8 @@ title: Publications
 
 ## 2024
 
+<hr style="width: 60%; margin-left: auto; margin-right: auto;">
+
 -  Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors
 
    <u><strong>Jie Wu</strong></u> and Jin Li\* (Jul 18, 2024)
@@ -39,6 +41,8 @@ title: Publications
 ---
 
 ## 2023
+
+<hr style="width: 60%; margin-left: auto; margin-right: auto;">
 
 -  Subtraction of the confusion foreground and parameter uncertainty of resolvable galactic binaries on the networks of space-based gravitational-wave detectors
 
