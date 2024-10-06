@@ -16,13 +16,16 @@ title: Publications
 
 ## 2024
 
-- Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors
+-  Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors
 
-<u><strong>Jie Wu</strong></u> and Jin Li\* (Jul 18, 2024)
+   <u><strong>Jie Wu</strong></u> and Jin Li\* (Jul 18, 2024)
 
-*arXiv*:2407.13590 
+   *arXiv*:2407.13590 
    
-<span style="border: 1px solid black; padding: 2px;">[PDF](https://wujie3375.github.io\file\4.pdf)</span> <span style="border: 1px solid black; padding: 2px;">[arXiv](https://arxiv.org/abs/2407.13590)</span>
+   <span style="border: 1px solid black; padding: 2px;">[PDF](https://wujie3375.github.io\file\4.pdf)</span> <span style="border: 1px solid black; padding: 2px;">[arXiv](https://arxiv.org/abs/2407.13590)</span>
+
+<hr>
+
 
 -  Comparison and application of different post-Newtonian models for inspiralling stellar-mass binary black holes with space-based GW detectors
 
