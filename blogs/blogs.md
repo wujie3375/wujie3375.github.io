@@ -4,7 +4,7 @@ permalink: /blogs/blogs/index.html
 title: Blogs
 ---
 
-> **Last Update:** September 18, 2024
+> **Last Update:** October 6, 2024
 
 # Micro Text
 
@@ -17,6 +17,9 @@ Just writing down some thoughts and feelings here.
   <ul>
 
 
+  <li>
+      <strong>Oct 6:</strong> The National Day holiday is packed with so many dinner parties, and I'm afraid I'll end up gaining weight again. It's time to go back to school tomorrow.
+    </li>
   <li>
       <strong>Sep 25:</strong> The good news is that my paper got accepted today! I'm so happy about it. It's actually the first paper of my doctoral stage.
     </li>
