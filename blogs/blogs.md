@@ -12,7 +12,7 @@ Just writing down some thoughts and feelings here.
 
 <div style="height: 250px; overflow-y: scroll; border: 0px solid #ccc; padding: 10px;">
   
-  <h2>2024</h2>
+  <h2>This year</h2>
 
   <ul>
 
@@ -33,6 +33,7 @@ Just writing down some thoughts and feelings here.
   </ul>
 </div>
 
+<!-- ## Previous years -->
 
 ---
 
