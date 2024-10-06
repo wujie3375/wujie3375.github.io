@@ -25,7 +25,9 @@ title: Publications
    <span style="border: 1px solid black; padding: 2px;">[PDF](https://wujie3375.github.io\file\4.pdf)</span> <span style="border: 1px solid black; padding: 2px;">[arXiv](https://arxiv.org/abs/2407.13590)</span>
 
 
-<hr style="border: 1px dotted black;">
+<hr style="border: 1px dashed black;">
+
+<hr style="border: 3px double black;">
 
 
 -  Comparison and application of different post-Newtonian models for inspiralling stellar-mass binary black holes with space-based GW detectors
