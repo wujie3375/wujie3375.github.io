@@ -20,10 +20,10 @@ title: Publications
 
    <u><strong>Jie Wu</strong></u> and Jin Li\* (Jul 18, 2024)
 
-   *arXiv*:2407.13590 
-   <span style="float: right;">#4</span>
+   *arXiv*:2407.13590
    
-   <span style="border: 1px solid black; padding: 2px;">[PDF](https://wujie3375.github.io\file\4.pdf)</span> <span style="border: 1px solid black; padding: 2px;">[arXiv](https://arxiv.org/abs/2407.13590)</span>
+   <span style="border: 1px solid black; padding: 2px;">[PDF](https://wujie3375.github.io\file\4.pdf)</span> <span style="border: 1px solid black; padding: 2px;">[arXiv](https://arxiv.org/abs/2407.13590)</span> 
+   <span style="float: right;">#4</span>
    
 
 <hr style="width: 80%; margin-left: auto; margin-right: auto;">
@@ -34,9 +34,9 @@ title: Publications
    <u><strong>Jie Wu</strong></u>, Jin Li\*, Xiaolin Liu, and Zhoujian Cao (May 7, 2024)
 
    *Physical Review D* **109** 10, 104014
-   <span style="float: right;">#3</span> 
    
    <span style="border: 1px solid black; padding: 2px;">[PDF](https://wujie3375.github.io\file\3.pdf)</span> <span style="border: 1px solid black; padding: 2px;">[DOI](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.104014)</span> <span style="border: 1px solid black; padding: 2px;">[arXiv](https://arxiv.org/abs/2401.03113)</span>
+   <span style="float: right;">#3</span> 
    
 
 ---
@@ -47,10 +47,10 @@ title: Publications
 
    <u><strong>Jie Wu</strong></u> and Jin Li\* (Dec 18, 2023)
 
-   *Physical Review D* **108** 12, 124047 
-   <span style="float: right;">#2</span>
+   *Physical Review D* **108** 12, 124047
    
-   <span style="border: 1px solid black; padding: 2px;">[PDF](https://wujie3375.github.io\file\2.pdf)</span> <span style="border: 1px solid black; padding: 2px;">[DOI](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.124047)</span> <span style="border: 1px solid black; padding: 2px;">[arXiv](https://arxiv.org/abs/2307.05568)</span>
+   <span style="border: 1px solid black; padding: 2px;">[PDF](https://wujie3375.github.io\file\2.pdf)</span> <span style="border: 1px solid black; padding: 2px;">[DOI](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.124047)</span> <span style="border: 1px solid black; padding: 2px;">[arXiv](https://arxiv.org/abs/2307.05568)</span> 
+   <span style="float: right;">#2</span>
    
 
 <hr style="width: 80%; margin-left: auto; margin-right: auto;">
@@ -61,9 +61,9 @@ title: Publications
    <u><strong>Jie Wu</strong></u>, Jin Li\*, and Qing-Quan Jiang\* (Sep 27, 2023)
 
    *Chinese Physics B* **32** 9, 090401
-   <span style="float: right;">#1</span> 
    
    <span style="border: 1px solid black; padding: 2px;">[PDF](https://wujie3375.github.io\file\1.pdf)</span> <span style="border: 1px solid black; padding: 2px;">[DOI](https://cpb.iphy.ac.cn/EN/10.1088/1674-1056/acd8a3)</span> 
+   <span style="float: right;">#1</span> 
    
 
 ---
