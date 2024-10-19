@@ -12,7 +12,7 @@ layout: page
 
 <p style="text-indent: 1.5em;">Hi there! Welcome to my personal website!</p>
 
-I'm **Jie Wu**, a PhD candidate in physics (still working hard at it). 
+I'm **Jie Wu**, a PhD student in physics (still working hard at it). 
 I'm really excited about diving into the mysteries of the universe and can't wait to learn more about what we don't know. 
 I love physics, astronomy, and aerospace because they give me a great insight into how nature and the universe work.
 
