@@ -127,7 +127,7 @@ title: Publications
   </div>
 
   <div>
-    <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.124047"><em>Chin.Phys.B</em> <strong>32</strong> 9, 090401</a> 
+    <a href="https://iopscience.iop.org/article/10.1088/1674-1056/acd8a3"><em>Chin.Phys.B</em> <strong>32</strong> 9, 090401</a> 
     <span style="float: right;">
       <a href="https://wujie3375.github.io\file\1.pdf">#1</a>
     </span>
