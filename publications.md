@@ -21,7 +21,7 @@ title: Publications
    <u><strong>Jie Wu</strong></u> and Jin Li\* (Jul 18, 2024)
 
    [*arXiv*:2407.13590](https://arxiv.org/abs/2407.13590)
-   <span style="float: right;border: 1px solid black; padding: 2px;">[#4](https://wujie3375.github.io\file\4.pdf)</span>
+   <span style="float: right;">[#4](https://wujie3375.github.io\file\4.pdf)</span>
    
 
 <hr style="width: 91%; margin-left: auto;">
@@ -31,10 +31,14 @@ title: Publications
 
    <u><strong>Jie Wu</strong></u>, Jin Li\*, Xiaolin Liu, and Zhoujian Cao (May 7, 2024)
 
-   *Physical Review D* **109** 10, 104014
+   <!-- *Physical Review D* **109** 10, 104014
    
    <span style="border: 1px solid black; padding: 2px;">[PDF](https://wujie3375.github.io\file\3.pdf)</span> <span style="border: 1px solid black; padding: 2px;">[DOI](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.104014)</span> <span style="border: 1px solid black; padding: 2px;">[arXiv](https://arxiv.org/abs/2401.03113)</span>
-   <span style="float: right;">#3</span> 
+   <span style="float: right;">#3</span>  -->
+
+   [*Physical Review D* **109** 10, 104014](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.104014) |
+   [*arXiv*:2401.03113](https://arxiv.org/abs/2401.03113)
+   <span style="float: right;">[#3](https://wujie3375.github.io\file\3.pdf)</span>
    
 
 ---
