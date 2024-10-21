@@ -38,7 +38,7 @@ title: Publications
 
 ## 2024
 
-<ul style="border: 2px solid #ddd; border-radius: 10px; padding: 10px; list-style-type: none;">
+<ul style="border: 2px solid #ddd; border-radius: 8px; padding: 10px; list-style-type: none;">
   
   <div style="font-family: 'ARIALBD'; font-size: 20px;">
     Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors
@@ -58,11 +58,9 @@ title: Publications
 
 
 <!-- ===================================================== -->
-<!-- <hr style="width: 95%; margin-left: auto;"> -->
-<!-- ===================================================== -->
 
 
-<ul style="border: 2px solid #ddd; border-radius: 10px; padding: 10px; list-style-type: none;">
+<ul style="border: 2px solid #ddd; border-radius: 8px; padding: 10px; list-style-type: none;">
   <div style="font-family: 'ARIALBD'; font-size: 20px;">
     Comparison and application of different post-Newtonian models for inspiralling stellar-mass binary black holes with space-based GW detectors
   </div>
@@ -88,10 +86,10 @@ title: Publications
 
 ## 2023
 
-<ul>
-  <li style="font-family: 'ARIALBD'; font-size: 20px;">
+<ul style="border: 2px solid #ddd; border-radius: 8px; padding: 10px; list-style-type: none;">
+  <div style="font-family: 'ARIALBD'; font-size: 20px;">
     Subtraction of the confusion foreground and parameter uncertainty of resolvable galactic binaries on the networks of space-based gravitational-wave detectors
-  </li>
+  </div>
   
   <div style="font-family: 'ARIAL';">
     <u><strong>Jie Wu</strong></u> and Jin Li* (Dec 18, 2023)
@@ -108,14 +106,12 @@ title: Publications
    
 
 <!-- ===================================================== -->
-<hr style="width: 95%; margin-left: auto;">
-<!-- ===================================================== -->
 
 
-<ul>
-  <li style="font-family: 'ARIALBD'; font-size: 20px;">
+<ul style="border: 2px solid #ddd; border-radius: 8px; padding: 10px; list-style-type: none;">
+  <div style="font-family: 'ARIALBD'; font-size: 20px;">
     Application of Newtonian approximate model to LIGO gravitational wave data processing 
-  </li>(Suggested by editors)
+  </div>(Suggested by editors)
   
   <div style="font-family: 'ARIAL';">
     <u><strong>Jie Wu</strong></u>, Jin Li*, and Qing-Quan Jiang* (Sep 27, 2023)
@@ -134,10 +130,10 @@ title: Publications
 
 # Degree Thesis
 
-<ul>
-  <li style="font-family: 'ARIALBD'; font-size: 20px;">
+<ul style="border: 2px solid #ddd; border-radius: 8px; padding: 10px; list-style-type: none;">
+  <div style="font-family: 'ARIALBD'; font-size: 20px;">
     An Analysis of the LIGO Gravitational Waves Data Based on Newtonian Approximate Model
-  </li>
+  </div>
   
   <div style="font-family: 'ARIAL';">
     <u><strong>Jie Wu</strong></u> (May 2022, advisor: Assoc. Prof. Di Wu) 
