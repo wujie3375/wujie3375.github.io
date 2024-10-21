@@ -7,8 +7,15 @@ title: Publications
 <style>
   @font-face {
     font-family: 'times';
-    src: url('/assets/fonts/ARIALBD.TTF') format('truetype');
+    src: url('/assets/fonts/ARIAL.TTF') format('truetype');
   }
+  li {
+    font-family: 'times', serif;
+  }
+  /* li {
+    font-family: 'times', serif;
+    font-size: 24px;
+  } */
 </style>
 
 
@@ -25,7 +32,7 @@ title: Publications
 ## 2024
 
 <ul>
-  <li style="font-family: 'times'; font-size: 21px;">
+  <li>
     Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors
   </li>
 
@@ -48,7 +55,7 @@ title: Publications
 
 
 <ul>
-  <li style="font-family: 'times'; font-size: 21px;">
+  <li>
     Comparison and application of different post-Newtonian models for inspiralling stellar-mass binary black holes with space-based GW detectors
   </li>
   
