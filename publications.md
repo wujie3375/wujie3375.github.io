@@ -24,7 +24,6 @@ title: Publications
 
 ## 2024
 
-<!-- -  Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors -->
 <ul>
   <li style="font-family: 'times'; font-size: 24px;">
     Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors
@@ -37,13 +36,9 @@ title: Publications
 </ul>
 
 
-   <!-- <u><strong>Jie Wu</strong></u> and Jin Li\* (Jul 18, 2024)
-
-   [*arXiv*:2407.13590](https://arxiv.org/abs/2407.13590)
-   <span style="float: right;">[#4](https://wujie3375.github.io\file\4.pdf)</span> -->
-   
-
+<!-- ===================================================== -->
 <hr style="width: 91%; margin-left: auto;">
+<!-- ===================================================== -->
 
 
 -  Comparison and application of different post-Newtonian models for inspiralling stellar-mass binary black holes with space-based GW detectors
@@ -60,7 +55,9 @@ title: Publications
    <span style="float: right;">[#3](https://wujie3375.github.io\file\3.pdf)</span>
    
 
----
+<!-- ===================================================== -->
+<hr style="width: 100%; margin-left: auto;">
+<!-- ===================================================== -->
 
 ## 2023
 
@@ -74,7 +71,9 @@ title: Publications
    <span style="float: right;">#2</span>
    
 
+<!-- ===================================================== -->
 <hr style="width: 91%; margin-left: auto;">
+<!-- ===================================================== -->
 
 
 -  Application of Newtonian approximate model to LIGO gravitational wave data processing (Suggested by editors) 
