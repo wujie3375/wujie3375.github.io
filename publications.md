@@ -38,10 +38,11 @@ title: Publications
 
 ## 2024
 
-<ul style="border: 1px solid #ddd; border-radius: 10px; padding: 10px; list-style-type: none;">
-  <li style="font-family: 'ARIALBD'; font-size: 20px;">
+<ul style="border: 2px solid #ddd; border-radius: 10px; padding: 10px; list-style-type: none;">
+  
+  <div style="font-family: 'ARIALBD'; font-size: 20px;">
     Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors
-  </li>
+  </div>
 
   <div style="font-family: 'ARIAL';">
     <u><strong>Jie Wu</strong></u> and Jin Li* (Jul 18, 2024)
@@ -57,14 +58,14 @@ title: Publications
 
 
 <!-- ===================================================== -->
-<hr style="width: 95%; margin-left: auto;">
+<!-- <hr style="width: 95%; margin-left: auto;"> -->
 <!-- ===================================================== -->
 
 
-<ul>
-  <li style="font-family: 'ARIALBD'; font-size: 20px;">
+<ul style="border: 2px solid #ddd; border-radius: 10px; padding: 10px; list-style-type: none;">
+  <div style="font-family: 'ARIALBD'; font-size: 20px;">
     Comparison and application of different post-Newtonian models for inspiralling stellar-mass binary black holes with space-based GW detectors
-  </li>
+  </div>
   
   <div style="font-family: 'ARIAL';">
     <u><strong>Jie Wu</strong></u>, Jin Li*, Xiaolin Liu, and Zhoujian Cao (May 7, 2024)
