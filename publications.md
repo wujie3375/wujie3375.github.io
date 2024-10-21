@@ -9,13 +9,16 @@ title: Publications
     font-family: 'times';
     src: url('/assets/fonts/ARIAL.TTF') format('truetype');
   }
-  li {
-    font-family: 'times', serif;
-  }
   /* li {
     font-family: 'times', serif;
-    font-size: 24px;
   } */
+  li {
+    font-family: 'times', serif;
+    font-size: 19px;
+  }
+  body {
+    font-family: 'times', serif;
+  }
 </style>
 
 
@@ -64,7 +67,7 @@ title: Publications
   </div>
 
   <div>
-    <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.104014"><em>Phys.Rev.D</em> <strong>109</strong> 10, 104014</a> ·
+    <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.104014"><em>Phys.Rev.D</em> <strong>109</strong> 10, 104014</a> |
     <a href="https://arxiv.org/abs/2401.03113"><em>arXiv</em>:2401.03113</a>
     <span style="float: right;">
       <a href="https://wujie3375.github.io\file\3.pdf">#3</a>
@@ -80,14 +83,23 @@ title: Publications
 
 ## 2023
 
--  Subtraction of the confusion foreground and parameter uncertainty of resolvable galactic binaries on the networks of space-based gravitational-wave detectors
+<ul>
+  <li>
+    Subtraction of the confusion foreground and parameter uncertainty of resolvable galactic binaries on the networks of space-based gravitational-wave detectors
+  </li>
+  
+  <div>
+    <u><strong>Jie Wu</strong></u> and Jin Li* (Dec 18, 2023)
+  </div>
 
-   <u><strong>Jie Wu</strong></u> and Jin Li\* (Dec 18, 2023)
-
-   *Physical Review D* **108** 12, 124047
-   
-   <span style="border: 1px solid black; padding: 2px;">[PDF](https://wujie3375.github.io\file\2.pdf)</span> <span style="border: 1px solid black; padding: 2px;">[DOI](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.124047)</span> <span style="border: 1px solid black; padding: 2px;">[arXiv](https://arxiv.org/abs/2307.05568)</span> 
-   <span style="float: right;">#2</span>
+  <div>
+    <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.124047"><em>Phys.Rev.D</em> <strong>108</strong> 12, 124047</a> |
+    <a href="https://arxiv.org/abs/2307.05568"><em>arXiv</em>:2307.05568</a>
+    <span style="float: right;">
+      <a href="https://wujie3375.github.io\file\2.pdf">#2</a>
+    </span>
+  </div>
+</ul>
    
 
 <!-- ===================================================== -->
@@ -95,27 +107,41 @@ title: Publications
 <!-- ===================================================== -->
 
 
--  Application of Newtonian approximate model to LIGO gravitational wave data processing (Suggested by editors) 
+<ul>
+  <li>
+    Application of Newtonian approximate model to LIGO gravitational wave data processing (Suggested by editors)
+  </li>
+  
+  <div>
+    <u><strong>Jie Wu</strong></u>, Jin Li*, and Qing-Quan Jiang* (Sep 27, 2023)
+  </div>
 
-   <u><strong>Jie Wu</strong></u>, Jin Li\*, and Qing-Quan Jiang\* (Sep 27, 2023)
-
-   *Chinese Physics B* **32** 9, 090401
-   
-   <span style="border: 1px solid black; padding: 2px;">[PDF](https://wujie3375.github.io\file\1.pdf)</span> <span style="border: 1px solid black; padding: 2px;">[DOI](https://cpb.iphy.ac.cn/EN/10.1088/1674-1056/acd8a3)</span> 
-   <span style="float: right;">#1</span> 
+  <div>
+    <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.124047"><em>Chin.Phys.B</em> <strong>32</strong> 9, 090401</a> 
+    <span style="float: right;">
+      <a href="https://wujie3375.github.io\file\1.pdf">#1</a>
+    </span>
+  </div>
+</ul>
    
 
 ---
 
 # Degree Thesis
 
--  An Analysis of the LIGO Gravitational Waves Data Based on Newtonian Approximate Model
+<ul>
+  <li>
+    An Analysis of the LIGO Gravitational Waves Data Based on Newtonian Approximate Model
+  </li>
+  
+  <div>
+    <u><strong>Jie Wu</strong></u> (May 2022, advisor: Assoc. Prof. Di Wu) 
+  </div>
 
-   <u><strong>Jie Wu</strong></u> (May  2022, Advisor: Assoc. Prof. Di Wu) 
-
-   *Undergraduate Thesis* (Excellent Graduation Thesis) 
-   
-   <span style="border: 1px solid black; padding: 2px;">[PDF](https://wujie3375.github.io\file\Undergraduate-Thesis.pdf)</span>
+  <div>
+    <a href="https://wujie3375.github.io\file\1.pdf"><em>Undergraduate Thesis</em>  (Excellent Graduation Thesis)</a>
+  </div>
+</ul>
 
 ---
 
