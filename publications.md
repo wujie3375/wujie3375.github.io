@@ -151,7 +151,7 @@ title: Publications
   </div>
 
   <div>
-    <a href="https://wujie3375.github.io\file\1.pdf"><em>Undergraduate Thesis</em>  (Excellent Graduation Thesis)</a>
+    <a href="https://wujie3375.github.io\file\Undergraduate-Thesis.pdf"><em>Undergraduate Thesis</em>  (Excellent Graduation Thesis)</a>
   </div>
 </ul>
 
