@@ -25,7 +25,7 @@ title: Publications
 ## 2024
 
 <ul>
-  <li style="font-family: 'times'; font-size: 24px;">
+  <li style="font-family: 'times'; font-size: 21px;">
     Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors
   </li>
 
@@ -48,7 +48,7 @@ title: Publications
 
 
 <ul>
-  <li style="font-family: 'times'; font-size: 24px;">
+  <li style="font-family: 'times'; font-size: 21px;">
     Comparison and application of different post-Newtonian models for inspiralling stellar-mass binary black holes with space-based GW detectors
   </li>
   
