@@ -40,7 +40,7 @@ title: Publications
 
 <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 10px; list-style-type: none;">
   
-  <div style="font-family: 'ARIALBD'; font-size: 20px;">
+  <div style="font-family: 'ARIALBD'; font-size: 21px;">
     Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors
   </div>
 
@@ -61,7 +61,7 @@ title: Publications
 
 
 <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 10px; list-style-type: none;">
-  <div style="font-family: 'ARIALBD'; font-size: 20px;">
+  <div style="font-family: 'ARIALBD'; font-size: 21px;">
     Comparison and application of different post-Newtonian models for inspiralling stellar-mass binary black holes with space-based GW detectors
   </div>
   
@@ -87,7 +87,7 @@ title: Publications
 ## 2023
 
 <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 10px; list-style-type: none;">
-  <div style="font-family: 'ARIALBD'; font-size: 20px;">
+  <div style="font-family: 'ARIALBD'; font-size: 21px;">
     Subtraction of the confusion foreground and parameter uncertainty of resolvable galactic binaries on the networks of space-based gravitational-wave detectors
   </div>
   
@@ -109,9 +109,9 @@ title: Publications
 
 
 <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 10px; list-style-type: none;">
-  <div style="font-family: 'ARIALBD'; font-size: 20px;">
+  <div style="font-family: 'ARIALBD'; font-size: 21px;">
     Application of Newtonian approximate model to LIGO gravitational wave data processing 
-    <span style="font-family: 'ARIAL'; font-size: 12px;"> (Suggested by editors)</span>
+    <span style="font-family: 'ARIAL'; font-size: 15px;"> (Suggested by editors)</span>
   </div>
   
   <div style="font-family: 'ARIAL';">
@@ -132,7 +132,7 @@ title: Publications
 # Degree Thesis
 
 <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 10px; list-style-type: none;">
-  <div style="font-family: 'ARIALBD'; font-size: 20px;">
+  <div style="font-family: 'ARIALBD'; font-size: 21px;">
     An Analysis of the LIGO Gravitational Waves Data Based on Newtonian Approximate Model
   </div>
   
