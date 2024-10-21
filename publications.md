@@ -26,7 +26,7 @@ title: Publications
 </style>
 
 
-> **Last Update:** October 6, 2024
+> **Last Update:** October 21, 2024
 
 # Publications
 
@@ -111,7 +111,8 @@ title: Publications
 <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 10px; list-style-type: none;">
   <div style="font-family: 'ARIALBD'; font-size: 20px;">
     Application of Newtonian approximate model to LIGO gravitational wave data processing 
-  </div>(Suggested by editors)
+    <span style="font-family: 'ARIAL'; font-size: 12px;"> (Suggested by editors)</span>
+  </div>
   
   <div style="font-family: 'ARIAL';">
     <u><strong>Jie Wu</strong></u>, Jin Li*, and Qing-Quan Jiang* (Sep 27, 2023)
