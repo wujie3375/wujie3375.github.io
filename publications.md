@@ -16,13 +16,13 @@ title: Publications
   /* li {
     font-family: 'times', serif;
   } */
-  li {
+  /* li {
     font-family: 'ARIALBD', serif;
     font-size: 20px;
-  }
-  /* body {
-    font-family: 'ARIAL', serif;
   } */
+  body {
+    font-family: 'ARIAL', serif;
+  }
 </style>
 
 
@@ -39,7 +39,7 @@ title: Publications
 ## 2024
 
 <ul>
-  <li>
+  <li style="font-family: 'ARIALBD'; font-size: 20px;">
     Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors
   </li>
 
@@ -62,7 +62,7 @@ title: Publications
 
 
 <ul>
-  <li>
+  <li style="font-family: 'ARIALBD'; font-size: 20px;">
     Comparison and application of different post-Newtonian models for inspiralling stellar-mass binary black holes with space-based GW detectors
   </li>
   
@@ -88,7 +88,7 @@ title: Publications
 ## 2023
 
 <ul>
-  <li>
+  <li style="font-family: 'ARIALBD'; font-size: 20px;">
     Subtraction of the confusion foreground and parameter uncertainty of resolvable galactic binaries on the networks of space-based gravitational-wave detectors
   </li>
   
@@ -112,9 +112,9 @@ title: Publications
 
 
 <ul>
-  <li>
-    Application of Newtonian approximate model to LIGO gravitational wave data processing (Suggested by editors)
-  </li>
+  <li style="font-family: 'ARIALBD'; font-size: 20px;">
+    Application of Newtonian approximate model to LIGO gravitational wave data processing 
+  </li> (Suggested by editors)
   
   <div>
     <u><strong>Jie Wu</strong></u>, Jin Li*, and Qing-Quan Jiang* (Sep 27, 2023)
@@ -134,7 +134,7 @@ title: Publications
 # Degree Thesis
 
 <ul>
-  <li>
+  <li style="font-family: 'ARIALBD'; font-size: 20px;">
     An Analysis of the LIGO Gravitational Waves Data Based on Newtonian Approximate Model
   </li>
   
