@@ -44,6 +44,8 @@ title: Publications
     Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors
   </div>
 
+  <br style="line-height: 20px;">
+
   <div style="font-family: 'ARIAL';">
     <u><strong>Jie Wu</strong></u> and Jin Li* (Jul 18, 2024)
   </div>
