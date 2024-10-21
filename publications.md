@@ -7,7 +7,7 @@ title: Publications
 <style>
   @font-face {
     font-family: 'times';
-    src: url('/assets/fonts/TIMESBD.TTF') format('truetype');
+    src: url('/assets/fonts/ARIALBD.TTF') format('truetype');
   }
 </style>
 
