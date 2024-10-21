@@ -7,7 +7,7 @@ title: Publications
 <style>
   @font-face {
     font-family: 'times';
-    src: url('/assets/fonts/TIMES.TTF') format('truetype');
+    src: url('/assets/fonts/TIMESBD.TTF') format('truetype');
   }
 </style>
 
@@ -29,10 +29,16 @@ title: Publications
     Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors
   </li>
 
-  <u><strong>Jie Wu</strong></u> and Jin Li* (Jul 18, 2024)
+  <div>
+    <u><strong>Jie Wu</strong></u> and Jin Li* (Jul 18, 2024)
+  </div>
 
-  <a href="https://arxiv.org/abs/2407.13590"><em>arXiv</em>:2407.13590</a>
-  <span style="float: right;"><a href="https://wujie3375.github.io/file/4.pdf">#4</a></span>
+  <div>
+    <a href="https://arxiv.org/abs/2407.13590"><em>arXiv</em>:2407.13590</a>
+    <span style="float: right;">
+      <a href="https://wujie3375.github.io\file\4.pdf">#4</a>
+    </span>
+  </div>
 </ul>
 
 
@@ -41,18 +47,24 @@ title: Publications
 <!-- ===================================================== -->
 
 
--  Comparison and application of different post-Newtonian models for inspiralling stellar-mass binary black holes with space-based GW detectors
+<ul>
+  <li style="font-family: 'times'; font-size: 24px;">
+    Comparison and application of different post-Newtonian models for inspiralling stellar-mass binary black holes with space-based GW detectors
+  </li>
+  
+  <div>
+    <u><strong>Jie Wu</strong></u>, Jin Li*, Xiaolin Liu, and Zhoujian Cao (May 7, 2024)
+  </div>
 
-   <u><strong>Jie Wu</strong></u>, Jin Li\*, Xiaolin Liu, and Zhoujian Cao (May 7, 2024)
+  <div>
+    <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.104014"><em>Phys.Rev.D</em> <strong>109</strong> 10, 104014</a> ·
+    <a href="https://arxiv.org/abs/2401.03113"><em>arXiv</em>:2401.03113</a>
+    <span style="float: right;">
+      <a href="https://wujie3375.github.io\file\3.pdf">#3</a>
+    </span>
+  </div>
+</ul>
 
-   <!-- *Physical Review D* **109** 10, 104014
-   
-   <span style="border: 1px solid black; padding: 2px;">[PDF](https://wujie3375.github.io\file\3.pdf)</span> <span style="border: 1px solid black; padding: 2px;">[DOI](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.104014)</span> <span style="border: 1px solid black; padding: 2px;">[arXiv](https://arxiv.org/abs/2401.03113)</span>
-   <span style="float: right;">#3</span>  -->
-
-   [*Phys.Rev.D* **109** 10, 104014](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.104014) |
-   [*arXiv*:2401.03113](https://arxiv.org/abs/2401.03113)
-   <span style="float: right;">[#3](https://wujie3375.github.io\file\3.pdf)</span>
    
 
 <!-- ===================================================== -->
