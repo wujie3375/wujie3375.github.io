@@ -6,18 +6,22 @@ title: Publications
 
 <style>
   @font-face {
-    font-family: 'times';
+    font-family: 'ARIAL';
     src: url('/assets/fonts/ARIAL.TTF') format('truetype');
+  }
+  @font-face {
+    font-family: 'ARIALBD';
+    src: url('/assets/fonts/ARIALBD.TTF') format('truetype');
   }
   /* li {
     font-family: 'times', serif;
   } */
   li {
-    font-family: 'times', serif;
-    font-size: 19px;
+    font-family: 'ARIALBD', serif;
+    font-size: 20px;
   }
   body {
-    font-family: 'times', serif;
+    font-family: 'ARIAL', serif;
   }
 </style>
 
@@ -53,7 +57,7 @@ title: Publications
 
 
 <!-- ===================================================== -->
-<hr style="width: 91%; margin-left: auto;">
+<hr style="width: 95%; margin-left: auto;">
 <!-- ===================================================== -->
 
 
@@ -103,7 +107,7 @@ title: Publications
    
 
 <!-- ===================================================== -->
-<hr style="width: 91%; margin-left: auto;">
+<hr style="width: 95%; margin-left: auto;">
 <!-- ===================================================== -->
 
 
