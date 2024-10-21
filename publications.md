@@ -20,9 +20,9 @@ title: Publications
     font-family: 'ARIALBD', serif;
     font-size: 20px;
   }
-  body {
+  /* body {
     font-family: 'ARIAL', serif;
-  }
+  } */
 </style>
 
 
