@@ -4,6 +4,14 @@ permalink: /publications/index.html
 title: Publications
 ---
 
+<style>
+  @font-face {
+    font-family: 'times';
+    src: url('/assets/fonts/TIMES.TTF') format('truetype');
+  }
+</style>
+
+
 > **Last Update:** October 6, 2024
 
 # Publications
@@ -18,15 +26,16 @@ title: Publications
 
 <!-- -  Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors -->
 <ul>
-  <li style="font-family: 'Times New Roman', Times, serif; font-size: 24px;">
+  <li style="font-family: 'times'; font-size: 24px;">
     Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors
   </li>
 
   <u><strong>Jie Wu</strong></u> and Jin Li* (Jul 18, 2024)
 
-   [*arXiv*:2407.13590](https://arxiv.org/abs/2407.13590)
-   <span style="float: right;">[#4](https://wujie3375.github.io\file\4.pdf)</span>
+  <a href="https://arxiv.org/abs/2407.13590"><em>arXiv</em>:2407.13590</a>
+  <span style="float: right;"><a href="https://wujie3375.github.io/file/4.pdf">#4</a></span>
 </ul>
+
 
    <!-- <u><strong>Jie Wu</strong></u> and Jin Li\* (Jul 18, 2024)
 
