@@ -26,7 +26,7 @@ title: Publications
 </style>
 
 
-> **Last Update:** October 21, 2024
+> **Last Update:** October 25, 2024
 
 # Publications
 
@@ -47,10 +47,11 @@ title: Publications
   <div style="margin: 8px 0;"></div>
 
   <div style="font-family: 'ARIAL';">
-    <u><strong>Jie Wu</strong></u> and Jin Li* (Jul 18, 2024)
+    <u><strong>Jie Wu</strong></u> and Jin Li* (Oct 22, 2024)
   </div>
 
   <div>
+    <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.084057"><em>Phys.Rev.D</em> <strong>110</strong> 8, 084057</a> |
     <a href="https://arxiv.org/abs/2407.13590"><em>arXiv</em>:2407.13590</a>
     <span style="float: right;">
       <a href="https://wujie3375.github.io\file\4.pdf">#4</a>
