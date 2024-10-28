@@ -51,8 +51,10 @@ title: Publications
   </div>
 
   <div>
-    <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.084057"><em>Phys.Rev.D</em> <strong>110</strong> 8, 084057</a> |
-    <a href="https://arxiv.org/abs/2407.13590"><em>arXiv</em>:2407.13590</a>
+    <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.084057">
+    <em>Phys.Rev.D</em> <strong>110</strong>, 084057</a> |
+    <a href="https://arxiv.org/abs/2407.13590">
+    <em>arXiv</em>:2407.13590</a>
     <span style="float: right;">
       <a href="https://wujie3375.github.io\file\4.pdf">#4</a>
     </span>
@@ -75,8 +77,10 @@ title: Publications
   </div>
 
   <div>
-    <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.104014"><em>Phys.Rev.D</em> <strong>109</strong> 10, 104014</a> |
-    <a href="https://arxiv.org/abs/2401.03113"><em>arXiv</em>:2401.03113</a>
+    <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.104014">
+    <em>Phys.Rev.D</em> <strong>109</strong>, 104014</a> |
+    <a href="https://arxiv.org/abs/2401.03113">
+    <em>arXiv</em>:2401.03113</a>
     <span style="float: right;">
       <a href="https://wujie3375.github.io\file\3.pdf">#3</a>
     </span>
@@ -103,8 +107,10 @@ title: Publications
   </div>
 
   <div>
-    <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.124047"><em>Phys.Rev.D</em> <strong>108</strong> 12, 124047</a> |
-    <a href="https://arxiv.org/abs/2307.05568"><em>arXiv</em>:2307.05568</a>
+    <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.124047">
+    <em>Phys.Rev.D</em> <strong>108</strong>, 124047</a> |
+    <a href="https://arxiv.org/abs/2307.05568">
+    <em>arXiv</em>:2307.05568</a>
     <span style="float: right;">
       <a href="https://wujie3375.github.io\file\2.pdf">#2</a>
     </span>
@@ -128,7 +134,8 @@ title: Publications
   </div>
 
   <div>
-    <a href="https://iopscience.iop.org/article/10.1088/1674-1056/acd8a3"><em>Chin.Phys.B</em> <strong>32</strong> 9, 090401</a> 
+    <a href="https://iopscience.iop.org/article/10.1088/1674-1056/acd8a3">
+    <em>Chin.Phys.B</em> <strong>32</strong>, 090401</a> 
     <span style="float: right;">
       <a href="https://wujie3375.github.io\file\1.pdf">#1</a>
     </span>
@@ -152,7 +159,8 @@ title: Publications
   </div>
 
   <div>
-    <a href="https://wujie3375.github.io\file\Undergraduate-Thesis.pdf"><em>Undergraduate Thesis</em>  (Excellent Graduation Thesis)</a>
+    <a href="https://wujie3375.github.io\file\Undergraduate-Thesis.pdf">
+    <em>Undergraduate Thesis (in Chinese)</em>  (Excellent Graduation Thesis)</a>
   </div>
 </ul>
 
