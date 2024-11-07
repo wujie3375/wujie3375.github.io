@@ -2,6 +2,36 @@
 layout: page
 ---
 
+<div class="home-container">
+  <h1>Jie Wu's Homepage</h1>
+  <nav>
+    <ul>
+      {% for link in site.data.links %}
+        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
+
+<style>
+  .home-container {
+    text-align: center;
+    margin-top: 20%;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  nav li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+</style>
+
 <!-- # <span style="color:red">The website is not completed.</span> -->
 
 # About me
