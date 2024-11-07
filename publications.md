@@ -41,6 +41,30 @@ title: Publications
 <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
   
   <div style="font-family: 'ARIALBD'; font-size: 20px;">
+    Constraints and detection capabilities of GW polarizations with space-based detectors in different TDI combinations
+  </div>
+
+  <div style="margin: 8px 0;"></div>
+
+  <div style="font-family: 'ARIAL';">
+    <u><strong>Jie Wu</strong></u>, Mengfei Sun, and Jin Li* (Nov 6, 2024)
+  </div>
+
+  <div>
+    <a href="https://arxiv.org/abs/2411.03631">
+    <em>arXiv</em>:2411.03631</a>
+    <span style="float: right;">
+      <a href="https://wujie3375.github.io\file\5.pdf">#5</a>
+    </span>
+  </div>
+</ul>
+
+
+<!-- ===================================================== -->
+
+<ul style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
+  
+  <div style="font-family: 'ARIALBD'; font-size: 20px;">
     Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors
   </div>
 
