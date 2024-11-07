@@ -26,7 +26,7 @@ title: Publications
 </style>
 
 
-> **Last Update:** October 28, 2024
+> **Last Update:** November 7, 2024
 
 # Publications
 
