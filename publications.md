@@ -38,6 +38,8 @@ title: Publications
 
 ## 2024
 
+<!-- ===================================================== -->
+
 <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
   
   <div style="font-family: 'ARIALBD'; font-size: 20px;">
@@ -61,6 +63,7 @@ title: Publications
 
 
 <!-- ===================================================== -->
+
 
 <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
   
@@ -118,6 +121,8 @@ title: Publications
 <!-- ===================================================== -->
 
 ## 2023
+
+<!-- ===================================================== -->
 
 <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
   <div style="font-family: 'ARIALBD'; font-size: 20px;">
