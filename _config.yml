@@ -47,7 +47,7 @@ google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
 # For external links add external: true
 links:
   - title: About
-    url: /
+    url: /about
   - title: Publications
     url: /publications
   - title: Honors & Participation
