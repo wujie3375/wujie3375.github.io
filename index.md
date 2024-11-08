@@ -1,22 +1,52 @@
----
-layout: page2
----
-
-<div style="text-align: center; margin-top: 20vh;">
-  <h1 style="font-size: 48px; margin-bottom: 20px;">AAA</h1>
-
-  <ul style="list-style-type: none; padding: 0; margin: 20px 0; display: flex; justify-content: center;">
-    <li style="margin: 0 10px;">
-      <a href="/about" style="text-decoration: none; color: #007bff; font-size: 18px; display: inline-block; padding: 10px 20px; border: 1px solid #007bff; border-radius: 5px;">About</a>
-    </li>
-    <li style="margin: 0 10px;">
-      <a href="/publications" style="text-decoration: none; color: #007bff; font-size: 18px; display: inline-block; padding: 10px 20px; border: 1px solid #007bff; border-radius: 5px;">Publications</a>
-    </li>
-    <li style="margin: 0 10px;">
-      <a href="/awards" style="text-decoration: none; color: #007bff; font-size: 18px; display: inline-block; padding: 10px 20px; border: 1px solid #007bff; border-radius: 5px;">Honors & Participation</a>
-    </li>
-    <li style="margin: 0 10px;">
-      <a href="/file/my_CV.pdf" style="text-decoration: none; color: #007bff; font-size: 18px; display: inline-block; padding: 10px 20px; border: 1px solid #007bff; border-radius: 5px;">CV</a>
-    </li>
-  </ul>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      margin: 10px 0;
+    }
+    a {
+      text-decoration: none;
+      color: #007bff;
+      font-size: 18px;
+      display: inline-block;
+      padding: 10px 20px;
+      border: 1px solid #007bff;
+      border-radius: 5px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align: center;">
+    <h1>AAA</h1>
+    <ul>
+      <li><a href="/about">About</a></li>
+      <li><a href="/publications">Publications</a></li>
+      <li><a href="/awards">Honors & Participation</a></li>
+      <li><a href="/file/my_CV.pdf">CV</a></li>
+    </ul>
+  </div>
+</body>
+</html>
