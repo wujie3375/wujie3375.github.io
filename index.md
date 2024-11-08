@@ -1,6 +1,5 @@
 ---
-layout: none  # 或者根据你的布局需求，比如 'default'
-title: Home
+layout: page2
 ---
 
 <!-- 在主页中插入 iframe 或 link 到页面文件 -->
