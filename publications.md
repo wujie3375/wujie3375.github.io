@@ -32,7 +32,7 @@ title: Publications
 
 <p style="text-indent: 0;">publications by categories in reversed chronological order.</p>
 
-<p style="text-indent: 0;">(*: corresponding author)</p>
+<p style="text-indent: 0; font-family: 'ARIAL';">(*: corresponding author)</p>
 
 ---
 
@@ -49,10 +49,9 @@ title: Publications
   <div style="margin: 8px 0;"></div>
 
   <div style="font-family: 'ARIAL';">
-    <strong style="text-decoration: underline; text-decoration-thickness: 3px;">
+    <strong style="text-decoration: underline; text-decoration-thickness: 2px;">
       Jie Wu
-    </strong>, 
-    Mengfei Sun, and Jin Li* (Nov 6, 2024)
+    </strong>, Mengfei Sun, and Jin Li* (Nov 6, 2024)
   </div>
 
   <div>
@@ -77,7 +76,9 @@ title: Publications
   <div style="margin: 8px 0;"></div>
 
   <div style="font-family: 'ARIAL';">
-    <u><strong>Jie Wu</strong></u> and Jin Li* (Sep 24, 2024)
+    <strong style="text-decoration: underline; text-decoration-thickness: 2px;">
+      Jie Wu
+    </strong> and Jin Li* (Sep 24, 2024)
   </div>
 
   <div>
@@ -103,7 +104,9 @@ title: Publications
   <div style="margin: 8px 0;"></div>
 
   <div style="font-family: 'ARIAL';">
-    <u><strong>Jie Wu</strong></u>, Jin Li*, Xiaolin Liu, and Zhoujian Cao (Apr 6, 2024)
+    <strong style="text-decoration: underline; text-decoration-thickness: 2px;">
+      Jie Wu
+    </strong>, Jin Li*, Xiaolin Liu, and Zhoujian Cao (Apr 6, 2024)
   </div>
 
   <div>
@@ -135,7 +138,9 @@ title: Publications
   <div style="margin: 8px 0;"></div>
 
   <div style="font-family: 'ARIAL';">
-    <u><strong>Jie Wu</strong></u> and Jin Li* (Nov 30, 2023)
+    <strong style="text-decoration: underline; text-decoration-thickness: 2px;">
+      Jie Wu
+    </strong> and Jin Li* (Nov 30, 2023)
   </div>
 
   <div>
@@ -162,7 +167,9 @@ title: Publications
   <div style="margin: 8px 0;"></div>
 
   <div style="font-family: 'ARIAL';">
-    <u><strong>Jie Wu</strong></u>, Jin Li*, and Qing-Quan Jiang* (May 25, 2023)
+    <strong style="text-decoration: underline; text-decoration-thickness: 2px;">
+      Jie Wu
+    </strong>, Jin Li*, and Qing-Quan Jiang* (May 25, 2023)
   </div>
 
   <div>
@@ -187,7 +194,9 @@ title: Publications
   <div style="margin: 8px 0;"></div>
 
   <div style="font-family: 'ARIAL';">
-    <u><strong>Jie Wu</strong></u> (May 2022, advisor: Assoc. Prof. Di Wu) 
+    <strong style="text-decoration: underline; text-decoration-thickness: 2px;">
+      Jie Wu
+    </strong> (May 2022, advisor: Assoc. Prof. Di Wu) 
   </div>
 
   <div>
