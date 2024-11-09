@@ -49,7 +49,10 @@ title: Publications
   <div style="margin: 8px 0;"></div>
 
   <div style="font-family: 'ARIAL';">
-    <u><strong>Jie Wu</strong></u>, Mengfei Sun, and Jin Li* (Nov 6, 2024)
+    <strong style="text-decoration: underline; text-decoration-thickness: 3px;">
+      Jie Wu
+    </strong>, 
+    Mengfei Sun, and Jin Li* (Nov 6, 2024)
   </div>
 
   <div>
