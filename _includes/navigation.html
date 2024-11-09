@@ -9,7 +9,7 @@
 		<ul>
 		  {% for link in site.links %}
 			<li>
-			  <a href="{{ site.url }}{{ link.url }}" 
+			  <a href="{{ link.url }}" 
 				 {% if url == link.url %}class="top-navigation-current"{% endif %}>
 				{{ link.title }}
 			  </a>
