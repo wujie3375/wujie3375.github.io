@@ -54,7 +54,7 @@
       margin: 20px auto;
     }
     .footer-text {
-      margin-top: 50px; /* 向下移动整体小字 */
+      margin-top: 90px; /* 向下移动整体小字 */
       font-size: 14px;
       text-align: center;
     }
@@ -63,10 +63,19 @@
       text-decoration: none; /* 取消下划线 */
       border: none; /* 移除边框 */
       font-size: inherit; /* 使链接的字体大小与父元素一致 */
+      margin: 0;
+      padding: 0;
+      display: inline;
+    }
+    .waveform-image {
+      width: 50%; /* 设置图片宽度为横线宽度的一半（60%的一半） */
+      max-width: 300px; /* 添加一个最大宽度限制，避免在较大屏幕上过大 */
+      margin-bottom: 10px; /* 调整与横线的间距 */
     }
   </style>
 </head>
 <body>
+  <img src="/images/waveform.png" alt="Waveform Image" class="waveform-image">
   <hr>
   <div style="text-align: center;">
     <h1>Welcome!</h1>
@@ -80,8 +89,9 @@
   </div>
   <hr>
   <div class="footer-text">
-    © 2024 Jie Wu (吴洁). Published with <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-    Image source: <a href="https://www.ligo.caltech.edu/image/ligo20170601a" target="_blank">LIGO Laboratory</a>.
+    © 2024 Jie Wu (吴洁) 
+    <a href="https://pages.github.com/" target="_blank">Published with GitHub Pages.</a>
+    <a href="https://www.ligo.caltech.edu/image/ligo20170601a" target="_blank">Image source: LIGO Laboratory.</a>
   </div>
 </body>
 </html>
