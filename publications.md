@@ -50,8 +50,7 @@ title: Publications
 
   <div style="font-family: 'ARIAL';">
     <strong style="text-decoration: underline; text-decoration-thickness: 2px;">
-      Jie Wu
-    </strong>, Mengfei Sun, and Jin Li* (Nov 6, 2024)
+      Jie Wu</strong>, Mengfei Sun, and Jin Li* (Nov 6, 2024)
   </div>
 
   <div>
@@ -77,8 +76,7 @@ title: Publications
 
   <div style="font-family: 'ARIAL';">
     <strong style="text-decoration: underline; text-decoration-thickness: 2px;">
-      Jie Wu
-    </strong> and Jin Li* (Sep 24, 2024)
+      Jie Wu</strong> and Jin Li* (Sep 24, 2024)
   </div>
 
   <div>
@@ -105,8 +103,7 @@ title: Publications
 
   <div style="font-family: 'ARIAL';">
     <strong style="text-decoration: underline; text-decoration-thickness: 2px;">
-      Jie Wu
-    </strong>, Jin Li*, Xiaolin Liu, and Zhoujian Cao (Apr 6, 2024)
+      Jie Wu</strong>, Jin Li*, Xiaolin Liu, and Zhoujian Cao (Apr 6, 2024)
   </div>
 
   <div>
@@ -139,8 +136,7 @@ title: Publications
 
   <div style="font-family: 'ARIAL';">
     <strong style="text-decoration: underline; text-decoration-thickness: 2px;">
-      Jie Wu
-    </strong> and Jin Li* (Nov 30, 2023)
+      Jie Wu</strong> and Jin Li* (Nov 30, 2023)
   </div>
 
   <div>
@@ -168,8 +164,7 @@ title: Publications
 
   <div style="font-family: 'ARIAL';">
     <strong style="text-decoration: underline; text-decoration-thickness: 2px;">
-      Jie Wu
-    </strong>, Jin Li*, and Qing-Quan Jiang* (May 25, 2023)
+      Jie Wu</strong>, Jin Li*, and Qing-Quan Jiang* (May 25, 2023)
   </div>
 
   <div>
@@ -182,7 +177,10 @@ title: Publications
 </ul>
    
 
----
+<!-- ===================================================== -->
+<hr style="width: 100%; margin-left: auto;">
+<!-- ===================================================== -->
+
 
 # Degree Thesis
 
@@ -195,8 +193,7 @@ title: Publications
 
   <div style="font-family: 'ARIAL';">
     <strong style="text-decoration: underline; text-decoration-thickness: 2px;">
-      Jie Wu
-    </strong> (May 2022, advisor: Assoc. Prof. Di Wu) 
+      Jie Wu</strong> (May 2022, advisor: Assoc. Prof. Di Wu) 
   </div>
 
   <div>
@@ -207,4 +204,4 @@ title: Publications
 
 ---
 
-> I’m hoping that by listing these, it'll be easier for me to find them later on. 😊😊
+> I'm hoping that by listing these, it'll be easier for me to find them later on. 😊😊
