@@ -42,7 +42,7 @@ title: Publications
 
 <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
   
-  <div style="font-family: 'ARIALBD'; font-size: 20px; line-height: 1.2;">
+  <div style="font-family: 'ARIALBD'; font-size: 20px; line-height: 1.4;">
     Constraints and detection capabilities of GW polarizations with space-based detectors in different TDI combinations
   </div>
 
@@ -67,7 +67,7 @@ title: Publications
 
 <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
   
-  <div style="font-family: 'ARIALBD'; font-size: 20px; line-height: 0.8;">
+  <div style="font-family: 'ARIALBD'; font-size: 20px; line-height: 1.4;">
     Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors
   </div>
 
@@ -93,7 +93,7 @@ title: Publications
 
 
 <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
-  <div style="font-family: 'ARIALBD'; font-size: 20px;">
+  <div style="font-family: 'ARIALBD'; font-size: 20px; line-height: 1.4;">
     Comparison and application of different post-Newtonian models for inspiralling stellar-mass binary black holes with space-based GW detectors
   </div>
 
@@ -125,7 +125,7 @@ title: Publications
 <!-- ===================================================== -->
 
 <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
-  <div style="font-family: 'ARIALBD'; font-size: 20px;">
+  <div style="font-family: 'ARIALBD'; font-size: 20px; line-height: 1.4;">
     Subtraction of the confusion foreground and parameter uncertainty of resolvable galactic binaries on the networks of space-based gravitational-wave detectors
   </div>
 
@@ -151,7 +151,7 @@ title: Publications
 
 
 <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
-  <div style="font-family: 'ARIALBD'; font-size: 20px;">
+  <div style="font-family: 'ARIALBD'; font-size: 20px; line-height: 1.4;">
     Application of Newtonian approximate model to LIGO gravitational wave data processing 
     <span style="font-family: 'ARIAL'; font-size: 15px;"> (Suggested by editors)</span>
   </div>
@@ -177,7 +177,7 @@ title: Publications
 # Degree Thesis
 
 <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
-  <div style="font-family: 'ARIALBD'; font-size: 20px;">
+  <div style="font-family: 'ARIALBD'; font-size: 20px; line-height: 1.4;">
     An Analysis of the LIGO Gravitational Waves Data Based on Newtonian Approximate Model
   </div>
 
