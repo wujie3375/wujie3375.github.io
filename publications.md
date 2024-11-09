@@ -42,7 +42,7 @@ title: Publications
 
 <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
   
-  <div style="font-family: 'ARIALBD'; font-size: 20px;">
+  <div style="font-family: 'ARIALBD'; font-size: 20px; line-height: 1.2;">
     Constraints and detection capabilities of GW polarizations with space-based detectors in different TDI combinations
   </div>
 
@@ -67,7 +67,7 @@ title: Publications
 
 <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
   
-  <div style="font-family: 'ARIALBD'; font-size: 20px;">
+  <div style="font-family: 'ARIALBD'; font-size: 20px; line-height: 0.8;">
     Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors
   </div>
 
