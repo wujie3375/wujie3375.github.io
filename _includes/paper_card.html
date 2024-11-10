@@ -2,15 +2,35 @@
     <!-- Title -->
     <div style="font-family: 'ARIALBD'; font-size: 20px; line-height: 1.4;">
       {{ include.title }}
+      {% if include.subtitle %}
+        <span style="font-family: 'ARIAL'; font-size: 15px;">{{ include.subtitle }}</span>
+      {% endif %}
     </div>
   
     <div style="margin: 8px 0;"></div>
   
     <!-- Authors -->
     <div style="font-family: 'ARIAL';">
-      <strong style="text-decoration: underline; text-decoration-thickness: 2px;">
-        {{ include.authors }}
-      </strong> ({{ include.date }})
+      {% assign authors = include.authors | split: ',' %}
+      {% if authors.size > 4 %}
+        <em>et al.</em>
+      {% else %}
+        {% for author in authors %}
+          {% if forloop.index == include.highlight_author %}
+            <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
+          {% else %}
+            {{ author | strip }}
+          {% endif %}
+          {% if forloop.last == false %}
+            {% if forloop.index == authors.size - 1 %}
+              and
+            {% else %}
+              ,
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      ({{ include.date }})
     </div>
   
     <div>
@@ -30,7 +50,7 @@
       <!-- PDF Link -->
       {% if include.pdf %}
         <span style="float: right;">
-          <a href="{{ include.pdf }}">#{{ include.issue }}</a>
+          <a href="{{ include.pdf }}">#{{ include.number }}</a>
         </span>
       {% endif %}
     </div>
