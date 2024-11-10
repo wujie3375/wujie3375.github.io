@@ -56,10 +56,11 @@ Currently, my primary research focus is on the simulation of gravitational wave 
   <div>
     <p><strong>Sep 2022 - Jun 2028</strong> (expected)<strong>:</strong></p>
     <p><strong>Chongqing University</strong></p>
-    <p><em>Ph.D. in Physics</em> (Advisor:  
+    <p><em>Ph.D. in Physics</em></p>
+    <p>Advisor:  
     <a href="https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true">
         Prof. Jin Li (李瑾)
-    </a>)</p>
+    </a></p>
   </div>
 </div>
 
@@ -73,14 +74,15 @@ Currently, my primary research focus is on the simulation of gravitational wave 
   <div>
     <p><strong>Sep 2018 - Jun 2022:</strong></p>
     <p><strong>China West Normal University</strong></p>
-    <p><em>B.S. in Physics</em> (Advisors: 
+    <p><em>B.S. in Physics</em></p>
+    <p>Advisors: 
     <a href="https://inspirehep.net/authors/1647692?ui-citation-summary=true&ui-exclude-self-citations=true">
         Assoc. Prof. Di Wu (吴迪)
     </a>
     and
     <a href="https://inspirehep.net/authors/1275221?ui-citation-summary=true&ui-exclude-self-citations=true">
         Assoc. Prof. Guo-Ping Li (李国平)
-    </a>)</p>
+    </a></p>
   </div>
 </div>
 
@@ -98,10 +100,11 @@ Currently, my primary research focus is on the simulation of gravitational wave 
   <div>
     <p><strong>Feb 2024 - Apr 2024:</strong></p>
     <p><strong>Beijing Normal University</strong></p>
-    <p><em>VISITOR</em> (Advisor:  
+    <p><em>VISITOR</em></p>
+    <p>Advisor:  
     <a href="https://inspirehep.net/authors/1060083?ui-citation-summary=true&ui-exclude-self-citations=true">
         Prof. Zhoujian Cao (曹周键)
-    </a>)</p>
+    </a></p>
   </div>
 </div>
 
@@ -118,11 +121,11 @@ Currently, my primary research focus is on the simulation of gravitational wave 
     <p><em>PARTICIPANT</em>, 
     <a href="https://astro.ucas.ac.cn/index.php/cn/home/2016-03-17-03-00-27/314-2020-3">
         College Student Innovation and Practice Program
-    </a>
-     (Advisor:  
+    </a></p>
+    <p>Advisor:  
     <a href="https://inspirehep.net/authors/1040919?ui-citation-summary=true&ui-exclude-self-citations=true">
         Assoc. Prof. Yong Tang (汤勇)
-    </a>)</p>
+    </a></p>
   </div>
 </div>
 
