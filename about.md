@@ -59,7 +59,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
       <span>Sep 2022 - Jun 2028 (expected)</span>
     </div>
     
-  <p style="margin: 0; font-style: italic;">
+  <p style="margin: 0; font-style: italic; text-indent: 1.5em;">
     Ph.D. in Physics
     </p>
     
@@ -84,7 +84,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
       <span>Sep 2018 - Jun 2022</span>
     </div>
     
-  <p style="margin: 0; font-style: italic;">
+  <p style="margin: 0; font-style: italic; text-indent: 1.5em;">
     B.S. in Physics
     </p>
     
@@ -118,7 +118,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
       <span>Feb 2024 - Apr 2024</span>
     </div>
     
-  <p style="margin: 0; font-style: italic;">
+  <p style="margin: 0; font-style: italic; text-indent: 1.5em;">
     VISITOR
     </p>
     
@@ -143,7 +143,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
       <span>Sep 2020 - Sep 2021</span>
     </div>
     
-  <p style="margin: 0; font-style: italic;">
+  <p style="margin: 0; font-style: italic; text-indent: 1.5em;">
     PARTICIPANT
     </p>
     
