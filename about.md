@@ -48,7 +48,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 ## Education
 
 
-<div style="display: flex; align-items: flex-start; position: relative; width: 100%; padding-left: 0px;">
+<div style="display: flex; align-items: flex-start; position: relative; width: 100%; padding-left: 0px; margin-top: 15px;">
   <!-- 学校的 logo -->
   <img src="https://wujie3375.github.io/images/logo2/cqu.png" alt="CQU" style="height: 90px; margin-right: 10px;">
   
@@ -71,7 +71,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 
 
-<div style="display: flex; align-items: flex-start; position: relative; width: 100%; padding-left: 0px;">
+<div style="display: flex; align-items: flex-start; position: relative; width: 100%; padding-left: 0px; margin-top: 15px;">
   <!-- 学校的 logo -->
   <img src="https://wujie3375.github.io/images/logo2/cwnu.png" alt="CWNU" style="height: 90px; margin-right: 10px;">
   
@@ -118,36 +118,39 @@ Currently, my primary research focus is on the simulation of gravitational wave 
     </p>
   </div>
 
-  <!-- 时间段 -->
-  <div style="margin-left: 15px; text-align: right; white-space: nowrap;">
-    <p style="margin: 0;">Feb 2024 - Apr 2024</p>
+  <!-- 时间段，靠右对齐 -->
+  <div style="margin-left: auto; text-align: right;">
+    <p style="margin: 0;"><strong>Feb 2024 - Apr 2024</strong></p>
   </div>
 </div>
 
-<div style="display: flex; align-items: flex-start; position: relative; width: 100%; padding-left: 0px; margin-top: 15px;">
+<div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
   <!-- 学校的 logo -->
   <img src="https://wujie3375.github.io/images/logo2/ucas.png" alt="UCAS" style="height: 90px; margin-right: 10px;">
   
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
-    <p style="margin: 0;"><strong>University of Chinese Academy of Sciences</strong></p>
-    <p style="margin: 0;"><em>PARTICIPANT</em>, 
+    <!-- 第一排：学校和日期，学校靠左，日期靠右 -->
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <strong>University of Chinese Academy of Sciences</strong>
+      <span>Sep 2020 - Sep 2021</span>
+    </div>
+    
+    <p style="margin: 0; font-style: italic;">PARTICIPANT, 
       <a href="https://astro.ucas.ac.cn/index.php/cn/home/2016-03-17-03-00-27/314-2020-3">
           College Student Innovation and Practice Program
       </a>
     </p>
+    
     <p style="margin: 0;">Advisor:  
       <a href="https://inspirehep.net/authors/1040919?ui-citation-summary=true&ui-exclude-self-citations=true">
           Assoc. Prof. Yong Tang (汤勇)
       </a>
     </p>
   </div>
-
-  <!-- 时间段 -->
-  <div style="margin-left: 15px; text-align: right; white-space: nowrap;">
-    <p style="margin: 0;">Sep 2020 - Sep 2021</p>
-  </div>
 </div>
+
+
 
 
 
