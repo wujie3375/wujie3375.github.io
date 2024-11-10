@@ -39,7 +39,8 @@ title: Publications
 
 ## 2024
 
-{% include paper_card.html page=site.files.papersmd.paper1 %}
+{% include paper_card.html page=site.file.papersmd.paper1 %}
+
 
 <!-- ===================================================== -->
 
