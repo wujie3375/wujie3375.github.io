@@ -48,38 +48,47 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 ## Education
 
 
-<div style="display: flex; align-items: flex-start; position: relative; width: 100%; padding-left: 0px; margin-top: 15px;">
+<div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
   <!-- 学校的 logo -->
   <img src="https://wujie3375.github.io/images/logo2/cqu.png" alt="CQU" style="height: 90px; margin-right: 10px;">
   
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
-    <p style="margin: 0;"><strong>Chongqing University</strong></p>
-    <p style="margin: 0;"><em>Ph.D. in Physics</em></p>
-    <p style="margin: 0;">Advisor:  
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <strong>Chongqing University</strong>
+      <span>Sep 2022 - Jun 2028 (expected)</span>
+    </div>
+    
+  <p style="margin: 0; font-style: italic;">
+    Ph.D. in Physics
+    </p>
+    
+  <p style="margin: 0;">Advisor:  
       <a href="https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true">
           Prof. Jin Li (李瑾)
       </a>
     </p>
   </div>
-
-  <!-- 时间段 -->
-  <div style="text-align: right; white-space: nowrap; margin-left: auto;">
-    <p style="margin: 0;">Sep 2022 - Jun 2028 (expected)</p>
-  </div>
 </div>
 
 
 
-<div style="display: flex; align-items: flex-start; position: relative; width: 100%; padding-left: 0px; margin-top: 15px;">
+<div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
   <!-- 学校的 logo -->
   <img src="https://wujie3375.github.io/images/logo2/cwnu.png" alt="CWNU" style="height: 90px; margin-right: 10px;">
   
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
-    <p style="margin: 0;"><strong>China West Normal University</strong></p>
-    <p style="margin: 0;"><em>B.S. in Physics</em></p>
-    <p style="margin: 0;">Advisors: 
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <strong>China West Normal University</strong>
+      <span>Sep 2018 - Jun 2022</span>
+    </div>
+    
+  <p style="margin: 0; font-style: italic;">
+    B.S. in Physics
+    </p>
+    
+  <p style="margin: 0;">Advisors:  
       <a href="https://inspirehep.net/authors/1647692?ui-citation-summary=true&ui-exclude-self-citations=true">
           Assoc. Prof. Di Wu (吴迪)
       </a>
@@ -89,13 +98,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
       </a>
     </p>
   </div>
-
-  <!-- 时间段 -->
-  <div style="text-align: right; white-space: nowrap; margin-left: auto;">
-    <p style="margin: 0;">Sep 2018 - Jun 2022</p>
-  </div>
 </div>
-
 
 
 
@@ -122,7 +125,6 @@ Currently, my primary research focus is on the simulation of gravitational wave 
   <p style="margin: 0;">Advisor:  
       <a href="https://inspirehep.net/authors/1060083?ui-citation-summary=true&ui-exclude-self-citations=true">
           Prof. Zhoujian Cao (曹周键)
-      </a>
       </a>
     </p>
   </div>
