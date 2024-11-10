@@ -37,10 +37,9 @@ title: Publications
 
 ---
 
-## test
 
 <!-- Example Paper with More than Four Authors -->
-{% include paper_card.html
+<!-- {% include paper_card.html
   title="A Study on the Polarization of Gravitational Waves"
   subtitle="(Suggested by editors)"
   authors="Alice Smith, Bob Johnson, Carol White, Dave Brown, Eve Green"
@@ -76,14 +75,14 @@ title: Publications
   pdf="https://wujie3375.github.io/file/6.pdf"
   number="6"
   highlight_author=1
-%}
+%} -->
 
 
 
 ## 2024
 <!-- ===================================================== -->
 
-<ul style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
+<!-- <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
   
   <div style="font-family: 'ARIALBD'; font-size: 20px; line-height: 1.4;">
     Constraints and detection capabilities of GW polarizations with space-based detectors in different TDI combinations
@@ -103,13 +102,21 @@ title: Publications
       <a href="https://wujie3375.github.io\file\5.pdf">#5</a>
     </span>
   </div>
-</ul>
-
+</ul> -->
+{% include paper_card.html
+  title="Constraints and detection capabilities of GW polarizations with space-based detectors in different TDI combinations"
+  authors="Jie Wu, Mengfei Sun, Jin Li*"
+  date="Nov 6, 2024"
+  arxiv="2411.03631"
+  pdf="https://wujie3375.github.io\file\5.pdf"
+  number="5"
+  highlight_author=1
+%}
 
 <!-- ===================================================== -->
 
 
-<ul style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
+<!-- <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
   
   <div style="font-family: 'ARIALBD'; font-size: 20px; line-height: 1.4;">
     Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors
@@ -131,8 +138,21 @@ title: Publications
       <a href="https://wujie3375.github.io\file\4.pdf">#4</a>
     </span>
   </div>
-</ul>
+</ul> -->
 
+{% include paper_card.html
+  title="Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors"
+  authors="Jie Wu, Jin Li*"
+  date="Sep 24, 2024"
+  journal="Phys.Rev.D"
+  journal_link="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.084057"
+  volume="110"
+  article_number="084057"
+  arxiv="2407.13590"
+  pdf="https://wujie3375.github.io/file/4.pdf"
+  number="4"
+  highlight_author=1
+%}
 
 <!-- ===================================================== -->
 
