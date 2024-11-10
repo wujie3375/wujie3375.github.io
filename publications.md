@@ -39,35 +39,45 @@ title: Publications
 
 ## test
 
-<!-- First Paper -->
+<!-- Example Paper with More than Four Authors -->
 {% include paper_card.html
-  title="Constraints and detection capabilities of GW polarizations with space-based detectors in different TDI combinations"
+  title="A Study on the Polarization of Gravitational Waves"
   subtitle="(Suggested by editors)"
-  authors="Jie Wu, Mengfei Sun, Jin Li*"
-  date="Nov 6, 2024"
-  arxiv="2411.03631"
-  arxiv_link="https://arxiv.org/abs/2411.03631"
-  pdf="https://wujie3375.github.io/file/5.pdf"
-  number="5"
+  authors="Alice Smith, Bob Johnson, Carol White, Dave Brown, Eve Green"
+  date="Nov 1, 2024"
+  journal="Phys.Rev.D"
+  journal_link="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.123456"
+  volume="111"
+  article_number="123456"
+  arxiv="2411.12345"
+  pdf="https://wujie3375.github.io/file/6.pdf"
+  number="6"
+  highlight_author=2
+%}
+
+{% include paper_card.html
+  title="A Study on the Polarization of Gravitational Waves"
+  authors="Alice Smith, Bob Johnson*"
+  date="Nov 1, 2024"
+  journal="Phys.Rev.D"
+  journal_link="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.123456"
+  volume="111"
+  article_number="123456"
+  pdf="https://wujie3375.github.io/file/6.pdf"
+  number="6"
+  highlight_author=2
+%}
+
+{% include paper_card.html
+  title="A Study on the Polarization of Gravitational Waves"
+  authors="Alice Smith, Bob Johnson, Carol White*"
+  date="Nov 1, 2024"
+  arxiv="2411.12345"
+  pdf="https://wujie3375.github.io/file/6.pdf"
+  number="6"
   highlight_author=1
 %}
 
-
-<!-- Second Paper -->
-{% include paper_card.html
-  title="Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors"
-  authors="Jie Wu, Jin Li*"
-  date="Sep 24, 2024"
-  journal="Phys.Rev.D"
-  journal_link="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.084057"
-  volume="110"
-  article_number="084057"
-  arxiv="2407.13590"
-  arxiv_link="https://arxiv.org/abs/2407.13590"
-  pdf="https://wujie3375.github.io/file/4.pdf"
-  number="4"
-  highlight_author=2
-%}
 
 
 ## 2024
