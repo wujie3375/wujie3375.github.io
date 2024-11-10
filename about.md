@@ -64,7 +64,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
   </div>
 
   <!-- 时间段 -->
-  <div style="margin-left: auto; text-align: right;">
+  <div style="text-align: right;">
     <p><strong>Sep 2022 - Jun 2028</strong> (expected)</p>
   </div>
 </div>
@@ -91,7 +91,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
   </div>
 
   <!-- 时间段 -->
-  <div style="margin-left: auto; text-align: right;">
+  <div style="text-align: right;">
     <p><strong>Sep 2018 - Jun 2022</strong></p>
   </div>
 </div>
