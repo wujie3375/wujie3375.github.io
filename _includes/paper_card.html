@@ -14,33 +14,26 @@
       {% assign authors = include.authors | split: ',' %}
       {% if authors.size > 4 %}
         <!-- More than four authors: show first three and then et al. -->
-        <span id="author-summary-{{ include.number }}">
-          {% for author in authors %}
-            {% if forloop.index <= 3 %}
-              {% if forloop.index == include.highlight_author %}
-                <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
-              {% else %}
-                {{ author | strip }}
-              {% endif %}
-              {% if forloop.index == 3 %}
-                , and <em><a href="javascript:void(0);" onclick="toggleAuthors('{{ include.number }}')">et al.</a></em>
-                {% break %}
-              {% else %}
-                {% if forloop.index < 3 %}
-                  ,
-                {% endif %}
-              {% endif %}
+        {% for author in authors %}
+          {% if forloop.index <= 3 %}
+            {% if forloop.index == include.highlight_author %}
+              <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
+            {% else %}
+              {{ author | strip }}
             {% endif %}
-          {% endfor %}
-        </span>
+            {% if forloop.index < 3 %}
+              ,<!-- No space after the comma -->
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        , and <em><a href="javascript:void(0);" onclick="toggleAuthors('{{ include.number }}')">et al.</a></em>
         <!-- Hidden full author list -->
         <span id="author-full-{{ include.number }}" style="display: none;">
-          {% for author in authors %}
-            {% if forloop.index > 3 %}
-              {{ author | strip }}
-              {% if forloop.last == false %}
-                ,
-              {% endif %}
+          , <!-- Comma before the additional authors -->
+          {% for author in authors offset:3 %}
+            {{ author | strip }}
+            {% if forloop.last == false %}
+              ,<!-- No space after the comma -->
             {% endif %}
           {% endfor %}
         </span>
@@ -56,7 +49,7 @@
             {% if forloop.index == 2 %}
               , and
             {% else %}
-              ,
+              ,<!-- No space after the comma -->
             {% endif %}
           {% endif %}
         {% endfor %}
@@ -109,14 +102,11 @@
   <!-- JavaScript for toggling authors -->
   <script>
     function toggleAuthors(id) {
-      var summary = document.getElementById('author-summary-' + id);
       var full = document.getElementById('author-full-' + id);
-      if (summary.style.display === 'none') {
-        summary.style.display = 'inline';
-        full.style.display = 'none';
-      } else {
-        summary.style.display = 'none';
+      if (full.style.display === 'none') {
         full.style.display = 'inline';
+      } else {
+        full.style.display = 'none';
       }
     }
   </script>
