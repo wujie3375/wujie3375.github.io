@@ -1,31 +1,38 @@
-<div style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
+<ul style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
+    <!-- Title -->
     <div style="font-family: 'ARIALBD'; font-size: 20px; line-height: 1.4;">
-      {{ page.title }}
+      {{ include.title }}
     </div>
   
     <div style="margin: 8px 0;"></div>
   
+    <!-- Authors -->
     <div style="font-family: 'ARIAL';">
       <strong style="text-decoration: underline; text-decoration-thickness: 2px;">
-        {{ page.authors }}</strong> ({{ page.date }})
+        {{ include.authors }}
+      </strong> ({{ include.date }})
     </div>
   
     <div>
-      {% if page.journal %}
-        <a href="{{ page.journal }}">
-          <em>{{ page.journal_name }}</em> <strong>{{ page.volume }}</strong>, {{ page.article_number }}
-        </a>
+      <!-- Journal and/or arXiv Links -->
+      {% if include.journal %}
+        <a href="{{ include.journal_link }}">
+          <em>{{ include.journal }}</em> <strong>{{ include.volume }}</strong>, {{ include.article_number }}</a>
+        {% if include.arxiv %}
+          |
+        {% endif %}
       {% endif %}
-      {% if page.arxiv %}
-        <a href="{{ page.arxiv }}">
-          <em>arXiv</em>:{{ page.arxiv }}
-        </a>
+      {% if include.arxiv %}
+        <a href="{{ include.arxiv_link }}">
+          <em>arXiv</em>:{{ include.arxiv }}</a>
       {% endif %}
-      {% if page.pdf %}
+  
+      <!-- PDF Link -->
+      {% if include.pdf %}
         <span style="float: right;">
-          <a href="{{ page.pdf }}">#{{ page.issue }}</a>
+          <a href="{{ include.pdf }}">#{{ include.issue }}</a>
         </span>
       {% endif %}
     </div>
-  </div>
+  </ul>
   

@@ -39,9 +39,34 @@ title: Publications
 
 ## 2024
 
-{% for paper in site.papers %}
-  {% include paper_card.html page=paper %}
-{% endfor %}
+<!-- First Paper -->
+{% include paper_card.html
+  title="Constraints and detection capabilities of GW polarizations with space-based detectors in different TDI combinations"
+  authors="Jie Wu, Mengfei Sun, and Jin Li*"
+  date="Nov 6, 2024"
+  arxiv="2411.03631"
+  arxiv_link="https://arxiv.org/abs/2411.03631"
+  pdf="https://wujie3375.github.io/file/5.pdf"
+  issue="5"
+%}
+
+<!-- Divider -->
+<hr style="border: none; height: 20px;" />
+
+<!-- Second Paper -->
+{% include paper_card.html
+  title="Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors"
+  authors="Jie Wu and Jin Li*"
+  date="Sep 24, 2024"
+  journal="Phys.Rev.D"
+  journal_link="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.084057"
+  volume="110"
+  article_number="084057"
+  arxiv="2407.13590"
+  arxiv_link="https://arxiv.org/abs/2407.13590"
+  pdf="https://wujie3375.github.io/file/4.pdf"
+  issue="4"
+%}
 
 
 
