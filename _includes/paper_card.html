@@ -11,21 +11,13 @@
     </div>
   
     <div>
-      {% if page.journal %}
-        <a href="{{ page.journal }}">
-          <em>{{ page.journal_name }}</em> <strong>{{ page.volume }}</strong>, {{ page.article_number }}
-        </a>
-      {% endif %}
-      {% if page.arxiv %}
-        <a href="{{ page.arxiv }}">
-          <em>arXiv</em>:{{ page.arxiv }}
-        </a>
-      {% endif %}
-      {% if page.pdf %}
-        <span style="float: right;">
-          <a href="{{ page.pdf }}">#{{ page.issue }}</a>
-        </span>
-      {% endif %}
+      <a href="{{ page.journal }}">
+        <em>Journal</em>: <strong>{{ page.journal_name }}</strong>, <strong>{{ page.volume }}</strong>, {{ page.article_number }}</a> |
+      <a href="{{ page.arxiv }}">
+        <em>arXiv</em>:{{ page.arxiv }}</a> |
+      <span style="float: right;">
+        <a href="{{ page.pdf }}">#{{ page.issue }}</a>
+      </span>
     </div>
   </div>
   
