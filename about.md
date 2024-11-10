@@ -65,38 +65,37 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
   <!-- 时间段 -->
   <div style="text-align: right; white-space: nowrap; margin-left: auto;">
-    <p style="margin: 0;"><strong>Sep 2022 - Jun 2028</strong> (expected)</p>
+    <p style="margin: 0;">Sep 2022 - Jun 2028 (expected)</p>
   </div>
 </div>
 
 
 
-
-
-<div style="display: flex; align-items: flex-start; position: relative; padding-left: 0px;">
+<div style="display: flex; align-items: flex-start; position: relative; width: 100%; padding-left: 0px;">
   <!-- 学校的 logo -->
   <img src="https://wujie3375.github.io/images/logo2/cwnu.png" alt="CWNU" style="height: 90px; margin-right: 10px;">
   
   <!-- 文字内容 -->
-  <div>
-    <!-- <p><strong>Sep 2018 - Jun 2022:</strong></p> -->
-    <p><strong>China West Normal University</strong></p>
-    <p><em>B.S. in Physics</em></p>
-    <p>Advisors: 
-    <a href="https://inspirehep.net/authors/1647692?ui-citation-summary=true&ui-exclude-self-citations=true">
-        Assoc. Prof. Di Wu (吴迪)
-    </a>
-    and
-    <a href="https://inspirehep.net/authors/1275221?ui-citation-summary=true&ui-exclude-self-citations=true">
-        Assoc. Prof. Guo-Ping Li (李国平)
-    </a></p>
+  <div style="flex-grow: 1;">
+    <p style="margin: 0;"><strong>China West Normal University</strong></p>
+    <p style="margin: 0;"><em>B.S. in Physics</em></p>
+    <p style="margin: 0;">Advisors: 
+      <a href="https://inspirehep.net/authors/1647692?ui-citation-summary=true&ui-exclude-self-citations=true">
+          Assoc. Prof. Di Wu (吴迪)
+      </a>
+      and
+      <a href="https://inspirehep.net/authors/1275221?ui-citation-summary=true&ui-exclude-self-citations=true">
+          Assoc. Prof. Guo-Ping Li (李国平)
+      </a>
+    </p>
   </div>
 
   <!-- 时间段 -->
-  <div style="margin-left: auto; text-align: right;">
-    <p><strong>Sep 2018 - Jun 2022</strong></p>
+  <div style="text-align: right; white-space: nowrap; margin-left: auto;">
+    <p style="margin: 0;">Sep 2018 - Jun 2022</p>
   </div>
 </div>
+
 
 
 
@@ -104,52 +103,55 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 ## Experience
 
-<div style="display: flex; align-items: flex-start; position: relative; padding-left: 0px;">
+<div style="display: flex; align-items: flex-start; position: relative; width: 100%; padding-left: 0px;">
   <!-- 学校的 logo -->
   <img src="https://wujie3375.github.io/images/logo2/bnu.png" alt="BNU" style="height: 90px; margin-right: 10px;">
   
   <!-- 文字内容 -->
-  <div>
-    <!-- <p><strong>Feb 2024 - Apr 2024:</strong></p> -->
-    <p><strong>Beijing Normal University</strong></p>
-    <p><em>VISITOR</em></p>
-    <p>Advisor:  
-    <a href="https://inspirehep.net/authors/1060083?ui-citation-summary=true&ui-exclude-self-citations=true">
-        Prof. Zhoujian Cao (曹周键)
-    </a></p>
+  <div style="flex-grow: 1;">
+    <p style="margin: 0;"><strong>Beijing Normal University</strong></p>
+    <p style="margin: 0;"><em>VISITOR</em></p>
+    <p style="margin: 0;">Advisor:  
+      <a href="https://inspirehep.net/authors/1060083?ui-citation-summary=true&ui-exclude-self-citations=true">
+          Prof. Zhoujian Cao (曹周键)
+      </a>
+    </p>
   </div>
 
   <!-- 时间段 -->
-  <div style="margin-left: auto; text-align: right;">
-    <p><strong>Feb 2024 - Apr 2024</strong></p>
+  <div style="text-align: right; white-space: nowrap; margin-left: auto;">
+    <p style="margin: 0;">Feb 2024 - Apr 2024</p>
   </div>
 </div>
 
 
 
-<div style="display: flex; align-items: flex-start; position: relative; padding-left: 0px;">
+<div style="display: flex; align-items: flex-start; position: relative; width: 100%; padding-left: 0px; margin-top: 15px;">
   <!-- 学校的 logo -->
   <img src="https://wujie3375.github.io/images/logo2/ucas.png" alt="UCAS" style="height: 90px; margin-right: 10px;">
   
   <!-- 文字内容 -->
-  <div>
-    <!-- <p><strong>Sep 2020 - Sep 2021:</strong></p> -->
-    <p><strong>University of Chinese Academy of Sciences</strong></p>
-    <p><em>PARTICIPANT</em>, 
-    <a href="https://astro.ucas.ac.cn/index.php/cn/home/2016-03-17-03-00-27/314-2020-3">
-        College Student Innovation and Practice Program
-    </a></p>
-    <p>Advisor:  
-    <a href="https://inspirehep.net/authors/1040919?ui-citation-summary=true&ui-exclude-self-citations=true">
-        Assoc. Prof. Yong Tang (汤勇)
-    </a></p>
+  <div style="flex-grow: 1;">
+    <p style="margin: 0;"><strong>University of Chinese Academy of Sciences</strong></p>
+    <p style="margin: 0;"><em>PARTICIPANT</em></p>
+    <p style="margin: 0;">Advisor:  
+      <a href="https://inspirehep.net/authors/1040919?ui-citation-summary=true&ui-exclude-self-citations=true">
+          Assoc. Prof. Yong Tang (汤勇)
+      </a>
+    </p>
+    <p style="margin: 0;">Program:  
+      <a href="https://astro.ucas.ac.cn/index.php/cn/home/2016-03-17-03-00-27/314-2020-3">
+          College Student Innovation and Practice Program
+      </a>
+    </p>
   </div>
 
   <!-- 时间段 -->
-  <div style="margin-left: auto; text-align: right;">
-    <p><strong>Sep 2020 - Sep 2021</strong></p>
+  <div style="text-align: right; white-space: nowrap; margin-left: auto;">
+    <p style="margin: 0;">Sep 2020 - Sep 2021</p>
   </div>
 </div>
+
 
 ---
 
