@@ -26,8 +26,8 @@
                     {% endif %}
                 {% endif %}
             {% endfor %}
-            , and <em><a href="javascript:void(0);" onclick="toggleAuthors('{{ include.number }}')">et al.</a></em>
-            <!-- Hidden full author list -->
+            , <em><a href="javascript:void(0);" onclick="toggleAuthors('{{ include.number }}')">et al.</a></em>
+            <!-- Hidden full author list (excluding the first three already displayed) -->
             <span id="author-full-{{ include.number }}" style="display: none;">
                 , <!-- Comma before the additional authors -->
                 {% for author in authors offset:3 %}
@@ -37,57 +37,18 @@
                     {% endif %}
                 {% endfor %}
             </span>
-        {% elsif authors.size == 4 %}
-            <!-- Exactly four authors -->
-            {% for author in authors %}
-                {% if forloop.index == include.highlight_author %}
-                    <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
-                {% else %}
-                    {{ author | strip }}
-                {% endif %}
-                {% if forloop.last == false %}
-                    {% if forloop.index == 3 %}
-                        , and
-                    {% else %}
-                        ,<!-- No space after the comma -->
-                    {% endif %}
-                {% endif %}
-            {% endfor %}
-        {% elsif authors.size == 3 %}
-            <!-- Exactly three authors -->
-            {% for author in authors %}
-                {% if forloop.index == include.highlight_author %}
-                    <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
-                {% else %}
-                    {{ author | strip }}
-                {% endif %}
-                {% if forloop.last == false %}
-                    {% if forloop.index == 2 %}
-                        , and
-                    {% else %}
-                        ,<!-- No space after the comma -->
-                    {% endif %}
-                {% endif %}
-            {% endfor %}
-        {% elsif authors.size == 2 %}
-            <!-- Exactly two authors -->
-            {% for author in authors %}
-                {% if forloop.index == include.highlight_author %}
-                    <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
-                {% else %}
-                    {{ author | strip }}
-                {% endif %}
-                {% if forloop.index == 1 %}
-                    and
-                {% endif %}
-            {% endfor %}
         {% else %}
-            <!-- One author (fallback) -->
-            {% if include.highlight_author == 1 %}
-                <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ authors[0] | strip }}</strong>
-            {% else %}
-                {{ authors[0] | strip }}
-            {% endif %}
+            <!-- Four or fewer authors: show all without 'and' -->
+            {% for author in authors %}
+                {% if forloop.index == include.highlight_author %}
+                    <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
+                {% else %}
+                    {{ author | strip }}
+                {% endif %}
+                {% if forloop.last == false %}
+                    ,<!-- No space after the comma -->
+                {% endif %}
+            {% endfor %}
         {% endif %}
         ({{ include.date }})
     </div>
