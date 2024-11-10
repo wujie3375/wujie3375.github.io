@@ -1,113 +1,128 @@
 <ul style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
     <!-- Title -->
     <div style="font-family: 'ARIALBD'; font-size: 20px; line-height: 1.4;">
-      {{ include.title }}
-      {% if include.subtitle %}
-        <span style="font-family: 'ARIAL'; font-size: 15px;">{{ include.subtitle }}</span>
-      {% endif %}
+        {{ include.title }}
+        {% if include.subtitle %}
+            <span style="font-family: 'ARIAL'; font-size: 15px;">{{ include.subtitle }}</span>
+        {% endif %}
     </div>
-  
+    
     <div style="margin: 8px 0;"></div>
-  
+
     <!-- Authors -->
     <div style="font-family: 'ARIAL';">
-      {% assign authors = include.authors | split: ',' %}
-      {% if authors.size > 4 %}
-        <!-- More than four authors: show first three and then et al. -->
-        {% for author in authors %}
-          {% if forloop.index <= 3 %}
-            {% if forloop.index == include.highlight_author %}
-              <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
-            {% else %}
-              {{ author | strip }}
-            {% endif %}
-            {% if forloop.index < 3 %}
-              ,<!-- No space after the comma -->
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-        , and <em><a href="javascript:void(0);" onclick="toggleAuthors('{{ include.number }}')">et al.</a></em>
-        <!-- Hidden full author list -->
-        <span id="author-full-{{ include.number }}" style="display: none;">
-          , <!-- Comma before the additional authors -->
-          {% for author in authors offset:3 %}
-            {{ author | strip }}
-            {% if forloop.last == false %}
-              ,<!-- No space after the comma -->
-            {% endif %}
-          {% endfor %}
-        </span>
-      {% elsif authors.size == 3 %}
-        <!-- Exactly three authors -->
-        {% for author in authors %}
-          {% if forloop.index == include.highlight_author %}
-            <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
-          {% else %}
-            {{ author | strip }}
-          {% endif %}
-          {% if forloop.last == false %}
-            {% if forloop.index == 2 %}
-            , and
-            {% else %}
-            ,<!-- No space after the comma -->
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-      {% elsif authors.size == 2 %}
-        <!-- Exactly two authors -->
-        {% for author in authors %}
-          {% if forloop.index == include.highlight_author %}
-            <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
-          {% else %}
-            {{ author | strip }}
-          {% endif %}
-          {% if forloop.index == 1 %}
-            and
-          {% endif %}
-        {% endfor %}
-      {% else %}
-        <!-- One author (fallback) -->
-        {% if include.highlight_author == 1 %}
-          <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ authors[0] | strip }}</strong>
+        {% assign authors = include.authors | split: ',' %}
+        {% if authors.size > 4 %}
+            <!-- More than four authors: show first three and then et al. -->
+            {% for author in authors %}
+                {% if forloop.index <= 3 %}
+                    {% if forloop.index == include.highlight_author %}
+                        <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
+                    {% else %}
+                        {{ author | strip }}
+                    {% endif %}
+                    {% if forloop.index < 3 %}
+                        ,<!-- No space after the comma -->
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+            , and <em><a href="javascript:void(0);" onclick="toggleAuthors('{{ include.number }}')">et al.</a></em>
+            <!-- Hidden full author list -->
+            <span id="author-full-{{ include.number }}" style="display: none;">
+                , <!-- Comma before the additional authors -->
+                {% for author in authors offset:3 %}
+                    {{ author | strip }}
+                    {% if forloop.last == false %}
+                        ,<!-- No space after the comma -->
+                    {% endif %}
+                {% endfor %}
+            </span>
+        {% elsif authors.size == 4 %}
+            <!-- Exactly four authors -->
+            {% for author in authors %}
+                {% if forloop.index == include.highlight_author %}
+                    <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
+                {% else %}
+                    {{ author | strip }}
+                {% endif %}
+                {% if forloop.last == false %}
+                    {% if forloop.index == 3 %}
+                        , and
+                    {% else %}
+                        ,<!-- No space after the comma -->
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        {% elsif authors.size == 3 %}
+            <!-- Exactly three authors -->
+            {% for author in authors %}
+                {% if forloop.index == include.highlight_author %}
+                    <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
+                {% else %}
+                    {{ author | strip }}
+                {% endif %}
+                {% if forloop.last == false %}
+                    {% if forloop.index == 2 %}
+                        , and
+                    {% else %}
+                        ,<!-- No space after the comma -->
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        {% elsif authors.size == 2 %}
+            <!-- Exactly two authors -->
+            {% for author in authors %}
+                {% if forloop.index == include.highlight_author %}
+                    <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
+                {% else %}
+                    {{ author | strip }}
+                {% endif %}
+                {% if forloop.index == 1 %}
+                    and
+                {% endif %}
+            {% endfor %}
         {% else %}
-          {{ authors[0] | strip }}
+            <!-- One author (fallback) -->
+            {% if include.highlight_author == 1 %}
+                <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ authors[0] | strip }}</strong>
+            {% else %}
+                {{ authors[0] | strip }}
+            {% endif %}
         {% endif %}
-      {% endif %}
-      ({{ include.date }})
+        ({{ include.date }})
     </div>
-  
+
     <div>
-      <!-- Journal and/or arXiv Links -->
-      {% if include.journal %}
-        <a href="{{ include.journal_link }}">
-          <em>{{ include.journal }}</em> <strong>{{ include.volume }}</strong>, {{ include.article_number }}</a>
-        {% if include.arxiv %}
-          |
+        <!-- Journal and/or arXiv Links -->
+        {% if include.journal %}
+            <a href="{{ include.journal_link }}">
+                <em>{{ include.journal }}</em> <strong>{{ include.volume }}</strong>, {{ include.article_number }}</a>
+            {% if include.arxiv %}
+                |
+            {% endif %}
         {% endif %}
-      {% endif %}
-      {% if include.arxiv %}
-        <a href="https://arxiv.org/abs/{{ include.arxiv }}">
-          <em>arXiv</em>:{{ include.arxiv }}</a>
-      {% endif %}
-  
-      <!-- PDF Link -->
-      {% if include.pdf %}
-        <span style="float: right;">
-          <a href="{{ include.pdf }}">#{{ include.number }}</a>
-        </span>
-      {% endif %}
+        {% if include.arxiv %}
+            <a href="https://arxiv.org/abs/{{ include.arxiv }}">
+                <em>arXiv</em>:{{ include.arxiv }}</a>
+        {% endif %}
+
+        <!-- PDF Link -->
+        {% if include.pdf %}
+            <span style="float: right;">
+                <a href="{{ include.pdf }}">#{{ include.number }}</a>
+            </span>
+        {% endif %}
     </div>
-  </ul>
-  
-  <!-- JavaScript for toggling authors -->
-  <script>
+</ul>
+
+<!-- JavaScript for toggling authors -->
+<script>
     function toggleAuthors(id) {
-      var full = document.getElementById('author-full-' + id);
-      if (full.style.display === 'none') {
-        full.style.display = 'inline';
-      } else {
-        full.style.display = 'none';
-      }
+        var full = document.getElementById('author-full-' + id);
+        if (full.style.display === 'none') {
+            full.style.display = 'inline';
+        } else {
+            full.style.display = 'none';
+        }
     }
-  </script>
-  
+</script>

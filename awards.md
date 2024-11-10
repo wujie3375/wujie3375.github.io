@@ -98,4 +98,4 @@ Keep track of the meetings I've been to.
 
 ---
 
-> I don't really see the point in writing these; just think of them as a way to keep track, kind of like collecting stamps. 😉😉
+> I don't really see the point in writing these; just think of them as a way to keep track, kind of like collecting stamps. (●′ω`●)

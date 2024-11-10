@@ -55,7 +55,7 @@ title: Publications
 
 {% include paper_card.html
   title="Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors"
-  authors="Jie Wu, Jin Li*"
+  authors="Jie Wu, Jin Li*, aaa, bbb, ccc, ddd, eee*"
   date="Sep 24, 2024"
   journal="Phys.Rev.D"
   journal_link="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.084057"
@@ -146,4 +146,4 @@ title: Publications
 %}
 ---
 
-> I'm hoping that by listing these, it'll be easier for me to find them later on. 😊😊
+> I'm hoping that by listing these, it'll be easier for me to find them later on. (￢_￢)
