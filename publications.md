@@ -39,7 +39,10 @@ title: Publications
 
 ## 2024
 
-<!-- {% include_relative file/papers/paper1.md %} -->
+{% for paper in site.papers %}
+  {% include paper_card.html page=paper %}
+{% endfor %}
+
 
 
 <!-- ===================================================== -->

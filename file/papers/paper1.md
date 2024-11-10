@@ -1,4 +1,5 @@
 ---
+layout: page
 title: "Prospects of constraining on the polarizations of gravitational waves"
 authors: "Jie Wu and Jin Li"
 journal: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.084057"
@@ -11,4 +12,5 @@ article_number: "084057"
 issue: "4"
 ---
 
-{% include paper_card.html %}
+
+<!-- {% include paper_card.html %} -->
