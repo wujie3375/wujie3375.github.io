@@ -53,16 +53,19 @@ Currently, my primary research focus is on the simulation of gravitational wave 
   <img src="https://wujie3375.github.io/images/logo2/cqu.png" alt="CQU" style="height: 90px; margin-right: 10px;">
   
   <!-- 文字内容 -->
-  <div>
-    <p><strong>Sep 2022 - Jun 2028</strong> (expected)<strong>:</strong></p>
+  <div style="flex-grow: 1;">
     <p><strong>Chongqing University</strong></p>
-    <p><em>Ph.D. in Physics</em> (supervised by 
-    <a href="https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true">
+    <p><em>Ph.D. in Physics</em></p>
+    <p>Advisor: <a href="https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true">
         Prof. Jin Li (李瑾)
-    </a>)</p>
+    </a></p>
+  </div>
+
+  <!-- 时间段 -->
+  <div style="margin-left: auto; text-align: right;">
+    <p><strong>Sep 2022 - Jun 2028</strong> (expected)</p>
   </div>
 </div>
-
 
 
 
