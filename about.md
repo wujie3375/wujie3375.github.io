@@ -76,7 +76,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
     <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em;">
-      <span style="font-family: 'ARIALBD'; font-size: 22px;">
+      <span style="font-family: 'ARIALBD'; font-size: 19px;">
       Chongqing University</span>
       <span>Sep 2022 - Jun 2028 (expected)</span>
     </div>
@@ -102,7 +102,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
     <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em;">
-    <span style="font-family: 'ARIALBD'; font-size: 22px;">
+    <span style="font-family: 'ARIALBD'; font-size: 19px;">
       China West Normal University</span>
       <span>Sep 2018 - Jun 2022</span>
     </div>
@@ -137,7 +137,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
     <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em;">
-    <span style="font-family: 'ARIALBD'; font-size: 22px;">
+    <span style="font-family: 'ARIALBD'; font-size: 19px;">
       Beijing Normal University</span>
       <span>Feb 2024 - Apr 2024</span>
     </div>
@@ -163,7 +163,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
     <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em;">
-    <span style="font-family: 'ARIALBD'; font-size: 22px;">
+    <span style="font-family: 'ARIALBD'; font-size: 19px;">
       University of Chinese Academy of Sciences</span>
       <span>Sep 2020 - Sep 2021</span>
     </div>
