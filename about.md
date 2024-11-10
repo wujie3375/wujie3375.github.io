@@ -6,6 +6,27 @@ title: About
 
 <!-- # <span style="color:red">The website is not completed.</span> -->
 
+<style>
+  @font-face {
+    font-family: 'ARIAL';
+    src: url('/assets/fonts/ARIAL.TTF') format('truetype');
+  }
+  @font-face {
+    font-family: 'ARIALBD';
+    src: url('/assets/fonts/ARIALBD.TTF') format('truetype');
+  }
+  /* li {
+    font-family: 'times', serif;
+  } */
+  /* li {
+    font-family: 'ARIALBD', serif;
+    font-size: 20px;
+  } */
+  /* body {
+    font-family: 'ARIAL', serif;
+  } */
+</style>
+
 # About me
 
 <!-- <img src="https://wujie3375.github.io/caihanlin.jpg" class="floatpic" width="360" height="480"> -->
@@ -50,11 +71,11 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/cqu.png" alt="CQU" style="height: 90px; margin-right: 5px;">
+  <img src="https://wujie3375.github.io/images/logo2/cqu.png" alt="CQU" style="height: 90px; margin-right: 2px;">
   
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
-    <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em;">
+    <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em; font-family: 'ARIALBD';">
       <strong>Chongqing University</strong>
       <span>Sep 2022 - Jun 2028 (expected)</span>
     </div>
@@ -75,11 +96,11 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/cwnu.png" alt="CWNU" style="height: 90px; margin-right: 5px;">
+  <img src="https://wujie3375.github.io/images/logo2/cwnu.png" alt="CWNU" style="height: 90px; margin-right: 2px;">
   
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
-    <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em;">
+    <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em; font-family: 'ARIALBD';">
       <strong>China West Normal University</strong>
       <span>Sep 2018 - Jun 2022</span>
     </div>
@@ -109,11 +130,11 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/bnu.png" alt="BNU" style="height: 90px; margin-right: 5px;">
+  <img src="https://wujie3375.github.io/images/logo2/bnu.png" alt="BNU" style="height: 90px; margin-right: 2px;">
   
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
-    <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em;">
+    <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em; font-family: 'ARIALBD';">
       <strong>Beijing Normal University</strong>
       <span>Feb 2024 - Apr 2024</span>
     </div>
@@ -134,11 +155,11 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/ucas.png" alt="UCAS" style="height: 90px; margin-right: 5px; margin-top: 5px;">
+  <img src="https://wujie3375.github.io/images/logo2/ucas.png" alt="UCAS" style="height: 90px; margin-right: 2px; margin-top: 8px;">
   
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
-    <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em;">
+    <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em; font-family: 'ARIALBD';">
       <strong>University of Chinese Academy of Sciences</strong>
       <span>Sep 2020 - Sep 2021</span>
     </div>
@@ -171,13 +192,10 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 - **Languages**    
     Chinese (native), English.
-
 - **Programming**  
     `Python`, `Mathematica`, `MATLAB`.
-
 - **Data Analysis**  
     Experienced in handling and analyzing large datasets, including statistical analysis, data visualization, and signal processing.
-
 - **Teaching**  
     High School Physics Teacher Qualification Certificate.
 
