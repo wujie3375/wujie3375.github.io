@@ -71,7 +71,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/cqu.png" alt="CQU" style="height: 90px; margin-right: 2px;">
+  <img src="https://wujie3375.github.io/images/logo2/cqu.png" alt="CQU" style="height: 90px; margin-right: -2px;">
   
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
@@ -97,7 +97,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/cwnu.png" alt="CWNU" style="height: 90px; margin-right: 2px;">
+  <img src="https://wujie3375.github.io/images/logo2/cwnu.png" alt="CWNU" style="height: 90px; margin-right: -2px;">
   
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
@@ -132,7 +132,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/bnu.png" alt="BNU" style="height: 90px; margin-right: 2px;">
+  <img src="https://wujie3375.github.io/images/logo2/bnu.png" alt="BNU" style="height: 90px; margin-right: -2px;">
   
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
@@ -158,7 +158,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/ucas.png" alt="UCAS" style="height: 90px; margin-right: 2px; margin-top: 8px;">
+  <img src="https://wujie3375.github.io/images/logo2/ucas.png" alt="UCAS" style="height: 90px; margin-right: -2px; margin-top: 8px;">
   
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
