@@ -75,8 +75,9 @@ Currently, my primary research focus is on the simulation of gravitational wave 
   
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
-    <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em; font-family: 'ARIALBD';">
-      <strong>Chongqing University</strong>
+    <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em;">
+      <span style="font-family: 'ARIALBD'; font-size: 18px;">
+      Chongqing University</span>
       <span>Sep 2022 - Jun 2028 (expected)</span>
     </div>
     
