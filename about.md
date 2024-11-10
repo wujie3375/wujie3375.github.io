@@ -50,20 +50,16 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 <div style="display: flex; align-items: flex-start; position: relative; padding-left: 0px;">
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/cqu.png" alt="CQU" style="height: 90px; margin-right: 10px;">
+  <img src="https://wujie3375.github.io/images/logo2/cqu.png" alt="CQU" style="height: 90px; margin-right: 10px; align-self: center;">
   
   <!-- 文字内容 -->
-  <div style="flex-grow: 1;">
+  <div>
+    <p><strong>Sep 2022 - Jun 2028</strong> (expected)<strong>:</strong></p>
     <p><strong>Chongqing University</strong></p>
-    <p><em>Ph.D. in Physics</em></p>
-    <p>Advisor: <a href="https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true">
+    <p><em>Ph.D. in Physics</em> (Advisor:  
+    <a href="https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true">
         Prof. Jin Li (李瑾)
-    </a></p>
-  </div>
-
-  <!-- 时间段 -->
-  <div style="margin-left: auto; text-align: right;">
-    <p><strong>Sep 2022 - Jun 2028</strong> (expected)</p>
+    </a>)</p>
   </div>
 </div>
 
@@ -71,13 +67,13 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 <div style="display: flex; align-items: flex-start; position: relative; padding-left: 0px;">
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/cwnu.png" alt="CWNU" style="height: 90px; margin-right: 10px;">
+  <img src="https://wujie3375.github.io/images/logo2/cwnu.png" alt="CWNU" style="height: 90px; margin-right: 10px; align-self: center;">
   
   <!-- 文字内容 -->
   <div>
     <p><strong>Sep 2018 - Jun 2022:</strong></p>
     <p><strong>China West Normal University</strong></p>
-    <p><em>B.S. in Physics</em> (supervised by 
+    <p><em>B.S. in Physics</em> (Advisors: 
     <a href="https://inspirehep.net/authors/1647692?ui-citation-summary=true&ui-exclude-self-citations=true">
         Assoc. Prof. Di Wu (吴迪)
     </a>
@@ -96,13 +92,13 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 <div style="display: flex; align-items: flex-start; position: relative; padding-left: 0px;">
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/bnu.png" alt="BNU" style="height: 90px; margin-right: 10px;">
+  <img src="https://wujie3375.github.io/images/logo2/bnu.png" alt="BNU" style="height: 90px; margin-right: 10px; align-self: center;">
   
   <!-- 文字内容 -->
   <div>
     <p><strong>Feb 2024 - Apr 2024:</strong></p>
     <p><strong>Beijing Normal University</strong></p>
-    <p><em>VISITOR</em> (supervised by 
+    <p><em>VISITOR</em> (Advisor:  
     <a href="https://inspirehep.net/authors/1060083?ui-citation-summary=true&ui-exclude-self-citations=true">
         Prof. Zhoujian Cao (曹周键)
     </a>)</p>
@@ -113,7 +109,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 <div style="display: flex; align-items: flex-start; position: relative; padding-left: 0px;">
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/ucas.png" alt="UCAS" style="height: 90px; margin-right: 10px;">
+  <img src="https://wujie3375.github.io/images/logo2/ucas.png" alt="UCAS" style="height: 90px; margin-right: 10px; align-self: center;">
   
   <!-- 文字内容 -->
   <div>
@@ -123,7 +119,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
     <a href="https://astro.ucas.ac.cn/index.php/cn/home/2016-03-17-03-00-27/314-2020-3">
         College Student Innovation and Practice Program
     </a>
-     (supervised by 
+     (Advisor:  
     <a href="https://inspirehep.net/authors/1040919?ui-citation-summary=true&ui-exclude-self-citations=true">
         Assoc. Prof. Yong Tang (汤勇)
     </a>)</p>
