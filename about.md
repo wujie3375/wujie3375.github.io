@@ -50,11 +50,11 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/cqu.png" alt="CQU" style="height: 90px; margin-right: 10px;">
+  <img src="https://wujie3375.github.io/images/logo2/cqu.png" alt="CQU" style="height: 90px; margin-right: 5px;">
   
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
-    <div style="display: flex; justify-content: space-between; align-items: center;">
+    <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em;">
       <strong>Chongqing University</strong>
       <span>Sep 2022 - Jun 2028 (expected)</span>
     </div>
@@ -75,11 +75,11 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/cwnu.png" alt="CWNU" style="height: 90px; margin-right: 10px;">
+  <img src="https://wujie3375.github.io/images/logo2/cwnu.png" alt="CWNU" style="height: 90px; margin-right: 5px;">
   
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
-    <div style="display: flex; justify-content: space-between; align-items: center;">
+    <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em;">
       <strong>China West Normal University</strong>
       <span>Sep 2018 - Jun 2022</span>
     </div>
@@ -109,11 +109,11 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/bnu.png" alt="BNU" style="height: 90px; margin-right: 10px;">
+  <img src="https://wujie3375.github.io/images/logo2/bnu.png" alt="BNU" style="height: 90px; margin-right: 5px;">
   
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
-    <div style="display: flex; justify-content: space-between; align-items: center;">
+    <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em;">
       <strong>Beijing Normal University</strong>
       <span>Feb 2024 - Apr 2024</span>
     </div>
@@ -134,11 +134,11 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
   <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/ucas.png" alt="UCAS" style="height: 90px; margin-right: 10px;">
+  <img src="https://wujie3375.github.io/images/logo2/ucas.png" alt="UCAS" style="height: 90px; margin-right: 5px; margin-top: 5px;">
   
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
-    <div style="display: flex; justify-content: space-between; align-items: center;">
+    <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em;">
       <strong>University of Chinese Academy of Sciences</strong>
       <span>Sep 2020 - Sep 2021</span>
     </div>
