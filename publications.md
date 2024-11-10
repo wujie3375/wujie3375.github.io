@@ -55,7 +55,7 @@ title: Publications
 
 {% include paper_card.html
   title="Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors"
-  authors="Jie Wu, Jin Li*, aaa, bbb, ccc, ddd, eee*"
+  authors="Jie Wu, Jin Li*"
   date="Sep 24, 2024"
   journal="Phys.Rev.D"
   journal_link="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.084057"
@@ -85,10 +85,7 @@ title: Publications
 
 <!-- ===================================================== -->
    
-
-<!-- ===================================================== -->
-<hr style="width: 100%; margin-left: auto;">
-<!-- ===================================================== -->
+---
 
 ## 2023
 
@@ -124,10 +121,7 @@ title: Publications
   highlight_author=1
 %}
 
-<!-- ===================================================== -->
-<hr style="width: 100%; margin-left: auto;">
-<!-- ===================================================== -->
-
+---
 
 # Degree Thesis
 
