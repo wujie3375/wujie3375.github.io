@@ -11,4 +11,3 @@ article_number: "084057"
 issue: "4"
 ---
 
-{% include paper_card.html page=site.file.papers.paper1 %}
