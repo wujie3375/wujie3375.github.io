@@ -26,6 +26,7 @@ title: Publications
 </style>
 
 
+
 > **Last Update:** November 7, 2024
 
 # Publications
@@ -37,6 +38,8 @@ title: Publications
 ---
 
 ## 2024
+
+{% include paper_card.html page=site.files.papersmd.1 %}
 
 <!-- ===================================================== -->
 

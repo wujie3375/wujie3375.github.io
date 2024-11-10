@@ -1,0 +1,33 @@
+{% assign journal_exists = page.journal != "" %}
+{% assign arxiv_exists = page.arxiv != "" %}
+
+<ul style="border: 2px solid #ddd; border-radius: 8px; padding: 12px; list-style-type: none;">
+  <div style="font-family: 'ARIALBD'; font-size: 20px; line-height: 1.4;">
+    {{ page.title }}
+  </div>
+
+  <div style="margin: 8px 0;"></div>
+
+  <div style="font-family: 'ARIAL';">
+    <strong style="text-decoration: underline; text-decoration-thickness: 2px;">
+      {{ page.authors }}</strong> ({{ page.date }})
+  </div>
+
+  <div>
+    {% if arxiv_exists %}
+      <a href="{{ page.arxiv }}">
+        <em>arXiv</em>: {{ page.arxiv | split: '/' | last }}
+      </a>
+    {% endif %}
+    
+    {% if journal_exists %}
+      | <a href="{{ page.journal }}">
+        <em>{{ page.journal_name }}</em> <strong>{{ page.volume }}</strong>, {{ page.article_number }}
+      </a>
+    {% endif %}
+    
+    <span style="float: right;">
+      <a href="{{ page.pdf }}">#{{ page.issue }}</a>
+    </span>
+  </div>
+</ul>
