@@ -48,26 +48,28 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 ## Education
 
 
-<div style="display: flex; align-items: flex-start; position: relative; padding-left: 0px;">
+<div style="display: flex; align-items: flex-start; position: relative; width: 100%; padding-left: 0px;">
   <!-- 学校的 logo -->
   <img src="https://wujie3375.github.io/images/logo2/cqu.png" alt="CQU" style="height: 90px; margin-right: 10px;">
   
   <!-- 文字内容 -->
-  <div>
-    <!-- <p><strong>Sep 2022 - Jun 2028</strong> (expected)<strong>:</strong></p> -->
-    <p><strong>Chongqing University</strong></p>
-    <p><em>Ph.D. in Physics</em></p>
-    <p>Advisor:  
-    <a href="https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true">
-        Prof. Jin Li (李瑾)
-    </a></p>
+  <div style="flex-grow: 1;">
+    <p style="margin: 0;"><strong>Chongqing University</strong></p>
+    <p style="margin: 0;"><em>Ph.D. in Physics</em></p>
+    <p style="margin: 0;">Advisor:  
+      <a href="https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true">
+          Prof. Jin Li (李瑾)
+      </a>
+    </p>
   </div>
 
   <!-- 时间段 -->
-  <div style="text-align: right;">
-    <p><strong>Sep 2022 - Jun 2028</strong> (expected)</p>
+  <div style="text-align: right; white-space: nowrap; margin-left: auto;">
+    <p style="margin: 0;"><strong>Sep 2022 - Jun 2028</strong> (expected)</p>
   </div>
 </div>
+
+
 
 
 
@@ -91,7 +93,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
   </div>
 
   <!-- 时间段 -->
-  <div style="text-align: right;">
+  <div style="margin-left: auto; text-align: right;">
     <p><strong>Sep 2018 - Jun 2022</strong></p>
   </div>
 </div>
