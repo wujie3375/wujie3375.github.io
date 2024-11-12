@@ -14,7 +14,7 @@
         <p style="margin: 0; font-style: italic; text-indent: 1.5em;">{{ include.degree }}</p>
       {% endif %}
       
-      <!-- Fields (Advisor, Program, etc.) -->
+      <!-- Fields (e.g., Advisor, Program) -->
       {% if include.fields %}
         {% assign field_entries = include.fields | split: ';' %}
         {% for field_entry in field_entries %}
@@ -26,7 +26,7 @@
             {% for item in field_content %}
               {% assign link_parts = item | split: '|' %}
               {% if link_parts.size == 2 %}
-                <a href="{{ link_parts[0] | strip }}">{{ link_parts[1] | strip }}</a>
+                <a href="{{ link_parts[0] | strip }}" target="_blank">{{ link_parts[1] | strip }}</a>
               {% else %}
                 {{ item | strip }}
               {% endif %}
