@@ -27,7 +27,7 @@
             {% for item in content_entries %}
               {% assign link_parts = item | split: '|' %}
               {% if link_parts.size == 2 %}
-                <a href="{{ link_parts[0] }}" target="_blank">{{ link_parts[1] | strip }}</a>
+                <a href="{{ link_parts[0] | strip }}" target="_blank">{{ link_parts[1] | strip }}</a>
               {% else %}
                 {{ item | strip }}
               {% endif %}
