@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- 其他头部内容 -->
+  <style>
+    /* 基本样式 */
+    #rocket {
+        position: fixed;
+        bottom: 10rem; /* 距离页面底部20px */
+        right: 10rem;  /* 距离页面右侧20px */
+        cursor: pointer;
+        z-index: 1000; /* 确保图标在前端显示 */
+        }
+
+    /* 当屏幕宽度小于 1400px 时隐藏导航栏 */
+    @media (max-width: 1400px) {
+      #toc {
+        display: none;
+      }
+    }
+
+    /* 平滑滚动效果 */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+    <div id="rocket" onclick="scrollToTop()">
+        <img src="/images/rocket-icon.png" alt="Rocket" style="height: 70px;">
+      </div>
+  <!-- 其他内容 -->
+
+  <script>
+    
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    document.getElementById("rocket").addEventListener("click", scrollToTop);
+    
+  </script>
+</body>
+</html>
