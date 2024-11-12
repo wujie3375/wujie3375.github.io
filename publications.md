@@ -51,8 +51,6 @@ title: Publications
   highlight_author=1
 %}
 
-<!-- ===================================================== -->
-
 {% include paper_card.html
   title="Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors"
   authors="Jie Wu, Jin Li*"
@@ -67,8 +65,6 @@ title: Publications
   highlight_author=1
 %}
 
-<!-- ===================================================== -->
-
 {% include paper_card.html
   title="Comparison and application of different post-Newtonian models for inspiralling stellar-mass binary black holes with space-based GW detectors"
   authors="Jie Wu, Jin Li*, Xiaolin Liu, Zhoujian Cao"
@@ -82,14 +78,10 @@ title: Publications
   number="3"
   highlight_author=1
 %}
-
-<!-- ===================================================== -->
    
 ---
 
 ## 2023
-
-<!-- ===================================================== -->
 
 {% include paper_card.html
   title="Subtraction of the confusion foreground and parameter uncertainty of resolvable galactic binaries on the networks of space-based gravitational-wave detectors"
@@ -104,8 +96,6 @@ title: Publications
   number="2"
   highlight_author=1
 %}
-
-<!-- ===================================================== -->
 
 {% include paper_card.html
   title="Application of Newtonian approximate model to LIGO gravitational wave data processing"

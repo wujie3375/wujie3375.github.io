@@ -69,73 +69,26 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 ## Education
 
 {% include experience_card.html 
-  title="Test University" 
+  title="Chongqing University" 
   date="Sep 2022 - Jun 2028 (expected)" 
   degree="Ph.D. in Physics" 
   logo="https://wujie3375.github.io/images/logo2/cqu.png" 
   logo_margin="0"
-  fields="Advisor: inspirehep.net/authors/1456898|Prof. Jin Li (李瑾), inspirehep.net/authors/1234567?ui-citation-summary=true|Dr. Another Advisor; 
-  Program: example.com|Example Program, Example Program"
+  fields="
+    Advisor: inspirehep.net/authors/1456898|Prof. Jin Li (李瑾)"
 %}
 
 
-
-
-<div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
-  <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/cqu.png" alt="CQU" style="height: 90px; margin-right: -6px;">
-  
-  <!-- 文字内容 -->
-  <div style="flex-grow: 1;">
-    <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em;">
-      <span style="font-family: 'ARIALBD'; font-size: 19px;">
-      Chongqing University</span>
-      <span>Sep 2022 - Jun 2028 (expected)</span>
-    </div>
-    
-  <p style="margin: 0; font-style: italic; text-indent: 1.5em;">
-    Ph.D. in Physics
-    </p>
-    
-  <p style="margin: 0;">Advisor:  
-      <a href="https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true">
-          Prof. Jin Li (李瑾)
-      </a>
-    </p>
-  </div>
-</div>
-
-
-
-<div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
-  <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/cwnu.png" alt="CWNU" style="height: 90px; margin-right: -6px;">
-  
-  <!-- 文字内容 -->
-  <div style="flex-grow: 1;">
-    <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em;">
-    <span style="font-family: 'ARIALBD'; font-size: 19px;">
-      China West Normal University</span>
-      <span>Sep 2018 - Jun 2022</span>
-    </div>
-    
-  <p style="margin: 0; font-style: italic; text-indent: 1.5em;">
-    B.S. in Physics
-    </p>
-    
-  <p style="margin: 0;">Advisors:  
-      <a href="https://inspirehep.net/authors/1647692?ui-citation-summary=true&ui-exclude-self-citations=true">
-          Assoc. Prof. Di Wu (吴迪)
-      </a>
-      and
-      <a href="https://inspirehep.net/authors/1275221?ui-citation-summary=true&ui-exclude-self-citations=true">
-          Assoc. Prof. Guo-Ping Li (李国平)
-      </a>
-    </p>
-  </div>
-</div>
-
-
+{% include experience_card.html 
+  title="China West Normal University" 
+  date="Sep 2018 - Jun 2022" 
+  degree="B.S. in Physics" 
+  logo="https://wujie3375.github.io/images/logo2/cwnu.png" 
+  logo_margin="0"
+  fields="
+    Advisors: inspirehep.net/authors/1647692|Assoc. Prof. Di Wu (吴迪),
+    inspirehep.net/authors/1275221|Assoc. Prof. Guo-Ping Li (李国平)"
+%}
 
 ---
 
