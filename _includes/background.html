@@ -2,20 +2,19 @@
 <html lang="en">
 <head>
   <style>
-    #background-image {
-      bottom: 5rem;    /* 距离页面底部的距离，可以调整 */
-      right: 10rem;     /* 距离页面右侧的距离，可以调整 */
-      height: 70px;
-      width: 70px;     /* 确保有明确的宽度，调整大小 */
+    body {
+      margin: 10rem;
+      padding: 0;
       background-image: url('/images/blackhole-icon.png');
       background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      z-index: 1500; /* 确保图片在其他内容前面 */
+      background-position: bottom right; /* 固定在页面右下角 */
+      background-attachment: fixed; /* 使背景图像固定，页面滚动时不会移动 */
+      background-size: contain; /* 根据需要调整大小，可以使用 'cover', 'contain' 或其他选项 */
     }
   </style>
 </head>
 <body>
-  <div id="background-image"></div>
+  <!-- 其他内容 -->
+  <div style="height: 200vh;">这是一个长页面，用于演示滚动效果。</div>
 </body>
 </html>
