@@ -20,10 +20,11 @@
         {% for field_entry in field_entries %}
           {% assign parts = field_entry | split: ':' %}
           {% assign field_name = parts[0] | strip %}
-          {% assign field_content = parts[1] | strip | split: ',' %}
+          {% assign field_content = parts[1] | strip %}
           
           <p style="margin: 0;">{{ field_name }}:
-            {% for item in field_content %}
+            {% assign content_entries = field_content | split: ',' %}
+            {% for item in content_entries %}
               {% assign link_parts = item | split: '|' %}
               {% if link_parts.size == 2 %}
                 <a href="{{ link_parts[0] | strip }}" target="_blank">{{ link_parts[1] | strip }}</a>

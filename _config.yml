@@ -64,10 +64,6 @@ highlighter: rouge
 # markdown: kramdown
 # markdown: redcarpet
 # pygments: true
-collections:
-  papers:
-    output: true
-    permalink: /file/papers/:name
 
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
