@@ -74,10 +74,9 @@ Currently, my primary research focus is on the simulation of gravitational wave 
   degree="Ph.D. in Physics" 
   logo="https://wujie3375.github.io/images/logo2/cqu.png" 
   logo_margin="0"
-  fields="
-    Advisor: https://inspirehep.net/authors/1456898?ui-citation-summary=true&amp;ui-exclude-self-citations=true|Prof. Jin Li (李瑾)
-  "
+  fields="Advisor: https://inspirehep.net/authors/1456898|Prof. Jin Li (李瑾)"
 %}
+
 
 
 
