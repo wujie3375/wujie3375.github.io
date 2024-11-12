@@ -391,8 +391,8 @@ img.mfp-img{width:auto;max-width:100%;height:auto;display:block;line-height:0;-w
 
 #rocket {
   position: fixed;
-  bottom: 20px; /* 距离页面底部20px */
-  right: 20px;  /* 距离页面右侧20px */
+  bottom: 80px; /* 距离页面底部20px */
+  right: 50px;  /* 距离页面右侧20px */
   cursor: pointer;
   z-index: 1000; /* 确保图标在前端显示 */
 }
