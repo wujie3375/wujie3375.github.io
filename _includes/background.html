@@ -2,15 +2,9 @@
 <html lang="en">
 <head>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-
     #background-image {
       position: absolute; /* 使用绝对定位 */
-      bottom: 0;          /* 设置为页面底部 */
+      bottom: 0;          /* 永远固定在页面整体的底部 */
       right: 10rem;       /* 距离页面右侧的距离，可以调整 */
       height: 70px;
       width: 70px;
@@ -25,5 +19,19 @@
 </head>
 <body>
   <div id="background-image"></div>
+
+  <script>
+    // 确保图片总是在页面的整体底部，即使窗口大小调整时
+    window.addEventListener('resize', adjustBackgroundPosition);
+
+    function adjustBackgroundPosition() {
+      const backgroundImage = document.getElementById('background-image');
+      const contentHeight = document.body.scrollHeight;
+      backgroundImage.style.top = `${contentHeight - backgroundImage.clientHeight}px`;
+    }
+
+    // 初始位置调整
+    adjustBackgroundPosition();
+  </script>
 </body>
 </html>
