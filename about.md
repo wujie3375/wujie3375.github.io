@@ -94,63 +94,26 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 ## Experience
 
+{% include experience_card.html 
+  title="Beijing Normal University" 
+  date="Feb 2024 - Apr 2024" 
+  degree="VISITOR" 
+  logo="https://wujie3375.github.io/images/logo2/bnu.png" 
+  logo_margin="0"
+  fields="
+    Advisor: inspirehep.net/authors/1060083|Prof. Zhoujian Cao (曹周键)"
+%}
 
-<div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
-  <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/bnu.png" alt="BNU" style="height: 90px; margin-right: -6px;">
-  
-  <!-- 文字内容 -->
-  <div style="flex-grow: 1;">
-    <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em;">
-    <span style="font-family: 'ARIALBD'; font-size: 19px;">
-      Beijing Normal University</span>
-      <span>Feb 2024 - Apr 2024</span>
-    </div>
-    
-  <p style="margin: 0; font-style: italic; text-indent: 1.5em;">
-    VISITOR
-    </p>
-    
-  <p style="margin: 0;">Advisor:  
-      <a href="https://inspirehep.net/authors/1060083?ui-citation-summary=true&ui-exclude-self-citations=true">
-          Prof. Zhoujian Cao (曹周键)
-      </a>
-    </p>
-  </div>
-</div>
-
-
-
-<div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
-  <!-- 学校的 logo -->
-  <img src="https://wujie3375.github.io/images/logo2/ucas.png" alt="UCAS" style="height: 90px; margin-right: -6px; margin-top: 10px;">
-  
-  <!-- 文字内容 -->
-  <div style="flex-grow: 1;">
-    <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em;">
-    <span style="font-family: 'ARIALBD'; font-size: 19px;">
-      University of Chinese Academy of Sciences</span>
-      <span>Sep 2020 - Sep 2021</span>
-    </div>
-    
-  <p style="margin: 0; font-style: italic; text-indent: 1.5em;">
-    PARTICIPANT
-    </p>
-    
-  <p style="margin: 0;">Advisor:  
-      <a href="https://inspirehep.net/authors/1040919?ui-citation-summary=true&ui-exclude-self-citations=true">
-          Assoc. Prof. Yong Tang (汤勇)
-      </a>
-    </p>
-
-  <p style="margin: 0;">Program:  
-      <a href="https://astro.ucas.ac.cn/index.php/cn/home/2016-03-17-03-00-27/314-2020-3">
-          College Student Innovation and Practice Program
-      </a>
-    </p>
-  </div>
-</div>
-
+{% include experience_card.html 
+  title="University of Chinese Academy of Sciences<" 
+  date="Sep 2020 - Sep 2021" 
+  degree="PARTICIPANT" 
+  logo="https://wujie3375.github.io/images/logo2/ucas.png" 
+  logo_margin="10"
+  fields="
+    Advisor: inspirehep.net/authors/1040919|Assoc. Prof. Yong Tang (汤勇);
+    Program: astro.ucas.ac.cn/index.php/cn/home/2016-03-17-03-00-27/314-2020-3|College Student Innovation and Practice Program"
+%}
 
 ---
 
@@ -168,20 +131,6 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 
 ---
-<!-- <div style="font-size: 15px; text-align: left;">
-  <s>People say that adding some poems at the end makes you look cool, but honestly, no one really cares them anyway. So I just casually whipped up a few with AI. Who knows if they're any good or not.</s>
-</div>
-
-
-<div style="font-family: 'Comic Sans MS'; font-size: 19px; text-align: center;">
-  Never lose sight of your dreams so bright,   <br>
-Walk your own path with all of your might.   <br>
-Keep striving onward, let passion ignite,   <br>
-Chase after the visions that fill you with light.
-</div>
-<div style="font-family: 'Comic Sans MS'; font-size: 19px; text-align: right;">
-  —— April 2022
-</div> -->
 
 
 <div style="text-align: center;">
