@@ -1,44 +1,37 @@
 <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
     <!-- 学校的 logo -->
-    <img src="{{ include.logo }}" alt="{{ include.title }}" style="height: 90px; margin-right: -6px; margin-top: {{ include.logo_margin }}px;">
-  
+    <img src="{{ include.logo }}" alt="Logo" style="height: 90px; margin-right: -6px; margin-top: {{ include.logo_margin | default: '0' }}px;">
+    
     <!-- 文字内容 -->
     <div style="flex-grow: 1;">
-      <!-- 标题和日期 -->
       <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em;">
-        <span style="font-family: 'ARIALBD'; font-size: 19px;">
-          {{ include.title }}</span>
+        <span style="font-family: 'ARIALBD'; font-size: 19px;">{{ include.title }}</span>
         <span>{{ include.date }}</span>
       </div>
       
-      <!-- 学位或头衔 -->
+      <!-- Degree -->
       {% if include.degree %}
-        <p style="margin: 0; font-style: italic; text-indent: 1.5em;">
-          {{ include.degree }}
-        </p>
+        <p style="margin: 0; font-style: italic; text-indent: 1.5em;">{{ include.degree }}</p>
       {% endif %}
-  
-      <!-- 自定义字段 -->
+      
+      <!-- Fields (Advisor, Program, etc.) -->
       {% if include.fields %}
         {% assign field_entries = include.fields | split: ';' %}
-        {% for entry in field_entries %}
-          {% assign parts = entry | split: ':' %}
-          {% assign label = parts[0] | strip %}
-          {% assign values = parts[1] | strip | split: ',' %}
-          <p style="margin: 0;">{{ label }}: 
-            {% for value in values %}
-              {% assign value_parts = value | split: '|' %}
-              {% if value_parts.size == 2 %}
-                <a href="{{ value_parts[0] | strip }}">{{ value_parts[1] | strip }}</a>
+        {% for field_entry in field_entries %}
+          {% assign parts = field_entry | split: ':' %}
+          {% assign field_name = parts[0] | strip %}
+          {% assign field_content = parts[1] | strip | split: ',' %}
+          
+          <p style="margin: 0;">{{ field_name }}:
+            {% for item in field_content %}
+              {% assign link_parts = item | split: '|' %}
+              {% if link_parts.size == 2 %}
+                <a href="{{ link_parts[0] | strip }}">{{ link_parts[1] | strip }}</a>
               {% else %}
-                {{ value_parts[0] | strip }}
+                {{ item | strip }}
               {% endif %}
               {% if forloop.last == false %}
-                {% if forloop.index == values.size - 1 %}
-                  and
-                {% else %}
-                  ,
-                {% endif %}
+                and
               {% endif %}
             {% endfor %}
           </p>
