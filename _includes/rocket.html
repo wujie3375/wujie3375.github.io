@@ -24,13 +24,27 @@
       scroll-behavior: smooth;
     }
   </style>
+  <style>
+    #background-image {
+      position: fixed;
+      bottom: 8rem;
+      right: 10rem;
+      height: 70px;
+      background-image: url('/images/blackhole-icon.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain; /* 你可以选择 'cover', 'auto' 或其他选项 */
+      z-index: -1; /* 确保图片在所有内容下方 */
+    }
+  </style>
 </head>
 <body>
-    <<div id="rocket" onclick="scrollToTop()" style="text-align: center; cursor: pointer;">
+    <div id="rocket" onclick="scrollToTop()" style="text-align: center; cursor: pointer;">
         <span style="display: block; font-size: 18px;">TOP</span>
         <img src="/images/rocket-icon.png" alt="Rocket" style="height: 70px;">
       </div>
       
+    <div id="background-image"></div>
       
   <!-- 其他内容 -->
 
