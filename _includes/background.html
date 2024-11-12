@@ -2,18 +2,25 @@
 <html lang="en">
 <head>
   <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
     #background-image {
-      position: absolute; /* 使图片相对于网页内容定位 */
-      bottom: 8rem;       /* 距离页面底部的距离，可以调整 */
-      right: 10rem;      /* 距离页面右侧的距离，可以调整 */
+      position: absolute; /* 使用绝对定位 */
+      bottom: 0;          /* 设置为页面底部 */
+      right: 10rem;       /* 距离页面右侧的距离，可以调整 */
       height: 70px;
-      width: 70px;       /* 确保有明确的宽度，调整大小 */
+      width: 70px;
       background-image: url('/images/blackhole-icon.png');
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
-      z-index: 1500;     /* 确保图片在其他内容前面 */
+      z-index: 1500;
     }
+
   </style>
 </head>
 <body>
