@@ -1900,3 +1900,21 @@ $(document).ready(function() {
     mainClass: 'mfp-fade'
   });
 });
+
+// 滚动到顶部函数
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// 根据滚动调整火箭的位置
+window.onscroll = function() {
+  var rocket = document.getElementById('rocket');
+  var maxBottom = 100; // 调整火箭靠近页面底部的最大距离
+  var minBottom = 20;  // 火箭初始位置
+  var scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+  var scrollPosition = window.pageYOffset;
+
+  // 计算火箭底部位置，按页面长度比例滑动
+  var newBottom = minBottom + (maxBottom - minBottom) * (scrollPosition / scrollHeight);
+  rocket.style.bottom = newBottom + 'px';
+};
