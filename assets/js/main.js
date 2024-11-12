@@ -1901,22 +1901,6 @@ $(document).ready(function() {
   });
 });
 
-// 滚动到顶部函数
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-
-// 动态调整火箭的位置
-window.onscroll = function() {
-  var rocket = document.getElementById('rocket');
-  var scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-  var scrollPosition = window.pageYOffset;
-
-  // 计算火箭的位置，按页面滚动比例调整
-  var maxMoveDistance = 200; // 调整火箭运动的最大距离，单位为像素
-  var minMoveDistance = 20;  // 火箭初始位置（单位为像素）
-  var moveDistance = minMoveDistance + (maxMoveDistance - minMoveDistance) * (scrollPosition / scrollHeight);
-
-  // 更新火箭的位置
-  rocket.style.transform = `translateY(${moveDistance}px)`;
-};
