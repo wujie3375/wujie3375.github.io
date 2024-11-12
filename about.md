@@ -39,7 +39,7 @@ I'm **Jie Wu**, a PhD student in physics (still working hard at it).
 I'm really excited about diving into the mysteries of the universe and can't wait to learn more about what we don't know. 
 I love physics, astronomy, and aerospace because they give me a great insight into how nature and the universe work.
 
-Right now, I'm studying physics at Chongqing University, and my supervisor is [Prof. Jin Li](https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true). 
+Right now, I'm studying physics at Chongqing University, and my advisor is [Prof. Jin Li](https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true). 
 In the last few years, I've been diving into gravitational wave research. It not only helped me get a better grasp of the subject but also equipped me with some essential research skills. Looking ahead, I’m excited to take my research further, explore new technologies and methods for detecting space gravitational waves, and contribute to advancing this field.
 
 If you are interested in any aspect of me, I would love to chat and collaborate, please email me at **wujie3375@gmail.com**.
@@ -105,11 +105,11 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 %}
 
 {% include experience_card.html 
-  title="University of Chinese Academy of Sciences<" 
+  title="University of Chinese Academy of Sciences" 
   date="Sep 2020 - Sep 2021" 
   degree="PARTICIPANT" 
   logo="https://wujie3375.github.io/images/logo2/ucas.png" 
-  logo_margin="10"
+  logo_margin="13"
   fields="
     Advisor: inspirehep.net/authors/1040919|Assoc. Prof. Yong Tang (汤勇);
     Program: astro.ucas.ac.cn/index.php/cn/home/2016-03-17-03-00-27/314-2020-3|College Student Innovation and Practice Program"
