@@ -4,7 +4,7 @@
   <style>
     #background-image {
       position: absolute; /* 使用绝对定位 */
-      bottom: 1.6rem;          /* 永远固定在页面整体的底部 */
+      bottom: 1.5rem;          /* 永远固定在页面整体的底部 */
       right: 6.93rem;       /* 距离页面右侧的距离，可以调整 */
       height: 150px;
       width: 150px;
@@ -27,7 +27,7 @@
     function adjustBackgroundPosition() {
       const backgroundImage = document.getElementById('background-image');
       const contentHeight = document.body.scrollHeight;
-      backgroundImage.style.top = `${contentHeight - backgroundImage.clientHeight - 1.6 * 16}px`; // 5rem 转为 px
+      backgroundImage.style.top = `${contentHeight - backgroundImage.clientHeight - 1.5 * 16}px`; // 5rem 转为 px
     }
 
     // 初始位置调整
