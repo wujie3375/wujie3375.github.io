@@ -1,43 +1,42 @@
 <div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
-    <!-- 学校的 logo -->
-    <img src="{{ include.logo }}" alt="Logo" style="height: 90px; margin-right: -10px; margin-top: {{ include.logo_margin | default: '0' }}px;">
-    
-    <!-- 文字内容 -->
-    <div style="flex-grow: 1;">
-      <div style="display: flex; justify-content: space-between; align-items: center; text-indent: 1.5em;">
-        <span style="font-family: 'ARIALBD'; font-size: 19px;">{{ include.title }}</span>
-        <span>{{ include.date }}</span>
-      </div>
-      
-      <!-- Degree -->
-      {% if include.degree %}
-        <p style="margin: 0; font-style: italic; text-indent: 1.5em;">{{ include.degree }}</p>
-      {% endif %}
-      
-      <!-- Fields (e.g., Advisor, Program) -->
-      {% if include.fields %}
-        {% assign field_entries = include.fields | split: ';' %}
-        {% for field_entry in field_entries %}
-          {% assign parts = field_entry | split: ':' %}
-          {% assign field_name = parts[0] | strip %}
-          {% assign field_content = parts[1] | strip %}
-          
-          <p style="margin: 0;">{{ field_name }}:
-            {% assign content_entries = field_content | split: ',' %}
-            {% for item in content_entries %}
-              {% assign link_parts = item | split: '|' %}
-              {% if link_parts.size == 2 %}
-                <a href="https://{{ link_parts[0] | strip }}" target="_blank">{{ link_parts[1] | strip }}</a>
-              {% else %}
-                {{ item | strip }}
-              {% endif %}
-              {% if forloop.last == false %}
-                and
-              {% endif %}
-            {% endfor %}
-          </p>
-        {% endfor %}
-      {% endif %}
-    </div>
-  </div>
+  <!-- 学校的 logo -->
+  <img src="{{ include.logo }}" alt="Logo" style="height: 90px; margin-right: -10px; margin-top: {{ include.logo_margin | default: '0' }}px;">
   
+  <!-- 文字内容 -->
+  <div style="flex-grow: 1;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; text-indent: 1.5em;">
+      <span style="font-family: 'ARIALBD'; font-size: 19px; word-break: break-word; flex-grow: 1;">{{ include.title }}</span>
+      <span style="margin-left: auto;">{{ include.date }}</span>
+    </div>
+    
+    <!-- Degree -->
+    {% if include.degree %}
+      <p style="margin: 0; font-style: italic; text-indent: 1.5em;">{{ include.degree }}</p>
+    {% endif %}
+    
+    <!-- Fields (e.g., Advisor, Program) -->
+    {% if include.fields %}
+      {% assign field_entries = include.fields | split: ';' %}
+      {% for field_entry in field_entries %}
+        {% assign parts = field_entry | split: ':' %}
+        {% assign field_name = parts[0] | strip %}
+        {% assign field_content = parts[1] | strip %}
+        
+        <p style="margin: 0;">{{ field_name }}:
+          {% assign content_entries = field_content | split: ',' %}
+          {% for item in content_entries %}
+            {% assign link_parts = item | split: '|' %}
+            {% if link_parts.size == 2 %}
+              <a href="https://{{ link_parts[0] | strip }}" target="_blank">{{ link_parts[1] | strip }}</a>
+            {% else %}
+              {{ item | strip }}
+            {% endif %}
+            {% if forloop.last == false %}
+              and
+            {% endif %}
+          {% endfor %}
+        </p>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
