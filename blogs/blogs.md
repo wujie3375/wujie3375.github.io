@@ -6,34 +6,15 @@ title: Blogs
 
 > **Last Update:** October 6, 2024
 
-# Micro Text
+<!-- 大文字行 -->
+<p style="font-size: 100px; text-align: center; margin: 20px 0;">Blog</p>
 
-Just writing down some thoughts and feelings here.
-
-<div style="height: 250px; overflow-y: scroll; border: 0px solid #ccc; padding: 10px;">
-  
-  <h2>This year</h2>
-
-  <ul>
+<!-- 水平居中的图片 -->
+<p style="text-align: center;">
+  <img src="\blogs\images\Blog.png" alt="Blog" style="height: 200px;">
+</p>
 
 
-  <li>
-      <strong>Oct 6:</strong> The National Day holiday is packed with so many dinner parties, and I'm afraid I'll end up gaining weight again. It's time to go back to school tomorrow.
-    </li>
-  <li>
-      <strong>Sep 25:</strong> The good news is that my paper got accepted today! I'm so happy about it. It's actually the first paper of my doctoral stage.
-    </li>
-  <li>
-      <strong>Sep 17:</strong> On Mid-Autumn Festival, me and my friends headed to Nan'an District. Despite the scorching heat, we we still had a blast.
-    </li>
-
-  <li>
-      <strong>Sep 10:</strong> It's the first day of making my personal homepage, and I'm really excited about it! 🎉🎉
-    </li>
-  </ul>
-</div>
-
-<!-- ## Previous years -->
 
 ---
 
