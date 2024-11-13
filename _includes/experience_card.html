@@ -4,9 +4,13 @@
   
   <!-- 文字内容 -->
   <div style="flex-grow: 1;">
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; text-indent: 1.5em;">
-      <span style="font-family: 'ARIALBD'; font-size: 19px; word-break: break-word; flex-grow: 1;">{{ include.title }}</span>
-      <span style="margin-left: auto;">{{ include.date }}</span>
+    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+      <!-- 包裹标题的容器 -->
+      <div style="flex-grow: 1; max-width: calc(100% - 150px); text-indent: 1.5em; padding-right: 10px;">
+        <span style="font-family: 'ARIALBD'; font-size: 19px; word-break: break-word;">{{ include.title }}</span>
+      </div>
+      <!-- 日期始终位于第一行右侧 -->
+      <span style="white-space: nowrap;">{{ include.date }}</span>
     </div>
     
     <!-- Degree -->
