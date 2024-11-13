@@ -116,7 +116,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 %}
 
 {% include experience_card.html 
-  title="Test Test Test Test Test Test Test Test Test Test Test Test Test " 
+  title="Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test" 
   date="Sep 2020 - Sep 2021" 
   degree="PARTICIPANT" 
   logo="https://wujie3375.github.io/images/logo2/ucas.png" 
