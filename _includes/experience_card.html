@@ -6,8 +6,10 @@
   <div style="flex-grow: 1;">
     <div style="display: flex; justify-content: space-between; align-items: flex-start;">
       <!-- 包裹标题的容器 -->
-      <div style="flex-grow: 1; max-width: calc(100% - 150px); text-indent: 1.5em; padding-right: 10px;">
-        <span style="font-family: 'ARIALBD'; font-size: 19px; word-break: break-word;">{{ include.title }}</span>
+      <div style="flex-grow: 1; padding-right: 10px;">
+        <span style="font-family: 'ARIALBD'; font-size: 19px; display: inline-block; text-indent: 1.5em; line-height: 1.4; word-break: break-word; white-space: normal;">
+          {{ include.title }}
+        </span>
       </div>
       <!-- 日期始终位于第一行右侧 -->
       <span style="white-space: nowrap;">{{ include.date }}</span>
