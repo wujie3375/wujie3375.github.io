@@ -17,10 +17,10 @@
 
     #background-image-2 {
       position: absolute;
-      bottom: 1.5rem; /* 调整位置与 #background-image 有所不同 */
+      bottom: 1.7rem; /* 调整位置与 #background-image 有所不同 */
       left: 10rem; /* 调整距离页面右侧的距离 */
-      height: 120px;
-      width: 120px;
+      height: 80px;
+      width: 80px;
       background-image: url('/images/earth-icon.png'); /* 替换为你的第二张图片路径 */
       background-repeat: no-repeat;
       background-position: center;
@@ -49,7 +49,7 @@
       const contentHeight = document.body.scrollHeight;
 
       backgroundImage.style.top = `${contentHeight - backgroundImage.clientHeight - 1.55 * 16}px`; // 1.55rem 转为 px
-      backgroundImage2.style.top = `${contentHeight - backgroundImage2.clientHeight - 1.5 * 16}px`; // 3rem 转为 px
+      backgroundImage2.style.top = `${contentHeight - backgroundImage2.clientHeight - 1.7 * 16}px`; // 3rem 转为 px
     }
 
     // 初始位置调整
