@@ -16,7 +16,7 @@ title: Blogs
 
 ## 2024
 
-- **2024.11.13:** [双非本科=有案底](https://wujie3375.github.io\blogs\241113)
+- **2024.11.13:** [双非本科等于有案底吗](https://wujie3375.github.io\blogs\241113)
 - **2024.09.20:** [博士生涯系列——序章](https://wujie3375.github.io\blogs\240920)
 - **2024.09.15:** [研路回望：硕士汇总集](https://wujie3375.github.io\blogs\240915)
   
