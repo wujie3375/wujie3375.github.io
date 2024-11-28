@@ -9,7 +9,7 @@ title: Awards
 # Awards
 
 -  **Dec 2023:**  
-  **Second Prize** (Ranked 2th/3th),  *The 7th Sichuan Chongqing Astronomy Competition*
+  **Second Prize** (Ranked 2nd/3rd),  *The 7th Sichuan Chongqing Astronomy Competition*
 -  **Jun 2022:**  
   **Excellent Graduation Thesis**, *China West Normal University*
 -  **May 2022:**  
@@ -24,11 +24,11 @@ title: Awards
 -  **Spe 2024:**  
   Theoretical Physics Graduate Scholarship  
 -  **2022 - 2023:**  
-  Graduate Academic Scholarship (Twice)  
+  Graduate Academic Scholarship (Twice)   
+-  **2020 - 2022:**  
+  Fist-class Scholarship (Three times) 
 -  **Dec 2020:**  
   Haotian Astronomy Scholarship  
--  **2020 - 2021:**  
-  Fist-class Scholarship (Three times)  
 -  **2018 - 2021:**  
   Second-class Scholarship (Four times) 
 
