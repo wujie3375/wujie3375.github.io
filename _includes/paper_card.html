@@ -6,7 +6,7 @@
             <span style="font-family: 'ARIAL'; font-size: 15px;">{{ include.subtitle }}</span>
         {% endif %}
     </div>
-
+    
     <div style="margin: 8px 0;"></div>
 
     <!-- Authors -->
@@ -73,40 +73,10 @@
                 <a href="{{ include.pdf }}">#{{ include.number }}</a>
             </span>
         {% endif %}
-
-        <!-- BIB Button -->
-        <button onclick="showBib('{{ include.number }}')" style="margin-left: 8px; padding: 2px 6px; border: 1px solid #aaa; border-radius: 4px; background-color: #f9f9f9; cursor: pointer;">BIB</button>
-    </div>
-
-    <!-- Hidden BIB content -->
-    <div id="bib-box-{{ include.number }}" style="display: none; margin-top: 8px; border: 1px solid #ddd; border-radius: 4px; padding: 8px; background-color: #fefefe; font-family: 'Courier New', monospace; font-size: 12px; white-space: pre-wrap;">
-        @article{ {{ include.citation_key }},
-            author = "{{ include.authors }}",
-            title = "{{ include.title }}",
-            {% if include.arxiv %}
-            eprint = "{{ include.arxiv }}",
-            archivePrefix = "arXiv",
-            primaryClass = "{{ include.primary_class }}",
-            {% endif %}
-            {% if include.doi %}
-            doi = "{{ include.doi }}",
-            {% endif %}
-            {% if include.journal %}
-            journal = "{{ include.journal }}",
-            volume = "{{ include.volume }}",
-            {% if include.number %}
-            number = "{{ include.number }}",
-            {% endif %}
-            {% if include.pages %}
-            pages = "{{ include.pages }}",
-            {% endif %}
-            {% endif %}
-            year = "{{ include.date | split: '-' | first }}"
-        }
     </div>
 </ul>
 
-<!-- JavaScript for toggling authors and BIB box -->
+<!-- JavaScript for toggling authors -->
 <script>
     function toggleAuthors(id) {
         var full = document.getElementById('author-full-' + id);
@@ -114,15 +84,6 @@
             full.style.display = 'inline';
         } else {
             full.style.display = 'none';
-        }
-    }
-
-    function showBib(id) {
-        var bibBox = document.getElementById('bib-box-' + id);
-        if (bibBox.style.display === 'none') {
-            bibBox.style.display = 'block';
-        } else {
-            bibBox.style.display = 'none';
         }
     }
 </script>
