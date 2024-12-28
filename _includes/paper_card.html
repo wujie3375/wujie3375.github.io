@@ -10,7 +10,7 @@
     <div style="margin: 6px 0;"></div>
 
     <!-- Authors -->
-    <div style="font-family: 'ARIAL'; font-size: 16px; margin: -2px -5px;">
+    <div style="font-family: 'ARIAL'; font-size: 16px; margin: 0 0 -5px 0;">
         {% assign authors = include.authors | split: ',' %}
         {% assign omit_start = include.etal | default: 5 %}
         {% if authors.size > omit_start %}
@@ -55,7 +55,7 @@
         ({{ include.date }})
     </div>
 
-    <div style="font-size: 16px; margin: -5px 0;">
+    <div style="font-size: 16px; margin: -5px 0 0 0;">
         <!-- Journal and/or arXiv Links -->
         {% if include.journal %}
             <a href="{{ include.journal_link }}">
