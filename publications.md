@@ -49,6 +49,7 @@ title: Publications
   pdf="https://wujie3375.github.io\file\241106.pdf"
   number="5"
   highlight_author=1
+  omit_start=2
 %}
 
 {% include paper_card.html

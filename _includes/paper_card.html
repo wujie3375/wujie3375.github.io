@@ -12,25 +12,26 @@
     <!-- Authors -->
     <div style="font-family: 'ARIAL';">
         {% assign authors = include.authors | split: ',' %}
-        {% if authors.size > 4 %}
-            <!-- More than four authors: show first three and then et al. -->
+        {% assign omit_start = include.omit_start | default: 5 %}
+        {% if authors.size > omit_start %}
+            <!-- More than omit_start authors: show first omit_start and then et al. -->
             {% for author in authors %}
-                {% if forloop.index <= 3 %}
+                {% if forloop.index <= omit_start %}
                     {% if forloop.index == include.highlight_author %}
                         <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
                     {% else %}
                         {{ author | strip }}
                     {% endif %}
-                    {% if forloop.index < 3 %}
+                    {% if forloop.index < omit_start %}
                         ,<!-- No space after the comma -->
                     {% endif %}
                 {% endif %}
             {% endfor %}
             , <em><a href="javascript:void(0);" onclick="toggleAuthors('{{ include.number }}')">et al.</a></em>
-            <!-- Hidden full author list (excluding the first three already displayed) -->
+            <!-- Hidden full author list (excluding the first omit_start already displayed) -->
             <span id="author-full-{{ include.number }}" style="display: none;">
                 , <!-- Comma before the additional authors -->
-                {% for author in authors offset:3 %}
+                {% for author in authors offset:omit_start %}
                     {{ author | strip }}
                     {% if forloop.last == false %}
                         ,<!-- No space after the comma -->
@@ -38,7 +39,7 @@
                 {% endfor %}
             </span>
         {% else %}
-            <!-- Four or fewer authors: show all without 'and' -->
+            <!-- omit_start or fewer authors: show all without 'and' -->
             {% for author in authors %}
                 {% if forloop.index == include.highlight_author %}
                     <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
