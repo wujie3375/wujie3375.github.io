@@ -46,7 +46,7 @@ title: Publications
   authors="Jie Wu, Mengfei Sun, Jin Li*"
   date="Nov 6, 2024"
   arxiv="2411.03631"
-  pdf="https://wujie3375.github.io\file\5.pdf"
+  pdf="https://wujie3375.github.io\file\241106.pdf"
   number="5"
   highlight_author=1
 %}
@@ -60,7 +60,7 @@ title: Publications
   volume="110"
   article_number="084057"
   arxiv="2407.13590"
-  pdf="https://wujie3375.github.io/file/4.pdf"
+  pdf="https://wujie3375.github.io/file/240924.pdf"
   number="4"
   highlight_author=1
 %}
@@ -74,7 +74,7 @@ title: Publications
   volume="109"
   article_number="104014"
   arxiv="2401.03113"
-  pdf="https://wujie3375.github.io/file/3.pdf"
+  pdf="https://wujie3375.github.io/file/240406.pdf"
   number="3"
   highlight_author=1
 %}
@@ -92,7 +92,7 @@ title: Publications
   volume="108"
   article_number="124047"
   arxiv="2307.05568"
-  pdf="https://wujie3375.github.io/file/2.pdf"
+  pdf="https://wujie3375.github.io/file/231130.pdf"
   number="2"
   highlight_author=1
 %}
@@ -106,7 +106,7 @@ title: Publications
   journal_link="https://iopscience.iop.org/article/10.1088/1674-1056/acd8a3"
   volume="32"
   article_number="090401"
-  pdf="https://wujie3375.github.io/file/1.pdf"
+  pdf="https://wujie3375.github.io/file/230525.pdf"
   number="1"
   highlight_author=1
 %}
