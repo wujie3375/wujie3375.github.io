@@ -49,7 +49,7 @@ title: Publications
   pdf="https://wujie3375.github.io\file\241106.pdf"
   number="5"
   highlight_author=1
-  omit_start=2
+  etal=5
 %}
 
 {% include paper_card.html
@@ -78,6 +78,7 @@ title: Publications
   pdf="https://wujie3375.github.io/file/240406.pdf"
   number="3"
   highlight_author=1
+  etal=2
 %}
    
 ---

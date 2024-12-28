@@ -12,7 +12,7 @@
     <!-- Authors -->
     <div style="font-family: 'ARIAL';">
         {% assign authors = include.authors | split: ',' %}
-        {% assign omit_start = include.omit_start | default: 5 %}
+        {% assign omit_start = include.etal | default: 5 %}
         {% if authors.size > omit_start %}
             <!-- More than omit_start authors: show first omit_start and then et al. -->
             {% for author in authors %}
@@ -27,10 +27,9 @@
                     {% endif %}
                 {% endif %}
             {% endfor %}
-            , <em><a href="javascript:void(0);" onclick="toggleAuthors('{{ include.number }}')">et al.</a></em>
+            , <em><a href="javascript:void(0);" onclick="toggleAuthors('{{ include.number }}', this)">et al.</a></em>
             <!-- Hidden full author list (excluding the first omit_start already displayed) -->
             <span id="author-full-{{ include.number }}" style="display: none;">
-                , <!-- Comma before the additional authors -->
                 {% for author in authors offset:omit_start %}
                     {{ author | strip }}
                     {% if forloop.last == false %}
@@ -79,12 +78,14 @@
 
 <!-- JavaScript for toggling authors -->
 <script>
-    function toggleAuthors(id) {
+    function toggleAuthors(id, link) {
         var full = document.getElementById('author-full-' + id);
         if (full.style.display === 'none') {
             full.style.display = 'inline';
+            link.style.display = 'none'; // Hide the et al. link
         } else {
             full.style.display = 'none';
+            link.style.display = 'inline'; // Show the et al. link
         }
     }
 </script>
