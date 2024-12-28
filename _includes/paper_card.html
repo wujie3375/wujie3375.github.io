@@ -1,4 +1,4 @@
-<ul style="border: 2px solid #ddd; border-radius: 8px; padding: 8px; list-style-type: none;">
+<ul style="border: 2px solid #ddd; border-radius: 8px; padding: 9px; list-style-type: none;">
     <!-- Title -->
     <div style="font-family: 'ARIALBD'; font-size: 19px; line-height: 1.4;">
         {{ include.title }}
@@ -10,7 +10,7 @@
     <div style="margin: 6px 0;"></div>
 
     <!-- Authors -->
-    <div style="font-family: 'ARIAL'; font-size: 17px; margin: -2px 0;">
+    <div style="font-family: 'ARIAL'; font-size: 16px; margin: -2px -2px;">
         {% assign authors = include.authors | split: ',' %}
         {% assign omit_start = include.etal | default: 5 %}
         {% if authors.size > omit_start %}
@@ -55,7 +55,7 @@
         ({{ include.date }})
     </div>
 
-    <div style="font-size: 17px; margin: -2px 0;">
+    <div style="font-size: 16px; margin: -2px 0;">
         <!-- Journal and/or arXiv Links -->
         {% if include.journal %}
             <a href="{{ include.journal_link }}">
