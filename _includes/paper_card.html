@@ -83,10 +83,10 @@
         var etal = document.getElementById('etal-link-' + id);
         if (full.style.display === 'none') {
             full.style.display = 'inline';
-            etal.textContent = 'collapse';
+            etal.style.display = 'none';
         } else {
             full.style.display = 'none';
-            etal.textContent = 'et al.';
+            etal.style.display = 'inline';
         }
     }
 </script>
