@@ -78,7 +78,7 @@ title: Publications
   pdf="https://wujie3375.github.io/file/240406.pdf"
   number="3"
   highlight_author=1
-  etal=2
+  etal=5
 %}
    
 ---
