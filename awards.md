@@ -41,6 +41,14 @@ Keep track of the meetings I've been to.
   <ul>
 
   <li style="margin-bottom: 15px;">
+    <strong>Jan 14, 2025:</strong> <br>
+    <strong>VOLUNTEER</strong>, <em>2025 Chongqing Symposium on Gravity and Cosmology</em>, Chongqing, China. 
+    <span style="font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
+      <a href="https://wujie3375.github.io/images/meeting/250114.jpg" target="_blank">Photo</a>
+    </span>
+  </li>
+
+  <li style="margin-bottom: 15px;">
       <strong>Apr 19, 2024:</strong> <br>
       <strong>PRESENTER</strong>, <em>2024 Annual Meeting of Gravitation and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting</em>, Hengyang, Hunan, China. 
       <span style="font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
