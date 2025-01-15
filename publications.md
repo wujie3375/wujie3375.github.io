@@ -27,7 +27,7 @@ title: Publications
 
 
 
-> **Last Update:** November 7, 2024
+> **Last Update:** Jan 16, 2025
 
 # Publications
 
@@ -40,6 +40,19 @@ title: Publications
 ## 2024
 
 <!-- ===================================================== -->
+{% include paper_card.html
+  title="Parallel manipulation of multiple ink droplets via near-infrared light on lubricant infused surface"
+  authors="Yalin Hu, Jie Wu, Haiyan Luo, Guanqi Su, Xiangxi Meng, Liyu Liu, Guo Chen*"
+  date="Dec 23, 2024"
+  journal="Appl. Phys. Lett."
+  journal_link="https://pubs.aip.org/aip/apl/article/126/2/021602/3330590"
+  volume="126"
+  article_number="021602"
+  pdf="https://wujie3375.github.io\file\241223.pdf"
+  number="6"
+  highlight_author=2
+  etal=4
+%}
 
 {% include paper_card.html
   title="Constraints and detection capabilities of GW polarizations with space-based detectors in different TDI combinations"
