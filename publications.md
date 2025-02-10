@@ -137,7 +137,6 @@ title: Publications
   authors="Jie Wu"
   date="May 2022, advisor: Assoc. Prof. Di Wu"
   journal="Undergraduate Thesis"
-  journal_link="https://wujie3375.github.io/file/Undergraduate-Thesis.pdf"
   volume=" "
   article_number="(in Chinese)"
   pdf="https://wujie3375.github.io/file/Undergraduate-Thesis.pdf"
