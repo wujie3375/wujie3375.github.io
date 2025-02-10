@@ -44,7 +44,7 @@ title: Publications
   title="Parallel manipulation of multiple ink droplets via near-infrared light on lubricant infused surface"
   subtitle="(Responsible for data processing and visualization)"
   authors="Yalin Hu, Jie Wu, Haiyan Luo, Guanqi Su, Xiangxi Meng, Liyu Liu, Guo Chen*"
-  date="Dec 23, 2024"
+  date="Jan 13, 2025"
   journal="Appl. Phys. Lett."
   journal_link="https://pubs.aip.org/aip/apl/article/126/2/021602/3330590"
   volume="126"
