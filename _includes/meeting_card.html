@@ -1,0 +1,17 @@
+<li style="margin-bottom: 15px;">
+    <strong>{{ include.date }}:</strong> <br>
+    <strong>{{ include.role }}</strong>, <em>{{ include.title }}</em>, {{ include.location }}.
+    
+    {% if include.photo %}
+    <span style="font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
+      <a href="{{ include.photo }}" target="_blank">Photo</a>
+    </span>
+    {% endif %}
+    
+    {% if include.ppt %}
+    <span style="margin-left: 5px; font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
+      <a href="{{ include.ppt }}" target="_blank">PPT</a>
+    </span>
+    {% endif %}
+  </li>
+  

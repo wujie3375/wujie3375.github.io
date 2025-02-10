@@ -9,11 +9,11 @@ title: Awards
 # Awards
 
 -  **Dec 2023:**  
-  **Second Prize** (Ranked 2nd/3rd),  *The 7th Sichuan Chongqing Astronomy Competition*
+  **Second Prize** (Ranked 2nd/3rd), *The 7th Sichuan Chongqing Astronomy Competition*
 -  **Jun 2022:**  
-  **Excellent Graduation Thesis**, *China West Normal University*
+  **Excellent Graduation Thesis**, *China West Normal U.*
 -  **May 2022:**  
-  **Outstanding Graduate**, *China West Normal University*
+  **Outstanding Graduate**, *China West Normal U.*
 -  **Nov 2018:**  
   **Third Prize** (Ranked 7th/8th),  *The 5th Sichuan Chongqing Astronomy Competition* 
 
@@ -22,15 +22,15 @@ title: Awards
 # Scholarships
 
 -  **Spe 2024:**  
-  Theoretical Physics Graduate Scholarship  
+  **Theoretical Physics Graduate Scholarship** (Twice), *Chongqing U.*
 -  **2022 - 2023:**  
-  Graduate Academic Scholarship (Twice)   
+  **Graduate Academic Scholarship** (Twice), *Chongqing U.*
 -  **2020 - 2022:**  
-  Fist-class Scholarship (Three times) 
+  **Fist-class Scholarship** (Three times), *China West Normal U.* 
 -  **Dec 2020:**  
-  Haotian Astronomy Scholarship  
+  **Haotian Astronomy Scholarship**, *Nanjing VasTech Astronomical Instrument & Equipment Co. Ltd.*
 -  **2018 - 2021:**  
-  Second-class Scholarship (Four times) 
+  **Second-class Scholarship** (Four times), *China West Normal U.* 
 
 ---
 
@@ -39,6 +39,18 @@ title: Awards
 Keep track of the meetings I've been to.
 <div style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 10px;">
   <ul>
+
+  {% include meeting_card.html 
+  date="Jan 14, 2025" 
+  role="VOLUNTEER" 
+  title="2025 Chongqing Symposium on Gravity and Cosmology" 
+  location="Chongqing, China" 
+  photo="https://wujie3375.github.io/images/meeting/250114.jpg" %}
+  
+  {% include meeting_card.html date="Apr 19, 2024" role="PRESENTER" title="2024 Annual Meeting of Gravitation and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting" location="Hengyang, Hunan, China" photo="https://wujie3375.github.io/images/meeting/240419.jpg" ppt="https://wujie3375.github.io/images/meeting/240419.pdf" %}
+  
+  {% include meeting_card.html date="Apr 9, 2024" role="PARTICIPANT" title="The 2nd International Workshop on Gravitational Waves and the Early Universe" location="Beijing, China" photo="https://wujie3375.github.io/images/meeting/240409.jpg" %}
+
 
   <li style="margin-bottom: 15px;">
     <strong>Jan 14, 2025:</strong> <br>
