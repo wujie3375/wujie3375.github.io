@@ -47,72 +47,51 @@ Keep track of the meetings I've been to.
   location="Chongqing, China" 
   photo="https://wujie3375.github.io/images/meeting/250114.jpg" %}
   
-  {% include meeting_card.html date="Apr 19, 2024" role="PRESENTER" title="2024 Annual Meeting of Gravitation and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting" location="Hengyang, Hunan, China" photo="https://wujie3375.github.io/images/meeting/240419.jpg" ppt="https://wujie3375.github.io/images/meeting/240419.pdf" %}
+  {% include meeting_card.html 
+  date="Apr 19, 2024" 
+  role="PRESENTER" 
+  title="2024 Annual Meeting of Gravitation and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting" 
+  location="Hengyang, Hunan, China" 
+  photo="https://wujie3375.github.io/images/meeting/240419.jpg" 
+  ppt="https://wujie3375.github.io/images/meeting/240419.pdf" %}
   
-  {% include meeting_card.html date="Apr 9, 2024" role="PARTICIPANT" title="The 2nd International Workshop on Gravitational Waves and the Early Universe" location="Beijing, China" photo="https://wujie3375.github.io/images/meeting/240409.jpg" %}
+  {% include meeting_card.html 
+  date="Apr 9, 2024" 
+  role="PARTICIPANT" 
+  title="The 2nd International Workshop on Gravitational Waves and the Early Universe" 
+  location="Beijing, China" 
+  photo="https://wujie3375.github.io/images/meeting/240409.jpg" %}
 
+  {% include meeting_card.html 
+  date="Oct 28, 2023" 
+  role="PARTICIPANT" 
+  title="2023 Electrodynamics textbook and course construction seminar" 
+  location="Chongqing, China" 
+  photo="https://wujie3375.github.io/images/meeting/231028.jpg" %}
 
-  <li style="margin-bottom: 15px;">
-    <strong>Jan 14, 2025:</strong> <br>
-    <strong>VOLUNTEER</strong>, <em>2025 Chongqing Symposium on Gravity and Cosmology</em>, Chongqing, China. 
-    <span style="font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
-      <a href="https://wujie3375.github.io/images/meeting/250114.jpg" target="_blank">Photo</a>
-    </span>
-  </li>
+  {% include meeting_card.html 
+  date="Oct 13, 2023" 
+  role="PARTICIPANT" title="2023 Academic Symposium on the Frontiers of Theoretical Physics in Sichuan Chongqing Region" 
+  location="Chengdu, Sichuan, China" 
+  photo="https://wujie3375.github.io/images/meeting/231013.jpg" %}
 
-  <li style="margin-bottom: 15px;">
-      <strong>Apr 19, 2024:</strong> <br>
-      <strong>PRESENTER</strong>, <em>2024 Annual Meeting of Gravitation and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting</em>, Hengyang, Hunan, China. 
-      <span style="font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
-        <a href="https://wujie3375.github.io/images/meeting/240419.jpg" target="_blank">Photo</a>
-      </span> 
-      <span style="margin-left: 5px; font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
-        <a href="https://wujie3375.github.io/images/meeting/240419.pdf" target="_blank">PPT</a>
-      </span>
-    </li>
+  {% include meeting_card.html 
+  date="Apr 22, 2023" 
+  role="VOLUNTEER" 
+  title="2023 Annual Meeting of the Chinese Physical Society, Division of Gravitation and Relativity Astrophysics" 
+  location="Chongqing, China" %}
 
+  {% include meeting_card.html 
+  date="Apr 21, 2023" role="VOLUNTEER" 
+  title="Template Library and Signal Recognition Technology for Space Gravitational Wave Detection 2022 Annual Progress Conference" 
+  location="Chongqing, China" %}
 
-  <li style="margin-bottom: 15px;">
-    <strong>Apr 9, 2024:</strong> <br>
-    <strong>PARTICIPANT</strong>, <em>The 2nd International Workshop on Gravitational Waves and the Early Universe</em>, Beijing, China. 
-    <span style="font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
-      <a href="https://wujie3375.github.io/images/meeting/240409.jpg" target="_blank">Photo</a>
-    </span>
-  </li>
+  {% include meeting_card.html 
+  date="Apr 1, 2023" role="PARTICIPANT" 
+  title="Chongqing Theoretical Physics Frontier Academic Seminar" 
+  location="Chongqing, China" 
+  photo="https://wujie3375.github.io/images/meeting/230401.jpg" %}
 
-  <li style="margin-bottom: 15px;">
-    <strong>Oct 28, 2023:</strong> <br>
-    <strong>PARTICIPANT</strong>, <em>2023 Electrodynamics textbook and course construction seminar</em>, Chongqing, China. 
-    <span style="font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
-      <a href="https://wujie3375.github.io/images/meeting/231028.jpg" target="_blank">Photo</a>
-    </span>
-  </li>
-
-  <li style="margin-bottom: 15px;">
-    <strong>Oct 13, 2023:</strong> <br>
-    <strong>PARTICIPANT</strong>, <em>2023 Academic Symposium on the Frontiers of Theoretical Physics in Sichuan Chongqing Region</em>, Chengdu, Sichuan, China. 
-    <span style="font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
-      <a href="https://wujie3375.github.io/images/meeting/231013.jpg" target="_blank">Photo</a>
-    </span>
-  </li>
-
-  <li style="margin-bottom: 15px;">
-    <strong>Apr 22, 2023:</strong> <br>
-    <strong>VOLUNTEER</strong>, <em>2023 Annual Meeting of the Chinese Physical Society, Division of Gravitation and Relativity Astrophysics</em>, Chongqing, China.
-  </li>
-
-  <li style="margin-bottom: 15px;">
-    <strong>Apr 21, 2023:</strong> <br>
-    <strong>VOLUNTEER</strong>, <em>Template Library and Signal Recognition Technology for Space Gravitational Wave Detection 2022 Annual Progress Conference</em>, Chongqing, China.
-  </li>
-
-  <li style="margin-bottom: 15px;">
-    <strong>Apr 1, 2023:</strong> <br>
-    <strong>PARTICIPANT</strong>, <em>Chongqing Theoretical Physics Frontier Academic Seminar</em>, Chongqing, China. 
-    <span style="font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
-      <a href="https://wujie3375.github.io/images/meeting/230401.jpg" target="_blank">Photo</a>
-    </span>
-  </li>
 </ul>
 </div>
 
