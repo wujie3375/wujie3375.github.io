@@ -41,6 +41,17 @@ title: Publications
 
 <!-- ===================================================== -->
 {% include paper_card.html
+  title="Constraints and detection capabilities of GW polarizations with space-based detectors in different TDI combinations"
+  authors="Jie Wu, Mengfei Sun, Xianghe Ma, Xiaolin Liu, Jin Li*, Zhoujian Cao*"
+  date="Feb 19, 2025"
+  arxiv="2411.03631"
+  pdf="https://wujie3375.github.io\file\250219.pdf"
+  number="7"
+  highlight_author=1
+  etal=3
+%}
+
+{% include paper_card.html
   title="Parallel manipulation of multiple ink droplets via near-infrared light on lubricant infused surface"
   subtitle="(Responsible for data processing and visualization)"
   authors="Yalin Hu, Jie Wu, Haiyan Luo, Guanqi Su, Xiangxi Meng, Liyu Liu, Guo Chen*"
