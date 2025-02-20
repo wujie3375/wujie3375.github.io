@@ -41,14 +41,14 @@ title: Publications
 
 <!-- ===================================================== -->
 {% include paper_card.html
-  title="Constraints and detection capabilities of GW polarizations with space-based detectors in different TDI combinations"
+  title="Effect of kick velocity on gravitational wave detection of binary black holes with space- and ground-based detectors"
   authors="Jie Wu, Mengfei Sun, Xianghe Ma, Xiaolin Liu, Jin Li*, Zhoujian Cao*"
   date="Feb 19, 2025"
-  arxiv="2411.03631"
+  arxiv="2502.13710"
   pdf="https://wujie3375.github.io\file\250219.pdf"
   number="7"
   highlight_author=1
-  etal=3
+  etal=4
 %}
 
 {% include paper_card.html
