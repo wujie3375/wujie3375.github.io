@@ -27,7 +27,7 @@ title: Publications
 
 
 
-> **Last Update:** Feb 10, 2025
+> **Last Update:** Feb 19, 2025
 
 # Publications
 
@@ -79,7 +79,7 @@ title: Publications
   pdf="https://wujie3375.github.io\file\241106.pdf"
   number="5"
   highlight_author=1
-  etal=5
+  etal=4
 %}
 
 {% include paper_card.html
@@ -108,7 +108,7 @@ title: Publications
   pdf="https://wujie3375.github.io/file/240406.pdf"
   number="3"
   highlight_author=1
-  etal=5
+  etal=4
 %}
    
 ---
