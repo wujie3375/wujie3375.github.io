@@ -23,9 +23,6 @@ title: Publications
   /* body {
     font-family: 'ARIAL', serif;
   } */
-</style>
-
-<style>
 table {
     width: 100%;
     border-collapse: collapse;
