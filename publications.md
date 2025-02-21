@@ -27,7 +27,7 @@ title: Publications
 
 <style>
 table {
-    width: 90%;
+    width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
     text-align: center;
@@ -39,12 +39,12 @@ th, td {
 }
 
 th {
-    border-top: 1.3px solid black;
-    border-bottom: 1.3px solid black; /* 顶部线 */
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black; /* 顶部线 */
 }
 
 tr:last-child td {
-    border-bottom: 1.3px solid black; /* 底部线 */
+    border-bottom: 1.5px solid black; /* 底部线 */
 }
 </style>
 
@@ -57,36 +57,44 @@ tr:last-child td {
 <p style="text-indent: 0; font-family: 'ARIAL';">(*: corresponding author)</p>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<canvas id="myChart"></canvas>
+<canvas id="myChart" style="height: 400px;"></canvas> <!-- 设置图的高度 -->
 <script>
   var ctx = document.getElementById('myChart').getContext('2d');
   var myChart = new Chart(ctx, {
       type: 'bar',
       data: {
           labels: ['2023', '2024', '2025'],
-          datasets: [
-              {
-                  label: '当年发表',
-                  data: [2, 3, 1],
-                  backgroundColor: 'blue'
-              },
-              {
-                  label: '总计',
-                  data: [2, 5, 6],  // 累积和
-                  backgroundColor: 'red'
-              }
-          ]
+          datasets: [{
+              label: '总计',
+              data: [2, 3, 2],  // 累积总数
+              backgroundColor: [
+                  'rgba(75, 192, 192, 0.6)', // 2023
+                  'rgba(153, 102, 255, 0.6)', // 2024
+                  'rgba(255, 159, 64, 0.6)'   // 2025
+              ]
+          }]
       },
       options: {
           responsive: true,
           scales: {
               y: {
-                  beginAtZero: true
+                  beginAtZero: true,
+                  title: {
+                      display: true,
+                      text: 'Number'
+                  }
+              },
+              x: {
+                  title: {
+                      display: true,
+                      text: 'Year'
+                  }
               }
           }
       }
   });
 </script>
+
 
 
 
