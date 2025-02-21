@@ -56,6 +56,9 @@ tr:last-child td {
 
 <p style="text-indent: 0; font-family: 'ARIAL';">(*: corresponding author)</p>
 
+<!-- ================================================================================================= -->
+<!-- 统计图和表格 -->
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <canvas id="myChart" style="height: 400px;"></canvas> <!-- 设置图的高度 -->
 <script>
@@ -65,9 +68,14 @@ tr:last-child td {
       data: {
           labels: ['2023', '2024', '2025'],
           datasets: [{
-              label: '总计',
-              data: [2, 3, 2],  // 累积总数
+              label: 'First author',
+              data: [2, 3, 1],  // 累积总数
               backgroundColor: 'rgba(54, 162, 235, 0.8)' // 统一颜色
+          },
+          {
+              label: 'Total',
+              data: [2, 3, 2],  // 累积总数
+              backgroundColor: 'rgba(153, 102, 255, 0.8)' // 统一颜色
           }]
       },
       options: {
@@ -98,14 +106,13 @@ tr:last-child td {
 </script>
 
 
-
-
-|                      | Published | Preprint | Total |
-|:--------------------:|:---------:|:--------:|:-----:|
-| First author    |     4     |    2     |   6   |
+|                  | Published | Preprint | Total |
+|:----------------:|:---------:|:--------:|:-----:|
+|  First author    |     4     |    2     |   6   |
 | Non first author |     1     |    0     |   1   |
 | Total            |     5     |    2     |   7   |
 
+<!-- ================================================================================================= -->
 ---
 
 ## 2025
