@@ -59,50 +59,57 @@ tr:last-child td {
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <canvas id="myChart" style="height: 400px;"></canvas> <!-- 设置图的高度 -->
 <script>
-  var ctx = document.getElementById('myChart').getContext('2d');
-  var myChart = new Chart(ctx, {
-      type: 'bar',
-      data: {
-          labels: ['2023', '2024', '2025'],
-          datasets: [{
-              label: 'First author',
-              data: [2, 3, 1],  // 第一组数据
-              backgroundColor: 'rgba(54, 162, 235, 0.8)', // 第一组颜色
-          },
-          {
-              label: 'Total',
-              data: [2, 3, 2],  // 第二组数据
-              backgroundColor: 'rgba(255, 159, 64, 0.8)', // 第二组颜色
-          }]
-      },
-      options: {
-          responsive: true,
-          scales: {
-              y: {
-                  beginAtZero: true,
-                  ticks: {
-                      stepSize: 1, // 只显示整数
-                      callback: function(value) {
-                          return Number.isInteger(value) ? value : null; // 只显示整数
-                      }
-                  },
-                  title: {
-                      display: true,
-                      text: 'Number'
-                  }
-              },
-              x: {
-                  title: {
-                      display: true,
-                      text: 'Year'
-                  }
-              }
-          }
-      }
-  });
+  function createBarChart(labels, data1, data2) {
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'First author',
+                data: data1,  // 第一组数据
+                backgroundColor: 'rgba(54, 162, 235, 0.8)', // 第一组颜色
+                barThickness: 20 // 设置柱子的具体宽度
+            },
+            {
+                label: 'Total',
+                data: data2,  // 第二组数据
+                backgroundColor: 'rgba(255, 159, 64, 0.8)', // 第二组颜色
+                barThickness: 20 // 设置柱子的具体宽度
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        stepSize: 1, // 只显示整数
+                        callback: function(value) {
+                            return Number.isInteger(value) ? value : null; // 只显示整数
+                        }
+                    },
+                    title: {
+                        display: true,
+                        text: 'Number'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Year'
+                    }
+                }
+            }
+        }
+    });
+  }
+
+  createBarChart(
+  [2023, '2024', '2025'], 
+  [     2,      3,      1], 
+  [     2,      3,      2]);
 </script>
-
-
 
 
 |                  | Published | Preprint | Total |
