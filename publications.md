@@ -69,13 +69,19 @@ tr:last-child td {
           labels: ['2023', '2024', '2025'],
           datasets: [{
               label: 'First author',
-              data: [2, 3, 1],  // 累积总数
-              backgroundColor: 'rgba(54, 162, 235, 0.8)' // 统一颜色
+              data: [2, 3, 1],  // 第一组数据
+              backgroundColor: 'rgba(54, 162, 235, 0.8)', // 第一组颜色
+              barThickness: 20, // 设置柱子的宽度
+              categoryPercentage: 1.0, // 设置为1.0使柱子重叠
+              barPercentage: 1.0
           },
           {
               label: 'Total',
-              data: [2, 3, 2],  // 累积总数
-              backgroundColor: 'rgba(255, 159, 64, 0.8)' // 统一颜色
+              data: [2, 3, 2],  // 第二组数据
+              backgroundColor: 'rgba(153, 102, 255, 0.8)', // 第二组颜色
+              barThickness: 20, // 设置柱子的宽度
+              categoryPercentage: 1.0, // 设置为1.0使柱子重叠
+              barPercentage: 1.0
           }]
       },
       options: {
