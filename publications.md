@@ -104,13 +104,13 @@ tr:last-child td {
         }
     });
   }
-
-  window.onload = function() {
-    // 调用函数生成图表
-    createBarChart(['2023', '2024', '2025'], [2, 3, 1], [2, 3, 2]);
-  };
 </script>
-
+<script>
+  createBarChart(
+  [2023, '2024', '2025'], 
+  [     2,      3,      1], 
+  [     2,      3,      2]);
+</script>
 
 
 |                  | Published | Preprint | Total |
