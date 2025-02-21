@@ -35,39 +35,11 @@ title: Publications
 
 <p style="text-indent: 0; font-family: 'ARIAL';">(*: corresponding author)</p>
 
-<style>
-    table {
-        width: 50%;
-        border-collapse: collapse;
-        text-align: center;
-    }
-    th, td {
-        border: 1px solid black;
-        padding: 8px;
-    }
-    th {
-        background-color: lightgray;
-    }
-</style>
-
-<table>
-    <tr>
-        <th>名称</th>
-        <th>数量</th>
-        <th>价格</th>
-    </tr>
-    <tr>
-        <td>苹果</td>
-        <td>10</td>
-        <td>¥5</td>
-    </tr>
-    <tr>
-        <td>香蕉</td>
-        <td>8</td>
-        <td>¥3</td>
-    </tr>
-</table>
-
+|                      | Published | Preprint | Total |
+|:--------------------:|:---------:|:--------:|:-----:|
+| **First author**     |     4     |    2     |   6   |
+| **Non first author** |     1     |    0     |   1   |
+| **Total**            |     5     |    2     |   7   |
 
 ---
 
