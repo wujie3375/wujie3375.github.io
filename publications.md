@@ -63,22 +63,38 @@ tr:last-child td {
   var myChart = new Chart(ctx, {
       type: 'bar',
       data: {
-          labels: ['First author', 'Non first author', 'Total'],
-          datasets: [{
-              label: '论文统计',
-              data: [6, 1, 7],
-              backgroundColor: ['blue', 'green', 'red']
-          }]
+          labels: ['2023', '2024', '2025'],
+          datasets: [
+              {
+                  label: '当年发表',
+                  data: [2, 3, 1],
+                  backgroundColor: 'blue'
+              },
+              {
+                  label: '总计',
+                  data: [2, 5, 6],  // 累积和
+                  backgroundColor: 'red'
+              }
+          ]
+      },
+      options: {
+          responsive: true,
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          }
       }
   });
 </script>
 
 
+
 |                      | Published | Preprint | Total |
 |:--------------------:|:---------:|:--------:|:-----:|
-| **First author**     |     4     |    2     |   6   |
-| **Non first author** |     1     |    0     |   1   |
-| **Total**            |     5     |    2     |   7   |
+| First author    |     4     |    2     |   6   |
+| Non first author |     1     |    0     |   1   |
+| Total            |     5     |    2     |   7   |
 
 ---
 
