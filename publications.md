@@ -35,6 +35,28 @@ title: Publications
 
 <p style="text-indent: 0; font-family: 'ARIAL';">(*: corresponding author)</p>
 
+<style>
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+th {
+    border-bottom: 2px solid black; /* 顶部线 */
+}
+
+tr:last-child td {
+    border-top: 2px solid black; /* 底部线 */
+}
+</style>
+
 |                      | Published | Preprint | Total |
 |:--------------------:|:---------:|:--------:|:-----:|
 | **First author**     |     4     |    2     |   6   |
