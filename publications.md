@@ -37,23 +37,24 @@ title: Publications
 
 <style>
 table {
-    width: 50%;
+    width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
     text-align: center;
 }
 
 th, td {
-    border: 1px solid black;
+    border: 0px solid black;
     padding: 8px;
 }
 
 th {
+    border-top: 2px solid black;
     border-bottom: 2px solid black; /* 顶部线 */
 }
 
 tr:last-child td {
-    border-top: 2px solid black; /* 底部线 */
+    border-bottom: 2px solid black; /* 底部线 */
 }
 </style>
 
