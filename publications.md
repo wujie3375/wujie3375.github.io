@@ -67,11 +67,7 @@ tr:last-child td {
           datasets: [{
               label: '总计',
               data: [2, 3, 2],  // 累积总数
-              backgroundColor: [
-                  'rgba(75, 192, 192, 0.6)', // 2023
-                  'rgba(153, 102, 255, 0.6)', // 2024
-                  'rgba(255, 159, 64, 0.6)'   // 2025
-              ]
+              backgroundColor: 'rgba(54, 162, 235, 0.8)' // 统一颜色
           }]
       },
       options: {
@@ -79,6 +75,12 @@ tr:last-child td {
           scales: {
               y: {
                   beginAtZero: true,
+                  ticks: {
+                      stepSize: 1, // 只显示整数
+                      callback: function(value) {
+                          return Number.isInteger(value) ? value : null; // 只显示整数
+                      }
+                  },
                   title: {
                       display: true,
                       text: 'Number'
