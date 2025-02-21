@@ -48,7 +48,7 @@ tr:last-child td {
 }
 </style>
 
-> **Last Update:** Feb 19, 2025
+> **Last Update:** Feb 21, 2025
 
 # Publications
 
@@ -75,7 +75,7 @@ tr:last-child td {
           {
               label: 'Total',
               data: [2, 3, 2],  // 累积总数
-              backgroundColor: 'rgba(153, 102, 255, 0.8)' // 统一颜色
+              backgroundColor: 'rgba(255, 159, 64, 0.8)' // 统一颜色
           }]
       },
       options: {
