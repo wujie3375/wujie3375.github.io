@@ -69,13 +69,11 @@ tr:last-child td {
                 label: 'First author',
                 data: data1,  // 第一组数据
                 backgroundColor: 'rgba(54, 162, 235, 0.8)', // 第一组颜色
-                barThickness: 20 // 设置柱子的具体宽度
             },
             {
                 label: 'Total',
                 data: data2,  // 第二组数据
                 backgroundColor: 'rgba(255, 159, 64, 0.8)', // 第二组颜色
-                barThickness: 20 // 设置柱子的具体宽度
             }]
         },
         options: {
@@ -107,9 +105,9 @@ tr:last-child td {
 </script>
 <script>
   createBarChart(
-  [2023, '2024', '2025'], 
-  [     2,      3,      1], 
-  [     2,      3,      2]);
+  [2023,2024,2025], 
+  [   2,   3,   1],//一作 
+  [   2,   3,   2]);//总计
 </script>
 
 
