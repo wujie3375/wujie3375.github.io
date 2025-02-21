@@ -25,19 +25,9 @@ title: Publications
   } */
 </style>
 
-
-
-> **Last Update:** Feb 19, 2025
-
-# Publications
-
-<p style="text-indent: 0;">publications by categories in reversed chronological order.</p>
-
-<p style="text-indent: 0; font-family: 'ARIAL';">(*: corresponding author)</p>
-
 <style>
 table {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
     margin: 20px 0;
     text-align: center;
@@ -49,14 +39,40 @@ th, td {
 }
 
 th {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black; /* 顶部线 */
+    border-top: 1.3px solid black;
+    border-bottom: 1.3px solid black; /* 顶部线 */
 }
 
 tr:last-child td {
-    border-bottom: 2px solid black; /* 底部线 */
+    border-bottom: 1.3px solid black; /* 底部线 */
 }
 </style>
+
+> **Last Update:** Feb 19, 2025
+
+# Publications
+
+<p style="text-indent: 0;">publications by categories in reversed chronological order.</p>
+
+<p style="text-indent: 0; font-family: 'ARIAL';">(*: corresponding author)</p>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<canvas id="myChart"></canvas>
+<script>
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+          labels: ['First author', 'Non first author', 'Total'],
+          datasets: [{
+              label: '论文统计',
+              data: [6, 1, 7],
+              backgroundColor: ['blue', 'green', 'red']
+          }]
+      }
+  });
+</script>
+
 
 |                      | Published | Preprint | Total |
 |:--------------------:|:---------:|:--------:|:-----:|
