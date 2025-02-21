@@ -69,14 +69,14 @@ tr:last-child td {
               data: [2, 3, 1],  // 第一组数据
               backgroundColor: 'rgba(54, 162, 235, 0.8)', // 第一组颜色
               barPercentage: 0.6, // 调整柱子宽度
-              categoryPercentage: 0.8 // 调整柱子间距
+              categoryPercentage: 0.3 // 调整柱子间距
           },
           {
               label: 'Total',
               data: [2, 3, 2],  // 第二组数据
               backgroundColor: 'rgba(255, 159, 64, 0.8)', // 第二组颜色
               barPercentage: 0.6, // 调整柱子宽度
-              categoryPercentage: 0.8 // 调整柱子间距
+              categoryPercentage: 0.3 // 调整柱子间距
           }]
       },
       options: {
