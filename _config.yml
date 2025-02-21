@@ -21,7 +21,7 @@ owner:
   web: https://webofscience.clarivate.cn/wos/author/record/HDL-7535-2022
   researchgate: https://www.researchgate.net/profile/Jie-Wu-168
   # github: wujie3375
-  cv: https://wujie3375.github.io/file/my_CV.pdf
+  cv: https://wujie3375.github.io/file/CV/cv.pdf
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   
   # github: wujie3375
@@ -56,7 +56,7 @@ links:
   # - title: Blogs
   #   url: /blogs/blogs
   - title: CV
-    url: /file/my_CV.pdf
+    url: /file/CV/cv.pdf
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone: China/Beijing
