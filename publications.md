@@ -45,11 +45,13 @@ tr:last-child td {
 }
 </style>
 
-> **Last Update:** Feb 21, 2025
+> **Last Update:** Feb 22, 2025
 
 # Publications
 
-<p style="text-indent: 0;">publications by categories in reversed chronological order.</p>
+The dates are based on the publication time. If unavailable, the submission date on arXiv is used instead.
+
+<p style="text-indent: 0;">Publications are categorized and listed in reversed chronological order. The dates are based on the publication time. If unavailable, the submission date on arXiv is used instead.</p>
 
 <p style="text-indent: 0; font-family: 'ARIAL';">(*: corresponding author)</p>
 
