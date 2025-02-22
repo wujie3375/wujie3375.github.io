@@ -51,7 +51,9 @@ tr:last-child td {
 
 <p style="text-indent: 0;">Publications are categorized and listed in reversed chronological order.</p>
 
-<p style="text-indent: 0;">The dates are based on the publication time. If unavailable, the submission date on arXiv is used instead.</p>
+<p style="text-indent: 0;">The dates are based on the publication time.</p>
+
+<p style="text-indent: 0;">If unavailable, the submission date on arXiv is used instead.</p>
 
 <p style="text-indent: 0; font-family: 'ARIAL';">(*: corresponding author)</p>
 
