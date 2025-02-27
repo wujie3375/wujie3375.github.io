@@ -170,7 +170,7 @@ tr:last-child td {
 %}
 
 {% include paper_card.html
-  title="Prospects of constraining on the polarizations of gravitational waves from binary black holes using space-and ground-based detectors"
+  title="Prospects of constraining on the polarizations of gravitational waves from binary black holes using space- and ground-based detectors"
   authors="Jie Wu, Jin Li*"
   date="Oct 22, 2024"
   journal="Phys.Rev.D"
