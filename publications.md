@@ -123,7 +123,7 @@ tr:last-child td {
 
 <!-- ================================================================================================= -->
 ---
-{% assign paper_url = "file/paper.yml" %}
+{% assign paper_url = "https://wujie3375.github.io/paper.yml" %}
 {% assign papers = site.data | fetch: paper_url | parse_yaml %}
 
 {% if papers %}
