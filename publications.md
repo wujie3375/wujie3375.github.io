@@ -155,7 +155,7 @@ tr:last-child td {
       pdf=paper.pdf
       highlight_author=paper.highlight_author
       etal=paper.etal
-      number=forloop.index
+      number=1
     %}
   {% endfor %}
   <hr>
