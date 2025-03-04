@@ -170,6 +170,8 @@ tr:last-child td {
 <!-- 按年份分组 -->
 {% assign grouped_publications = publications | group_by: 'year' | sort: 'name' | reverse %}
 
+{% assign total_number = publications.size %}
+
 {% for group in grouped_publications %}
 ## {{ group.name }}
 
@@ -187,7 +189,8 @@ tr:last-child td {
   pdf=pub.pdf 
   highlight_author=pub.highlight_author 
   etal=pub.etal 
-  number=forloop.index %}
+  number=total_number %}
+  {% assign total_etal = total_etal | plus: -1 %}
 {% endfor %}
 <hr>
 {% endfor %}
