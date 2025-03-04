@@ -84,6 +84,9 @@ tr:last-child td {
   {% assign first_author_counts = first_author_counts | push: first_author_count %}
   {% assign total_counts = total_counts | push: total_count %}
 {% endfor %}
+{{years}}
+{{first_author_counts}}
+{{total_counts}}
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <canvas id="myChart" style="height: 400px;"></canvas>
