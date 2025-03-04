@@ -70,7 +70,7 @@ tr:last-child td {
 {% assign total_counts = [] %}
 
 {% for group in grouped_publications %}
-{% assign year = group.name | plus: 0 %}
+{% assign year = group.name %}
 {% assign first_author_count = 0 %}
 {% assign total_count = group.items.size %}
 
