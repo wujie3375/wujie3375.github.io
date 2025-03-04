@@ -142,21 +142,21 @@ tr:last-child td {
 {% for year_group in papers_by_year %}
   <h2>{{ year_group.name }}</h2>
   {% for paper in year_group.items %}
-  {% include paper_card.html
-    title=paper.title
-    authors=paper.authors
-    date=paper.date
-    arxiv=paper.arxiv
-    journal=paper.journal
-    journal_link=paper.journal_link
-    volume=paper.volume
-    article_number=paper.article_number
-    pdf=paper.pdf
-    highlight_author=paper.highlight_author
-    etal=paper.etal
-    number="1"
-  %}
-  <p>paper.title</p>
+    {% include paper_card.html
+      title=paper.title
+      authors=paper.authors
+      date=paper.date
+      arxiv=paper.arxiv
+      journal=paper.journal
+      journal_link=paper.journal_link
+      volume=paper.volume
+      article_number=paper.article_number
+      pdf=paper.pdf
+      highlight_author=paper.highlight_author
+      etal=paper.etal
+      number="1"
+    %}
+    <p>paper.title</p>
   <hr>
 {% endfor %}
 
