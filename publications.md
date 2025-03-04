@@ -45,7 +45,7 @@ tr:last-child td {
 }
 </style>
 
-> **Last Update:** Feb 22, 2025
+> **Last Update:** Mar 4, 2025
 
 # Test Test Test Test Test Test Test Test Test Test Test Test Test
 
@@ -273,6 +273,7 @@ tr:last-child td {
   date="May 2022, advisor: Assoc. Prof. Di Wu"
   journal="Undergraduate Thesis"
   volume=" "
+  arxiv=false
   article_number="(in Chinese)"
   pdf="https://wujie3375.github.io/file/Undergraduate-Thesis.pdf"
   number="0"
