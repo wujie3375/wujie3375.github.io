@@ -47,8 +47,6 @@ tr:last-child td {
 
 > **Last Update:** Mar 4, 2025
 
-# Test Test Test Test Test Test Test Test Test Test Test Test Test
-
 # Publications
 
 <p style="text-indent: 0;">Publications are categorized and listed in reversed chronological order.</p>
@@ -76,7 +74,7 @@ tr:last-child td {
                 backgroundColor: 'rgba(54, 162, 235, 0.8)', // 第一组颜色
             },
             {
-                label: 'Total papers',
+                label: 'All papers',
                 data: data2,  // 第二组数据
                 backgroundColor: 'rgba(255, 159, 64, 0.8)', // 第二组颜色
             }]
@@ -247,11 +245,12 @@ tr:last-child td {
 
 <!-- 根据复选框状态切换显示模式 -->
 <div id="first-author-only">
+{% assign total_number = filtered_publications.size %}
   {% for group in grouped_publications %}
     {% assign filtered_group_items = group.items | where: "highlight_author", 1 %}
-    {% assign total_number = filtered_group_items.size %}
     {% if filtered_group_items.size > 0 %}
-      ## {{ group.name }}
+      <!-- ## {{ group.name }} -->
+      <h2>{{ group.name }}</h2>
 
       {% for pub in filtered_group_items %}
         {% include paper_card.html 
@@ -278,7 +277,8 @@ tr:last-child td {
 <div id="all-articles" style="display: none;">
 {% assign total_number = publications.size %}
   {% for group in grouped_publications %}
-    ## {{ group.name }}
+    <!-- ## {{ group.name }} -->
+    <h2>{{ group.name }}</h2>
 
     {% for pub in group.items %}
       {% include paper_card.html 
