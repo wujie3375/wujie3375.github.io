@@ -66,13 +66,12 @@ tr:last-child td {
 {% assign grouped_publications = publications | group_by: 'year' | sort: 'name' | reverse %}
 
 {% assign years = [] %}
+Years: {{ years | json }}<br>
 {% assign first_author_counts = [] %}
 {% assign total_counts = [] %}
 
 {% for group in grouped_publications %}
 {% assign year = group.name %}
-Years: {{ year | json }}<br>
-Years: {{ year }}<br>
 {% assign first_author_count = 0 %}
 {% assign total_count = group.items.size %}
 
@@ -83,6 +82,7 @@ Years: {{ year }}<br>
 {% endfor %}
 
 {% assign years = years | push: year %}
+Years: {{ years | json }}<br>
 {% assign first_author_counts = first_author_counts | push: first_author_count %}
 {% assign total_counts = total_counts | push: total_count %}
 {% endfor %}
