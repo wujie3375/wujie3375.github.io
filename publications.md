@@ -93,9 +93,9 @@ tr:last-child td {
     console.log("Initializing chart...");
 
     // 确保数据是数组
-    if (!Array.isArray(labels)) labels = [labels];
-    if (!Array.isArray(data1)) data1 = [data1];
-    if (!Array.isArray(data2)) data2 = [data2];
+    // if (!Array.isArray(labels)) labels = [labels];
+    // if (!Array.isArray(data1)) data1 = [data1];
+    // if (!Array.isArray(data2)) data2 = [data2];
 
     var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
