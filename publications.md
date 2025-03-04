@@ -123,34 +123,21 @@ tr:last-child td {
 
 <!-- ================================================================================================= -->
 ---
-{% assign papers = site.data.paper %}
-
-{% assign papers_sorted = papers | sort: "date" | reverse %}
-
-<!-- 按年份分组 -->
-{% assign papers_by_year = papers_sorted | group_by_exp: "paper", "paper.date | date: '%Y'" | sort: "name" | reverse %}
-
-{% for year_group in papers_by_year %}
-  ## {{ year_group.name }}
-
-  {% for paper in year_group.items %}
-    {% include paper_card.html
-      title=paper.title
-      authors=paper.authors
-      date=paper.date
-      journal=paper.journal
-      journal_link=paper.journal_link
-      volume=paper.volume
-      article_number=paper.article_number
-      pdf=paper.pdf
-      highlight_author=paper.highlight_author
-      etal=paper.etal
-      number=paper.number
-    %}
-  {% endfor %}
-  ---
+{% assign papers = site.data.papers %}
+{% for paper in papers %}
+  {% include paper_card.html
+    title=paper.title
+    subtitle=paper.subtitle
+    authors=paper.authors
+    date=paper.date
+    journal=paper.journal
+    volume=paper.volume
+    article_number=paper.article_number
+    pdf=paper.pdf
+    number=paper.number
+    highlight_author=paper.highlight_author
+  %}
 {% endfor %}
-
 
 # Degree Thesis
 

@@ -1,14 +1,21 @@
+- title: "An Analysis of the LIGO Gravitational Waves Data Based on Newtonian Approximate Model"
+  subtitle: "(Excellent Graduation Thesis)"
+  authors: "Jie Wu"
+  date: "May 2022, advisor: Assoc. Prof. Di Wu"
+  journal: "Undergraduate Thesis"
+  volume: " "
+  article_number: "(in Chinese)"
+  pdf: "https://wujie3375.github.io/file/Undergraduate-Thesis.pdf"
+  number: "0"
+  highlight_author: 1
 
-- year: 2025
-  title: "Parallel manipulation of multiple ink droplets via near-infrared light on lubricant infused surface"
-  subtitle: "(Responsible for data processing and visualization)"
-  authors: "Yalin Hu, Jie Wu, Haiyan Luo, Guanqi Su, Xiangxi Meng, Liyu Liu, Guo Chen*"
-  date: "2025-01-13"
-  journal: "Appl. Phys. Lett."
-  journal_link: "https://pubs.aip.org/aip/apl/article/126/2/021602/3330590"
-  volume: "126"
-  article_number: "021602"
-  pdf: "https://wujie3375.github.io/file/241223.pdf"
+- title: "Another Paper Title"
+  subtitle: "(Another Subtitle)"
+  authors: "Author One, Author Two"
+  date: "June 2023"
+  journal: "Another Journal"
+  volume: "123"
+  article_number: "456"
+  pdf: "https://example.com/another-paper.pdf"
+  number: "1"
   highlight_author: 2
-  etal: 4
-  number: 1
