@@ -123,7 +123,8 @@ tr:last-child td {
 
 <!-- ================================================================================================= -->
 ---
-{% assign papers = paper.yml %}
+{% assign paper_path = "paper.yml" %}
+{% assign papers = site.data | fetch: paper_path | parse_yaml %}
 
 {% if papers %}
   <!-- 按日期排序（最新的排在最上面） -->
@@ -172,5 +173,4 @@ tr:last-child td {
   number="0"
   highlight_author=1
 %}
-
 > I'm hoping that by listing these, it'll be easier for me to find them later on. (￢_￢)
