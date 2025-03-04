@@ -90,6 +90,13 @@ tr:last-child td {
 
 <script>
   function createBarChart(labels, data1, data2) {
+    console.log("Initializing chart...");
+
+    // 确保数据是数组
+    if (!Array.isArray(labels)) labels = [labels];
+    if (!Array.isArray(data1)) data1 = [data1];
+    if (!Array.isArray(data2)) data2 = [data2];
+
     var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
       type: 'bar',
@@ -139,9 +146,6 @@ tr:last-child td {
   var totalCounts = {{ total_counts | json }};
 
   // 调用函数生成图表
-  console.log("Years:", years);
-  console.log("First Author Counts:", firstAuthorCounts);
-  console.log("Total Counts:", totalCounts);
   createBarChart(years, firstAuthorCounts, totalCounts);
 </script>
 
