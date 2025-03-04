@@ -71,6 +71,8 @@ tr:last-child td {
 
 {% for group in grouped_publications %}
 {% assign year = group.name %}
+Years: {{ year | json }}<br>
+Years: {{ year }}<br>
 {% assign first_author_count = 0 %}
 {% assign total_count = group.items.size %}
 
