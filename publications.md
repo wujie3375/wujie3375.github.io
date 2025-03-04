@@ -165,7 +165,7 @@ tr:last-child td {
 {% endfor %}
 
 <!-- 按 sortable_date 排序 -->
-{% assign publications = publications | sort: "sortable_date" | reverse %}
+{% assign publications = publications | sort: "sortable_date"  %}
 
 <!-- 按年份分组 -->
 {% assign grouped_publications = publications | group_by: 'year' | sort: 'name' | reverse %}
@@ -174,7 +174,20 @@ tr:last-child td {
 ## {{ group.name }}
 
 {% for pub in group.items %}
-  {% include paper_card.html title=pub.title subtitle=pub.subtitle authors=pub.authors date=pub.date journal=pub.journal journal_link=pub.journal_link volume=pub.volume article_number=pub.article_number arxiv=pub.arxiv pdf=pub.pdf highlight_author=pub.highlight_author etal=pub.etal number=1 %}
+  {% include paper_card.html 
+  title=pub.title 
+  subtitle=pub.subtitle 
+  authors=pub.authors 
+  date=pub.date 
+  journal=pub.journal 
+  journal_link=pub.journal_link 
+  volume=pub.volume 
+  article_number=pub.article_number 
+  arxiv=pub.arxiv 
+  pdf=pub.pdf 
+  highlight_author=pub.highlight_author 
+  etal=pub.etal 
+  number=forloop.index %}
 {% endfor %}
 <hr>
 {% endfor %}
