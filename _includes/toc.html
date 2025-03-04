@@ -45,6 +45,11 @@
       var fragment = document.createDocumentFragment(); // 创建一个DocumentFragment
 
       headers.forEach(function (header, index) {
+        // 检查标题是否隐藏
+        if (header.style.display === 'none') {
+          return; // 跳过隐藏的标题
+        }
+
         if (!header.id) {
           header.id = 'section-' + index;
         }

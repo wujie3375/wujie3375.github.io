@@ -238,14 +238,18 @@ tr:last-child td {
 <!-- 按年份分组 -->
 {% assign grouped_publications = publications | group_by: 'year' | sort: 'name' | reverse %}
 
-{% assign total_number = publications.size %}
+<!-- {% assign total_number = publications.size %} -->
 
 <!-- 默认只显示一作文章 -->
+{% assign filtered_publications = publications | where: "highlight_author", 1 %}
+
+<!-- 根据复选框状态切换显示模式 -->
 <div id="first-author-only">
+{% assign total_number = filtered_publications.size %}
   {% for group in grouped_publications %}
     {% assign filtered_group_items = group.items | where: "highlight_author", 1 %}
     {% if filtered_group_items.size > 0 %}
-      <h2 id="year-{{ group.name }}">{{ group.name }}</h2> <!-- 添加唯一 ID -->
+      <h2>{{ group.name }}</h2>
 
       {% for pub in filtered_group_items %}
         {% include paper_card.html 
@@ -269,10 +273,10 @@ tr:last-child td {
   {% endfor %}
 </div>
 
-<!-- 显示所有文章 -->
 <div id="all-articles" style="display: none;">
+{% assign total_number = publications.size %}
   {% for group in grouped_publications %}
-    <h2 id="year-{{ group.name }}" style="display: none;">{{ group.name }}</h2> <!-- 添加唯一 ID 并默认隐藏 -->
+    <h2>{{ group.name }}</h2>
 
     {% for pub in group.items %}
       {% include paper_card.html 
@@ -300,26 +304,6 @@ tr:last-child td {
     var showAll = document.getElementById("show-all").checked;
     document.getElementById("first-author-only").style.display = showAll ? "none" : "block";
     document.getElementById("all-articles").style.display = showAll ? "block" : "none";
-
-    // 动态显示或隐藏年份标题
-    var yearHeaders = document.querySelectorAll("h2[id^='year-']");
-    yearHeaders.forEach(function(header) {
-      if (showAll) {
-        // 显示所有文章时，隐藏一作文章的年份标题
-        if (header.parentElement.id === "first-author-only") {
-          header.style.display = "none";
-        } else {
-          header.style.display = "block";
-        }
-      } else {
-        // 显示一作文章时，隐藏所有文章的年份标题
-        if (header.parentElement.id === "all-articles") {
-          header.style.display = "none";
-        } else {
-          header.style.display = "block";
-        }
-      }
-    });
   }
 </script>
 
