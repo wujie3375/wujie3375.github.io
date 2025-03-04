@@ -123,7 +123,7 @@ tr:last-child td {
 
 <!-- ================================================================================================= -->
 ---
-{% assign papers = site.data.papers %}
+{% assign papers = include paper.yml %}
 
 {% if papers %}
   <!-- 按日期排序（最新的排在最上面） -->
