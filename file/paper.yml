@@ -1,0 +1,30 @@
+- year: 2025
+  title: "Effect of kick velocity on gravitational wave detection of binary black holes with space- and ground-based detectors"
+  authors: "Jie Wu, Mengfei Sun, Xianghe Ma, Xiaolin Liu, Jin Li*, Zhoujian Cao*"
+  date: "Feb 19, 2025"
+  arxiv: "2502.13710"
+  pdf: "https://wujie3375.github.io/file/250219.pdf"
+  highlight_author: 1
+  etal: 4
+
+- year: 2025
+  title: "Parallel manipulation of multiple ink droplets via near-infrared light on lubricant infused surface"
+  subtitle: "(Responsible for data processing and visualization)"
+  authors: "Yalin Hu, Jie Wu, Haiyan Luo, Guanqi Su, Xiangxi Meng, Liyu Liu, Guo Chen*"
+  date: "Jan 13, 2025"
+  journal: "Appl. Phys. Lett."
+  journal_link: "https://pubs.aip.org/aip/apl/article/126/2/021602/3330590"
+  volume: "126"
+  article_number: "021602"
+  pdf: "https://wujie3375.github.io/file/241223.pdf"
+  highlight_author: 2
+  etal: 4
+
+- year: 2024
+  title: "Constraints and detection capabilities of GW polarizations with space-based detectors in different TDI combinations"
+  authors: "Jie Wu, Mengfei Sun, Jin Li*"
+  date: "Nov 6, 2024"
+  arxiv: "2411.03631"
+  pdf: "https://wujie3375.github.io/file/241106.pdf"
+  highlight_author: 1
+  etal: 4

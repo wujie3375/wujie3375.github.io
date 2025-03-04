@@ -123,8 +123,46 @@ tr:last-child td {
 
 <!-- ================================================================================================= -->
 ---
+{% assign papers_by_year = site.data.papers | group_by: "year" | sort: "name" | reverse %}
+{% for year_group in papers_by_year %}
+  ## {{ year_group.name }}
 
-## 2025
+  {% assign papers_sorted = year_group.items | reverse %}
+  {% for paper in papers_sorted %}
+    {% include paper_card.html
+      title=paper.title
+      subtitle=paper.subtitle
+      authors=paper.authors
+      date=paper.date
+      arxiv=paper.arxiv
+      journal=paper.journal
+      journal_link=paper.journal_link
+      volume=paper.volume
+      article_number=paper.article_number
+      pdf=paper.pdf
+      highlight_author=paper.highlight_author
+      etal=paper.etal
+      number=forloop.index
+    %}
+  {% endfor %}
+  ---
+{% endfor %}
+
+# Degree Thesis
+
+{% include paper_card.html
+  title="An Analysis of the LIGO Gravitational Waves Data Based on Newtonian Approximate Model"
+  subtitle="(Excellent Graduation Thesis)"
+  authors="Jie Wu"
+  date="May 2022, advisor: Assoc. Prof. Di Wu"
+  journal="Undergraduate Thesis"
+  volume=" "
+  article_number="(in Chinese)"
+  pdf="https://wujie3375.github.io/file/Undergraduate-Thesis.pdf"
+  number="0"
+  highlight_author=1
+%}
+<!-- ## 2025
 
 <!-- ===================================================== -->
 {% include paper_card.html
@@ -246,6 +284,6 @@ tr:last-child td {
   number="0"
   highlight_author=1
 %}
----
+--- -->
 
 > I'm hoping that by listing these, it'll be easier for me to find them later on. (￢_￢)
