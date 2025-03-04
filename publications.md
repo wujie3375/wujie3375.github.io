@@ -202,6 +202,10 @@ tr:last-child td {
   <p>YAML data not loaded.</p>
 {% endif %} -->
 
+<label>
+  <input type="checkbox" id="show-all" onchange="toggleDisplay()"> 显示所有文章
+</label>
+
 {% assign publications = site.data.papers %}
 
 <!-- 转换日期为可排序格式 -->
@@ -238,28 +242,70 @@ tr:last-child td {
 
 {% assign total_number = publications.size %}
 
-{% for group in grouped_publications %}
-## {{ group.name }}
+<!-- 默认只显示一作文章 -->
+{% assign filtered_publications = publications | where: "highlight_author", 1 %}
 
-{% for pub in group.items %}
-  {% include paper_card.html 
-  title=pub.title 
-  subtitle=pub.subtitle 
-  authors=pub.authors 
-  date=pub.date 
-  journal=pub.journal 
-  journal_link=pub.journal_link 
-  volume=pub.volume 
-  article_number=pub.article_number 
-  arxiv=pub.arxiv 
-  pdf=pub.pdf 
-  highlight_author=pub.highlight_author 
-  etal=pub.etal 
-  number=total_number %}
-  {% assign total_number = total_number | plus: -1 %}
-{% endfor %}
-<hr>
-{% endfor %}
+<!-- 根据复选框状态切换显示模式 -->
+<div id="first-author-only">
+  {% for group in grouped_publications %}
+    {% assign filtered_group_items = group.items | where: "highlight_author", 1 %}
+    {% if filtered_group_items.size > 0 %}
+      ## {{ group.name }}
+
+      {% for pub in filtered_group_items %}
+        {% include paper_card.html 
+        title=pub.title 
+        subtitle=pub.subtitle 
+        authors=pub.authors 
+        date=pub.date 
+        journal=pub.journal 
+        journal_link=pub.journal_link 
+        volume=pub.volume 
+        article_number=pub.article_number 
+        arxiv=pub.arxiv 
+        pdf=pub.pdf 
+        highlight_author=pub.highlight_author 
+        etal=pub.etal 
+        number=total_number %}
+        {% assign total_number = total_number | plus: -1 %}
+      {% endfor %}
+      <hr>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<div id="all-articles" style="display: none;">
+  {% for group in grouped_publications %}
+    ## {{ group.name }}
+
+    {% for pub in group.items %}
+      {% include paper_card.html 
+      title=pub.title 
+      subtitle=pub.subtitle 
+      authors=pub.authors 
+      date=pub.date 
+      journal=pub.journal 
+      journal_link=pub.journal_link 
+      volume=pub.volume 
+      article_number=pub.article_number 
+      arxiv=pub.arxiv 
+      pdf=pub.pdf 
+      highlight_author=pub.highlight_author 
+      etal=pub.etal 
+      number=total_number %}
+      {% assign total_number = total_number | plus: -1 %}
+    {% endfor %}
+    <hr>
+  {% endfor %}
+</div>
+
+<script>
+  function toggleDisplay() {
+    var showAll = document.getElementById("show-all").checked;
+    document.getElementById("first-author-only").style.display = showAll ? "none" : "block";
+    document.getElementById("all-articles").style.display = showAll ? "block" : "none";
+  }
+</script>
 
 <!-- =============================================================================================== -->
 <!-- 学位论文 -->
