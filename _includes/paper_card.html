@@ -2,7 +2,7 @@
     <!-- Title -->
     <div style="font-family: 'ARIALBD'; font-size: 19px; line-height: 1.4;">
         {{ include.title }}
-        {% if include.subtitle %}
+        {% if include.subtitle != false %}
             <span style="font-family: 'ARIAL'; font-size: 14px;">{{ include.subtitle }}</span>
         {% endif %}
     </div>

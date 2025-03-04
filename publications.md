@@ -143,26 +143,23 @@ tr:last-child td {
 ## {{ group.name }}
 
 {% for pub in group.items %}
-- ​**Title**: {{ pub.title }}
-- ​**Authors**: {{ pub.authors }}
-- ​**Date**: {{ pub.date }}
-{% if pub.arxiv %}
-  
-  {% include paper_card.html
-    title=pub.title
-    authors=pub.authors
-    date=pub.date
-    arxiv=pub.arxiv
-    pdf=pub.pdf
-    number="1"
-    highlight_author=pub.highlight_author
-    etal=pub.etal
-  %}
 
-{% endif %}
-{% if pub.journal %}
-  - ​**Journal**: [{{ pub.journal }}]({{ pub.journal_link }}), Volume {{ pub.volume }}, Article Number {{ pub.article_number }}
-{% endif %}
+{% include paper_card.html
+  title=pub.title
+  subtitle=pub.subtitle
+  authors=pub.authors
+  date=pub.date
+  journal=pub.journal
+  journal_link=pub.journal_link
+  volume=pub.volume
+  article_number=pub.article_number
+  arxiv=pub.arxiv
+  pdf=pub.pdf
+  highlight_author=pub.highlight_author
+  etal=pub.etal
+  number="1"
+%}
+
 {% endfor %}
 {% endfor %}
 
