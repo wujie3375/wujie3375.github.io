@@ -136,17 +136,17 @@ tr:last-child td {
 
 {% for pub in publications %}
   {% if pub.highlight_author == 1 %}
-    {% if pub.journal %}
+    {% if pub.journal != false %}
       {% assign first_author_published = first_author_published | plus: 1 %}
     {% endif %}
-    {% if pub.arxiv %}
+    {% if pub.arxiv != false and pub.journal = false %}
       {% assign first_author_preprint = first_author_preprint | plus: 1 %}
     {% endif %}
   {% else %}
-    {% if pub.journal %}
+    {% if pub.journal != false %}
       {% assign non_first_author_published = non_first_author_published | plus: 1 %}
     {% endif %}
-    {% if pub.arxiv %}
+    {% if pub.arxiv != false and pub.journal = false %}
       {% assign non_first_author_preprint = non_first_author_preprint | plus: 1 %}
     {% endif %}
   {% endif %}
