@@ -136,26 +136,33 @@ tr:last-child td {
   <p>YAML data not loaded.</p>
 {% endif %} -->
 
-{% assign papers_by_year = site.data.papers | group_by: "year" | sort: "name" | reverse %}
-{% for year_group in papers_by_year %}
-  <h2>{{ year_group.name }}</h2>
+{% assign papers = site.data.papers %}
+<!-- 按日期排序（最新的排在最上面） -->
+{% assign papers_sorted = papers | sort: "date" | reverse %}
 
-  {% include paper_card.html
-    title=paper.title
-    authors=paper.authors
-    date=paper.date
-    arxiv=paper.arxiv
-    journal=paper.journal
-    journal_link=paper.journal_link
-    volume=paper.volume
-    article_number=paper.article_number
-    pdf=paper.pdf
-    highlight_author=paper.highlight_author
-    etal=paper.etal
-    number="1"
-  %}
-  <p>paper.title</p>
-  <hr>
+<!-- 按年份分组 -->
+{% assign papers_by_year = papers_sorted | group_by_exp: "paper", "paper.date | date: '%Y'" | sort: "name" | reverse %}
+
+{% for year_group in papers_by_year %}
+
+  {% for paper in year_group.items %}
+    {% include paper_card.html
+      title=paper.title
+      subtitle=paper.subtitle
+      authors=paper.authors
+      date=paper.date
+      arxiv=paper.arxiv
+      journal=paper.journal
+      journal_link=paper.journal_link
+      volume=paper.volume
+      article_number=paper.article_number
+      pdf=paper.pdf
+      highlight_author=paper.highlight_author
+      etal=paper.etal
+      number=forloop.index
+    %}
+  {% endfor %}
+  
 {% endfor %}
 
 # Degree Thesis
