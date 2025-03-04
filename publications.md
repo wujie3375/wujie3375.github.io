@@ -136,7 +136,38 @@ tr:last-child td {
   <p>YAML data not loaded.</p>
 {% endif %} -->
 
-{% assign publications = site.data.papers | sort: 'date' | reverse %}
+{% assign publications = site.data.papers %}
+
+<!-- 转换日期为可排序格式 -->
+{% for pub in publications %}
+  {% assign date_parts = pub.date | split: " " %}
+  {% assign month = date_parts[0] %}
+  {% assign day = date_parts[1] | remove: "," %}
+  {% assign year = date_parts[2] %}
+
+  {% case month %}
+    {% when "Jan" %}{% assign month_num = "01" %}
+    {% when "Feb" %}{% assign month_num = "02" %}
+    {% when "Mar" %}{% assign month_num = "03" %}
+    {% when "Apr" %}{% assign month_num = "04" %}
+    {% when "May" %}{% assign month_num = "05" %}
+    {% when "Jun" %}{% assign month_num = "06" %}
+    {% when "Jul" %}{% assign month_num = "07" %}
+    {% when "Aug" %}{% assign month_num = "08" %}
+    {% when "Sep" %}{% assign month_num = "09" %}
+    {% when "Oct" %}{% assign month_num = "10" %}
+    {% when "Nov" %}{% assign month_num = "11" %}
+    {% when "Dec" %}{% assign month_num = "12" %}
+  {% endcase %}
+
+  {% assign sortable_date = year | append: "-" | append: month_num | append: "-" | append: day %}
+  {% assign pub.sortable_date = sortable_date %}
+{% endfor %}
+
+<!-- 按 sortable_date 排序 -->
+{% assign publications = publications | sort: "sortable_date" | reverse %}
+
+<!-- 按年份分组 -->
 {% assign grouped_publications = publications | group_by: 'year' | sort: 'name' | reverse %}
 
 {% for group in grouped_publications %}
@@ -148,7 +179,7 @@ tr:last-child td {
   title=pub.title
   subtitle=pub.subtitle
   authors=pub.authors
-  date=pub.date
+  date=pub.date <!-- 使用原始日期 -->
   journal=pub.journal
   journal_link=pub.journal_link
   volume=pub.volume
@@ -157,10 +188,11 @@ tr:last-child td {
   pdf=pub.pdf
   highlight_author=pub.highlight_author
   etal=pub.etal
-  number="1"
+  number=1
 %}
 
 {% endfor %}
+<hr>
 {% endfor %}
 
 # Degree Thesis
