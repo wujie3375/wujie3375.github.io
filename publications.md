@@ -47,6 +47,8 @@ tr:last-child td {
 
 > **Last Update:** Feb 22, 2025
 
+# Test Test Test Test Test Test Test Test Test Test Test Test Test
+
 # Publications
 
 <p style="text-indent: 0;">Publications are categorized and listed in reversed chronological order.</p>
@@ -125,24 +127,6 @@ tr:last-child td {
 ---
 {% for year_data in site.data.papers %}
   ## {{ year_data.year }}
-
-  {% for paper in year_data.papers %}
-    {% include paper_card.html
-      title=paper.title
-      authors=paper.authors
-      date=paper.date
-      arxiv=paper.arxiv
-      journal=paper.journal
-      journal_link=paper.journal_link
-      volume=paper.volume
-      article_number=paper.article_number
-      pdf=paper.pdf
-      number=paper.number
-      highlight_author=paper.highlight_author
-      etal=paper.etal
-    %}
-  {% endfor %}
-
   ---
 {% endfor %}
 
