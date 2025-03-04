@@ -131,7 +131,7 @@ tr:last-child td {
 {% assign papers_by_year = papers_sorted | group_by_exp: "paper", "paper.date | date: '%Y'" | sort: "name" | reverse %}
 
 {% for year_group in papers_by_year %}
-  ## {{ year_group.name }}
+  <!-- ## {{ year_group.name }} -->
 
   {% for paper in year_group.items %}
     {% include paper_card.html
