@@ -63,35 +63,28 @@ tr:last-child td {
 <!-- 统计图和表格 -->
 
 {% assign publications = site.data.papers %}
-
-<!-- 按年份分组 -->
 {% assign grouped_publications = publications | group_by: 'year' | sort: 'name' | reverse %}
 
-<!-- 初始化统计结果 -->
 {% assign years = '' | split: '' %}
 {% assign first_author_counts = '' | split: '' %}
 {% assign total_counts = '' | split: '' %}
 
-<!-- 遍历每年数据 -->
 {% for group in grouped_publications %}
   {% assign year = group.name | plus: 0 %}
   {% assign first_author_count = 0 %}
   {% assign total_count = group.items.size %}
 
-  <!-- 统计一作数量 -->
   {% for pub in group.items %}
     {% if pub.highlight_author == 1 %}
       {% assign first_author_count = first_author_count | plus: 1 %}
     {% endif %}
   {% endfor %}
 
-  <!-- 存储结果 -->
   {% assign years = years | push: year %}
   {% assign first_author_counts = first_author_counts | push: first_author_count %}
   {% assign total_counts = total_counts | push: total_count %}
 {% endfor %}
 
-<!-- Chart.js 图表 -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <canvas id="myChart" style="height: 400px;"></canvas>
 
@@ -99,57 +92,63 @@ tr:last-child td {
   function createBarChart(labels, data1, data2) {
     var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: labels,
-            datasets: [{
-                label: 'First author',
-                data: data1,  // 第一组数据
-                backgroundColor: 'rgba(54, 162, 235, 0.8)', // 第一组颜色
-            },
-            {
-                label: 'Total',
-                data: data2,  // 第二组数据
-                backgroundColor: 'rgba(255, 159, 64, 0.8)', // 第二组颜色
-            }]
+      type: 'bar',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: 'First author',
+          data: data1,
+          backgroundColor: 'rgba(54, 162, 235, 0.8)',
         },
-        options: {
-            responsive: true,
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    ticks: {
-                        stepSize: 1, // 只显示整数
-                        callback: function(value) {
-                            return Number.isInteger(value) ? value : null; // 只显示整数
-                        }
-                    },
-                    title: {
-                        display: true,
-                        text: 'Number'
-                    }
-                },
-                x: {
-                    title: {
-                        display: true,
-                        text: 'Year'
-                    }
-                }
+        {
+          label: 'Total',
+          data: data2,
+          backgroundColor: 'rgba(255, 159, 64, 0.8)',
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              stepSize: 1,
+              callback: function(value) {
+                return Number.isInteger(value) ? value : null;
+              }
+            },
+            title: {
+              display: true,
+              text: 'Number'
             }
+          },
+          x: {
+            title: {
+              display: true,
+              text: 'Year'
+            }
+          }
         }
+      }
     });
   }
-</script>
 
-<script>
   // 从 Liquid 中获取数据
   var years = {{ years | json }};
   var firstAuthorCounts = {{ first_author_counts | json }};
   var totalCounts = {{ total_counts | json }};
 
   // 调用函数生成图表
+  console.log("Years:", years);
+  console.log("First Author Counts:", firstAuthorCounts);
+  console.log("Total Counts:", totalCounts);
   createBarChart(years, firstAuthorCounts, totalCounts);
 </script>
+
+
+<!-- =============================================================================================== -->
+<!-- 表格 -->
+<!-- ----------------------------------------------------------------------------------------------- -->
 
 <!-- |                  | Published | Preprint | Total |
 |:----------------:|:---------:|:--------:|:-----:|
@@ -158,9 +157,6 @@ tr:last-child td {
 | Total            |     5     |    2     |   7   | -->
 
 
-<!-- =============================================================================================== -->
-<!-- 表格 -->
-<!-- ----------------------------------------------------------------------------------------------- -->
 {% assign publications = site.data.papers %}
 
 {% assign first_author_published = 0 %}
