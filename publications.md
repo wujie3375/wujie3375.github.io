@@ -65,9 +65,9 @@ tr:last-child td {
 {% assign publications = site.data.papers %}
 {% assign grouped_publications = publications | group_by: 'year' | sort: 'name' | reverse %}
 
-{% assign years = '' | split: '' %}
-{% assign first_author_counts = '' | split: '' %}
-{% assign total_counts = '' | split: '' %}
+{% assign years = [] %}
+{% assign first_author_counts = [] %}
+{% assign total_counts = [] %}
 
 {% for group in grouped_publications %}
   {% assign year = group.name | plus: 0 %}
@@ -91,11 +91,6 @@ tr:last-child td {
 <script>
   function createBarChart(labels, data1, data2) {
     console.log("Initializing chart...");
-
-    // 确保数据是数组
-    if (!Array.isArray(labels)) labels = [labels];
-    if (!Array.isArray(data1)) data1 = [data1];
-    if (!Array.isArray(data2)) data2 = [data2];
 
     var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
