@@ -123,8 +123,7 @@ tr:last-child td {
 
 <!-- ================================================================================================= -->
 ---
-{% assign paper_path = "paper.yml" %}
-{% assign papers = File.read(paper_path) | parse_yaml %}
+{% assign papers = site.data.paper %}
 
 {% if papers %}
   <!-- 按日期排序（最新的排在最上面） -->
