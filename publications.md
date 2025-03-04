@@ -123,9 +123,10 @@ tr:last-child td {
 
 <!-- ================================================================================================= -->
 ---
+
 {% assign paper_url = "https://wujie3375.github.io/paper.yml" %}
 {% assign papers = site.data | fetch: paper_url | parse_yaml %}
-
+{{ papers | inspect }}
 {% if papers %}
   <!-- 按日期排序（最新的排在最上面） -->
   {% assign papers_sorted = papers | sort: "date" | reverse %}
