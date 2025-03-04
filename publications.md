@@ -154,6 +154,18 @@ tr:last-child td {
     etal=paper.etal
     number="1"
   %}
+  {% include paper_card.html
+    title="An Analysis of the LIGO Gravitational Waves Data Based on Newtonian Approximate Model"
+    subtitle="(Excellent Graduation Thesis)"
+    authors="Jie Wu"
+    date="May 2022, advisor: Assoc. Prof. Di Wu"
+    journal="Undergraduate Thesis"
+    volume=" "
+    article_number="(in Chinese)"
+    pdf="https://wujie3375.github.io/file/Undergraduate-Thesis.pdf"
+    number="0"
+    highlight_author=1
+  %}
   <hr>
 {% endfor %}
 
