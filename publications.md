@@ -65,7 +65,7 @@ tr:last-child td {
 {% assign publications = site.data.papers %}
 {% assign grouped_publications = publications | group_by: 'year' | sort: 'name' | reverse %}
 
-{% assign years = [] %}
+{% assign years = "" | split: "" %}
 Years: {{ years | json }}<br>
 {% assign first_author_counts = [] %}
 {% assign total_counts = [] %}
@@ -81,7 +81,7 @@ Years: {{ years | json }}<br>
 {% endif %}
 {% endfor %}
 
-{% assign years = years | concat: year %}
+{% assign years = years | push: year %}
 Years: {{ years | json }}<br>
 {% assign first_author_counts = first_author_counts | push: first_author_count %}
 {% assign total_counts = total_counts | push: total_count %}
