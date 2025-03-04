@@ -130,6 +130,12 @@ tr:last-child td {
   ---
 {% endfor %}
 
+{% if site.data.papers %}
+  <p>YAML data loaded successfully!</p>
+{% else %}
+  <p>YAML data not loaded.</p>
+{% endif %}
+
 # Degree Thesis
 
 {% include paper_card.html
