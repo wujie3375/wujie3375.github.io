@@ -69,7 +69,15 @@ tr:last-child td {
 {% assign first_author_counts = [] %}
 {% assign total_counts = [] %}
 
+<!-- 打印 site.data.papers -->
+Site Data Papers: {{ site.data.papers | json }}<br>
+
+<!-- 打印 grouped_publications -->
+Grouped Publications: {{ grouped_publications | json }}<br>
+
 {% for group in grouped_publications %}
+  Group: {{ group | json }}<br>
+
   {% assign year = group.name | plus: 0 %}
   {% assign first_author_count = 0 %}
   {% assign total_count = group.items.size %}
@@ -81,9 +89,16 @@ tr:last-child td {
   {% endfor %}
 
   {% assign years = years | push: year %}
+  Years: {{ years | json }}<br>
+
   {% assign first_author_counts = first_author_counts | push: first_author_count %}
+  First Author Counts: {{ first_author_counts | json }}<br>
+
   {% assign total_counts = total_counts | push: total_count %}
+  Total Counts: {{ total_counts | json }}<br>
 {% endfor %}
+
+<!-- 最终输出 -->
 Years: {{ years | json }}<br>
 First Author Counts: {{ first_author_counts | json }}<br>
 Total Counts: {{ total_counts | json }}<br>
