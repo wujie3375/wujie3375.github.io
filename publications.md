@@ -136,7 +136,7 @@ tr:last-child td {
   <p>YAML data not loaded.</p>
 {% endif %} -->
 
-{% assign papers = site.data.papers %}
+<!-- {% assign papers = site.data.papers %}
 
 {% assign papers_by_year = papers | group_by: "year" | sort: "name" | reverse %}
 {% for year_group in papers_by_year %}
@@ -159,6 +159,25 @@ tr:last-child td {
     <p>{{ paper.title }}</p>
     <hr>
   {% endfor %}
+{% endfor %} -->
+
+{% assign publications = site.data.papers | sort: 'date' | reverse %}
+{% assign grouped_publications = publications | group_by: 'year' | sort: 'name' | reverse %}
+
+{% for group in grouped_publications %}
+## {{ group.name }}
+
+{% for pub in group.items %}
+- ​**Title**: {{ pub.title }}
+- ​**Authors**: {{ pub.authors }}
+- ​**Date**: {{ pub.date }}
+{% if pub.arxiv %}
+  - ​**arXiv**: [{{ pub.arxiv }}](https://arxiv.org/abs/{{ pub.arxiv }})
+{% endif %}
+{% if pub.journal %}
+  - ​**Journal**: [{{ pub.journal }}]({{ pub.journal_link }}), Volume {{ pub.volume }}, Article Number {{ pub.article_number }}
+{% endif %}
+{% endfor %}
 {% endfor %}
 
 # Degree Thesis
