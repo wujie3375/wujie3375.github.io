@@ -81,7 +81,7 @@ Years: {{ years | json }}<br>
 {% endif %}
 {% endfor %}
 
-{% assign years = years | push: year %}
+{% assign years = years | concat: year %}
 Years: {{ years | json }}<br>
 {% assign first_author_counts = first_author_counts | push: first_author_count %}
 {% assign total_counts = total_counts | push: total_count %}
