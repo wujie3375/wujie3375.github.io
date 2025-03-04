@@ -190,7 +190,7 @@ tr:last-child td {
   highlight_author=pub.highlight_author 
   etal=pub.etal 
   number=total_number %}
-  {% assign total_etal = total_etal | plus: -1 %}
+  {% assign total_number = total_number | plus: -1 %}
 {% endfor %}
 <hr>
 {% endfor %}
