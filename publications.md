@@ -76,7 +76,7 @@ tr:last-child td {
                 backgroundColor: 'rgba(54, 162, 235, 0.8)', // 第一组颜色
             },
             {
-                label: 'Total',
+                label: 'Total papers',
                 data: data2,  // 第二组数据
                 backgroundColor: 'rgba(255, 159, 64, 0.8)', // 第二组颜色
             }]
@@ -173,7 +173,7 @@ tr:last-child td {
       <td>{{ first_author_published | plus: first_author_preprint }}</td>
     </tr>
     <tr>
-      <td>Non first author</td>
+      <td>Non-first author</td>
       <td>{{ non_first_author_published }}</td>
       <td>{{ non_first_author_preprint }}</td>
       <td>{{ non_first_author_published | plus: non_first_author_preprint }}</td>
@@ -203,7 +203,7 @@ tr:last-child td {
 {% endif %} -->
 
 <label>
-  <input type="checkbox" id="show-all" onchange="toggleDisplay()"> 显示所有文章
+  <input type="checkbox" id="show-all" onchange="toggleDisplay()"> Show all papers (including non-first author)
 </label>
 
 {% assign publications = site.data.papers %}
@@ -240,7 +240,7 @@ tr:last-child td {
 <!-- 按年份分组 -->
 {% assign grouped_publications = publications | group_by: 'year' | sort: 'name' | reverse %}
 
-{% assign total_number = publications.size %}
+<!-- {% assign total_number = publications.size %} -->
 
 <!-- 默认只显示一作文章 -->
 {% assign filtered_publications = publications | where: "highlight_author", 1 %}
@@ -249,6 +249,7 @@ tr:last-child td {
 <div id="first-author-only">
   {% for group in grouped_publications %}
     {% assign filtered_group_items = group.items | where: "highlight_author", 1 %}
+    {% assign total_number = filtered_group_items.size %}
     {% if filtered_group_items.size > 0 %}
       ## {{ group.name }}
 
@@ -275,6 +276,7 @@ tr:last-child td {
 </div>
 
 <div id="all-articles" style="display: none;">
+{% assign total_number = publications.size %}
   {% for group in grouped_publications %}
     ## {{ group.name }}
 
