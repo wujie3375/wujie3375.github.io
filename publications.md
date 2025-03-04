@@ -142,7 +142,7 @@ tr:last-child td {
 
   {% assign papers_sorted = year_group.items | reverse %}
   {% for paper in papers_sorted %}
-    {% include paper_card.html
+    <!-- {% include paper_card.html
       title=paper.title
       subtitle=paper.subtitle
       authors=paper.authors
@@ -156,7 +156,8 @@ tr:last-child td {
       highlight_author=paper.highlight_author
       etal=paper.etal
       number=1
-    %}
+    %} -->
+    <p>YAML data loaded successfully!</p>
   {% endfor %}
   <hr>
 {% endfor %}
