@@ -125,7 +125,7 @@ tr:last-child td {
 
 <!-- ================================================================================================= -->
 ---
-{% for year_data in site.data.papers %}
+<!-- {% for year_data in site.data.papers %}
   <h2>{{ year_data.year }}</h2>
   <hr>
 {% endfor %}
@@ -134,7 +134,32 @@ tr:last-child td {
   <p>YAML data loaded successfully!</p>
 {% else %}
   <p>YAML data not loaded.</p>
-{% endif %}
+{% endif %} -->
+
+{% assign papers_by_year = site.data.papers | group_by: "year" | sort: "name" | reverse %}
+{% for year_group in papers_by_year %}
+  <h2>{{ year_group.name }}</h2>
+
+  {% assign papers_sorted = year_group.items | reverse %}
+  {% for paper in papers_sorted %}
+    {% include paper_card.html
+      title=paper.title
+      subtitle=paper.subtitle
+      authors=paper.authors
+      date=paper.date
+      arxiv=paper.arxiv
+      journal=paper.journal
+      journal_link=paper.journal_link
+      volume=paper.volume
+      article_number=paper.article_number
+      pdf=paper.pdf
+      highlight_author=paper.highlight_author
+      etal=paper.etal
+      number=forloop.index
+    %}
+  {% endfor %}
+  <hr>
+{% endfor %}
 
 # Degree Thesis
 
