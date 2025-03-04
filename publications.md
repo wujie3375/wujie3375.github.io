@@ -129,7 +129,6 @@ tr:last-child td {
   {% for paper in year_data.papers %}
     {% include paper_card.html
       title=paper.title
-      subtitle=paper.subtitle
       authors=paper.authors
       date=paper.date
       arxiv=paper.arxiv
