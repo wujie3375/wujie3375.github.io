@@ -76,26 +76,26 @@ Site Data Papers: {{ site.data.papers | json }}<br>
 Grouped Publications: {{ grouped_publications | json }}<br>
 
 {% for group in grouped_publications %}
-  Group: {{ group | json }}<br>
+Group: {{ group | json }}<br>
 
-  {% assign year = group.name | plus: 0 %}
-  {% assign first_author_count = 0 %}
-  {% assign total_count = group.items.size %}
+{% assign year = group.name | plus: 0 %}
+{% assign first_author_count = 0 %}
+{% assign total_count = group.items.size %}
 
-  {% for pub in group.items %}
-    {% if pub.highlight_author == 1 %}
-      {% assign first_author_count = first_author_count | plus: 1 %}
-    {% endif %}
-  {% endfor %}
+{% for pub in group.items %}
+  {% if pub.highlight_author == 1 %}
+    {% assign first_author_count = first_author_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
 
-  {% assign years = years | push: year %}
-  Years: {{ years | json }}<br>
+{% assign years = years | push: year %}
+Years: {{ years | json }}<br>
 
-  {% assign first_author_counts = first_author_counts | push: first_author_count %}
-  First Author Counts: {{ first_author_counts | json }}<br>
+{% assign first_author_counts = first_author_counts | push: first_author_count %}
+First Author Counts: {{ first_author_counts | json }}<br>
 
-  {% assign total_counts = total_counts | push: total_count %}
-  Total Counts: {{ total_counts | json }}<br>
+{% assign total_counts = total_counts | push: total_count %}
+Total Counts: {{ total_counts | json }}<br>
 {% endfor %}
 
 <!-- 最终输出 -->
