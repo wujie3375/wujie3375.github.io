@@ -142,14 +142,17 @@ tr:last-child td {
 
   {% include paper_card.html
     title=paper.title
-    subtitle=paper.subtitle
     authors=paper.authors
     date=paper.date
     arxiv=paper.arxiv
+    journal=paper.journal
+    journal_link=paper.journal_link
+    volume=paper.volume
+    article_number=paper.article_number
     pdf=paper.pdf
     highlight_author=paper.highlight_author
     etal=paper.etal
-    number=1
+    number="1"
   %}
   <hr>
 {% endfor %}

@@ -1,8 +1,12 @@
 - year: 2025
-  title: "Effect of kick velocity on gravitational wave detection of binary black holes with space- and ground-based detectors"
-  authors: "Jie Wu, Mengfei Sun, Xianghe Ma, Xiaolin Liu, Jin Li*, Zhoujian Cao*"
-  date: "Feb 19, 2025"
-  arxiv: "2502.13710"
-  pdf: "https://wujie3375.github.io/file/250219.pdf"
+  title: "Subtraction of the confusion foreground and parameter uncertainty of resolvable galactic binaries on the networks of  space-based gravitational-wave detectors"
+  authors: "Jie Wu, Jin Li*"
+  date: "Dec 18, 2023"
+  journal: "Phys.Rev.D"
+  journal_link: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.124047"
+  volume: "108"
+  article_number: "124047"
+  arxiv: "2307.05568"
+  pdf: "https://wujie3375.github.io/file/231130.pdf"
+  number: "2"
   highlight_author: 1
-  etal: 4
