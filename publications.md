@@ -126,8 +126,8 @@ tr:last-child td {
 <!-- ================================================================================================= -->
 ---
 {% for year_data in site.data.papers %}
-  ## {{ year_data.year }}
-  ---
+  <h2>{{ year_data.year }}</h2>
+  <hr>
 {% endfor %}
 
 {% if site.data.papers %}
