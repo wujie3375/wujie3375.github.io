@@ -138,7 +138,7 @@ tr:last-child td {
 
 {% assign papers = site.data.papers %}
 
-{% assign papers_by_year = site.data.papers | group_by: "year" | sort: "name" | reverse %}
+{% assign papers_by_year = papers | group_by: "year" | sort: "name" | reverse %}
 {% for year_group in papers_by_year %}
   <h2>{{ year_group.name }}</h2>
   {% for paper in year_group.items %}
@@ -154,10 +154,11 @@ tr:last-child td {
       pdf=paper.pdf
       highlight_author=paper.highlight_author
       etal=paper.etal
-      number="1"
+      number=forloop.index
     %}
-    <p>paper.title</p>
-  <hr>
+    <p>{{ paper.title }}</p>
+    <hr>
+  {% endfor %}
 {% endfor %}
 
 # Degree Thesis
