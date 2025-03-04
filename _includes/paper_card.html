@@ -58,15 +58,23 @@
     <div style="font-size: 17px; margin: -7px 0 0 0;">
         <!-- Journal and/or arXiv Links -->
         {% if include.journal %}
-            <a href="{{ include.journal_link }}">
-                <em>{{ include.journal }}</em> <strong>{{ include.volume }}</strong>, {{ include.article_number }}</a>
+            <a href="{{ include.journal_link | default: '#' }}">
+                <em>{{ include.journal }}</em>
+                {% if include.volume %}
+                    <strong>{{ include.volume }}</strong>
+                {% endif %}
+                {% if include.article_number %}
+                    , {{ include.article_number }}
+                {% endif %}
+            </a>
             {% if include.arxiv %}
                 |
             {% endif %}
         {% endif %}
         {% if include.arxiv %}
             <a href="https://arxiv.org/abs/{{ include.arxiv }}">
-                <em>arXiv</em>:{{ include.arxiv }}</a>
+                <em>arXiv</em>:{{ include.arxiv }}
+            </a>
         {% endif %}
 
         <!-- PDF Link -->
