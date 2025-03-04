@@ -117,11 +117,71 @@ tr:last-child td {
 </script>
 
 
-|                  | Published | Preprint | Total |
+<!-- |                  | Published | Preprint | Total |
 |:----------------:|:---------:|:--------:|:-----:|
 |  First author    |     4     |    2     |   6   |
 | Non first author |     1     |    0     |   1   |
-| Total            |     5     |    2     |   7   |
+| Total            |     5     |    2     |   7   | -->
+
+{% assign publications = site.data.publications %}
+
+{% assign first_author_published = 0 %}
+{% assign first_author_preprint = 0 %}
+{% assign non_first_author_published = 0 %}
+{% assign non_first_author_preprint = 0 %}
+
+{% for pub in publications %}
+  {% if pub.highlight_author == 1 %}
+    {% if pub.journal %}
+      {% assign first_author_published = first_author_published | plus: 1 %}
+    {% endif %}
+    {% if pub.arxiv %}
+      {% assign first_author_preprint = first_author_preprint | plus: 1 %}
+    {% endif %}
+  {% else %}
+    {% if pub.journal %}
+      {% assign non_first_author_published = non_first_author_published | plus: 1 %}
+    {% endif %}
+    {% if pub.arxiv %}
+      {% assign non_first_author_preprint = non_first_author_preprint | plus: 1 %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% assign total_published = first_author_published | plus: non_first_author_published %}
+{% assign total_preprint = first_author_preprint | plus: non_first_author_preprint %}
+{% assign total_articles = total_published | plus: total_preprint %}
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Published</th>
+      <th>Preprint</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>First author</td>
+      <td>{{ first_author_published }}</td>
+      <td>{{ first_author_preprint }}</td>
+      <td>{{ first_author_published | plus: first_author_preprint }}</td>
+    </tr>
+    <tr>
+      <td>Non first author</td>
+      <td>{{ non_first_author_published }}</td>
+      <td>{{ non_first_author_preprint }}</td>
+      <td>{{ non_first_author_published | plus: non_first_author_preprint }}</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>{{ total_published }}</td>
+      <td>{{ total_preprint }}</td>
+      <td>{{ total_articles }}</td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- ================================================================================================= -->
 ---
