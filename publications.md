@@ -127,36 +127,21 @@ tr:last-child td {
   ## {{ year_data.year }}
 
   {% for paper in year_data.papers %}
-    {% assign paper_include = "paper_card.html" %}
-    {% include {{ paper_include }}
+    {% include paper_card.html
       title=paper.title
+      subtitle=paper.subtitle
       authors=paper.authors
       date=paper.date
+      arxiv=paper.arxiv
+      journal=paper.journal
+      journal_link=paper.journal_link
+      volume=paper.volume
+      article_number=paper.article_number
+      pdf=paper.pdf
       number=paper.number
       highlight_author=paper.highlight_author
       etal=paper.etal
     %}
-    {% if paper.subtitle %}
-      {% include {{ paper_include }} subtitle=paper.subtitle %}
-    {% endif %}
-    {% if paper.arxiv %}
-      {% include {{ paper_include }} arxiv=paper.arxiv %}
-    {% endif %}
-    {% if paper.journal %}
-      {% include {{ paper_include }} journal=paper.journal %}
-    {% endif %}
-    {% if paper.journal_link %}
-      {% include {{ paper_include }} journal_link=paper.journal_link %}
-    {% endif %}
-    {% if paper.volume %}
-      {% include {{ paper_include }} volume=paper.volume %}
-    {% endif %}
-    {% if paper.article_number %}
-      {% include {{ paper_include }} article_number=paper.article_number %}
-    {% endif %}
-    {% if paper.pdf %}
-      {% include {{ paper_include }} pdf=paper.pdf %}
-    {% endif %}
   {% endfor %}
 
   ---
