@@ -77,3 +77,18 @@
         {% endif %}
     </div>
 </ul>
+
+<!-- JavaScript for toggling authors -->
+<script>
+    function toggleAuthors(id) {
+        var full = document.getElementById('author-full-' + id);
+        var etal = document.getElementById('etal-link-' + id);
+        if (full.style.display === 'none') {
+            full.style.display = 'inline';
+            etal.style.display = 'none';
+        } else {
+            full.style.display = 'none';
+            etal.style.display = 'inline';
+        }
+    }
+</script>
