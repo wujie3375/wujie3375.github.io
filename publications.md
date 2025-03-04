@@ -174,23 +174,7 @@ tr:last-child td {
 ## {{ group.name }}
 
 {% for pub in group.items %}
-
-{% include paper_card.html
-  title=pub.title
-  subtitle=pub.subtitle
-  authors=pub.authors
-  date=pub.date <!-- 使用原始日期 -->
-  journal=pub.journal
-  journal_link=pub.journal_link
-  volume=pub.volume
-  article_number=pub.article_number
-  arxiv=pub.arxiv
-  pdf=pub.pdf
-  highlight_author=pub.highlight_author
-  etal=pub.etal
-  number=1
-%}
-
+  {% include paper_card.html title=pub.title subtitle=pub.subtitle authors=pub.authors date=pub.date journal=pub.journal journal_link=pub.journal_link volume=pub.volume article_number=pub.article_number arxiv=pub.arxiv pdf=pub.pdf highlight_author=pub.highlight_author etal=pub.etal number="1" %}
 {% endfor %}
 <hr>
 {% endfor %}
