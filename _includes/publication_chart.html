@@ -1,7 +1,9 @@
 {% raw %}
 {% assign publications = site.data.papers %}
 {% assign years = publications | map: "year" | uniq | sort %}
-
+{% for year in years %}
+  {{ year }}
+{% endfor %}
 <script>
   var years = {{ years | jsonify }};
   var counts = [];
