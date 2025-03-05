@@ -210,7 +210,7 @@ tr:last-child td {
 {% for pub in publications %}
   {% assign date_parts = pub.date | split: " " %}
   {% assign month = date_parts[0] %}
-  {% assign day = date_parts[1] | remove: "," %}
+  {% assign day = date_parts[1] | remove: "," | prepend: "0" | slice: -2, 2 %}
   {% assign year = date_parts[2] %}
 
   {% case month %}
@@ -233,24 +233,21 @@ tr:last-child td {
 {% endfor %}
 
 <!-- 按 sortable_date 排序 -->
-{% assign publications = publications | sort: "sortable_date"  %}
+{% assign publications = publications | sort: "sortable_date" %}
 
 <!-- 按年份分组 -->
 {% assign grouped_publications = publications | group_by: 'year' | sort: 'name' | reverse %}
-
-<!-- {% assign total_number = publications.size %} -->
 
 <!-- 默认只显示一作文章 -->
 {% assign filtered_publications = publications | where: "highlight_author", 1 %}
 
 <!-- 根据复选框状态切换显示模式 -->
 <div id="first-author-only">
-{% assign total_number = filtered_publications.size %}
+  {% assign total_number = filtered_publications.size %}
   {% for group in grouped_publications %}
     {% assign filtered_group_items = group.items | where: "highlight_author", 1 %}
     {% if filtered_group_items.size > 0 %}
       <h2>{{ group.name }}</h2>
-
       {% for pub in filtered_group_items %}
         {% include paper_card.html 
         title=pub.title 
@@ -274,10 +271,9 @@ tr:last-child td {
 </div>
 
 <div id="all-articles" style="display: none;">
-{% assign total_number = publications.size %}
+  {% assign total_number = publications.size %}
   {% for group in grouped_publications %}
     <h2>{{ group.name }}</h2>
-
     {% for pub in group.items %}
       {% include paper_card.html 
       title=pub.title 
