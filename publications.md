@@ -199,9 +199,9 @@ tr:last-child td {
 {% else %}
   <p>YAML data not loaded.</p>
 {% endif %} -->
-
+<input type="checkbox" id="show-all" onchange="toggleDisplay()">
 <label>
-  <input type="checkbox" id="show-all" onchange="toggleDisplay()"> Show all papers (including non-first author)
+  Show all papers (including non-first author)<br>
 </label>
 
 {% assign publications = site.data.papers %}
