@@ -215,7 +215,6 @@ tr:last-child td {
   {% assign month = date_parts[0] %}
   {% assign day = date_parts[1] | remove: "," | prepend: "0" | slice: -2, 2 %} <!-- 确保 day 是两位数 -->
   {% assign year = date_parts[2] %}
-  {{ year }} -> {{ date_parts[2] }} <br>
   <!-- 将月份转换为数字 -->
   {% case month %}
     {% when "Jan" %}{% assign month_num = "01" %}
@@ -234,7 +233,7 @@ tr:last-child td {
 
   <!-- 构建 sortable_date -->
   {% assign sortable_date = year | append: "-" | append: month_num | append: "-" | append: day %}
-  {{ sortable_date }} <br>
+
   <!-- 创建一个新对象并添加 sortable_date -->
   {% assign pub_with_sortable_date = pub %}
   {% assign pub_with_sortable_date = pub_with_sortable_date | hash %}
@@ -290,7 +289,7 @@ tr:last-child td {
   {% assign total_number = publications_with_sortable_date.size %}
   {% for group in grouped_publications %}
     <h2>{{ group.name }}</h2>
-    <p style="text-indent: 0;font-size:24px;margin-bottom:0.61875rem;text-rendering:optimizeLegibility;line-height:1;margin-top:0;font-family:'PT Sans Narrow',sans-serif;font-weight:700;">{{ group.name }}</p>
+    <p style="text-indent: 0;font-size:36px;margin-bottom:0.61875rem;text-rendering:optimizeLegibility;line-height:1;margin-top:0;font-family:'PT Sans Narrow',sans-serif;font-weight:700;">{{ group.name }}</p>
     {% for pub in group.items %}
       {% include paper_card.html 
       title=pub.title 
