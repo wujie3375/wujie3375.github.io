@@ -13,6 +13,7 @@
     <div style="font-family: 'ARIAL'; font-size: 17px; margin: -2px 0 -4px 0;">
         {% assign authors = include.authors | split: ',' %}
         {% assign omit_start = include.etal | default: 5 %}
+        {% assign highlight_author_etal = include.highlight_author | minus: include.etal %}
         {% if authors.size > omit_start %}
             <!-- More than omit_start authors: show first omit_start and then et al. -->
             {% for author in authors %}
@@ -32,7 +33,7 @@
             <span id="author-full-{{ include.number }}" style="display: none;">
                 {% for author in authors offset:omit_start %}
                     <a href="javascript:void(0);" onclick="toggleAuthors('{{ include.number }}')" style="text-decoration: none;">
-                        {% if forloop.index == include.highlight_author | minus: omit_start %}
+                        {% if forloop.index == highlight_author_etal %}
                             <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
                         {% else %}
                             {{ author | strip }}
