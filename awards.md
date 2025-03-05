@@ -47,13 +47,19 @@ Keep track of the meetings I've been to.
   location="Chongqing, China" 
   photo="https://wujie3375.github.io/images/meeting/250114.jpg" %}
   
-  {% include meeting_card.html 
+  <!-- {% include meeting_card.html 
   date="Apr 19, 2024" 
   role="PRESENTER" 
   title="2024 Annual Meeting of Gravitation and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting" 
   location="Hengyang, Hunan, China" 
   photo="https://wujie3375.github.io/images/meeting/240419.jpg" 
-  ppt="https://wujie3375.github.io/images/meeting/240419.pdf" %}
+  ppt="https://wujie3375.github.io/images/meeting/240419.pdf" %} -->
+
+  {% include meeting_card.html 
+  date="Apr 19, 2024" 
+  role="PRESENTER" 
+  title="2024 Annual Meeting of Gravitation and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting" 
+  location="Hengyang, Hunan, China" %}
   
   {% include meeting_card.html 
   date="Apr 9, 2024" 
