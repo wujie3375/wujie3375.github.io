@@ -43,6 +43,9 @@ th {
 tr:last-child td {
     border-bottom: 1.5px solid black; /* 底部线 */
 }
+.checkbox-container {
+    display: inline-block; /* 将容器设置为行内块元素 */
+  }
 </style>
 
 > **Last Update:** Mar 5, 2025
@@ -190,10 +193,10 @@ tr:last-child td {
 <!-- ----------------------------------------------------------------------------------------------- -->
 ---
 
-<input type="checkbox" id="show-all" onchange="toggleDisplay()">
-<label>
-  Show all papers (including non-first author)<br>
-</label>
+<div class="checkbox-container">
+  <input type="checkbox" id="show-all" onchange="toggleDisplay()">
+  <label for="show-all">Show all papers (including non-first author)</label>
+</div>
 
 ---
 
