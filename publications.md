@@ -110,9 +110,20 @@ tr:last-child td {
 </script>
 
 ---
-{% raw %}
-{% assign publications = site.data.papers %}
+
+{% assign publications = site.data.publications %}
 {% assign years = publications | map: "year" | uniq | sort %}
+
+{% assign first_author_counts = "" | split: "" %}
+{% assign total_counts = "" | split: "" %}
+
+{% for year in years %}
+  {% assign first_author_count = publications | where: "year", year | where: "highlight_author", 1 | size %}
+  {% assign first_author_counts = first_author_counts | push: first_author_count %}
+
+  {% assign total_count = publications | where: "year", year | size %}
+  {% assign total_counts = total_counts | push: total_count %}
+{% endfor %}
 
 <table>
   <thead>
@@ -126,19 +137,18 @@ tr:last-child td {
   <tbody>
     <tr>
       <td>一作</td>
-      {% for year in years %}
-        <td>{{ publications | where: "year", year | where: "highlight_author", 1 | size }}</td>
+      {% for count in first_author_counts %}
+        <td>{{ count }}</td>
       {% endfor %}
     </tr>
     <tr>
       <td>所有</td>
-      {% for year in years %}
-        <td>{{ publications | where: "year", year | size }}</td>
+      {% for count in total_counts %}
+        <td>{{ count }}</td>
       {% endfor %}
     </tr>
   </tbody>
 </table>
-{% endraw %}
 
 
 <!-- =============================================================================================== -->
