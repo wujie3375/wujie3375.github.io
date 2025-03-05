@@ -1,4 +1,18 @@
 - year: 2025
+  title: "Identification of Stochastic Gravitational Wave Backgrounds from Cosmic String Using Machine Learning"
+  subtitle: false
+  authors: "Xianghe Ma, Borui Wang, Nan Yang, Jin Li*, Brendan McCane, Mengfei Sun, Jie Wu, Minghui Zhang, Yan Meng*"
+  date: "Feb 17, 2025"
+  journal: false
+  journal_link: false
+  volume: false
+  article_number: false
+  arxiv: "2502.11804"
+  pdf: "https://wujie3375.github.io/file/250217.pdf"
+  highlight_author: 7
+  etal: 4
+  
+- year: 2025
   title: "Effect of kick velocity on gravitational wave detection of binary black holes with space- and ground-based detectors"
   subtitle: false
   authors: "Jie Wu, Mengfei Sun, Xianghe Ma, Xiaolin Liu, Jin Li*, Zhoujian Cao*"
