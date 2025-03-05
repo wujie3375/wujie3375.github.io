@@ -115,7 +115,45 @@ tr:last-child td {
   <canvas id="publicationChart" width="400" height="200"></canvas>
 </div>
 
-{% include publication_chart.html %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  // 从 papers.yml 中提取数据
+  {% raw %}
+  {% assign publications = site.data.papers %}
+  {% assign years = publications | map: "year" | uniq | sort %}
+
+  var years = {{ years | jsonify }};
+  var counts = [];
+
+  {% for year in years %}
+    var count = {{ publications | where: "year", year | size }};
+    counts.push(count);
+  {% endfor %}
+  {% endraw %}
+
+  // 渲染折线图
+  var ctx = document.getElementById('publicationChart').getContext('2d');
+  var chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: years,
+      datasets: [{
+        label: 'Publications per Year',
+        data: counts,
+        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
 
 
 <!-- =============================================================================================== -->
