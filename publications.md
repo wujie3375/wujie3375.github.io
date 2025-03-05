@@ -206,58 +206,15 @@ tr:last-child td {
 
 {% assign publications = site.data.papers %}
 
-<!-- 调试输出 publications -->
-{{ publications | inspect }}
-
-<!-- 如果 publications 存在，继续处理 -->
-{% if publications %}
-  <!-- 转换日期为可排序格式 -->
-  {% for pub in publications %}
-    {% assign date_parts = pub.date | split: " " %}
-    {% assign month = date_parts[0] %}
-    {% assign day = date_parts[1] | remove: "," | prepend: "0" | slice: -2, 2 %} <!-- 确保 day 是两位数 -->
-    {% assign year = date_parts[2] %}
-
-    <!-- 将月份转换为数字 -->
-    {% case month %}
-      {% when "Jan" %}{% assign month_num = "01" %}
-      {% when "Feb" %}{% assign month_num = "02" %}
-      {% when "Mar" %}{% assign month_num = "03" %}
-      {% when "Apr" %}{% assign month_num = "04" %}
-      {% when "May" %}{% assign month_num = "05" %}
-      {% when "Jun" %}{% assign month_num = "06" %}
-      {% when "Jul" %}{% assign month_num = "07" %}
-      {% when "Aug" %}{% assign month_num = "08" %}
-      {% when "Sep" %}{% assign month_num = "09" %}
-      {% when "Oct" %}{% assign month_num = "10" %}
-      {% when "Nov" %}{% assign month_num = "11" %}
-      {% when "Dec" %}{% assign month_num = "12" %}
-    {% endcase %}
-
-    <!-- 构建 sortable_date -->
-    {% assign sortable_date = year | append: "-" | append: month_num | append: "-" | append: day %}
-
-    <!-- 直接为 pub 添加 sortable_date -->
-    {% assign pub.sortable_date = sortable_date %}
-  {% endfor %}
-
-  <!-- 按 sortable_date 排序 -->
-  {% assign publications = publications | sort: "sortable_date" | reverse %}
-
-  <!-- 调试输出 sortable_date -->
-  {% for pub in publications %}
-    {{ pub.date }} -> {{ pub.sortable_date }} <br>
-  {% endfor %}
-{% else %}
-  <!-- 如果 publications 为空，输出提示 -->
-  <p>No publications found.</p>
-{% endif %}
+<!-- 按月份排序 -->
+{% assign publications = publications | sort: "sortable_date" | reverse %}
 
 <!-- 按年份分组 -->
 {% assign grouped_publications = publications_with_sortable_date | group_by: 'year' | sort: 'name' | reverse %}
 
 <!-- 默认只显示一作文章 -->
 {% assign filtered_publications = publications_with_sortable_date | where: "highlight_author", 1 %}
+
 <!-- 根据复选框状态切换显示模式 -->
 <div id="first-author-only">
   {% assign total_number = filtered_publications.size %}
