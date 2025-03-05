@@ -189,20 +189,13 @@ tr:last-child td {
 <!-- 文章 -->
 <!-- ----------------------------------------------------------------------------------------------- -->
 ---
-<!-- {% for year_data in site.data.papers %}
-  <h2>{{ year_data.year }}</h2>
-  <hr>
-{% endfor %}
 
-{% if site.data.papers %}
-  <p>YAML data loaded successfully!</p>
-{% else %}
-  <p>YAML data not loaded.</p>
-{% endif %} -->
 <input type="checkbox" id="show-all" onchange="toggleDisplay()">
 <label>
   Show all papers (including non-first author)<br>
 </label>
+
+---
 
 {% assign publications = site.data.papers %}
 
