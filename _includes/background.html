@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <style>
+    #background-image {
+      position: absolute;
+      bottom: 1.55rem;
+      left: 7rem;
+      height: 150px;
+      width: 150px;
+      background-image: url('/images/blackhole-icon.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: 1500;
+    }
+
+    #background-image-2 {
+      position: absolute;
+      bottom: 4rem; /* 调整位置与 #background-image 有所不同 */
+      right: 9.1rem; /* 调整距离页面右侧的距离 */
+      height: 70px;
+      width: 70px;
+      background-image: url('/images/earth-icon.png'); /* 替换为你的第二张图片路径 */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: 1500;
+    }
+
+    #background-image-3 {
+      position: absolute;
+      bottom: 1rem; /* 调整位置与 #background-image 有所不同 */
+      left: 49.3%; /* 调整距离页面右侧的距离 */
+      height: 50px;
+      width: 50px;
+      background-image: url('/images/satellite-icon.png'); /* 替换为你的第二张图片路径 */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: 1500;
+    }
+
+    @media (max-width: 1400px) {
+      #background-image, #background-image-2, #background-image-3 {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="background-image"></div>
+  <div id="background-image-2"></div>
+  <div id="background-image-3"></div>
+
+  <script>
+    // 确保图片总是在页面的整体底部，即使窗口大小调整时
+    window.addEventListener('resize', adjustBackgroundPositions);
+
+    function adjustBackgroundPositions() {
+      const backgroundImage = document.getElementById('background-image');
+      const backgroundImage2 = document.getElementById('background-image-2');
+      const backgroundImage3 = document.getElementById('background-image-3');
+      const contentHeight = document.body.scrollHeight;
+
+      backgroundImage.style.top = `${contentHeight - backgroundImage.clientHeight - 1.55 * 16}px`; // 1.55rem 转为 px
+      backgroundImage2.style.top = `${contentHeight - backgroundImage2.clientHeight - 4 * 16}px`; // 3rem 转为 px
+      backgroundImage3.style.top = `${contentHeight - backgroundImage3.clientHeight - 1 * 16}px`; // 3rem 转为 px
+    }
+
+    // 初始位置调整
+    adjustBackgroundPositions();
+  </script>
+</body>
+</html>
