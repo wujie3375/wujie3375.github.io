@@ -109,7 +109,6 @@ tr:last-child td {
   [   2,   3,   3]);//总计
 </script>
 
----
 
 <!-- =============================================================================================== -->
 <!-- 表格 -->
@@ -187,6 +186,8 @@ tr:last-child td {
 <!-- ----------------------------------------------------------------------------------------------- -->
 ---
 
+<p style="text-indent: 0;">Publications are categorized and listed in reversed chronological order.</p>
+
 <style>
   .checkbox-container {
     display: flex; /* 使用 Flexbox 布局 */
@@ -198,8 +199,6 @@ tr:last-child td {
   <input type="checkbox" id="show-all" onchange="toggleDisplay()">
   <label for="show-all">&nbsp;Show all papers (including non-first author)</label>
 </div>
-
-<p style="text-indent: 0;">Publications are categorized and listed in reversed chronological order.</p>
 
 <p style="text-indent: 0; font-family: 'ARIAL';">(*: corresponding author)</p>
 ---
@@ -275,8 +274,6 @@ tr:last-child td {
     var showAll = document.getElementById("show-all").checked;
     document.getElementById("first-author-only").style.display = showAll ? "none" : "block";
     document.getElementById("all-articles").style.display = showAll ? "block" : "none";
-
-    console.log("Toggled display mode. Show all:", showAll);
   }
 </script>
 
