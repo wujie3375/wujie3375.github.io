@@ -206,6 +206,9 @@ tr:last-child td {
 
 {% assign publications = site.data.papers %}
 
+<!-- 创建一个新的数组来存储带有 sortable_date 的 publications -->
+{% assign publications_with_sortable_date = "" | split: "" %}
+
 <!-- 转换日期为可排序格式 -->
 {% for pub in publications %}
   {% assign date_parts = pub.date | split: " " %}
@@ -229,22 +232,26 @@ tr:last-child td {
   {% endcase %}
 
   {% assign sortable_date = year | append: "-" | append: month_num | append: "-" | append: day %}
-  {% assign pub.sortable_date = sortable_date %}
+
+  <!-- 将 sortable_date 添加到 pub 对象中 -->
+  {% assign pub_with_sortable_date = pub %}
+  {% assign pub_with_sortable_date.sortable_date = sortable_date %}
+
+  <!-- 将修改后的 pub 对象添加到新数组中 -->
+  {% assign publications_with_sortable_date = publications_with_sortable_date | push: pub_with_sortable_date %}
 {% endfor %}
 
 <!-- 按 sortable_date 排序 -->
-{% assign publications = publications | sort: "sortable_date" %}
+{% assign publications_with_sortable_date = publications_with_sortable_date | sort: "sortable_date" %}
 
 <!-- 按年份分组 -->
-{% assign grouped_publications = publications | group_by: 'year' | sort: 'name' | reverse %}
+{% assign grouped_publications = publications_with_sortable_date | group_by: 'year' | sort: 'name' | reverse %}
 
 <!-- 默认只显示一作文章 -->
-{% assign filtered_publications = publications | where: "highlight_author", 1 %}
-
-{% for pub in publications %}
+{% assign filtered_publications = publications_with_sortable_date | where: "highlight_author", 1 %}
+{% for pub in publications_with_sortable_date %}
   {{ pub.date }} -> {{ pub.sortable_date }} <br>
 {% endfor %}
-
 <!-- 根据复选框状态切换显示模式 -->
 <div id="first-author-only">
   {% assign total_number = filtered_publications.size %}
@@ -275,9 +282,10 @@ tr:last-child td {
 </div>
 
 <div id="all-articles" style="display: none;">
-  {% assign total_number = publications.size %}
+  {% assign total_number = publications_with_sortable_date.size %}
   {% for group in grouped_publications %}
     <h2>{{ group.name }}</h2>
+    <p style="text-indent: 0;font-size:24px;margin-bottom:1.2375rem;margin-bottom:0;">{{ group.name }}</p>
     {% for pub in group.items %}
       {% include paper_card.html 
       title=pub.title 
