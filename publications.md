@@ -109,6 +109,14 @@ tr:last-child td {
   [   2,   3,   3]);//总计
 </script>
 
+---
+
+<div>
+  <canvas id="publicationChart" width="400" height="200"></canvas>
+</div>
+
+{% include publication_chart.html %}
+
 
 <!-- =============================================================================================== -->
 <!-- 表格 -->
@@ -186,8 +194,6 @@ tr:last-child td {
 <!-- ----------------------------------------------------------------------------------------------- -->
 ---
 
-<p style="text-indent: 0;">Publications are categorized and listed in reversed chronological order.</p>
-
 <style>
   .checkbox-container {
     display: flex; /* 使用 Flexbox 布局 */
@@ -199,6 +205,8 @@ tr:last-child td {
   <input type="checkbox" id="show-all" onchange="toggleDisplay()">
   <label for="show-all">&nbsp;Show all papers (including non-first author)</label>
 </div>
+
+<p style="text-indent: 0;">Publications are categorized and listed in reversed chronological order.</p>
 
 <p style="text-indent: 0; font-family: 'ARIAL';">(*: corresponding author)</p>
 ---
