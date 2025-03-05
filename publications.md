@@ -241,6 +241,10 @@ tr:last-child td {
 <!-- 默认只显示一作文章 -->
 {% assign filtered_publications = publications | where: "highlight_author", 1 %}
 
+{% for pub in publications %}
+  {{ pub.date }} -> {{ pub.sortable_date }} <br>
+{% endfor %}
+
 <!-- 根据复选框状态切换显示模式 -->
 <div id="first-author-only">
   {% assign total_number = filtered_publications.size %}
