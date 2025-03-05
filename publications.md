@@ -275,6 +275,8 @@ tr:last-child td {
     var showAll = document.getElementById("show-all").checked;
     document.getElementById("first-author-only").style.display = showAll ? "none" : "block";
     document.getElementById("all-articles").style.display = showAll ? "block" : "none";
+
+    console.log("Toggled display mode. Show all:", showAll);
   }
 </script>
 
