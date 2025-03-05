@@ -43,9 +43,6 @@ th {
 tr:last-child td {
     border-bottom: 1.5px solid black; /* 底部线 */
 }
-.checkbox-container {
-    display: inline-block; /* 将容器设置为行内块元素 */
-  }
 </style>
 
 > **Last Update:** Mar 5, 2025
@@ -192,6 +189,13 @@ tr:last-child td {
 <!-- 文章 -->
 <!-- ----------------------------------------------------------------------------------------------- -->
 ---
+
+<style>
+  .checkbox-container {
+    display: flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 垂直居中对齐 */
+  }
+</style>
 
 <div class="checkbox-container">
   <input type="checkbox" id="show-all" onchange="toggleDisplay()">
