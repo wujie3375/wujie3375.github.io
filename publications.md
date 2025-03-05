@@ -245,10 +245,10 @@ tr:last-child td {
 </div>
 
 <div id="all-articles" style="display: none;">
-  {% assign total_number = publications_with_sortable_date.size %}
+  {% assign total_number = publications.size %}
   {% for group in grouped_publications %}
     <!-- <h2>{{ group.name }}</h2> -->
-    <p style="text-indent: 0;font-size:48px;margin-bottom:0.61875rem;text-rendering:optimizeLegibility;line-height:1;margin-top:0;font-family:'PT Sans Narrow',sans-serif;font-weight:700;">{{ group.name }}</p>
+    <p style="text-indent: 0;font-size:36px;margin-bottom:0.61875rem;text-rendering:optimizeLegibility;line-height:1;margin-top:0;font-family:'PT Sans Narrow',sans-serif;font-weight:700;">{{ group.name }}</p>
     {% for pub in group.items %}
       {% include paper_card.html 
       title=pub.title 
