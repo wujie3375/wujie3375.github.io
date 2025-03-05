@@ -199,7 +199,7 @@ tr:last-child td {
 
 <div class="checkbox-container">
   <input type="checkbox" id="show-all" onchange="toggleDisplay()">
-  <label for="show-all"> Show all papers (including non-first author)</label>
+  <label for="show-all">&nbsp;Show all papers (including non-first author)</label>
 </div>
 
 ---
