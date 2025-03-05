@@ -110,11 +110,35 @@ tr:last-child td {
 </script>
 
 ---
+{% raw %}
+{% assign publications = site.data.papers %}
+{% assign years = publications | map: "year" | uniq | sort %}
 
-| year | {% raw %}{% assign years = site.data.papers | map: "year" | uniq | sort %}{% for year in years %}{{ year }} | {% endfor %}
-|------|{% for year in years %}------|{% endfor %}
-| First | {% for year in years %}{{ site.data.papers | where: "year", year | where: "highlight_author", 1 | size }} | {% endfor %}
-| All | {% for year in years %}{{ site.data.papers | where: "year", year | size }} | {% endfor %}
+<table>
+  <thead>
+    <tr>
+      <th>年份</th>
+      {% for year in years %}
+        <th>{{ year }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>一作</td>
+      {% for year in years %}
+        <td>{{ publications | where: "year", year | where: "highlight_author", 1 | size }}</td>
+      {% endfor %}
+    </tr>
+    <tr>
+      <td>所有</td>
+      {% for year in years %}
+        <td>{{ publications | where: "year", year | size }}</td>
+      {% endfor %}
+    </tr>
+  </tbody>
+</table>
+{% endraw %}
 
 
 <!-- =============================================================================================== -->
