@@ -261,7 +261,7 @@ tr:last-child td {
       arxiv=pub.arxiv 
       pdf=pub.pdf 
       highlight_author=pub.highlight_author 
-      etal=pub.etal 
+      etal=10 
       number=total_number %}
       {% assign total_number = total_number | plus: -1 %}
     {% endfor %}
@@ -274,23 +274,7 @@ tr:last-child td {
     var showAll = document.getElementById("show-all").checked;
     document.getElementById("first-author-only").style.display = showAll ? "none" : "block";
     document.getElementById("all-articles").style.display = showAll ? "block" : "none";
-
-    // 重新绑定事件
-    bindEtalEvents();
   }
-
-  function bindEtalEvents() {
-    const etalLinks = document.querySelectorAll('[id^="etal-link-"]');
-    etalLinks.forEach(link => {
-      link.onclick = function() {
-        const id = link.id.replace('etal-link-', '');
-        toggleAuthors(id);
-      };
-    });
-  }
-
-  // 初始绑定
-  bindEtalEvents();
 </script>
 
 <!-- =============================================================================================== -->
