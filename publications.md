@@ -206,15 +206,13 @@ tr:last-child td {
 
 {% assign publications = site.data.papers %}
 
-<!-- 创建一个新的数组来存储带有 sortable_date 的 publications -->
-{% assign publications_with_sortable_date = "" | split: "" %}
-
 <!-- 转换日期为可排序格式 -->
 {% for pub in publications %}
   {% assign date_parts = pub.date | split: " " %}
   {% assign month = date_parts[0] %}
   {% assign day = date_parts[1] | remove: "," | prepend: "0" | slice: -2, 2 %} <!-- 确保 day 是两位数 -->
   {% assign year = date_parts[2] %}
+
   <!-- 将月份转换为数字 -->
   {% case month %}
     {% when "Jan" %}{% assign month_num = "01" %}
@@ -234,20 +232,15 @@ tr:last-child td {
   <!-- 构建 sortable_date -->
   {% assign sortable_date = year | append: "-" | append: month_num | append: "-" | append: day %}
 
-  <!-- 创建一个新对象并添加 sortable_date -->
-  {% assign pub_with_sortable_date = pub %}
-  {% assign pub_with_sortable_date = pub_with_sortable_date | hash %}
-  {% assign pub_with_sortable_date.sortable_date = sortable_date %}
-
-  <!-- 将修改后的对象添加到新数组中 -->
-  {% assign publications_with_sortable_date = publications_with_sortable_date | push: pub_with_sortable_date %}
+  <!-- 直接为 pub 添加 sortable_date -->
+  {% assign pub.sortable_date = sortable_date %}
 {% endfor %}
 
 <!-- 按 sortable_date 排序 -->
-{% assign publications_with_sortable_date = publications_with_sortable_date | sort: "sortable_date" | reverse %}
+{% assign publications = publications | sort: "sortable_date" | reverse %}
 
 <!-- 调试输出 sortable_date -->
-{% for pub in publications_with_sortable_date %}
+{% for pub in publications %}
   {{ pub.date }} -> {{ pub.sortable_date }} <br>
 {% endfor %}
 
@@ -289,7 +282,7 @@ tr:last-child td {
   {% assign total_number = publications_with_sortable_date.size %}
   {% for group in grouped_publications %}
     <h2>{{ group.name }}</h2>
-    <p style="text-indent: 0;font-size:36px;margin-bottom:0.61875rem;text-rendering:optimizeLegibility;line-height:1;margin-top:0;font-family:'PT Sans Narrow',sans-serif;font-weight:700;">{{ group.name }}</p>
+    <p style="text-indent: 0;font-size:48px;margin-bottom:0.61875rem;text-rendering:optimizeLegibility;line-height:1;margin-top:0;font-family:'PT Sans Narrow',sans-serif;font-weight:700;">{{ group.name }}</p>
     {% for pub in group.items %}
       {% include paper_card.html 
       title=pub.title 
