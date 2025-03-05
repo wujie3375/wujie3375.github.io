@@ -206,14 +206,14 @@ tr:last-child td {
 
 {% assign publications = site.data.papers %}
 
-<!-- 按月份排序 -->
+<!-- 按 sortable_date 排序，最新的排在前面 -->
 {% assign publications = publications | sort: "sortable_date" | reverse %}
 
 <!-- 按年份分组 -->
-{% assign grouped_publications = publications_with_sortable_date | group_by: 'year' | sort: 'name' | reverse %}
+{% assign grouped_publications = publications | group_by_exp: "pub", "pub.sortable_date | split: '-' | first" | sort: "name" | reverse %}
 
 <!-- 默认只显示一作文章 -->
-{% assign filtered_publications = publications_with_sortable_date | where: "highlight_author", 1 %}
+{% assign filtered_publications = publications | where: "highlight_author", 1 %}
 
 <!-- 根据复选框状态切换显示模式 -->
 <div id="first-author-only">
