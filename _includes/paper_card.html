@@ -86,14 +86,20 @@
 <!-- JavaScript for toggling authors -->
 <script>
     function toggleAuthors(id) {
-        var full = document.getElementById('author-full-' + id);
-        var etal = document.getElementById('etal-link-' + id);
-        if (full.style.display === 'none') {
+        const full = document.getElementById('author-full-' + id);
+        const etal = document.getElementById('etal-link-' + id);
+
+        if (!full || !etal) {
+            console.error("Element not found for ID:", id);
+            return;
+        }
+
+        if (full.style.display === 'none' || full.style.display === '') {
             full.style.display = 'inline';
             etal.style.display = 'none';
         } else {
             full.style.display = 'none';
             etal.style.display = 'inline';
         }
-    }
+        }
 </script>
