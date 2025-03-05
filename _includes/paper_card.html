@@ -32,7 +32,7 @@
             <span id="author-full-{{ include.number }}" style="display: none;">
                 {% for author in authors offset:omit_start %}
                     <a href="javascript:void(0);" onclick="toggleAuthors('{{ include.number }}')" style="text-decoration: none;">
-                        {% if forloop.index == include.highlight_author %}
+                        {% if forloop.index == include.highlight_author | minus: omit_start %}
                             <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
                         {% else %}
                             {{ author | strip }}
