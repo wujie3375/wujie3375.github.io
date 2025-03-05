@@ -23,12 +23,10 @@
                     {% else %}
                         {{ author | strip }}
                     {% endif %}
-                    {% if forloop.index < omit_start %}
-                        ,<!-- No space after the comma -->
-                    {% endif %}
+                    {% if forloop.index < omit_start %},{% endif %} <!-- No space after the comma -->
                 {% endif %}
             {% endfor %}
-            , <em><a href="javascript:void(0);" onclick="toggleAuthors('{{ include.number }}')" id="etal-link-{{ include.number }}">et al.</a></em>
+            ,<em><a href="javascript:void(0);" onclick="toggleAuthors('{{ include.number }}')" id="etal-link-{{ include.number }}">et al.</a></em>
             <!-- Hidden full author list (excluding the first omit_start already displayed) -->
             <span id="author-full-{{ include.number }}" style="display: none;">
                 {% for author in authors offset:omit_start %}
@@ -39,9 +37,7 @@
                             {{ author | strip }}
                         {% endif %}
                     </a>
-                    {% if forloop.last == false %}
-                        ,<!-- No space after the comma -->
-                    {% endif %}
+                    {% if forloop.last == false %},{% endif %} <!-- No space after the comma -->
                 {% endfor %}
             </span>
         {% else %}
@@ -52,9 +48,7 @@
                 {% else %}
                     {{ author | strip }}
                 {% endif %}
-                {% if forloop.last == false %}
-                    ,<!-- No space after the comma -->
-                {% endif %}
+                {% if forloop.last == false %},{% endif %} <!-- No space after the comma -->
             {% endfor %}
         {% endif %}
         ({{ include.date }})
