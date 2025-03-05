@@ -111,48 +111,10 @@ tr:last-child td {
 
 ---
 
-<div>
-  <canvas id="publicationChart" width="400" height="200"></canvas>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-  {% raw %}
-  {% assign publications = site.data.papers %}
-  {% assign years = publications | map: "year" | uniq | sort %}
-
-  var years = {{ years | jsonify }};
-  var counts = [];
-  {{years}}
-  {{year}}
-  {% for year in years %}
-    var count = {{ publications | where: "year", year | size }};
-    counts.push(count);
-  {% endfor %}
-  {% endraw %}
-
-  var ctx = document.getElementById('publicationChart').getContext('2d');
-  var chart = new Chart(ctx, {
-    type: 'line',
-    data: {
-      labels: years,
-      datasets: [{
-        label: 'Publications per Year',
-        data: counts,
-        backgroundColor: 'rgba(75, 192, 192, 0.2)',
-        borderColor: 'rgba(75, 192, 192, 1)',
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
-  });
-</script>
+| year | {% raw %}{% assign years = site.data.papers | map: "year" | uniq | sort %}{% for year in years %}{{ year }} | {% endfor %}
+|------|{% for year in years %}------|{% endfor %}
+| First | {% for year in years %}{{ site.data.papers | where: "year", year | where: "highlight_author", 1 | size }} | {% endfor %}
+| All | {% for year in years %}{{ site.data.papers | where: "year", year | size }} | {% endfor %}
 
 
 <!-- =============================================================================================== -->
