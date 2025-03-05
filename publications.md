@@ -111,46 +111,6 @@ tr:last-child td {
 
 ---
 
-{% assign publications = site.data.publications %}
-{% assign years = publications | map: "year" | uniq | sort %}
-
-{% assign first_author_counts = "" | split: "" %}
-{% assign total_counts = "" | split: "" %}
-
-{% for year in years %}
-  {% assign first_author_count = publications | where: "year", year | where: "highlight_author", 1 | size %}
-  {% assign first_author_counts = first_author_counts | push: first_author_count %}
-
-  {% assign total_count = publications | where: "year", year | size %}
-  {% assign total_counts = total_counts | push: total_count %}
-{% endfor %}
-
-<table>
-  <thead>
-    <tr>
-      <th>年份</th>
-      {% for year in years %}
-        <th>{{ year }}</th>
-      {% endfor %}
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>一作</td>
-      {% for count in first_author_counts %}
-        <td>{{ count }}</td>
-      {% endfor %}
-    </tr>
-    <tr>
-      <td>所有</td>
-      {% for count in total_counts %}
-        <td>{{ count }}</td>
-      {% endfor %}
-    </tr>
-  </tbody>
-</table>
-
-
 <!-- =============================================================================================== -->
 <!-- 表格 -->
 <!-- ----------------------------------------------------------------------------------------------- -->
