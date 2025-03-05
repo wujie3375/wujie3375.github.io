@@ -391,7 +391,7 @@ img.mfp-img{width:auto;max-width:100%;height:auto;display:block;line-height:0;-w
 
 #background-image {
   position: absolute;
-  bottom: 20px; /* 距离底部 20px */
+  bottom: 2px; /* 距离底部 20px */
   left: 7rem;
   height: 150px;
   width: 150px;
@@ -404,7 +404,7 @@ img.mfp-img{width:auto;max-width:100%;height:auto;display:block;line-height:0;-w
 
 #background-image-2 {
   position: absolute;
-  bottom: 50px; /* 距离底部 50px */
+  bottom: 5px; /* 距离底部 50px */
   right: 9.1rem;
   height: 70px;
   width: 70px;
@@ -417,7 +417,7 @@ img.mfp-img{width:auto;max-width:100%;height:auto;display:block;line-height:0;-w
 
 #background-image-3 {
   position: absolute;
-  bottom: 10px; /* 距离底部 10px */
+  bottom: 1px; /* 距离底部 10px */
   left: 49.3%;
   height: 50px;
   width: 50px;
