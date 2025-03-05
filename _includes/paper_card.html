@@ -10,7 +10,7 @@
     <hr style="border: none; border-top: 1px solid #ddd; margin: 6px 0;">
 
     <!-- Authors -->
-    <div style="font-family: 'ARIAL'; font-size: 17px; margin: -2px 0 -4px 0;">
+    <div style="font-family: 'ARIAL'; font-size: 17px; margin: -2px 0 -4px 0;display: flex; justify-content: space-between; align-items: center;">
         {% assign authors = include.authors | split: ',' %}
         {% assign omit_start = include.etal | default: 5 %}
         {% assign highlight_author_etal = include.highlight_author | minus: include.etal %}
@@ -57,9 +57,7 @@
                 {% endif %}
             {% endfor %}
         {% endif %}
-        <div style="text-align: right;">
-            ({{ include.date }})
-          </div>
+        <span>({{ include.date }})</span>
     </div>
 
     <div style="font-size: 17px; margin: -7px 0 0 0;">
