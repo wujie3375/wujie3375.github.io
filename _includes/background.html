@@ -3,7 +3,7 @@
 <head>
   <style>
     #background-image {
-      position: absolute;
+      position: fixed;
       bottom: 1.55rem;
       left: 7rem;
       height: 150px;
@@ -16,7 +16,7 @@
     }
 
     #background-image-2 {
-      position: absolute;
+      position: fixed;
       bottom: 4rem; /* 调整位置与 #background-image 有所不同 */
       right: 9.1rem; /* 调整距离页面右侧的距离 */
       height: 70px;
@@ -29,7 +29,7 @@
     }
 
     #background-image-3 {
-      position: absolute;
+      position: fixed;
       bottom: 1rem; /* 调整位置与 #background-image 有所不同 */
       left: 49.3%; /* 调整距离页面右侧的距离 */
       height: 50px;
@@ -54,22 +54,27 @@
   <div id="background-image-3"></div>
 
   <script>
-    // 确保图片总是在页面的整体底部，即使窗口大小调整时
+    // 监听内容高度变化
+    const observer = new MutationObserver(adjustBackgroundPositions);
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    // 监听窗口大小变化
     window.addEventListener('resize', adjustBackgroundPositions);
+
+    // 初始位置调整
+    adjustBackgroundPositions();
 
     function adjustBackgroundPositions() {
       const backgroundImage = document.getElementById('background-image');
       const backgroundImage2 = document.getElementById('background-image-2');
       const backgroundImage3 = document.getElementById('background-image-3');
-      const contentHeight = document.body.scrollHeight;
+      const windowHeight = window.innerHeight;
 
-      backgroundImage.style.top = `${contentHeight - backgroundImage.clientHeight - 1.55 * 16}px`; // 1.55rem 转为 px
-      backgroundImage2.style.top = `${contentHeight - backgroundImage2.clientHeight - 4 * 16}px`; // 3rem 转为 px
-      backgroundImage3.style.top = `${contentHeight - backgroundImage3.clientHeight - 1 * 16}px`; // 3rem 转为 px
+      // 设置图片的 bottom 值
+      backgroundImage.style.bottom = '1.55rem';
+      backgroundImage2.style.bottom = '4rem';
+      backgroundImage3.style.bottom = '1rem';
     }
-
-    // 初始位置调整
-    adjustBackgroundPositions();
   </script>
 </body>
 </html>

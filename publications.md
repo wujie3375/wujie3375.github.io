@@ -45,7 +45,7 @@ tr:last-child td {
 }
 </style>
 
-> **Last Update:** Mar 5, 2025
+> **Last Update:** Mar 6, 2025
 
 # Publications
 
@@ -258,7 +258,7 @@ tr:last-child td {
         arxiv=pub.arxiv 
         pdf=pub.pdf 
         highlight_author=pub.highlight_author 
-        etal=pub.etal 
+        etal=10 
         number=total_number %}
         {% assign total_number = total_number | plus: -1 %}
       {% endfor %}
