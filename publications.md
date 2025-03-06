@@ -217,7 +217,7 @@ tr:last-child td {
   {% for group in grouped_publications %}
     <p style="text-indent: 0;font-size:36px;margin-bottom:0.61875rem;text-rendering:optimizeLegibility;line-height:1;margin-top:0;font-family:'PT Sans Narrow',sans-serif;font-weight:700;">{{ group.name }}</p>
     {% for pub in group.items %}
-      {% include paper_card.html mode="all"
+      {% include paper_card.html 
       title=pub.title 
       subtitle=pub.subtitle 
       authors=pub.authors 
@@ -246,7 +246,7 @@ tr:last-child td {
     {% if filtered_group_items.size > 0 %}
       <h2>{{ group.name }}</h2>
       {% for pub in filtered_group_items %}
-        {% include paper_card.html mode="first"
+        {% include paper_card.html 
         title=pub.title 
         subtitle=pub.subtitle 
         authors=pub.authors 
@@ -268,10 +268,10 @@ tr:last-child td {
 </div>
 
 <script>
-  function toggleAuthors(mode, id) {
-    const full = document.getElementById(`author-full-${mode}-${id}`);
-    const etal = document.getElementById(`etal-link-${mode}-${id}`);
-    // 原有切换逻辑保持不变
+  function toggleDisplay() {
+    var showAll = document.getElementById("show-all").checked;
+    document.getElementById("first-author-only").style.display = showAll ? "block" : "none";
+    document.getElementById("all-articles").style.display = showAll ? "none" : "block";
   }
 </script>
 
