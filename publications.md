@@ -195,7 +195,7 @@ tr:last-child td {
 
 <div class="checkbox-container">
   <input type="checkbox" id="show-all" onchange="toggleDisplay()">
-  <label for="show-all">&nbsp;Show all papers (including non-first author)</label>
+  <label for="show-all">&nbsp;Show first-author papers only</label>
 </div>
 
 <p style="text-indent: 0;">Publications are categorized and listed in reversed chronological order.</p>
@@ -211,11 +211,35 @@ tr:last-child td {
 <!-- 按年份分组 -->
 {% assign grouped_publications = publications | group_by_exp: "pub", "pub.sortable_date | split: '-' | first" | sort: "name" | reverse %}
 
-<!-- 默认只显示一作文章 -->
-{% assign filtered_publications = publications | where: "highlight_author", 1 %}
+<!-- 默认显示全部文章 -->
+<div id="all-articles">
+  {% assign total_number = publications.size %}
+  {% for group in grouped_publications %}
+    <p style="text-indent: 0;font-size:36px;margin-bottom:0.61875rem;text-rendering:optimizeLegibility;line-height:1;margin-top:0;font-family:'PT Sans Narrow',sans-serif;font-weight:700;">{{ group.name }}</p>
+    {% for pub in group.items %}
+      {% include paper_card.html 
+      title=pub.title 
+      subtitle=pub.subtitle 
+      authors=pub.authors 
+      date=pub.date 
+      journal=pub.journal 
+      journal_link=pub.journal_link 
+      volume=pub.volume 
+      article_number=pub.article_number 
+      arxiv=pub.arxiv 
+      pdf=pub.pdf 
+      highlight_author=pub.highlight_author 
+      etal=pub.etal
+      number=total_number %}
+      {% assign total_number = total_number | plus: -1 %}
+    {% endfor %}
+    <hr>
+  {% endfor %}
+</div>
 
-<!-- 根据复选框状态切换显示模式 -->
-<div id="first-author-only">
+<!-- 默认隐藏一作文章 -->
+<div id="first-author-only" style="display: none;">
+  {% assign filtered_publications = publications | where: "highlight_author", 1 %}
   {% assign total_number = filtered_publications.size %}
   {% for group in grouped_publications %}
     {% assign filtered_group_items = group.items | where: "highlight_author", 1 %}
@@ -243,37 +267,11 @@ tr:last-child td {
   {% endfor %}
 </div>
 
-<div id="all-articles" style="display: none;">
-  {% assign total_number = publications.size %}
-  {% for group in grouped_publications %}
-    <!-- <h2>{{ group.name }}</h2> -->
-    <p style="text-indent: 0;font-size:36px;margin-bottom:0.61875rem;text-rendering:optimizeLegibility;line-height:1;margin-top:0;font-family:'PT Sans Narrow',sans-serif;font-weight:700;">{{ group.name }}</p>
-    {% for pub in group.items %}
-      {% include paper_card.html 
-      title=pub.title 
-      subtitle=pub.subtitle 
-      authors=pub.authors 
-      date=pub.date 
-      journal=pub.journal 
-      journal_link=pub.journal_link 
-      volume=pub.volume 
-      article_number=pub.article_number 
-      arxiv=pub.arxiv 
-      pdf=pub.pdf 
-      highlight_author=pub.highlight_author 
-      etal=10 
-      number=total_number %}
-      {% assign total_number = total_number | plus: -1 %}
-    {% endfor %}
-    <hr>
-  {% endfor %}
-</div>
-
 <script>
   function toggleDisplay() {
     var showAll = document.getElementById("show-all").checked;
-    document.getElementById("first-author-only").style.display = showAll ? "none" : "block";
-    document.getElementById("all-articles").style.display = showAll ? "block" : "none";
+    document.getElementById("first-author-only").style.display = showAll ? "block" : "none";
+    document.getElementById("all-articles").style.display = showAll ? "none" : "block";
   }
 </script>
 
