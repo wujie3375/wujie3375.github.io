@@ -188,23 +188,6 @@ tr:last-child td {
 
 <style>
   .checkbox-container {
-    display: flex; /* 使用 Flexbox 布局 */
-    align-items: center; /* 垂直居中对齐 */
-  }
-</style>
-
-<div class="checkbox-container">
-  <input type="checkbox" id="show-all" onchange="toggleDisplay()">
-  <label for="show-all">&nbsp;Show first-author papers only</label>
-</div>
-
-<p style="text-indent: 0;">Publications are categorized and listed in reversed chronological order.</p>
-
-<p style="text-indent: 0; font-family: 'ARIAL';">(*: corresponding author)</p>
----
-
-<style>
-  .checkbox-container {
     display: flex;
     align-items: center;
   }
@@ -222,11 +205,10 @@ tr:last-child td {
 <div id="publications-container"></div>
 
 <script>
-  // 将 Liquid 数据转换为 JavaScript 可用的格式
+  // Liquid 数据转换
   {% raw %}
   const publicationsData = [
-    {% assign pubs = site.data.papers | sort: "sortable_date" | reverse %}
-    {% for pub in pubs %}
+    {% for pub in site.data.papers %}
     {
       title: {{ pub.title | jsonify }},
       subtitle: {{ pub.subtitle | jsonify }},
@@ -238,23 +220,39 @@ tr:last-child td {
       article_number: {{ pub.article_number | jsonify }},
       arxiv: {{ pub.arxiv | jsonify }},
       pdf: {{ pub.pdf | jsonify }},
-      highlight_author: {{ pub.highlight_author | jsonify }},
-      etal: {{ pub.etal | jsonify }},
-      sortable_date: {{ pub.sortable_date | jsonify }},
-      year: {{ pub.sortable_date | split: '-' | first | jsonify }}
+      highlight_author: {{ pub.highlight_author | default: 0 }},
+      etal: {{ pub.etal | default: 10 }},
+      sortable_date: {{ pub.sortable_date | jsonify }}
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ];
   {% endraw %}
 
-  // 分组函数
-  function groupByYear(publications) {
-    return publications.reduce((acc, pub) => {
+  // 分组排序逻辑
+  function processData(showFirstAuthor) {
+    // 深拷贝原始数据
+    let data = JSON.parse(JSON.stringify(publicationsData));
+    
+    // 过滤数据
+    if(showFirstAuthor) {
+      data = data.filter(p => p.highlight_author === 1);
+    }
+    
+    // 按日期排序
+    data.sort((a, b) => new Date(b.sortable_date) - new Date(a.sortable_date));
+    
+    // 按年份分组
+    const grouped = data.reduce((acc, pub) => {
       const year = pub.sortable_date.split('-')[0];
-      if (!acc[year]) acc[year] = [];
+      acc[year] = acc[year] || [];
       acc[year].push(pub);
       return acc;
     }, {});
+    
+    // 按年份倒序排序
+    return Object.entries(grouped)
+      .sort(([a], [b]) => b - a)
+      .map(([year, pubs]) => ({ year, pubs }));
   }
 
   // 渲染函数
@@ -262,32 +260,47 @@ tr:last-child td {
     const container = document.getElementById('publications-container');
     container.innerHTML = '';
     
-    // 处理数据
-    let filtered = showFirstAuthor 
-      ? publicationsData.filter(p => p.highlight_author === 1)
-      : publicationsData;
-    
-    // 分组和排序
-    const grouped = groupByYear(filtered);
-    const years = Object.keys(grouped).sort().reverse();
+    const groupedData = processData(showFirstAuthor);
+    let totalNumber = groupedData.reduce((sum, group) => sum + group.pubs.length, 0);
 
-    years.forEach(year => {
+    groupedData.forEach(group => {
       // 添加年份标题
       const yearHeader = document.createElement('p');
-      yearHeader.style = 'text-indent:0;font-size:36px;margin-bottom:0.61875rem;text-rendering:optimizeLegibility;line-height:1;margin-top:0;font-family:"PT Sans Narrow",sans-serif;font-weight:700;';
-      yearHeader.textContent = year;
+      yearHeader.style.cssText = `
+        text-indent: 0;
+        font-size: 36px;
+        margin-bottom: 0.61875rem;
+        text-rendering: optimizeLegibility;
+        line-height: 1;
+        margin-top: 0;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-weight: 700;
+      `;
+      yearHeader.textContent = group.year;
       container.appendChild(yearHeader);
 
       // 添加文章卡片
-      grouped[year].forEach((pub, index) => {
+      group.pubs.forEach(pub => {
         const card = document.createElement('div');
         card.innerHTML = `
           <div class="paper-card">
-            <h3>${pub.title}</h3>
-            ${pub.subtitle ? `<p>${pub.subtitle}</p>` : ''}
-            <p>${pub.authors}</p>
-            <p>${pub.journal}, ${pub.date}</p>
-            ${pub.pdf ? `<a href="${pub.pdf}">PDF</a>` : ''}
+            <div class="paper-number">#${totalNumber--}</div>
+            <h3 class="paper-title">${pub.title}</h3>
+            ${pub.subtitle ? `<div class="paper-subtitle">${pub.subtitle}</div>` : ''}
+            <div class="paper-authors">
+              ${pub.authors.replace(/\*/g, '<sup>*</sup>')}
+              ${pub.etal > 0 ? ` et al.` : ''}
+            </div>
+            <div class="paper-meta">
+              <span class="journal">${pub.journal}</span>
+              ${pub.volume ? `<span class="volume">${pub.volume}</span>` : ''}
+              ${pub.article_number ? ` (${pub.article_number})` : ''}
+              <span class="date">${pub.date}</span>
+            </div>
+            <div class="paper-links">
+              ${pub.pdf ? `<a href="${pub.pdf}" class="pdf-link">PDF</a>` : ''}
+              ${pub.arxiv ? `<a href="${pub.arxiv}" class="arxiv-link">arXiv</a>` : ''}
+            </div>
           </div>
         `;
         container.appendChild(card);
