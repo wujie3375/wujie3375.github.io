@@ -190,135 +190,177 @@ tr:last-child td {
   .checkbox-container {
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
+  }
+  .paper-card {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 4px;
   }
 </style>
 
 <div class="checkbox-container">
-  <input type="checkbox" id="show-all" onchange="toggleDisplay()">
-  <label for="show-all">&nbsp;Show first-author papers only</label>
+  <input type="checkbox" id="show-first-author" onchange="toggleDisplay()">
+  <label for="show-first-author">&nbsp;Show first-author papers only</label>
 </div>
 
 <p style="text-indent: 0;">Publications are categorized and listed in reversed chronological order.</p>
-<p style="text-indent: 0; font-family: 'ARIAL';">(*: corresponding author)</p>
----
+<p style="text-indent: 0; font-family: Arial;">(*: corresponding author)</p>
 
 <div id="publications-container"></div>
 
 <script>
-  // Liquid 数据转换
-  {% raw %}
-  const publicationsData = [
-    {% for pub in site.data.papers %}
-    {
-      title: {{ pub.title | jsonify }},
-      subtitle: {{ pub.subtitle | jsonify }},
-      authors: {{ pub.authors | jsonify }},
-      date: {{ pub.date | jsonify }},
-      journal: {{ pub.journal | jsonify }},
-      journal_link: {{ pub.journal_link | jsonify }},
-      volume: {{ pub.volume | jsonify }},
-      article_number: {{ pub.article_number | jsonify }},
-      arxiv: {{ pub.arxiv | jsonify }},
-      pdf: {{ pub.pdf | jsonify }},
-      highlight_author: {{ pub.highlight_author | default: 0 }},
-      etal: {{ pub.etal | default: 10 }},
-      sortable_date: {{ pub.sortable_date | jsonify }}
-    }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ];
-  {% endraw %}
+  // 数据初始化 (确保 Liquid 到 JSON 的正确转换)
+  (function init() {
+    window.publicationsData = [
+      {% for pub in site.data.papers %}
+      {
+        "title": {{ pub.title | jsonify }},
+        "subtitle": {{ pub.subtitle | default: "" | jsonify }},
+        "authors": {{ pub.authors | jsonify }},
+        "date": {{ pub.date | jsonify }},
+        "journal": {{ pub.journal | jsonify }},
+        "journal_link": {{ pub.journal_link | default: "#" | jsonify }},
+        "volume": {{ pub.volume | default: "" | jsonify }},
+        "article_number": {{ pub.article_number | default: "" | jsonify }},
+        "arxiv": {{ pub.arxiv | default: "#" | jsonify }},
+        "pdf": {{ pub.pdf | default: "#" | jsonify }},
+        "highlight_author": {{ pub.highlight_author | default: 0 }},
+        "etal": {{ pub.etal | default: 0 }},
+        "sortable_date": {{ pub.sortable_date | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ];
+    
+    // 调试输出
+    console.log('Loaded publications:', window.publicationsData);
+  })();
 
-  // 分组排序逻辑
+  // 数据处理函数
   function processData(showFirstAuthor) {
-    // 深拷贝原始数据
-    let data = JSON.parse(JSON.stringify(publicationsData));
-    
-    // 过滤数据
-    if(showFirstAuthor) {
-      data = data.filter(p => p.highlight_author === 1);
+    try {
+      // 深拷贝数据
+      let data = JSON.parse(JSON.stringify(window.publicationsData));
+      
+      // 过滤数据
+      if(showFirstAuthor) {
+        data = data.filter(p => p.highlight_author === 1);
+      }
+      
+      // 按日期排序
+      data.sort((a, b) => {
+        const dateA = new Date(a.sortable_date);
+        const dateB = new Date(b.sortable_date);
+        return dateB - dateA;
+      });
+      
+      // 按年份分组
+      const grouped = data.reduce((acc, pub) => {
+        const year = pub.sortable_date.split('-')[0];
+        acc[year] = acc[year] || [];
+        acc[year].push(pub);
+        return acc;
+      }, {});
+      
+      // 按年份倒序排序
+      return Object.entries(grouped)
+        .sort(([a], [b]) => b - a)
+        .map(([year, pubs]) => ({ year, pubs }));
+        
+    } catch (error) {
+      console.error('Data processing error:', error);
+      return [];
     }
-    
-    // 按日期排序
-    data.sort((a, b) => new Date(b.sortable_date) - new Date(a.sortable_date));
-    
-    // 按年份分组
-    const grouped = data.reduce((acc, pub) => {
-      const year = pub.sortable_date.split('-')[0];
-      acc[year] = acc[year] || [];
-      acc[year].push(pub);
-      return acc;
-    }, {});
-    
-    // 按年份倒序排序
-    return Object.entries(grouped)
-      .sort(([a], [b]) => b - a)
-      .map(([year, pubs]) => ({ year, pubs }));
   }
 
   // 渲染函数
   function renderPublications(showFirstAuthor) {
     const container = document.getElementById('publications-container');
-    container.innerHTML = '';
+    if (!container) {
+      console.error('Container element not found');
+      return;
+    }
     
-    const groupedData = processData(showFirstAuthor);
-    let totalNumber = groupedData.reduce((sum, group) => sum + group.pubs.length, 0);
+    try {
+      container.innerHTML = '';
+      const groupedData = processData(showFirstAuthor);
+      let totalNumber = groupedData.reduce((sum, group) => sum + group.pubs.length, 0);
 
-    groupedData.forEach(group => {
-      // 添加年份标题
-      const yearHeader = document.createElement('p');
-      yearHeader.style.cssText = `
-        text-indent: 0;
-        font-size: 36px;
-        margin-bottom: 0.61875rem;
-        text-rendering: optimizeLegibility;
-        line-height: 1;
-        margin-top: 0;
-        font-family: 'PT Sans Narrow', sans-serif;
-        font-weight: 700;
-      `;
-      yearHeader.textContent = group.year;
-      container.appendChild(yearHeader);
+      groupedData.forEach(group => {
+        // 创建年份标题
+        const yearHeader = document.createElement('p');
+        yearHeader.style.cssText = `
+          text-indent: 0;
+          font-size: 36px;
+          margin-bottom: 0.61875rem;
+          text-rendering: optimizeLegibility;
+          line-height: 1;
+          margin-top: 0;
+          font-family: 'PT Sans Narrow', sans-serif;
+          font-weight: 700;
+        `;
+        yearHeader.textContent = group.year;
+        container.appendChild(yearHeader);
 
-      // 添加文章卡片
-      group.pubs.forEach(pub => {
-        const card = document.createElement('div');
-        card.innerHTML = `
-          <div class="paper-card">
+        // 创建论文卡片
+        group.pubs.forEach(pub => {
+          const card = document.createElement('div');
+          card.className = 'paper-card';
+          
+          // 构建卡片内容
+          const content = `
             <div class="paper-number">#${totalNumber--}</div>
             <h3 class="paper-title">${pub.title}</h3>
             ${pub.subtitle ? `<div class="paper-subtitle">${pub.subtitle}</div>` : ''}
-            <div class="paper-authors">
-              ${pub.authors.replace(/\*/g, '<sup>*</sup>')}
-              ${pub.etal > 0 ? ` et al.` : ''}
-            </div>
+            <div class="paper-authors">${pub.authors.replace(/\*/g, '<sup>*</sup>')}</div>
             <div class="paper-meta">
-              <span class="journal">${pub.journal}</span>
+              <a href="${pub.journal_link}" class="journal">${pub.journal}</a>
               ${pub.volume ? `<span class="volume">${pub.volume}</span>` : ''}
-              ${pub.article_number ? ` (${pub.article_number})` : ''}
+              ${pub.article_number ? `<span class="article-number">${pub.article_number}</span>` : ''}
               <span class="date">${pub.date}</span>
             </div>
             <div class="paper-links">
-              ${pub.pdf ? `<a href="${pub.pdf}" class="pdf-link">PDF</a>` : ''}
-              ${pub.arxiv ? `<a href="${pub.arxiv}" class="arxiv-link">arXiv</a>` : ''}
+              ${pub.pdf !== '#' ? `<a href="${pub.pdf}" class="pdf-link">PDF</a>` : ''}
+              ${pub.arxiv !== '#' ? `<a href="${pub.arxiv}" class="arxiv-link">arXiv</a>` : ''}
             </div>
-          </div>
-        `;
-        container.appendChild(card);
-      });
+          `;
+          
+          card.innerHTML = content;
+          container.appendChild(card);
+        });
 
-      // 添加分隔线
-      container.appendChild(document.createElement('hr'));
-    });
+        // 添加分隔线
+        container.appendChild(document.createElement('hr'));
+      });
+      
+      console.log('Rendered', groupedData.length, 'year groups');
+      
+    } catch (error) {
+      console.error('Rendering error:', error);
+      container.innerHTML = '<p>Error loading publications</p>';
+    }
   }
 
   // 切换显示
   function toggleDisplay() {
-    const showFirstAuthor = document.getElementById('show-all').checked;
-    renderPublications(showFirstAuthor);
+    try {
+      const checkbox = document.getElementById('show-first-author');
+      if (!checkbox) {
+        console.error('Checkbox element not found');
+        return;
+      }
+      renderPublications(checkbox.checked);
+    } catch (error) {
+      console.error('Toggle error:', error);
+    }
   }
 
-  // 初始渲染
-  renderPublications(false);
+  // 初始化加载
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM fully loaded');
+    renderPublications(false);
+  });
 </script>
 
 <!-- =============================================================================================== -->
