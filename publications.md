@@ -215,7 +215,7 @@ tr:last-child td {
 <div id="all-articles">
   {% assign total_number = publications.size %}
   {% for group in grouped_publications %}
-    <p style="text-indent: 0;font-size:36px;margin-bottom:0.61875rem;text-rendering:optimizeLegibility;line-height:1;margin-top:0;font-family:'PT Sans Narrow',sans-serif;font-weight:700;">{{ group.name }}</p>
+    <h2>{{ group.name }}</h2>
     {% for pub in group.items %}
       {% include paper_card.html 
       title=pub.title 
@@ -244,7 +244,7 @@ tr:last-child td {
   {% for group in grouped_publications %}
     {% assign filtered_group_items = group.items | where: "highlight_author", 1 %}
     {% if filtered_group_items.size > 0 %}
-      <h2>{{ group.name }}</h2>
+      <p style="text-indent: 0;font-size:36px;margin-bottom:0.61875rem;text-rendering:optimizeLegibility;line-height:1;margin-top:0;font-family:'PT Sans Narrow',sans-serif;font-weight:700;">{{ group.name }}</p>
       {% for pub in filtered_group_items %}
         {% include paper_card.html 
         title=pub.title 
