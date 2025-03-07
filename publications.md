@@ -111,8 +111,7 @@ tr:last-child td {
   [   2,   3,   3]);//总计
 </script> -->
 
-<!-- {% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
-{% comment %} 构建图表URL {% endcomment %}
+{% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
 {% capture chart_url %}https://quickchart.io/chart?c={
   "type": "bar",
   "data": {
@@ -120,56 +119,31 @@ tr:last-child td {
     "datasets": [
       {
         "label": "First Author",
-        "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}]
+        "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+        "backgroundColor": "rgba(54, 162, 235, 0.8)"  <!-- 蓝色 -->
       },
       {
         "label": "All Papers",
-        "data": [{% for y in years %}{{ y.items | size }}{% unless forloop.last %},{% endunless %}{% endfor %}]
+        "data": [{% for y in years %}{{ y.items | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+        "backgroundColor": "rgba(255, 159, 64, 0.8)"   <!-- 橙色 -->
       }
     ]
-  }
-}{% endcapture %} -->
-
-<!-- <img src="{{ chart_url | uri_escape }}" alt="Publication Chart" style="width:100%;"> -->
-
-
-{% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
-{% comment %} 构建图表URL {% endcomment %}
-{% capture chart_url_all %}https://quickchart.io/chart?c={
-  "type": "bar",
-  "data": {
-    "labels": [{{ years | map: 'name' | join: ',' }}],
-    "datasets": [
-      {
-        "label": "All Papers",
-        "data": [{% for y in years %}{{ y.items | size }}{% unless forloop.last %},{% endunless %}{% endfor %}]
-      },
-    "backgroundColor": "rgba(54, 162, 235, 0.8)"
-    ]
+  },
+  "options": {
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "ticks": {
+          "stepSize": 1,
+          "callback": "function(v) { return Number.isInteger(v) ? v : null; }"
+        }
+      }
+    }
   }
 }{% endcapture %}
 
-{% capture chart_url_first %}https://quickchart.io/chart?c={
-  "type": "bar",
-  "data": {
-    "labels": [{{ years | map: 'name' | join: ',' }}],
-    "datasets": [
-      {
-        "label": "First Author",
-        "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}]
-      },
-    "backgroundColor": "rgba(54, 162, 235, 0.8)"
-    ]
-  }
-}{% endcapture %}
+<img src="{{ chart_url | uri_escape }}" alt="Publication Chart" style="width:100%;">
 
-<div id="allChart">
-  <img src="{{ chart_url_all | uri_escape }}" alt="All Publication Chart" style="width:100%;">
-</div>
-
-<div id="firstChart" style="display:none;">
-  <img src="{{ chart_url_first | uri_escape }}" alt="First Publication Chart" style="width:100%;">
-</div>
 <!-- =============================================================================================== -->
 <!-- 表格 -->
 <!-- ----------------------------------------------------------------------------------------------- -->
