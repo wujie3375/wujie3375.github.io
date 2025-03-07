@@ -110,96 +110,27 @@ tr:last-child td {
   [   2,   3,   1],//一作 
   [   2,   3,   3]);//总计
 </script> -->
-{% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
 
 {% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
-
-{% comment %} ==== 强制Y轴从0开始且为整数 ==== {% endcomment %}
-{% capture first_author_url %}https://quickchart.io/chart?c={
+{% comment %} 构建图表URL {% endcomment %}
+{% capture chart_url %}https://quickchart.io/chart?c={
   "type": "bar",
   "data": {
     "labels": [{{ years | map: 'name' | join: ',' }}],
-    "datasets": [{
-      "label": "First Author",
-      "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-      "backgroundColor": "rgba(54, 162, 235, 0.8)"
-    }]
-  },
-  "options": {
-    "scales": {
-      "y": {
-        "beginAtZero": true,
-        "ticks": {
-          "stepSize": 1,
-          "callback": "function(v) { return Number.isInteger(v) ? v : null; }",
-          "precision": 0
-        },
-        "grace": "0%"  <!-- 强制不留顶部空白 -->
+    "datasets": [
+      {
+        "label": "First Author",
+        "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}]
+      },
+      {
+        "label": "All Papers",
+        "data": [{% for y in years %}{{ y.items | size }}{% unless forloop.last %},{% endunless %}{% endfor %}]
       }
-    }
+    ]
   }
 }{% endcapture %}
 
-{% capture all_papers_url %}https://quickchart.io/chart?c={
-  "type": "bar",
-  "data": {
-    "labels": [{{ years | map: 'name' | join: ',' }}],
-    "datasets": [{
-      "label": "All Papers",
-      "data": [{% for y in years %}{{ y.items | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-      "backgroundColor": "rgba(255, 159, 64, 0.8)"
-    }]
-  },
-  "options": {
-    "scales": {
-      "y": {
-        "beginAtZero": true,
-        "ticks": {
-          "stepSize": 1,
-          "callback": "function(v) { return Number.isInteger(v) ? v : null; }",
-          "precision": 0
-        },
-        "grace": "0%"
-      }
-    }
-  }
-}{% endcapture %}
-
-
-{% comment %} === 切换显示组件 === {% endcomment %}
-<button onclick="toggleCharts()" 
-        style="padding:8px 15px; margin:15px 0; cursor:pointer; border:1px solid #ddd; border-radius:4px;">
-  ▸ 切换显示模式
-</button>
-
-<div id="firstChart" style="display:none;">
-  <img src="{{ first_author_url | uri_escape }}" 
-       alt="First Author Publications" 
-       style="width:100%; max-width:800px; border:1px solid #eee;">
-</div>
-
-<div id="allChart">
-  <img src="{{ all_papers_url | uri_escape }}" 
-       alt="All Publications" 
-       style="width:100%; max-width:800px; border:1px solid #eee;">
-</div>
-
-<script>
-function toggleCharts() {
-  const first = document.getElementById('firstChart');
-  const all = document.getElementById('allChart');
-  
-  // 切换显示状态
-  first.style.display = first.style.display === 'none' ? 'block' : 'none';
-  all.style.display = all.style.display === 'none' ? 'block' : 'none';
-  
-  // 按钮文字更新（可选）
-  const btn = document.querySelector('button');
-  btn.textContent = first.style.display === 'none' 
-    ? '▸ 显示第一作者统计' 
-    : '▸ 显示全部文章统计';
-}
-</script>
+<img src="{{ chart_url | uri_escape }}" alt="Publication Chart" style="width:100%;">
 
 
 <!-- =============================================================================================== -->
