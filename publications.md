@@ -136,20 +136,13 @@ tr:last-child td {
           "display": true,
           "text": "Year",          <!-- X轴标签 -->
           "font": {"size": 14}     <!-- 字体大小 -->
-        },
-        "stacked": false,
-        "barPercentage": 0.6
+        }
       },
       "y": {
         "title": {
           "display": true,
-          "text": "Number of Papers",  <!-- Y轴标签 -->
+          "text": "Number",  <!-- Y轴标签 -->
           "font": {"size": 14}
-        },
-        "beginAtZero": true,
-        "ticks": {
-          "stepSize": 1,
-          "precision": 0
         }
       }
     }
