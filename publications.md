@@ -56,22 +56,7 @@ tr:last-child td {
 <!-- ================================================================================================= -->
 <!-- 统计图和表格 -->
 <!-- 调试数据输出 -->
-<style>
-  .checkbox-container {
-    display: flex; /* 使用 Flexbox 布局 */
-    align-items: center; /* 垂直居中对齐 */
-  }
-</style>
 
-<div class="checkbox-container">
-  <input type="checkbox" id="show-all" onchange="toggleDisplay()">
-  <label for="show-all">&nbsp;Show first-author papers only</label>
-</div>
-
-<p style="text-indent: 0;">Publications are categorized and listed in reversed chronological order.</p>
-
-<p style="text-indent: 0; font-family: 'ARIAL';">(*: corresponding author)</p>
----
 <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
 <!-- <canvas id="myChart" style="height: 400px;"></canvas> -->
 <!-- <script>
@@ -125,76 +110,26 @@ tr:last-child td {
   [   2,   3,   1],//一作 
   [   2,   3,   3]);//总计
 </script> -->
-
-{% comment %} ==== 自动生成图表数据 ==== {% endcomment %}
-{% assign years = site.data.papers | group_by: 'year' | sort: 'name' | reverse %}
-
-{% comment %} 统计各年份数据（修复空值问题）{% endcomment %}
-{% assign first_counts = "" | split: "," %}
-{% assign all_counts = "" | split: "," %}
-
-{% for year in years %}
-  {% assign total = year.items | size | default: 0 | plus: 0 %}
-  {% assign first = year.items | where: 'highlight_author', 1 | size | default: 0 | plus: 0 %}
-  
-  {% assign first_counts = first_counts | push: first %}
-  {% assign all_counts = all_counts | push: total %}
-{% endfor %}
-
-{% comment %} 生成图表URL（必须在HTML元素之前）{% endcomment %}
-{% capture all_chart_url %}https://quickchart.io/chart?c={
+{% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
+{% comment %} 构建图表URL {% endcomment %}
+{% capture chart_url %}https://quickchart.io/chart?c={
   "type": "bar",
   "data": {
     "labels": [{{ years | map: 'name' | join: ',' }}],
-    "datasets": [{
-      "label": "All Papers",
-      "data": [{{ all_counts | join: ',' }}],
-      "backgroundColor": "rgba(255, 159, 64, 0.8)",
-      "borderColor": "rgba(255, 159, 64, 1)",
-      "borderWidth": 1
-    }]
-  },
-  "options": {
-    "legend": {"display": false},
-    "scales": {
-      "yAxes": [{
-        "ticks": {"beginAtZero": true, "stepSize": 1},
-        "gridLines": {"color": "#f5f5f5"}
-      }]
-    }
+    "datasets": [
+      {
+        "label": "First Author",
+        "data": [{{ years | map: 'items' | map: 'size' }}]
+      },
+      {
+        "label": "All Papers",
+        "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}]
+      }
+    ]
   }
 }{% endcapture %}
 
-{% capture first_chart_url %}https://quickchart.io/chart?c={
-  "type": "bar",
-  "data": {
-    "labels": [{{ years | map: 'name' | join: ',' }}],
-    "datasets": [{
-      "label": "First Author",
-      "data": [{{ first_counts | join: ',' }}],
-      "backgroundColor": "rgba(54, 162, 235, 0.8)",
-      "borderColor": "rgba(54, 162, 235, 1)",
-      "borderWidth": 1
-    }]
-  },
-  "options": {
-    "legend": {"display": false},
-    "scales": {
-      "yAxes": [{
-        "ticks": {"beginAtZero": true, "stepSize": 1},
-        "gridLines": {"color": "#f5f5f5"}
-      }]
-    }
-  }
-}{% endcapture %}
-
-{% comment %} ==== 图表容器（必须放在capture之后）==== {% endcomment %}
-<div id="all-chart">
-  <img src="{{ all_chart_url | uri_escape }}" alt="All Papers" style="width:100%;max-width:800px;">
-</div>
-<div id="first-author-chart" style="display:none;">
-  <img src="{{ first_chart_url | uri_escape }}" alt="First-Author Papers" style="width:100%;max-width:800px;">
-</div>
+<img src="{{ chart_url | uri_escape }}" alt="Publication Chart" style="width:100%;">
 
 
 <!-- =============================================================================================== -->
@@ -273,7 +208,22 @@ tr:last-child td {
 <!-- ----------------------------------------------------------------------------------------------- -->
 ---
 
+<style>
+  .checkbox-container {
+    display: flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 垂直居中对齐 */
+  }
+</style>
 
+<div class="checkbox-container">
+  <input type="checkbox" id="show-all" onchange="toggleDisplay()">
+  <label for="show-all">&nbsp;Show first-author papers only</label>
+</div>
+
+<p style="text-indent: 0;">Publications are categorized and listed in reversed chronological order.</p>
+
+<p style="text-indent: 0; font-family: 'ARIAL';">(*: corresponding author)</p>
+---
 
 {% assign publications = site.data.papers %}
 
