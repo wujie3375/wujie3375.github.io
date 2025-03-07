@@ -117,34 +117,24 @@ tr:last-child td {
   "type": "bar",
   "data": {
     "labels": [{{ years | map: 'name' | join: ',' }}],
-    "datasets": [
-      {
-        "label": "First Author",
-        "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-        "backgroundColor": "rgba(54, 162, 235, 0.8)",  // 蓝色一作
-        "barPercentage": 0.6  // 缩小柱子宽度避免覆盖
-      },
-      {
-        "label": "All Papers",
-        "data": [{{ years | map: 'items' | map: 'size' | join: ',' }}],
-        "backgroundColor": "rgba(255, 159, 64, 0.5)",  // 橙色全部（半透明）
-        "barPercentage": 0.6
-      }
-    ]
+    "datasets": [{
+      "label": "First Author Papers",
+      "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+      "backgroundColor": "rgba(54, 162, 235, 0.8)"
+    }]
   },
   "options": {
-    "title": {"display": true, "text": "Publication Statistics"},
+    "title": {"display": true, "text": "First-Author Publications"},
     "scales": {
-      "xAxes": [{"stacked": false}],  // 非堆叠显示
       "yAxes": [{
         "ticks": {"beginAtZero": true, "stepSize": 1},
-        "scaleLabel": {"display": true, "text": "Number"}
+        "scaleLabel": {"display": true, "text": "Number of Papers"}
       }]
     }
   }
 }{% endcapture %}
 
-<img src="{{ chart_url | uri_escape }}" alt="Publication Chart" style="width:100%;max-width:800px;">
+<img src="{{ chart_url | uri_escape }}" alt="First-Author Publications Chart" style="width:100%;max-width:600px;">
 <!-- =============================================================================================== -->
 <!-- 表格 -->
 <!-- ----------------------------------------------------------------------------------------------- -->
