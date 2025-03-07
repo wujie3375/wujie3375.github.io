@@ -128,24 +128,6 @@ tr:last-child td {
         "backgroundColor": "rgba(255, 159, 64, 0.8)"   <!-- 橙色 -->
       }
     ]
-  },
-  "options": {
-    "scales": {
-      "x": {
-        "title": {
-          "display": true,
-          "text": "Year",          <!-- X轴标签 -->
-          "font": {"size": 14}     <!-- 字体大小 -->
-        }
-      },
-      "y": {
-        "title": {
-          "display": true,
-          "text": "Number",  <!-- Y轴标签 -->
-          "font": {"size": 14}
-        }
-      }
-    }
   }
 }{% endcapture %}
 
