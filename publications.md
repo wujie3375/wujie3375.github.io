@@ -28,25 +28,37 @@ table {
     border-collapse: collapse;
     margin: 20px 0;
     text-align: center;
+    table-layout: fixed; /* 新增：启用固定布局 */
 }
 
-td:nth-child(2),
-td:nth-child(3),
-td:nth-child(4),
-th:nth-child(2),
-th:nth-child(3),
-th:nth-child(4) {
-  width: 33.33%; /* 100% / 3 */
-  text-align: center; /* 可选：内容居中 */
+/* 第一列宽度设置（比右侧所有列宽） */
+td:first-child,
+th:first-child {
+    width: 35%;  /* 可根据需要调整，建议30%-40% */
+    min-width: 120px; /* 保证最小宽度 */
+    text-align: left; /* 可选：左对齐文本 */
+    padding-left: 20px; /* 增加左侧间距 */
 }
 
+/* 右侧三列等宽设置 */
+td:not(:first-child),
+th:not(:first-child) {
+    width: calc(65% / 3); /* 剩余宽度三等分 */
+}
+
+/* 保持原有边框样式 */
 th {
     border-top: 1.5px solid black;
-    border-bottom: 1.5px solid black; /* 顶部线 */
+    border-bottom: 1.5px solid black;
 }
 
 tr:last-child td {
-    border-bottom: 1.5px solid black; /* 底部线 */
+    border-bottom: 1.5px solid black;
+}
+
+th, td {
+    border: 0px solid black;
+    padding: 8px;
 }
 </style>
 
