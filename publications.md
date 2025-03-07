@@ -56,11 +56,6 @@ tr:last-child td {
 <!-- ================================================================================================= -->
 <!-- 统计图和表格 -->
 <!-- 调试数据输出 -->
-<pre style="display: none;">
-Years: {{ years | json }}
-FirstAuthor: {{ first_author_counts | json }}
-AllCounts: {{ all_counts | json }}
-</pre>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <canvas id="myChart" style="height: 400px;"></canvas> <!-- 设置图的高度 -->
@@ -116,57 +111,65 @@ AllCounts: {{ all_counts | json }}
   [   2,   3,   3]);//总计
 </script> -->
 
-{% comment %} 修正后的年份提取逻辑 {% endcomment %}
+{% comment %} 首先获取数据（与之前相同）{% endcomment %}
 {% assign raw_years = site.data.papers | map: "sortable_date" %}
 {% assign years = "" | split: "," %}
 {% for date in raw_years %}
-  {% assign year = date | split: "-" | first | plus: 0 %}  <!-- 确保转换为数字 -->
+  {% assign year = date | split: "-" | first | plus: 0 %}
   {% assign years = years | push: year %}
 {% endfor %}
-{% assign years = years | uniq | sort | reverse %}  <!-- 正确排序 -->
+{% assign years = years | uniq | sort %}
 
-{% comment %} 修正后的统计逻辑 {% endcomment %}
 {% assign first_author_counts = "" | split: "," %}
 {% assign all_counts = "" | split: "," %}
-
 {% for year in years %}
-  {% assign current_year_str = year | append: "" %}  <!-- 转换为字符串用于 contains -->
+  {% assign current_year_str = year | append: "" %}
   {% assign first_author = site.data.papers | where: "highlight_author", 1 | where_exp: "item", "item.sortable_date contains current_year_str" %}
   {% assign all_papers = site.data.papers | where_exp: "item", "item.sortable_date contains current_year_str" %}
-  
-  {% assign first_author_counts = first_author_counts | push: first_uthor.size %}
+  {% assign first_author_counts = first_author_counts | push: first_author.size %}
   {% assign all_counts = all_counts | push: all_papers.size %}
 {% endfor %}
 
-<script>
-  createBarChart(
-    {{ years | json }},    // 年份数组
-    {{ first_author_counts | json }}, // 一作数据
-    {{ all_counts | json }}   // 全部数据
-  );
-</script>
+{% comment %} 计算最大值用于缩放 {% endcomment %}
+{% assign max_value = all_counts | max %}
 
-<script>
-  // 确保 DOM 加载完成
-  document.addEventListener('DOMContentLoaded', function() {
-    // 检查数据有效性
-    console.log("Years:", {{ years | json }});
-    console.log("First:", {{ first_author_counts | json }});
-    console.log("All:", {{ all_counts | json }});
+---
 
-    // 检查 Canvas 元素是否存在
-    var ctx = document.getElementById('myChart');
-    if (!ctx) {
-      console.error('无法找到 #myChart 元素');
-      return;
-    }
+<svg viewBox="0 0 800 400" style="width: 100%; height: auto; font-family: Arial;">
+  <!-- 坐标轴 -->
+  <line x1="50" y1="350" x2="750" y2="350" stroke="#666" stroke-width="2"/>
+  <line x1="50" y1="350" x2="50" y2="50" stroke="#666" stroke-width="2"/>
 
-    // 初始化图表
-    new Chart(ctx.getContext('2d'), {
-      // ...保持原有配置不变...
-    });
-  });
-</script>
+  <!-- 柱状图 -->
+  {% for year in years %}
+    {% assign index = forloop.index0 %}
+    {% assign x = 80 | times: forloop.index0 | plus: 100 %}
+    {% assign bar_width = 30 %}
+    
+    <!-- 总论文柱 -->
+    <rect x="{{ x }}" 
+          y="{{ 350 | minus: 300 | times: all_counts[index] | divided_by: max_value }}" 
+          width="{{ bar_width }}" 
+          height="{{ 300 | times: all_counts[index] | divided_by: max_value }}" 
+          fill="#FF9F40"/>
+    
+    <!-- 一作论文柱 -->
+    <rect x="{{ x | plus: bar_width }}" 
+          y="{{ 350 | minus: 300 | times: first_author_counts[index] | divided_by: max_value }}" 
+          width="{{ bar_width }}" 
+          height="{{ 300 | times: first_author_counts[index] | divided_by: max_value }}" 
+          fill="#3692EB"/>
+    
+    <!-- 年份标签 -->
+    <text x="{{ x | plus: bar_width }}" y="370" text-anchor="middle">{{ year }}</text>
+  {% endfor %}
+
+  <!-- 图例 -->
+  <rect x="600" y="80" width="20" height="20" fill="#3692EB"/>
+  <text x="630" y="95">First author</text>
+  <rect x="600" y="110" width="20" height="20" fill="#FF9F40"/>
+  <text x="630" y="125">All papers</text>
+</svg>
 <!-- =============================================================================================== -->
 <!-- 表格 -->
 <!-- ----------------------------------------------------------------------------------------------- -->
