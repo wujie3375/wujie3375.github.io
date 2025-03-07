@@ -110,64 +110,74 @@ tr:last-child td {
   [   2,   3,   1],//一作 
   [   2,   3,   3]);//总计
 </script> -->
-{% comment %} 从数据中提取年份并排序 {% endcomment %}
-{% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
+{% comment %} ==== 自动生成图表数据 ==== {% endcomment %}
+{% assign years = site.data.papers | group_by: 'year' | sort: 'name' | reverse %}
 
-{% comment %} 生成全部文章图表URL {% endcomment %}
+{% comment %} 统计各年份数据 {% endcomment %}
+{% assign first_counts = "" | split: "," %}
+{% assign all_counts = "" | split: "," %}
+
+{% for year in years %}
+  {% assign total = year.items | size | default: 0 %}
+  {% assign first = year.items | where: 'highlight_author', 1 | size | default: 0 %}
+  
+  {% assign first_counts = first_counts | push: first %}
+  {% assign all_counts = all_counts | push: total %}
+{% endfor %}
+
+{% comment %} 生成图表URL (修复逗号问题) {% endcomment %}
 {% capture all_chart_url %}https://quickchart.io/chart?c={
   "type": "bar",
   "data": {
     "labels": {{ years | map: 'name' | json }},
-    "datasets": [{
-      "label": "All Papers",
-      "data": {{ years | map: 'items' | map: 'size' | json }},
-      "backgroundColor": "rgba(255, 159, 64, 0.8)"
-    }]
-  },
-  "options": {
-    "scales": {
-      "y": {"beginAtZero": true, "ticks": {"stepSize": 1}}
-    }
+    "datasets": [
+      {
+        "label": "All Papers",
+        "data": {{ all_counts | json }},
+        "backgroundColor": "rgba(255, 159, 64, 0.8)"
+      }
+    ]
   }
 }{% endcapture %}
 
-{% comment %} 生成一作文章图表URL {% endcomment %}
 {% capture first_chart_url %}https://quickchart.io/chart?c={
   "type": "bar",
   "data": {
     "labels": {{ years | map: 'name' | json }},
-    "datasets": [{
-      "label": "First Author",
-      "data": {{ years | map: 'items' | map: 'first_author_count' | json }},
-      "backgroundColor": "rgba(54, 162, 235, 0.8)"
-    }]
-  },
-  "options": {
-    "scales": {
-      "y": {"beginAtZero": true, "ticks": {"stepSize": 1}}
-    }
+    "datasets": [
+      {
+        "label": "First Author",
+        "data": {{ first_counts | json }},
+        "backgroundColor": "rgba(54, 162, 235, 0.8)"
+      }
+    ]
   }
 }{% endcapture %}
 
-{% comment %} 前端显示部分 {% endcomment %}
-<button onclick="toggleChart()" style="margin: 15px 0; padding: 8px 15px; cursor: pointer;">
+{% comment %} ==== 切换控件 ==== {% endcomment %}
+<button onclick="toggleChart()" style="padding: 8px 12px; cursor: pointer; margin: 10px 0;">
   切换显示模式
 </button>
 
-<img id="pubChart" 
-     src="{{ all_chart_url | uri_escape }}" 
-     alt="Publication Chart" 
-     style="width:100%; max-width:800px; border: 1px solid #ddd; border-radius: 8px;">
+<div id="all-chart">
+  <img src="{{ all_chart_url | uri_escape }}" alt="All Papers" style="width:100%;max-width:800px;">
+</div>
+<div id="first-chart" style="display:none;">
+  <img src="{{ first_chart_url | uri_escape }}" alt="First-Author Papers" style="width:100%;max-width:800px;">
+</div>
 
 <script>
-let showAll = true;
-
 function toggleChart() {
-  const chartImg = document.getElementById('pubChart');
-  chartImg.src = showAll 
-    ? "{{ first_chart_url | uri_escape }}" 
-    : "{{ all_chart_url | uri_escape }}";
-  showAll = !showAll;
+  const allChart = document.getElementById("all-chart");
+  const firstChart = document.getElementById("first-chart");
+  
+  if (allChart.style.display === "none") {
+    allChart.style.display = "block";
+    firstChart.style.display = "none";
+  } else {
+    allChart.style.display = "none";
+    firstChart.style.display = "block";
+  }
 }
 </script>
 
