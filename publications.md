@@ -30,9 +30,14 @@ table {
     text-align: center;
 }
 
-th, td {
-    border: 0px solid black;
-    padding: 8px;
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4),
+th:nth-child(2),
+th:nth-child(3),
+th:nth-child(4) {
+  width: 33.33%; /* 100% / 3 */
+  text-align: center; /* 可选：内容居中 */
 }
 
 th {
@@ -126,7 +131,7 @@ tr:last-child td {
       <th></th>
       <th>Published</th>
       <th>Preprint</th>
-      <th>&nbsp;Total&nbsp;</th>
+      <th>Total</th>
     </tr>
   </thead>
   <tbody>
