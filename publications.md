@@ -23,27 +23,29 @@ title: Publications
   /* body {
     font-family: 'ARIAL', serif;
   } */
+td:not(:first-child),
+th:not(:first-child) {
+  text-align: center !important;
+}
+
+/* 保持原有其他样式 */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    border-top: 1.5px solid black; /* 新增表格顶部黑线 */
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  table-layout: fixed;
 }
-
-th {
-    border-top: 1.5px solid black !important;
-    border-bottom: 1.5px solid black !important; 
-    padding: 8px;
-    background: white; /* 防止其他背景色覆盖 */
+td:first-child,
+th:first-child {
+  width: 30%;
+  min-width: 120px;
+  text-align: left;
+  padding-left: 20px;
 }
-
-tr:last-child td {
-    border-bottom: 1.5px solid black;
+td:not(:first-child),
+th:not(:first-child) {
+  width: calc(70% / 3);
 }
-
-/* 原有列宽配置保持不变 */
-td:first-child, th:first-child { width: 30%; }
-td:not(:first-child), th:not(:first-child) { width: calc(70%/3); }
 </style>
 
 > **Last Update:** Mar 7, 2025
