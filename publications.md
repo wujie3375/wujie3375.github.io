@@ -143,7 +143,8 @@ tr:last-child td {
       {
         "label": "All Papers",
         "data": [{% for y in years %}{{ y.items | size }}{% unless forloop.last %},{% endunless %}{% endfor %}]
-      }
+      },
+    "backgroundColor": "rgba(54, 162, 235, 0.8)"
     ]
   }
 }{% endcapture %}
@@ -156,13 +157,19 @@ tr:last-child td {
       {
         "label": "First Author",
         "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}]
-      }
+      },
+    "backgroundColor": "rgba(54, 162, 235, 0.8)"
     ]
   }
 }{% endcapture %}
 
-<img src="{{ chart_url_all | uri_escape }}" alt="All Publication Chart" style="width:100%;">
-<img src="{{ chart_url_first | uri_escape }}" alt="First Publication Chart" style="width:100%;">
+<div id="allChart">
+  <img src="{{ chart_url_all | uri_escape }}" alt="All Publication Chart" style="width:100%;">
+</div>
+
+<div id="firstChart" style="display:none;">
+  <img src="{{ chart_url_first | uri_escape }}" alt="First Publication Chart" style="width:100%;">
+</div>
 <!-- =============================================================================================== -->
 <!-- 表格 -->
 <!-- ----------------------------------------------------------------------------------------------- -->
