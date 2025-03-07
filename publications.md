@@ -56,7 +56,22 @@ tr:last-child td {
 <!-- ================================================================================================= -->
 <!-- 统计图和表格 -->
 <!-- 调试数据输出 -->
+<style>
+  .checkbox-container {
+    display: flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 垂直居中对齐 */
+  }
+</style>
 
+<div class="checkbox-container">
+  <input type="checkbox" id="show-all" onchange="toggleDisplay()">
+  <label for="show-all">&nbsp;Show first-author papers only</label>
+</div>
+
+<p style="text-indent: 0;">Publications are categorized and listed in reversed chronological order.</p>
+
+<p style="text-indent: 0; font-family: 'ARIAL';">(*: corresponding author)</p>
+---
 <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
 <!-- <canvas id="myChart" style="height: 400px;"></canvas> -->
 <!-- <script>
@@ -257,22 +272,7 @@ tr:last-child td {
 <!-- ----------------------------------------------------------------------------------------------- -->
 ---
 
-<style>
-  .checkbox-container {
-    display: flex; /* 使用 Flexbox 布局 */
-    align-items: center; /* 垂直居中对齐 */
-  }
-</style>
 
-<div class="checkbox-container">
-  <input type="checkbox" id="show-all" onchange="toggleDisplay()">
-  <label for="show-all">&nbsp;Show first-author papers only</label>
-</div>
-
-<p style="text-indent: 0;">Publications are categorized and listed in reversed chronological order.</p>
-
-<p style="text-indent: 0; font-family: 'ARIAL';">(*: corresponding author)</p>
----
 
 {% assign publications = site.data.papers %}
 
