@@ -112,7 +112,7 @@ tr:last-child td {
 </script> -->
 {% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
 
-{% comment %} === 生成两个独立图表 === {% endcomment %}
+{% comment %} ==== 修改后的图表配置（添加Y轴设置）==== {% endcomment %}
 {% capture first_author_url %}https://quickchart.io/chart?c={
   "type": "bar",
   "data": {
@@ -125,7 +125,13 @@ tr:last-child td {
   },
   "options": {
     "scales": {
-      "y": {"beginAtZero": true, "ticks": {"stepSize": 1}}
+      "y": {
+        "beginAtZero": true, <!-- 强制从0开始 -->
+        "ticks": {
+          "stepSize": 1, <!-- 步长为1 -->
+          "callback": "function(value) { return Number.isInteger(value) ? value : null; }" <!-- 只显示整数 -->
+        }
+      }
     }
   }
 }{% endcapture %}
@@ -142,7 +148,13 @@ tr:last-child td {
   },
   "options": {
     "scales": {
-      "y": {"beginAtZero": true, "ticks": {"stepSize": 1}}
+      "y": {
+        "beginAtZero": true,
+        "ticks": {
+          "stepSize": 1,
+          "callback": "function(value) { return Number.isInteger(value) ? value : null; }"
+        }
+      }
     }
   }
 }{% endcapture %}
