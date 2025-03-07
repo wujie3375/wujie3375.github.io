@@ -111,30 +111,43 @@ tr:last-child td {
   [   2,   3,   3]);//总计
 </script> -->
 
+{% comment %} ==== 生成两种图表URL ==== {% endcomment %}
 {% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
 
-{% capture chart_url %}https://quickchart.io/chart?c={
+{% comment %} 1. 仅显示一作的图表 {% endcomment %}
+{% capture first_author_url %}https://quickchart.io/chart?c={
   "type": "bar",
   "data": {
     "labels": [{{ years | map: 'name' | join: ',' }}],
     "datasets": [{
-      "label": "First Author Papers",
+      "label": "First Author",
       "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
       "backgroundColor": "rgba(54, 162, 235, 0.8)"
     }]
-  },
-  "options": {
-    "title": {"display": true, "text": "First-Author Publications"},
-    "scales": {
-      "yAxes": [{
-        "ticks": {"beginAtZero": true, "stepSize": 1},
-        "scaleLabel": {"display": true, "text": "Number of Papers"}
-      }]
-    }
   }
 }{% endcapture %}
 
-<img src="{{ chart_url | uri_escape }}" alt="First-Author Publications Chart" style="width:100%;max-width:600px;">
+{% comment %} 2. 显示全部文章的图表 {% endcomment %}
+{% capture all_papers_url %}https://quickchart.io/chart?c={
+  "type": "bar",
+  "data": {
+    "labels": [{{ years | map: 'name' | join: ',' }}],
+    "datasets": [{
+      "label": "All Papers",
+      "data": [{{ years | map: 'items' | map: 'size' | join: ',' }}],
+      "backgroundColor": "rgba(255, 159, 64, 0.8)"
+    }]
+  }
+}{% endcapture %}
+
+{% comment %} ==== 图表容器 ==== {% endcomment %}
+<div id="first-author-chart">
+  <img src="{{ first_author_url | uri_escape }}" alt="First-Author Chart" style="width:100%;display:block;">
+</div>
+
+<div id="all-papers-chart" style="display:none;">
+  <img src="{{ all_papers_url | uri_escape }}" alt="All Papers Chart" style="width:100%;display:block;">
+</div>
 <!-- =============================================================================================== -->
 <!-- 表格 -->
 <!-- ----------------------------------------------------------------------------------------------- -->
