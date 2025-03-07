@@ -55,6 +55,13 @@ tr:last-child td {
 
 <!-- ================================================================================================= -->
 <!-- 统计图和表格 -->
+<!-- 调试数据输出 -->
+<pre style="display: none;">
+Years: {{ years | json }}
+FirstAuthor: {{ first_author_counts | json }}
+AllCounts: {{ all_counts | json }}
+</pre>
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <canvas id="myChart" style="height: 400px;"></canvas> <!-- 设置图的高度 -->
 <script>
@@ -109,19 +116,25 @@ tr:last-child td {
   [   2,   3,   3]);//总计
 </script> -->
 
-{% comment %} 提取所有年份并排序 {% endcomment %}
-{% assign years = site.data.papers | map: "sortable_date" | split: "-" | first | uniq | sort %}
+{% comment %} 修正后的年份提取逻辑 {% endcomment %}
+{% assign raw_years = site.data.papers | map: "sortable_date" %}
+{% assign years = "" | split: "," %}
+{% for date in raw_years %}
+  {% assign year = date | split: "-" | first | plus: 0 %}  <!-- 确保转换为数字 -->
+  {% assign years = years | push: year %}
+{% endfor %}
+{% assign years = years | uniq | sort | reverse %}  <!-- 正确排序 -->
 
-{% comment %} 初始化统计哈希 {% endcomment %}
+{% comment %} 修正后的统计逻辑 {% endcomment %}
 {% assign first_author_counts = "" | split: "," %}
 {% assign all_counts = "" | split: "," %}
 
-{% comment %} 按年份统计 {% endcomment %}
 {% for year in years %}
-  {% assign first_author = site.data.papers | where: "highlight_author", 1 | where_exp: "item", "item.sortable_date contains year" %}
-  {% assign all_papers = site.data.papers | where_exp: "item", "item.sortable_date contains year" %}
+  {% assign current_year_str = year | append: "" %}  <!-- 转换为字符串用于 contains -->
+  {% assign first_author = site.data.papers | where: "highlight_author", 1 | where_exp: "item", "item.sortable_date contains current_year_str" %}
+  {% assign all_papers = site.data.papers | where_exp: "item", "item.sortable_date contains current_year_str" %}
   
-  {% assign first_author_counts = first_author_counts | push: first_author.size %}
+  {% assign first_author_counts = first_author_counts | push: first_uthor.size %}
   {% assign all_counts = all_counts | push: all_papers.size %}
 {% endfor %}
 
@@ -133,7 +146,27 @@ tr:last-child td {
   );
 </script>
 
+<script>
+  // 确保 DOM 加载完成
+  document.addEventListener('DOMContentLoaded', function() {
+    // 检查数据有效性
+    console.log("Years:", {{ years | json }});
+    console.log("First:", {{ first_author_counts | json }});
+    console.log("All:", {{ all_counts | json }});
 
+    // 检查 Canvas 元素是否存在
+    var ctx = document.getElementById('myChart');
+    if (!ctx) {
+      console.error('无法找到 #myChart 元素');
+      return;
+    }
+
+    // 初始化图表
+    new Chart(ctx.getContext('2d'), {
+      // ...保持原有配置不变...
+    });
+  });
+</script>
 <!-- =============================================================================================== -->
 <!-- 表格 -->
 <!-- ----------------------------------------------------------------------------------------------- -->
