@@ -118,26 +118,22 @@ tr:last-child td {
     "labels": [{{ years | map: 'name' | join: ',' }}],
     "datasets": [
       {
-        "label": "First Author",
+        "label": "First author",
         "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
         "backgroundColor": "rgba(54, 162, 235, 0.8)"
       },
       {
-        "label": "All Papers",
+        "label": "Total",
         "data": [{% for y in years %}{{ y.items | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
         "backgroundColor": "rgba(255, 159, 64, 0.8)"
       }
     ]
-  },
-  "options": {
-    "scales": {
-      "x": {"title": {"display": true, "text": "Year"}},
-      "y": {"title": {"display": true, "text": "Papers"}}
-    }
   }
 }{% endcapture %}
 
-<img src="{{ chart_url | uri_escape }}" alt="Publication Chart" style="width:100%;">
+<img src="{{ chart_url | uri_escape }}" 
+     alt="Publication Chart" 
+     style="width:100%; position: relative; left: -20px;">
 
 <!-- =============================================================================================== -->
 <!-- 表格 -->
