@@ -131,19 +131,8 @@ tr:last-child td {
   },
   "options": {
     "scales": {
-      "x": {
-        "title": {
-          "display": true,
-          "text": "Year"
-        }
-      },
-      "y": {
-        "title": {
-          "display": true,
-          "text": "Number of Papers"
-        },
-        "beginAtZero": true
-      }
+      "x": {"title": {"display": true, "text": "Year"}},
+      "y": {"title": {"display": true, "text": "Papers"}}
     }
   }
 }{% endcapture %}
