@@ -120,14 +120,31 @@ tr:last-child td {
       {
         "label": "First Author",
         "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-        "backgroundColor": "rgba(54, 162, 235, 0.8)"  <!-- 蓝色 -->
+        "backgroundColor": "rgba(54, 162, 235, 0.8)"
       },
       {
         "label": "All Papers",
         "data": [{% for y in years %}{{ y.items | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-        "backgroundColor": "rgba(255, 159, 64, 0.8)"   <!-- 橙色 -->
+        "backgroundColor": "rgba(255, 159, 64, 0.8)"
       }
     ]
+  },
+  "options": {
+    "scales": {
+      "x": {
+        "title": {
+          "display": true,
+          "text": "Year"
+        }
+      },
+      "y": {
+        "title": {
+          "display": true,
+          "text": "Number of Papers"
+        },
+        "beginAtZero": true
+      }
+    }
   }
 }{% endcapture %}
 
