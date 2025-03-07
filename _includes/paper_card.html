@@ -30,18 +30,16 @@
             {% endfor %}
             , <em><a href="javascript:void(0);" onclick="toggleAuthors('{{ include.unique_id }}')" id="etal-link-{{ include.unique_id }}">et al.</a></em>
             <!-- Hidden full author list (excluding the first omit_start already displayed) -->
-            <span id="author-full-{{ include.unique_id }}" style="display: none;">
+            <span id="author-full-{{ include.unique_id }}" 
+                    style="display: none; cursor: pointer;" 
+                    onclick="toggleAuthors('{{ include.unique_id }}')">
                 {% for author in authors offset:omit_start %}
-                    <a href="javascript:void(0);" onclick="toggleAuthors('{{ include.number }}')" style="text-decoration: none;">
-                        {% if forloop.index == highlight_author_etal %}
-                            <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
-                        {% else %}
-                            {{ author | strip }}
-                        {% endif %}
-                    </a>
-                    {% if forloop.last == false %}
-                        ,<!-- No space after the comma -->
+                    {% if forloop.index == highlight_author_etal %}
+                    <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
+                    {% else %}
+                    {{ author | strip }}
                     {% endif %}
+                    {% if forloop.last == false %},{% endif %}
                 {% endfor %}
             </span>
         {% else %}
