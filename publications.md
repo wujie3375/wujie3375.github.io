@@ -102,12 +102,12 @@ tr:last-child td {
     });
   }
 </script>
-<script>
+<!-- <script>
   createBarChart(
   [2023,2024,2025], 
   [   2,   3,   1],//一作 
   [   2,   3,   3]);//总计
-</script>
+</script> -->
 
 {% comment %} 提取所有年份并排序 {% endcomment %}
 {% assign years = site.data.papers | map: "sortable_date" | split: "-" | first | uniq | sort %}
