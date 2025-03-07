@@ -28,9 +28,9 @@
                     {% endif %}
                 {% endif %}
             {% endfor %}
-            , <em><a href="javascript:void(0);" onclick="toggleAuthors('{{ include.number }}')" id="etal-link-{{ include.number }}">et al.</a></em>
+            , <em><a href="javascript:void(0);" onclick="toggleAuthors('{{ include.unique_id }}')" id="etal-link-{{ include.unique_id }}">et al.</a></em>
             <!-- Hidden full author list (excluding the first omit_start already displayed) -->
-            <span id="author-full-{{ include.number }}" style="display: none;">
+            <span id="author-full-{{ include.unique_id }}" style="display: none;">
                 {% for author in authors offset:omit_start %}
                     <a href="javascript:void(0);" onclick="toggleAuthors('{{ include.number }}')" style="text-decoration: none;">
                         {% if forloop.index == highlight_author_etal %}
@@ -85,9 +85,9 @@
 
 <!-- JavaScript for toggling authors -->
 <script>
-    function toggleAuthors(id) {
-        var full = document.getElementById('author-full-' + id);
-        var etal = document.getElementById('etal-link-' + id);
+    function toggleAuthors(uniqueId) {
+        var full = document.getElementById('author-full-' + uniqueId);
+        var etal = document.getElementById('etal-link-' + uniqueId);
         if (full.style.display === 'none') {
             full.style.display = 'inline';
             etal.style.display = 'none';

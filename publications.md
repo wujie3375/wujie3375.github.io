@@ -45,7 +45,7 @@ tr:last-child td {
 }
 </style>
 
-> **Last Update:** Mar 6, 2025
+> **Last Update:** Mar 7, 2025
 
 # Publications
 
@@ -217,20 +217,22 @@ tr:last-child td {
   {% for group in grouped_publications %}
     <h2>{{ group.name }}</h2>
     {% for pub in group.items %}
+      {% capture unique_id %}all-{{ group.name }}-{{ forloop.index }}{% endcapture %}
       {% include paper_card.html 
-      title=pub.title 
-      subtitle=pub.subtitle 
-      authors=pub.authors 
-      date=pub.date 
-      journal=pub.journal 
-      journal_link=pub.journal_link 
-      volume=pub.volume 
-      article_number=pub.article_number 
-      arxiv=pub.arxiv 
-      pdf=pub.pdf 
-      highlight_author=pub.highlight_author 
-      etal=pub.etal
-      number=total_number %}
+        unique_id=unique_id
+        title=pub.title 
+        subtitle=pub.subtitle 
+        authors=pub.authors 
+        date=pub.date 
+        journal=pub.journal 
+        journal_link=pub.journal_link 
+        volume=pub.volume 
+        article_number=pub.article_number 
+        arxiv=pub.arxiv 
+        pdf=pub.pdf 
+        highlight_author=pub.highlight_author 
+        etal=pub.etal
+        number=total_number %}
       {% assign total_number = total_number | plus: -1 %}
     {% endfor %}
     <hr>
@@ -246,7 +248,9 @@ tr:last-child td {
     {% if filtered_group_items.size > 0 %}
       <p style="text-indent: 0;font-size:36px;margin-bottom:0.61875rem;text-rendering:optimizeLegibility;line-height:1;margin-top:0;font-family:'PT Sans Narrow',sans-serif;font-weight:700;">{{ group.name }}</p>
       {% for pub in filtered_group_items %}
-        {% include paper_card.html 
+      {% capture unique_id %}first-{{ group.name }}-{{ forloop.index }}{% endcapture %}
+      {% include paper_card.html 
+        unique_id=unique_id
         title=pub.title 
         subtitle=pub.subtitle 
         authors=pub.authors 
@@ -258,10 +262,10 @@ tr:last-child td {
         arxiv=pub.arxiv 
         pdf=pub.pdf 
         highlight_author=pub.highlight_author 
-        etal=10 
+        etal=1 
         number=total_number %}
-        {% assign total_number = total_number | plus: -1 %}
-      {% endfor %}
+      {% assign total_number = total_number | plus: -1 %}
+    {% endfor %}
       <hr>
     {% endif %}
   {% endfor %}
