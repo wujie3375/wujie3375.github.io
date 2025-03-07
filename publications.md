@@ -112,36 +112,71 @@ tr:last-child td {
 </script> -->
 
 <div id="all-chart">
-  <img src="{{ all_chart_url | uri_escape }}" alt="All Papers Chart" style="width:100%;max-width:800px;">
+  <img src="{{ all_chart_url | uri_escape }}" alt="All Papers" style="width:100%;max-width:800px;">
 </div>
-<div id="first-chart" style="display:none;">
-  <img src="{{ first_chart_url | uri_escape }}" alt="First-Author Chart" style="width:100%;max-width:800px;">
+<div id="first-author-chart" style="display:none;">
+  <img src="{{ first_chart_url | uri_escape }}" alt="First-Author Papers" style="width:100%;max-width:800px;">
 </div>
 
-{% comment %} 图表URL生成部分 {% endcomment %}
-{% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
+{% comment %} ==== 自动生成图表数据 ==== {% endcomment %}
+{% assign years = site.data.papers | group_by: 'year' | sort: 'name' | reverse %}
 
+{% comment %} 统计各年份数据 {% endcomment %}
+{% assign first_counts = "" | split: "," %}
+{% assign all_counts = "" | split: "," %}
+
+{% for year in years %}
+  {% assign total = year.items | size %}
+  {% assign first = year.items | where: 'highlight_author', 1 | size %}
+  
+  {% assign first_counts = first_counts | push: first %}
+  {% assign all_counts = all_counts | push: total %}
+{% endfor %}
+
+{% comment %} 生成图表URL {% endcomment %}
 {% capture all_chart_url %}https://quickchart.io/chart?c={
   "type": "bar",
   "data": {
     "labels": [{{ years | map: 'name' | join: ',' }}],
     "datasets": [{
       "label": "All Papers",
-      "data": [{{ years | map: 'items' | map: 'size' | join: ',' }}],
-      "backgroundColor": "rgba(255, 159, 64, 0.8)"
+      "data": [{{ all_counts | join: ',' }}],
+      "backgroundColor": "rgba(255, 159, 64, 0.8)",
+      "borderColor": "rgba(255, 159, 64, 1)",
+      "borderWidth": 1
     }]
+  },
+  "options": {
+    "legend": {"display": false},
+    "scales": {
+      "yAxes": [{
+        "ticks": {"beginAtZero": true, "stepSize": 1},
+        "gridLines": {"color": "#f5f5f5"}
+      }]
+    }
   }
 }{% endcapture %}
 
 {% capture first_chart_url %}https://quickchart.io/chart?c={
-  "type": "bar", 
+  "type": "bar",
   "data": {
     "labels": [{{ years | map: 'name' | join: ',' }}],
     "datasets": [{
       "label": "First Author",
-      "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-      "backgroundColor": "rgba(54, 162, 235, 0.8)"
+      "data": [{{ first_counts | join: ',' }}],
+      "backgroundColor": "rgba(54, 162, 235, 0.8)",
+      "borderColor": "rgba(54, 162, 235, 1)",
+      "borderWidth": 1
     }]
+  },
+  "options": {
+    "legend": {"display": false},
+    "scales": {
+      "yAxes": [{
+        "ticks": {"beginAtZero": true, "stepSize": 1},
+        "gridLines": {"color": "#f5f5f5"}
+      }]
+    }
   }
 }{% endcapture %}
 <!-- =============================================================================================== -->
@@ -306,7 +341,7 @@ tr:last-child td {
 </div>
 
 <script>
-// 增强版切换函数
+// 同步切换函数
 function toggleDisplay() {
   const showFirst = document.getElementById("show-all").checked;
   
