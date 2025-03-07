@@ -158,13 +158,15 @@ tr:last-child td {
 
 <style>
 .checkbox-container {
-  font-size: 18px;  /* 整体字体放大 */
+  font-size: 20px;  /* 整体字体放大 */
+  display: flex; /* 使用 Flexbox 布局 */
+  align-items: center; /* 垂直居中对齐 */
 }
 
 #show-all {
   width: 20px;      /* 复选框宽度 */
   height: 20px;     /* 复选框高度 */
-  margin: 0 8px 0 0; /* 右边距 */
+  margin: 0 10px 0 0; /* 右边距 */
   accent-color: #36a2eb; /* 选中颜色 */
 }
 
