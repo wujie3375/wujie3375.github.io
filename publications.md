@@ -110,26 +110,66 @@ tr:last-child td {
   [   2,   3,   1],//一作 
   [   2,   3,   3]);//总计
 </script> -->
+{% comment %} 从数据中提取年份并排序 {% endcomment %}
 {% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
-{% comment %} 构建图表URL {% endcomment %}
-{% capture chart_url %}https://quickchart.io/chart?c={
+
+{% comment %} 生成全部文章图表URL {% endcomment %}
+{% capture all_chart_url %}https://quickchart.io/chart?c={
   "type": "bar",
   "data": {
-    "labels": [{{ years | map: 'name' | join: ',' }}],
-    "datasets": [
-      {
-        "label": "First Author",
-        "data": [{{ years | map: 'items' | map: 'size' }}]
-      },
-      {
-        "label": "All Papers",
-        "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}]
-      }
-    ]
+    "labels": {{ years | map: 'name' | json }},
+    "datasets": [{
+      "label": "All Papers",
+      "data": {{ years | map: 'items' | map: 'size' | json }},
+      "backgroundColor": "rgba(255, 159, 64, 0.8)"
+    }]
+  },
+  "options": {
+    "scales": {
+      "y": {"beginAtZero": true, "ticks": {"stepSize": 1}}
+    }
   }
 }{% endcapture %}
 
-<img src="{{ chart_url | uri_escape }}" alt="Publication Chart" style="width:100%;">
+{% comment %} 生成一作文章图表URL {% endcomment %}
+{% capture first_chart_url %}https://quickchart.io/chart?c={
+  "type": "bar",
+  "data": {
+    "labels": {{ years | map: 'name' | json }},
+    "datasets": [{
+      "label": "First Author",
+      "data": {{ years | map: 'items' | map: 'first_author_count' | json }},
+      "backgroundColor": "rgba(54, 162, 235, 0.8)"
+    }]
+  },
+  "options": {
+    "scales": {
+      "y": {"beginAtZero": true, "ticks": {"stepSize": 1}}
+    }
+  }
+}{% endcapture %}
+
+{% comment %} 前端显示部分 {% endcomment %}
+<button onclick="toggleChart()" style="margin: 15px 0; padding: 8px 15px; cursor: pointer;">
+  切换显示模式
+</button>
+
+<img id="pubChart" 
+     src="{{ all_chart_url | uri_escape }}" 
+     alt="Publication Chart" 
+     style="width:100%; max-width:800px; border: 1px solid #ddd; border-radius: 8px;">
+
+<script>
+let showAll = true;
+
+function toggleChart() {
+  const chartImg = document.getElementById('pubChart');
+  chartImg.src = showAll 
+    ? "{{ first_chart_url | uri_escape }}" 
+    : "{{ all_chart_url | uri_escape }}";
+  showAll = !showAll;
+}
+</script>
 
 
 <!-- =============================================================================================== -->
