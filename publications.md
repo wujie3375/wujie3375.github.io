@@ -133,7 +133,7 @@ tr:last-child td {
 
 <img src="{{ chart_url | uri_escape }}" 
      alt="Publication Chart" 
-     style="width:100%; position: relative; left: -80px;">
+     style="width:100%; position: relative; left: -40px;">
 
 <!-- =============================================================================================== -->
 <!-- 表格 -->
