@@ -123,7 +123,7 @@ tr:last-child td {
       },
       {
         "label": "All Papers",
-        "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}]
+        "data": [{% for y in years %}{{ y.items }}{% unless forloop.last %},{% endunless %}{% endfor %}]
       }
     ]
   }
