@@ -111,71 +111,27 @@ tr:last-child td {
   [   2,   3,   3]);//总计
 </script> -->
 
-{% comment %} ==== 数据预处理 ==== {% endcomment %}
-{% assign papers = site.data.papers | where: "year", "!=", "" %}
+{% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
 
-{% comment %} ==== 提取有效年份 ==== {% endcomment %}
-{% assign years = papers | map: "year" | uniq | sort | reverse %}
+{% comment %} 构建图表URL {% endcomment %}
+{% capture chart_url %}https://quickchart.io/chart?c={
+  "type": "bar",
+  "data": {
+    "labels": [{{ years | map: 'name' | join: ',' }}],
+    "datasets": [
+      {
+        "label": "First Author",
+        "data": [{{ years | map: 'items' | map: 'size' }}]
+      },
+      {
+        "label": "All Papers",
+        "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}]
+      }
+    ]
+  }
+}{% endcapture %}
 
-{% comment %} ==== 按年份统计 ==== {% endcomment %}
-{% assign first_author_counts = "" | split: "," %}
-{% assign all_counts = "" | split: "," %}
-
-{% for year in years %}
-  {% assign year_papers = papers | where: "year", year %}
-  {% assign first_author = year_papers | where: "highlight_author", 1 %}
-  
-  {% assign first_author_counts = first_author_counts | push: first_author.size %}
-  {% assign all_counts = all_counts | push: year_papers.size %}
-{% endfor %}
-
-{% comment %} ==== 安全计算最大值 ==== {% endcomment %}
-{% assign max_value = all_counts | max %}
-{% assign max_value = max_value | at_least: 1 %}  <!-- 保证最小值为1 -->
-
-{% comment %} ==== SVG图表生成 ==== {% endcomment %}
-<svg viewBox="0 0 800 400" style="width: 100%; height: auto; font-family: Arial;">
-  <!-- 坐标轴 -->
-  <line x1="50" y1="350" x2="750" y2="350" stroke="#666" stroke-width="2"/>
-  <line x1="50" y1="350" x2="50" y2="50" stroke="#666" stroke-width="2"/>
-
-  {% if years.size > 0 %}
-    {% for year in years %}
-      {% assign index = forloop.index0 %}
-      {% assign x = 80 | times: forloop.index0 | plus: 100 %}
-      {% assign bar_width = 30 %}
-      
-      <!-- 总论文柱 -->
-      {% assign all_height = 300 | times: all_counts[index] | divided_by: max_value %}
-      <rect x="{{ x }}" 
-            y="{{ 350 | minus: all_height }}" 
-            width="{{ bar_width }}" 
-            height="{{ all_height }}" 
-            fill="#FF9F40"/>
-      
-      <!-- 一作论文柱 -->
-      {% assign first_height = 300 | times: first_author_counts[index] | divided_by: max_value %}
-      <rect x="{{ x | plus: bar_width }}" 
-            y="{{ 350 | minus: first_height }}" 
-            width="{{ bar_width }}" 
-            height="{{ first_height }}" 
-            fill="#3692EB"/>
-      
-      <!-- 年份标签 -->
-      <text x="{{ x | plus: bar_width }}" y="370" text-anchor="middle">{{ year }}</text>
-    {% endfor %}
-  {% else %}
-    <text x="400" y="200" text-anchor="middle" font-size="20" fill="#999">
-      No publication data available
-    </text>
-  {% endif %}
-
-  <!-- 图例 -->
-  <rect x="600" y="80" width="20" height="20" fill="#3692EB"/>
-  <text x="630" y="95">First author</text>
-  <rect x="600" y="110" width="20" height="20" fill="#FF9F40"/>
-  <text x="630" y="125">All papers</text>
-</svg>
+<img src="{{ chart_url | uri_escape }}" alt="Publication Chart" style="width:100%;">
 <!-- =============================================================================================== -->
 <!-- 表格 -->
 <!-- ----------------------------------------------------------------------------------------------- -->
