@@ -111,64 +111,97 @@ tr:last-child td {
   [   2,   3,   3]);//总计
 </script> -->
 
-{% comment %} 首先获取数据（与之前相同）{% endcomment %}
-{% assign raw_years = site.data.papers | map: "sortable_date" %}
+{% comment %} 数据预处理模块 {% endcomment %}
+{% assign raw_years = site.data.papers | map: "sortable_date" | compact %}
+
+{% comment %} 年份提取与格式验证 {% endcomment %}
 {% assign years = "" | split: "," %}
 {% for date in raw_years %}
-  {% assign year = date | split: "-" | first | plus: 0 %}
-  {% assign years = years | push: year %}
+  {% assign date_parts = date | split: "-" %}
+  {% if date_parts.size >= 1 and date_parts[0].size == 4 %}
+    {% assign year = date_parts[0] | plus: 0 %}
+    {% assign years = years | push: year %}
+  {% endif %}
 {% endfor %}
 {% assign years = years | uniq | sort %}
 
+{% comment %} 论文统计模块 {% endcomment %}
 {% assign first_author_counts = "" | split: "," %}
 {% assign all_counts = "" | split: "," %}
 {% for year in years %}
   {% assign current_year_str = year | append: "" %}
-  {% assign first_author = site.data.papers | where: "highlight_author", 1 | where_exp: "item", "item.sortable_date contains current_year_str" %}
-  {% assign all_papers = site.data.papers | where_exp: "item", "item.sortable_date contains current_year_str" %}
+  
+  {% comment %} 数据过滤 {% endcomment %}
+  {% assign first_author = site.data.papers | where: "highlight_author", 1 
+    | where_exp: "item", "item.sortable_date contains current_year_str" %}
+  
+  {% assign all_papers = site.data.papers 
+    | where_exp: "item", "item.sortable_date contains current_year_str" %}
+
+  {% comment %} 计数处理 {% endcomment %}
   {% assign first_author_counts = first_author_counts | push: first_author.size %}
   {% assign all_counts = all_counts | push: all_papers.size %}
 {% endfor %}
 
-{% comment %} 计算最大值用于缩放 {% endcomment %}
+{% comment %} 图表参数计算 {% endcomment %}
 {% assign max_value = all_counts | max %}
+{% if max_value == 0 %}
+  {% assign max_value = 1 %}
+{% endif %}
 
----
-
+{% comment %} SVG 图表生成模块 {% endcomment %}
 <svg viewBox="0 0 800 400" style="width: 100%; height: auto; font-family: Arial;">
   <!-- 坐标轴 -->
   <line x1="50" y1="350" x2="750" y2="350" stroke="#666" stroke-width="2"/>
   <line x1="50" y1="350" x2="50" y2="50" stroke="#666" stroke-width="2"/>
 
-  <!-- 柱状图 -->
+  <!-- 动态柱状图 -->
   {% for year in years %}
     {% assign index = forloop.index0 %}
     {% assign x = 80 | times: forloop.index0 | plus: 100 %}
     {% assign bar_width = 30 %}
     
     <!-- 总论文柱 -->
+    {% assign all_height = 300 | times: all_counts[index] | divided_by: max_value %}
     <rect x="{{ x }}" 
-          y="{{ 350 | minus: 300 | times: all_counts[index] | divided_by: max_value }}" 
+          y="{{ 350 | minus: all_height }}" 
           width="{{ bar_width }}" 
-          height="{{ 300 | times: all_counts[index] | divided_by: max_value }}" 
-          fill="#FF9F40"/>
+          height="{{ all_height }}" 
+          fill="#FF9F40"
+          data-count="{{ all_counts[index] }}"/>
     
     <!-- 一作论文柱 -->
+    {% assign first_height = 300 | times: first_author_counts[index] | divided_by: max_value %}
     <rect x="{{ x | plus: bar_width }}" 
-          y="{{ 350 | minus: 300 | times: first_author_counts[index] | divided_by: max_value }}" 
+          y="{{ 350 | minus: first_height }}" 
           width="{{ bar_width }}" 
-          height="{{ 300 | times: first_author_counts[index] | divided_by: max_value }}" 
-          fill="#3692EB"/>
+          height="{{ first_height }}" 
+          fill="#3692EB"
+          data-count="{{ first_author_counts[index] }}"/>
     
-    <!-- 年份标签 -->
-    <text x="{{ x | plus: bar_width }}" y="370" text-anchor="middle">{{ year }}</text>
+    <!-- 交互标签 -->
+    <g transform="translate({{ x | plus: bar_width }} 370)">
+      <text text-anchor="middle">{{ year }}</text>
+      <title>Total: {{ all_counts[index] }}, First-author: {{ first_author_counts[index] }}</title>
+    </g>
   {% endfor %}
 
+  <!-- 数据提示 -->
+  {% if all_counts.size == 0 %}
+    <text x="400" y="200" text-anchor="middle" font-size="20" fill="#999">
+      No publication data available
+    </text>
+  {% endif %}
+
   <!-- 图例 -->
-  <rect x="600" y="80" width="20" height="20" fill="#3692EB"/>
-  <text x="630" y="95">First author</text>
-  <rect x="600" y="110" width="20" height="20" fill="#FF9F40"/>
-  <text x="630" y="125">All papers</text>
+  <g transform="translate(600 80)">
+    <rect width="20" height="20" fill="#3692EB"/>
+    <text x="25" y="15">First-author</text>
+  </g>
+  <g transform="translate(600 110)">
+    <rect width="20" height="20" fill="#FF9F40"/>
+    <text x="25" y="15">All papers</text>
+  </g>
 </svg>
 <!-- =============================================================================================== -->
 <!-- 表格 -->
