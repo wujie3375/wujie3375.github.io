@@ -23,28 +23,25 @@ title: Publications
   /* body {
     font-family: 'ARIAL', serif;
   } */
-td:not(:first-child),
-th:not(:first-child) {
-  text-align: center !important;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: center;
 }
 
-/* 保持原有其他样式 */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  table-layout: fixed;
+th, td {
+    border: 0px solid black;
+    padding: 8px;
 }
-td:first-child,
-th:first-child {
-  width: 30%;
-  min-width: 120px;
-  text-align: left;
-  padding-left: 20px;
+
+th {
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black; /* 顶部线 */
 }
-td:not(:first-child),
-th:not(:first-child) {
-  width: calc(70% / 3);
+
+tr:last-child td {
+    border-bottom: 1.5px solid black; /* 底部线 */
 }
 </style>
 
