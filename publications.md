@@ -112,7 +112,9 @@ tr:last-child td {
 </script> -->
 {% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
 
-{% comment %} ==== 修改后的图表配置（添加Y轴设置）==== {% endcomment %}
+{% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
+
+{% comment %} ==== 强制Y轴从0开始且为整数 ==== {% endcomment %}
 {% capture first_author_url %}https://quickchart.io/chart?c={
   "type": "bar",
   "data": {
@@ -126,11 +128,13 @@ tr:last-child td {
   "options": {
     "scales": {
       "y": {
-        "beginAtZero": true, <!-- 强制从0开始 -->
+        "beginAtZero": true,
         "ticks": {
-          "stepSize": 1, <!-- 步长为1 -->
-          "callback": "function(value) { return Number.isInteger(value) ? value : null; }" <!-- 只显示整数 -->
-        }
+          "stepSize": 1,
+          "callback": "function(v) { return Number.isInteger(v) ? v : null; }",
+          "precision": 0
+        },
+        "grace": "0%"  <!-- 强制不留顶部空白 -->
       }
     }
   }
@@ -152,12 +156,15 @@ tr:last-child td {
         "beginAtZero": true,
         "ticks": {
           "stepSize": 1,
-          "callback": "function(value) { return Number.isInteger(value) ? value : null; }"
-        }
+          "callback": "function(v) { return Number.isInteger(v) ? v : null; }",
+          "precision": 0
+        },
+        "grace": "0%"
       }
     }
   }
 }{% endcapture %}
+
 
 {% comment %} === 切换显示组件 === {% endcomment %}
 <button onclick="toggleCharts()" 
