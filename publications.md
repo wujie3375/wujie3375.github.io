@@ -111,45 +111,34 @@ tr:last-child td {
   [   2,   3,   3]);//总计
 </script> -->
 
-{% comment %} ==== 数据预处理模块 ==== {% endcomment %}
-{% assign raw_years = site.data.papers | map: "sortable_date" | compact %}
+{% comment %} ==== 数据预处理 ==== {% endcomment %}
+{% assign papers = site.data.papers | where: "year", "!=", "" %}
 
-{% comment %} ==== 年份提取与验证 ==== {% endcomment %}
-{% assign years = "" | split: "," %}
-{% for date in raw_years %}
-  {% assign date_parts = date | split: "-" %}
-  {% if date_parts.size >= 1 and date_parts[0].size == 4 %}
-    {% assign year = date_parts[0] | plus: 0 %}
-    {% assign years = years | push: year %}
-  {% endif %}
-{% endfor %}
-{% assign years = years | uniq | sort %}
+{% comment %} ==== 提取有效年份 ==== {% endcomment %}
+{% assign years = papers | map: "year" | uniq | sort | reverse %}
 
-{% comment %} ==== 论文统计模块 ==== {% endcomment %}
+{% comment %} ==== 按年份统计 ==== {% endcomment %}
 {% assign first_author_counts = "" | split: "," %}
 {% assign all_counts = "" | split: "," %}
+
 {% for year in years %}
-  {% assign current_year_str = year | append: "" %}
-  {% assign first_author = site.data.papers | where: "highlight_author", 1 | where_exp: "item", "item.sortable_date contains current_year_str" %}
-  {% assign all_papers = site.data.papers | where_exp: "item", "item.sortable_date contains current_year_str" %}
+  {% assign year_papers = papers | where: "year", year %}
+  {% assign first_author = year_papers | where: "highlight_author", 1 %}
   
   {% assign first_author_counts = first_author_counts | push: first_author.size %}
-  {% assign all_counts = all_counts | push: all_papers.size %}
+  {% assign all_counts = all_counts | push: year_papers.size %}
 {% endfor %}
 
 {% comment %} ==== 安全计算最大值 ==== {% endcomment %}
 {% assign max_value = all_counts | max %}
-{% if max_value == 0 or max_value == nil %}
-  {% assign max_value = 1 %}
-{% endif %}
+{% assign max_value = max_value | at_least: 1 %}  <!-- 保证最小值为1 -->
 
-{% comment %} ==== SVG 图表生成 ==== {% endcomment %}
+{% comment %} ==== SVG图表生成 ==== {% endcomment %}
 <svg viewBox="0 0 800 400" style="width: 100%; height: auto; font-family: Arial;">
   <!-- 坐标轴 -->
   <line x1="50" y1="350" x2="750" y2="350" stroke="#666" stroke-width="2"/>
   <line x1="50" y1="350" x2="50" y2="50" stroke="#666" stroke-width="2"/>
 
-  {% comment %} ==== 动态柱状图 ==== {% endcomment %}
   {% if years.size > 0 %}
     {% for year in years %}
       {% assign index = forloop.index0 %}
@@ -157,7 +146,7 @@ tr:last-child td {
       {% assign bar_width = 30 %}
       
       <!-- 总论文柱 -->
-      {% assign all_height = 300 | times: all_counts[index] | divided_by: max_value | default: 0 %}
+      {% assign all_height = 300 | times: all_counts[index] | divided_by: max_value %}
       <rect x="{{ x }}" 
             y="{{ 350 | minus: all_height }}" 
             width="{{ bar_width }}" 
@@ -165,7 +154,7 @@ tr:last-child td {
             fill="#FF9F40"/>
       
       <!-- 一作论文柱 -->
-      {% assign first_height = 300 | times: first_author_counts[index] | divided_by: max_value | default: 0 %}
+      {% assign first_height = 300 | times: first_author_counts[index] | divided_by: max_value %}
       <rect x="{{ x | plus: bar_width }}" 
             y="{{ 350 | minus: first_height }}" 
             width="{{ bar_width }}" 
@@ -176,7 +165,6 @@ tr:last-child td {
       <text x="{{ x | plus: bar_width }}" y="370" text-anchor="middle">{{ year }}</text>
     {% endfor %}
   {% else %}
-    <!-- 无数据提示 -->
     <text x="400" y="200" text-anchor="middle" font-size="20" fill="#999">
       No publication data available
     </text>
