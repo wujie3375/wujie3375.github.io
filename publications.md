@@ -111,7 +111,7 @@ tr:last-child td {
   [   2,   3,   3]);//总计
 </script> -->
 
-{% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
+<!-- {% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
 {% comment %} 构建图表URL {% endcomment %}
 {% capture chart_url %}https://quickchart.io/chart?c={
   "type": "bar",
@@ -128,11 +128,41 @@ tr:last-child td {
       }
     ]
   }
+}{% endcapture %} -->
+
+<!-- <img src="{{ chart_url | uri_escape }}" alt="Publication Chart" style="width:100%;"> -->
+
+
+{% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
+{% comment %} 构建图表URL {% endcomment %}
+{% capture chart_url_all %}https://quickchart.io/chart?c={
+  "type": "bar",
+  "data": {
+    "labels": [{{ years | map: 'name' | join: ',' }}],
+    "datasets": [
+      {
+        "label": "All Papers",
+        "data": [{% for y in years %}{{ y.items | size }}{% unless forloop.last %},{% endunless %}{% endfor %}]
+      }
+    ]
+  }
 }{% endcapture %}
 
-<img src="{{ chart_url | uri_escape }}" alt="Publication Chart" style="width:100%;">
+{% capture chart_url_first %}https://quickchart.io/chart?c={
+  "type": "bar",
+  "data": {
+    "labels": [{{ years | map: 'name' | join: ',' }}],
+    "datasets": [
+      {
+        "label": "First Author",
+        "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}]
+      }
+    ]
+  }
+}{% endcapture %}
 
-
+<img src="{{ chart_url_all | uri_escape }}" alt="All Publication Chart" style="width:100%;">
+<img src="{{ chart_url_first | uri_escape }}" alt="First Publication Chart" style="width:100%;">
 <!-- =============================================================================================== -->
 <!-- 表格 -->
 <!-- ----------------------------------------------------------------------------------------------- -->
