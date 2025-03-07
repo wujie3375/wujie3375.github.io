@@ -111,24 +111,10 @@ tr:last-child td {
   [   2,   3,   3]);//总计
 </script> -->
 
-{% comment %} ==== 生成两种图表URL ==== {% endcomment %}
+{% comment %} 图表URL生成部分 {% endcomment %}
 {% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
 
-{% comment %} 1. 仅显示一作的图表 {% endcomment %}
-{% capture first_author_url %}https://quickchart.io/chart?c={
-  "type": "bar",
-  "data": {
-    "labels": [{{ years | map: 'name' | join: ',' }}],
-    "datasets": [{
-      "label": "First Author",
-      "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-      "backgroundColor": "rgba(54, 162, 235, 0.8)"
-    }]
-  }
-}{% endcapture %}
-
-{% comment %} 2. 显示全部文章的图表 {% endcomment %}
-{% capture all_papers_url %}https://quickchart.io/chart?c={
+{% capture all_chart_url %}https://quickchart.io/chart?c={
   "type": "bar",
   "data": {
     "labels": [{{ years | map: 'name' | join: ',' }}],
@@ -140,14 +126,17 @@ tr:last-child td {
   }
 }{% endcapture %}
 
-{% comment %} ==== 图表容器 ==== {% endcomment %}
-<div id="first-author-chart">
-  <img src="{{ first_author_url | uri_escape }}" alt="First-Author Chart" style="width:100%;display:block;">
-</div>
-
-<div id="all-papers-chart" style="display:none;">
-  <img src="{{ all_papers_url | uri_escape }}" alt="All Papers Chart" style="width:100%;display:block;">
-</div>
+{% capture first_chart_url %}https://quickchart.io/chart?c={
+  "type": "bar", 
+  "data": {
+    "labels": [{{ years | map: 'name' | join: ',' }}],
+    "datasets": [{
+      "label": "First Author",
+      "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+      "backgroundColor": "rgba(54, 162, 235, 0.8)"
+    }]
+  }
+}{% endcapture %}
 <!-- =============================================================================================== -->
 <!-- 表格 -->
 <!-- ----------------------------------------------------------------------------------------------- -->
@@ -310,11 +299,18 @@ tr:last-child td {
 </div>
 
 <script>
-  function toggleDisplay() {
-    var showAll = document.getElementById("show-all").checked;
-    document.getElementById("first-author-only").style.display = showAll ? "block" : "none";
-    document.getElementById("all-articles").style.display = showAll ? "none" : "block";
-  }
+// 增强版切换函数
+function toggleDisplay() {
+  const showFirst = document.getElementById("show-all").checked;
+  
+  // 切换文章列表
+  document.getElementById("first-author-only").style.display = showFirst ? "block" : "none";
+  document.getElementById("all-articles").style.display = showFirst ? "none" : "block";
+  
+  // 切换统计图表
+  document.getElementById("first-author-chart").style.display = showFirst ? "block" : "none";
+  document.getElementById("all-chart").style.display = showFirst ? "none" : "block";
+}
 </script>
 
 <!-- =============================================================================================== -->
