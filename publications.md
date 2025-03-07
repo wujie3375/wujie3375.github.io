@@ -57,9 +57,9 @@ tr:last-child td {
 <!-- 统计图和表格 -->
 <!-- 调试数据输出 -->
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<canvas id="myChart" style="height: 400px;"></canvas> <!-- 设置图的高度 -->
-<script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+<!-- <canvas id="myChart" style="height: 400px;"></canvas> -->
+<!-- <script>
   function createBarChart(labels, data1, data2) {
     var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
@@ -103,7 +103,7 @@ tr:last-child td {
         }
     });
   }
-</script>
+</script> -->
 <!-- <script>
   createBarChart(
   [2023,2024,2025], 
@@ -113,25 +113,41 @@ tr:last-child td {
 
 {% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
 
-{% comment %} 构建图表URL {% endcomment %}
+{% comment %} 构建图表URL（修复数据集顺序） {% endcomment %}
 {% capture chart_url %}https://quickchart.io/chart?c={
   "type": "bar",
   "data": {
     "labels": [{{ years | map: 'name' | join: ',' }}],
     "datasets": [
       {
-        "label": "First Author",
-        "data": [{{ years | map: 'items' | map: 'size' }}]
+        "label": "All Papers",
+        "data": [{{ years | map: 'items' | map: 'size' | join: ',' }}],
+        "backgroundColor": "rgba(255, 159, 64, 0.8)"
       },
       {
-        "label": "All Papers",
-        "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}]
+        "label": "First Author",
+        "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+        "backgroundColor": "rgba(54, 162, 235, 0.8)"
       }
     ]
+  },
+  "options": {
+    "title": {
+      "display": true,
+      "text": "Publication Statistics"
+    },
+    "scales": {
+      "yAxes": [{
+        "ticks": {
+          "beginAtZero": true,
+          "stepSize": 1
+        }
+      }]
+    }
   }
 }{% endcapture %}
 
-<img src="{{ chart_url | uri_escape }}" alt="Publication Chart" style="width:100%;">
+<img src="{{ chart_url | uri_escape }}" alt="Publication Chart" style="width:100%;max-width:800px;">
 <!-- =============================================================================================== -->
 <!-- 表格 -->
 <!-- ----------------------------------------------------------------------------------------------- -->
