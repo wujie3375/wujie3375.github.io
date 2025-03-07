@@ -78,7 +78,7 @@ tr:last-child td {
 
 <img src="{{ chart_url | uri_escape }}" 
      alt="Publication Chart" 
-     style="width:100%; height: 80%; position: relative; left: -0px;">
+     style="width:100%; height: 80%; position: relative; left: -30px;">
 
 <!-- =============================================================================================== -->
 <!-- 表格 -->
@@ -164,9 +164,9 @@ tr:last-child td {
 }
 
 #show-all {
-  width: 20px;      /* 复选框宽度 */
-  height: 20px;     /* 复选框高度 */
-  margin: 0 10px 0 0; /* 右边距 */
+  width: 18px;      /* 复选框宽度 */
+  height: 18px;     /* 复选框高度 */
+  margin: 0 8px 0 0; /* 右边距 */
   accent-color: #36a2eb; /* 选中颜色 */
 }
 
