@@ -112,7 +112,6 @@ tr:last-child td {
 </script> -->
 
 {% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
-
 {% capture chart_url %}https://quickchart.io/chart?c={
   "type": "bar",
   "data": {
@@ -121,31 +120,43 @@ tr:last-child td {
       {
         "label": "First Author",
         "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-        "backgroundColor": "rgba(54, 162, 235, 0.8)"
+        "backgroundColor": "rgba(54, 162, 235, 0.8)"  <!-- 蓝色 -->
       },
       {
         "label": "All Papers",
         "data": [{% for y in years %}{{ y.items | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-        "backgroundColor": "rgba(255, 159, 64, 0.8)"
+        "backgroundColor": "rgba(255, 159, 64, 0.8)"   <!-- 橙色 -->
       }
     ]
   },
   "options": {
     "scales": {
       "x": {
-        "stacked": false,  <!-- 关闭堆叠 -->
-        "barPercentage": 0.6,  <!-- 控制单条宽度 -->
-        "categoryPercentage": 0.8  <!-- 控制组内间距 -->
+        "title": {
+          "display": true,
+          "text": "Year",          <!-- X轴标签 -->
+          "font": {"size": 14}     <!-- 字体大小 -->
+        },
+        "stacked": false,
+        "barPercentage": 0.6
       },
       "y": {
+        "title": {
+          "display": true,
+          "text": "Number of Papers",  <!-- Y轴标签 -->
+          "font": {"size": 14}
+        },
         "beginAtZero": true,
-        "ticks": {"stepSize": 1}
+        "ticks": {
+          "stepSize": 1,
+          "precision": 0
+        }
       }
     }
   }
 }{% endcapture %}
 
-<img src="{{ chart_url | uri_escape }}" style="width:100%;">
+<img src="{{ chart_url | uri_escape }}" alt="Publication Chart" style="width:100%;">
 
 <!-- =============================================================================================== -->
 <!-- 表格 -->
