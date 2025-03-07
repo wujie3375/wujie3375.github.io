@@ -111,6 +111,13 @@ tr:last-child td {
   [   2,   3,   3]);//总计
 </script> -->
 
+<div id="all-chart">
+  <img src="{{ all_chart_url | uri_escape }}" alt="All Papers Chart" style="width:100%;max-width:800px;">
+</div>
+<div id="first-chart" style="display:none;">
+  <img src="{{ first_chart_url | uri_escape }}" alt="First-Author Chart" style="width:100%;max-width:800px;">
+</div>
+
 {% comment %} 图表URL生成部分 {% endcomment %}
 {% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
 
