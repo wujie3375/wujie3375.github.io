@@ -109,6 +109,30 @@ tr:last-child td {
   [   2,   3,   3]);//总计
 </script>
 
+{% comment %} 提取所有年份并排序 {% endcomment %}
+{% assign years = site.data.papers | map: "sortable_date" | split: "-" | first | uniq | sort %}
+
+{% comment %} 初始化统计哈希 {% endcomment %}
+{% assign first_author_counts = "" | split: "," %}
+{% assign all_counts = "" | split: "," %}
+
+{% comment %} 按年份统计 {% endcomment %}
+{% for year in years %}
+  {% assign first_author = site.data.papers | where: "highlight_author", 1 | where_exp: "item", "item.sortable_date contains year" %}
+  {% assign all_papers = site.data.papers | where_exp: "item", "item.sortable_date contains year" %}
+  
+  {% assign first_author_counts = first_author_counts | push: first_author.size %}
+  {% assign all_counts = all_counts | push: all_papers.size %}
+{% endfor %}
+
+<script>
+  createBarChart(
+    {{ years | json }},    // 年份数组
+    {{ first_author_counts | json }}, // 一作数据
+    {{ all_counts | json }}   // 全部数据
+  );
+</script>
+
 
 <!-- =============================================================================================== -->
 <!-- 表格 -->
