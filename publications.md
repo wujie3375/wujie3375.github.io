@@ -113,35 +113,32 @@ tr:last-child td {
 
 {% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
 
-{% comment %} 构建图表URL（修复数据集顺序） {% endcomment %}
 {% capture chart_url %}https://quickchart.io/chart?c={
   "type": "bar",
   "data": {
     "labels": [{{ years | map: 'name' | join: ',' }}],
     "datasets": [
       {
-        "label": "All Papers",
-        "data": [{{ years | map: 'items' | map: 'size' | join: ',' }}],
-        "backgroundColor": "rgba(255, 159, 64, 0.8)"
-      },
-      {
         "label": "First Author",
         "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-        "backgroundColor": "rgba(54, 162, 235, 0.8)"
+        "backgroundColor": "rgba(54, 162, 235, 0.8)",  // 蓝色一作
+        "barPercentage": 0.6  // 缩小柱子宽度避免覆盖
+      },
+      {
+        "label": "All Papers",
+        "data": [{{ years | map: 'items' | map: 'size' | join: ',' }}],
+        "backgroundColor": "rgba(255, 159, 64, 0.5)",  // 橙色全部（半透明）
+        "barPercentage": 0.6
       }
     ]
   },
   "options": {
-    "title": {
-      "display": true,
-      "text": "Publication Statistics"
-    },
+    "title": {"display": true, "text": "Publication Statistics"},
     "scales": {
+      "xAxes": [{"stacked": false}],  // 非堆叠显示
       "yAxes": [{
-        "ticks": {
-          "beginAtZero": true,
-          "stepSize": 1
-        }
+        "ticks": {"beginAtZero": true, "stepSize": 1},
+        "scaleLabel": {"display": true, "text": "Number"}
       }]
     }
   }
