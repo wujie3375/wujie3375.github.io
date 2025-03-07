@@ -129,13 +129,13 @@ tr:last-child td {
 {% comment %} ==== 自动生成图表数据 ==== {% endcomment %}
 {% assign years = site.data.papers | group_by: 'year' | sort: 'name' | reverse %}
 
-{% comment %} 统计各年份数据 {% endcomment %}
+{% comment %} 统计各年份数据（修复空值问题）{% endcomment %}
 {% assign first_counts = "" | split: "," %}
 {% assign all_counts = "" | split: "," %}
 
 {% for year in years %}
-  {% assign total = year.items | size %}
-  {% assign first = year.items | where: 'highlight_author', 1 | size %}
+  {% assign total = year.items | size | default: 0 | plus: 0 %}
+  {% assign first = year.items | where: 'highlight_author', 1 | size | default: 0 | plus: 0 %}
   
   {% assign first_counts = first_counts | push: first %}
   {% assign all_counts = all_counts | push: total %}
