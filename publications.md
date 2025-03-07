@@ -126,7 +126,7 @@ tr:last-child td {
       <th></th>
       <th>Published</th>
       <th>Preprint</th>
-      <th>Total</th>
+      <th>&nbsp;Total&nbsp;</th>
     </tr>
   </thead>
   <tbody>
@@ -166,7 +166,7 @@ tr:last-child td {
 #show-all {
   width: 18px;      /* 复选框宽度 */
   height: 18px;     /* 复选框高度 */
-  margin: 0 7px 0 0; /* 右边距 */
+  margin: 0 6px 0 0; /* 右边距 */
   accent-color: #36a2eb; /* 选中颜色 */
 }
 
