@@ -141,7 +141,7 @@ tr:last-child td {
   {% assign all_counts = all_counts | push: total %}
 {% endfor %}
 
-{% comment %} 生成图表URL {% endcomment %}
+{% comment %} 生成图表URL（必须在HTML元素之前）{% endcomment %}
 {% capture all_chart_url %}https://quickchart.io/chart?c={
   "type": "bar",
   "data": {
@@ -188,6 +188,7 @@ tr:last-child td {
   }
 }{% endcapture %}
 
+{% comment %} ==== 图表容器（必须放在capture之后）==== {% endcomment %}
 <div id="all-chart">
   <img src="{{ all_chart_url | uri_escape }}" alt="All Papers" style="width:100%;max-width:800px;">
 </div>
