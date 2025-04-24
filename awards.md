@@ -4,7 +4,7 @@ permalink: /awards
 title: Awards
 ---
 
-> **Last Update:** Feb 10, 2025
+> **Last Update:** Apr 24, 2025
 
 # Awards
 
@@ -36,10 +36,19 @@ title: Awards
 
 # Meetings
 
-Keep track of the meetings I've been to.
+{% assign meeting_count = 0 %}
+{% for item in page.content %}
+  {% if item contains "meeting_card.html" %}
+    {% assign meeting_count = meeting_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+Keep track of the meetings I've been to. <span style="font-size: 0.9em; color: #666;">(Total: {{ meeting_count }} meetings)</span>
+
 <div style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 10px;">
   <ul>
 
+  {% increment meeting_count %}
   {% include meeting_card.html 
   date="Apr 19, 2025" 
   role="PRESENTER" 
@@ -48,27 +57,30 @@ Keep track of the meetings I've been to.
   photo="250420.jpg"
   ppt="250420.pdf" %}
 
+  {% increment meeting_count %}
   {% include meeting_card.html 
   date="Jan 14, 2025" 
   role="VOLUNTEER" 
-  title="2025 Chongqing Symposium on Gravity and Cosmology" 
+  title="The 2025 Chongqing Symposium on Gravity and Cosmology" 
   location="Chongqing, China" 
   photo="250114.jpg" %}
   
   <!-- {% include meeting_card.html 
   date="Apr 19, 2024" 
   role="PRESENTER" 
-  title="2024 Annual Meeting of Gravitation and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting" 
+  title="The 2024 Annual Meeting of Gravitation and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting" 
   location="Hengyang, Hunan, China" 
   photo="240419.jpg" 
   ppt="240419.pdf" %} -->
 
+  {% increment meeting_count %}
   {% include meeting_card.html 
   date="Apr 19, 2024" 
   role="PRESENTER" 
-  title="2024 Annual Meeting of Gravitation and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting" 
+  title="The 2024 Annual Meeting of Gravitation and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting" 
   location="Hengyang, Hunan, China" %}
   
+  {% increment meeting_count %}
   {% include meeting_card.html 
   date="Apr 9, 2024" 
   role="PARTICIPANT" 
@@ -76,32 +88,40 @@ Keep track of the meetings I've been to.
   location="Beijing, China" 
   photo="240409.jpg" %}
 
+  {% increment meeting_count %}
   {% include meeting_card.html 
   date="Oct 28, 2023" 
   role="PARTICIPANT" 
-  title="2023 Electrodynamics textbook and course construction seminar" 
+  title="The 2023 Electrodynamics textbook and course construction seminar" 
   location="Chongqing, China" 
   photo="231028.jpg" %}
 
+  {% increment meeting_count %}
   {% include meeting_card.html 
   date="Oct 13, 2023" 
-  role="PARTICIPANT" title="2023 Academic Symposium on the Frontiers of Theoretical Physics in Sichuan Chongqing Region" 
+  role="PARTICIPANT" 
+  title="The 2023 Academic Symposium on the Frontiers of Theoretical Physics in Sichuan Chongqing Region" 
   location="Chengdu, Sichuan, China" 
   photo="231013.jpg" %}
 
+  {% increment meeting_count %}
   {% include meeting_card.html 
   date="Apr 22, 2023" 
   role="VOLUNTEER" 
-  title="2023 Annual Meeting of the Chinese Physical Society, Division of Gravitation and Relativity Astrophysics" 
+  title="The 2023 Annual Meeting of the Chinese Physical Society, Division of Gravitation and Relativity Astrophysics" 
   location="Chongqing, China" %}
 
+  {% increment meeting_count %}
   {% include meeting_card.html 
-  date="Apr 21, 2023" role="VOLUNTEER" 
+  date="Apr 21, 2023" 
+  role="VOLUNTEER" 
   title="Template Library and Signal Recognition Technology for Space Gravitational Wave Detection 2022 Annual Progress Conference" 
   location="Chongqing, China" %}
 
+  {% increment meeting_count %}
   {% include meeting_card.html 
-  date="Apr 1, 2023" role="PARTICIPANT" 
+  date="Apr 1, 2023" 
+  role="PARTICIPANT" 
   title="Chongqing Theoretical Physics Frontier Academic Seminar" 
   location="Chongqing, China" 
   photo="230401.jpg" %}
