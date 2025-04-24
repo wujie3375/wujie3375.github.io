@@ -41,19 +41,27 @@ Keep track of the meetings I've been to.
   <ul>
 
   {% include meeting_card.html 
+  date="Apr 19, 2025" 
+  role="PRESENTER" 
+  title="The 2025 Annual Academic Conference and National Congress of the Gravitation and Relativistic Astrophysics Branch of the Chinese Physical Society." 
+  location="Kunming, Yunnan, China" 
+  photo="250420.jpg"
+  ppt="250420.pdf" %}
+
+  {% include meeting_card.html 
   date="Jan 14, 2025" 
   role="VOLUNTEER" 
   title="2025 Chongqing Symposium on Gravity and Cosmology" 
   location="Chongqing, China" 
-  photo="https://wujie3375.github.io/images/meeting/250114.jpg" %}
+  photo="250114.jpg" %}
   
   <!-- {% include meeting_card.html 
   date="Apr 19, 2024" 
   role="PRESENTER" 
   title="2024 Annual Meeting of Gravitation and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting" 
   location="Hengyang, Hunan, China" 
-  photo="https://wujie3375.github.io/images/meeting/240419.jpg" 
-  ppt="https://wujie3375.github.io/images/meeting/240419.pdf" %} -->
+  photo="240419.jpg" 
+  ppt="240419.pdf" %} -->
 
   {% include meeting_card.html 
   date="Apr 19, 2024" 
@@ -66,20 +74,20 @@ Keep track of the meetings I've been to.
   role="PARTICIPANT" 
   title="The 2nd International Workshop on Gravitational Waves and the Early Universe" 
   location="Beijing, China" 
-  photo="https://wujie3375.github.io/images/meeting/240409.jpg" %}
+  photo="240409.jpg" %}
 
   {% include meeting_card.html 
   date="Oct 28, 2023" 
   role="PARTICIPANT" 
   title="2023 Electrodynamics textbook and course construction seminar" 
   location="Chongqing, China" 
-  photo="https://wujie3375.github.io/images/meeting/231028.jpg" %}
+  photo="231028.jpg" %}
 
   {% include meeting_card.html 
   date="Oct 13, 2023" 
   role="PARTICIPANT" title="2023 Academic Symposium on the Frontiers of Theoretical Physics in Sichuan Chongqing Region" 
   location="Chengdu, Sichuan, China" 
-  photo="https://wujie3375.github.io/images/meeting/231013.jpg" %}
+  photo="231013.jpg" %}
 
   {% include meeting_card.html 
   date="Apr 22, 2023" 
@@ -96,7 +104,7 @@ Keep track of the meetings I've been to.
   date="Apr 1, 2023" role="PARTICIPANT" 
   title="Chongqing Theoretical Physics Frontier Academic Seminar" 
   location="Chongqing, China" 
-  photo="https://wujie3375.github.io/images/meeting/230401.jpg" %}
+  photo="230401.jpg" %}
 
 </ul>
 </div>
