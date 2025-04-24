@@ -36,12 +36,7 @@ title: Awards
 
 # Meetings
 
-{% assign meeting_count = 0 %}
-{% for item in page.content %}
-  {% if item contains "meeting_card.html" %}
-    {% assign meeting_count = meeting_count | plus: 1 %}
-  {% endif %}
-{% endfor %}
+
 
 Keep track of the meetings I've been to. <span style="font-size: 0.9em; color: #666;">(Total: {{ meeting_count }} meetings)</span>
 
@@ -128,7 +123,12 @@ Keep track of the meetings I've been to. <span style="font-size: 0.9em; color: #
 
 </ul>
 </div>
-
+{% assign meeting_count = 0 %}
+{% for item in page.content %}
+  {% if item contains "meeting_card.html" %}
+    {% assign meeting_count = meeting_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
 ---
 
 > I don't really see the point in writing these; just think of them as a way to keep track, kind of like collecting stamps. (●-●)
