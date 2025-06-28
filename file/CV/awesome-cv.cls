@@ -83,6 +83,82 @@
 % Needed to deal hyperlink
 \RequirePackage{mathptmx}
 \RequirePackage[hidelinks,unicode]{hyperref}
+% =========================================================
+\RequirePackage[%
+  backend=biber,
+  style=ieee,
+  sorting=none,
+  maxbibnames=99,
+  giveninits=true, % 缩写=true
+]{biblatex}
+
+% ===== 精确匹配您的格式 =====
+% 1. 名称格式：名在前姓在后
+\DeclareNameAlias{default}{given-family}
+
+% 2. 特殊处理作者姓名
+\renewcommand*{\mkbibnamefamily}[1]{%
+  \ifdefstring{\namepartfamily}{Wu}{%
+    \ifboolexpr{
+      test {\ifdefstring{\namepartgiven}{Jie}} or 
+      test {\ifdefstring{\namepartgiven}{J.}}
+    }{%
+      \let\finalnamedelim\finalskip% 抑制姓后处理
+      \textbf{\underline{J. Wu}}% 输出完整加粗下划线姓名
+    }{%
+      #1% 非目标Wu姓正常显示
+    }%
+  }{%
+    #1% 非Wu姓正常显示
+  }%
+}
+
+\renewcommand*{\mkbibnamegiven}[1]{%
+  \ifdefstring{\namepartfamily}{Wu}{%
+    \ifboolexpr{
+      test {\ifdefstring{\namepartgiven}{Jie}} or 
+      test {\ifdefstring{\namepartgiven}{J.}}
+    }{%
+      % 完全跳过名字处理
+    }{%
+      #1% 非目标Wu姓正常显示
+    }%
+  }{%
+    #1% 非Wu姓正常显示
+  }%
+}
+
+% 3. 标题格式：不加引号、不斜体
+\DeclareFieldFormat{title}{#1\isdot}  % 移除标题引号
+
+% 4. 期刊名称格式：斜体
+\DeclareFieldFormat[article]{journaltitle}{\textit{#1}}
+
+% 5. 卷号格式：加粗
+\DeclareFieldFormat[article]{volume}{\textbf{#1}}
+\DeclareFieldFormat[article]{number}{#1}  % 移除期号前的"no."
+% 6. 页码格式：无"pp."前缀
+\DeclareFieldFormat{pages}{#1}
+
+% 7. 年份格式：放在括号中
+% 修改日期格式显示：仅显示年份
+\DeclareFieldFormat{date}{\mkbibparens{#1}}
+
+% 8. arXiv格式：无额外修饰
+\DeclareFieldFormat{eprint}{arXiv:#1}
+
+\DeclareFieldFormat{eprintclass}{}  % 移除primaryClass显示
+\DeclareFieldFormat{doi}{}
+
+% 9. 作者间分隔符
+\renewcommand{\multinamedelim}{\addcomma\space}
+\renewcommand{\finalnamedelim}{\addspace and\space} % 最后两位作者间加"and"
+
+% 11. 条目间距
+\setlength{\bibitemsep}{0.5\baselineskip}
+
+% ===== 自定义结束 =====
+% =========================================================
 \hypersetup{%
   pdftitle={},
   pdfauthor={},
