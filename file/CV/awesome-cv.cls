@@ -89,7 +89,7 @@
   style=ieee,
   sorting=none,
   maxbibnames=99,
-  giveninits=true, % 缩写=true
+  giveninits=false, % 缩写=true
 ]{biblatex}
 
 % ===== 精确匹配您的格式 =====
@@ -104,7 +104,7 @@
       test {\ifdefstring{\namepartgiven}{J.}}
     }{%
       \let\finalnamedelim\finalskip% 抑制姓后处理
-      \textbf{\underline{J. Wu}}% 输出完整加粗下划线姓名
+      \textbf{\underline{Jie Wu}}% 输出完整加粗下划线姓名
     }{%
       #1% 非目标Wu姓正常显示
     }%
