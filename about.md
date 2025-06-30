@@ -33,16 +33,22 @@ title: About
  
 
 
-<p style="text-indent: 1.5em;">Hi there! Welcome to my personal website!</p>
+<p style="text-indent: 1.5em;">Hi there! Welcome to my personal corner of the internet!</p>
 
-I'm **Jie Wu**, a PhD student in physics (still working hard at it). 
-I'm really excited about diving into the mysteries of the universe and can't wait to learn more about what we don't know. 
-I love physics, astronomy, and aerospace because they give me a great insight into how nature and the universe work.
+I’m **Jie Wu**, a PhD student in Physics at **Chongqing University**, tuning in to the universe’s faintest whispers—**gravitational waves**. I spend my days wrangling signals, crunching mountains of data, and dreaming up clever ways to catch those sneaky ripples in spacetime—then chasing the answers with code, data, and (lots of) coffee.
 
-Right now, I'm studying physics at Chongqing University, and my advisor is [Prof. Jin Li](https://inspirehep.net/authors/1456898?ui-citation-summary=true&ui-exclude-self-citations=true). 
-In the last few years, I've been diving into gravitational wave research. It not only helped me get a better grasp of the subject but also equipped me with some essential research skills. Looking ahead, I’m excited to take my research further, explore new technologies and methods for detecting space gravitational waves, and contribute to advancing this field.
+My big dream? To unravel the essence of the universe and the fundamental rules that govern everything, hoping to make a meaningful impact in this field someday… but for now, let’s just focus on graduating smoothly with as few gray hairs as possible.
 
-If you are interested in any aspect of me, I would love to chat and collaborate, please email me at **wujie3375@gmail.com**.
+What gets me fired up:
+
+- **Physics & Astronomy** — because figuring out how the cosmos works never gets old 🔭  
+- **Aerospace** — rockets, satellites, and all the crazy tech that gets us off this little blue planet 🚀  
+- **Photography** — capturing earthbound beauty while staring at the stars 📷  
+
+(Oh, and if you’re wondering: I’m an *INTJ*—the classic big-picture thinker who loves details, plans everything, and drinks way too much coffee.)
+
+Got something cool to share? Hit me up anytime at **wujie3375@gmail.com**.  
+Can’t wait to explore the universe together—one gravitational wave (and one cup of coffee) at a time!
 
 ---
 

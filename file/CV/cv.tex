@@ -62,7 +62,7 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-% \photo[rectangle,noedge,right]{wujie.jpg}
+\photo[rectangle,noedge,right]{wujie.jpg}
 \name{}{Jie Wu}
 \position{PhD student in Physics}
 \address{College of Physics, Chongqing University, Chongqing 401331, China}
@@ -70,6 +70,8 @@
 % \mobile{(+86) 158-9231-2622}
 \email{wujie3375@gmail.com}
 \homepage{wujie3375.github.io}
+\googlescholar{AkklhIoAAAAJ}{Google Scholar}
+
 % \github{wujie3375}
 % \linkedin{posquit0}
 % \gitlab{gitlab-id}
@@ -80,7 +82,6 @@
 % \medium{madium-id}
 % \googlescholar{googlescholar-id}{name-to-display}
 %% \firstname and \lastname will be used
-\googlescholar{AkklhIoAAAAJ}{Google Scholar}
 % \extrainfo{extra informations}
 
 % \quote{``Be the change that you want to see in the world."}
@@ -90,7 +91,7 @@
 
 % Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader[C]
+\makecvheader[L]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
@@ -102,9 +103,10 @@
 
 %-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
-%	Each section is imported separately, open each file in turn to modify content
+	% Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 
+\input{cv/about}
 \input{cv/research}
 \input{cv/education.tex}
 \input{cv/experience.tex}
