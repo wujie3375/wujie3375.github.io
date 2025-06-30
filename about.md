@@ -35,17 +35,22 @@ title: About
 
 <p style="text-indent: 1.5em;">Hi there! Welcome to my personal corner of the internet!</p>
 
-I’m **Jie Wu**, a PhD ~~(Patiently hoping for the degree)~~ student in Physics at **Chongqing University**, tuning in to the universe’s faintest whispers—**gravitational waves**. I spend my days wrangling signals, crunching mountains of data, and dreaming up clever ways to catch those sneaky ripples in spacetime—then chasing the answers with code, data, and (lots of) coffee.
+I’m **Jie Wu**, a PhD student in Physics at **Chongqing University**, tuning in to the universe’s faintest whispers—**gravitational waves**. I spend my days wrangling signals, crunching mountains of data, and dreaming up clever ways to catch those sneaky ripples in spacetime—then chasing the answers with code, data, and (lots of) coffee.
 
 My big dream? To unravel the essence of the universe and the fundamental rules that govern everything, hoping to make a meaningful impact in this field someday… but for now, let’s just focus on graduating smoothly with as few gray hairs as possible.
 
 ### What gets me fired up:
 
-- **Physics & Astronomy** — exploring the underlying rules of the universe never stops being fascinating 🔭  
-- **Aerospace** — rockets, satellites, and all that space stuff… just seriously cool 🚀  
-- **Photography** — capturing the trails of the stars and recording beauty from a different angle 📷  
-- **Aircraft** — there's something oddly satisfying about the order and scale of big transportation systems ✈️  
-- **Anime** — experiencing emotions and stories that hit differently, in the best way 🎬  
+- **Physics & Astronomy** 
+  exploring the underlying rules of the universe never stops being fascinating 🔭  
+- **Aerospace** 
+  rockets, satellites, and all that space stuff… just seriously cool 🚀  
+- **Photography** 
+  capturing the trails of the stars and recording beauty from a different angle 📷  
+- **Aircraft** 
+  there's something oddly satisfying about the order and scale of big transportation systems ✈️  
+- **Anime** 
+  experiencing emotions and stories that hit differently, in the best way 🎬  
 
 
 <p style="text-indent: 1.5em;">Oh, and if you’re wondering: I’m an <em>INTJ</em>—Emotionally stable as a brick, verbally economical as a desert, and empathetically equipped like a toaster.​</p>
@@ -142,9 +147,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 
 
 <div style="text-align: center;">
-  <!-- 插入名字图片 -->
   <img src="https://wujie3375.github.io\images\eq.png" alt="eq" style="width: 250px; vertical-align: middle;">
-  
-  <!-- 日期和地点 -->
   <p style="margin: 25px 0;">(be greater than average)</p>
 </div>
+
