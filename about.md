@@ -48,12 +48,12 @@ My big dream? To unravel the essence of the universe and the fundamental rules t
 - **Photography**  
   capturing the trails of the stars and recording beauty from a different angle 📷  
 - **Aircraft**  
-  there's something oddly satisfying about the order and scale of big transportation systems ✈️  
+  there's a strange joy in watching giant machines stay on schedule. ✈️  
 - **Anime**  
   experiencing emotions and stories that hit differently, in the best way 🎬  
 
 
-<p style="text-indent: 1.5em;">Oh, and if you’re wondering: I’m an <em>INTJ</em>—Emotionally stable as a brick, verbally economical as a desert, and empathetically equipped like a toaster.​</p>
+Oh, and if you’re wondering: I’m an <em>INTJ</em>—Emotionally stable as a brick, verbally economical as a desert, and empathetically equipped like a toaster.​
 
 Got something cool to share? Hit me up anytime at **wujie3375@gmail.com**. Can’t wait to explore the universe together—one gravitational wave (and one cup of coffee) at a time!
 
