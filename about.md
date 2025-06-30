@@ -41,15 +41,15 @@ My big dream? To unravel the essence of the universe and the fundamental rules t
 
 ### What gets me fired up:
 
-- **Physics & Astronomy** 
+- **Physics & Astronomy**  
   exploring the underlying rules of the universe never stops being fascinating 🔭  
-- **Aerospace** 
+- **Aerospace**  
   rockets, satellites, and all that space stuff… just seriously cool 🚀  
-- **Photography** 
+- **Photography**  
   capturing the trails of the stars and recording beauty from a different angle 📷  
-- **Aircraft** 
+- **Aircraft**  
   there's something oddly satisfying about the order and scale of big transportation systems ✈️  
-- **Anime** 
+- **Anime**  
   experiencing emotions and stories that hit differently, in the best way 🎬  
 
 
