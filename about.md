@@ -48,7 +48,7 @@ My big dream? To unravel the essence of the universe and the fundamental rules t
 - **Photography**  
   capturing the trails of the stars and recording beauty from a different angle 📷  
 - **Aircraft**  
-  there's a strange joy in watching giant machines fly in the sky ✈️  
+  there's a strange joy in watching giant machines stay in the sky ✈️  
 - **Anime**  
   experiencing emotions and stories that hit differently, in the best way 🎬  
 
