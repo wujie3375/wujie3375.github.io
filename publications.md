@@ -64,7 +64,7 @@ tr:last-child td {
     "datasets": [
       {
         "label": "First author",
-        "data": [{% for y in years %}{{ y.items | where: 'highlight_author', 1 | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+        "data": [{% for y in years %}{{ y.items | where: 'first_or_not', true | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
         "backgroundColor": "rgba(54, 162, 235, 0.8)"
       },
       {
@@ -99,7 +99,7 @@ tr:last-child td {
 {% assign non_first_author_preprint = 0 %}
 
 {% for pub in publications %}
-  {% if pub.highlight_author == 1 %}
+  {% if pub.first_or_not == true %}
     {% if pub.journal != false %}
       {% assign first_author_published = first_author_published | plus: 1 %}
     {% endif %}
