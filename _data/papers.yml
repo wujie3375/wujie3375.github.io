@@ -27,7 +27,7 @@
   arxiv: "2503.19512"
   pdf: "https://wujie3375.github.io/file/250326.pdf"
   highlight_author: 2
-  first_or_not: true
+  first_or_not: false
   etal: 4
 
 - year: 2025
