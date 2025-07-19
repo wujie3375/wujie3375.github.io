@@ -19,6 +19,66 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{Wu:2025cun}{article}{}
+      \name{author}{6}{}{%
+        {{hash=d14d813400632d1540675e5edb94d60a}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6bb0baf779cb3a241d71472430c78e87}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Mengfei},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b0e1cd365a3930460efcfce94a996532}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Xianghe},
+           giveni={X\bibinitperiod}}}%
+        {{hash=920af63650589e36aa5a4979cb55af7f}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Xiaolin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=f9010dd01bbf8aec0b41e109b57e9858}{%
+           family={Li*},
+           familyi={L\bibinitperiod},
+           given={Jin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c50179803f49c1eac376059fb6190414}{%
+           family={Cao*},
+           familyi={C\bibinitperiod},
+           given={Zhoujian},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{11ff1f9f75e56dbcd4e7914974507747}
+      \strng{fullhash}{0b9b1b42f4bd360a34c81b6b43e381b5}
+      \strng{bibnamehash}{0b9b1b42f4bd360a34c81b6b43e381b5}
+      \strng{authorbibnamehash}{0b9b1b42f4bd360a34c81b6b43e381b5}
+      \strng{authornamehash}{11ff1f9f75e56dbcd4e7914974507747}
+      \strng{authorfullhash}{0b9b1b42f4bd360a34c81b6b43e381b5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{month}{7}
+      \field{number}{2}
+      \field{title}{{Effect of kick velocity on gravitational wave detection of binary black holes with space- and ground-based detectors}}
+      \field{volume}{112}
+      \field{year}{2025}
+      \true{nocite}
+      \field{pages}{024040}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/2qg3-w39y
+      \endverb
+      \verb{eprint}
+      \verb 2502.13710
+      \endverb
+    \endentry
     \entry{Sun:2025afb}{article}{}
       \name{author}{8}{}{%
         {{hash=6bb0baf779cb3a241d71472430c78e87}{%
@@ -68,8 +128,8 @@
       \strng{authorbibnamehash}{72df629f965a6a4f0112a724b77b3f93}
       \strng{authornamehash}{1cded9e5af7257f65f93e2e15ef5da14}
       \strng{authorfullhash}{72df629f965a6a4f0112a724b77b3f93}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -79,58 +139,6 @@
       \true{nocite}
       \verb{eprint}
       \verb 2503.19512
-      \endverb
-    \endentry
-    \entry{Wu:2025cun}{article}{}
-      \name{author}{6}{}{%
-        {{hash=d14d813400632d1540675e5edb94d60a}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Jie},
-           giveni={J\bibinitperiod}}}%
-        {{hash=6bb0baf779cb3a241d71472430c78e87}{%
-           family={Sun},
-           familyi={S\bibinitperiod},
-           given={Mengfei},
-           giveni={M\bibinitperiod}}}%
-        {{hash=b0e1cd365a3930460efcfce94a996532}{%
-           family={Ma},
-           familyi={M\bibinitperiod},
-           given={Xianghe},
-           giveni={X\bibinitperiod}}}%
-        {{hash=920af63650589e36aa5a4979cb55af7f}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Xiaolin},
-           giveni={X\bibinitperiod}}}%
-        {{hash=f9010dd01bbf8aec0b41e109b57e9858}{%
-           family={Li*},
-           familyi={L\bibinitperiod},
-           given={Jin},
-           giveni={J\bibinitperiod}}}%
-        {{hash=c50179803f49c1eac376059fb6190414}{%
-           family={Cao*},
-           familyi={C\bibinitperiod},
-           given={Zhoujian},
-           giveni={Z\bibinitperiod}}}%
-      }
-      \strng{namehash}{11ff1f9f75e56dbcd4e7914974507747}
-      \strng{fullhash}{0b9b1b42f4bd360a34c81b6b43e381b5}
-      \strng{bibnamehash}{0b9b1b42f4bd360a34c81b6b43e381b5}
-      \strng{authorbibnamehash}{0b9b1b42f4bd360a34c81b6b43e381b5}
-      \strng{authornamehash}{11ff1f9f75e56dbcd4e7914974507747}
-      \strng{authorfullhash}{0b9b1b42f4bd360a34c81b6b43e381b5}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
-      \field{month}{2}
-      \field{title}{{Effect of kick velocity on gravitational wave detection of binary black holes with space- and ground-based detectors}}
-      \field{year}{2025}
-      \true{nocite}
-      \verb{eprint}
-      \verb 2502.13710
       \endverb
     \endentry
     \entry{Ma:2025whs}{article}{}
@@ -476,6 +484,66 @@
 
 \refsection{1}
   \datalist[entry]{none/global//global/global}
+    \entry{Wu:2025cun}{article}{}
+      \name{author}{6}{}{%
+        {{hash=d14d813400632d1540675e5edb94d60a}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6bb0baf779cb3a241d71472430c78e87}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Mengfei},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b0e1cd365a3930460efcfce94a996532}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Xianghe},
+           giveni={X\bibinitperiod}}}%
+        {{hash=920af63650589e36aa5a4979cb55af7f}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Xiaolin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=f9010dd01bbf8aec0b41e109b57e9858}{%
+           family={Li*},
+           familyi={L\bibinitperiod},
+           given={Jin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c50179803f49c1eac376059fb6190414}{%
+           family={Cao*},
+           familyi={C\bibinitperiod},
+           given={Zhoujian},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{11ff1f9f75e56dbcd4e7914974507747}
+      \strng{fullhash}{0b9b1b42f4bd360a34c81b6b43e381b5}
+      \strng{bibnamehash}{0b9b1b42f4bd360a34c81b6b43e381b5}
+      \strng{authorbibnamehash}{0b9b1b42f4bd360a34c81b6b43e381b5}
+      \strng{authornamehash}{11ff1f9f75e56dbcd4e7914974507747}
+      \strng{authorfullhash}{0b9b1b42f4bd360a34c81b6b43e381b5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{month}{7}
+      \field{number}{2}
+      \field{title}{{Effect of kick velocity on gravitational wave detection of binary black holes with space- and ground-based detectors}}
+      \field{volume}{112}
+      \field{year}{2025}
+      \true{nocite}
+      \field{pages}{024040}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/2qg3-w39y
+      \endverb
+      \verb{eprint}
+      \verb 2502.13710
+      \endverb
+    \endentry
     \entry{Sun:2025afb}{article}{}
       \name{author}{8}{}{%
         {{hash=6bb0baf779cb3a241d71472430c78e87}{%
@@ -525,8 +593,8 @@
       \strng{authorbibnamehash}{72df629f965a6a4f0112a724b77b3f93}
       \strng{authornamehash}{1cded9e5af7257f65f93e2e15ef5da14}
       \strng{authorfullhash}{72df629f965a6a4f0112a724b77b3f93}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -536,58 +604,6 @@
       \true{nocite}
       \verb{eprint}
       \verb 2503.19512
-      \endverb
-    \endentry
-    \entry{Wu:2025cun}{article}{}
-      \name{author}{6}{}{%
-        {{hash=d14d813400632d1540675e5edb94d60a}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Jie},
-           giveni={J\bibinitperiod}}}%
-        {{hash=6bb0baf779cb3a241d71472430c78e87}{%
-           family={Sun},
-           familyi={S\bibinitperiod},
-           given={Mengfei},
-           giveni={M\bibinitperiod}}}%
-        {{hash=b0e1cd365a3930460efcfce94a996532}{%
-           family={Ma},
-           familyi={M\bibinitperiod},
-           given={Xianghe},
-           giveni={X\bibinitperiod}}}%
-        {{hash=920af63650589e36aa5a4979cb55af7f}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Xiaolin},
-           giveni={X\bibinitperiod}}}%
-        {{hash=f9010dd01bbf8aec0b41e109b57e9858}{%
-           family={Li*},
-           familyi={L\bibinitperiod},
-           given={Jin},
-           giveni={J\bibinitperiod}}}%
-        {{hash=c50179803f49c1eac376059fb6190414}{%
-           family={Cao*},
-           familyi={C\bibinitperiod},
-           given={Zhoujian},
-           giveni={Z\bibinitperiod}}}%
-      }
-      \strng{namehash}{11ff1f9f75e56dbcd4e7914974507747}
-      \strng{fullhash}{0b9b1b42f4bd360a34c81b6b43e381b5}
-      \strng{bibnamehash}{0b9b1b42f4bd360a34c81b6b43e381b5}
-      \strng{authorbibnamehash}{0b9b1b42f4bd360a34c81b6b43e381b5}
-      \strng{authornamehash}{11ff1f9f75e56dbcd4e7914974507747}
-      \strng{authorfullhash}{0b9b1b42f4bd360a34c81b6b43e381b5}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
-      \field{month}{2}
-      \field{title}{{Effect of kick velocity on gravitational wave detection of binary black holes with space- and ground-based detectors}}
-      \field{year}{2025}
-      \true{nocite}
-      \verb{eprint}
-      \verb 2502.13710
       \endverb
     \endentry
     \entry{Ma:2025whs}{article}{}
