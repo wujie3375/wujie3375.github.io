@@ -32,12 +32,12 @@
   title: "Effect of kick velocity on gravitational wave detection of binary black holes with space- and ground-based detectors"
   subtitle: false
   authors: "Jie Wu, Mengfei Sun, Xianghe Ma, Xiaolin Liu, Jin Li*, Zhoujian Cao*"
-  date: "Feb 19, 2025"
-  sortable_date: '2025-02-19'
-  journal: false
-  journal_link: false
-  volume: false
-  article_number: false
+  date: "Jul 18, 2025"
+  sortable_date: '2025-7-18'
+  journal: "Phys.Rev.D"
+  journal_link: "https://journals.aps.org/prd/abstract/10.1103/2qg3-w39y"
+  volume: "112"
+  article_number: "024040"
   arxiv: "2502.13710"
   pdf: "https://wujie3375.github.io/file/250219.pdf"
   highlight_author: 1
