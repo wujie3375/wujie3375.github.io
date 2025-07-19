@@ -4,7 +4,7 @@
   authors: "Jie Wu, Mengfei Sun, Xianghe Ma, Xiaolin Liu, Jin Li*, Zhoujian Cao*"
   date: "Jul 18, 2025"
   sortable_date: '2025-7-18'
-  journal: "Phys.Rev.D"
+  journal: "Phys. Rev. D"
   journal_link: "https://journals.aps.org/prd/abstract/10.1103/2qg3-w39y"
   volume: "112"
   article_number: "024040"
@@ -84,7 +84,7 @@
   authors: "Jie Wu, Jin Li*"
   date: "Oct 22, 2024"
   sortable_date: '2024-10-22'
-  journal: "Phys.Rev.D"
+  journal: "Phys. Rev. D"
   journal_link: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.084057"
   volume: "110"
   article_number: "084057"
@@ -100,7 +100,7 @@
   authors: "Jie Wu, Jin Li*, Xiaolin Liu, Zhoujian Cao"
   date: "May 7, 2024"
   sortable_date: '2024-05-07'
-  journal: "Phys.Rev.D"
+  journal: "Phys. Rev. D"
   journal_link: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.104014"
   volume: "109"
   article_number: "104014"
@@ -116,7 +116,7 @@
   authors: "Jie Wu, Jin Li*"
   date: "Dec 18, 2023"
   sortable_date: '2023-12-18'
-  journal: "Phys.Rev.D"
+  journal: "Phys. Rev. D"
   journal_link: "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.124047"
   volume: "108"
   article_number: "124047"
@@ -132,7 +132,7 @@
   authors: "Jie Wu, Jin Li*, Qing-Quan Jiang*"
   date: "Sep 1, 2023"
   sortable_date: '2023-09-01'
-  journal: "Chin.Phys.B"
+  journal: "Chin. Phys. B"
   journal_link: "https://iopscience.iop.org/article/10.1088/1674-1056/acd8a3"
   volume: "32"
   article_number: "090401"
