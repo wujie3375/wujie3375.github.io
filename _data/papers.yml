@@ -11,8 +11,9 @@
   arxiv: "2502.13710"
   pdf: "https://wujie3375.github.io/file/250219.pdf"
   highlight_author: 1
+  first_or_not: true
   etal: 4
-  
+
 - year: 2025
   title: "Conditional Autoencoder for Generating Binary Neutron Star Waveforms with Tidal and Precession Effects"
   subtitle: false
@@ -26,6 +27,7 @@
   arxiv: "2503.19512"
   pdf: "https://wujie3375.github.io/file/250326.pdf"
   highlight_author: 2
+  first_or_not: true
   etal: 4
 
 - year: 2025
@@ -41,6 +43,7 @@
   arxiv: "2502.11804"
   pdf: "https://wujie3375.github.io/file/250217.pdf"
   highlight_author: 7
+  first_or_not: false
   etal: 4
 
 - year: 2025
@@ -56,6 +59,7 @@
   arxiv: false
   pdf: "https://wujie3375.github.io/file/241223.pdf"
   highlight_author: 2
+  first_or_not: false
   etal: 4
 
 - year: 2024
@@ -71,6 +75,7 @@
   arxiv: "2411.03631"
   pdf: "https://wujie3375.github.io/file/241106.pdf"
   highlight_author: 1
+  first_or_not: true
   etal: 4
 
 - year: 2024
@@ -86,6 +91,7 @@
   arxiv: "2407.13590"
   pdf: "https://wujie3375.github.io/file/240924.pdf"
   highlight_author: 1
+  first_or_not: true
   etal: 4
 
 - year: 2024
@@ -101,6 +107,7 @@
   arxiv: "2401.03113"
   pdf: "https://wujie3375.github.io/file/240406.pdf"
   highlight_author: 1
+  first_or_not: true
   etal: 4
 
 - year: 2023
@@ -116,6 +123,7 @@
   arxiv: "2307.05568"
   pdf: "https://wujie3375.github.io/file/231130.pdf"
   highlight_author: 1
+  first_or_not: true
   etal: 4
 
 - year: 2023
@@ -131,4 +139,5 @@
   arxiv: false
   pdf: "https://wujie3375.github.io/file/230525.pdf"
   highlight_author: 1
+  first_or_not: true
   etal: 4

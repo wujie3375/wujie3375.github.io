@@ -45,7 +45,7 @@ tr:last-child td {
 }
 </style>
 
-> **Last Update:** Mar 26, 2025
+> **Last Update:** Jul 19, 2025
 
 # Publications
 
@@ -223,10 +223,10 @@ tr:last-child td {
 
 <!-- 默认隐藏一作文章 -->
 <div id="first-author-only" style="display: none;">
-  {% assign filtered_publications = publications | where: "highlight_author", 1 %}
+  {% assign filtered_publications = publications | where: "first_or_not", true %}
   {% assign total_number = filtered_publications.size %}
   {% for group in grouped_publications %}
-    {% assign filtered_group_items = group.items | where: "highlight_author", 1 %}
+    {% assign filtered_group_items = group.items | where: "first_or_not", true %}
     {% if filtered_group_items.size > 0 %}
       <p style="text-indent: 0;font-size:36px;margin-bottom:0.61875rem;text-rendering:optimizeLegibility;line-height:1;margin-top:0;font-family:'PT Sans Narrow',sans-serif;font-weight:700;">{{ group.name }}</p>
       {% for pub in filtered_group_items %}
