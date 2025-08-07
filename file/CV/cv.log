@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.30)  19 JUL 2025 10:30
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.30)  7 AUG 2025 09:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1110,7 +1110,12 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/n' will be
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
 (Font)              scaled to size 10.95pt on input line 62.
 
-Overfull \hbox (4.61447pt too wide) in paragraph at lines 65--65
+Overfull \hbox (1.43105pt too wide) in paragraph at lines 65--65
+[]\TU/SourceSansPro(0)/m/n/10.95 Mengfei Sun, $[]$, Jin Li*, Brendan Mccane, Nan Yang, Xianghe Ma, Borui Wang and Minghui Zhang,
+ []
+
+
+Overfull \hbox (10.05663pt too wide) in paragraph at lines 65--65
 [] $[]$\TU/SourceSansPro(0)/m/n/10.95 , Jin Li*, Xiaolin Liu and Zhoujian Cao, “Comparison and application of different post-Newtonian
  []
 
@@ -1127,10 +1132,10 @@ Package logreq Info: Writing requests to 'cv.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39994 strings out of 474773
- 817155 string characters out of 5754168
+ 39998 strings out of 474773
+ 817331 string characters out of 5754168
  1951842 words of memory out of 5000000
- 61520 multiletter control sequences out of 15000+600000
+ 61524 multiletter control sequences out of 15000+600000
  564524 words of font info for 122 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  116i,12n,121p,1053b,5226s stack positions out of 10000i,1000n,20000p,200000b,200000s
