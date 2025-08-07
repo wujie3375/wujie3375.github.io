@@ -1,4 +1,20 @@
 - year: 2025
+  title: "Probing globular clusters using modulated gravitational waves from binary black holes"
+  subtitle: false
+  authors: "Jie Wu, Yao Xiao, Mengfei Sun, Jin Li*"
+  date: "Aug 6, 2025"
+  sortable_date: '2025-08-06'
+  journal: false
+  journal_link: false
+  volume: false
+  article_number: false
+  arxiv: "2508.04021"
+  pdf: "https://wujie3375.github.io/file/250806.pdf"
+  highlight_author: 1
+  first_or_not: true
+  etal: 4
+
+- year: 2025
   title: "Effect of kick velocity on gravitational wave detection of binary black holes with space- and ground-based detectors"
   subtitle: false
   authors: "Jie Wu, Mengfei Sun, Xianghe Ma, Xiaolin Liu, Jin Li*, Zhoujian Cao*"
