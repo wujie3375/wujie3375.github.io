@@ -8,7 +8,85 @@
   <h3>{{ site.owner.name }}</h3>
 </div>
 
-<pre style="text-indent:0; font-family: 'sans-serif'; font-size: 15px;">{{ site.owner.bio }}</pre>
+<pre style="text-indent:0; font-family: 'PT Sans Narrow'; font-size: 15px;">{{ site.owner.bio }}</pre>
+
+<style>
+  .profile-links { text-align: left; }
+  .profile-links p {
+    margin: 0 0 14px 0;
+    font-size: 16px; line-height: 20px;
+    display: flex; align-items: center;
+    gap: 10px;
+  }
+  .profile-links a {
+    display: inline-flex; align-items: center;
+    text-decoration: none;
+  }
+  .profile-links img {
+    display: inline-block;
+    vertical-align: middle;  /* 保证兼容性 */
+  }
+</style>
+
+<div class="profile-links">
+  <!-- Location -->
+  <p>
+    <img src="https://wujie3375.github.io/images/logo/icons8-location-100.png" height="19" alt="location">
+    <span>{{ site.owner.location }}</span>
+  </p>
+
+  <!-- Email -->
+  <p>
+    <img src="https://wujie3375.github.io/images/logo/icons8-email-100.png" height="18" alt="email">
+    <a href="mailto:{{ site.owner.email }}">{{ site.owner.email }}</a>
+  </p>
+
+  <!-- INSPIRE -->
+  <p>
+    <img src="https://wujie3375.github.io/images/logo/icons8-inspirehep-100.png" height="16" alt="INSPIRE">
+    <a href="{{ site.owner.inspirehep }}">INSPIRE</a>
+  </p>
+
+  <!-- ORCID -->
+  <p>
+    <img src="https://wujie3375.github.io/images/logo/icons8-orcid-101.png" height="19" alt="ORCID">
+    <a href="https://orcid.org/{{ site.owner.ORCID }}">ORCID</a>
+  </p>
+
+  <!-- Google Scholar -->
+  <p>
+    <img src="https://wujie3375.github.io/images/logo/icons8-scholar-100.png" height="20" alt="Google Scholar">
+    <a href="{{ site.owner.scholar }}">Google Scholar</a>
+  </p>
+
+  <!-- ADS -->
+  <p>
+    <img src="https://wujie3375.github.io/images/logo/icons8-ads-102.png" height="22" alt="ADS">
+    <a href="{{ site.owner.ads }}">astrophysics data system</a>
+  </p>
+
+  <!-- Web of Science -->
+  <p>
+    <img src="https://wujie3375.github.io/images/logo/icons8-web-100.png" height="18" alt="Web of Science">
+    <a href="{{ site.owner.web }}">Web of Science</a>
+  </p>
+
+  <!-- ResearchGate -->
+  <p>
+    <img src="https://wujie3375.github.io/images/logo/icons8-rg.png" height="19" alt="ResearchGate">
+    <a href="{{ site.owner.researchgate }}">ResearchGate</a>
+  </p>
+
+  <!-- CV -->
+  <p>
+    <img src="https://wujie3375.github.io/images/logo/icons8-cv.png" height="16" alt="CV">
+    <a href="{{ site.owner.cv }}">My CV</a>
+  </p>
+</div>
+
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
 
 <!-- {% if site.owner.email %}
 <p style="text-align: left; text-indent:0; font-size: 16px; line-height: 20px; margin-left: 3px;">
@@ -75,7 +153,7 @@
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
 
-{% if site.owner.location %}
+<!-- {% if site.owner.location %}
 <p style="text-indent:0; font-size: 16px; line-height: 20px; margin-bottom: 30px;">
   <img src="https://wujie3375.github.io/images/logo/icons8-location-100.png" height="19" style="vertical-align: middle;">
   <span style="margin-left: 11px;">{{ site.owner.location }}</span>
@@ -170,4 +248,4 @@
     <span style="margin-left: 8px;">My CV</span>
   </a>
 </p>
-{% endif %}
+{% endif %} -->
