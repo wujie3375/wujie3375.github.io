@@ -8,24 +8,32 @@
   <h3>{{ site.owner.name }}</h3>
 </div>
 
-<pre style="text-indent:0; font-family: 'Courier New'; font-size: 15px;">{{ site.owner.bio }}</pre>
+<pre style="text-indent:0; font-family: 'PT Serif'; font-size: 15px;">{{ site.owner.bio }}</pre>
 
+<!-- ========================================================================================================================================================================== -->
 <style>
+  /* 可一键微调的变量 */
+  :root{
+    --icon-col: 22px;   /* 图标列宽，原来26px -> 更紧凑 */
+    --gap: 6px;         /* 图标与文字的间距，原来10px -> 更紧凑 */
+    --row-space: 10px;  /* 每行底部间距，原来12/14px -> 更紧凑 */
+  }
+
   .profile-links { text-align: left; }
   .profile-links p{
-    margin: 0 0 12px 0;
+    margin: 0 0 var(--row-space) 0;
     font-size: 16px; line-height: 20px;
     display: flex; align-items: center;
-    gap: 10px;
+    gap: var(--gap);
   }
   .profile-links .icon{
-    width: 26px;                 /* 固定图标列宽，统一文字起始列 */
-    flex: 0 0 26px;
+    width: var(--icon-col);
+    flex: 0 0 var(--icon-col);
     display: inline-flex;
-    justify-content: center;     /* 图标在列内水平居中 */
-    align-items: center;         /* 垂直居中 */
+    justify-content: center;   /* 图标在列内居中 */
+    align-items: center;
   }
-  .profile-links img{ display: block; }  /* 避免行内基线带来的微小偏差 */
+  .profile-links img{ display:block; } /* 去掉基线空隙 */
   .profile-links a{ display:inline-flex; align-items:center; text-decoration:none; }
 </style>
 
@@ -93,6 +101,7 @@
     <a href="{{ site.owner.cv }}">My CV</a>
   </p>
 </div>
+
 
 
 
