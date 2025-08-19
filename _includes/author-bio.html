@@ -12,11 +12,10 @@
 
 <!-- ========================================================================================================================================================================== -->
 <style>
-  /* 可一键微调的变量 */
   :root{
-    --icon-col: 22px;   /* 图标列宽，原来26px -> 更紧凑 */
-    --gap: 6px;         /* 图标与文字的间距，原来10px -> 更紧凑 */
-    --row-space: 10px;  /* 每行底部间距，原来12/14px -> 更紧凑 */
+    --icon-col: 22px;
+    --gap: 6px;
+    --row-space: 10px;
   }
 
   .profile-links { text-align: left; }
@@ -30,12 +29,24 @@
     width: var(--icon-col);
     flex: 0 0 var(--icon-col);
     display: inline-flex;
-    justify-content: center;   /* 图标在列内居中 */
+    justify-content: center;
     align-items: center;
   }
-  .profile-links img{ display:block; } /* 去掉基线空隙 */
-  .profile-links a{ display:inline-flex; align-items:center; text-decoration:none; }
+  .profile-links img{ display:block; }
+
+  /* 关键：统一链接与纯文本的起始位置 */
+  .profile-links a{
+    display: inline-flex;          /* 与 span 行为一致 */
+    align-items: center;
+    text-decoration: none;
+    margin: 0;                     /* 取消主题里可能加的 margin */
+    padding: 0;                    /* 取消主题里可能加的 padding */
+    text-indent: 0;                /* 取消可能的缩进 */
+  }
+  /* 若主题对 p a 还有 left/right 定位，也一并归零 */
+  .profile-links p a{ left: 0; right: 0; position: static; }
 </style>
+
 
 <div class="profile-links">
   <p>
