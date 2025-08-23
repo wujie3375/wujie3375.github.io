@@ -4,7 +4,7 @@ permalink: /awards
 title: Awards
 ---
 
-> **Last Update:** Apr 24, 2025
+> **Last Update:** Aug 23, 2025
 
 # Awards
 
