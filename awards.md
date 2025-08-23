@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /awards
-title: Awards
+title: Honors & Activities
 ---
 
 > **Last Update:** Aug 23, 2025
@@ -31,6 +31,29 @@ title: Awards
   **Haotian Astronomy Scholarship**, *Nanjing VasTech Astronomical Instrument & Equipment Co. Ltd.*
 -  **2018 - 2021:**  
   **Second-class Scholarship** (Four times), *China West Normal U.* 
+
+---
+
+# Funding
+
+Keep track of the meetings I've been to.
+
+-  **National Key Research and Development Program of China**, Grant No. 2023YFC2206702  
+   *Project: Simulation, processing, and verification of gravitational wave signals from binary black hole systems*  
+   Duration: Aug 2024 – Dec 2028 · Amount: ¥4.775 million · Status: Ongoing · Role: Participant  
+
+-  **Chongqing Natural Science Foundation**, Grant No. CSTB2023NSCQ-MSX0103  
+   *Project: Research on the detection of cosmic gravitational wave background using space-based GW detectors*  
+   Duration: Jul 2023 – Jun 2026 · Amount: ¥0.55 million · Status: Ongoing · Role: Participant  
+
+-  **National Key Research and Development Program of China**, Grant No. 2021YFC2203004  
+   *Project: Characteristics and signal identification of new gravitational wave sources and backgrounds*  
+   Duration: Jan 2022 – Sep 2026 · Amount: ¥4.40 million · Status: Ongoing · Role: Participant  
+
+-  **University of Chinese Academy of Sciences – Student Innovation Training Program**, Grant No. 20204001217  
+   *Project: Dark matter and modified gravity theory*  
+   Duration: Sep 2020 – Sep 2021 · Amount: ¥13,000 · Status: Completed · Role: Participant  
+
 
 ---
 
