@@ -71,7 +71,10 @@ Right now, I’m collecting stamps as a “Participant.” Someday, I’d like t
 
 # Meetings
 
-Keep track of the meetings I've been to.
+<p style="margin-bottom: -4px;">
+  Keep track of the meetings I've been to.
+</p>
+
 <div style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0px;">
   <ul>
 
