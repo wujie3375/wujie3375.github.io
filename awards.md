@@ -39,14 +39,13 @@ title: Honors & Activities
 <!-- Keep track of the meetings I've been to. -->
 
 {% include funding_card.html
-   institution="National Key R&D Program of China"
    time="Aug 2024 – Dec 2028"
-   project="Simulation, processing, and verification of gravitational-wave signals from binary black-hole systems"
+   institution="National Key Research and Development Program of China"
    grant="2023YFC2206702"
+   project="Simulation, processing, and verification of gravitational-wave signals from binary black-hole systems"
    role="PARTICIPANT"
    amount="4.775 million"
    status="Ongoing" %}
-
 
 ---
 
