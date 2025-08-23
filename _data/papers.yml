@@ -28,7 +28,7 @@
   pdf: "https://wujie3375.github.io/file/250219.pdf"
   highlight_author: 1
   first_or_not: true
-  etal: 4
+  etal: 3
 
 - year: 2025
   title: "Conditional Autoencoder for Generating Binary Neutron Star Waveforms with Tidal and Precession Effects"
@@ -44,7 +44,7 @@
   pdf: "https://wujie3375.github.io/file/250326.pdf"
   highlight_author: 2
   first_or_not: false
-  etal: 4
+  etal: 3
 
 - year: 2025
   title: "Identification of Stochastic Gravitational Wave Backgrounds from Cosmic String Using Machine Learning"
@@ -60,7 +60,7 @@
   pdf: "https://wujie3375.github.io/file/250217.pdf"
   highlight_author: 7
   first_or_not: false
-  etal: 4
+  etal: 3
 
 - year: 2025
   title: "Parallel manipulation of multiple ink droplets via near-infrared light on lubricant infused surface"
@@ -76,7 +76,7 @@
   pdf: "https://wujie3375.github.io/file/241223.pdf"
   highlight_author: 2
   first_or_not: false
-  etal: 4
+  etal: 3
 
 - year: 2024
   title: "Constraints and detection capabilities of GW polarizations with space-based detectors in different TDI combinations"
