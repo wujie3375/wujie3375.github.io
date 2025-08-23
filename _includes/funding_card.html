@@ -1,44 +1,47 @@
 <!-- funding_card.html -->
 <div class="funding-card">
-  <div class="row header">
-    <div class="left"><span class="dot">•</span><strong>{{ include.institution }}</strong></div>
-    <div class="right">{{ include.time }}</div>
+  <div class="fc-row fc-top">
+    <div class="fc-left fc-institution">
+      <span class="fc-dot" aria-hidden="true">•</span>
+      <strong>{{ include.institution }}</strong>
+    </div>
+    <div class="fc-right fc-time">{{ include.time }}</div>
   </div>
-  <div class="row">
-    <div class="left"><em>{{ include.project }}</em></div>
-    <div class="right">Grant No. {{ include.grant }}</div>
+
+  <div class="fc-row fc-project">
+    <em>{{ include.project }}</em>
   </div>
-  <div class="row">
-    <div class="left">{{ include.role }}</div>
-    <div class="right">&yen;{{ include.amount }} · {{ include.status }}</div>
+
+  <div class="fc-row fc-bottom">
+    <div class="fc-left fc-role">{{ include.role }}</div>
+    <div class="fc-right fc-meta">
+      {% if include.grant %}Grant No. {{ include.grant }}{% endif %}
+      {% if include.amount or include.status %}
+        {% if include.grant %} &nbsp;·&nbsp; {% endif %}
+        {% if include.amount %}&yen;{{ include.amount }}{% endif %}
+        {% if include.status %} {% if include.amount %} &nbsp;·&nbsp; {% endif %}{{ include.status }}{% endif %}
+      {% endif %}
+    </div>
   </div>
 </div>
 
 <style>
-  .funding-card {
-    margin-bottom: 18px;
-    line-height: 1.5;
-  }
-  .funding-card .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-top: 2px;
-  }
-  .funding-card .left {
-    text-align: left;
-  }
-  .funding-card .right {
-    text-align: right;
-    white-space: nowrap;
-  }
-  .funding-card .dot {
-    margin-right: 6px;
-  }
-  .funding-card strong {
-    font-weight: 700;
-  }
-  .funding-card em {
-    font-style: italic;
+  .funding-card { margin: 10px 0 14px; line-height: 1.45; font-size: 0.98rem; }
+  .funding-card .fc-row { display: flex; justify-content: space-between; align-items: baseline; }
+  .funding-card .fc-top { margin-bottom: 2px; }
+  .funding-card .fc-project { margin: 2px 0 2px; }
+  .funding-card .fc-bottom { margin-top: 0px; }
+  .funding-card .fc-left { min-width: 0; }
+  .funding-card .fc-right { white-space: nowrap; color: #555; }
+  .funding-card .fc-institution strong { font-weight: 700; }
+  .funding-card .fc-dot { margin-right: 6px; }
+  .funding-card em { font-style: italic; }
+  .funding-card .fc-meta { font-size: 0.95em; }
+  /* 更紧凑的行距与间距 */
+  .funding-card .fc-institution, .funding-card .fc-time, .funding-card .fc-role, .funding-card .fc-meta { line-height: 1.35; }
+  /* 小屏自适应：右侧信息自动换行到下一行，保持可读性 */
+  @media (max-width: 640px) {
+    .funding-card .fc-right { white-space: normal; text-align: right; }
+    .funding-card .fc-bottom { align-items: flex-start; }
   }
 </style>
