@@ -36,7 +36,7 @@ title: Honors & Activities
 
 # Funding
 
-<!-- Keep track of the meetings I've been to. -->
+Right now, I’m collecting stamps as a “Participant.” Someday, I’d like to print my own as the project lead.
 
 {% include funding_card.html
    time="Aug 2024 – Dec 2028"
@@ -47,7 +47,7 @@ title: Honors & Activities
 
 {% include funding_card.html
    time="Jul 2023 – Jun 2026"
-   institution="Chongqing Natural Science Foundation"
+   institution="Natural Science Foundation of Chongqing"
    project="Research on the detection of cosmic gravitational-wave background using space-based GW detectors"
    role="PARTICIPANT"
    meta="Grant No. CSTB2023NSCQ-MSX0103 | ￥0.55 million | Ongoing" %}
@@ -72,7 +72,7 @@ title: Honors & Activities
 # Meetings
 
 Keep track of the meetings I've been to.
-<div style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 10px;">
+<div style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0px;">
   <ul>
 
   {% include meeting_card.html 
