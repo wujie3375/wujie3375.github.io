@@ -42,10 +42,8 @@ title: Honors & Activities
    time="Aug 2024 – Dec 2028"
    institution="National Key R&D Program of China"
    project="Simulation, processing, and verification of gravitational-wave signals from binary black-hole systems"
-   grant="2023YFC2206702"
    role="PARTICIPANT"
-   amount="4.775 million"
-   status="Ongoing" %}
+   meta="Grant No. 2023YFC2206702 · ￥4.775 million · Ongoing" %}
 
 ---
 

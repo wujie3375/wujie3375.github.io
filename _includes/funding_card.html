@@ -1,26 +1,19 @@
 <!-- funding_card.html -->
 <ul class="funding-list">
   <li class="funding-item">
-    <!-- 第一排：时间 -->
-    <div class="fc-row fc-date">{{ include.time }}</div>
+    <!-- 日期 -->
+    <div class="fc-date"><strong>{{ include.time }}</strong></div>
 
-    <!-- 第二排：机构 + 项目 -->
-    <div class="fc-row fc-project">
-      <strong>{{ include.institution }}</strong><br>
-      <em>{{ include.project }}</em>
-    </div>
+    <!-- 机构 -->
+    <div class="fc-institution"><strong>{{ include.institution }}</strong></div>
 
-    <!-- 第三排：角色 + 右侧信息 -->
-    <div class="fc-row fc-bottom">
-      <div class="fc-left fc-role">{{ include.role }}</div>
-      <div class="fc-right fc-meta">
-        {% if include.grant %}Grant No. {{ include.grant }}{% endif %}
-        {% if include.amount or include.status %}
-          {% if include.grant %} &nbsp;·&nbsp; {% endif %}
-          {% if include.amount %}&yen;{{ include.amount }}{% endif %}
-          {% if include.status %} {% if include.amount %} &nbsp;·&nbsp; {% endif %}{{ include.status }}{% endif %}
-        {% endif %}
-      </div>
+    <!-- 项目 -->
+    <div class="fc-project"><em>{{ include.project }}</em></div>
+
+    <!-- 角色 + 经费信息 -->
+    <div class="fc-bottom">
+      <div class="fc-role">{{ include.role }}</div>
+      <div class="fc-meta">{{ include.meta }}</div>
     </div>
   </li>
 </ul>
@@ -28,32 +21,28 @@
 <style>
   .funding-list {
     list-style-type: disc;
-    padding-left: 1.4em;  /* 控制整体缩进 */
+    padding-left: 1.4em;  /* 悬挂缩进效果 */
   }
   .funding-item {
     margin-bottom: 14px;
-  }
-  .funding-item .fc-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
   }
   .funding-item .fc-date {
     font-weight: 600;
     margin-bottom: 2px;
   }
-  .funding-item .fc-project {
-    margin-left: 0.2em; /* 和前面点对齐 */
-    margin-bottom: 2px;
-  }
-  .funding-item .fc-project strong {
+  .funding-item .fc-institution {
+    margin-left: 0.2em;
     font-weight: 700;
   }
-  .funding-item .fc-project em {
+  .funding-item .fc-project {
+    margin-left: 0.2em;
     font-style: italic;
   }
   .funding-item .fc-bottom {
+    display: flex;
+    justify-content: space-between;
     margin-left: 0.2em;
+    margin-top: 2px;
   }
   .funding-item .fc-role {
     text-align: left;
