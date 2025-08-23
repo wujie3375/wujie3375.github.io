@@ -1,42 +1,40 @@
 <!-- funding_card.html -->
 <div class="funding-card">
-  <!-- 第一行：日期 -->
-  <div class="fc-row fc-top">
-    <div class="fc-left"></div>
-    <div class="fc-right fc-time">{{ include.time }}</div>
+  <!-- 第一排：日期 -->
+  <div class="fc-row fc-date">
+    <div class="fc-left fc-time">{{ include.time }}</div>
   </div>
 
-  <!-- 第二行：机构 + 项目号 -->
-  <div class="fc-row fc-middle">
-    <div class="fc-left">
-      <span class="fc-dot">•</span><strong>{{ include.institution }}</strong>
-    </div>
-    <div class="fc-right">Grant No. {{ include.grant }}</div>
-  </div>
-
-  <!-- 第三行：项目名 + 经费/状态 -->
+  <!-- 第二排：机构 | 项目 -->
   <div class="fc-row fc-project">
-    <div class="fc-left"><em>{{ include.project }}</em></div>
-    <div class="fc-right">&yen;{{ include.amount }} · {{ include.status }}</div>
+    <div class="fc-left">
+      <strong>{{ include.institution }}</strong> | <em>{{ include.project }}</em>
+    </div>
   </div>
 
-  <!-- 第四行：角色 -->
-  <div class="fc-row fc-role">
-    <div class="fc-left">{{ include.role }}</div>
-    <div class="fc-right"></div>
+  <!-- 第三排：角色 + 右侧信息 -->
+  <div class="fc-row fc-bottom">
+    <div class="fc-left fc-role">{{ include.role }}</div>
+    <div class="fc-right fc-meta">
+      {% if include.grant %}Grant No. {{ include.grant }}{% endif %}
+      {% if include.amount or include.status %}
+        {% if include.grant %} &nbsp;·&nbsp; {% endif %}
+        {% if include.amount %}&yen;{{ include.amount }}{% endif %}
+        {% if include.status %} {% if include.amount %} &nbsp;·&nbsp; {% endif %}{{ include.status }}{% endif %}
+      {% endif %}
+    </div>
   </div>
 </div>
 
 <style>
-  .funding-card { margin: 12px 0 18px; line-height: 1.45; font-size: 0.98rem; }
-  .funding-card .fc-row { display: flex; justify-content: space-between; align-items: baseline; margin-top: 2px; }
-  .funding-card .fc-left { min-width: 0; }
-  .funding-card .fc-right { white-space: nowrap; color: #555; }
-  .funding-card .fc-dot { margin-right: 6px; }
+  .funding-card { margin: 10px 0 16px; line-height: 1.45; font-size: 0.98rem; }
+  .funding-card .fc-row { display: flex; justify-content: space-between; align-items: baseline; }
+  .funding-card .fc-date { margin-bottom: 2px; font-weight: 600; }
+  .funding-card .fc-project { margin: 2px 0 2px; }
+  .funding-card .fc-bottom { margin-top: 2px; }
+  .funding-card .fc-left { text-align: left; min-width: 0; }
+  .funding-card .fc-right { text-align: right; white-space: nowrap; color: #555; }
   .funding-card strong { font-weight: 700; }
   .funding-card em { font-style: italic; }
-  .funding-card .fc-role { margin-top: 2px; font-style: italic; }
-  @media (max-width: 640px) {
-    .funding-card .fc-right { white-space: normal; text-align: right; }
-  }
+  .funding-card .fc-meta { font-size: 0.95em; }
 </style>
