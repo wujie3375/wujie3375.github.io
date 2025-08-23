@@ -36,12 +36,12 @@ title: Honors & Activities
 
 # Funding
 
-<p style="margin-bottom: 0px;">
+<p style="margin-bottom: 3px;">
 My role is usually marked as “Participant”. Hopefully, I’ll unlock the “Boss Level” soon.
 </p>
 
-<div style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0 8px 0 0;">
-  <ul style="margin: 0; padding-left: 1em;">
+<div style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0 10px 0 0;">
+  <ul style="margin: 0; padding-left: 0em;">
 
 {% include funding_card.html
    time="Aug 2024 – Dec 2028"
@@ -77,11 +77,11 @@ My role is usually marked as “Participant”. Hopefully, I’ll unlock the “
 
 # Meetings
 
-<p style="margin-bottom: 0px;">
+<p style="margin-bottom: 3px;">
   Keep track of the meetings I've been to.
 </p>
 
-<div style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0px;">
+<div style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0 10px 0 0;">
   <ul style="margin: 0; padding-left: 1.2em;">
 
   {% include meeting_card.html 
