@@ -40,10 +40,32 @@ title: Honors & Activities
 
 {% include funding_card.html
    time="Aug 2024 – Dec 2028"
-   institution="National Key R&D Program of China"
+   institution="National Key Research and Development Program of China"
    project="Simulation, processing, and verification of gravitational-wave signals from binary black-hole systems"
    role="PARTICIPANT"
-   meta="Grant No. 2023YFC2206702 · ￥4.775 million · Ongoing" %}
+   meta="Grant No. 2023YFC2206702 | ￥4.775 million | Ongoing" %}
+
+{% include funding_card.html
+   time="Jul 2023 – Jun 2026"
+   institution="Chongqing Natural Science Foundation"
+   project="Research on the detection of cosmic gravitational-wave background using space-based GW detectors"
+   role="PARTICIPANT"
+   meta="Grant No. CSTB2023NSCQ-MSX0103 | ￥0.55 million | Ongoing" %}
+
+{% include funding_card.html
+   time="Jan 2022 – Sep 2026"
+   institution="National Key Research and Development Program of China"
+   project="Characteristics and signal identification of novel gravitational-wave sources and stochastic backgrounds"
+   role="PARTICIPANT"
+   meta="Grant No. 2021YFC2203004 | ￥4.40 million | Ongoing" %}
+
+{% include funding_card.html
+   time="Sep 2020 – Sep 2021"
+   institution="University of Chinese Academy of Sciences – College Student Innovation and Practice Program"
+   project="Dark matter and modified gravity theory"
+   role="PARTICIPANT"
+   meta="Grant No. 20204001217 | ￥13,000 | Completed" %}
+
 
 ---
 
