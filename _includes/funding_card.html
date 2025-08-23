@@ -1,19 +1,17 @@
 <!-- funding_card.html -->
 <div class="funding-card">
-  <div class="header">
-    <strong>{{ include.institution }}</strong>
-    <span class="time">{{ include.time }}</span>
+  <div class="row header">
+    <div class="left"><span class="dot">•</span><strong>{{ include.institution }}</strong></div>
+    <div class="right">{{ include.time }}</div>
   </div>
-  <div class="role">{{ include.role }}</div>
-  <div class="line">Grant No. {{ include.grant }}</div>
-  <div class="line">{{ include.project }}</div>
-  <div class="line">&yen;{{ include.amount }} · {{ include.status }}</div>
-  {% if include.advisor %}
-  <div class="line">Advisor: {{ include.advisor }}</div>
-  {% endif %}
-  {% if include.program %}
-  <div class="line">Program: {{ include.program }}</div>
-  {% endif %}
+  <div class="row">
+    <div class="left"><em>{{ include.project }}</em></div>
+    <div class="right">Grant No. {{ include.grant }}</div>
+  </div>
+  <div class="row">
+    <div class="left">{{ include.role }}</div>
+    <div class="right">&yen;{{ include.amount }} · {{ include.status }}</div>
+  </div>
 </div>
 
 <style>
@@ -21,22 +19,26 @@
     margin-bottom: 18px;
     line-height: 1.5;
   }
-  .funding-card .header {
+  .funding-card .row {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin-top: 2px;
   }
-  .funding-card .header strong {
-    font-weight: 700;
+  .funding-card .left {
+    text-align: left;
   }
-  .funding-card .time {
+  .funding-card .right {
+    text-align: right;
     white-space: nowrap;
   }
-  .funding-card .role {
-    font-style: italic;
-    margin-top: 2px;
+  .funding-card .dot {
+    margin-right: 6px;
   }
-  .funding-card .line {
-    margin-top: 2px;
+  .funding-card strong {
+    font-weight: 700;
+  }
+  .funding-card em {
+    font-style: italic;
   }
 </style>

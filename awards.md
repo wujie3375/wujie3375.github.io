@@ -36,14 +36,14 @@ title: Honors & Activities
 
 # Funding
 
-Keep track of the meetings I've been to.
+<!-- Keep track of the meetings I've been to. -->
 
 {% include funding_card.html 
    institution="National Key R&D Program of China" 
    time="Aug 2024 – Dec 2028" 
-   role="PARTICIPANT" 
-   grant="2023YFC2206702" 
    project="Simulation, processing, and verification of gravitational-wave signals from binary black-hole systems" 
+   grant="2023YFC2206702" 
+   role="PARTICIPANT" 
    amount="4.775 million" 
    status="Ongoing" %}
 
