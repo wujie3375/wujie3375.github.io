@@ -36,7 +36,12 @@ title: Honors & Activities
 
 # Funding
 
-Right now, I’m collecting stamps as a “Participant.” Someday, I’d like to print my own as the project lead.
+<p style="margin-bottom: 0px;">
+My role is usually marked as “Participant”. Hopefully, I’ll unlock the “Boss Level” soon.
+</p>
+
+<div style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0px;">
+  <ul style="margin: 0; padding-left: 1.2em;">
 
 {% include funding_card.html
    time="Aug 2024 – Dec 2028"
@@ -65,13 +70,14 @@ Right now, I’m collecting stamps as a “Participant.” Someday, I’d like t
    project="Dark matter and modified gravity theory"
    role="PARTICIPANT"
    meta="Grant No. 20204001217 | ￥13,000 | Completed" %}
-
+</ul>
+</div>
 
 ---
 
 # Meetings
 
-<p style="margin-bottom: -2px;">
+<p style="margin-bottom: 0px;">
   Keep track of the meetings I've been to.
 </p>
 
