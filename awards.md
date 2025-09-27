@@ -64,12 +64,12 @@ My role is usually marked as “Participant”. Hopefully, I’ll unlock the “
    role="PARTICIPANT"
    meta="Grant No. 2021YFC2203004 | ￥4.40 million | Ongoing" %}
 
-{% include funding_card.html
+<!-- {% include funding_card.html
    time="Sep 2020 – Sep 2021"
    institution="University of Chinese Academy of Sciences – College Student Innovation and Practice Program"
    project="Dark matter and modified gravity theory"
    role="PARTICIPANT"
-   meta="Grant No. 20204001217 | ￥13,000 | Completed" %}
+   meta="Grant No. 20204001217 | ￥13,000 | Completed" %} -->
 </ul>
 </div>
 

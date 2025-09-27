@@ -1,4 +1,20 @@
 - year: 2025
+  title: "Identification of Stochastic Gravitational Wave Backgrounds from Cosmic String Using Machine Learning"
+  subtitle: false
+  authors: "Xianghe Ma, Borui Wang, Nan Yang, Jin Li*, Brendan McCane, Mengfei Sun, Jie Wu, Minghui Zhang, Yan Meng*"
+  date: "Feb 17, 2025"
+  sortable_date: '2025-02-17'
+  journal: "Phys. Rev. D"
+  journal_link: "https://journals.aps.org/prd/abstract/10.1103/jvkp-kvpk"
+  volume: "112"
+  article_number: "064081"
+  arxiv: "2502.11804"
+  pdf: "https://wujie3375.github.io/file/250217.pdf"
+  highlight_author: 7
+  first_or_not: false
+  etal: 3
+
+- year: 2025
   title: "Probing globular clusters using modulated gravitational waves from binary black holes"
   subtitle: false
   authors: "Jie Wu, Yao Xiao, Mengfei Sun, Jin Li*"
@@ -43,22 +59,6 @@
   arxiv: "2503.19512"
   pdf: "https://wujie3375.github.io/file/250326.pdf"
   highlight_author: 2
-  first_or_not: false
-  etal: 3
-
-- year: 2025
-  title: "Identification of Stochastic Gravitational Wave Backgrounds from Cosmic String Using Machine Learning"
-  subtitle: false
-  authors: "Xianghe Ma, Borui Wang, Nan Yang, Jin Li*, Brendan McCane, Mengfei Sun, Jie Wu, Minghui Zhang, Yan Meng*"
-  date: "Feb 17, 2025"
-  sortable_date: '2025-02-17'
-  journal: false
-  journal_link: false
-  volume: false
-  article_number: false
-  arxiv: "2502.11804"
-  pdf: "https://wujie3375.github.io/file/250217.pdf"
-  highlight_author: 7
   first_or_not: false
   etal: 3
 
