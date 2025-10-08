@@ -1,7 +1,6 @@
-<!-- funding_card.html -->
+<!-- funding_card.html（保留结构；不放语言CSS） -->
 <ul class="funding-list">
   <li class="funding-item">
-    <!-- 日期 -->
     <div class="fc-date">
       <strong>
         <span class="lang-en">{{ include.time_en | default: include.time }}</span>
@@ -9,7 +8,6 @@
       </strong>
     </div>
 
-    <!-- 机构 -->
     <div class="fc-institution">
       <strong>
         <span class="lang-en">{{ include.institution_en | default: include.institution }}</span>
@@ -17,13 +15,11 @@
       </strong>
     </div>
 
-    <!-- 项目类型 -->
     <div class="fc-type">
       <span class="lang-en">{{ include.type_en | default: include.type }}</span>
       <span class="lang-zh">{{ include.type_zh | default: include.type }}</span>
     </div>
 
-    <!-- 项目 -->
     <div class="fc-project">
       <em>
         <span class="lang-en">{{ include.project_en | default: include.project }}</span>
@@ -31,7 +27,6 @@
       </em>
     </div>
 
-    <!-- 角色 + 经费 -->
     <div class="fc-bottom">
       <div class="fc-role">
         <strong>
@@ -46,48 +41,3 @@
     </div>
   </li>
 </ul>
-
-<style>
-  /* 默认英文 */
-  .lang-en { display: inline; }
-  .lang-zh { display: none; }
-
-  /* funding 部分专用切换 */
-  .funding-list.lang-zh .lang-en { display: none; }
-  .funding-list.lang-zh .lang-zh { display: inline; }
-
-  .funding-list {
-    list-style-type: disc;
-    padding-left: 1.4em;
-  }
-  .funding-item { margin-bottom: 14px; }
-  .funding-item .fc-date {
-    font-weight: 600;
-    margin-bottom: 2px;
-  }
-  .funding-item .fc-institution {
-    margin-left: 0.2em;
-    font-weight: 700;
-  }
-  .funding-item .fc-type {
-    margin-left: 0.2em;
-    margin-bottom: 2px;
-  }
-  .funding-item .fc-project {
-    margin-left: 0.2em;
-    font-style: italic;
-  }
-  .funding-item .fc-bottom {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 0.2em;
-    margin-top: 2px;
-  }
-  .funding-item .fc-role { font-weight: bold; }
-  .funding-item .fc-meta {
-    text-align: right;
-    white-space: nowrap;
-    color: #555;
-    font-size: 0.95em;
-  }
-</style>

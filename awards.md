@@ -43,13 +43,14 @@ title: Honors & Activities
   My role is usually marked as “Participant”. Hopefully, I’ll unlock the “Boss Level” soon.
 </p>
 
-<!-- 语言切换（只影响下方 #funding-block） -->
+<!-- 复选框风格按钮：未选=英文；选中=中文 -->
 <div class="checkbox-container" style="margin: 6px 0 8px;">
   <input type="checkbox" id="funding-lang-cn" aria-label="Show Chinese">
   <label for="funding-lang-cn">中文</label>
 </div>
 
-<div id="funding-block" style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0 10px 0 0;">
+<!-- 局部作用域容器：仅影响这里 -->
+<div id="funding-block" data-lang="en" style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0 10px 0 0;">
   <ul style="margin: 0; padding-left: 0em;">
 
     {% include funding_card.html
@@ -104,7 +105,7 @@ title: Honors & Activities
 </div>
 
 <style>
-  /* 你给的样式：复选框风格 */
+  /* 复选框样式（按你提供的） */
   .checkbox-container {
     font-size: 19px;
     display: flex;
@@ -120,20 +121,23 @@ title: Honors & Activities
     vertical-align: middle;
   }
 
-  /* 语言显示规则：默认英文，勾选后中文 */
+  /* —— 语言切换：仅作用于 #funding-block —— */
   #funding-block .lang-en { display: inline; }
   #funding-block .lang-zh { display: none; }
-  #funding-block.lang-zh .lang-en { display: none; }
-  #funding-block.lang-zh .lang-zh { display: inline; }
+
+  /* 勾选中文时：用 data-lang 切换，增加优先级并加 !important 防止后加载样式干扰 */
+  #funding-block[data-lang="zh"] .lang-en { display: none !important; }
+  #funding-block[data-lang="zh"] .lang-zh { display: inline !important; }
 </style>
 
 <script>
-  // 仅切换 #funding-block 的语言显示
   (function () {
-    var checkbox = document.getElementById('funding-lang-cn');
-    var block = document.getElementById('funding-block');
+    const checkbox = document.getElementById('funding-lang-cn');
+    const block = document.getElementById('funding-block');
+
+    // 默认英文：data-lang="en"
     checkbox.addEventListener('change', function () {
-      block.classList.toggle('lang-zh', checkbox.checked);
+      block.setAttribute('data-lang', checkbox.checked ? 'zh' : 'en');
     });
   })();
 </script>
