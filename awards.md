@@ -36,47 +36,81 @@ title: Honors & Activities
 
 # Funding
 
-<p style="margin-bottom: 3px;">
-My role is usually marked as “Participant”. Hopefully, I’ll unlock the “Boss Level” soon.
+<p style="margin-bottom: 6px;">
+  My role is usually marked as “Participant”. Hopefully, I’ll unlock the “Boss Level” soon.
 </p>
 
-<div style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0 10px 0 0;">
+<!-- 局部语言切换按钮：只作用于本区块 -->
+<button id="funding-lang-toggle" style="margin: 6px 0 8px; padding: 2px 8px; cursor: pointer;">
+  中 / EN
+</button>
+
+<div id="funding-block" style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0 10px 0 0;">
   <ul style="margin: 0; padding-left: 0em;">
 
-{% include funding_card.html
-   time="Jan 2026 – Dec 2029"
-   institution="National Natural Science Foundation of China (NSFC)"
-   type="General Program"
-   project="Machine-learning optimization of waveform generation for multiple types of compact-binary mergers"
-   role="PARTICIPANT"
-   meta="Grant No. 12575072 | CNY 540,000 | Ongoing" %}
+    {% include funding_card.html
+       time="Jan 2026 – Dec 2029" time_zh="2026年1月 – 2029年12月"
+       institution_en="National Natural Science Foundation of China (NSFC)"
+       institution_zh="国家自然科学基金委员会"
+       type_en="General Program"
+       type_zh="面上项目"
+       project_en="Machine-learning optimization of waveform generation for multiple types of compact-binary mergers"
+       project_zh="利用机器学习优化多类型致密双星并合引力波波形生成的研究"
+       role_en="PARTICIPANT" role_zh="参与"
+       meta_en="Grant No. 12575072 | CNY 540,000 | Ongoing"
+       meta_zh="项目号：12575072｜经费：CNY 540,000｜在研" %}
 
-{% include funding_card.html
-   time="Aug 2024 – Dec 2028"
-   institution="Ministry of Science and Technology of the People’s Republic of China"
-   type="National Key Research and Development Program"
-   project="Simulation, processing, and verification of gravitational-wave signals from binary black-hole systems"
-   role="PARTICIPANT"
-   meta="Grant No. 2023YFC2206702 | CNY 4,775,000 | Ongoing" %}
+    {% include funding_card.html
+       time="Aug 2024 – Dec 2028" time_zh="2024年8月 – 2028年12月"
+       institution_en="Ministry of Science and Technology of the People’s Republic of China"
+       institution_zh="中华人民共和国科学技术部"
+       type_en="National Key Research and Development Program"
+       type_zh="国家重点研发计划课题"
+       project_en="Simulation, processing, and verification of gravitational-wave signals from binary black-hole systems"
+       project_zh="双黑洞系统引力波信号仿真、处理与验证研究"
+       role_en="PARTICIPANT" role_zh="参与"
+       meta_en="Grant No. 2023YFC2206702 | CNY 4,775,000 | Ongoing"
+       meta_zh="项目号：2023YFC2206702｜经费：CNY 4,775,000｜在研" %}
 
-{% include funding_card.html
-   time="Jul 2023 – Jun 2026"
-   institution="Chongqing Natural Science Foundation"
-   type="General Program"
-   project="Joint observation of the cosmic-string stochastic gravitational-wave background with space-based detectors"
-   role="PARTICIPANT"
-   meta="Grant No. CSTB2023NSCQ-MSX0103 | CNY 50,000 | Ongoing" %}
+    {% include funding_card.html
+       time="Jul 2023 – Jun 2026" time_zh="2023年7月 – 2026年6月"
+       institution_en="Natural Science Foundation of Chongqing"
+       institution_zh="重庆市自然科学基金"
+       type_en="General Program"
+       type_zh="面上项目"
+       project_en="Joint observation of the cosmic-string stochastic gravitational-wave background with space-based detectors"
+       project_zh="利用空间引力波探测器联合观测宇宙弦随机引力波背景的研究"
+       role_en="PARTICIPANT" role_zh="参与"
+       meta_en="Grant No. CSTB2023NSCQ-MSX0103 | CNY 50,000 | Ongoing"
+       meta_zh="项目号：CSTB2023NSCQ-MSX0103｜经费：CNY 50,000｜在研" %}
 
-{% include funding_card.html
-   time="Jan 2022 – Sep 2026"
-   institution="Ministry of Science and Technology of the People’s Republic of China"
-   type="National Key Research and Development Program"
-   project="Characteristics and signal identification of novel gravitational-wave sources (e.g., cosmic strings) and their stochastic backgrounds"
-   role="PARTICIPANT"
-   meta="Grant No. 2021YFC2203004 | CNY 4,400,000 | Ongoing" %}
+    {% include funding_card.html
+       time="Jan 2022 – Sep 2026" time_zh="2022年1月 – 2026年9月"
+       institution_en="Ministry of Science and Technology of the People’s Republic of China"
+       institution_zh="中华人民共和国科学技术部"
+       type_en="National Key Research and Development Program"
+       type_zh="国家重点研发计划课题"
+       project_en="Characteristics and signal identification of novel gravitational-wave sources (e.g., cosmic strings) and their stochastic backgrounds"
+       project_zh="宇宙弦等新颖引力波源与随机引力波背景的特征和信号识别研究"
+       role_en="PARTICIPANT" role_zh="参与"
+       meta_en="Grant No. 2021YFC2203004 | CNY 4,400,000 | Ongoing"
+       meta_zh="项目号：2021YFC2203004｜经费：CNY 4,400,000｜在研" %}
 
-</ul>
+  </ul>
 </div>
+
+<script>
+  // 仅切换 #funding-block 内所有 .funding-list 的语言（不影响全站）
+  (function () {
+    var btn = document.getElementById('funding-lang-toggle');
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('#funding-block .funding-list').forEach(function (ul) {
+        ul.classList.toggle('lang-zh');
+      });
+    });
+  })();
+</script>
+
 
 ---
 
