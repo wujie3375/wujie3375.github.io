@@ -4,7 +4,7 @@ permalink: /awards
 title: Honors & Activities
 ---
 
-> **Last Update:** Aug 23, 2025
+> **Last Update:** Oct 8, 2025
 
 # Awards
 
@@ -36,14 +36,18 @@ title: Honors & Activities
 
 # Funding
 
+<!-- Funding -->
+<h1 id="funding">Funding</h1>
+
 <p style="margin-bottom: 6px;">
   My role is usually marked as “Participant”. Hopefully, I’ll unlock the “Boss Level” soon.
 </p>
 
-<!-- 局部语言切换按钮：只作用于本区块 -->
-<button id="funding-lang-toggle" style="margin: 6px 0 8px; padding: 2px 8px; cursor: pointer;">
-  中 / EN
-</button>
+<!-- 语言切换（只影响下方 #funding-block） -->
+<div class="checkbox-container" style="margin: 6px 0 8px;">
+  <input type="checkbox" id="funding-lang-cn" aria-label="Show Chinese">
+  <label for="funding-lang-cn">中文</label>
+</div>
 
 <div id="funding-block" style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0 10px 0 0;">
   <ul style="margin: 0; padding-left: 0em;">
@@ -99,18 +103,40 @@ title: Honors & Activities
   </ul>
 </div>
 
+<style>
+  /* 你给的样式：复选框风格 */
+  .checkbox-container {
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+  }
+  #funding-lang-cn {
+    width: 18px;
+    height: 18px;
+    margin: 0 6px 0 0;
+    accent-color: #36a2eb;
+  }
+  #funding-lang-cn + label {
+    vertical-align: middle;
+  }
+
+  /* 语言显示规则：默认英文，勾选后中文 */
+  #funding-block .lang-en { display: inline; }
+  #funding-block .lang-zh { display: none; }
+  #funding-block.lang-zh .lang-en { display: none; }
+  #funding-block.lang-zh .lang-zh { display: inline; }
+</style>
+
 <script>
-  // 仅切换 #funding-block 内所有 .funding-list 的语言（不影响全站）
+  // 仅切换 #funding-block 的语言显示
   (function () {
-    var btn = document.getElementById('funding-lang-toggle');
-    btn.addEventListener('click', function () {
-      document.querySelectorAll('#funding-block .funding-list').forEach(function (ul) {
-        ul.classList.toggle('lang-zh');
-      });
+    var checkbox = document.getElementById('funding-lang-cn');
+    var block = document.getElementById('funding-block');
+    checkbox.addEventListener('change', function () {
+      block.classList.toggle('lang-zh', checkbox.checked);
     });
   })();
 </script>
-
 
 ---
 
