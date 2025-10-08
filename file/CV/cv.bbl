@@ -19,6 +19,76 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{Sun:2025afb}{article}{}
+      \name{author}{8}{}{%
+        {{hash=6bb0baf779cb3a241d71472430c78e87}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Mengfei},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d14d813400632d1540675e5edb94d60a}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f9010dd01bbf8aec0b41e109b57e9858}{%
+           family={Li*},
+           familyi={L\bibinitperiod},
+           given={Jin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5b24430074d6f0d75b618b61fcd81522}{%
+           family={Mccane},
+           familyi={M\bibinitperiod},
+           given={Brendan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a44174a97a52d8b64289ef831cb1ac37}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Nan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=b0e1cd365a3930460efcfce94a996532}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Xianghe},
+           giveni={X\bibinitperiod}}}%
+        {{hash=afa4f452081a012ccffbea826e047169}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Borui},
+           giveni={B\bibinitperiod}}}%
+        {{hash=3f88132010c22729efa55d754a406358}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Minghui},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1cded9e5af7257f65f93e2e15ef5da14}
+      \strng{fullhash}{72df629f965a6a4f0112a724b77b3f93}
+      \strng{bibnamehash}{72df629f965a6a4f0112a724b77b3f93}
+      \strng{authorbibnamehash}{72df629f965a6a4f0112a724b77b3f93}
+      \strng{authornamehash}{1cded9e5af7257f65f93e2e15ef5da14}
+      \strng{authorfullhash}{72df629f965a6a4f0112a724b77b3f93}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{month}{10}
+      \field{number}{8}
+      \field{title}{{Conditional Autoencoder for Generating Binary Neutron Star Waveforms with Tidal and Precession Effects}}
+      \field{volume}{112}
+      \field{year}{2025}
+      \true{nocite}
+      \field{pages}{084016}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/kmlw-y7yw
+      \endverb
+      \verb{eprint}
+      \verb 2503.19512
+      \endverb
+    \endentry
     \entry{Ma:2025whs}{article}{}
       \name{author}{9}{}{%
         {{hash=b0e1cd365a3930460efcfce94a996532}{%
@@ -73,8 +143,8 @@
       \strng{authorbibnamehash}{656045f472ef7a3d0a769e2966837e7c}
       \strng{authornamehash}{3b336ca1d936f79815e454bd347dbe87}
       \strng{authorfullhash}{656045f472ef7a3d0a769e2966837e7c}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -123,8 +193,8 @@
       \strng{authorbibnamehash}{32af98b3fd34742ced0ebb39631d6e2a}
       \strng{authornamehash}{ac3b54890cac1e5ee919d1ed8c512678}
       \strng{authorfullhash}{32af98b3fd34742ced0ebb39631d6e2a}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -175,8 +245,8 @@
       \strng{authorbibnamehash}{0b9b1b42f4bd360a34c81b6b43e381b5}
       \strng{authornamehash}{11ff1f9f75e56dbcd4e7914974507747}
       \strng{authorfullhash}{0b9b1b42f4bd360a34c81b6b43e381b5}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -194,68 +264,6 @@
       \endverb
       \verb{eprint}
       \verb 2502.13710
-      \endverb
-    \endentry
-    \entry{Sun:2025afb}{article}{}
-      \name{author}{8}{}{%
-        {{hash=6bb0baf779cb3a241d71472430c78e87}{%
-           family={Sun},
-           familyi={S\bibinitperiod},
-           given={Mengfei},
-           giveni={M\bibinitperiod}}}%
-        {{hash=d14d813400632d1540675e5edb94d60a}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Jie},
-           giveni={J\bibinitperiod}}}%
-        {{hash=f9010dd01bbf8aec0b41e109b57e9858}{%
-           family={Li*},
-           familyi={L\bibinitperiod},
-           given={Jin},
-           giveni={J\bibinitperiod}}}%
-        {{hash=5b24430074d6f0d75b618b61fcd81522}{%
-           family={Mccane},
-           familyi={M\bibinitperiod},
-           given={Brendan},
-           giveni={B\bibinitperiod}}}%
-        {{hash=a44174a97a52d8b64289ef831cb1ac37}{%
-           family={Yang},
-           familyi={Y\bibinitperiod},
-           given={Nan},
-           giveni={N\bibinitperiod}}}%
-        {{hash=b0e1cd365a3930460efcfce94a996532}{%
-           family={Ma},
-           familyi={M\bibinitperiod},
-           given={Xianghe},
-           giveni={X\bibinitperiod}}}%
-        {{hash=afa4f452081a012ccffbea826e047169}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Borui},
-           giveni={B\bibinitperiod}}}%
-        {{hash=3f88132010c22729efa55d754a406358}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Minghui},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{1cded9e5af7257f65f93e2e15ef5da14}
-      \strng{fullhash}{72df629f965a6a4f0112a724b77b3f93}
-      \strng{bibnamehash}{72df629f965a6a4f0112a724b77b3f93}
-      \strng{authorbibnamehash}{72df629f965a6a4f0112a724b77b3f93}
-      \strng{authornamehash}{1cded9e5af7257f65f93e2e15ef5da14}
-      \strng{authorfullhash}{72df629f965a6a4f0112a724b77b3f93}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
-      \field{month}{3}
-      \field{title}{{Conditional Autoencoder for Generating Binary Neutron Star Waveforms with Tidal and Precession Effects}}
-      \field{year}{2025}
-      \true{nocite}
-      \verb{eprint}
-      \verb 2503.19512
       \endverb
     \endentry
     \entry{Hu:2025apl}{article}{}
@@ -534,6 +542,76 @@
 
 \refsection{1}
   \datalist[entry]{none/global//global/global}
+    \entry{Sun:2025afb}{article}{}
+      \name{author}{8}{}{%
+        {{hash=6bb0baf779cb3a241d71472430c78e87}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Mengfei},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d14d813400632d1540675e5edb94d60a}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f9010dd01bbf8aec0b41e109b57e9858}{%
+           family={Li*},
+           familyi={L\bibinitperiod},
+           given={Jin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5b24430074d6f0d75b618b61fcd81522}{%
+           family={Mccane},
+           familyi={M\bibinitperiod},
+           given={Brendan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a44174a97a52d8b64289ef831cb1ac37}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Nan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=b0e1cd365a3930460efcfce94a996532}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Xianghe},
+           giveni={X\bibinitperiod}}}%
+        {{hash=afa4f452081a012ccffbea826e047169}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Borui},
+           giveni={B\bibinitperiod}}}%
+        {{hash=3f88132010c22729efa55d754a406358}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Minghui},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1cded9e5af7257f65f93e2e15ef5da14}
+      \strng{fullhash}{72df629f965a6a4f0112a724b77b3f93}
+      \strng{bibnamehash}{72df629f965a6a4f0112a724b77b3f93}
+      \strng{authorbibnamehash}{72df629f965a6a4f0112a724b77b3f93}
+      \strng{authornamehash}{1cded9e5af7257f65f93e2e15ef5da14}
+      \strng{authorfullhash}{72df629f965a6a4f0112a724b77b3f93}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{month}{10}
+      \field{number}{8}
+      \field{title}{{Conditional Autoencoder for Generating Binary Neutron Star Waveforms with Tidal and Precession Effects}}
+      \field{volume}{112}
+      \field{year}{2025}
+      \true{nocite}
+      \field{pages}{084016}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/kmlw-y7yw
+      \endverb
+      \verb{eprint}
+      \verb 2503.19512
+      \endverb
+    \endentry
     \entry{Ma:2025whs}{article}{}
       \name{author}{9}{}{%
         {{hash=b0e1cd365a3930460efcfce94a996532}{%
@@ -588,8 +666,8 @@
       \strng{authorbibnamehash}{656045f472ef7a3d0a769e2966837e7c}
       \strng{authornamehash}{3b336ca1d936f79815e454bd347dbe87}
       \strng{authorfullhash}{656045f472ef7a3d0a769e2966837e7c}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -638,8 +716,8 @@
       \strng{authorbibnamehash}{32af98b3fd34742ced0ebb39631d6e2a}
       \strng{authornamehash}{ac3b54890cac1e5ee919d1ed8c512678}
       \strng{authorfullhash}{32af98b3fd34742ced0ebb39631d6e2a}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -690,8 +768,8 @@
       \strng{authorbibnamehash}{0b9b1b42f4bd360a34c81b6b43e381b5}
       \strng{authornamehash}{11ff1f9f75e56dbcd4e7914974507747}
       \strng{authorfullhash}{0b9b1b42f4bd360a34c81b6b43e381b5}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -709,68 +787,6 @@
       \endverb
       \verb{eprint}
       \verb 2502.13710
-      \endverb
-    \endentry
-    \entry{Sun:2025afb}{article}{}
-      \name{author}{8}{}{%
-        {{hash=6bb0baf779cb3a241d71472430c78e87}{%
-           family={Sun},
-           familyi={S\bibinitperiod},
-           given={Mengfei},
-           giveni={M\bibinitperiod}}}%
-        {{hash=d14d813400632d1540675e5edb94d60a}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Jie},
-           giveni={J\bibinitperiod}}}%
-        {{hash=f9010dd01bbf8aec0b41e109b57e9858}{%
-           family={Li*},
-           familyi={L\bibinitperiod},
-           given={Jin},
-           giveni={J\bibinitperiod}}}%
-        {{hash=5b24430074d6f0d75b618b61fcd81522}{%
-           family={Mccane},
-           familyi={M\bibinitperiod},
-           given={Brendan},
-           giveni={B\bibinitperiod}}}%
-        {{hash=a44174a97a52d8b64289ef831cb1ac37}{%
-           family={Yang},
-           familyi={Y\bibinitperiod},
-           given={Nan},
-           giveni={N\bibinitperiod}}}%
-        {{hash=b0e1cd365a3930460efcfce94a996532}{%
-           family={Ma},
-           familyi={M\bibinitperiod},
-           given={Xianghe},
-           giveni={X\bibinitperiod}}}%
-        {{hash=afa4f452081a012ccffbea826e047169}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Borui},
-           giveni={B\bibinitperiod}}}%
-        {{hash=3f88132010c22729efa55d754a406358}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Minghui},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{1cded9e5af7257f65f93e2e15ef5da14}
-      \strng{fullhash}{72df629f965a6a4f0112a724b77b3f93}
-      \strng{bibnamehash}{72df629f965a6a4f0112a724b77b3f93}
-      \strng{authorbibnamehash}{72df629f965a6a4f0112a724b77b3f93}
-      \strng{authornamehash}{1cded9e5af7257f65f93e2e15ef5da14}
-      \strng{authorfullhash}{72df629f965a6a4f0112a724b77b3f93}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
-      \field{month}{3}
-      \field{title}{{Conditional Autoencoder for Generating Binary Neutron Star Waveforms with Tidal and Precession Effects}}
-      \field{year}{2025}
-      \true{nocite}
-      \verb{eprint}
-      \verb 2503.19512
       \endverb
     \endentry
     \entry{Hu:2025apl}{article}{}

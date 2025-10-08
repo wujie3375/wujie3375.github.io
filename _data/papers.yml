@@ -50,12 +50,12 @@
   title: "Conditional Autoencoder for Generating Binary Neutron Star Waveforms with Tidal and Precession Effects"
   subtitle: false
   authors: "Mengfei Sun, Jie Wu, Jin Li*, Brendan Mccane, Nan Yang, Xianghe Ma, Borui Wang, Minghui Zhang"
-  date: "Mar 26, 2025"
-  sortable_date: '2025-03-26'
-  journal: false
-  journal_link: false
-  volume: false
-  article_number: false
+  date: "Oct 7, 2025"
+  sortable_date: '2025-10-07'
+  journal: "Phys. Rev. D"
+  journal_link: "https://journals.aps.org/prd/abstract/10.1103/kmlw-y7yw"
+  volume: "112"
+  article_number: "084016"
   arxiv: "2503.19512"
   pdf: "https://wujie3375.github.io/file/250326.pdf"
   highlight_author: 2

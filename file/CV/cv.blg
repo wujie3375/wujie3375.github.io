@@ -1,23 +1,23 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'cv.blg'
-[108] biber-MSWIN64:340> INFO - === 
-[139] Biber.pm:419> INFO - Reading 'cv.bcf'
-[230] Biber.pm:976> INFO - Using all citekeys in bib section 0
-[230] Biber.pm:976> INFO - Using all citekeys in bib section 1
-[230] Biber.pm:976> INFO - Using all citekeys in bib section 0
-[248] Biber.pm:4419> INFO - Processing section 0
-[261] Biber.pm:4610> INFO - Looking for bibtex file 'publications.bib' for section 0
-[305] bibtex.pm:1713> INFO - LaTeX decoding ...
-[317] bibtex.pm:1519> INFO - Found BibTeX data source 'publications.bib'
-[391] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[391] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[391] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[391] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[397] Biber.pm:4419> INFO - Processing section 1
-[397] Biber.pm:4610> INFO - Looking for bibtex file 'publications.bib' for section 1
-[479] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[479] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[480] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[480] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[485] bbl.pm:660> INFO - Writing 'cv.bbl' with encoding 'UTF-8'
-[498] bbl.pm:763> INFO - Output to cv.bbl
+[198] biber-MSWIN64:340> INFO - === 
+[233] Biber.pm:419> INFO - Reading 'cv.bcf'
+[334] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[334] Biber.pm:976> INFO - Using all citekeys in bib section 1
+[334] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[352] Biber.pm:4419> INFO - Processing section 0
+[363] Biber.pm:4610> INFO - Looking for bibtex file 'publications.bib' for section 0
+[404] bibtex.pm:1713> INFO - LaTeX decoding ...
+[419] bibtex.pm:1519> INFO - Found BibTeX data source 'publications.bib'
+[501] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[501] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[501] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[501] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[507] Biber.pm:4419> INFO - Processing section 1
+[507] Biber.pm:4610> INFO - Looking for bibtex file 'publications.bib' for section 1
+[592] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[592] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[592] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[592] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[599] bbl.pm:660> INFO - Writing 'cv.bbl' with encoding 'UTF-8'
+[612] bbl.pm:763> INFO - Output to cv.bbl
