@@ -15,11 +15,12 @@
         <span class="lang-zh">{{ include.institution_zh | default: include.institution }}</span>
       </strong>
       &nbsp;–&nbsp;
-      <span>
+      <span class="fc-type-text">
         <span class="lang-en">{{ include.type_en | default: include.type }}</span>
         <span class="lang-zh">{{ include.type_zh | default: include.type }}</span>
       </span>
     </div>
+
 
     <div class="fc-project">
       <em>
@@ -44,6 +45,9 @@
 </ul>
 
 <style>
+  .fc-type-text {
+    text-decoration: underline;
+  }
   .funding-list {
     list-style-type: disc;
     padding-left: 1.4em;
