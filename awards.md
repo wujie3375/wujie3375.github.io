@@ -36,8 +36,6 @@ title: Honors & Activities
 
 # Funding
 
-<!-- Funding -->
-<h1 id="funding">Funding</h1>
 
 <p style="margin-bottom: 6px;">
   My role is usually marked as “Participant”. Hopefully, I’ll unlock the “Boss Level” soon.
@@ -46,7 +44,7 @@ title: Honors & Activities
 <!-- 复选框风格按钮：未选=英文；选中=中文 -->
 <div class="checkbox-container" style="margin: 6px 0 8px;">
   <input type="checkbox" id="funding-lang-cn" aria-label="Show Chinese">
-  <label for="funding-lang-cn">中文</label>
+  <label for="funding-lang-cn">Zh/En</label>
 </div>
 
 <!-- 局部作用域容器：仅影响这里 -->
@@ -54,19 +52,19 @@ title: Honors & Activities
   <ul style="margin: 0; padding-left: 0em;">
 
     {% include funding_card.html
-       time="Jan 2026 – Dec 2029" time_zh="2026年1月 – 2029年12月"
+       time="Jan 2026 – Dec 2029" time_zh="2026-1 至 2029-12"
        institution_en="National Natural Science Foundation of China (NSFC)"
-       institution_zh="国家自然科学基金委员会"
+       institution_zh="国家自然科学基金"
        type_en="General Program"
        type_zh="面上项目"
        project_en="Machine-learning optimization of waveform generation for multiple types of compact-binary mergers"
        project_zh="利用机器学习优化多类型致密双星并合引力波波形生成的研究"
        role_en="PARTICIPANT" role_zh="参与"
        meta_en="Grant No. 12575072 | CNY 540,000 | Ongoing"
-       meta_zh="项目号：12575072｜经费：CNY 540,000｜在研" %}
+       meta_zh="项目号：12575072｜ CNY 54.0万元｜在研" %}
 
     {% include funding_card.html
-       time="Aug 2024 – Dec 2028" time_zh="2024年8月 – 2028年12月"
+       time="Aug 2024 – Dec 2028" time_zh="2024-8 至 2028-12"
        institution_en="Ministry of Science and Technology of the People’s Republic of China"
        institution_zh="中华人民共和国科学技术部"
        type_en="National Key Research and Development Program"
@@ -75,10 +73,10 @@ title: Honors & Activities
        project_zh="双黑洞系统引力波信号仿真、处理与验证研究"
        role_en="PARTICIPANT" role_zh="参与"
        meta_en="Grant No. 2023YFC2206702 | CNY 4,775,000 | Ongoing"
-       meta_zh="项目号：2023YFC2206702｜经费：CNY 4,775,000｜在研" %}
+       meta_zh="项目号：2023YFC2206702｜ CNY 477.5万元｜在研" %}
 
     {% include funding_card.html
-       time="Jul 2023 – Jun 2026" time_zh="2023年7月 – 2026年6月"
+       time="Jul 2023 – Jun 2026" time_zh="2023-7 至 2026-6"
        institution_en="Natural Science Foundation of Chongqing"
        institution_zh="重庆市自然科学基金"
        type_en="General Program"
@@ -87,10 +85,10 @@ title: Honors & Activities
        project_zh="利用空间引力波探测器联合观测宇宙弦随机引力波背景的研究"
        role_en="PARTICIPANT" role_zh="参与"
        meta_en="Grant No. CSTB2023NSCQ-MSX0103 | CNY 50,000 | Ongoing"
-       meta_zh="项目号：CSTB2023NSCQ-MSX0103｜经费：CNY 50,000｜在研" %}
+       meta_zh="项目号：CSTB2023NSCQ-MSX0103｜ CNY 5.0万元｜在研" %}
 
     {% include funding_card.html
-       time="Jan 2022 – Sep 2026" time_zh="2022年1月 – 2026年9月"
+       time="Jan 2022 – Sep 2026" time_zh="2022-01 至 2026-09"
        institution_en="Ministry of Science and Technology of the People’s Republic of China"
        institution_zh="中华人民共和国科学技术部"
        type_en="National Key Research and Development Program"
@@ -99,7 +97,7 @@ title: Honors & Activities
        project_zh="宇宙弦等新颖引力波源与随机引力波背景的特征和信号识别研究"
        role_en="PARTICIPANT" role_zh="参与"
        meta_en="Grant No. 2021YFC2203004 | CNY 4,400,000 | Ongoing"
-       meta_zh="项目号：2021YFC2203004｜经费：CNY 4,400,000｜在研" %}
+       meta_zh="项目号：2021YFC2203004｜ CNY 440.0万元｜在研" %}
 
   </ul>
 </div>

@@ -1,4 +1,4 @@
-<!-- funding_card.html（保留结构；不放语言CSS） -->
+<!-- funding_card.html -->
 <ul class="funding-list">
   <li class="funding-item">
     <div class="fc-date">
@@ -41,3 +41,48 @@
     </div>
   </li>
 </ul>
+
+<style>
+  .funding-list {
+    list-style-type: disc;
+    padding-left: 1.4em;
+  }
+  .funding-item {
+    margin-bottom: 14px;
+  }
+  .funding-item .fc-date {
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .funding-item .fc-institution {
+    margin-left: 0.2em;
+    font-weight: 700;
+  }
+  .funding-item .fc-type {
+    margin-left: 0.2em;
+    margin-bottom: 2px;
+  }
+  .funding-item .fc-project {
+    margin-left: 0.2em;
+    font-style: italic;
+  }
+  /* 关键：role 左对齐，meta 右对齐 */
+  .funding-item .fc-bottom {
+    display: flex;
+    align-items: baseline;
+    margin-left: 0.2em;
+    margin-top: 2px;
+    width: 100%;
+  }
+  .funding-item .fc-role {
+    font-weight: 700;
+    flex: 0 0 auto;
+  }
+  .funding-item .fc-meta {
+    margin-left: auto;   /* 把 meta 推到最右 */
+    text-align: right;
+    white-space: nowrap;
+    color: #555;
+    font-size: 0.95em;
+  }
+</style>
