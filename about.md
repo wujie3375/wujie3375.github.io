@@ -110,7 +110,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 {% include experience_card.html 
   title="Beijing Normal University" 
   date="Feb 2024 - Apr 2024" 
-  degree="VISITOR" 
+  degree="Visitor" 
   logo="https://wujie3375.github.io/images/logo2/bnu.png" 
   logo_margin="0"
   fields="
@@ -120,7 +120,7 @@ Currently, my primary research focus is on the simulation of gravitational wave 
 {% include experience_card.html 
   title="University of Chinese Academy of Sciences" 
   date="Sep 2020 - Sep 2021" 
-  degree="PARTICIPANT" 
+  degree="Participant" 
   logo="https://wujie3375.github.io/images/logo2/ucas.png" 
   logo_margin="13"
   fields="
