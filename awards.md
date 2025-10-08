@@ -37,7 +37,7 @@ title: Honors & Activities
 # Funding
 
 <p style="margin-bottom: 6px;">
-  My role is usually marked as “Participant”. Hopefully, I’ll unlock the “Boss Level” soon.
+  At the moment, I’m usually a participant; with luck, I’ll someday evolve into a PI instead of just a supporting citation in the acknowledgments.
 </p>
 
 <!-- 复选框风格按钮：未选=英文；选中=中文 -->
@@ -145,7 +145,7 @@ title: Honors & Activities
 # Meetings
 
 <p style="margin-bottom: 6px;">
-  Keep track of the meetings I've been to.
+  A record of meetings I’ve attended — proof that I’m still alive and haven’t escaped from the academic world yet.
 </p>
 
 <!-- 复选框样式的语言切换（仅影响下方 #meetings-block） -->
@@ -161,7 +161,7 @@ title: Honors & Activities
       date_en="Jul 7, 2025" date_zh="2025-7-7"
       role_en="PRESENTER" role_zh="报告"
       title_en="Workshop on Space Gravitational-Wave Detection Signal Simulation, Processing, and Verification (National Key R&D Program Project)"
-      title_zh="国家重点研发计划“空间引力波探测信号仿真、处理与验证技术研究”项目研讨会"
+      title_zh="国家重点研发计划 “空间引力波探测信号仿真、处理与验证技术研究” 项目研讨会"
       location_en="Zhuhai, Guangdong, China" location_zh="广东珠海"
       photo="250706.jpg" %}
 
@@ -186,7 +186,7 @@ title: Honors & Activities
       date_en="Dec 14, 2024" date_zh="2024-12-14"
       role_en="PARTICIPANT" role_zh="参会"
       title_en="Workshop on Space Gravitational-Wave Detection Signal Simulation, Processing, and Verification (National Key R&D Program Project)"
-      title_zh="国家重点研发计划“引力波探测”重点专项“空间引力波探测信号仿真、处理与验证技术研究”项目启动暨实施方案论证会"
+      title_zh="国家重点研发计划 “引力波探测” 重点专项 “空间引力波探测信号仿真、处理与验证技术研究” 项目启动暨实施方案论证会"
       location_en="Zhuhai, Guangdong, China" location_zh="广东珠海" %}
 
     {% include meeting_card.html 
