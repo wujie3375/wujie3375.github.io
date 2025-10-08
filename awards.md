@@ -36,7 +36,6 @@ title: Honors & Activities
 
 # Funding
 
-
 <p style="margin-bottom: 6px;">
   My role is usually marked as “Participant”. Hopefully, I’ll unlock the “Boss Level” soon.
 </p>
@@ -44,7 +43,7 @@ title: Honors & Activities
 <!-- 复选框风格按钮：未选=英文；选中=中文 -->
 <div class="checkbox-container" style="margin: 6px 0 8px;">
   <input type="checkbox" id="funding-lang-cn" aria-label="Show Chinese">
-  <label for="funding-lang-cn">中/EN</label>
+  <label for="funding-lang-cn">中文 / EN</label>
 </div>
 
 <!-- 局部作用域容器：仅影响这里 -->
@@ -142,86 +141,129 @@ title: Honors & Activities
 
 ---
 
-# Meetings
+<!-- Meetings -->
+# meetings
 
-<p style="margin-bottom: 3px;">
+<p style="margin-bottom: 6px;">
   Keep track of the meetings I've been to.
 </p>
 
-<div style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0 10px 0 0;">
+<!-- 复选框样式的语言切换（仅影响下方 #meetings-block） -->
+<div class="checkbox-container" style="margin: 6px 0 8px;">
+  <input type="checkbox" id="meetings-lang-cn" aria-label="Show Chinese">
+  <label for="meetings-lang-cn">中文 / EN</label>
+</div>
+
+<div id="meetings-block" data-lang="en" style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0 10px 0 0;">
   <ul style="margin: 0; padding-left: 1.2em;">
 
-  {% include meeting_card.html 
-  date="Apr 19, 2025" 
-  role="PRESENTER" 
-  title="The 2025 Annual Academic Conference and National Congress of the Gravitation and Relativistic Astrophysics Branch of the Chinese Physical Society." 
-  location="Kunming, Yunnan, China" 
-  photo="250420.jpg"
-  ppt="250420.pdf" %}
+    {% include meeting_card.html 
+      date_en="Apr 19, 2025" date_zh="2025年4月19日"
+      role_en="PRESENTER" role_zh="报告人"
+      title_en="The 2025 Annual Academic Conference and National Congress of the Gravitation and Relativistic Astrophysics Branch of the Chinese Physical Society."
+      title_zh="中国物理学会引力与相对论天体物理分会2025年学术年会暨全国会员代表大会"
+      location_en="Kunming, Yunnan, China" location_zh="中国 云南 昆明"
+      photo="250420.jpg"
+      ppt="250420.pdf" %}
 
-  {% include meeting_card.html 
-  date="Jan 14, 2025" 
-  role="VOLUNTEER" 
-  title="The 2025 Chongqing Symposium on Gravity and Cosmology" 
-  location="Chongqing, China" 
-  photo="250114.jpg" %}
-  
-  <!-- {% include meeting_card.html 
-  date="Apr 19, 2024" 
-  role="PRESENTER" 
-  title="The 2024 Annual Meeting of Gravitation and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting" 
-  location="Hengyang, Hunan, China" 
-  photo="240419.jpg" 
-  ppt="240419.pdf" %} -->
+    {% include meeting_card.html 
+      date_en="Jan 14, 2025" date_zh="2025年1月14日"
+      role_en="VOLUNTEER" role_zh="志愿者"
+      title_en="The 2025 Chongqing Symposium on Gravity and Cosmology"
+      title_zh="2025年重庆引力与宇宙学研讨会"
+      location_en="Chongqing, China" location_zh="中国 重庆"
+      photo="250114.jpg" %}
 
-  {% include meeting_card.html 
-  date="Apr 19, 2024" 
-  role="PRESENTER" 
-  title="The 2024 Annual Meeting of Gravitation and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo-Xu Guangqi Meeting" 
-  location="Hengyang, Hunan, China" %}
-  
-  {% include meeting_card.html 
-  date="Apr 9, 2024" 
-  role="PARTICIPANT" 
-  title="The 2nd International Workshop on Gravitational Waves and the Early Universe" 
-  location="Beijing, China" 
-  photo="240409.jpg" %}
+    {% include meeting_card.html 
+      date_en="Apr 19, 2024" date_zh="2024年4月19日"
+      role_en="PRESENTER" role_zh="报告人"
+      title_en="The 2024 Annual Meeting of Gravitation and Relativity Astrophysics Division of Chinese Physical Society and the Sixth Galileo–Xu Guangqi Meeting"
+      title_zh="中国物理学会引力与相对论天体物理分会2024年学术年会暨第六届伽利略—徐光启会议"
+      location_en="Hengyang, Hunan, China" location_zh="中国 湖南 衡阳"
+      photo="240419.jpg"
+      ppt="240419.pdf" %}
 
-  {% include meeting_card.html 
-  date="Oct 28, 2023" 
-  role="PARTICIPANT" 
-  title="The 2023 Electrodynamics textbook and course construction seminar" 
-  location="Chongqing, China" 
-  photo="231028.jpg" %}
+    {% include meeting_card.html 
+      date_en="Apr 9, 2024" date_zh="2024年4月9日"
+      role_en="PARTICIPANT" role_zh="参会"
+      title_en="The 2nd International Workshop on Gravitational Waves and the Early Universe"
+      title_zh="第二届引力波与早期宇宙国际研讨会"
+      location_en="Beijing, China" location_zh="中国 北京"
+      photo="240409.jpg" %}
 
-  {% include meeting_card.html 
-  date="Oct 13, 2023" 
-  role="PARTICIPANT" 
-  title="The 2023 Academic Symposium on the Frontiers of Theoretical Physics in Sichuan Chongqing Region" 
-  location="Chengdu, Sichuan, China" 
-  photo="231013.jpg" %}
+    {% include meeting_card.html 
+      date_en="Oct 28, 2023" date_zh="2023年10月28日"
+      role_en="PARTICIPANT" role_zh="参会"
+      title_en="The 2023 Electrodynamics Textbook and Course Construction Seminar"
+      title_zh="2023年电动力学教材与课程建设研讨会"
+      location_en="Chongqing, China" location_zh="中国 重庆"
+      photo="231028.jpg" %}
 
-  {% include meeting_card.html 
-  date="Apr 22, 2023" 
-  role="VOLUNTEER" 
-  title="The 2023 Annual Meeting of the Chinese Physical Society, Division of Gravitation and Relativity Astrophysics" 
-  location="Chongqing, China" %}
+    {% include meeting_card.html 
+      date_en="Oct 13, 2023" date_zh="2023年10月13日"
+      role_en="PARTICIPANT" role_zh="参会"
+      title_en="The 2023 Academic Symposium on the Frontiers of Theoretical Physics in Sichuan–Chongqing Region"
+      title_zh="2023年四川重庆地区理论物理前沿学术研讨会"
+      location_en="Chengdu, Sichuan, China" location_zh="中国 四川 成都"
+      photo="231013.jpg" %}
 
-  {% include meeting_card.html 
-  date="Apr 21, 2023" 
-  role="VOLUNTEER" 
-  title="Template Library and Signal Recognition Technology for Space Gravitational Wave Detection 2022 Annual Progress Conference" 
-  location="Chongqing, China" %}
+    {% include meeting_card.html 
+      date_en="Apr 22, 2023" date_zh="2023年4月22日"
+      role_en="VOLUNTEER" role_zh="志愿者"
+      title_en="The 2023 Annual Meeting of the Chinese Physical Society, Division of Gravitation and Relativity Astrophysics"
+      title_zh="中国物理学会引力与相对论天体物理分会2023年学术年会"
+      location_en="Chongqing, China" location_zh="中国 重庆" %}
 
-  {% include meeting_card.html 
-  date="Apr 1, 2023" 
-  role="PARTICIPANT" 
-  title="Chongqing Theoretical Physics Frontier Academic Seminar" 
-  location="Chongqing, China" 
-  photo="230401.jpg" %}
+    {% include meeting_card.html 
+      date_en="Apr 21, 2023" date_zh="2023年4月21日"
+      role_en="VOLUNTEER" role_zh="志愿者"
+      title_en="Template Library and Signal Recognition Technology for Space Gravitational Wave Detection — 2022 Annual Progress Conference"
+      title_zh="空间引力波探测模板库与信号识别技术 2022 年度推进会"
+      location_en="Chongqing, China" location_zh="中国 重庆" %}
 
-</ul>
+    {% include meeting_card.html 
+      date_en="Apr 1, 2023" date_zh="2023年4月1日"
+      role_en="PARTICIPANT" role_zh="参会"
+      title_en="Chongqing Theoretical Physics Frontier Academic Seminar"
+      title_zh="重庆理论物理前沿学术研讨会"
+      location_en="Chongqing, China" location_zh="中国 重庆"
+      photo="230401.jpg" %}
+
+  </ul>
 </div>
+
+<style>
+  /* 复选框样式（与你之前一致） */
+  .checkbox-container {
+    font-size: 19px; 
+    display: flex; 
+    align-items: center;
+  }
+  #meetings-lang-cn {
+    width: 18px; 
+    height: 18px; 
+    margin: 0 6px 0 0; 
+    accent-color: #36a2eb;
+  }
+  #meetings-lang-cn + label { vertical-align: middle; }
+
+  /* —— 语言切换：仅作用于 #meetings-block —— */
+  #meetings-block .lang-en { display: inline; }
+  #meetings-block .lang-zh { display: none; }
+  #meetings-block[data-lang="zh"] .lang-en { display: none !important; }
+  #meetings-block[data-lang="zh"] .lang-zh { display: inline !important; }
+</style>
+
+<script>
+  (function () {
+    const checkbox = document.getElementById('meetings-lang-cn');
+    const block = document.getElementById('meetings-block');
+    checkbox.addEventListener('change', function () {
+      block.setAttribute('data-lang', checkbox.checked ? 'zh' : 'en');
+    });
+  })();
+</script>
+
 
 ---
 

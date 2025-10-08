@@ -1,17 +1,38 @@
 <li style="margin-bottom: 15px;">
-    <strong>{{ include.date }}:</strong> <br>
-    <strong>{{ include.role }}</strong>, <em>{{ include.title }}</em>, {{ include.location }}.
-    
-    {% if include.photo %}
-    <span style="font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
-      <a href="https://wujie3375.github.io/images/meeting/{{ include.photo }}" target="_blank">Photo</a>
-    </span>
-    {% endif %}
-    
-    {% if include.ppt %}
-    <span style="margin-left: 5px; font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
-      <a href="https://wujie3375.github.io/images/meeting/{{ include.ppt }}" target="_blank">PPT</a>
-    </span>
-    {% endif %}
-  </li>
+  <!-- 日期 -->
+  <strong>
+    <span class="lang-en">{{ include.date_en | default: include.date }}</span>
+    <span class="lang-zh">{{ include.date_zh | default: include.date }}</span>
+  </strong>:
+  <br>
+
+  <!-- 角色 -->
+  <strong>
+    <span class="lang-en">{{ include.role_en | default: include.role }}</span>
+    <span class="lang-zh">{{ include.role_zh | default: include.role }}</span>
+  </strong>,
   
+  <!-- 标题 -->
+  <em>
+    <span class="lang-en">{{ include.title_en | default: include.title }}</span>
+    <span class="lang-zh">{{ include.title_zh | default: include.title }}</span>
+  </em>,
+  
+  <!-- 地点 -->
+  <span class="lang-en">{{ include.location_en | default: include.location }}</span>
+  <span class="lang-zh">{{ include.location_zh | default: include.location }}</span>.
+  
+  <!-- Photo -->
+  {% if include.photo %}
+  <span style="font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative; margin-left: 5px;">
+    <a href="https://wujie3375.github.io/images/meeting/{{ include.photo }}" target="_blank">Photo</a>
+  </span>
+  {% endif %}
+  
+  <!-- PPT -->
+  {% if include.ppt %}
+  <span style="margin-left: 5px; font-size: 15px; border: 0.8px solid black; padding: 2px; position: relative;">
+    <a href="https://wujie3375.github.io/images/meeting/{{ include.ppt }}" target="_blank">PPT</a>
+  </span>
+  {% endif %}
+</li>
