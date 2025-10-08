@@ -7,12 +7,15 @@
     <!-- 机构 -->
     <div class="fc-institution"><strong>{{ include.institution }}</strong></div>
 
+    <!-- 项目类型 -->
+    <div class="fc-type">{{ include.type }}</div>
+
     <!-- 项目 -->
     <div class="fc-project"><em>{{ include.project }}</em></div>
 
     <!-- 角色 + 经费信息 -->
     <div class="fc-bottom">
-      <div class="fc-role">{{ include.role }}</div>
+      <div class="fc-role"><strong>{{ include.role }}</strong></div>
       <div class="fc-meta">{{ include.meta }}</div>
     </div>
   </li>
@@ -34,6 +37,12 @@
     margin-left: 0.2em;
     font-weight: 700;
   }
+  .funding-item .fc-type {
+    margin-left: 0.2em;
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 2px;
+  }
   .funding-item .fc-project {
     margin-left: 0.2em;
     font-style: italic;
@@ -46,6 +55,7 @@
   }
   .funding-item .fc-role {
     text-align: left;
+    font-weight: bold;
   }
   .funding-item .fc-meta {
     text-align: right;

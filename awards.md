@@ -44,25 +44,36 @@ My role is usually marked as “Participant”. Hopefully, I’ll unlock the “
   <ul style="margin: 0; padding-left: 0em;">
 
 {% include funding_card.html
+   time="Jan 2026 – Dec 2029"
+   institution="National Natural Science Foundation of China (NSFC)"
+   type="General Program"
+   project="Machine-learning optimization of waveform generation for multiple types of compact-binary mergers"
+   role="PARTICIPANT"
+   meta="Grant No. 12575072 | CNY 540,000 | Ongoing" %}
+
+{% include funding_card.html
    time="Aug 2024 – Dec 2028"
-   institution="National Key Research and Development Program of China"
+   institution="Ministry of Science and Technology of the People’s Republic of China"
+   type="National Key Research and Development Program"
    project="Simulation, processing, and verification of gravitational-wave signals from binary black-hole systems"
    role="PARTICIPANT"
-   meta="Grant No. 2023YFC2206702 | ￥4.775 million | Ongoing" %}
+   meta="Grant No. 2023YFC2206702 | CNY 4,775,000 | Ongoing" %}
 
 {% include funding_card.html
    time="Jul 2023 – Jun 2026"
-   institution="Natural Science Foundation of Chongqing"
-   project="Research on the detection of cosmic gravitational-wave background using space-based GW detectors"
+   institution="Chongqing Natural Science Foundation"
+   type="General Program"
+   project="Joint observation of the cosmic-string stochastic gravitational-wave background with space-based detectors"
    role="PARTICIPANT"
-   meta="Grant No. CSTB2023NSCQ-MSX0103 | ￥0.55 million | Ongoing" %}
+   meta="Grant No. CSTB2023NSCQ-MSX0103 | CNY 50,000 | Ongoing" %}
 
 {% include funding_card.html
    time="Jan 2022 – Sep 2026"
-   institution="National Key Research and Development Program of China"
-   project="Characteristics and signal identification of novel gravitational-wave sources and stochastic backgrounds"
+   institution="Ministry of Science and Technology of the People’s Republic of China"
+   type="National Key Research and Development Program"
+   project="Characteristics and signal identification of novel gravitational-wave sources (e.g., cosmic strings) and their stochastic backgrounds"
    role="PARTICIPANT"
-   meta="Grant No. 2021YFC2203004 | ￥4.40 million | Ongoing" %}
+   meta="Grant No. 2021YFC2203004 | CNY 4,400,000 | Ongoing" %}
 
 </ul>
 </div>
