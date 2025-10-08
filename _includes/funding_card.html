@@ -8,16 +8,17 @@
       </strong>
     </div>
 
-    <div class="fc-institution">
+    <!-- institution + type 同行 -->
+    <div class="fc-inst-type">
       <strong>
         <span class="lang-en">{{ include.institution_en | default: include.institution }}</span>
         <span class="lang-zh">{{ include.institution_zh | default: include.institution }}</span>
       </strong>
-    </div>
-
-    <div class="fc-type">
-      <span class="lang-en">{{ include.type_en | default: include.type }}</span>
-      <span class="lang-zh">{{ include.type_zh | default: include.type }}</span>
+      &nbsp;–&nbsp;
+      <span>
+        <span class="lang-en">{{ include.type_en | default: include.type }}</span>
+        <span class="lang-zh">{{ include.type_zh | default: include.type }}</span>
+      </span>
     </div>
 
     <div class="fc-project">
@@ -54,11 +55,7 @@
     font-weight: 600;
     margin-bottom: 2px;
   }
-  .funding-item .fc-institution {
-    margin-left: 0.2em;
-    font-weight: 700;
-  }
-  .funding-item .fc-type {
+  .funding-item .fc-inst-type {
     margin-left: 0.2em;
     margin-bottom: 2px;
   }
@@ -66,7 +63,6 @@
     margin-left: 0.2em;
     font-style: italic;
   }
-  /* 关键：role 左对齐，meta 右对齐 */
   .funding-item .fc-bottom {
     display: flex;
     align-items: baseline;
@@ -79,7 +75,7 @@
     flex: 0 0 auto;
   }
   .funding-item .fc-meta {
-    margin-left: auto;   /* 把 meta 推到最右 */
+    margin-left: auto;
     text-align: right;
     white-space: nowrap;
     color: #555;

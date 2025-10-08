@@ -44,7 +44,7 @@ title: Honors & Activities
 <!-- 复选框风格按钮：未选=英文；选中=中文 -->
 <div class="checkbox-container" style="margin: 6px 0 8px;">
   <input type="checkbox" id="funding-lang-cn" aria-label="Show Chinese">
-  <label for="funding-lang-cn">Zh/En</label>
+  <label for="funding-lang-cn">中/EN</label>
 </div>
 
 <!-- 局部作用域容器：仅影响这里 -->
