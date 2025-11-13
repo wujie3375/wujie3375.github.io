@@ -1,4 +1,20 @@
 - year: 2025
+  title: "Detection of Lensed Gravitational Waves from dark matter halos with deep learning"
+  subtitle: false
+  authors: "Mengfei Sun, Jie Wu, Jin Li*, Nan Yang, Xianghe Ma, Borui Wang, Minghui Zhang, Yuanhong Zhong*"
+  date: "Nov 12, 2025"
+  sortable_date: '2025-11-12'
+  journal: false
+  journal_link: false
+  volume: false
+  article_number: false
+  arxiv: "2511.09107"
+  pdf: "https://wujie3375.github.io/file/251113.pdf"
+  highlight_author: 2
+  first_or_not: false
+  etal: 3
+
+- year: 2025
   title: "Identification of Stochastic Gravitational Wave Backgrounds from Cosmic String Using Machine Learning"
   subtitle: false
   authors: "Xianghe Ma, Borui Wang, Nan Yang, Jin Li*, Brendan McCane, Mengfei Sun, Jie Wu, Minghui Zhang, Yan Meng*"
