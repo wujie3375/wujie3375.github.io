@@ -45,6 +45,18 @@ title: Honors & Activities
   <h2>Awards</h2>
   <ul>
     <li>
+      <span class="lang-en">
+        <b>Dec 2025:</b>
+        <b>Young Scientific Talent Development Program (PhD Track)</b>,
+        <i>China Association for Science and Technology</i>
+      </span>
+      <span class="lang-zh">
+        <b>2025年12月：</b>
+        <b>青年科技人才培育工程博士生专项计划</b>，
+        <i>中国科学技术协会</i>
+      </span>
+    </li>
+    <li>
       <span class="lang-en"><b>Dec 2025:</b> <b>Advanced Individual in Scientific and Academic Innovation</b>, <i>Chongqing U.</i></span>
       <span class="lang-zh"><b>2025年12月：</b><b>科技学术创新先进个人</b>，<i>重庆大学</i></span>
     </li>
