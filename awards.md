@@ -89,20 +89,20 @@ title: Honors & Activities
       <span class="lang-zh"><b>2024年09月：</b><b>理论物理研究生奖学金</b>（2次），<i>重庆大学</i></span>
     </li>
     <li>
-      <span class="lang-en"><b>2022–23:</b> <b>Graduate Academic Scholarship</b> (twice), <i>Chongqing U.</i></span>
-      <span class="lang-zh"><b>2022–23年：</b><b>研究生学业奖学金</b>（2次），<i>重庆大学</i></span>
+      <span class="lang-en"><b>2022-23:</b> <b>Graduate Academic Scholarship</b> (twice), <i>Chongqing U.</i></span>
+      <span class="lang-zh"><b>2022-23年：</b><b>研究生学业奖学金</b>（2次），<i>重庆大学</i></span>
     </li>
     <li>
-      <span class="lang-en"><b>2020 – 2022:</b> <b>First-class Scholarship</b> (three times), <i>China West Normal U.</i></span>
-      <span class="lang-zh"><b>2020–2022年：</b><b>一等奖学金</b>（3次），<i>西华师范大学</i></span>
+      <span class="lang-en"><b>2020-22:</b> <b>First-class Scholarship</b> (three times), <i>China West Normal U.</i></span>
+      <span class="lang-zh"><b>2020-22年：</b><b>一等奖学金</b>（3次），<i>西华师范大学</i></span>
     </li>
     <li>
       <span class="lang-en"><b>Dec 2020:</b> <b>Haotian Astronomy Scholarship</b>, <i>Nanjing VasTech Astronomical Instrument &amp; Equipment Co. Ltd.</i></span>
       <span class="lang-zh"><b>2020年12月：</b><b>昊天天文奖学金</b>，<i>南京昊天天文仪器设备有限公司</i></span>
     </li>
     <li>
-      <span class="lang-en"><b>2018 – 2021:</b> <b>Second-class Scholarship</b> (four times), <i>China West Normal U.</i></span>
-      <span class="lang-zh"><b>2018–2021年：</b><b>二等奖学金</b>（4次），<i>西华师范大学</i></span>
+      <span class="lang-en"><b>2018-21:</b> <b>Second-class Scholarship</b> (four times), <i>China West Normal U.</i></span>
+      <span class="lang-zh"><b>2018-21年：</b><b>二等奖学金</b>（4次），<i>西华师范大学</i></span>
     </li>
   </ul>
 </div>
