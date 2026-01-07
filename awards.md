@@ -119,7 +119,7 @@ title: Honors & Activities
 # Funding
 
 <p style="margin-bottom: 6px;">
-  At the moment, I’m usually a participant; with luck, I’ll someday evolve into a PI instead of just a supporting citation in the acknowledgments.
+  I’m still frequently a participant, but I’ve taken my first step as a PI — no longer only a supporting citation tucked away in the acknowledgments.
 </p>
 
 <!-- 复选框风格按钮：未选=英文；选中=中文 -->
@@ -131,6 +131,20 @@ title: Honors & Activities
 <!-- 局部作用域容器：仅影响这里 -->
 <div id="funding-block" data-lang="en" style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0 10px 0 0;">
   <ul style="margin: 0; padding-left: 0em;">
+
+    {% include funding_card.html
+       time="Jan 2026 – Dec 2027"
+       time_zh="2026-01 至 2027-12"
+       institution_en="National Natural Science Foundation of China (NSFC)"
+       institution_zh="国家自然科学基金"
+       type_en="Young Students’ Basic Research Program (PhD)"
+       type_zh="青年学生基础研究项目（博士研究生）"
+       project_en="Signal Processing and Theoretical Modeling of Space-Based Gravitational Waves with Moving-Source Effects"
+       project_zh="移动源效应下的空间引力波信号处理与理论研究"
+       role_en="PI"
+       role_zh="主持"
+       meta_en="Grant No. 125B2102 | CNY 300,000 | Ongoing"
+       meta_zh="项目号：125B2102｜经费：30万元｜在研" %}
 
     {% include funding_card.html
        time="Jan 2026 – Dec 2029" time_zh="2026-1 至 2029-12"
