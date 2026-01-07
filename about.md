@@ -32,7 +32,6 @@ title: About
 <!-- <img src="https://wujie3375.github.io/caihanlin.jpg" class="floatpic" width="360" height="480"> -->
  
 
-
 <p style="text-indent: 1.5em;">Hi there! Welcome to my personal corner of the internet!</p>
 
 I’m **Jie Wu**, a PhD student in Physics at **Chongqing University**, tuning in to the universe’s faintest whispers—**gravitational waves**. I spend my days wrangling signals, crunching mountains of data, and dreaming up clever ways to catch those sneaky ripples in spacetime—then chasing the answers with code, data, and (lots of) coffee.
@@ -52,8 +51,6 @@ My big dream? To unravel the essence of the universe and the fundamental rules t
 - **Anime**  
   experiencing emotions and stories that hit differently, in the best way 🎬  
 
-
-Oh, and if you’re wondering: I’m an <em>INTJ</em>—Emotionally stable as a brick, verbally economical as a desert, and empathetically equipped like a toaster.​
 
 Got something cool to share? Hit me up anytime at **wujie3375@gmail.com**. Can’t wait to explore the universe together—one gravitational wave (and one cup of coffee) at a time!
 
