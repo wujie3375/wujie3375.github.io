@@ -90,10 +90,9 @@
   .funding-item .fc-project {
     margin-left: 0.2em;
     display: flex;
-    align-items: baseline;
+    align-items: stretch;   /* 不用 baseline */
     gap: 12px;
   }
-
   /* 左侧项目名允许换行 */
   .funding-item .fc-project-title {
     flex: 1 1 auto;
@@ -106,6 +105,9 @@
     font-weight: 400;
     font-size: 0.85em;
     color: #666;
+
+    align-self: flex-end;   /* ⭐ 关键：与标题最后一行对齐 */
   }
+
 
 </style>
