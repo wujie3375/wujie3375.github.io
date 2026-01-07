@@ -4,7 +4,7 @@ permalink: /awards
 title: Honors & Activities
 ---
 
-> **Last Update:** Oct 8, 2025
+> **Last Update:** Jan 7, 2026
 
 <style>
   /* 勾选框样式（沿用你提供的风格，稍微改了 id） */
@@ -21,6 +21,9 @@ title: Honors & Activities
     margin: 0;
     accent-color: #36a2eb;
   }
+  #awards-lang-cn + label {
+    vertical-align: middle;
+  }
 
   /* —— 语言切换：仅作用于 #awards-block —— */
   #awards-block .lang-en { display: inline; }
@@ -29,26 +32,25 @@ title: Honors & Activities
   /* 勾选中文时切换显示 */
   #awards-block[data-lang="zh"] .lang-en { display: none !important; }
   #awards-block[data-lang="zh"] .lang-zh { display: inline !important; }
-
-  /* （可选）列表排版更紧凑一点 */
-  #awards-block ul { margin: 0.2rem 0 1rem 1.1rem; }
-  #awards-block li { margin: 0.35rem 0; }
 </style>
 
 <div id="awards-block" data-lang="en">
   <!-- 切换开关 -->
   <div class="checkbox-container">
     <input type="checkbox" id="awards-lang-cn" />
-    <label for="awards-lang-cn">中文</label>
-    <span style="opacity:.6;">/ English</span>
+    <label for="awards-lang-cn">中文/EN</label>
   </div>
 
   <!-- ===== Awards ===== -->
   <h2>Awards</h2>
   <ul>
     <li>
-      <span class="lang-en"><b>Dec 2023:</b> <b>Second Prize</b> (Ranked 2nd/3rd), <i>The 7th Sichuan–Chongqing Astronomy Competition</i></span>
-      <span class="lang-zh"><b>2023年12月：</b><b>二等奖</b>（第2/3名），<i>第七届川渝天文竞赛</i></span>
+      <span class="lang-en"><b>Dec 2025:</b> <b>Advanced Individual in Scientific and Academic Innovation</b>, <i>Chongqing U.</i></span>
+      <span class="lang-zh"><b>2025年12月：</b><b>科技学术创新先进个人</b>，<i>重庆大学</i></span>
+    </li>
+    <li>
+      <span class="lang-en"><b>Dec 2023:</b> <b>Second Prize</b> (Ranked 2nd–3rd), <i>The 7th Sichuan–Chongqing Astronomy Competition</i></span>
+      <span class="lang-zh"><b>2023年12月：</b><b>二等奖</b>（第2–3名），<i>第七届川渝天文竞赛</i></span>
     </li>
     <li>
       <span class="lang-en"><b>Jun 2022:</b> <b>Excellent Graduation Thesis</b>, <i>China West Normal U.</i></span>
@@ -59,8 +61,8 @@ title: Honors & Activities
       <span class="lang-zh"><b>2022年5月：</b><b>优秀毕业生</b>，<i>西华师范大学</i></span>
     </li>
     <li>
-      <span class="lang-en"><b>Nov 2018:</b> <b>Third Prize</b> (Ranked 7th/8th), <i>The 5th Sichuan–Chongqing Astronomy Competition</i></span>
-      <span class="lang-zh"><b>2018年11月：</b><b>三等奖</b>（第7/8名），<i>第五届川渝天文竞赛</i></span>
+      <span class="lang-en"><b>Nov 2018:</b> <b>Third Prize</b> (Ranked 7th–8th), <i>The 5th Sichuan–Chongqing Astronomy Competition</i></span>
+      <span class="lang-zh"><b>2018年11月：</b><b>三等奖</b>（第7–8名），<i>第五届川渝天文竞赛</i></span>
     </li>
   </ul>
 
@@ -70,23 +72,27 @@ title: Honors & Activities
   <h2>Scholarships</h2>
   <ul>
     <li>
-      <span class="lang-en"><b>Sep 2024:</b> <b>Theoretical Physics Graduate Scholarship</b> (Twice), <i>Chongqing U.</i></span>
+      <span class="lang-en"><b>Dec 2025:</b> <b>National Scholarship</b>, <i>Ministry of Education of China</i></span>
+      <span class="lang-zh"><b>2025年12月：</b><b>国家奖学金</b>，<i>教育部</i></span>
+    </li>
+    <li>
+      <span class="lang-en"><b>Sep 2024:</b> <b>Theoretical Physics Graduate Scholarship</b> (twice), <i>Chongqing U.</i></span>
       <span class="lang-zh"><b>2024年9月：</b><b>理论物理研究生奖学金</b>（2次），<i>重庆大学</i></span>
     </li>
     <li>
-      <span class="lang-en"><b>2022 – 2023:</b> <b>Graduate Academic Scholarship</b> (Twice), <i>Chongqing U.</i></span>
+      <span class="lang-en"><b>2022 – 2023:</b> <b>Graduate Academic Scholarship</b> (twice), <i>Chongqing U.</i></span>
       <span class="lang-zh"><b>2022–2023年：</b><b>研究生学业奖学金</b>（2次），<i>重庆大学</i></span>
     </li>
     <li>
-      <span class="lang-en"><b>2020 – 2022:</b> <b>First-class Scholarship</b> (Three times), <i>China West Normal U.</i></span>
+      <span class="lang-en"><b>2020 – 2022:</b> <b>First-class Scholarship</b> (three times), <i>China West Normal U.</i></span>
       <span class="lang-zh"><b>2020–2022年：</b><b>一等奖学金</b>（3次），<i>西华师范大学</i></span>
     </li>
     <li>
       <span class="lang-en"><b>Dec 2020:</b> <b>Haotian Astronomy Scholarship</b>, <i>Nanjing VasTech Astronomical Instrument &amp; Equipment Co. Ltd.</i></span>
-      <span class="lang-zh"><b>2020年12月：</b><b>昊天天文奖学金</b>，<i>南京瓦斯泰克天文仪器设备有限公司</i></span>
+      <span class="lang-zh"><b>2020年12月：</b><b>昊天天文奖学金</b>，<i>南京昊天天文仪器设备有限公司</i></span>
     </li>
     <li>
-      <span class="lang-en"><b>2018 – 2021:</b> <b>Second-class Scholarship</b> (Four times), <i>China West Normal U.</i></span>
+      <span class="lang-en"><b>2018 – 2021:</b> <b>Second-class Scholarship</b> (four times), <i>China West Normal U.</i></span>
       <span class="lang-zh"><b>2018–2021年：</b><b>二等奖学金</b>（4次），<i>西华师范大学</i></span>
     </li>
   </ul>
