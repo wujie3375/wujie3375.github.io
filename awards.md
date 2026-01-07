@@ -135,7 +135,7 @@ title: Honors & Activities
     {% include funding_card.html
        time="Jan 2026 – Dec 2027"
        time_zh="2026-01 至 2027-12"
-       institution_en="National Natural Science Foundation of China (NSFC)"
+       institution_en="National Natural Science Foundation of China"
        institution_zh="国家自然科学基金"
        type_en="Young Students’ Basic Research Program (PhD)"
        type_zh="青年学生基础研究项目（博士研究生）"
@@ -148,7 +148,7 @@ title: Honors & Activities
 
     {% include funding_card.html
        time="Jan 2026 – Dec 2029" time_zh="2026-1 至 2029-12"
-       institution_en="National Natural Science Foundation of China (NSFC)"
+       institution_en="National Natural Science Foundation of China"
        institution_zh="国家自然科学基金"
        type_en="General Program"
        type_zh="面上项目"
@@ -252,6 +252,20 @@ title: Honors & Activities
 
 <div id="meetings-block" data-lang="en" style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0 10px 0 0;">
   <ul style="margin: 0; padding-left: 1.2em;">
+
+    {% include meeting_card.html 
+      date_en="Dec 28, 2025" date_zh="2025-12-28"
+      role_en="Volunteer" role_zh="会务"
+      title_en="Workshop on Theory and Experiments of Multiband Gravitational-Wave Detection"
+      title_zh="多波段引力波探测理论及实验研讨会"
+      location_en="Chongqing, China" location_zh="重庆" %}
+
+    {% include meeting_card.html 
+      date_en="Dec 13, 2025" date_zh="2025-12-13"
+      role_en="Participant" role_zh="参会"
+      title_en="Chongqing Symposium on Frontiers of Theoretical Physics"
+      title_zh="重庆市理论物理前沿学术研讨会"
+      location_en="Chongqing, China" location_zh="重庆" %}
 
     {% include meeting_card.html 
       date_en="Jul 7, 2025" date_zh="2025-7-7"
