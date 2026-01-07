@@ -6,31 +6,107 @@ title: Honors & Activities
 
 > **Last Update:** Oct 8, 2025
 
-# Awards
+<style>
+  /* 勾选框样式（沿用你提供的风格，稍微改了 id） */
+  .checkbox-container {
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 6px 0 14px 0;
+  }
+  #awards-lang-cn {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    accent-color: #36a2eb;
+  }
 
--  **Dec 2023:**  
-  **Second Prize** (Ranked 2nd/3rd), *The 7th Sichuan Chongqing Astronomy Competition*
--  **Jun 2022:**  
-  **Excellent Graduation Thesis**, *China West Normal U.*
--  **May 2022:**  
-  **Outstanding Graduate**, *China West Normal U.*
--  **Nov 2018:**  
-  **Third Prize** (Ranked 7th/8th),  *The 5th Sichuan Chongqing Astronomy Competition* 
+  /* —— 语言切换：仅作用于 #awards-block —— */
+  #awards-block .lang-en { display: inline; }
+  #awards-block .lang-zh { display: none; }
 
----
+  /* 勾选中文时切换显示 */
+  #awards-block[data-lang="zh"] .lang-en { display: none !important; }
+  #awards-block[data-lang="zh"] .lang-zh { display: inline !important; }
 
-# Scholarships
+  /* （可选）列表排版更紧凑一点 */
+  #awards-block ul { margin: 0.2rem 0 1rem 1.1rem; }
+  #awards-block li { margin: 0.35rem 0; }
+</style>
 
--  **Spe 2024:**  
-  **Theoretical Physics Graduate Scholarship** (Twice), *Chongqing U.*
--  **2022 - 2023:**  
-  **Graduate Academic Scholarship** (Twice), *Chongqing U.*
--  **2020 - 2022:**  
-  **Fist-class Scholarship** (Three times), *China West Normal U.* 
--  **Dec 2020:**  
-  **Haotian Astronomy Scholarship**, *Nanjing VasTech Astronomical Instrument & Equipment Co. Ltd.*
--  **2018 - 2021:**  
-  **Second-class Scholarship** (Four times), *China West Normal U.* 
+<div id="awards-block" data-lang="en">
+  <!-- 切换开关 -->
+  <div class="checkbox-container">
+    <input type="checkbox" id="awards-lang-cn" />
+    <label for="awards-lang-cn">中文</label>
+    <span style="opacity:.6;">/ English</span>
+  </div>
+
+  <!-- ===== Awards ===== -->
+  <h2>Awards</h2>
+  <ul>
+    <li>
+      <span class="lang-en"><b>Dec 2023:</b> <b>Second Prize</b> (Ranked 2nd/3rd), <i>The 7th Sichuan–Chongqing Astronomy Competition</i></span>
+      <span class="lang-zh"><b>2023年12月：</b><b>二等奖</b>（第2/3名），<i>第七届川渝天文竞赛</i></span>
+    </li>
+    <li>
+      <span class="lang-en"><b>Jun 2022:</b> <b>Excellent Graduation Thesis</b>, <i>China West Normal U.</i></span>
+      <span class="lang-zh"><b>2022年6月：</b><b>优秀毕业论文</b>，<i>西华师范大学</i></span>
+    </li>
+    <li>
+      <span class="lang-en"><b>May 2022:</b> <b>Outstanding Graduate</b>, <i>China West Normal U.</i></span>
+      <span class="lang-zh"><b>2022年5月：</b><b>优秀毕业生</b>，<i>西华师范大学</i></span>
+    </li>
+    <li>
+      <span class="lang-en"><b>Nov 2018:</b> <b>Third Prize</b> (Ranked 7th/8th), <i>The 5th Sichuan–Chongqing Astronomy Competition</i></span>
+      <span class="lang-zh"><b>2018年11月：</b><b>三等奖</b>（第7/8名），<i>第五届川渝天文竞赛</i></span>
+    </li>
+  </ul>
+
+  <hr/>
+
+  <!-- ===== Scholarships ===== -->
+  <h2>Scholarships</h2>
+  <ul>
+    <li>
+      <span class="lang-en"><b>Sep 2024:</b> <b>Theoretical Physics Graduate Scholarship</b> (Twice), <i>Chongqing U.</i></span>
+      <span class="lang-zh"><b>2024年9月：</b><b>理论物理研究生奖学金</b>（2次），<i>重庆大学</i></span>
+    </li>
+    <li>
+      <span class="lang-en"><b>2022 – 2023:</b> <b>Graduate Academic Scholarship</b> (Twice), <i>Chongqing U.</i></span>
+      <span class="lang-zh"><b>2022–2023年：</b><b>研究生学业奖学金</b>（2次），<i>重庆大学</i></span>
+    </li>
+    <li>
+      <span class="lang-en"><b>2020 – 2022:</b> <b>First-class Scholarship</b> (Three times), <i>China West Normal U.</i></span>
+      <span class="lang-zh"><b>2020–2022年：</b><b>一等奖学金</b>（3次），<i>西华师范大学</i></span>
+    </li>
+    <li>
+      <span class="lang-en"><b>Dec 2020:</b> <b>Haotian Astronomy Scholarship</b>, <i>Nanjing VasTech Astronomical Instrument &amp; Equipment Co. Ltd.</i></span>
+      <span class="lang-zh"><b>2020年12月：</b><b>昊天天文奖学金</b>，<i>南京瓦斯泰克天文仪器设备有限公司</i></span>
+    </li>
+    <li>
+      <span class="lang-en"><b>2018 – 2021:</b> <b>Second-class Scholarship</b> (Four times), <i>China West Normal U.</i></span>
+      <span class="lang-zh"><b>2018–2021年：</b><b>二等奖学金</b>（4次），<i>西华师范大学</i></span>
+    </li>
+  </ul>
+</div>
+
+<script>
+  (function () {
+    const block = document.getElementById("awards-block");
+    const checkbox = document.getElementById("awards-lang-cn");
+    if (!block || !checkbox) return;
+
+    // 初始化：默认英文（data-lang="en"）
+    checkbox.checked = (block.getAttribute("data-lang") === "zh");
+
+    checkbox.addEventListener("change", function () {
+      block.setAttribute("data-lang", this.checked ? "zh" : "en");
+    });
+  })();
+</script>
+
 
 ---
 
