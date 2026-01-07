@@ -8,17 +8,18 @@
       </strong>
     </div>
 
-    <!-- institution + type 同行 -->
     <div class="fc-inst-type">
-      <strong>
-        <span class="lang-en">{{ include.institution_en | default: include.institution }}</span>
-        <span class="lang-zh">{{ include.institution_zh | default: include.institution }}</span>
-      </strong>
-      &nbsp;–&nbsp;
-      <span class="fc-type-text">
+      <div class="fc-institution">
+        <strong>
+          <span class="lang-en">{{ include.institution_en | default: include.institution }}</span>
+          <span class="lang-zh">{{ include.institution_zh | default: include.institution }}</span>
+        </strong>
+      </div>
+
+      <div class="fc-type-text">
         <span class="lang-en">{{ include.type_en | default: include.type }}</span>
         <span class="lang-zh">{{ include.type_zh | default: include.type }}</span>
-      </span>
+      </div>
     </div>
 
 

@@ -144,7 +144,7 @@ title: Honors & Activities
        role_en="PI"
        role_zh="主持"
        meta_en="Grant No. 125B2102 | CNY 300,000 | Ongoing"
-       meta_zh="项目号：125B2102｜经费：30万元｜在研" %}
+       meta_zh="项目号：125B2102｜CNY 30.0万元｜在研" %}
 
     {% include funding_card.html
        time="Jan 2026 – Dec 2029" time_zh="2026-1 至 2029-12"
