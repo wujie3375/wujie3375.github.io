@@ -1,33 +1,34 @@
 <!-- funding_card.html -->
 <ul class="funding-list">
   <li class="funding-item">
-    <div class="fc-inst-type">
-      <div class="fc-inst-left">
-        <div class="fc-institution">
-          <strong>
-            <span class="lang-en">{{ include.institution_en | default: include.institution }}</span>
-            <span class="lang-zh">{{ include.institution_zh | default: include.institution }}</span>
-          </strong>
-        </div>
 
-        <div class="fc-type-text">
-          <span class="lang-en">{{ include.type_en | default: include.type }}</span>
-          <span class="lang-zh">{{ include.type_zh | default: include.type }}</span>
-        </div>
+    <div class="fc-inst-type">
+      <div class="fc-institution">
+        <strong>
+          <span class="lang-en">{{ include.institution_en | default: include.institution }}</span>
+          <span class="lang-zh">{{ include.institution_zh | default: include.institution }}</span>
+        </strong>
       </div>
 
-      <div class="fc-date">
-        <span class="lang-en">{{ include.time_en | default: include.time }}</span>
-        <span class="lang-zh">{{ include.time_zh | default: include.time }}</span>
+      <div class="fc-type-text">
+        <span class="lang-en">{{ include.type_en | default: include.type }}</span>
+        <span class="lang-zh">{{ include.type_zh | default: include.type }}</span>
       </div>
     </div>
 
+
     <div class="fc-project">
-      <em>
+      <em class="fc-project-title">
         <span class="lang-en">{{ include.project_en | default: include.project }}</span>
         <span class="lang-zh">{{ include.project_zh | default: include.project }}</span>
       </em>
+
+      <span class="fc-date-inline">
+        <span class="lang-en">{{ include.time_en | default: include.time }}</span>
+        <span class="lang-zh">{{ include.time_zh | default: include.time }}</span>
+      </span>
     </div>
+
 
     <div class="fc-bottom">
       <div class="fc-role">
@@ -85,27 +86,26 @@
     color: #555;
     font-size: 0.95em;
   }
-  /* 让 institution/type + date 同一行 */
-  .funding-item .fc-inst-type {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  /* 项目名这一行：左右布局 */
+  .funding-item .fc-project {
     margin-left: 0.2em;
-    margin-bottom: 2px;
-  }
-
-  /* 左侧两行 */
-  .fc-inst-left {
     display: flex;
-    flex-direction: column;
+    align-items: baseline;
+    gap: 12px;
   }
 
-  /* 右侧日期：弱化显示 */
-  .funding-item .fc-date {
-    font-weight: 400;      /* 不加粗 */
-    font-size: 0.85em;     /* 更小 */
-    color: #666;           /* 更淡 */
+  /* 左侧项目名允许换行 */
+  .funding-item .fc-project-title {
+    flex: 1 1 auto;
+  }
+
+  /* 右侧日期：小号、弱化、不要加粗、不换行 */
+  .funding-item .fc-date-inline {
+    flex: 0 0 auto;
     white-space: nowrap;
+    font-weight: 400;
+    font-size: 0.85em;
+    color: #666;
   }
 
 </style>

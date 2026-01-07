@@ -34,6 +34,8 @@ title: Honors & Activities
   #awards-block[data-lang="zh"] .lang-zh { display: inline !important; }
 </style>
 
+# Awards
+
 <div id="awards-block" data-lang="en">
   <!-- 切换开关 -->
   <div class="checkbox-container">
@@ -42,7 +44,6 @@ title: Honors & Activities
   </div>
 
   <!-- ===== Awards ===== -->
-  <h2>Awards</h2>
   <ul>
     <li>
       <span class="lang-en">
@@ -78,7 +79,7 @@ title: Honors & Activities
   <hr/>
 
   <!-- ===== Scholarships ===== -->
-  <h2>Scholarships</h2>
+# Scholarships
   <ul>
     <li>
       <span class="lang-en"><b>Dec 2025:</b> <b>National Scholarship</b>, <i>Ministry of Education of China</i></span>
@@ -197,7 +198,7 @@ title: Honors & Activities
        institution_zh="中华人民共和国科学技术部"
        type_en="National Key Research and Development Program"
        type_zh="国家重点研发计划课题"
-       project_en="Characteristics and signal identification of novel gravitational-wave sources (e.g., cosmic strings) and their stochastic backgrounds"
+       project_en="Characteristics and Signal Identification of Novel Gravitational-Wave Sources, including Cosmic Strings, and the Stochastic Gravitational-Wave Background"
        project_zh="宇宙弦等新颖引力波源与随机引力波背景的特征和信号识别研究"
        role_en="Participant" role_zh="参与"
        meta_en="Grant No. 2021YFC2203004 | CNY 4,400,000 | Ongoing"
