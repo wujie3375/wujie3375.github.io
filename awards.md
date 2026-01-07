@@ -47,13 +47,10 @@ title: Honors & Activities
     <li>
       <span class="lang-en">
         <b>Dec 2025:</b>
-        <b>Young Scientific Talent Development Program (PhD Track)</b>,
-        <i>China Association for Science and Technology</i>
+        <b>Young Scientific Talent Development Program (PhD Track)</b>, <i>China Association for Science and Technology</i>
       </span>
       <span class="lang-zh">
-        <b>2025年12月：</b>
-        <b>青年科技人才培育工程博士生专项计划</b>，
-        <i>中国科学技术协会</i>
+        <b>2025年12月：</b><b>青年科技人才培育工程博士生专项计划</b>，<i>中国科学技术协会</i>
       </span>
     </li>
     <li>
@@ -66,11 +63,11 @@ title: Honors & Activities
     </li>
     <li>
       <span class="lang-en"><b>Jun 2022:</b> <b>Excellent Graduation Thesis</b>, <i>China West Normal U.</i></span>
-      <span class="lang-zh"><b>2022年6月：</b><b>优秀毕业论文</b>，<i>西华师范大学</i></span>
+      <span class="lang-zh"><b>2022年06月：</b><b>优秀毕业论文</b>，<i>西华师范大学</i></span>
     </li>
     <li>
       <span class="lang-en"><b>May 2022:</b> <b>Outstanding Graduate</b>, <i>China West Normal U.</i></span>
-      <span class="lang-zh"><b>2022年5月：</b><b>优秀毕业生</b>，<i>西华师范大学</i></span>
+      <span class="lang-zh"><b>2022年05月：</b><b>优秀毕业生</b>，<i>西华师范大学</i></span>
     </li>
     <li>
       <span class="lang-en"><b>Nov 2018:</b> <b>Third Prize</b> (Ranked 7th–8th), <i>The 5th Sichuan–Chongqing Astronomy Competition</i></span>
@@ -89,11 +86,11 @@ title: Honors & Activities
     </li>
     <li>
       <span class="lang-en"><b>Sep 2024:</b> <b>Theoretical Physics Graduate Scholarship</b> (twice), <i>Chongqing U.</i></span>
-      <span class="lang-zh"><b>2024年9月：</b><b>理论物理研究生奖学金</b>（2次），<i>重庆大学</i></span>
+      <span class="lang-zh"><b>2024年09月：</b><b>理论物理研究生奖学金</b>（2次），<i>重庆大学</i></span>
     </li>
     <li>
-      <span class="lang-en"><b>2022 – 2023:</b> <b>Graduate Academic Scholarship</b> (twice), <i>Chongqing U.</i></span>
-      <span class="lang-zh"><b>2022–2023年：</b><b>研究生学业奖学金</b>（2次），<i>重庆大学</i></span>
+      <span class="lang-en"><b>2022–23:</b> <b>Graduate Academic Scholarship</b> (twice), <i>Chongqing U.</i></span>
+      <span class="lang-zh"><b>2022–23年：</b><b>研究生学业奖学金</b>（2次），<i>重庆大学</i></span>
     </li>
     <li>
       <span class="lang-en"><b>2020 – 2022:</b> <b>First-class Scholarship</b> (three times), <i>China West Normal U.</i></span>
