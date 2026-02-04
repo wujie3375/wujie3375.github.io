@@ -128,21 +128,9 @@ title: Honors & Activities
 
 # Funding
 
-<p style="margin-bottom: 6px;">
+<!-- <p style="margin-bottom: 6px;">
   I’m still frequently a participant, but I’ve taken my first step as a PI — no longer only a supporting citation tucked away in the acknowledgments.
-</p>
-
-<!-- 复选框风格按钮：未选=英文；选中=中文 -->
-<div class="checkbox-container" style="margin: 6px 0 8px;">
-  <input type="checkbox" id="funding-lang-cn" aria-label="Show Chinese">
-  <label for="funding-lang-cn">中文 / EN</label>
-</div>
-
-<!-- 局部作用域容器：仅影响这里 -->
-<div id="funding-block" data-lang="en" style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0 10px 0 0;">
-  <ul style="margin: 0; padding-left: 0em;">
-
-    {% include funding_card.html
+  {% include funding_card.html
        time="Jan 2026 – Dec 2027"
        time_zh="2026-01 至 2027-12"
        institution_en="National Natural Science Foundation of China"
@@ -155,6 +143,19 @@ title: Honors & Activities
        role_zh="主持"
        meta_en="Grant No. 125B2102 | CNY 300,000 | Ongoing"
        meta_zh="项目号：125B2102｜CNY 30.0万元｜在研" %}
+</p> -->
+
+<!-- 复选框风格按钮：未选=英文；选中=中文 -->
+<div class="checkbox-container" style="margin: 6px 0 8px;">
+  <input type="checkbox" id="funding-lang-cn" aria-label="Show Chinese">
+  <label for="funding-lang-cn">中文 / EN</label>
+</div>
+
+<!-- 局部作用域容器：仅影响这里 -->
+<div id="funding-block" data-lang="en" style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0 10px 0 0;">
+  <ul style="margin: 0; padding-left: 0em;">
+
+    
 
     {% include funding_card.html
        time="Jan 2026 – Dec 2029" time_zh="2026-1 至 2029-12"
