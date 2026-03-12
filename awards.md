@@ -75,11 +75,34 @@ title: Honors & Activities
       <span class="lang-zh"><b>2018年11月：</b><b>三等奖</b>（第7–8名），<i>第五届川渝天文竞赛</i></span>
     </li>
   </ul>
+</div>
+
+<script>
+  (function () {
+    const block = document.getElementById("awards-block");
+    const checkbox = document.getElementById("awards-lang-cn");
+    if (!block || !checkbox) return;
+
+    // 初始化：默认英文（data-lang="en"）
+    checkbox.checked = (block.getAttribute("data-lang") === "zh");
+
+    checkbox.addEventListener("change", function () {
+      block.setAttribute("data-lang", this.checked ? "zh" : "en");
+    });
+  })();
+</script>
 
   <hr/>
 
   <!-- ===== Scholarships ===== -->
 # Scholarships
+
+<div id="awards-block" data-lang="en">
+  <!-- 切换开关 -->
+  <div class="checkbox-container">
+    <input type="checkbox" id="awards-lang-cn" />
+    <label for="awards-lang-cn">中文/EN</label>
+  </div>
   <ul>
     <li>
       <span class="lang-en"><b>Dec 2025:</b> <b>National Scholarship</b>, <i>Ministry of Education of China</i></span>
