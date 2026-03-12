@@ -25,13 +25,17 @@ title: Honors & Activities
     vertical-align: middle;
   }
 
-  /* —— 语言切换：仅作用于 #awards-block —— */
-  #awards-block .lang-en { display: inline; }
-  #awards-block .lang-zh { display: none; }
+  #awards-block .lang-en,
+  #scholarships-block .lang-en { display: inline; }
 
-  /* 勾选中文时切换显示 */
-  #awards-block[data-lang="zh"] .lang-en { display: none !important; }
-  #awards-block[data-lang="zh"] .lang-zh { display: inline !important; }
+  #awards-block .lang-zh,
+  #scholarships-block .lang-zh { display: none; }
+
+  #awards-block[data-lang="zh"] .lang-en,
+  #scholarships-block[data-lang="zh"] .lang-en { display: none !important; }
+
+  #awards-block[data-lang="zh"] .lang-zh,
+  #scholarships-block[data-lang="zh"] .lang-zh { display: inline !important; }
 </style>
 
 # Awards
@@ -97,11 +101,10 @@ title: Honors & Activities
   <!-- ===== Scholarships ===== -->
 # Scholarships
 
-<div id="awards-block" data-lang="en">
-  <!-- 切换开关 -->
+<div id="scholarships-block" data-lang="en">
   <div class="checkbox-container">
-    <input type="checkbox" id="awards-lang-cn" />
-    <label for="awards-lang-cn">中文/EN</label>
+    <input type="checkbox" id="scholarships-lang-cn" />
+    <label for="scholarships-lang-cn">中文/EN</label>
   </div>
   <ul>
     <li>
@@ -133,13 +136,11 @@ title: Honors & Activities
 
 <script>
   (function () {
-    const block = document.getElementById("awards-block");
-    const checkbox = document.getElementById("awards-lang-cn");
+    const block = document.getElementById("scholarships-block");
+    const checkbox = document.getElementById("scholarships-lang-cn");
     if (!block || !checkbox) return;
 
-    // 初始化：默认英文（data-lang="en"）
     checkbox.checked = (block.getAttribute("data-lang") === "zh");
-
     checkbox.addEventListener("change", function () {
       block.setAttribute("data-lang", this.checked ? "zh" : "en");
     });
