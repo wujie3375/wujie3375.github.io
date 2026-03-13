@@ -59,7 +59,7 @@ title: Honors & Activities
       <span class="lang-zh">
         <b>{{ award.date_zh }}：</b>
         <b>{{ award.title_zh }}</b>
-        {% if award.extra_zh %}{{ award.extra_zh }}{% endif %}，
+        {% if award.extra_zh %}{{ award.extra_zh }}{% endif %},
         <i>{{ award.org_zh }}</i>
       </span>
     </li>
@@ -92,30 +92,23 @@ title: Honors & Activities
     <label for="scholarships-lang-cn">中文/EN</label>
   </div>
   <ul>
+    {% for s in site.data.scholarships %}
     <li>
-      <span class="lang-en"><b>Dec 2025:</b> <b>National Scholarship</b>, <i>Ministry of Education of China</i></span>
-      <span class="lang-zh"><b>2025年12月：</b><b>国家奖学金</b>，<i>教育部</i></span>
+      <span class="lang-en">
+        <b>{{ s.date_en }}:</b>
+        <b>{{ s.title_en }}</b>
+        {% if s.extra_en %} {{ s.extra_en }}{% endif %},
+        <i>{{ s.org_en }}</i>
+      </span>
+
+      <span class="lang-zh">
+        <b>{{ s.date_zh }}：</b>
+        <b>{{ s.title_zh }}</b>
+        {% if s.extra_zh %}{{ s.extra_zh }}{% endif %}，
+        <i>{{ s.org_zh }}</i>
+      </span>
     </li>
-    <li>
-      <span class="lang-en"><b>Sep 2024:</b> <b>Theoretical Physics Graduate Scholarship</b> (twice), <i>Chongqing U.</i></span>
-      <span class="lang-zh"><b>2024年09月：</b><b>理论物理研究生奖学金</b>（2次），<i>重庆大学</i></span>
-    </li>
-    <li>
-      <span class="lang-en"><b>2022-23:</b> <b>Graduate Academic Scholarship</b> (twice), <i>Chongqing U.</i></span>
-      <span class="lang-zh"><b>2022-23年：</b><b>研究生学业奖学金</b>（2次），<i>重庆大学</i></span>
-    </li>
-    <li>
-      <span class="lang-en"><b>2020-22:</b> <b>First-class Scholarship</b> (three times), <i>China West Normal U.</i></span>
-      <span class="lang-zh"><b>2020-22年：</b><b>一等奖学金</b>（3次），<i>西华师范大学</i></span>
-    </li>
-    <li>
-      <span class="lang-en"><b>Dec 2020:</b> <b>Haotian Astronomy Scholarship</b>, <i>Nanjing VasTech Astronomical Instrument &amp; Equipment Co. Ltd.</i></span>
-      <span class="lang-zh"><b>2020年12月：</b><b>昊天天文奖学金</b>，<i>南京昊天天文仪器设备有限公司</i></span>
-    </li>
-    <li>
-      <span class="lang-en"><b>2018-21:</b> <b>Second-class Scholarship</b> (four times), <i>China West Normal U.</i></span>
-      <span class="lang-zh"><b>2018-21年：</b><b>二等奖学金</b>（4次），<i>西华师范大学</i></span>
-    </li>
+    {% endfor %}
   </ul>
 </div>
 
