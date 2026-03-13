@@ -52,7 +52,7 @@ title: Honors & Activities
     <li>
       <span class="lang-en">
         <b>Dec 2025:</b>
-        <b>Young Scientific Talent Development Program (PhD Track)</b>, <i>China Association for Science and Technology</i>
+        <b>Doctoral Student Program of the Young S&T Talents Cultivation Project</b>, <i>China Association for Science and Technology</i>
       </span>
       <span class="lang-zh">
         <b>2025年12月：</b><b>青年科技人才培育工程博士生专项计划</b>，<i>中国科学技术协会</i>

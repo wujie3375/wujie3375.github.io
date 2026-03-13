@@ -1,3 +1,19 @@
+- year: 2026
+  title: "Constraints and detection capabilities of GW polarizations with space-based detectors in different TDI combinations"
+  subtitle: false
+  authors: "Jie Wu, Mengfei Sun, Jin Li*"
+  date: "Mar 3, 2026"
+  sortable_date: '2026-03-12'
+  journal: Class. Quant. Grav.
+  journal_link: "https://iopscience.iop.org/article/10.1088/1361-6382/ae5144"
+  volume: false
+  article_number: false
+  arxiv: "2411.03631"
+  pdf: "https://wujie3375.github.io/file/241106.pdf"
+  highlight_author: 1
+  first_or_not: true
+  etal: 4
+
 - year: 2025
   title: "Detection of Lensed Gravitational Waves from dark matter halos with deep learning"
   subtitle: false
@@ -93,22 +109,6 @@
   highlight_author: 2
   first_or_not: false
   etal: 3
-
-- year: 2024
-  title: "Constraints and detection capabilities of GW polarizations with space-based detectors in different TDI combinations"
-  subtitle: false
-  authors: "Jie Wu, Mengfei Sun, Jin Li*"
-  date: "Nov 6, 2024"
-  sortable_date: '2024-11-06'
-  journal: false
-  journal_link: false
-  volume: false
-  article_number: false
-  arxiv: "2411.03631"
-  pdf: "https://wujie3375.github.io/file/241106.pdf"
-  highlight_author: 1
-  first_or_not: true
-  etal: 4
 
 - year: 2024
   title: "Prospects of constraining on the polarizations of gravitational waves from binary black holes using space- and ground-based detectors"
