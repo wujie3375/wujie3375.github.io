@@ -41,43 +41,29 @@ title: Honors & Activities
 # Awards
 
 <div id="awards-block" data-lang="en">
-  <!-- 切换开关 -->
   <div class="checkbox-container">
     <input type="checkbox" id="awards-lang-cn" />
     <label for="awards-lang-cn">中文/EN</label>
   </div>
 
-  <!-- ===== Awards ===== -->
   <ul>
+    {% for award in site.data.awards %}
     <li>
       <span class="lang-en">
-        <b>Dec 2025:</b>
-        <b>Doctoral Student Program of the Young S&T Talents Cultivation Project</b>, <i>China Association for Science and Technology</i>
+        <b>{{ award.date_en }}:</b>
+        <b>{{ award.title_en }}</b>
+        {% if award.extra_en %} {{ award.extra_en }}{% endif %},
+        <i>{{ award.org_en }}</i>
       </span>
+
       <span class="lang-zh">
-        <b>2025年12月：</b><b>青年科技人才培育工程博士生专项计划</b>，<i>中国科学技术协会</i>
+        <b>{{ award.date_zh }}：</b>
+        <b>{{ award.title_zh }}</b>
+        {% if award.extra_zh %}{{ award.extra_zh }}{% endif %}，
+        <i>{{ award.org_zh }}</i>
       </span>
     </li>
-    <li>
-      <span class="lang-en"><b>Dec 2025:</b> <b>Advanced Individual in Scientific and Academic Innovation</b>, <i>Chongqing U.</i></span>
-      <span class="lang-zh"><b>2025年12月：</b><b>科技学术创新先进个人</b>，<i>重庆大学</i></span>
-    </li>
-    <li>
-      <span class="lang-en"><b>Dec 2023:</b> <b>Second Prize</b> (Ranked 2nd–3rd), <i>The 7th Sichuan–Chongqing Astronomy Competition</i></span>
-      <span class="lang-zh"><b>2023年12月：</b><b>二等奖</b>（第2–3名），<i>第七届川渝天文竞赛</i></span>
-    </li>
-    <li>
-      <span class="lang-en"><b>Jun 2022:</b> <b>Excellent Graduation Thesis</b>, <i>China West Normal U.</i></span>
-      <span class="lang-zh"><b>2022年06月：</b><b>优秀毕业论文</b>，<i>西华师范大学</i></span>
-    </li>
-    <li>
-      <span class="lang-en"><b>May 2022:</b> <b>Outstanding Graduate</b>, <i>China West Normal U.</i></span>
-      <span class="lang-zh"><b>2022年05月：</b><b>优秀毕业生</b>，<i>西华师范大学</i></span>
-    </li>
-    <li>
-      <span class="lang-en"><b>Nov 2018:</b> <b>Third Prize</b> (Ranked 7th–8th), <i>The 5th Sichuan–Chongqing Astronomy Competition</i></span>
-      <span class="lang-zh"><b>2018年11月：</b><b>三等奖</b>（第7–8名），<i>第五届川渝天文竞赛</i></span>
-    </li>
+    {% endfor %}
   </ul>
 </div>
 
@@ -87,7 +73,6 @@ title: Honors & Activities
     const checkbox = document.getElementById("awards-lang-cn");
     if (!block || !checkbox) return;
 
-    // 初始化：默认英文（data-lang="en"）
     checkbox.checked = (block.getAttribute("data-lang") === "zh");
 
     checkbox.addEventListener("change", function () {
