@@ -65,12 +65,12 @@ tr:last-child td {
       {
         "label": "First author",
         "data": [{% for y in years %}{{ y.items | where: 'first_or_not', true | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-        "backgroundColor": "rgba(54, 162, 235, 0.8)"
+        "backgroundColor": "rgba(54, 162, 235, 1)"
       },
       {
         "label": "Total",
         "data": [{% for y in years %}{{ y.items | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-        "backgroundColor": "rgba(255, 159, 64, 0.8)"
+        "backgroundColor": "rgba(255, 159, 64, 1)"
       }
     ]
   }
@@ -83,13 +83,6 @@ tr:last-child td {
 <!-- =============================================================================================== -->
 <!-- 表格 -->
 <!-- ----------------------------------------------------------------------------------------------- -->
-
-<!-- |                  | Published | Preprint | Total |
-|:----------------:|:---------:|:--------:|:-----:|
-|  First author    |     4     |    2     |   6   |
-| Non first author |     1     |    0     |   1   |
-| Total            |     5     |    2     |   7   | -->
-
 
 {% assign publications = site.data.papers %}
 
