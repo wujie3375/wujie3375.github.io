@@ -4,7 +4,7 @@ permalink: /awards
 title: Honors & Activities
 ---
 
-> **Last Update:** Jan 7, 2026
+<!-- > **Last Update:** Mar 13, 2026 -->
 
 <style>
   /* 勾选框样式（沿用你提供的风格，稍微改了 id） */

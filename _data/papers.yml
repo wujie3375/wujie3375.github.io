@@ -6,8 +6,8 @@
   sortable_date: '2026-03-12'
   journal: Class. Quant. Grav.
   journal_link: "https://iopscience.iop.org/article/10.1088/1361-6382/ae5144"
-  volume: false
-  article_number: false
+  volume: '0'
+  article_number: '0'
   arxiv: "2411.03631"
   pdf: "https://wujie3375.github.io/file/241106.pdf"
   highlight_author: 1
