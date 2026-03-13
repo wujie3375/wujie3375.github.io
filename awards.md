@@ -104,7 +104,7 @@ title: Honors & Activities
       <span class="lang-zh">
         <b>{{ s.date_zh }}：</b>
         <b>{{ s.title_zh }}</b>
-        {% if s.extra_zh %}{{ s.extra_zh }}{% endif %}，
+        {% if s.extra_zh %}{{ s.extra_zh }}{% endif %},
         <i>{{ s.org_zh }}</i>
       </span>
     </li>
@@ -143,69 +143,23 @@ title: Honors & Activities
 <!-- 局部作用域容器：仅影响这里 -->
 <div id="funding-block" data-lang="en" style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0 10px 0 0;">
   <ul style="margin: 0; padding-left: 0em;">
+  {% for f in site.data.fundings %}
 
-    {% include funding_card.html
-       time="Jan 2026 – Dec 2027"
-       time_zh="2026-01 至 2027-12"
-       institution_en="National Natural Science Foundation of China"
-       institution_zh="国家自然科学基金"
-       type_en="Young Students’ Basic Research Program (PhD)"
-       type_zh="青年学生基础研究项目（博士研究生）"
-       project_en="Signal Processing and Theoretical Modeling of Space-Based Gravitational Waves with Moving-Source Effects"
-       project_zh="移动源效应下的空间引力波信号处理与理论研究"
-       role_en="PI"
-       role_zh="主持"
-       meta_en="Grant No. 125B2102 | CNY 300,000 | Ongoing"
-       meta_zh="项目号：125B2102｜CNY 30.0万元｜在研" %}
+  {% include funding_card.html
+    time=f.time
+    time_zh=f.time_zh
+    institution_en=f.institution_en
+    institution_zh=f.institution_zh
+    type_en=f.type_en
+    type_zh=f.type_zh
+    project_en=f.project_en
+    project_zh=f.project_zh
+    role_en=f.role_en
+    role_zh=f.role_zh
+    meta_en=f.meta_en
+    meta_zh=f.meta_zh %}
 
-    {% include funding_card.html
-       time="Jan 2026 – Dec 2029" time_zh="2026-1 至 2029-12"
-       institution_en="National Natural Science Foundation of China"
-       institution_zh="国家自然科学基金"
-       type_en="General Program"
-       type_zh="面上项目"
-       project_en="Machine-learning optimization of waveform generation for multiple types of compact-binary mergers"
-       project_zh="利用机器学习优化多类型致密双星并合引力波波形生成的研究"
-       role_en="Participant" role_zh="参与"
-       meta_en="Grant No. 12575072 | CNY 540,000 | Ongoing"
-       meta_zh="项目号：12575072｜ CNY 54.0万元｜在研" %}
-
-    {% include funding_card.html
-       time="Aug 2024 – Dec 2028" time_zh="2024-8 至 2028-12"
-       institution_en="Ministry of Science and Technology of the People’s Republic of China"
-       institution_zh="中华人民共和国科学技术部"
-       type_en="National Key Research and Development Program"
-       type_zh="国家重点研发计划课题"
-       project_en="Simulation, processing, and verification of gravitational-wave signals from binary black-hole systems"
-       project_zh="双黑洞系统引力波信号仿真、处理与验证研究"
-       role_en="Participant" role_zh="参与"
-       meta_en="Grant No. 2023YFC2206702 | CNY 4,775,000 | Ongoing"
-       meta_zh="项目号：2023YFC2206702｜ CNY 477.5万元｜在研" %}
-
-    {% include funding_card.html
-       time="Jul 2023 – Jun 2026" time_zh="2023-7 至 2026-6"
-       institution_en="Natural Science Foundation of Chongqing"
-       institution_zh="重庆市自然科学基金"
-       type_en="General Program"
-       type_zh="面上项目"
-       project_en="Joint observation of the cosmic-string stochastic gravitational-wave background with space-based detectors"
-       project_zh="利用空间引力波探测器联合观测宇宙弦随机引力波背景的研究"
-       role_en="Participant" role_zh="参与"
-       meta_en="Grant No. CSTB2023NSCQ-MSX0103 | CNY 50,000 | Ongoing"
-       meta_zh="项目号：CSTB2023NSCQ-MSX0103｜ CNY 5.0万元｜在研" %}
-
-    {% include funding_card.html
-       time="Jan 2022 – Sep 2026" time_zh="2022-01 至 2026-09"
-       institution_en="Ministry of Science and Technology of the People’s Republic of China"
-       institution_zh="中华人民共和国科学技术部"
-       type_en="National Key Research and Development Program"
-       type_zh="国家重点研发计划课题"
-       project_en="Characteristics and Signal Identification of Novel Gravitational-Wave Sources, including Cosmic Strings, and the Stochastic Gravitational-Wave Background"
-       project_zh="宇宙弦等新颖引力波源与随机引力波背景的特征和信号识别研究"
-       role_en="Participant" role_zh="参与"
-       meta_en="Grant No. 2021YFC2203004 | CNY 4,400,000 | Ongoing"
-       meta_zh="项目号：2021YFC2203004｜ CNY 440.0万元｜在研" %}
-
+  {% endfor %}
   </ul>
 </div>
 
