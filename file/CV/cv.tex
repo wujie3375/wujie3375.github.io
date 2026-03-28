@@ -21,11 +21,15 @@
 \documentclass[11pt, a4paper]{awesome-cv}
 % ========================================================
 % 添加在 \documentclass 和 \geometry 之间
-% \usepackage[%
+% \usepackage[
 %   backend=biber,
-%   style=ieee, % 标准 IEEE 格式
-%   sorting=ydnt, % 按年份倒序排列
-%   maxbibnames=99, % 显示所有作者
+%   style=numeric,
+%   sorting=ydnt,
+%   maxbibnames=99,
+%   doi=false,
+%   url=false,
+%   isbn=false,
+%   eprint=false
 % ]{biblatex}
 \addbibresource{publications.bib}
 \nocite{*}
@@ -117,7 +121,13 @@
 % \input{cv/extracurricular.tex}
 % \input{cv/presentation.tex}
 % \input{cv/committees.tex}
+%-------------------------------------------------------------------------------
 
+% cd D:\GitHub\wujie3375.github.io\file\CV
+% xelatex cv.tex
+% biber cv
+% xelatex cv.tex
+% xelatex cv.tex
 
 %-------------------------------------------------------------------------------
 \end{document}
