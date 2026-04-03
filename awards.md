@@ -126,22 +126,18 @@ title: Honors & Activities
 </script>
 
 
----
 
-# Funding
 
-<!-- <p style="margin-bottom: 6px;">
-  I’m still frequently a participant, but I’ve taken my first step as a PI — no longer only a supporting citation tucked away in the acknowledgments.
-</p> -->
+<!-- # Funding -->
 
 <!-- 复选框风格按钮：未选=英文；选中=中文 -->
-<div class="checkbox-container" style="margin: 6px 0 8px;">
+<!-- <div class="checkbox-container" style="margin: 6px 0 8px;">
   <input type="checkbox" id="funding-lang-cn" aria-label="Show Chinese">
   <label for="funding-lang-cn">中文 / EN</label>
-</div>
+</div> -->
 
 <!-- 局部作用域容器：仅影响这里 -->
-<div id="funding-block" data-lang="en" style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0 10px 0 0;">
+<!-- <div id="funding-block" data-lang="en" style="height: 500px; overflow-y: scroll; border: 0px solid #ccc; padding: 0 10px 0 0;">
   <ul style="margin: 0; padding-left: 0em;">
   {% for f in site.data.fundings %}
 
@@ -161,9 +157,9 @@ title: Honors & Activities
 
   {% endfor %}
   </ul>
-</div>
+</div> -->
 
-<style>
+<!-- <style>
   /* 复选框样式（按你提供的） */
   .checkbox-container {
     font-size: 19px;
@@ -187,9 +183,9 @@ title: Honors & Activities
   /* 勾选中文时：用 data-lang 切换，增加优先级并加 !important 防止后加载样式干扰 */
   #funding-block[data-lang="zh"] .lang-en { display: none !important; }
   #funding-block[data-lang="zh"] .lang-zh { display: inline !important; }
-</style>
+</style> -->
 
-<script>
+<!-- <script>
   (function () {
     const checkbox = document.getElementById('funding-lang-cn');
     const block = document.getElementById('funding-block');
@@ -199,7 +195,7 @@ title: Honors & Activities
       block.setAttribute('data-lang', checkbox.checked ? 'zh' : 'en');
     });
   })();
-</script>
+</script> -->
 
 ---
 
