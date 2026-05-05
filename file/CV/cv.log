@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.30)  28 MAR 2026 10:27
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.30)  5 MAY 2026 09:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1365,12 +1365,6 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/n' will be
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
 (Font)              scaled to size 10.95pt on input line 24.
 
-Overfull \hbox (6.98271pt too wide) in paragraph at lines 24--24
-[]\TU/SourceSansPro(0)/m/n/10.95 Mengfei Sun, $[]$, Jin Li*, Nan Yang, Xianghe 
-Ma, Borui Wang, Minghui Zhang and Yuanhong Zhong*,
- []
-
-
 Overfull \hbox (1.43105pt too wide) in paragraph at lines 24--24
 []\TU/SourceSansPro(0)/m/n/10.95 Mengfei Sun, $[]$, Jin Li*, Brendan Mccane, Na
 n Yang, Xianghe Ma, Borui Wang and Minghui Zhang,
@@ -1387,24 +1381,17 @@ Overfull \hbox (10.05663pt too wide) in paragraph at lines 24--24
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-Package biblatex Warning: Please rerun LaTeX.
-
 Package logreq Info: Writing requests to 'cv.run.xml'.
 \openout1 = `cv.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39980 strings out of 474773
- 816759 string characters out of 5754168
+ 39979 strings out of 474773
+ 816717 string characters out of 5754168
  1951842 words of memory out of 5000000
- 61503 multiletter control sequences out of 15000+600000
+ 61502 multiletter control sequences out of 15000+600000
  564524 words of font info for 122 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  116i,12n,121p,1057b,5181s stack positions out of 10000i,1000n,20000p,200000b,200000s

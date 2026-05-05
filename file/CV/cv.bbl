@@ -19,53 +19,8 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{Wu:2026cal}{article}{}
-      \name{author}{3}{}{%
-        {{hash=d14d813400632d1540675e5edb94d60a}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Jie},
-           giveni={J\bibinitperiod}}}%
-        {{hash=6bb0baf779cb3a241d71472430c78e87}{%
-           family={Sun},
-           familyi={S\bibinitperiod},
-           given={Mengfei},
-           giveni={M\bibinitperiod}}}%
-        {{hash=f9010dd01bbf8aec0b41e109b57e9858}{%
-           family={Li*},
-           familyi={L\bibinitperiod},
-           given={Jin},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{f965874a57195f219350496146b61d8b}
-      \strng{fullhash}{f965874a57195f219350496146b61d8b}
-      \strng{bibnamehash}{f965874a57195f219350496146b61d8b}
-      \strng{authorbibnamehash}{f965874a57195f219350496146b61d8b}
-      \strng{authornamehash}{f965874a57195f219350496146b61d8b}
-      \strng{authorfullhash}{f965874a57195f219350496146b61d8b}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{Class. Quant. Grav.}
-      \field{month}{3}
-      \field{number}{6}
-      \field{title}{{Constraints and detection capabilities of GW polarizations with space-based detectors in different TDI combinations}}
-      \field{volume}{43}
-      \field{year}{2026}
-      \true{nocite}
-      \field{pages}{065017}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1088/1361-6382/ae5144
-      \endverb
-      \verb{eprint}
-      \verb 2411.03631
-      \endverb
-    \endentry
     \entry{Sun:2025aa}{article}{}
-      \name{author}{8}{}{%
+      \name{author}{9}{}{%
         {{hash=6bb0baf779cb3a241d71472430c78e87}{%
            family={Sun},
            familyi={S\bibinitperiod},
@@ -76,6 +31,11 @@
            familyi={W\bibinitperiod},
            given={Jie},
            giveni={J\bibinitperiod}}}%
+        {{hash=fa10887657609bb0a7b21b09abbc291d}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Qianning},
+           giveni={Q\bibinitperiod}}}%
         {{hash=f9010dd01bbf8aec0b41e109b57e9858}{%
            family={Li*},
            familyi={L\bibinitperiod},
@@ -107,24 +67,76 @@
            given={Yuanhong},
            giveni={Y\bibinitperiod}}}%
       }
-      \strng{namehash}{1cded9e5af7257f65f93e2e15ef5da14}
-      \strng{fullhash}{b63a26fe34af1ceea7610029ee397f9b}
-      \strng{bibnamehash}{b63a26fe34af1ceea7610029ee397f9b}
-      \strng{authorbibnamehash}{b63a26fe34af1ceea7610029ee397f9b}
-      \strng{authornamehash}{1cded9e5af7257f65f93e2e15ef5da14}
-      \strng{authorfullhash}{b63a26fe34af1ceea7610029ee397f9b}
-      \field{extraname}{1}
+      \strng{namehash}{c72c55b457201a87caf6d0fc3778aeb6}
+      \strng{fullhash}{a4f965cbd20a863a001bdad337ede056}
+      \strng{bibnamehash}{a4f965cbd20a863a001bdad337ede056}
+      \strng{authorbibnamehash}{a4f965cbd20a863a001bdad337ede056}
+      \strng{authornamehash}{c72c55b457201a87caf6d0fc3778aeb6}
+      \strng{authorfullhash}{a4f965cbd20a863a001bdad337ede056}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{month}{5}
+      \field{number}{10}
+      \field{title}{{Detection of multiband lensed gravitational waves from dark matter halos with deep learning}}
+      \field{volume}{113}
+      \field{year}{2026}
+      \true{nocite}
+      \field{pages}{103004}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/p8jc-kgp2
+      \endverb
+      \verb{eprint}
+      \verb 2511.09107
+      \endverb
+    \endentry
+    \entry{Wu:2026cal}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d14d813400632d1540675e5edb94d60a}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6bb0baf779cb3a241d71472430c78e87}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Mengfei},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f9010dd01bbf8aec0b41e109b57e9858}{%
+           family={Li*},
+           familyi={L\bibinitperiod},
+           given={Jin},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f965874a57195f219350496146b61d8b}
+      \strng{fullhash}{f965874a57195f219350496146b61d8b}
+      \strng{bibnamehash}{f965874a57195f219350496146b61d8b}
+      \strng{authorbibnamehash}{f965874a57195f219350496146b61d8b}
+      \strng{authornamehash}{f965874a57195f219350496146b61d8b}
+      \strng{authorfullhash}{f965874a57195f219350496146b61d8b}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
-      \field{month}{11}
-      \field{title}{{Detection of Lensed Gravitational Waves from dark matter halos with deep learning}}
-      \field{year}{2025}
+      \field{journaltitle}{Class. Quant. Grav.}
+      \field{month}{3}
+      \field{number}{6}
+      \field{title}{{Constraints and detection capabilities of GW polarizations with space-based detectors in different TDI combinations}}
+      \field{volume}{43}
+      \field{year}{2026}
       \true{nocite}
+      \field{pages}{065017}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1361-6382/ae5144
+      \endverb
       \verb{eprint}
-      \verb 2511.09107
+      \verb 2411.03631
       \endverb
     \endentry
     \entry{Sun:2025afb}{article}{}
@@ -176,7 +188,6 @@
       \strng{authorbibnamehash}{72df629f965a6a4f0112a724b77b3f93}
       \strng{authornamehash}{1cded9e5af7257f65f93e2e15ef5da14}
       \strng{authorfullhash}{72df629f965a6a4f0112a724b77b3f93}
-      \field{extraname}{2}
       \field{sortinit}{4}
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
