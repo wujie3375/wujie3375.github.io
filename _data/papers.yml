@@ -1,4 +1,20 @@
 - year: 2026
+  title: "Constraining Kerr supermassive black hole properties using gravitational waves from inspiraling stellar-mass binary black holes"
+  subtitle: false
+  authors: "Jie Wu, Jin-Tao Yao, Mengfei Sun, Jin Li*, Zhoujian Cao*"
+  date: "Jun 10, 2026"
+  sortable_date: '2026-06-10'
+  journal: Phys. Rev. D
+  journal_link: "https://journals.aps.org/prd/abstract/10.1103/c4jy-7b9k"
+  volume: '113'
+  article_number: '124024'
+  arxiv: false
+  pdf: "https://wujie3375.github.io/file/251025.pdf"
+  highlight_author: 1
+  first_or_not: true
+  etal: 3
+
+- year: 2026
   title: "Constraints and detection capabilities of GW polarizations with space-based detectors in different TDI combinations"
   subtitle: false
   authors: "Jie Wu, Mengfei Sun, Jin Li*"
