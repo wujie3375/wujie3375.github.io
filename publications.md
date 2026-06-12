@@ -277,7 +277,7 @@ function toggleDisplay() {
   volume=" "
   arxiv=false
   article_number="(in Chinese)"
-  pdf="https://wujie3375.github.io/file/Undergraduate-Thesis.pdf"
+  pdf=" "
   number="0"
   highlight_author=1
 %}

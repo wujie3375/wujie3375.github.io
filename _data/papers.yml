@@ -9,7 +9,7 @@
   volume: '113'
   article_number: '124024'
   arxiv: "2606.12784"
-  pdf: "https://wujie3375.github.io/file/251025.pdf"
+  pdf: " "
   highlight_author: 1
   first_or_not: true
   etal: 3
@@ -24,7 +24,7 @@
   journal_link: false
   volume: false
   article_number: false
-  arxiv: "2511.09107"
+  arxiv: "2606.11959"
   pdf: " "
   highlight_author: 2
   first_or_not: false
@@ -41,7 +41,7 @@
   volume: '43'
   article_number: '065017'
   arxiv: "2411.03631"
-  pdf: "https://wujie3375.github.io/file/241106.pdf"
+  pdf: " "
   highlight_author: 1
   first_or_not: true
   etal: 4
@@ -57,7 +57,7 @@
   volume: "113"
   article_number: "103004"
   arxiv: "2511.09107"
-  pdf: "https://wujie3375.github.io/file/251113.pdf"
+  pdf: " "
   highlight_author: 2
   first_or_not: false
   etal: 3
@@ -73,7 +73,7 @@
   volume: "112"
   article_number: "064081"
   arxiv: "2502.11804"
-  pdf: "https://wujie3375.github.io/file/250217.pdf"
+  pdf: " "
   highlight_author: 7
   first_or_not: false
   etal: 3
@@ -89,7 +89,7 @@
   volume: false
   article_number: false
   arxiv: "2508.04021"
-  pdf: "https://wujie3375.github.io/file/250806.pdf"
+  pdf: " "
   highlight_author: 1
   first_or_not: true
   etal: 4
@@ -105,7 +105,7 @@
   volume: "112"
   article_number: "024040"
   arxiv: "2502.13710"
-  pdf: "https://wujie3375.github.io/file/250219.pdf"
+  pdf: " "
   highlight_author: 1
   first_or_not: true
   etal: 3
@@ -121,7 +121,7 @@
   volume: "112"
   article_number: "084016"
   arxiv: "2503.19512"
-  pdf: "https://wujie3375.github.io/file/250326.pdf"
+  pdf: " "
   highlight_author: 2
   first_or_not: false
   etal: 3
@@ -137,7 +137,7 @@
   volume: "126"
   article_number: "021602"
   arxiv: false
-  pdf: "https://wujie3375.github.io/file/241223.pdf"
+  pdf: " "
   highlight_author: 2
   first_or_not: false
   etal: 3
@@ -153,7 +153,7 @@
   volume: "110"
   article_number: "084057"
   arxiv: "2407.13590"
-  pdf: "https://wujie3375.github.io/file/240924.pdf"
+  pdf: " "
   highlight_author: 1
   first_or_not: true
   etal: 4
@@ -169,7 +169,7 @@
   volume: "109"
   article_number: "104014"
   arxiv: "2401.03113"
-  pdf: "https://wujie3375.github.io/file/240406.pdf"
+  pdf: " "
   highlight_author: 1
   first_or_not: true
   etal: 4
@@ -185,7 +185,7 @@
   volume: "108"
   article_number: "124047"
   arxiv: "2307.05568"
-  pdf: "https://wujie3375.github.io/file/231130.pdf"
+  pdf: " "
   highlight_author: 1
   first_or_not: true
   etal: 4
@@ -201,7 +201,7 @@
   volume: "32"
   article_number: "090401"
   arxiv: false
-  pdf: "https://wujie3375.github.io/file/230525.pdf"
+  pdf: " "
   highlight_author: 1
   first_or_not: true
   etal: 4
