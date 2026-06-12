@@ -15,6 +15,22 @@
   etal: 3
 
 - year: 2026
+  title: "Identifiability of g mode Resonances in Eccentric Binary Neutron Stars with Multidetector Observations"
+  subtitle: false
+  authors: "Mengfei Sun, Jie Wu, Qianning Hu, Jin Li*, Nan Yang, Xianghe Ma, Borui Wang, Minghui Zhang, Yuanhong Zhong*"
+  date: "Jun 10, 2026"
+  sortable_date: '2026-06-09'
+  journal: false
+  journal_link: false
+  volume: false
+  article_number: false
+  arxiv: "2511.09107"
+  pdf: false
+  highlight_author: 2
+  first_or_not: false
+  etal: 3
+
+- year: 2026
   title: "Constraints and detection capabilities of GW polarizations with space-based detectors in different TDI combinations"
   subtitle: false
   authors: "Jie Wu, Mengfei Sun, Jin Li*"
