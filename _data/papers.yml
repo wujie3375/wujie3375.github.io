@@ -25,7 +25,7 @@
   volume: false
   article_number: false
   arxiv: "2511.09107"
-  pdf: false
+  pdf: " "
   highlight_author: 2
   first_or_not: false
   etal: 3
