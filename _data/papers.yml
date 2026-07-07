@@ -1,7 +1,7 @@
 - year: 2026
   title: "Effects of Solar Wind Plasma Noise on Stochastic Gravitational Wave Background Searches with the LISA-Taiji Network"
   subtitle: false
-  authors: "Mengfei Sun, Borui Wang, Jie Wu, Jin Li*, Shengyi Ye"
+  authors: "Mengfei Sun†, Borui Wang†, Jie Wu, Jin Li*, Shengyi Ye"
   date: "Jul 6, 2026"
   sortable_date: '2026-07-06'
   journal: false
@@ -27,7 +27,7 @@
   arxiv: "2607.04238"
   pdf: " "
   highlight_author: 1
-  first_or_not: false
+  first_or_not: true
   etal: 4
 
 - year: 2026
