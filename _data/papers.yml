@@ -1,4 +1,36 @@
 - year: 2026
+  title: "Effects of Solar Wind Plasma Noise on Stochastic Gravitational Wave Background Searches with the LISA-Taiji Network"
+  subtitle: false
+  authors: "Mengfei Sun, Borui Wang, Jie Wu, Jin Li*, Shengyi Ye"
+  date: "Jul 6, 2026"
+  sortable_date: '2026-07-06'
+  journal: false
+  journal_link: false
+  volume: false
+  article_number: false
+  arxiv: "2607.05368"
+  pdf: " "
+  highlight_author: 3
+  first_or_not: false
+  etal: 3
+
+- year: 2026
+  title: "Tests of general relativity using analytic derivatives of parametrized post-Einsteinian gravitational waveforms within the Fisher-matrix framework"
+  subtitle: false
+  authors: "Jie Wu, Mengfei Sun, Jin Li*"
+  date: "Jul 5, 2026"
+  sortable_date: '2026-07-05'
+  journal: false
+  journal_link: false
+  volume: false
+  article_number: false
+  arxiv: "2607.04238"
+  pdf: " "
+  highlight_author: 1
+  first_or_not: false
+  etal: 4
+
+- year: 2026
   title: "Constraining Kerr supermassive black hole properties using gravitational waves from inspiraling stellar-mass binary black holes"
   subtitle: false
   authors: "Jie Wu, Jin-Tao Yao, Mengfei Sun, Jin Li*, Zhoujian Cao*"
