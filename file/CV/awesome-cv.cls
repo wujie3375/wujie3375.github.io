@@ -86,9 +86,15 @@
 % =========================================================
 \RequirePackage[%
   backend=biber,
-  style=ieee,
+  style=phys,
   sorting=none,
+  biblabel=brackets,
+  articletitle=true,
   maxbibnames=99,
+  doi=false,
+  url=false,
+  isbn=false,
+  eprint=true,
   giveninits=false, % 缩写=true
 ]{biblatex}
 
@@ -155,7 +161,114 @@
 \renewcommand{\finalnamedelim}{\addspace and\space} % 最后两位作者间加"and"
 
 % 11. 条目间距
-\setlength{\bibitemsep}{0.5\baselineskip}
+\setlength{\bibitemsep}{0.2\baselineskip}
+
+\DeclareSortingTemplate{ymdnt}{%
+  \sort{%
+    \field{presort}%
+  }%
+  \sort[final]{%
+    \field{sortkey}%
+  }%
+  \sort[direction=descending]{%
+    \field[strside=left,strwidth=4]{sortyear}%
+    \field[strside=left,strwidth=4]{year}%
+    \literal{9999}%
+  }%
+  \sort[direction=descending]{%
+    \field[padside=left,padwidth=2,padchar=0]{month}%
+    \literal{00}%
+  }%
+  \sort[direction=descending]{%
+    \field[padside=left,padwidth=2,padchar=0]{day}%
+    \literal{00}%
+  }%
+  \sort{%
+    \field{sortname}%
+    \field{author}%
+    \field{editor}%
+    \field{translator}%
+    \field{sorttitle}%
+    \field{title}%
+  }%
+  \sort{%
+    \field{sorttitle}%
+    \field{title}%
+  }%
+}
+\ExecuteBibliographyOptions{%
+  sorting=ymdnt,
+  giveninits=true,
+}
+\IfFileExists{fonts/times.ttf}{%
+  \newfontfamily\acvbibfont[
+    Path=fonts/,
+    UprightFont=times.ttf,
+    BoldFont=timesbd.ttf,
+    ItalicFont=timesi.ttf,
+    BoldItalicFont=timesbi.ttf
+  ]{Times New Roman}%
+}{%
+  \IfFontExistsTF{Times New Roman}{%
+    \newfontfamily\acvbibfont{Times New Roman}%
+  }{%
+    \newfontfamily\acvbibfont{TeX Gyre Termes}%
+  }%
+}
+\renewcommand*{\bibfont}{%
+  \acvbibfont\color{black}\fontsize{9.5pt}{10.7pt}\selectfont
+}
+\AtBeginBibliography{\color{black}}
+\definecolor{prdlinkblue}{RGB}{46,48,146}
+\DeclareFieldFormat[article]{title}{#1}
+\DeclareFieldFormat[article]{journaltitle}{#1}
+\DeclareFieldFormat{doi/url-link}{%
+  \ifhyperref
+    {%
+      \iffieldundef{doi}
+        {%
+          \iffieldundef{url}
+            {#1}
+            {\href{\thefield{url}}{\textcolor{prdlinkblue}{#1}}}%
+        }
+        {\href{https://doi.org/\thefield{doi}}{\textcolor{prdlinkblue}{#1}}}%
+    }
+    {#1}%
+}
+\DeclareFieldFormat{eprint:arxiv}{%
+  \ifhyperref
+    {\href{https://arxiv.org/\abx@arxivpath/#1}{\textcolor{prdlinkblue}{arXiv\addcolon #1}}}
+    {\textcolor{prdlinkblue}{arXiv\addcolon #1}}%
+}
+\DeclareFieldFormat{eprintclass}{}
+\renewcommand*{\mkbibnamefamily}[1]{%
+  \ifdefstring{\namepartfamily}{Wu}{%
+    \ifboolexpr{
+      test {\ifdefstring{\namepartgiven}{Jie}} or
+      test {\ifdefstring{\namepartgiven}{J.}}
+    }{%
+      \let\finalnamedelim\finalskip
+      \textbf{\underline{J.\ Wu}}%
+    }{%
+      #1%
+    }%
+  }{%
+    #1%
+  }%
+}
+\renewcommand*{\mkbibnamegiven}[1]{%
+  \ifdefstring{\namepartfamily}{Wu}{%
+    \ifboolexpr{
+      test {\ifdefstring{\namepartgiven}{Jie}} or
+      test {\ifdefstring{\namepartgiven}{J.}}
+    }{%
+    }{%
+      #1%
+    }%
+  }{%
+    #1%
+  }%
+}
 
 % ===== 自定义结束 =====
 % =========================================================

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.30)  7 JUL 2026 16:46
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.30)  7 JUL 2026 19:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -940,7 +940,11 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'ieee.dbx' not found.
+Package biblatex Info: ... file 'phys.dbx' found.
+
+(d:/All tools/latex/texlive/2024/texmf-dist/tex/latex/biblatex-phys/phys.dbx
+File: phys.dbx 2019/12/03 v1.1b biblatex database model extension
+)
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count383
@@ -1053,11 +1057,11 @@ File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
 \biburllcskip=\muskip22
 \c@smartand=\count459
 )
-Package biblatex Info: Trying to load bibliography style 'ieee'...
-Package biblatex Info: ... file 'ieee.bbx' found.
+Package biblatex Info: Trying to load bibliography style 'phys'...
+Package biblatex Info: ... file 'phys.bbx' found.
 
-(d:/All tools/latex/texlive/2024/texmf-dist/tex/latex/biblatex-ieee/ieee.bbx
-File: ieee.bbx 2021/12/06 v1.3f biblatex bibliography style
+(d:/All tools/latex/texlive/2024/texmf-dist/tex/latex/biblatex-phys/phys.bbx
+File: phys.bbx 2019/12/03 v1.1b biblatex bibliography style
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
 
@@ -1077,11 +1081,11 @@ File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count460
 \c@bbx:relatedtotal=\count461
 ))))
-Package biblatex Info: Trying to load citation style 'ieee'...
-Package biblatex Info: ... file 'ieee.cbx' found.
+Package biblatex Info: Trying to load citation style 'phys'...
+Package biblatex Info: ... file 'phys.cbx' found.
 
-(d:/All tools/latex/texlive/2024/texmf-dist/tex/latex/biblatex-ieee/ieee.cbx
-File: ieee.cbx 2021/12/06 v1.3f biblatex citation style
+(d:/All tools/latex/texlive/2024/texmf-dist/tex/latex/biblatex-phys/phys.cbx
+File: phys.cbx 2019/12/03 v1.1b biblatex citation style
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
@@ -1103,11 +1107,7 @@ Package biblatex Info: Redefining '\textcites'.
 Package biblatex Info: Redefining '\cites'.
 Package biblatex Info: Redefining '\parencites'.
 Package biblatex Info: Redefining '\smartcites'.
-)
-Package biblatex Info: Redefining '\cite'.
-Package biblatex Info: Redefining '\supercite'.
-Package biblatex Info: Redefining '\cites'.
-)
+))
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
 
@@ -1359,35 +1359,26 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
 (Font)              scaled to size 9.0pt on input line 21.
 ) (./cv/publications.tex
-LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 24.
-
-Overfull \hbox (0.35637pt too wide) in paragraph at lines 24--24
-[] $[]$\TU/SourceSansPro(0)/m/n/10.95 , Mengfei Sun and Jin Li*, “Tests of gene
-ral relativity using analytic derivatives of parametrized
- []
-
-
-Overfull \hbox (10.06981pt too wide) in paragraph at lines 24--24
-\TU/SourceSansPro(0)/m/n/10.95 post-Einsteinian gravitational waveforms within 
-the Fisher-matrix framework,” (Jul. 2026). arXiv: []$[][][][] []
- []
-
-LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 24.
-
-Overfull \hbox (1.43105pt too wide) in paragraph at lines 24--24
-[]\TU/SourceSansPro(0)/m/n/10.95 Mengfei Sun, $[]$, Jin Li*, Brendan Mccane, Na
-n Yang, Xianghe Ma, Borui Wang and Minghui Zhang,
- []
-
-[2]
-Overfull \hbox (10.05663pt too wide) in paragraph at lines 24--24
-[] $[]$\TU/SourceSansPro(0)/m/n/10.95 , Jin Li*, Xiaolin Liu and Zhoujian Cao, 
-“Comparison and application of different post-Newtonian
- []
-
-) [3] (./cv.aux)
+LaTeX Font Info:    Calculating math sizes for size <9.5> on input line 13.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 9.501pt on input line 13.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.03079pt on input line 13.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.70065pt on input line 13.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.49898pt on input line 13.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.02928pt on input line 13.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.69945pt on input line 13.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.03004> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.70006> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+) [2] (./cv.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1399,12 +1390,12 @@ Package logreq Info: Writing requests to 'cv.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39985 strings out of 474773
- 817119 string characters out of 5754168
+ 40062 strings out of 474773
+ 819823 string characters out of 5754168
  1951842 words of memory out of 5000000
- 61511 multiletter control sequences out of 15000+600000
- 564524 words of font info for 122 fonts, out of 8000000 for 9000
+ 61566 multiletter control sequences out of 15000+600000
+ 569968 words of font info for 147 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 116i,12n,121p,1057b,5181s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,12n,121p,555b,4924s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on cv.pdf (3 pages).
+Output written on cv.pdf (2 pages).

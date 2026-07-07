@@ -18,7 +18,7 @@
 
 
 \refsection{0}
-  \datalist[entry]{none/global//global/global}
+  \datalist[entry]{ymdnt/global//global/global}
     \entry{Sun:202607}{article}{}
       \name{author}{5}{}{%
         {{hash=0dd7b23dfb6cf58c77372e1efe223a75}{%
@@ -47,18 +47,18 @@
            given={Shengyi},
            giveni={S\bibinitperiod}}}%
       }
-      \strng{namehash}{a4d8932dfcc6a63c2d7b55716813b0e4}
+      \strng{namehash}{01f6c91f9a678e6c0e99e05c5f354bf9}
       \strng{fullhash}{6902a3c0e28c167e6bd038e5a0705851}
       \strng{bibnamehash}{6902a3c0e28c167e6bd038e5a0705851}
       \strng{authorbibnamehash}{6902a3c0e28c167e6bd038e5a0705851}
-      \strng{authornamehash}{a4d8932dfcc6a63c2d7b55716813b0e4}
+      \strng{authornamehash}{01f6c91f9a678e6c0e99e05c5f354bf9}
       \strng{authorfullhash}{6902a3c0e28c167e6bd038e5a0705851}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
-      \field{month}{7}
+      \field{month}{07}
       \field{title}{{Effects of Solar Wind Plasma Noise on Stochastic Gravitational Wave Background Searches with the LISA-Taiji Network}}
       \field{year}{2026}
       \true{nocite}
@@ -84,79 +84,24 @@
            given={Jin},
            giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{f965874a57195f219350496146b61d8b}
+      \strng{namehash}{c1c5d1501249bec629afd3ff1fddaaf1}
       \strng{fullhash}{f965874a57195f219350496146b61d8b}
       \strng{bibnamehash}{f965874a57195f219350496146b61d8b}
       \strng{authorbibnamehash}{f965874a57195f219350496146b61d8b}
-      \strng{authornamehash}{f965874a57195f219350496146b61d8b}
+      \strng{authornamehash}{c1c5d1501249bec629afd3ff1fddaaf1}
       \strng{authorfullhash}{f965874a57195f219350496146b61d8b}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
-      \field{month}{7}
+      \field{month}{07}
       \field{title}{{Tests of general relativity using analytic derivatives of parametrized post-Einsteinian gravitational waveforms within the Fisher-matrix framework}}
       \field{year}{2026}
       \true{nocite}
       \verb{eprint}
       \verb 2607.04238
-      \endverb
-    \endentry
-    \entry{Wu:2026aa}{article}{}
-      \name{author}{5}{}{%
-        {{hash=d14d813400632d1540675e5edb94d60a}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Jie},
-           giveni={J\bibinitperiod}}}%
-        {{hash=e287dd17366fffdc2b7e9c77a7b6a748}{%
-           family={Jin-Tao},
-           familyi={J\bibinithyphendelim T\bibinitperiod},
-           given={Yao},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=6bb0baf779cb3a241d71472430c78e87}{%
-           family={Sun},
-           familyi={S\bibinitperiod},
-           given={Mengfei},
-           giveni={M\bibinitperiod}}}%
-        {{hash=f9010dd01bbf8aec0b41e109b57e9858}{%
-           family={Li*},
-           familyi={L\bibinitperiod},
-           given={Jin},
-           giveni={J\bibinitperiod}}}%
-        {{hash=c50179803f49c1eac376059fb6190414}{%
-           family={Cao*},
-           familyi={C\bibinitperiod},
-           given={Zhoujian},
-           giveni={Z\bibinitperiod}}}%
-      }
-      \strng{namehash}{4f1530226082a3dcd0e798192285121b}
-      \strng{fullhash}{0997a7fa21538844f1c877ac47ab27f1}
-      \strng{bibnamehash}{0997a7fa21538844f1c877ac47ab27f1}
-      \strng{authorbibnamehash}{0997a7fa21538844f1c877ac47ab27f1}
-      \strng{authornamehash}{4f1530226082a3dcd0e798192285121b}
-      \strng{authorfullhash}{0997a7fa21538844f1c877ac47ab27f1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{Phys. Rev. D}
-      \field{month}{6}
-      \field{number}{12}
-      \field{title}{{Constraining Kerr supermassive black hole properties using gravitational waves from inspiraling stellar-mass binary black holes}}
-      \field{volume}{113}
-      \field{year}{2026}
-      \true{nocite}
-      \field{pages}{124024}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1103/c4jy-7b9k
-      \endverb
-      \verb{eprint}
-      \verb 2606.12784
       \endverb
     \endentry
     \entry{Sun:202606}{article}{}
@@ -207,24 +152,80 @@
            given={Yuanhong},
            giveni={Y\bibinitperiod}}}%
       }
-      \strng{namehash}{c72c55b457201a87caf6d0fc3778aeb6}
+      \strng{namehash}{ab6ada5c179b2ddc2a06cf6562777991}
       \strng{fullhash}{a4f965cbd20a863a001bdad337ede056}
       \strng{bibnamehash}{a4f965cbd20a863a001bdad337ede056}
       \strng{authorbibnamehash}{a4f965cbd20a863a001bdad337ede056}
-      \strng{authornamehash}{c72c55b457201a87caf6d0fc3778aeb6}
+      \strng{authornamehash}{ab6ada5c179b2ddc2a06cf6562777991}
       \strng{authorfullhash}{a4f965cbd20a863a001bdad337ede056}
       \field{extraname}{1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
-      \field{month}{6}
-      \field{title}{{Identifiability of g mode Resonances in Eccentric Binary Neutron Stars with Multidetector Observations}}
+      \field{month}{06}
+      \field{title}{{Identifiability of $g$ mode Resonances in Eccentric Binary Neutron Stars with Multidetector Observations}}
       \field{year}{2026}
       \true{nocite}
       \verb{eprint}
       \verb 2606.11959
+      \endverb
+    \endentry
+    \entry{Wu:2026aa}{article}{}
+      \name{author}{5}{}{%
+        {{hash=d14d813400632d1540675e5edb94d60a}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8c4d51b91b1ee8d2b9dd77e76e6441f8}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Jin-Tao},
+           giveni={J\bibinithyphendelim T\bibinitperiod}}}%
+        {{hash=6bb0baf779cb3a241d71472430c78e87}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Mengfei},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f9010dd01bbf8aec0b41e109b57e9858}{%
+           family={Li*},
+           familyi={L\bibinitperiod},
+           given={Jin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c50179803f49c1eac376059fb6190414}{%
+           family={Cao*},
+           familyi={C\bibinitperiod},
+           given={Zhoujian},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{c1c5d1501249bec629afd3ff1fddaaf1}
+      \strng{fullhash}{dc6244cd903a67a529f554c4ca0d9046}
+      \strng{bibnamehash}{dc6244cd903a67a529f554c4ca0d9046}
+      \strng{authorbibnamehash}{dc6244cd903a67a529f554c4ca0d9046}
+      \strng{authornamehash}{c1c5d1501249bec629afd3ff1fddaaf1}
+      \strng{authorfullhash}{dc6244cd903a67a529f554c4ca0d9046}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{month}{06}
+      \field{number}{12}
+      \field{title}{{Constraining Kerr supermassive black hole properties using gravitational waves from inspiraling stellar-mass binary black holes}}
+      \field{volume}{113}
+      \field{year}{2026}
+      \true{nocite}
+      \field{pages}{124024}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/c4jy-7b9k
+      \endverb
+      \verb{eprint}
+      \verb 2606.12784
       \endverb
     \endentry
     \entry{Sun:2025aa}{article}{}
@@ -275,20 +276,20 @@
            given={Yuanhong},
            giveni={Y\bibinitperiod}}}%
       }
-      \strng{namehash}{c72c55b457201a87caf6d0fc3778aeb6}
+      \strng{namehash}{ab6ada5c179b2ddc2a06cf6562777991}
       \strng{fullhash}{a4f965cbd20a863a001bdad337ede056}
       \strng{bibnamehash}{a4f965cbd20a863a001bdad337ede056}
       \strng{authorbibnamehash}{a4f965cbd20a863a001bdad337ede056}
-      \strng{authornamehash}{c72c55b457201a87caf6d0fc3778aeb6}
+      \strng{authornamehash}{ab6ada5c179b2ddc2a06cf6562777991}
       \strng{authorfullhash}{a4f965cbd20a863a001bdad337ede056}
       \field{extraname}{2}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
       \field{journaltitle}{Phys. Rev. D}
-      \field{month}{5}
+      \field{month}{05}
       \field{number}{10}
       \field{title}{{Detection of multiband lensed gravitational waves from dark matter halos with deep learning}}
       \field{volume}{113}
@@ -321,20 +322,20 @@
            given={Jin},
            giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{f965874a57195f219350496146b61d8b}
+      \strng{namehash}{c1c5d1501249bec629afd3ff1fddaaf1}
       \strng{fullhash}{f965874a57195f219350496146b61d8b}
       \strng{bibnamehash}{f965874a57195f219350496146b61d8b}
       \strng{authorbibnamehash}{f965874a57195f219350496146b61d8b}
-      \strng{authornamehash}{f965874a57195f219350496146b61d8b}
+      \strng{authornamehash}{c1c5d1501249bec629afd3ff1fddaaf1}
       \strng{authorfullhash}{f965874a57195f219350496146b61d8b}
-      \field{extraname}{2}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
       \field{journaltitle}{Class. Quant. Grav.}
-      \field{month}{3}
+      \field{month}{03}
       \field{number}{6}
       \field{title}{{Constraints and detection capabilities of GW polarizations with space-based detectors in different TDI combinations}}
       \field{volume}{43}
@@ -392,14 +393,15 @@
            given={Minghui},
            giveni={M\bibinitperiod}}}%
       }
-      \strng{namehash}{1cded9e5af7257f65f93e2e15ef5da14}
+      \strng{namehash}{ab6ada5c179b2ddc2a06cf6562777991}
       \strng{fullhash}{72df629f965a6a4f0112a724b77b3f93}
       \strng{bibnamehash}{72df629f965a6a4f0112a724b77b3f93}
       \strng{authorbibnamehash}{72df629f965a6a4f0112a724b77b3f93}
-      \strng{authornamehash}{1cded9e5af7257f65f93e2e15ef5da14}
+      \strng{authornamehash}{ab6ada5c179b2ddc2a06cf6562777991}
       \strng{authorfullhash}{72df629f965a6a4f0112a724b77b3f93}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -467,19 +469,19 @@
            given={Yan},
            giveni={Y\bibinitperiod}}}%
       }
-      \strng{namehash}{3b336ca1d936f79815e454bd347dbe87}
+      \strng{namehash}{4c8665e84744229bbe000e7b4d63d20c}
       \strng{fullhash}{656045f472ef7a3d0a769e2966837e7c}
       \strng{bibnamehash}{656045f472ef7a3d0a769e2966837e7c}
       \strng{authorbibnamehash}{656045f472ef7a3d0a769e2966837e7c}
-      \strng{authornamehash}{3b336ca1d936f79815e454bd347dbe87}
+      \strng{authornamehash}{4c8665e84744229bbe000e7b4d63d20c}
       \strng{authorfullhash}{656045f472ef7a3d0a769e2966837e7c}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
       \field{journaltitle}{Phys. Rev. D}
-      \field{month}{9}
+      \field{month}{09}
       \field{number}{6}
       \field{title}{{Identification of Stochastic Gravitational Wave Backgrounds from Cosmic String Using Machine Learning}}
       \field{volume}{112}
@@ -517,18 +519,19 @@
            given={Jin},
            giveni={J\bibinitperiod}}}%
       }
-      \strng{namehash}{ac3b54890cac1e5ee919d1ed8c512678}
+      \strng{namehash}{c1c5d1501249bec629afd3ff1fddaaf1}
       \strng{fullhash}{32af98b3fd34742ced0ebb39631d6e2a}
       \strng{bibnamehash}{32af98b3fd34742ced0ebb39631d6e2a}
       \strng{authorbibnamehash}{32af98b3fd34742ced0ebb39631d6e2a}
-      \strng{authornamehash}{ac3b54890cac1e5ee919d1ed8c512678}
+      \strng{authornamehash}{c1c5d1501249bec629afd3ff1fddaaf1}
       \strng{authorfullhash}{32af98b3fd34742ced0ebb39631d6e2a}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extraname}{4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
-      \field{month}{8}
+      \field{month}{08}
       \field{title}{{Probing globular clusters using modulated gravitational waves from binary black holes}}
       \field{year}{2025}
       \true{nocite}
@@ -569,19 +572,20 @@
            given={Zhoujian},
            giveni={Z\bibinitperiod}}}%
       }
-      \strng{namehash}{11ff1f9f75e56dbcd4e7914974507747}
+      \strng{namehash}{c1c5d1501249bec629afd3ff1fddaaf1}
       \strng{fullhash}{0b9b1b42f4bd360a34c81b6b43e381b5}
       \strng{bibnamehash}{0b9b1b42f4bd360a34c81b6b43e381b5}
       \strng{authorbibnamehash}{0b9b1b42f4bd360a34c81b6b43e381b5}
-      \strng{authornamehash}{11ff1f9f75e56dbcd4e7914974507747}
+      \strng{authornamehash}{c1c5d1501249bec629afd3ff1fddaaf1}
       \strng{authorfullhash}{0b9b1b42f4bd360a34c81b6b43e381b5}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extraname}{5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
       \field{journaltitle}{Phys. Rev. D}
-      \field{month}{7}
+      \field{month}{07}
       \field{number}{2}
       \field{title}{{Effect of kick velocity on gravitational wave detection of binary black holes with space- and ground-based detectors}}
       \field{volume}{112}
@@ -634,20 +638,20 @@
            given={Guo},
            giveni={G\bibinitperiod}}}%
       }
-      \strng{namehash}{8d697c8e7385e5c8670d599d253f1c86}
+      \strng{namehash}{4f3f35d48765b931402abc0171222491}
       \strng{fullhash}{13445efdd42ba3057fb66d0f6f2cb74a}
       \strng{bibnamehash}{13445efdd42ba3057fb66d0f6f2cb74a}
       \strng{authorbibnamehash}{13445efdd42ba3057fb66d0f6f2cb74a}
-      \strng{authornamehash}{8d697c8e7385e5c8670d599d253f1c86}
+      \strng{authornamehash}{4f3f35d48765b931402abc0171222491}
       \strng{authorfullhash}{13445efdd42ba3057fb66d0f6f2cb74a}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Appl. Phys. Lett.}
       \field{month}{01}
       \field{number}{2}
-      \field{title}{Parallel manipulation of multiple ink droplets via near-infrared light on lubricant infused surface}
+      \field{title}{{Parallel manipulation of multiple ink droplets via near-infrared light on lubricant infused surface}}
       \field{volume}{126}
       \field{year}{2025}
       \true{nocite}
@@ -677,8 +681,8 @@
       \strng{authornamehash}{4e7229d6b736498354b5a61adda71f00}
       \strng{authorfullhash}{4e7229d6b736498354b5a61adda71f00}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -721,19 +725,20 @@
            given={Zhoujian},
            giveni={Z\bibinitperiod}}}%
       }
-      \strng{namehash}{35726d1724c18252733a602fd3945ea7}
+      \strng{namehash}{c1c5d1501249bec629afd3ff1fddaaf1}
       \strng{fullhash}{47ea2bd431735fb5496f3d3f97dbf219}
       \strng{bibnamehash}{47ea2bd431735fb5496f3d3f97dbf219}
       \strng{authorbibnamehash}{47ea2bd431735fb5496f3d3f97dbf219}
-      \strng{authornamehash}{35726d1724c18252733a602fd3945ea7}
+      \strng{authornamehash}{c1c5d1501249bec629afd3ff1fddaaf1}
       \strng{authorfullhash}{47ea2bd431735fb5496f3d3f97dbf219}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extraname}{6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
       \field{journaltitle}{Phys. Rev. D}
-      \field{month}{5}
+      \field{month}{05}
       \field{number}{10}
       \field{title}{{Comparison and application of different post-Newtonian models for inspiralling stellar-mass binary black holes with space-based GW detectors}}
       \field{volume}{109}
@@ -768,8 +773,8 @@
       \strng{authornamehash}{4e7229d6b736498354b5a61adda71f00}
       \strng{authorfullhash}{4e7229d6b736498354b5a61adda71f00}
       \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -807,18 +812,19 @@
            given={Qing-Quan},
            giveni={Q\bibinithyphendelim Q\bibinitperiod}}}%
       }
-      \strng{namehash}{51a1f0ee263d5ce2d6bafc6ff6052b2b}
+      \strng{namehash}{c1c5d1501249bec629afd3ff1fddaaf1}
       \strng{fullhash}{51a1f0ee263d5ce2d6bafc6ff6052b2b}
       \strng{bibnamehash}{51a1f0ee263d5ce2d6bafc6ff6052b2b}
       \strng{authorbibnamehash}{51a1f0ee263d5ce2d6bafc6ff6052b2b}
-      \strng{authornamehash}{51a1f0ee263d5ce2d6bafc6ff6052b2b}
+      \strng{authornamehash}{c1c5d1501249bec629afd3ff1fddaaf1}
       \strng{authorfullhash}{51a1f0ee263d5ce2d6bafc6ff6052b2b}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extraname}{7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Chin. Phys. B}
-      \field{month}{9}
+      \field{month}{09}
       \field{number}{9}
       \field{title}{{Application of Newtonian approximate model to LIGO gravitational wave data processing}}
       \field{volume}{32}

@@ -51,12 +51,28 @@
   subtitle: false
   authors: "Mengfei Sun, Jie Wu, Qianning Hu, Jin Li*, Nan Yang, Xianghe Ma, Borui Wang, Minghui Zhang, Yuanhong Zhong*"
   date: "Jun 10, 2026"
-  sortable_date: '2026-06-09'
+  sortable_date: '2026-06-10'
   journal: false
   journal_link: false
   volume: false
   article_number: false
   arxiv: "2606.11959"
+  pdf: " "
+  highlight_author: 2
+  first_or_not: false
+  etal: 3
+
+- year: 2026
+  title: "Detection of multiband lensed gravitational waves from dark matter halos with deep learning"
+  subtitle: false
+  authors: "Mengfei Sun, Jie Wu, Qianning Hu, Jin Li*, Nan Yang, Xianghe Ma, Borui Wang, Minghui Zhang, Yuanhong Zhong*"
+  date: "May 4, 2026"
+  sortable_date: '2026-05-04'
+  journal: "Phys. Rev. D"
+  journal_link: "https://journals.aps.org/prd/abstract/10.1103/p8jc-kgp2"
+  volume: "113"
+  article_number: "103004"
+  arxiv: "2511.09107"
   pdf: " "
   highlight_author: 2
   first_or_not: false
@@ -78,17 +94,17 @@
   first_or_not: true
   etal: 4
 
-- year: 2026
-  title: "Detection of multiband lensed gravitational waves from dark matter halos with deep learning"
+- year: 2025
+  title: "Conditional Autoencoder for Generating Binary Neutron Star Waveforms with Tidal and Precession Effects"
   subtitle: false
-  authors: "Mengfei Sun, Jie Wu, Qianning Hu, Jin Li*, Nan Yang, Xianghe Ma, Borui Wang, Minghui Zhang, Yuanhong Zhong*"
-  date: "May 4, 2026"
-  sortable_date: '2026-05-04'
+  authors: "Mengfei Sun, Jie Wu, Jin Li*, Brendan Mccane, Nan Yang, Xianghe Ma, Borui Wang, Minghui Zhang"
+  date: "Oct 7, 2025"
+  sortable_date: '2025-10-07'
   journal: "Phys. Rev. D"
-  journal_link: "https://journals.aps.org/prd/abstract/10.1103/p8jc-kgp2"
-  volume: "113"
-  article_number: "103004"
-  arxiv: "2511.09107"
+  journal_link: "https://journals.aps.org/prd/abstract/10.1103/kmlw-y7yw"
+  volume: "112"
+  article_number: "084016"
+  arxiv: "2503.19512"
   pdf: " "
   highlight_author: 2
   first_or_not: false
@@ -140,22 +156,6 @@
   pdf: " "
   highlight_author: 1
   first_or_not: true
-  etal: 3
-
-- year: 2025
-  title: "Conditional Autoencoder for Generating Binary Neutron Star Waveforms with Tidal and Precession Effects"
-  subtitle: false
-  authors: "Mengfei Sun, Jie Wu, Jin Li*, Brendan Mccane, Nan Yang, Xianghe Ma, Borui Wang, Minghui Zhang"
-  date: "Oct 7, 2025"
-  sortable_date: '2025-10-07'
-  journal: "Phys. Rev. D"
-  journal_link: "https://journals.aps.org/prd/abstract/10.1103/kmlw-y7yw"
-  volume: "112"
-  article_number: "084016"
-  arxiv: "2503.19512"
-  pdf: " "
-  highlight_author: 2
-  first_or_not: false
   etal: 3
 
 - year: 2025
