@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
-[1] Config.pm:310> INFO - Logfile is 'cv.blg'
-[116] biber-MSWIN64:340> INFO - === 
-[159] Biber.pm:419> INFO - Reading 'cv.bcf'
-[257] Biber.pm:976> INFO - Using all citekeys in bib section 0
-[271] Biber.pm:4419> INFO - Processing section 0
-[282] Biber.pm:4610> INFO - Looking for bibtex file 'publications.bib' for section 0
-[333] bibtex.pm:1713> INFO - LaTeX decoding ...
-[349] bibtex.pm:1519> INFO - Found BibTeX data source 'publications.bib'
-[433] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[433] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[433] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[433] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[440] bbl.pm:660> INFO - Writing 'cv.bbl' with encoding 'UTF-8'
-[450] bbl.pm:763> INFO - Output to cv.bbl
+[0] Config.pm:310> INFO - Logfile is 'cv.blg'
+[82] biber-MSWIN64:340> INFO - === 
+[110] Biber.pm:419> INFO - Reading 'cv.bcf'
+[184] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[195] Biber.pm:4419> INFO - Processing section 0
+[205] Biber.pm:4610> INFO - Looking for bibtex file 'publications.bib' for section 0
+[246] bibtex.pm:1713> INFO - LaTeX decoding ...
+[272] bibtex.pm:1519> INFO - Found BibTeX data source 'publications.bib'
+[378] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[379] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[379] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[379] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[387] bbl.pm:660> INFO - Writing 'cv.bbl' with encoding 'UTF-8'
+[396] bbl.pm:763> INFO - Output to cv.bbl

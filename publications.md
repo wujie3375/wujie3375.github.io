@@ -175,7 +175,7 @@ tr:last-child td {
 
 <p style="text-indent: 0;">Publications are categorized and listed in reversed chronological order.</p>
 
-<p style="text-indent: 0; font-family: 'ARIAL';">(†*: corresponding author)</p>
+<p style="text-indent: 0; font-family: 'ARIAL';">(*: corresponding author; †: these authors contributed equally)</p>
 ---
 
 {% assign publications = site.data.papers %}
