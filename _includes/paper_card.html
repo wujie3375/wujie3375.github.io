@@ -29,7 +29,7 @@
                     {% endif %}
                 {% endif %}
             {% endfor %}
-            , <a href="javascript:void(0);" onclick="toggleAuthors('{{ include.unique_id }}')" id="etal-link-{{ include.unique_id }}">and {{ omitted_count }} more</a>
+            , <a href="javascript:void(0);" onclick="toggleAuthors('{{ include.unique_id }}')" id="etal-link-{{ include.unique_id }}" style="font-style: italic; text-decoration-line: underline; text-decoration-style: dashed; text-decoration-thickness: 1px; text-underline-offset: 0.12em; cursor: pointer;">and {{ omitted_count }} more</a>
             <!-- Hidden full author list (excluding the first omit_start already displayed) -->
             <span id="author-full-{{ include.unique_id }}" 
                     style="display: none; cursor: pointer;" 
