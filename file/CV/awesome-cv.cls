@@ -199,6 +199,7 @@
 \ExecuteBibliographyOptions{%
   sorting=ymdnt,
   giveninits=true,
+  defernumbers=true,
 }
 \IfFileExists{fonts/times.ttf}{%
   \newfontfamily\acvbibfont[
@@ -474,6 +475,8 @@
 % Defines writer's homepage (optional)
 % Usage: \homepage{<url>}
 \newcommand*{\homepage}[1]{\def\@homepage{#1}}
+% Usage: \homepageurl{<full url>}
+\newcommand*{\homepageurl}[1]{\def\@homepageurl{#1}}
 
 % Defines writer's github (optional)
 % Usage: \github{<github-nick>}
@@ -651,17 +654,19 @@
           \faMobile\acvHeaderIconSep\@mobile%
           \setbool{isstart}{false}%
         }%
+      \ifthenelse{\isundefined{\@homepage}}%
+        {}%
+        {%
+          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
+          \ifthenelse{\isundefined{\@homepageurl}}%
+            {\href{http://\@homepage}{\faHome\acvHeaderIconSep\@homepage}}%
+            {\href{\@homepageurl}{\faHome\acvHeaderIconSep\@homepage}}%
+        }%
       \ifthenelse{\isundefined{\@email}}%
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \href{mailto:\@email}{\faEnvelope\acvHeaderIconSep\@email}%
-        }%
-      \ifthenelse{\isundefined{\@homepage}}%
-        {}%
-        {%
-          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{http://\@homepage}{\faHome\acvHeaderIconSep\@homepage}%
         }%
       \ifthenelse{\isundefined{\@github}}%
         {}%
@@ -723,13 +728,11 @@
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \href{https://scholar.google.com/citations?user=\@googlescholarid}{\faGraduationCap\acvHeaderIconSep\@googlescholarname}%
         }%
+    }%
       \ifthenelse{\isundefined{\@extrainfo}}%
         {}%
-        {%
-          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \@extrainfo%
-        }%
-    } \\[\acvHeaderAfterSocialSkip]%
+       {\headersocialstyle{\@extrainfo}}%
+    \\[\acvHeaderAfterSocialSkip]%
     \ifthenelse{\isundefined{\@quote}}%
       {}%
       {\headerquotestyle{\@quote\\}\vspace{\acvHeaderAfterQuoteSkip}}%

@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'cv.blg'
-[97] biber-MSWIN64:340> INFO - === 
-[129] Biber.pm:419> INFO - Reading 'cv.bcf'
-[223] Biber.pm:976> INFO - Using all citekeys in bib section 0
-[239] Biber.pm:4419> INFO - Processing section 0
-[251] Biber.pm:4610> INFO - Looking for bibtex file 'publications.bib' for section 0
-[304] bibtex.pm:1713> INFO - LaTeX decoding ...
-[335] bibtex.pm:1519> INFO - Found BibTeX data source 'publications.bib'
-[460] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[460] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[461] Biber.pm:4239> INFO - Sorting list 'ymdnt/global//global/global' of type 'entry' with template 'ymdnt' and locale 'en-US'
-[461] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[475] bbl.pm:660> INFO - Writing 'cv.bbl' with encoding 'UTF-8'
-[487] bbl.pm:763> INFO - Output to cv.bbl
+[111] biber-MSWIN64:340> INFO - === 
+[148] Biber.pm:419> INFO - Reading 'cv.bcf'
+[253] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[271] Biber.pm:4419> INFO - Processing section 0
+[287] Biber.pm:4610> INFO - Looking for bibtex file 'publications.bib' for section 0
+[338] bibtex.pm:1713> INFO - LaTeX decoding ...
+[372] bibtex.pm:1519> INFO - Found BibTeX data source 'publications.bib'
+[552] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[552] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[552] Biber.pm:4239> INFO - Sorting list 'ymdnt/global//global/global' of type 'entry' with template 'ymdnt' and locale 'en-US'
+[552] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[568] bbl.pm:660> INFO - Writing 'cv.bbl' with encoding 'UTF-8'
+[581] bbl.pm:763> INFO - Output to cv.bbl

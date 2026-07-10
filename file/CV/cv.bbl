@@ -103,6 +103,7 @@
       \verb{eprint}
       \verb 2607.04238
       \endverb
+      \keyw{firstauthor}
     \endentry
     \entry{Sun:202606}{article}{}
       \name{author}{9}{}{%
@@ -227,6 +228,7 @@
       \verb{eprint}
       \verb 2606.12784
       \endverb
+      \keyw{firstauthor}
     \endentry
     \entry{Sun:2025aa}{article}{}
       \name{author}{9}{}{%
@@ -349,6 +351,7 @@
       \verb{eprint}
       \verb 2411.03631
       \endverb
+      \keyw{firstauthor}
     \endentry
     \entry{Sun:2025afb}{article}{}
       \name{author}{8}{}{%
@@ -367,8 +370,8 @@
            familyi={L\bibinitperiod},
            given={Jin},
            giveni={J\bibinitperiod}}}%
-        {{hash=5b24430074d6f0d75b618b61fcd81522}{%
-           family={Mccane},
+        {{hash=5df344217170912ca2602b20882a2e50}{%
+           family={McCane},
            familyi={M\bibinitperiod},
            given={Brendan},
            giveni={B\bibinitperiod}}}%
@@ -394,11 +397,11 @@
            giveni={M\bibinitperiod}}}%
       }
       \strng{namehash}{ab6ada5c179b2ddc2a06cf6562777991}
-      \strng{fullhash}{72df629f965a6a4f0112a724b77b3f93}
-      \strng{bibnamehash}{72df629f965a6a4f0112a724b77b3f93}
-      \strng{authorbibnamehash}{72df629f965a6a4f0112a724b77b3f93}
+      \strng{fullhash}{73947d17b7994241a8a657531318c498}
+      \strng{bibnamehash}{73947d17b7994241a8a657531318c498}
+      \strng{authorbibnamehash}{73947d17b7994241a8a657531318c498}
       \strng{authornamehash}{ab6ada5c179b2ddc2a06cf6562777991}
-      \strng{authorfullhash}{72df629f965a6a4f0112a724b77b3f93}
+      \strng{authorfullhash}{73947d17b7994241a8a657531318c498}
       \field{extraname}{3}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
@@ -538,6 +541,7 @@
       \verb{eprint}
       \verb 2508.04021
       \endverb
+      \keyw{firstauthor}
     \endentry
     \entry{Wu:2025cun}{article}{}
       \name{author}{6}{}{%
@@ -599,6 +603,7 @@
       \verb{eprint}
       \verb 2502.13710
       \endverb
+      \keyw{firstauthor}
     \endentry
     \entry{Hu:2025apl}{article}{}
       \name{author}{7}{}{%
@@ -701,6 +706,7 @@
       \verb{eprint}
       \verb 2407.13590
       \endverb
+      \keyw{firstauthor}
     \endentry
     \entry{Wu:2024ghy}{article}{}
       \name{author}{4}{}{%
@@ -752,6 +758,7 @@
       \verb{eprint}
       \verb 2401.03113
       \endverb
+      \keyw{firstauthor}
     \endentry
     \entry{Wu:2023bwd}{article}{}
       \name{author}{2}{}{%
@@ -793,6 +800,7 @@
       \verb{eprint}
       \verb 2307.05568
       \endverb
+      \keyw{firstauthor}
     \endentry
     \entry{Wu:2023ijs}{article}{}
       \name{author}{3}{}{%
@@ -835,6 +843,7 @@
       \verb{doi}
       \verb 10.1088/1674-1056/acd8a3
       \endverb
+      \keyw{firstauthor}
     \endentry
   \enddatalist
 \endrefsection

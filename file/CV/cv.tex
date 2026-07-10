@@ -59,6 +59,56 @@
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+\renewcommand{\acvHeaderAfterAddressSkip}{2.0mm}
+\newlength{\headercolonewidth}
+\newlength{\headercoltwowidth}
+\newlength{\headercolthreewidth}
+\newlength{\headercolfourwidth}
+\newlength{\headercoltmpwidth}
+\newlength{\headericonboxwidth}
+\newlength{\headericontextsep}
+\newcommand{\headercontactstyle}[1]{{\fontsize{7.6pt}{1em}\headerfont\color{text} #1}}
+\newcommand{\headertextlinkcontent}[1]{#1}
+\newcommand{\headertextlink}[2]{\href{#1}{#2}}
+\settowidth{\headericonboxwidth}{\headercontactstyle{\raisebox{-0.15em}{\includegraphics[height=1.06em]{../../images/logo/icons8-inspirehep-100.png}}}}
+\setlength{\headericontextsep}{0.36em}
+\newcommand{\headericonbox}[1]{\makebox[\headericonboxwidth][l]{#1}}
+\newcommand{\headerlogolinkcontent}[3][1.28em]{%
+  \headericonbox{\raisebox{-0.15em}{\includegraphics[height=#1]{#2}}}\hspace{\headericontextsep}#3%
+}
+\newcommand{\headerlogolink}[4][1.28em]{%
+  \href{#2}{\headerlogolinkcontent[#1]{#3}{#4}}%
+}
+\newcommand{\headerfaiconlinkcontent}[2]{%
+  \headericonbox{\raisebox{-0.03em}{#1}}\hspace{\headericontextsep}#2%
+}
+\newcommand{\headerfaiconlink}[3]{%
+  \href{#2}{\headerfaiconlinkcontent{#1}{#3}}%
+}
+\newcommand{\headercontactrow}[4]{%
+  \makebox[\linewidth][l]{%
+    \makebox[\headercolonewidth][l]{#1}%
+    \hspace{1.00em}\textbar\hspace{1.00em}%
+    \makebox[\headercoltwowidth][l]{#2}%
+    \hspace{1.00em}\textbar\hspace{1.00em}%
+    \makebox[\headercolthreewidth][l]{#3}%
+    \hspace{1.00em}\textbar\hspace{1.00em}%
+    \makebox[\headercolfourwidth][l]{#4}%
+  }%
+}
+\settowidth{\headercolonewidth}{\headercontactstyle{\headerlogolinkcontent{../../images/logo/icons8-orcid-101.png}{ORCID}}}
+\settowidth{\headercoltmpwidth}{\headercontactstyle{\headerlogolinkcontent{../../images/logo/icons8-orcid-101.png}{ORCID}}}
+\ifdim\headercoltmpwidth>\headercolonewidth\setlength{\headercolonewidth}{\headercoltmpwidth}\fi
+\addtolength{\headercolonewidth}{0.8em}
+\settowidth{\headercoltwowidth}{\headercontactstyle{\headerlogolinkcontent{../../images/logo/icons8-web-100.png}{Web of Science}}}
+\settowidth{\headercoltmpwidth}{\headercontactstyle{\headerlogolinkcontent{../../images/logo/icons8-rg.png}{ResearchGate}}}
+\ifdim\headercoltmpwidth>\headercoltwowidth\setlength{\headercoltwowidth}{\headercoltmpwidth}\fi
+\settowidth{\headercolthreewidth}{\headercontactstyle{\headerfaiconlinkcontent{\faHome}{wujie3375.github.io}}}
+\settowidth{\headercoltmpwidth}{\headercontactstyle{\headerlogolinkcontent{../../images/logo/icons8-scholar-100.png}{Google Scholar}}}
+\ifdim\headercoltmpwidth>\headercolthreewidth\setlength{\headercolthreewidth}{\headercoltmpwidth}\fi
+\settowidth{\headercolfourwidth}{\headercontactstyle{\headerlogolinkcontent{../../images/logo/icons8-email-100.png}{wujie3375@gmail.com}}}
+\settowidth{\headercoltmpwidth}{\headercontactstyle{\headerlogolinkcontent{../../images/logo/icons8-ads-102.png}{Astrophysics Data System}}}
+\ifdim\headercoltmpwidth>\headercolfourwidth\setlength{\headercolfourwidth}{\headercoltmpwidth}\fi
 
 
 %-------------------------------------------------------------------------------
@@ -72,9 +122,18 @@
 \address{College of Physics, Chongqing University, Chongqing 401331, China}
 
 % \mobile{(+86) 158-9231-2622}
-\email{wujie3375@gmail.com}
-\homepage{wujie3375.github.io}
-\googlescholar{AkklhIoAAAAJ}{Google Scholar}
+\extrainfo{%
+\headercontactstyle{%
+\headercontactrow
+  {\headerlogolink{https://orcid.org/0000-0002-9672-8711}{../../images/logo/icons8-orcid-101.png}{ORCID}}
+  {\headerlogolink{https://webofscience.clarivate.cn/wos/author/record/HDL-7535-2022}{../../images/logo/icons8-web-100.png}{Web of Science}}
+  {\headerfaiconlink{\faHome}{https://wujie3375.github.io}{wujie3375.github.io}}
+  {\headerlogolink{mailto:wujie3375@gmail.com}{../../images/logo/icons8-email-100.png}{wujie3375@gmail.com}}\\[0.16em]
+\headercontactrow
+  {\headerlogolink{https://inspirehep.net/authors/2685895?ui-citation-summary=true}{../../images/logo/icons8-inspirehep-100.png}{INSPIRE}}
+  {\headerlogolink{https://www.researchgate.net/profile/Jie-Wu-168}{../../images/logo/icons8-rg.png}{ResearchGate}}
+  {\headerlogolink{https://scholar.google.com/citations?user=AkklhIoAAAAJ}{../../images/logo/icons8-scholar-100.png}{Google Scholar}}
+  {\headerlogolink{https://ui.adsabs.harvard.edu/public-libraries/OwY1eASDRhuu3lnFB30nHA}{../../images/logo/icons8-ads-102.png}{Astrophysics Data System}}}}
 
 % \github{wujie3375}
 % \linkedin{posquit0}
@@ -90,7 +149,6 @@
 
 % \quote{``Be the change that you want to see in the world."}
 
-%-------------------------------------------------------------------------------
 \begin{document}
 
 % Print the header with above personal informations
@@ -116,6 +174,7 @@
 \input{cv/experience.tex}
 \input{cv/skills.tex}
 % \input{cv/funding.tex}
+\newpage
 \input{cv/honors.tex}
 \input{cv/publications.tex}
 % \input{cv/extracurricular.tex}
