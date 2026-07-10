@@ -46,7 +46,7 @@ Beyond research, I enjoy the kind of curiosity that spills over into many neighb
 - **Physics & Astronomy**  
   I never get tired of asking how the universe works, and why it works that way. 🔭  
 - **Aerospace**  
-  Rockets, satellites, and ambitious engineering projects always make me look twice. 🚀  
+  Rockets, satellites, and ambitious engineering never stop being exciting. 🚀  
 - **Photography**  
   Capturing star trails, night skies, and quiet moments from a different angle. 📷  
 - **Aircraft**  
@@ -62,16 +62,12 @@ If you’d like to talk about gravitational waves, physics, collaboration, or ju
 
 - **Gravitational waves**  
   Waveform modeling, signal simulation.
-
 - **Data analysis**  
   Parameter estimation, Fisher matrix, Bayesian analysis.
-
 - **Detectors**  
   Space- and ground-based detectors, time-delay interferometry, multi-messenger observation.
-
 - **Astrophysical sources**  
   Binary black holes, galactic binaries, hierarchical triple systems.
-
 - **Gravitation**  
   Modified gravity, cosmology, dark matter, dynamical friction.
 
