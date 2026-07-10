@@ -13,9 +13,10 @@
     <div style="font-family: 'ARIAL'; font-size: 17px; margin: -2px 0 -4px 0;">
         {% assign authors = include.authors | split: ',' %}
         {% assign omit_start = include.etal | default: 5 %}
+        {% assign omitted_count = authors.size | minus: omit_start %}
         {% assign highlight_author_etal = include.highlight_author | minus: include.etal %}
         {% if authors.size > omit_start %}
-            <!-- More than omit_start authors: show first omit_start and then et al. -->
+            <!-- More than omit_start authors: show first omit_start and then "and N more". -->
             {% for author in authors %}
                 {% if forloop.index <= omit_start %}
                     {% if forloop.index == include.highlight_author %}
@@ -28,7 +29,7 @@
                     {% endif %}
                 {% endif %}
             {% endfor %}
-            , <em><a href="javascript:void(0);" onclick="toggleAuthors('{{ include.unique_id }}')" id="etal-link-{{ include.unique_id }}">et al.</a></em>
+            , <a href="javascript:void(0);" onclick="toggleAuthors('{{ include.unique_id }}')" id="etal-link-{{ include.unique_id }}">and {{ omitted_count }} more</a>
             <!-- Hidden full author list (excluding the first omit_start already displayed) -->
             <span id="author-full-{{ include.unique_id }}" 
                     style="display: none; cursor: pointer;" 
