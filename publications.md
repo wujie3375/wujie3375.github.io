@@ -13,6 +13,34 @@ title: Publications
     font-family: 'ARIALBD';
     src: url('/assets/fonts/ARIALBD.TTF') format('truetype');
   }
+  @font-face {
+    font-family: 'Times New Roman Web';
+    src: url('/assets/fonts/times.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Times New Roman Web';
+    src: url('/assets/fonts/timesbd.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Times New Roman Web';
+    src: url('/assets/fonts/timesi.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Times New Roman Web';
+    src: url('/assets/fonts/timesbi.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
   /* li {
     font-family: 'times', serif;
   } */
@@ -28,6 +56,10 @@ table {
     border-collapse: collapse;
     margin: 20px 0;
     text-align: center;
+}
+
+.publication-note {
+    font-family: 'Times New Roman Web', 'Times New Roman', Times, serif;
 }
 
 th, td {
@@ -175,7 +207,7 @@ tr:last-child td {
 
 <p style="text-indent: 0;">Publications are categorized and listed in reversed chronological order.</p>
 
-<p style="text-indent: 0; font-family: 'ARIAL';">(*: corresponding author; †: these authors contributed equally)</p>
+<p class="publication-note" style="text-indent: 0;">(*: corresponding author; †: these authors contributed equally)</p>
 ---
 
 {% assign publications = site.data.papers %}
