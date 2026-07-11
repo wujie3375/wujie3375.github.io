@@ -1,16 +1,16 @@
-<ul style="border: 2px solid #ddd; border-radius: 8px; padding: 9px; list-style-type: none; font-family: 'Times New Roman Web', 'Times New Roman', Times, serif;">
+<ul style="border: 2px solid #ddd; border-radius: 8px; padding: 9px; list-style-type: none;">
     <!-- Title -->
-    <div style="font-family: inherit; font-size: 19px; line-height: 1.4; font-weight: 700;">
+    <div style="font-family: 'ARIALBD'; font-size: 19px; line-height: 1.4;">
         {{ include.title }}
         {% if include.subtitle != false %}
-            <span style="font-family: inherit; font-size: 14px; font-weight: 400;">{{ include.subtitle }}</span>
+            <span style="font-family: 'ARIAL'; font-size: 14px;">{{ include.subtitle }}</span>
         {% endif %}
     </div>
     
     <hr style="border: none; border-top: 1px solid #ddd; margin: 6px 0;">
 
     <!-- Authors -->
-    <div style="font-family: inherit; font-size: 17px; margin: -2px 0 -4px 0; font-weight: 400;">
+    <div style="font-family: 'Times New Roman Web', 'Times New Roman', Times, serif; font-size: 17px; margin: -2px 0 -4px 0;">
         {% assign authors = include.authors | split: ',' %}
         {% assign omit_start = include.etal | default: 5 %}
         {% assign omitted_count = authors.size | minus: omit_start %}
