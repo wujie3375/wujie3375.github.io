@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /awards
-title: Honors & Activities
+title: Honors
 ---
 
 <!-- > **Last Update:** Mar 13, 2026 -->
@@ -128,8 +128,7 @@ title: Honors & Activities
 
 
 
----
-
+{% comment %}
 <!-- Meetings -->
 # Meetings
 
@@ -201,3 +200,4 @@ title: Honors & Activities
 ---
 
 > I don't really see the point in writing these; just think of them as a way to keep track, kind of like collecting stamps. (●-●)
+{% endcomment %}
