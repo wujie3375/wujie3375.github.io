@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.30)  2 SEP 2026 11:24
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.30)  2 SEP 2026 12:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1426,12 +1426,12 @@ Package logreq Info: Writing requests to 'cv.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40193 strings out of 474773
- 824302 string characters out of 5754168
+ 40195 strings out of 474773
+ 824378 string characters out of 5754168
  1951842 words of memory out of 5000000
- 61687 multiletter control sequences out of 15000+600000
- 569976 words of font info for 148 fonts, out of 8000000 for 9000
+ 61688 multiletter control sequences out of 15000+600000
+ 569984 words of font info for 149 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 116i,11n,121p,555b,4932s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 116i,11n,121p,555b,4934s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on cv.pdf (2 pages).

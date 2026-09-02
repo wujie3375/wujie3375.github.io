@@ -62,8 +62,16 @@
     <div style="font-size: 17px; margin: -5px 0 0 0;">
         <!-- Journal and/or arXiv Links -->
         {% if include.journal != false %}
-            <a href="{{ include.journal_link }}">
-                <em>{{ include.journal }}</em> <strong>{{ include.volume }}</strong>, {{ include.article_number }}</a>
+            {% if include.volume != false and include.article_number != false %}
+                {% if include.journal_link != false %}
+                    <a href="{{ include.journal_link }}">
+                        <em>{{ include.journal }}</em> <strong>{{ include.volume }}</strong>, {{ include.article_number }}</a>
+                {% else %}
+                    <em>{{ include.journal }}</em> <strong>{{ include.volume }}</strong>, {{ include.article_number }}
+                {% endif %}
+            {% else %}
+                <em>{{ include.journal }}</em> accepted
+            {% endif %}
             {% if include.arxiv != false %}
                 |
             {% endif %}

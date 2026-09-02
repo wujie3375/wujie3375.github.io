@@ -137,8 +137,17 @@
 % 3. 标题格式：不加引号、不斜体
 \DeclareFieldFormat{title}{#1\isdot}  % 移除标题引号
 
-% 4. 期刊名称格式：斜体
-\DeclareFieldFormat[article]{journaltitle}{\textit{#1}}
+% 4. 期刊名称格式：斜体；没有卷号、期号、页码或文章编号时，
+% 自动标记为已接收但尚未正式发表。
+\DeclareFieldFormat[article]{journaltitle}{%
+  \ifboolexpr{
+    test {\iffieldundef{volume}}
+    and test {\iffieldundef{number}}
+    and test {\iffieldundef{pages}}
+    and test {\iffieldundef{eid}}
+  }
+         {\textit{#1}\addspace accepted}
+    {\textit{#1}}}
 
 % 5. 卷号格式：加粗
 \DeclareFieldFormat[article]{volume}{\textbf{#1}}
@@ -154,7 +163,7 @@
 \DeclareFieldFormat{eprint}{arXiv:#1}
 
 % Automatically label arXiv-only entries as under review. Entries with a
-% journal remain unchanged, even when an arXiv version is also listed.
+% journal are marked as accepted by the journaltitle format above.
 \renewbibmacro*{doi+eprint+url}{%
   \iftoggle{bbx:doi}
     {\printfield{doi}}
@@ -243,7 +252,6 @@
 \AtBeginBibliography{\color{black}}
 \definecolor{prdlinkblue}{RGB}{46,48,146}
 \DeclareFieldFormat[article]{title}{#1}
-\DeclareFieldFormat[article]{journaltitle}{#1}
 \DeclareFieldFormat{doi/url-link}{%
   \ifhyperref
     {%
