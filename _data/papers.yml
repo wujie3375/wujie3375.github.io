@@ -1,4 +1,20 @@
 - year: 2026
+  title: "Constraining AGN Disk Properties with Gravitational Waves from Inspiraling Stellar-Mass Binary Black Holes in Hierarchical Triple Systems"
+  subtitle: false
+  authors: "Jie Wu, Mengfei Sun, Jin Li*, Zhoujian Cao*"
+  date: "Sep 1, 2026"
+  sortable_date: '2026-09-01'
+  journal: false
+  journal_link: false
+  volume: false
+  article_number: false
+  arxiv: "2609.00945"
+  pdf: " "
+  highlight_author: 1
+  first_or_not: true
+  etal: 4
+
+- year: 2026
   title: "Effects of Solar Wind Plasma Noise on Stochastic Gravitational Wave Background Searches with the LISA-Taiji Network"
   subtitle: false
   authors: "Mengfei Sun†, Borui Wang†, Jie Wu, Jin Li*, Shengyi Ye"

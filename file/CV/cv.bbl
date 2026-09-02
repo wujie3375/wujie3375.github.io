@@ -19,6 +19,50 @@
 
 \refsection{0}
   \datalist[entry]{ymdnt/global//global/global}
+    \entry{Wu:202609}{article}{}
+      \name{author}{4}{}{%
+        {{hash=d14d813400632d1540675e5edb94d60a}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6bb0baf779cb3a241d71472430c78e87}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Mengfei},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f9010dd01bbf8aec0b41e109b57e9858}{%
+           family={Li*},
+           familyi={L\bibinitperiod},
+           given={Jin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c50179803f49c1eac376059fb6190414}{%
+           family={Cao*},
+           familyi={C\bibinitperiod},
+           given={Zhoujian},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{c1c5d1501249bec629afd3ff1fddaaf1}
+      \strng{fullhash}{645ebd4dfc9d13834b581adc6f2a3469}
+      \strng{bibnamehash}{645ebd4dfc9d13834b581adc6f2a3469}
+      \strng{authorbibnamehash}{645ebd4dfc9d13834b581adc6f2a3469}
+      \strng{authornamehash}{c1c5d1501249bec629afd3ff1fddaaf1}
+      \strng{authorfullhash}{645ebd4dfc9d13834b581adc6f2a3469}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{month}{09}
+      \field{title}{{Constraining AGN Disk Properties with Gravitational Waves from Inspiraling Stellar-Mass Binary Black Holes in Hierarchical Triple Systems}}
+      \field{year}{2026}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2609.00945
+      \endverb
+      \keyw{firstauthor}
+    \endentry
     \entry{Sun:202607}{article}{}
       \name{author}{5}{}{%
         {{hash=0dd7b23dfb6cf58c77372e1efe223a75}{%
@@ -90,7 +134,7 @@
       \strng{authorbibnamehash}{f965874a57195f219350496146b61d8b}
       \strng{authornamehash}{c1c5d1501249bec629afd3ff1fddaaf1}
       \strng{authorfullhash}{f965874a57195f219350496146b61d8b}
-      \field{extraname}{1}
+      \field{extraname}{2}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -207,7 +251,7 @@
       \strng{authorbibnamehash}{dc6244cd903a67a529f554c4ca0d9046}
       \strng{authornamehash}{c1c5d1501249bec629afd3ff1fddaaf1}
       \strng{authorfullhash}{dc6244cd903a67a529f554c4ca0d9046}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -330,7 +374,7 @@
       \strng{authorbibnamehash}{f965874a57195f219350496146b61d8b}
       \strng{authornamehash}{c1c5d1501249bec629afd3ff1fddaaf1}
       \strng{authorfullhash}{f965874a57195f219350496146b61d8b}
-      \field{extraname}{3}
+      \field{extraname}{4}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -528,7 +572,7 @@
       \strng{authorbibnamehash}{32af98b3fd34742ced0ebb39631d6e2a}
       \strng{authornamehash}{c1c5d1501249bec629afd3ff1fddaaf1}
       \strng{authorfullhash}{32af98b3fd34742ced0ebb39631d6e2a}
-      \field{extraname}{4}
+      \field{extraname}{5}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -582,7 +626,7 @@
       \strng{authorbibnamehash}{0b9b1b42f4bd360a34c81b6b43e381b5}
       \strng{authornamehash}{c1c5d1501249bec629afd3ff1fddaaf1}
       \strng{authorfullhash}{0b9b1b42f4bd360a34c81b6b43e381b5}
-      \field{extraname}{5}
+      \field{extraname}{6}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -737,7 +781,7 @@
       \strng{authorbibnamehash}{47ea2bd431735fb5496f3d3f97dbf219}
       \strng{authornamehash}{c1c5d1501249bec629afd3ff1fddaaf1}
       \strng{authorfullhash}{47ea2bd431735fb5496f3d3f97dbf219}
-      \field{extraname}{6}
+      \field{extraname}{7}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -826,7 +870,7 @@
       \strng{authorbibnamehash}{51a1f0ee263d5ce2d6bafc6ff6052b2b}
       \strng{authornamehash}{c1c5d1501249bec629afd3ff1fddaaf1}
       \strng{authorfullhash}{51a1f0ee263d5ce2d6bafc6ff6052b2b}
-      \field{extraname}{7}
+      \field{extraname}{8}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
