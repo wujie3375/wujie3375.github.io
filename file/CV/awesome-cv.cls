@@ -153,6 +153,27 @@
 % 8. arXiv格式：无额外修饰
 \DeclareFieldFormat{eprint}{arXiv:#1}
 
+% Automatically label arXiv-only entries as under review. Entries with a
+% journal remain unchanged, even when an arXiv version is also listed.
+\renewbibmacro*{doi+eprint+url}{%
+  \iftoggle{bbx:doi}
+    {\printfield{doi}}
+    {}%
+  \newunit\newblock
+  \iftoggle{bbx:eprint}
+    {\usebibmacro{eprint}%
+     \ifboolexpr{
+       test {\iffieldundef{journaltitle}}
+       and not test {\iffieldundef{eprint}}
+     }
+       {\setunit{\addspace}\printtext{\mkbibparens{under review}}}
+       {}}
+    {}%
+  \newunit\newblock
+  \iftoggle{bbx:url}
+    {\usebibmacro{url+urldate}}
+    {}}
+
 \DeclareFieldFormat{eprintclass}{}  % 移除primaryClass显示
 \DeclareFieldFormat{doi}{}
 

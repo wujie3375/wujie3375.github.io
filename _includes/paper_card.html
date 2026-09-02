@@ -71,6 +71,9 @@
         {% if include.arxiv != false %}
             <a href="https://arxiv.org/abs/{{ include.arxiv }}">
                 <em>arXiv</em>:{{ include.arxiv }}</a>
+            {% if include.journal == false %}
+                (under review)
+            {% endif %}
         {% endif %}
 
         <!-- PDF Link -->
