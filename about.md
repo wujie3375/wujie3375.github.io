@@ -34,9 +34,9 @@ title: About
 
 <p style="text-indent: 1.5em;">Hi there! Welcome to my personal corner of the internet!</p>
 
-I’m **Jie Wu**, a PhD student in Physics at **Chongqing University**. My research lives at the intersection of **gravitational-wave astronomy**, **data analysis**, and **detector science**. In simple terms, I spend a lot of time listening for some of the faintest signals in the universe, trying to understand where they come from, what they can tell us, and how we can detect them better.
+I’m **Jie Wu**, a Ph.D. student in Physics at **Chongqing University**, expecting to graduate in June 2028. My research focuses on **gravitational-wave modeling**, **data analysis**, and **parameter estimation**, with particular emphasis on moving-source and environmental effects in compact-binary systems, space-based gravitational-wave detectors, and tests of gravity. In simple terms, I spend a lot of time listening for some of the faintest signals in the universe, trying to understand where they come from, what they can tell us, and how we can detect them better.
 
-I’m especially interested in waveform modeling, parameter estimation, detector performance, and the broader questions that connect gravitational waves to astrophysics, cosmology, and gravitation. Most days, this means working with signals, simulations, and code; on good days, it feels a bit like decoding messages from the universe. On other days, it feels like debugging at 2 a.m. with coffee as a co-author.
+I’m especially interested in waveform modeling, parameter estimation, detector performance, and the broader questions that connect gravitational waves to astrophysics, cosmology, and gravitation. After completing my Ph.D., I plan to pursue postdoctoral research in gravitational-wave physics and related areas. Most days, this means working with signals, simulations, and code; on good days, it feels a bit like decoding messages from the universe. On other days, it feels like debugging at 2 a.m. with coffee as a co-author.
 
 Beyond research, I enjoy the kind of curiosity that spills over into many neighboring corners of science and life. I like ideas that make the world feel bigger, clearer, or simply more beautiful.
 
@@ -60,18 +60,16 @@ If you’d like to talk about gravitational waves, physics, collaboration, or ju
 
 ## Research Interests
 
-- **Gravitational waves**  
-  Waveform modeling, signal simulation.
+- **GW modeling**  
+  Waveform modeling, signal simulation, moving-source and environmental effects.
 - **Data analysis**  
-  Parameter estimation, Fisher matrix, Bayesian analysis.
-- **Detectors**  
-  Space- and ground-based detectors, time-delay interferometry, multi-messenger observation.
-- **Astrophysical sources**  
-  Binary black holes, galactic binaries, hierarchical triple systems.
-- **Gravitation**  
-  Modified gravity, cosmology, dark matter, dynamical friction.
-
-Currently, my main research focuses on gravitational-wave signal simulation for space-based missions, detector performance assessment, and the analysis and interpretation of gravitational-wave data.
+  Parameter estimation, Fisher-matrix analysis, Bayesian inference, signal processing.
+- **GW detectors**  
+  Space- and ground-based detectors, detector response, time-delay interferometry, multiband observations.
+- **Compact binary**  
+  Binary black holes, hierarchical triples, AGN disks, globular clusters.
+- **Tests of gravity**  
+  GW polarizations, parametrized tests of GR, modified gravity.
 
 
 ---
@@ -102,7 +100,7 @@ Currently, my main research focuses on gravitational-wave signal simulation for 
 
 ---
 
-## Experience
+## Research Experience
 
 {% include experience_card.html 
   title="Beijing Normal University" 
@@ -117,7 +115,7 @@ Currently, my main research focuses on gravitational-wave signal simulation for 
 {% include experience_card.html 
   title="University of Chinese Academy of Sciences" 
   date="Sep 2020 - Sep 2021" 
-  degree="Participant" 
+  degree="Undergraduate Researcher" 
   logo="https://wujie3375.github.io/images/logo2/ucas.png" 
   logo_margin="13"
   fields="
@@ -129,12 +127,12 @@ Currently, my main research focuses on gravitational-wave signal simulation for 
 
 ## Skills
 
-- **Languages**    
-    Chinese (native), English.
 - **Programming**  
     `Python`, `Mathematica`, `MATLAB`.
 - **Data Analysis**  
-    Experienced in handling and analyzing large datasets, including statistical analysis, data visualization, and signal processing.
+    Parameter estimation, Fisher-matrix analysis, Bayesian inference, signal processing.
+- **Languages**    
+    Chinese (native), English.
 - **Teaching**  
     High School Physics Teacher Qualification Certificate.
 

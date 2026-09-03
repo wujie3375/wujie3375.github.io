@@ -412,6 +412,7 @@
 \newcommand*{\headerlastnamestyle}[1]{{\fontsize{40pt}{1.1em}\headerfont\bfseries\color{text} #1}}
 \newcommand*{\headerpositionstyle}[1]{{\fontsize{9pt}{1.1em}\bodyfont\scshape\color{awesome} #1}}
 \newcommand*{\headeraddressstyle}[1]{{\fontsize{9pt}{1.1em}\headerfont\itshape\color{lighttext} #1}}
+\newcommand*{\headerbirthdatestyle}[1]{{\fontsize{9pt}{1em}\headerfontlight\upshape\color{graytext} #1}}
 \newcommand*{\headersocialstyle}[1]{{\fontsize{8.5pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
@@ -492,6 +493,10 @@
 % Define writer's position
 % Usage: \position{<position>}
 \newcommand*{\position}[1]{\def\@position{#1}}
+
+% Define writer's birth date
+% Usage: \birthdate{<date>}
+\newcommand*{\birthdate}[1]{\def\@birthdate{#1}}
 
 % Defines writer's mobile (optional)
 % Usage: \mobile{<mobile number>}
@@ -652,7 +657,10 @@
         {\def\@photoborder{darkgray}}%
         {\def\@photoborder{none}}%
       \begin{tikzpicture}%
-        \node[\@photoshape, draw=\@photoborder, line width=0.3mm, inner sep=\photodim, fill overzoom image=\@photo] () {};
+        \node[\@photoshape, draw=\@photoborder, line width=0.3mm, inner sep=\photodim, fill overzoom image=\@photo] (photo) {};
+        \ifthenelse{\isundefined{\@birthdate}}{}{%
+          \node[below=2pt] at (photo.south) {\headerbirthdatestyle{\@birthdate}};
+        }%
       \end{tikzpicture}
     }%
   }

@@ -218,7 +218,7 @@ tr:last-child td {
   <label for="show-all">&nbsp;Show first-author papers only</label>
 </div>
 
-<p style="text-indent: 0;">Publications are categorized and listed in reversed chronological order.</p>
+<p style="text-indent: 0;">Publications are listed in reverse chronological order.</p>
 
 <p class="publication-note" style="text-indent: 0;">(*: corresponding author; †: these authors contributed equally)</p>
 ---

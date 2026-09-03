@@ -7,19 +7,116 @@
 %-------------------------------------------------------------------------------
 %	CONTENT
 %-------------------------------------------------------------------------------
-\cvsubsection{National Natural Science Foundation of China}
+% Funding entries use a two-line left column and a matching two-line right
+% column so that the title, investigator, date, and programme are easy to scan.
+\newcommand*{\fundingcategorystyle}[1]{{\fontsize{10pt}{0.9em}\bodyfont\upshape\color{graytext} #1}}
+
+\newcommand*{\fundingentry}[5]{%
+  \vspace{-2.0mm}%
+  \setlength\tabcolsep{0pt}%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+    \begin{minipage}[t]{\linewidth}
+      \raggedright
+      \entrytitlestyle{#1}\par
+      \vspace{1pt}%
+      \fundingcategorystyle{#3}%
+    \end{minipage}
+    &
+    \begin{minipage}[t]{\linewidth}\raggedleft
+      \entrylocationstyle{#2}\par
+      \entrydatestyle{#4}%
+    \end{minipage}\\
+    \multicolumn{2}{L{\textwidth}}{\vspace{1mm}\descriptionstyle{#5}}
+  \end{tabular*}%
+}
+
+\begin{cvparagraph}
+{\color{black}I have led three funded research projects as Principal Investigator and contributed to four additional collaborative projects.}
+\end{cvparagraph}
+
 \begin{cventries}
 
 %---------------------------------------------------------
-  \cventry
-    {Signal Processing and Theoretical Modeling of Space-Based Gravitational Waves with Moving-Source Effects} % funding name
-    {Young Students’ Basic Research Program (PhD)}
+  \fundingentry
+    {Signal Processing and Theoretical Modeling of Space-Based Gravitational Waves with Moving-Source Effects}
     {Principal Investigator}
-    {Jan 2026 - Dec 2027} % Date(s)
+    {Young Students’ Basic Research Program (PhD Students), National Natural Science Foundation of China}
+    {Jan 2026 -- Dec 2027}
     {
       \begin{cvitems} % Description(s) bullet points
-        \item{Grant No. 125B2102}
-        \item{CNY 300,000}
+        \item{Grant No. 125B2102 \textperiodcentered{} CNY 300,000}
+      \end{cvitems}
+    }
+
+  \vspace{0.1em}
+  \fundingentry
+    {Young Science and Technology Talent Cultivation Project -- Doctoral Student Special Program}
+    {Principal Investigator}
+    {China Association for Science and Technology}
+    {Jan 2026 -- Dec 2027}
+    {
+      \begin{cvitems}
+        \item{CNY 40,000}
+      \end{cvitems}
+    }
+
+  \vspace{0.1em}
+  \fundingentry
+    {Dark Matter and Modified Gravity}
+    {Principal Investigator}
+    {Innovative Practice Training Program for College Students, University of Chinese Academy of Sciences}
+    {Sep 2020 -- Sep 2021}
+    {
+      \begin{cvitems}
+        \item{Grant No. 20204001217 \textperiodcentered{} CNY 5,000}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \fundingentry
+    {Machine Learning-Optimized Multi-type Compact Binary Coalescence Gravitational Wave Waveform Generation}
+    {Participant}
+    {General Program, National Natural Science Foundation of China}
+    {Jan 2026 -- Dec 2029}
+    {
+      \begin{cvitems}
+        \item{Grant No. 12575072 \textperiodcentered{} CNY 540,000}
+      \end{cvitems}
+    }
+
+  \vspace{0.1em}
+  \fundingentry
+    {Simulation, Processing, and Validation of Gravitational-Wave Signals from Binary Black Hole Systems}
+    {Participant}
+    {Subproject, National Key R\&D Program of China}
+    {Aug 2024 -- Dec 2028}
+    {
+      \begin{cvitems}
+        \item{Grant No. 2023YFC2206702 \textperiodcentered{} CNY 950,000}
+      \end{cvitems}
+    }
+
+  \vspace{0.1em}
+  \fundingentry
+    {Joint Observation of the Stochastic Gravitational-Wave Background from Cosmic Strings with Space-Based Detectors}
+    {Participant}
+    {General Program, Natural Science Foundation of Chongqing, China}
+    {Jul 2023 -- Jun 2026}
+    {
+      \begin{cvitems}
+        \item{Grant No. CSTB2023NSCQ-MSX0103 \textperiodcentered{} CNY 100,000}
+      \end{cvitems}
+    }
+
+  \vspace{0.1em}
+  \fundingentry
+    {Characterization and Signal Identification of Novel Gravitational-Wave Sources and Stochastic Gravitational-Wave Backgrounds, Including Cosmic Strings}
+    {Participant}
+    {Subproject, National Key R\&D Program of China}
+    {Jan 2022 -- Sep 2026}
+    {
+      \begin{cvitems}
+        \item{Grant No. 2021YFC2203004 \textperiodcentered{} CNY 1,100,000}
       \end{cvitems}
     }
 
