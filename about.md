@@ -34,9 +34,9 @@ title: About
 
 <p style="text-indent: 1.5em;">Hi there! Welcome to my personal corner of the internet!</p>
 
-I’m **Jie Wu**, a Ph.D. student in Physics at **Chongqing University**, expecting to graduate in June 2028. My research focuses on **gravitational-wave modeling**, **data analysis**, and **parameter estimation**, with particular emphasis on moving-source and environmental effects in compact-binary systems, space-based gravitational-wave detectors, and tests of gravity. In simple terms, I spend a lot of time listening for some of the faintest signals in the universe, trying to understand where they come from, what they can tell us, and how we can detect them better.
+I’m **Jie Wu**, a PhD student in Physics at **Chongqing University**, expecting to graduate in June 2028. My research focuses on **GW modeling**, **data analysis**, and **parameter estimation**, with particular emphasis on moving-source and environmental effects in compact-binary systems, space-based gravitational-wave detectors, and tests of gravity. In simple terms, I spend a lot of time listening for some of the faintest signals in the universe, trying to understand where they come from, what they can tell us, and how we can detect them better.
 
-I’m especially interested in waveform modeling, parameter estimation, detector performance, and the broader questions that connect gravitational waves to astrophysics, cosmology, and gravitation. After completing my Ph.D., I plan to pursue postdoctoral research in gravitational-wave physics and related areas. Most days, this means working with signals, simulations, and code; on good days, it feels a bit like decoding messages from the universe. On other days, it feels like debugging at 2 a.m. with coffee as a co-author.
+I’m especially interested in waveform modeling, parameter estimation, detector performance, and the broader questions that connect gravitational waves to astrophysics, cosmology, and gravitation. Most days, this means working with signals, simulations, and code; on good days, it feels a bit like decoding messages from the universe. On other days, it feels like debugging at 2 a.m. with coffee as a co-author.
 
 Beyond research, I enjoy the kind of curiosity that spills over into many neighboring corners of science and life. I like ideas that make the world feel bigger, clearer, or simply more beautiful.
 
@@ -63,7 +63,7 @@ If you’d like to talk about gravitational waves, physics, collaboration, or ju
 - **GW modeling**  
   Waveform modeling, signal simulation, moving-source and environmental effects.
 - **Data analysis**  
-  Parameter estimation, Fisher-matrix analysis, Bayesian inference, signal processing.
+  Parameter estimation, Fisher-matrix analysis, signal processing.
 - **GW detectors**  
   Space- and ground-based detectors, detector response, time-delay interferometry, multiband observations.
 - **Compact binary**  
@@ -79,7 +79,7 @@ If you’d like to talk about gravitational waves, physics, collaboration, or ju
 {% include experience_card.html 
   title="Chongqing University" 
   date="Sep 2022 - Jun 2028 (expected)" 
-  degree="Ph.D. in Physics" 
+  degree="PhD in Physics" 
   logo="https://wujie3375.github.io/images/logo2/cqu.png" 
   logo_margin="0"
   fields="
@@ -130,7 +130,7 @@ If you’d like to talk about gravitational waves, physics, collaboration, or ju
 - **Programming**  
     `Python`, `Mathematica`, `MATLAB`.
 - **Data Analysis**  
-    Parameter estimation, Fisher-matrix analysis, Bayesian inference, signal processing.
+    Parameter estimation, Fisher-matrix analysis, signal processing.
 - **Languages**    
     Chinese (native), English.
 - **Teaching**  
