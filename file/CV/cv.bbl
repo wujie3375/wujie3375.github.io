@@ -19,6 +19,53 @@
 
 \refsection{0}
   \datalist[entry]{ymdnt/global//global/global}
+    \entry{Wu:202606}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d14d813400632d1540675e5edb94d60a}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6bb0baf779cb3a241d71472430c78e87}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Mengfei},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f9010dd01bbf8aec0b41e109b57e9858}{%
+           family={Li*},
+           familyi={L\bibinitperiod},
+           given={Jin},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c1c5d1501249bec629afd3ff1fddaaf1}
+      \strng{fullhash}{f965874a57195f219350496146b61d8b}
+      \strng{bibnamehash}{f965874a57195f219350496146b61d8b}
+      \strng{authorbibnamehash}{f965874a57195f219350496146b61d8b}
+      \strng{authornamehash}{c1c5d1501249bec629afd3ff1fddaaf1}
+      \strng{authorfullhash}{f965874a57195f219350496146b61d8b}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Eur. Phys. J. C}
+      \field{month}{09}
+      \field{number}{9}
+      \field{title}{{Tests of general relativity using analytic derivatives of parametrized post-Einsteinian gravitational waveforms within the Fisher-matrix framework}}
+      \field{volume}{86}
+      \field{year}{2026}
+      \true{nocite}
+      \field{pages}{1098}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1140/epjc/s10052-026-16251-5
+      \endverb
+      \verb{eprint}
+      \verb 2607.04238
+      \endverb
+      \keyw{firstauthor}
+    \endentry
     \entry{Wu:202609}{article}{}
       \name{author}{4}{}{%
         {{hash=d14d813400632d1540675e5edb94d60a}{%
@@ -48,7 +95,7 @@
       \strng{authorbibnamehash}{645ebd4dfc9d13834b581adc6f2a3469}
       \strng{authornamehash}{c1c5d1501249bec629afd3ff1fddaaf1}
       \strng{authorfullhash}{645ebd4dfc9d13834b581adc6f2a3469}
-      \field{extraname}{1}
+      \field{extraname}{2}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -111,46 +158,6 @@
       \verb{eprint}
       \verb 2607.05368
       \endverb
-    \endentry
-    \entry{Wu:202606}{article}{}
-      \name{author}{3}{}{%
-        {{hash=d14d813400632d1540675e5edb94d60a}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Jie},
-           giveni={J\bibinitperiod}}}%
-        {{hash=6bb0baf779cb3a241d71472430c78e87}{%
-           family={Sun},
-           familyi={S\bibinitperiod},
-           given={Mengfei},
-           giveni={M\bibinitperiod}}}%
-        {{hash=f9010dd01bbf8aec0b41e109b57e9858}{%
-           family={Li*},
-           familyi={L\bibinitperiod},
-           given={Jin},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{c1c5d1501249bec629afd3ff1fddaaf1}
-      \strng{fullhash}{f965874a57195f219350496146b61d8b}
-      \strng{bibnamehash}{f965874a57195f219350496146b61d8b}
-      \strng{authorbibnamehash}{f965874a57195f219350496146b61d8b}
-      \strng{authornamehash}{c1c5d1501249bec629afd3ff1fddaaf1}
-      \strng{authorfullhash}{f965874a57195f219350496146b61d8b}
-      \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{Eur. Phys. J. C}
-      \field{month}{07}
-      \field{title}{{Tests of general relativity using analytic derivatives of parametrized post-Einsteinian gravitational waveforms within the Fisher-matrix framework}}
-      \field{year}{2026}
-      \true{nocite}
-      \verb{eprint}
-      \verb 2607.04238
-      \endverb
-      \keyw{firstauthor}
     \endentry
     \entry{Sun:202606}{article}{}
       \name{author}{9}{}{%
