@@ -15,15 +15,15 @@
   etal: 4
 
 - year: 2026
-  title: "Effects of Solar Wind Plasma Noise on Stochastic Gravitational Wave Background Searches with the LISA-Taiji Network"
+  title: "Effects of solar wind plasma noise on stochastic gravitational wave background searches with a space based interferometer network"
   subtitle: false
   authors: "Mengfei Sun†, Borui Wang†, Jie Wu, Jin Li*, Shengyi Ye"
-  date: "Jul 6, 2026"
-  sortable_date: '2026-07-06'
+  date: "Oct 6, 2026"
+  sortable_date: '2026-10-06'
   journal: Phys. Rev. D
-  journal_link: false
-  volume: false
-  article_number: false
+  journal_link: "https://journals.aps.org/prd/abstract/10.1103/ypy1-q38r"
+  volume: '114'
+  article_number: '083507'
   arxiv: "2607.05368"
   pdf: " "
   highlight_author: 3

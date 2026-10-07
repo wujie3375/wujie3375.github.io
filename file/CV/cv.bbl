@@ -19,6 +19,63 @@
 
 \refsection{0}
   \datalist[entry]{ymdnt/global//global/global}
+    \entry{Sun:202607}{article}{}
+      \name{author}{5}{}{%
+        {{hash=0dd7b23dfb6cf58c77372e1efe223a75}{%
+           family={Sun†},
+           familyi={S\bibinitperiod},
+           given={Mengfei},
+           giveni={M\bibinitperiod}}}%
+        {{hash=45d5d27cef1d0462617bb26badd3db11}{%
+           family={Wang†},
+           familyi={W\bibinitperiod},
+           given={Borui},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d14d813400632d1540675e5edb94d60a}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f9010dd01bbf8aec0b41e109b57e9858}{%
+           family={Li*},
+           familyi={L\bibinitperiod},
+           given={Jin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cf73cf02e9c09a6a65f9238edb30d8db}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Shengyi},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{01f6c91f9a678e6c0e99e05c5f354bf9}
+      \strng{fullhash}{6902a3c0e28c167e6bd038e5a0705851}
+      \strng{bibnamehash}{6902a3c0e28c167e6bd038e5a0705851}
+      \strng{authorbibnamehash}{6902a3c0e28c167e6bd038e5a0705851}
+      \strng{authornamehash}{01f6c91f9a678e6c0e99e05c5f354bf9}
+      \strng{authorfullhash}{6902a3c0e28c167e6bd038e5a0705851}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{6}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{Phys. Rev. D}
+      \field{month}{10}
+      \field{number}{8}
+      \field{title}{{Effects of solar wind plasma noise on stochastic gravitational wave background searches with a space based interferometer network}}
+      \field{volume}{114}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \true{nocite}
+      \field{pages}{083507}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/ypy1-q38r
+      \endverb
+      \verb{eprint}
+      \verb 2607.05368
+      \endverb
+    \endentry
     \entry{Wu:2025arx}{article}{}
       \name{author}{4}{}{%
         {{hash=d14d813400632d1540675e5edb94d60a}{%
@@ -161,56 +218,6 @@
       \verb 2609.00945
       \endverb
       \keyw{firstauthor}
-    \endentry
-    \entry{Sun:202607}{article}{}
-      \name{author}{5}{}{%
-        {{hash=0dd7b23dfb6cf58c77372e1efe223a75}{%
-           family={Sun†},
-           familyi={S\bibinitperiod},
-           given={Mengfei},
-           giveni={M\bibinitperiod}}}%
-        {{hash=45d5d27cef1d0462617bb26badd3db11}{%
-           family={Wang†},
-           familyi={W\bibinitperiod},
-           given={Borui},
-           giveni={B\bibinitperiod}}}%
-        {{hash=d14d813400632d1540675e5edb94d60a}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Jie},
-           giveni={J\bibinitperiod}}}%
-        {{hash=f9010dd01bbf8aec0b41e109b57e9858}{%
-           family={Li*},
-           familyi={L\bibinitperiod},
-           given={Jin},
-           giveni={J\bibinitperiod}}}%
-        {{hash=cf73cf02e9c09a6a65f9238edb30d8db}{%
-           family={Ye},
-           familyi={Y\bibinitperiod},
-           given={Shengyi},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{01f6c91f9a678e6c0e99e05c5f354bf9}
-      \strng{fullhash}{6902a3c0e28c167e6bd038e5a0705851}
-      \strng{bibnamehash}{6902a3c0e28c167e6bd038e5a0705851}
-      \strng{authorbibnamehash}{6902a3c0e28c167e6bd038e5a0705851}
-      \strng{authornamehash}{01f6c91f9a678e6c0e99e05c5f354bf9}
-      \strng{authorfullhash}{6902a3c0e28c167e6bd038e5a0705851}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{6}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{Phys. Rev. D}
-      \field{month}{7}
-      \field{title}{{Effects of Solar Wind Plasma Noise on Stochastic Gravitational Wave Background Searches with the LISA-Taiji Network}}
-      \field{year}{2026}
-      \field{dateera}{ce}
-      \true{nocite}
-      \verb{eprint}
-      \verb 2607.05368
-      \endverb
     \endentry
     \entry{Sun:202606}{article}{}
       \name{author}{9}{}{%
