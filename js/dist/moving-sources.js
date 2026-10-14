@@ -1,0 +1,1 @@
+import{a as n}from"./shared-chunk-NEWHTB3J.js";import"./shared-chunk-OG2NN4JL.js";var o=document.getElementById("moving-sources-canvas");n(o,({startAnimation:m})=>m(o),()=>import("./shared-main-C3FMKS4Y.js"));

@@ -1,11 +1,8 @@
 import * as THREE from '../../../vendor/three/three.module.js';
 import {GWEmissionManager} from './GWEmissionManager.js';
+import {loadShader as readShader} from '../../../shader-loader.js';
 
-async function loadShader(name) {
-  const response=await fetch(new URL('../shaders/'+name,import.meta.url));
-  if(!response.ok)throw new Error('GW shader not found: '+name);
-  return response.text();
-}
+const loadShader=name=>readShader('agn-triple',name);
 export async function createGWWavefronts(p,v,shaderLoader=loadShader,sourceSampler,emissionStart=-Infinity) {
   const group=new THREE.Group();group.name='GW historical world-space fronts';
   const manager=new GWEmissionManager(p,v,sourceSampler,emissionStart);

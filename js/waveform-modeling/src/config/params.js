@@ -3,9 +3,10 @@ import {visual as series} from '../../../agn-triple/src/config/params.js';
 // 全部时间/频率是展示单位；质量比用于质心分配，不将播放秒伪装成物理观测秒。
 export const model=Object.freeze({
   massLarge:30,massSmall:20,
-  cycleSeconds:14,
+  cycleSeconds:13,
   inspiralEnd:8.6,mergerPeak:9.7,signalEnd:11.25,
-  fadeInSeconds:0.40,fadeOutStart:13.35,fadeOutEnd:13.97,
+  // 仅删除末尾 1 秒静止等待；11.25 秒前的旋近、并合、振铃完全保持原时序。
+  fadeInSeconds:0.40,fadeOutStart:12.35,fadeOutEnd:12.97,
   blendStart:9.1,
   frequencyStart:0.72,frequencyBridge:2.45,frequencyPeak:5.4,frequencyRingdown:5.05,
   amplitudeBridge:0.45,

@@ -1,0 +1,1 @@
+import{a as t}from"./shared-chunk-NEWHTB3J.js";import"./shared-chunk-OG2NN4JL.js";var m=document.getElementById("modified-gravity-canvas");t(m,({startModifiedGravityAnimation:n})=>n(m),()=>import("./shared-main-Y4U6G4F4.js"));

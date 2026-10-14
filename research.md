@@ -81,11 +81,15 @@ Many weak sources overlap in gravitational-wave data, while correlated detector 
 </div>
 </div>
 
-{% assign moving_sources_script = site.static_files | where: 'path', '/js/moving-sources.js' | first %}
-<script type="module" src="{{ '/js/moving-sources.js' | relative_url }}?v={{ moving_sources_script.modified_time | date: '%s' }}"></script>
-{% assign waveform_modeling_script = site.static_files | where: 'path', '/js/waveform-modeling.js' | first %}
-<script type="module" src="{{ '/js/waveform-modeling.js' | relative_url }}?v={{ waveform_modeling_script.modified_time | date: '%s' }}"></script>
-{% assign modified_gravity_script = site.static_files | where: 'path', '/js/modified-gravity.js' | first %}
-<script type="module" src="{{ '/js/modified-gravity.js' | relative_url }}?v={{ modified_gravity_script.modified_time | date: '%s' }}"></script>
-{% assign gw_backgrounds_script = site.static_files | where: 'path', '/js/gw-backgrounds.js' | first %}
-<script type="module" src="{{ '/js/gw-backgrounds.js' | relative_url }}?v={{ gw_backgrounds_script.modified_time | date: '%s' }}"></script>
+<!-- 有发布构建时使用压缩入口；否则保留原生源码预览。每个动画仍独立按需加载。 -->
+{% assign animation_names = 'moving-sources,waveform-modeling,modified-gravity,gw-backgrounds' | split: ',' %}
+{% for animation_name in animation_names %}
+  {% assign animation_path = '/js/dist/' | append: animation_name | append: '.js' %}
+  {% assign animation_script = site.static_files | where: 'path', animation_path | first %}
+  {% if jekyll.environment == 'development' %}{% assign animation_script = nil %}{% endif %}
+  {% unless animation_script %}
+    {% assign animation_path = '/js/' | append: animation_name | append: '.js' %}
+    {% assign animation_script = site.static_files | where: 'path', animation_path | first %}
+  {% endunless %}
+  <script type="module" src="{{ animation_path | relative_url }}?v={{ animation_script.modified_time | date: '%s' }}"></script>
+{% endfor %}

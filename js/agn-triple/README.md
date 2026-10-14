@@ -1,6 +1,6 @@
 # Hierarchical Triple
 
-用于 Jekyll 研究页 Moving Sources 分类的非交互动画。保留原生 ES modules、本地 Three.js r180、WebGL2、正交相机、ShaderMaterial 和两条独立 Kepler 轨道；没有 Vite、CDN、新依赖、交互控件或重后处理。
+用于 Jekyll 研究页 Moving Sources 分类的非交互动画。保留原生 ES modules、本地 Three.js r180、WebGL2、正交相机、ShaderMaterial 和两条独立 Kepler 轨道；没有 Vite、CDN、新运行时依赖、交互控件或重后处理。
 
 ## 运行与静态导出
 
@@ -18,7 +18,23 @@ npm run preview
 dev/preview 默认使用 127.0.0.1:4174，先结束 dev 再运行 preview。环境变量 `PORT` 可更换端口。
 四个项目共用现有 Node 静态服务和导出脚本，build 同时导出四个动画及本地 Three.js，默认输出位于 `D:\GitHub\no use\agn-triple-build`；`AGN_TRIPLE_BUILD_DIR` 可覆盖输出目录。
 静态导出是可直接部署的网页资源，不是视频编码。导出的入口和网站嵌入使用同一 4:3 运行时与清晰度预算。
-没有待安装的 npm 依赖。npm 不在 PATH 的验收环境使用 no use 中已有的官方 npm CLI，不安装全局工具。
+运行源码不需要新依赖。发布构建仅使用 esbuild 0.25.12；工具安装在 `D:\GitHub\no use\animation-build-tools`，不安装全局工具，也不把 node_modules 放进网站。npm 不在 PATH 时使用 no use 中已有的官方 npm CLI。
+
+## 轻量网页发布构建
+
+`npm run build:web` 更新网站所需的 `js/dist`；原来的 `npm run build` 会先完成同一发布构建，再导出四个独立动画。GLSL 原文随 JavaScript 嵌入，不压缩或改写 Shader。Three.js 通过共享 chunk 复用，不为三个 WebGL 动画重复打包。
+
+Jekyll 开发模式继续读取原生源码，保存源码后照常刷新查看。GitHub Pages 的 production 模式选择压缩入口。提交动画源码修改前运行一次 `npm run build:web`；源码和生成的 `js/dist` 一起上传，网页不依赖在线构建工具。
+
+首次配置构建工具：
+
+```powershell
+npm install --prefix 'D:\GitHub\no use\animation-build-tools' esbuild@0.25.12 --no-audit --no-fund
+```
+
+`ANIMATION_BUILD_TOOLS_DIR` 可改构建工具目录，`ANIMATION_BUILD_REPORT_DIR` 可改临时构建报告目录。生成文件和压缩体积报告默认放在 no use；只有网页真正使用的发布文件写入 `js/dist`。保留版权说明，不覆盖可编辑源码。
+
+各动画在距离视口 900px 时仅准备模块，在原来的 300px 范围才创建渲染器；离屏暂停与原动画时钟不变。源码模式的 Shader 使用共享 Promise 缓存，吸积盘和 GW Shader 并行读取。
 
 ## 展示尺寸与生命周期
 

@@ -9,7 +9,8 @@ export async function createScene(p,v) {
   const scene=new THREE.Scene();
   scene.background=new THREE.Color(v.backgroundColor);
   const central=createBlackHole(v.centralShadowRadius,v,'central');
-  const disk=await createAccretionDisk(v),binary=createBBH(p,v),gw=await createGWWavefronts(p,v);
+  const [disk,gw]=await Promise.all([createAccretionDisk(v),createGWWavefronts(p,v)]);
+  const binary=createBBH(p,v);
   scene.add(central,disk.group,binary.group,gw.group);
   const positions=new Float32Array(v.starCount*3),stars=new THREE.BufferGeometry();
   const attribute=new THREE.BufferAttribute(positions,3);stars.setAttribute('position',attribute);

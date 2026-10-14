@@ -3,14 +3,9 @@ import {createGalaxyBackground} from '../objects/createGalaxyBackground.js?v=dwd
 import {createDWDSystems} from '../objects/createDWDSystems.js?v=dwd-layers-20261014';
 import {createWavefronts} from '../effects/createWavefronts.js?v=dwd-layers-20261014';
 import {orbitalBasis} from '../objects/orbitalBasis.js';
+import {loadShader as readShader} from '../../../shader-loader.js';
 
-async function loadShader(name,revision){
-  const url=new URL('../shaders/'+name,import.meta.url);
-  url.searchParams.set('v',revision);
-  const response=await fetch(url);
-  if(!response.ok)throw new Error('Foreground shader not found: '+name);
-  return response.text();
-}
+const loadShader=(name,revision)=>readShader('gw-backgrounds',name,revision);
 // 在有界区间上积分概率密度再逆CDF采样；球核密度需乘R，避免漏掉面积Jacobian。
 // 所有随机值只在确定性布局时产生，播放中不重新采样。
 function inverseDensity(pdf,max,bins){

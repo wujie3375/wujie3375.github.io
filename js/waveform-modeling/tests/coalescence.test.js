@@ -60,7 +60,7 @@ test('Merger peak coincides with completed source coalescence and the strain max
   const atPeak=objects.final.scale.toArray();updateBinarySystem(objects,model.state(p.mergerPeak-1e-5),p,v);
   objects.final.scale.toArray().forEach((q,i)=>near(q,atPeak[i],0.001));
 });
-test('Ringdown decays, settles in frequency, and the 14 second reset is hidden',()=>{
+test('Ringdown decays, settles in frequency, and the cycle reset is hidden',()=>{
   let amplitude=1;
   for(let t=p.mergerPeak;t<=p.signalEnd;t+=0.01){
     const a=model.evaluate(t).amplitude;assert.ok(a<=amplitude+1e-10);amplitude=a;
@@ -86,7 +86,7 @@ test('Invalid editable configurations fail clearly',()=>{
   assert.throws(()=>createCoalescenceModel({...p,frequencyStart:4}),RangeError);
 });
 
-test('14-second timing retains inspiral rotations and shortens the visible ringdown',()=>{
+test('Timing retains inspiral rotations and a short visible ringdown',()=>{
   const old=createCoalescenceModel({...p,cycleSeconds:12,inspiralEnd:7.2,mergerPeak:8.3,signalEnd:10.8,
     fadeInSeconds:0.35,fadeOutStart:11.1,fadeOutEnd:11.85,blendStart:7.75,
     frequencyStart:0.6,frequencyBridge:2.1,frequencyPeak:4.5,frequencyRingdown:3.6,
@@ -96,6 +96,18 @@ test('14-second timing retains inspiral rotations and shortens the visible ringd
   assert.ok(p.signalEnd-p.mergerPeak<old.parameters.signalEnd-old.parameters.mergerPeak);
   assert.ok(p.cycleSeconds>=13&&p.cycleSeconds<=15);
   assert.equal(v.titleText,'Compact Binary Coalescence');near(v.canvasWidth/v.canvasHeight,4/3);
+});
+
+test('Only the final settled hold is shorter; inspiral, merger and ringdown states are unchanged',()=>{
+  const previous=createCoalescenceModel({...p,cycleSeconds:14,fadeOutStart:13.35,fadeOutEnd:13.97});
+  near(p.cycleSeconds,13);near(p.fadeOutStart-p.signalEnd,1.10);
+  near(previous.parameters.fadeOutStart-previous.parameters.signalEnd,2.10);
+  for(let t=0;t<=p.signalEnd;t+=0.025){
+    const a=model.state(t),b=previous.state(t);
+    for(const key of ['amplitude','frequency','phase','strain'])near(a.signal[key],b.signal[key],1e-9);
+    for(const key of ['separation','blend','opacity','reveal'])near(a[key],b[key],1e-9);
+    a.positions.flat().forEach((q,j)=>near(q,b.positions.flat()[j],1e-9));
+  }
 });
 test('Continuous radiation follows the same chirp phase, historical barycenter, and damping through all stages',()=>{
   const sample=createGWSource(model,p,v),manager=new GWEmissionManager(p,v,sample,0);

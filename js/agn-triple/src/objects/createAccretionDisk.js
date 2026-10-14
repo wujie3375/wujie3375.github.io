@@ -1,10 +1,7 @@
 import * as THREE from '../../../vendor/three/three.module.js';
+import {loadShader} from '../../../shader-loader.js';
 
-async function shader(name) {
-  const response=await fetch(new URL('../shaders/'+name,import.meta.url));
-  if(!response.ok) throw new Error('Shader not found: '+name);
-  return response.text();
-}
+const shader=name=>loadShader('agn-triple',name);
 export async function createAccretionDisk(v) {
   const [vertexShader,fragmentShader]=await Promise.all([shader('accretionDisk.vert'),shader('accretionDisk.frag')]);
   const group=new THREE.Group();

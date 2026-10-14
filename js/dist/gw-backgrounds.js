@@ -1,0 +1,1 @@
+import{a as o}from"./shared-chunk-NEWHTB3J.js";import"./shared-chunk-OG2NN4JL.js";var n=document.getElementById("gw-backgrounds-source"),t=document.getElementById("gw-backgrounds-strain");n&&t&&o(n,({startGWBackgroundAnimation:e})=>e(n,t),()=>import("./shared-main-AIPLWEM7.js"));

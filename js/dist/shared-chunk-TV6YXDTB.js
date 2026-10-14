@@ -1,0 +1,1 @@
+import{a as n}from"./shared-chunk-OG2NN4JL.js";function x(a,r,t,e){return a>0&&r>0?Math.min(e.maxPixelRatio,Math.max(t||1,e.canvasWidth*e.renderScale/a),Math.sqrt(e.maxRenderPixels/(a*r))):1}n(x,"renderPixelRatio");export{x as a};

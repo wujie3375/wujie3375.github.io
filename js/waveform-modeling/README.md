@@ -8,14 +8,14 @@
 
 Jekyll 入口 `/research#waveform-modeling`，独立入口 `/js/waveform-modeling/index.html`。
 
-在本目录执行 `npm test`、`npm run dev`、`npm run build`、`npm run preview`，仍复用原 AGN 的 Node 服务与静态导出脚本。默认端口 4174；build 同时导出三个动画到 `D:\GitHub\no use\agn-triple-build`。
+在本目录执行 `npm test`、`npm run dev`、`npm run build`、`npm run preview`，仍复用原 AGN 的 Node 服务与静态导出脚本。默认端口 4174；build 同时导出四个动画到 `D:\GitHub\no use\agn-triple-build`。发布构建说明见 `../agn-triple/README.md`，esbuild 只用于构建，不增加浏览器运行依赖。
 没有视频编码步骤；静态入口使用与网站相同的 4:3 和分辨率配置。
 
 ## 本轮参数
 
 | 项目 | 原值 → 当前 |
 |---|---|
-| 总循环 | 12 → 14 秒 |
+| 总循环 | 14 → 13 秒，仅缩短末尾静止等待 |
 | Inspiral 末端 | 7.2 → 8.6 秒 |
 | Merger 峰值 | 8.3 → 9.7 秒 |
 | 信号末端 | 当前 11.25 秒 |
@@ -30,7 +30,7 @@ Jekyll 入口 `/research#waveform-modeling`，独立入口 `/js/waveform-modelin
 | 相位采样 | 4096 → 6144 |
 | 清晰度 | 目标 960×720，上限倍率 1.75，预算 1280×960 |
 
-14 秒循环中，13.35～13.97 秒源和波形共同淡出，在不可见时重置，下一周期 0～0.40 秒共同淡入。
+13 秒循环中，12.35～12.97 秒源和波形共同淡出，在不可见时重置，下一周期 0～0.40 秒共同淡入。11.25 秒信号结束到淡出开始的静止段从 2.10 秒缩短到 1.10 秒；inspiral、merger、ringdown、传播速度和包络完全不变。以下旧轮次记录中的 14 秒为历史设置。
 星点和标题稳定，无反向分裂或突然跳切。离屏与隐藏页暂停，reduced motion 显示完整信号和最终黑洞。
 响应式容器固定 4:3；下层 2D 与上层 WebGL 使用相同实际像素尺寸。
 
