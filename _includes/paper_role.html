@@ -1,0 +1,55 @@
+{%- comment -%}
+共享身份规则：只看 author_order 指定的本人姓名。
+† 为共同一作，优先于作者排序 1；* 独立表示通讯，可与一作或共一组合。
+输出 code 用于筛选/统计，format="tags" 输出四种独立标签，组合身份输出两个标签。
+{%- endcomment -%}
+{%- if include.code -%}
+  {%- assign role_result_code = include.code -%}
+{%- else -%}
+  {%- assign role_result_code = 'co-author' -%}
+  {%- assign role_author_order = include.author_order | plus: 0 -%}
+  {%- if role_author_order > 0 -%}
+    {%- assign role_author_list = include.authors | split: ',' -%}
+    {%- assign role_author_index = role_author_order | minus: 1 -%}
+    {%- assign role_my_name = role_author_list[role_author_index] | strip -%}
+    {%- if role_my_name contains '†' -%}
+      {%- assign role_result_code = 'co-first' -%}
+      {%- if role_my_name contains '*' -%}{%- assign role_result_code = 'co-first-corresponding' -%}{%- endif -%}
+    {%- elsif role_author_order == 1 -%}
+      {%- assign role_result_code = 'first' -%}
+      {%- if role_my_name contains '*' -%}{%- assign role_result_code = 'first-corresponding' -%}{%- endif -%}
+    {%- elsif role_my_name contains '*' -%}
+      {%- assign role_result_code = 'corresponding' -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if include.format == 'tags' -%}
+  {%- assign role_tag_codes = 'co-author' -%}
+  {%- if role_result_code contains 'co-first' -%}
+    {%- assign role_tag_codes = 'co-first' -%}
+  {%- elsif role_result_code contains 'first' -%}
+    {%- assign role_tag_codes = 'first' -%}
+  {%- elsif role_result_code == 'corresponding' -%}
+    {%- assign role_tag_codes = 'corresponding' -%}
+  {%- endif -%}
+  {%- if role_result_code contains 'corresponding' and role_result_code != 'corresponding' -%}
+    {%- assign role_tag_codes = role_tag_codes | append: '|corresponding' -%}
+  {%- endif -%}
+  {%- assign role_tags = role_tag_codes | split: '|' -%}
+  <span class="author-role-group">
+  {%- for role_tag in role_tags -%}
+    <span class="author-role author-role--{{ role_tag }}" data-role="{{ role_tag }}">{%- case role_tag -%}{%- when 'first' -%}First author{%- when 'co-first' -%}Co-first author{%- when 'corresponding' -%}Corresponding author{%- else -%}Co-author{%- endcase -%}</span>
+  {%- endfor -%}
+  </span>
+{%- elsif include.format == 'label' -%}
+  {%- case role_result_code -%}
+    {%- when 'first' -%}First author
+    {%- when 'co-first' -%}Co-first author
+    {%- when 'corresponding' -%}Corresponding author
+    {%- when 'first-corresponding' -%}First author and corresponding author
+    {%- when 'co-first-corresponding' -%}Co-first author and corresponding author
+    {%- else -%}Co-author
+  {%- endcase -%}
+{%- else -%}
+  {{- role_result_code -}}
+{%- endif -%}

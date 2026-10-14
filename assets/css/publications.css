@@ -1,0 +1,149 @@
+/* 发表列表沿用 Research 的浅底容器与蓝色，不影响统计图表或其他页面。 */
+@font-face {
+    font-family: 'ARIAL';
+    src: url('/assets/fonts/ARIAL.TTF') format('truetype');
+  }
+  @font-face {
+    font-family: 'ARIALBD';
+    src: url('/assets/fonts/ARIALBD.TTF') format('truetype');
+  }
+  @font-face {
+    font-family: 'Times New Roman Web';
+    src: url('/assets/fonts/times.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Times New Roman Web';
+    src: url('/assets/fonts/timesbd.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Times New Roman Web';
+    src: url('/assets/fonts/timesi.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Times New Roman Web';
+    src: url('/assets/fonts/timesbi.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.publication-note {
+    font-family: 'Times New Roman Web', 'Times New Roman', Times, serif;
+}
+
+th, td {
+    border: 0px solid black;
+    padding: 8px;
+}
+
+th {
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black; 
+}
+
+tr:last-child td {
+    border-bottom: 1.5px solid black; 
+}
+
+
+.checkbox-container {
+  font-size: 19px;  
+  display: flex; 
+  align-items: center; 
+}
+
+#show-all {
+  width: 18px;      
+  height: 18px;     
+  margin: 0 6px 0 0; 
+  accent-color: #36a2eb; 
+}
+
+#show-all + label {
+  vertical-align: middle; 
+}
+.publications-page {
+  --publication-accent: #286b93;
+  --publication-line: rgba(128, 128, 128, .25);
+}
+.publications-page .publication-year,
+.publications-page .publication-thesis {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--publication-line);
+  border-radius: 20px;
+  background: rgba(128, 128, 128, .035);
+}
+.publications-page .publication-year__heading { margin: 0 0 .75rem; font-size: 2rem; line-height: 1.15; }
+#main .publications-page .paper-card {
+  display: block;
+  float: none;
+  width: auto;
+  margin: 0;
+  padding: 18px 0;
+  border-top: 1px solid var(--publication-line);
+  background: none;
+}
+#main .publications-page .paper-card:last-child { padding-bottom: 0; }
+#main .publications-page .publication-thesis .paper-card { border-top: 0; padding-top: 0; }
+.paper-card__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin-bottom: 6px; }
+.paper-card__date { font: 14px/1.5 Arial, sans-serif; color: #606873; }
+.paper-card__title { font-family: inherit; font-size: 1.12rem; font-weight: 600; line-height: 1.5; }
+/* 只移除负边距；作者仍使用原来的 Times New Roman Web，18px。 */
+.paper-card__authors {
+  font-family: 'Times New Roman Web', 'Times New Roman', Times, serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 7px 0;
+}
+.paper-card__my-name { text-decoration: underline; text-decoration-thickness: 2px; }
+.paper-card__authors-more {
+  font-style: italic;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .12em;
+}
+.paper-card__authors-full { cursor: pointer; }
+.paper-card__contribution { margin: 0 0 7px; color: #606873; font-size: 14px; line-height: 1.5; }
+.paper-card__footer { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 8px 14px; }
+.paper-card__links { flex: 1 1 290px; font-size: 17px; line-height: 1.65; }
+.paper-card__identity {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 100%;
+  margin-left: auto;
+}
+.paper-card__number { font-size: 20px; line-height: 1.5; color: #606873; white-space: nowrap; }
+.publications-page .paper-card a,
+.publications-page .paper-card a:visited { color: var(--publication-accent); }
+.publications-page .paper-card a:hover { text-decoration: underline; }
+.publications-page .paper-card a:focus-visible,
+.publications-page .paper-card__authors-full:focus-visible { outline: 2px solid var(--publication-accent); outline-offset: 3px; }
+@media (max-width: 600px) {
+  .publications-page .publication-year,
+  .publications-page .publication-thesis { padding: 1rem; border-radius: 16px; }
+  .paper-card__footer { gap: 8px; }
+  .paper-card__links { flex-basis: 100%; min-width: 0; overflow-wrap: anywhere; }
+}

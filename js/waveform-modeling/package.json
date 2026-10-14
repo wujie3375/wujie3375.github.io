@@ -1,0 +1,14 @@
+{
+  "name": "waveform-modeling-animation",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A synchronized unequal-mass BBH coalescence and single illustrative chirp",
+  "engines": {"node": ">=20"},
+  "scripts": {
+    "dev": "node ../agn-triple/scripts/serve.mjs --waveform",
+    "build": "node ../agn-triple/scripts/build.mjs",
+    "preview": "node ../agn-triple/scripts/serve.mjs --build --waveform",
+    "test": "node --test tests/*.test.js"
+  }
+}

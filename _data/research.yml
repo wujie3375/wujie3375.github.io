@@ -1,0 +1,29 @@
+# Paper membership only. Edit theme titles, questions, and descriptions in research.md.
+# 使用 papers.yml 的 aliases 简称关联论文，不再填写 arXiv 号或期刊链接。
+# Bibliographic details remain in papers.yml; animation scripts belong in /js.
+- id: moving-sources
+  paper_aliases:
+    - 'kick速度'
+    - '球状星团'
+    - '超大质量黑洞'
+    - 'AGN气体盘'
+
+- id: waveform-modeling
+  paper_aliases:
+    - '牛顿近似'
+    - '不同阶PN模型'
+    - '潮汐进动波形'
+    - '多波段透镜'
+
+- id: modified-gravity
+  paper_aliases:
+    - 'ppE极化约束'
+    - 'TDI极化'
+    - '解析FIM计算'
+
+- id: gw-backgrounds
+  paper_aliases:
+    - '前景噪声'
+    - '宇宙弦机器学习'
+    - '太阳风噪声'
+

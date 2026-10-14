@@ -1,0 +1,15 @@
+/* 研究页与发表页共用：四种低饱和身份色，组合身份显示独立标签。 */
+.author-role-group { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px; max-width: 100%; }
+.author-role {
+  display: inline-flex;
+  align-items: center;
+  padding: .1rem .55rem;
+  border-radius: 999px;
+  font: .73rem/1.5 Arial, sans-serif;
+  white-space: nowrap;
+}
+/* 一作：灰蓝；共一：灰绿；通讯：淡红；合作：中性灰。 */
+.author-role--first { color: #286b93; background: #eaf2f7; }
+.author-role--co-first { color: #476d64; background: #eef4f1; }
+.author-role--corresponding { color: #99565d; background: #faeeee; }
+.author-role--co-author { color: #626b74; background: #eef0f2; }

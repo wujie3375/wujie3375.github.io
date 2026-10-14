@@ -1,0 +1,72 @@
+/* 仅作用于荣誉页；保持全站正文宽度、字体和侧栏位置不变。 */
+.honors-page { --honors-line: rgba(128, 128, 128, .2); }
+.honors-page > h1 { margin-bottom: .85rem; }
+
+/* 全页共用中英文切换，选中状态与键盘焦点保持清楚。 */
+.honors-page .honors-language {
+  display: inline-flex;
+  gap: 3px;
+  padding: 3px;
+  margin: 0 0 1.4rem;
+  border: 1px solid #e3e8ed;
+  border-radius: 999px;
+  background: #f5f7fa;
+}
+.honors-page .honors-language button {
+  appearance: none;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  padding: .35rem .85rem;
+  color: #606873;
+  font: 14px/1.5 Arial, sans-serif;
+  cursor: pointer;
+}
+.honors-page .honors-language button:hover { background: #eaf0f5; }
+.honors-page .honors-language button[aria-pressed="true"] {
+  background: #e5eef5;
+  color: #286b93;
+}
+.honors-page .honors-language button:focus-visible { outline: 2px solid #286b93; outline-offset: 2px; }
+
+/* 两个浅底分区；每条记录不单独做卡片。 */
+.honors-page .honors-section {
+  padding: 1.4rem;
+  margin: 0 0 1.5rem;
+  border: 1px solid var(--honors-line);
+  border-radius: 18px;
+  background: rgba(128, 128, 128, .035);
+}
+.honors-page .honors-section h2 { margin: 0 0 .65rem; font-size: 2rem; line-height: 1.2; }
+.honors-page .honors-list { margin: 0; padding: 0; list-style: none; }
+.honors-page .honor-entry {
+  margin: 0;
+  padding: .8rem 0;
+  list-style: none;
+  border-top: 1px solid var(--honors-line);
+}
+.honors-page .honor-entry:first-child { border-top: 0; padding-top: .25rem; }
+.honors-page .honor-entry:last-child { padding-bottom: 0; }
+
+/* 桌面日期窄列，正文分为奖项与单位两行。 */
+.honors-page .honor-entry__lang {
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr);
+  gap: 1rem;
+  align-items: baseline;
+}
+.honors-page .honor-entry__date { color: #606873; font: .8rem/1.6 Arial, sans-serif; }
+.honors-page .honor-entry__body { min-width: 0; }
+.honors-page .honor-entry__title { line-height: 1.5; }
+.honors-page .honor-entry__extra { font-size: .9em; font-weight: 400; }
+.honors-page .honor-entry__org { margin-top: .2rem; font-size: .9rem; line-height: 1.5; }
+
+.honors-page .lang-zh { display: none; }
+.honors-page[data-lang="zh"] .lang-en { display: none; }
+.honors-page[data-lang="zh"] .lang-zh { display: grid; }
+
+/* 手机日期放在正文上方，避免压缩长奖项和单位名称。 */
+@media (max-width: 600px) {
+  .honors-page .honors-section { padding: 1rem; border-radius: 16px; }
+  .honors-page .honor-entry__lang { grid-template-columns: minmax(0, 1fr); gap: .25rem; }
+}

@@ -2,80 +2,10 @@
 layout: page
 permalink: /publications
 title: Publications
+description: Research publications by Jie Wu, listed in reverse chronological order.
 ---
 
-<style>
-  @font-face {
-    font-family: 'ARIAL';
-    src: url('/assets/fonts/ARIAL.TTF') format('truetype');
-  }
-  @font-face {
-    font-family: 'ARIALBD';
-    src: url('/assets/fonts/ARIALBD.TTF') format('truetype');
-  }
-  @font-face {
-    font-family: 'Times New Roman Web';
-    src: url('/assets/fonts/times.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: 'Times New Roman Web';
-    src: url('/assets/fonts/timesbd.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: 'Times New Roman Web';
-    src: url('/assets/fonts/timesi.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: 'Times New Roman Web';
-    src: url('/assets/fonts/timesbi.ttf') format('truetype');
-    font-weight: 700;
-    font-style: italic;
-    font-display: swap;
-  }
-  /* li {
-    font-family: 'times', serif;
-  } */
-  /* li {
-    font-family: 'ARIALBD', serif;
-    font-size: 20px;
-  } */
-  /* body {
-    font-family: 'ARIAL', serif;
-  } */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    text-align: center;
-}
 
-.publication-note {
-    font-family: 'Times New Roman Web', 'Times New Roman', Times, serif;
-}
-
-th, td {
-    border: 0px solid black;
-    padding: 8px;
-}
-
-th {
-    border-top: 1.5px solid black;
-    border-bottom: 1.5px solid black; /* 顶部线 */
-}
-
-tr:last-child td {
-    border-bottom: 1.5px solid black; /* 底部线 */
-}
-</style>
 
 <script>
   window.MathJax = {
@@ -92,6 +22,13 @@ tr:last-child td {
 
 <!-- > **Last Update:** Mar 13, 2026 -->
 
+{% assign publication_styles = site.static_files | where: 'path', '/assets/css/publications.css' | first %}
+<link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}?v={{ publication_styles.modified_time | date: '%s' }}">
+{% assign role_styles = site.static_files | where: 'path', '/assets/css/author-roles.css' | first %}
+<link rel="stylesheet" href="{{ '/assets/css/author-roles.css' | relative_url }}?v={{ role_styles.modified_time | date: '%s' }}">
+
+<div class="publications-page" markdown="1">
+
 # Publications
 
 <p style="text-indent: 0;">The dates are based on the publication time.</p>
@@ -101,29 +38,7 @@ tr:last-child td {
 <!-- ================================================================================================= -->
 <!-- 统计图和表格 -->
 
-{% assign years = site.data.papers | group_by: 'year' | sort: 'name' %}
-{% capture chart_url %}https://quickchart.io/chart?c={
-  "type": "bar",
-  "data": {
-    "labels": [{{ years | map: 'name' | join: ',' }}],
-    "datasets": [
-      {
-        "label": "First author",
-        "data": [{% for y in years %}{{ y.items | where: 'first_or_not', true | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-        "backgroundColor": "rgba(54, 162, 235, 1)"
-      },
-      {
-        "label": "Total",
-        "data": [{% for y in years %}{{ y.items | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
-        "backgroundColor": "rgba(255, 159, 64, 1)"
-      }
-    ]
-  }
-}{% endcapture %}
-
-<img src="{{ chart_url | uri_escape }}" 
-     alt="Publication Chart" 
-     style="width:100%; height: 80%; position: relative; left: -30px;">
+{% include publication_chart.html papers=site.data.papers %}
 
 <!-- =============================================================================================== -->
 <!-- 表格 -->
@@ -137,21 +52,29 @@ tr:last-child td {
 {% assign non_first_author_preprint = 0 %}
 
 {% for pub in publications %}
-  {% if pub.first_or_not == true %}
-    {% if pub.journal != false %}
+  {% capture pub_role %}{% include paper_role.html authors=pub.authors author_order=pub.author_order %}{% endcapture %}
+  {% assign pub_role = pub_role | strip %}
+  <!-- 只有期刊名、卷号和文章号均完整才计入 Published；已接收但未正式发表仍计入 Preprint。 -->
+  {% assign pub_is_published = false %}
+  {% assign pub_journal = pub.journal | default: '' | strip %}
+  {% assign pub_volume = pub.volume | default: '' | strip %}
+  {% assign pub_article_number = pub.article_number | default: '' | strip %}
+  {% if pub_journal != '' and pub_volume != '' and pub_article_number != '' %}
+    {% assign pub_is_published = true %}
+  {% endif %}
+  {% unless pub_role == 'co-author' %}
+    {% if pub_is_published %}
       {% assign first_author_published = first_author_published | plus: 1 %}
-    {% endif %}
-    {% if pub.arxiv != false and pub.journal == false %}
+    {% else %}
       {% assign first_author_preprint = first_author_preprint | plus: 1 %}
     {% endif %}
   {% else %}
-    {% if pub.journal != false %}
+    {% if pub_is_published %}
       {% assign non_first_author_published = non_first_author_published | plus: 1 %}
-    {% endif %}
-    {% if pub.arxiv != false and pub.journal == false %}
+    {% else %}
       {% assign non_first_author_preprint = non_first_author_preprint | plus: 1 %}
     {% endif %}
-  {% endif %}
+  {% endunless %}
 {% endfor %}
 
 {% assign total_published = first_author_published | plus: non_first_author_published %}
@@ -175,7 +98,7 @@ tr:last-child td {
       <td>{{ first_author_published | plus: first_author_preprint }}</td>
     </tr>
     <tr>
-      <td>Non-first author</td>
+      <td>Co-author</td>
       <td>{{ non_first_author_published }}</td>
       <td>{{ non_first_author_preprint }}</td>
       <td>{{ non_first_author_published | plus: non_first_author_preprint }}</td>
@@ -194,24 +117,7 @@ tr:last-child td {
 <!-- ----------------------------------------------------------------------------------------------- -->
 ---
 
-<style>
-.checkbox-container {
-  font-size: 19px;  /* 整体字体放大 */
-  display: flex; /* 使用 Flexbox 布局 */
-  align-items: center; /* 垂直居中对齐 */
-}
 
-#show-all {
-  width: 18px;      /* 复选框宽度 */
-  height: 18px;     /* 复选框高度 */
-  margin: 0 6px 0 0; /* 右边距 */
-  accent-color: #36a2eb; /* 选中颜色 */
-}
-
-#show-all + label {
-  vertical-align: middle; /* 文字垂直居中 */
-}
-</style>
 
 <div class="checkbox-container">
   <input type="checkbox" id="show-all" onchange="toggleDisplay()">
@@ -235,7 +141,8 @@ tr:last-child td {
 <div id="all-articles">
   {% assign total_number = publications.size %}
   {% for group in grouped_publications %}
-    <h2>{{ group.name }}</h2>
+    <section class="publication-year">
+    <h2 class="publication-year__heading" id="publications-{{ group.name }}">{{ group.name }}</h2>
     {% for pub in group.items %}
       {% capture unique_id %}all-{{ group.name }}-{{ forloop.index }}{% endcapture %}
       {% include paper_card.html 
@@ -249,24 +156,34 @@ tr:last-child td {
         volume=pub.volume 
         article_number=pub.article_number 
         arxiv=pub.arxiv 
-        pdf=pub.pdf 
-        highlight_author=pub.highlight_author 
+        aliases=pub.aliases
+        author_order=pub.author_order
         etal=pub.etal
         number=total_number %}
       {% assign total_number = total_number | plus: -1 %}
     {% endfor %}
-    <hr>
+    </section>
   {% endfor %}
 </div>
 
-<!-- 默认隐藏一作文章 -->
+<!-- 默认隐藏“我的文章”：排序为 1，或对应作者名带 *（通讯）/†（共一）。按钮名称保持原样。 -->
 <div id="first-author-only" style="display: none;">
-  {% assign filtered_publications = publications | where: "first_or_not", true %}
+  {% assign filtered_publications = '' | split: ',' %}
+  {% for pub in publications %}
+    {% capture pub_role %}{% include paper_role.html authors=pub.authors author_order=pub.author_order %}{% endcapture %}
+    {% assign pub_role = pub_role | strip %}
+    {% unless pub_role == 'co-author' %}
+      {% assign selected_publication = publications | slice: forloop.index0, 1 %}
+      {% assign filtered_publications = filtered_publications | concat: selected_publication %}
+    {% endunless %}
+  {% endfor %}
   {% assign total_number = filtered_publications.size %}
-  {% for group in grouped_publications %}
-    {% assign filtered_group_items = group.items | where: "first_or_not", true %}
+  {% assign filtered_groups = filtered_publications | group_by_exp: "pub", "pub.sortable_date | split: '-' | first" | sort: "name" | reverse %}
+  {% for group in filtered_groups %}
+    {% assign filtered_group_items = group.items %}
     {% if filtered_group_items.size > 0 %}
-      <p style="text-indent: 0;font-size:36px;margin-bottom:0.61875rem;text-rendering:optimizeLegibility;line-height:1;margin-top:0;font-family:'PT Sans Narrow',sans-serif;font-weight:700;">{{ group.name }}</p>
+      <section class="publication-year">
+      <h2 class="publication-year__heading" id="first-author-{{ group.name }}">{{ group.name }}</h2>
       {% for pub in filtered_group_items %}
       {% capture unique_id %}first-{{ group.name }}-{{ forloop.index }}{% endcapture %}
       {% include paper_card.html 
@@ -280,31 +197,19 @@ tr:last-child td {
         volume=pub.volume 
         article_number=pub.article_number 
         arxiv=pub.arxiv 
-        pdf=pub.pdf 
-        highlight_author=pub.highlight_author 
+        aliases=pub.aliases
+        author_order=pub.author_order
         etal=pub.etal 
         number=total_number %}
       {% assign total_number = total_number | plus: -1 %}
     {% endfor %}
-      <hr>
+      </section>
     {% endif %}
   {% endfor %}
 </div>
 
-<script>
-// 同步切换函数
-function toggleDisplay() {
-  const showFirst = document.getElementById("show-all").checked;
-  
-  // 切换文章列表
-  document.getElementById("first-author-only").style.display = showFirst ? "block" : "none";
-  document.getElementById("all-articles").style.display = showFirst ? "none" : "block";
-  
-  // 切换统计图表
-  document.getElementById("first-author-chart").style.display = showFirst ? "block" : "none";
-  document.getElementById("all-chart").style.display = showFirst ? "none" : "block";
-}
-</script>
+{% assign publication_controls = site.static_files | where: 'path', '/assets/js/publications.js' | first %}
+<script src="{{ '/assets/js/publications.js' | relative_url }}?v={{ publication_controls.modified_time | date: '%s' }}" defer></script>
 
 
 
@@ -313,6 +218,7 @@ function toggleDisplay() {
 <!-- ----------------------------------------------------------------------------------------------- -->
 # Degree Thesis
 
+<div class="publication-thesis">
 {% include paper_card.html
   title="An Analysis of the LIGO Gravitational Waves Data Based on Newtonian Approximate Model"
   subtitle="(Excellent Graduation Thesis)"
@@ -322,8 +228,11 @@ function toggleDisplay() {
   volume=" "
   arxiv=false
   article_number="(in Chinese)"
-  pdf=" "
   number="0"
-  highlight_author=1
+  show_role=false
+  author_order=1
 %}
+</div>
 > I'm hoping that by listing these, it'll be easier for me to find them later on. (￢_￢)
+
+</div>

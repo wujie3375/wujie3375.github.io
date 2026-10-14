@@ -1,0 +1,40 @@
+<!-- 与原 QuickChart 使用同版 Chart.js 和默认样式；数据仍由 Jekyll 本地统计。 -->
+{% assign chart_years = include.papers | group_by: 'year' | sort: 'name' %}
+{% if chart_years.size > 0 %}
+  <!-- 原图比例为 500:300；取消原来的左移 30px，与下方表格保持对齐。 -->
+  <div class="publication-chart" style="position:relative; width:100%; left:0; margin:0 0 1.5em;">
+    <canvas id="publication-chart" width="500" height="300" role="img" aria-label="Publication chart by year: First author and total papers" style="display:block; width:100%; height:auto;">
+      Annual publication counts are listed in the data below.
+    </canvas>
+  </div>
+  <script type="application/json" id="publication-chart-config">
+  {
+    "type": "bar",
+    "data": {
+      "labels": {{ chart_years | map: 'name' | jsonify }},
+      "datasets": [
+        {
+          "label": "First author",
+          "data": [{% for chart_year in chart_years %}{% assign chart_my_count = 0 %}{% for paper in chart_year.items %}{% capture chart_role %}{% include paper_role.html authors=paper.authors author_order=paper.author_order %}{% endcapture %}{% assign chart_role = chart_role | strip %}{% unless chart_role == 'co-author' %}{% assign chart_my_count = chart_my_count | plus: 1 %}{% endunless %}{% endfor %}{{ chart_my_count }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+          "backgroundColor": "rgba(54, 162, 235, 1)"
+        },
+        {
+          "label": "Total",
+          "data": [{% for chart_year in chart_years %}{{ chart_year.items | size }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+          "backgroundColor": "rgba(255, 159, 64, 1)"
+        }
+      ]
+    },
+    "options": {
+      "responsive": false,
+      "devicePixelRatio": 2,
+      "events": [],
+      "animation": {"duration": 0},
+      "scales": {"yAxes": [{"ticks": {"beginAtZero": true, "precision": 0}}]}
+    }
+  }
+  </script>
+  {% assign publication_chart_script = site.static_files | where: 'path', '/js/publication-chart.js' | first %}
+  <script src="{{ '/js/vendor/Chart-2.9.4.min.js' | relative_url }}" defer></script>
+  <script src="{{ '/js/publication-chart.js' | relative_url }}?v={{ publication_chart_script.modified_time | date: '%s' }}" defer></script>
+{% endif %}

@@ -1,6 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
+<!-- 页面片段：保留原有外观，点击与键盘事件只由 rocket.js 绑定一次。 -->
   <!-- 其他头部内容 -->
   <style>
     /* 基本样式 */
@@ -19,27 +17,11 @@
       }
     }
 
-    /* 平滑滚动效果 */
-    html {
-      scroll-behavior: smooth;
-    }
   </style>
-</head>
-<body>
-    <div id="rocket" onclick="scrollToTop()" style="text-align: center; cursor: pointer;">
+    <div id="rocket" role="button" tabindex="0" aria-label="Back to top" style="text-align: center; cursor: pointer;">
         <span style="display: block; font-size: 18px;">TOP</span>
         <img src="/images/rocket-icon.png" alt="Rocket" style="height: 70px;">
       </div>
       
   <!-- 其他内容 -->
 
-  <script>
-    
-    function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-    document.getElementById("rocket").addEventListener("click", scrollToTop);
-    
-  </script>
-</body>
-</html>

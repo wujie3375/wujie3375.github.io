@@ -1,0 +1,3 @@
+@import url('../agn-triple/style.css');
+.animation-frame canvas{position:absolute;inset:0}
+.foreground-overlay{pointer-events:none}

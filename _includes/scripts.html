@@ -1,16 +1,7 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="{{ site.url }}/assets/js/main.min.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'G-T5N5JY1E21', 'caihanlin.com');
-  ga('send', 'pageview');
-
-</script>
-
-<!-- https://analytics.google.com/analytics/ -->
-<!-- Lastly modified by Hanlin CAI in 2023/01/15 -->
+<!-- 保留灯箱/视频功能，但只在页面实际使用时加载本地旧插件。 -->
+{% assign legacy_script = site.static_files | where: 'path', '/assets/js/legacy-enhancements.js' | first %}
+{% assign main_script = site.static_files | where: 'path', '/assets/js/main.min.js' | first %}
+<script src="{{ '/assets/js/legacy-enhancements.js' | relative_url }}?v={{ legacy_script.modified_time | date: '%s' }}"
+        data-jquery-url="{{ '/assets/js/vendor/jquery-1.9.1.min.js' | relative_url }}"
+        data-main-url="{{ '/assets/js/main.min.js' | relative_url }}?v={{ main_script.modified_time | date: '%s' }}"
+        defer></script>

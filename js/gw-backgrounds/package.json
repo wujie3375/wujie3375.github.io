@@ -1,0 +1,14 @@
+{
+  "name":"galactic-dwd-foreground",
+  "version":"1.0.0",
+  "private":true,
+  "type":"module",
+  "description":"Fixed Galactic double white dwarf binaries and their summed confusion foreground",
+  "engines":{"node":">=20"},
+  "scripts":{
+    "dev":"node ../agn-triple/scripts/serve.mjs --gw-backgrounds",
+    "build":"node ../agn-triple/scripts/build.mjs",
+    "preview":"node ../agn-triple/scripts/serve.mjs --build --gw-backgrounds",
+    "test":"node --test tests/*.test.js"
+  }
+}

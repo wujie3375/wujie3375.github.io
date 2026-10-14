@@ -1,109 +1,66 @@
-<ul style="border: 2px solid #ddd; border-radius: 8px; padding: 9px; list-style-type: none;">
-    <!-- Title -->
-    <div style="font-family: 'ARIALBD'; font-size: 19px; line-height: 1.4;">
-        {{ include.title }}
-        {% if include.subtitle != false %}
-            <span style="font-family: 'ARIAL'; font-size: 14px;">{{ include.subtitle }}</span>
-        {% endif %}
-    </div>
-    
-    <hr style="border: none; border-top: 1px solid #ddd; margin: 6px 0;">
+{% assign authors = include.authors | split: ',' %}
+{% assign author_index = include.author_order | minus: 1 %}
+{% assign my_author_name = authors[author_index] | strip %}
+{% capture my_author_highlight %}<strong class="paper-card__my-name">{{ my_author_name | escape }}</strong>{% endcapture %}
+{% assign omit_start = include.etal | default: 5 %}
+{% assign omitted_count = authors.size | minus: omit_start %}
+{% assign hidden_author_order = include.author_order | minus: omit_start %}
+{% capture card_role %}{% include paper_role.html authors=include.authors author_order=include.author_order %}{% endcapture %}
+{% assign card_role = card_role | strip %}
 
-    <!-- Authors -->
-    <div style="font-family: 'Times New Roman Web', 'Times New Roman', Times, serif; font-size: 18px; margin: -2px 0 -4px 0;">
-        {% assign authors = include.authors | split: ',' %}
-        {% assign omit_start = include.etal | default: 5 %}
-        {% assign omitted_count = authors.size | minus: omit_start %}
-        {% assign highlight_author_etal = include.highlight_author | minus: include.etal %}
+<article class="paper-card" data-paper-alias="{{ include.aliases | first | escape }}" data-author-role="{{ card_role }}">
+    <div class="paper-card__meta">
+        {% if include.date %}<div class="paper-card__date">{{ include.date | escape }}</div>{% endif %}
+        {% unless include.show_role == false %}
+            {% include paper_role.html code=card_role format="tags" %}
+        {% endunless %}
+    </div>
+    <div class="paper-card__title">{{ include.title | escape }}</div>
+
+    <!-- 作者的字体、字号和姓名高亮保持原样。 -->
+    <div class="paper-card__authors">
         {% if authors.size > omit_start %}
-            <!-- More than omit_start authors: show first omit_start and then "and N more". -->
-            {% for author in authors %}
-                {% if forloop.index <= omit_start %}
-                    {% if forloop.index == include.highlight_author %}
-                        <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
-                    {% else %}
-                        {{ author | strip }}
-                    {% endif %}
-                    {% if forloop.index < omit_start %}
-                        ,<!-- No space after the comma -->
-                    {% endif %}
-                {% endif %}
-            {% endfor %}
-            , <a href="javascript:void(0);" onclick="toggleAuthors('{{ include.unique_id }}')" id="etal-link-{{ include.unique_id }}" style="font-style: italic; text-decoration-line: underline; text-decoration-style: dashed; text-decoration-thickness: 1px; text-underline-offset: 0.12em; cursor: pointer;">and {{ omitted_count }} more</a>
-            <!-- Hidden full author list (excluding the first omit_start already displayed) -->
-            <span id="author-full-{{ include.unique_id }}" 
-                    style="display: none; cursor: pointer;" 
-                    onclick="toggleAuthors('{{ include.unique_id }}')">
+            {% for author in authors limit:omit_start %}
+                {% if forloop.index == include.author_order %}{{ my_author_highlight }}{% else %}{{ author | strip | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}
+            {% endfor %},
+            <a class="paper-card__authors-more" href="#author-full-{{ include.unique_id }}" onclick="toggleAuthors('{{ include.unique_id }}'); return false;" id="etal-link-{{ include.unique_id }}" aria-controls="author-full-{{ include.unique_id }}" aria-expanded="false">and {{ omitted_count }} more</a>
+            <span class="paper-card__authors-full" id="author-full-{{ include.unique_id }}" style="display: none;" role="button" tabindex="0" title="Collapse author list" aria-label="Collapse author list" onclick="toggleAuthors('{{ include.unique_id }}')" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); toggleAuthors('{{ include.unique_id }}'); }">
                 {% for author in authors offset:omit_start %}
-                    {% if forloop.index == highlight_author_etal %}
-                    <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
-                    {% else %}
-                    {{ author | strip }}
-                    {% endif %}
-                    {% if forloop.last == false %},{% endif %}
+                    {% if forloop.index == hidden_author_order %}{{ my_author_highlight }}{% else %}{{ author | strip | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}
                 {% endfor %}
             </span>
         {% else %}
-            <!-- omit_start or fewer authors: show all without 'and' -->
             {% for author in authors %}
-                {% if forloop.index == include.highlight_author %}
-                    <strong style="text-decoration: underline; text-decoration-thickness: 2px;">{{ author | strip }}</strong>
-                {% else %}
-                    {{ author | strip }}
-                {% endif %}
-                {% if forloop.last == false %}
-                    ,<!-- No space after the comma -->
-                {% endif %}
+                {% if forloop.index == include.author_order %}{{ my_author_highlight }}{% else %}{{ author | strip | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}
             {% endfor %}
         {% endif %}
-        ({{ include.date }})
     </div>
 
-    <div style="font-size: 17px; margin: -5px 0 0 0;">
-        <!-- Journal and/or arXiv Links -->
-        {% if include.journal != false %}
-            {% if include.volume != false and include.article_number != false %}
-                {% if include.journal_link != false %}
-                    <a href="{{ include.journal_link }}">
-                        <em>{{ include.journal }}</em> <strong>{{ include.volume }}</strong>, {{ include.article_number }}</a>
+    {% if include.subtitle and include.subtitle != false %}<div class="paper-card__contribution">{{ include.subtitle | escape }}</div>{% endif %}
+
+    <div class="paper-card__footer">
+        <div class="paper-card__links">
+            {% if include.journal and include.journal != false %}
+                {% if include.volume and include.volume != false and include.article_number and include.article_number != false %}
+                    {% if include.journal_link and include.journal_link != false %}
+                        <a href="{{ include.journal_link | escape }}"><em>{{ include.journal | escape }}</em> <strong>{{ include.volume }}</strong>, {{ include.article_number }}</a>
+                    {% else %}
+                        <em>{{ include.journal | escape }}</em> <strong>{{ include.volume }}</strong>, {{ include.article_number }}
+                    {% endif %}
                 {% else %}
-                    <em>{{ include.journal }}</em> <strong>{{ include.volume }}</strong>, {{ include.article_number }}
+                    <em>{{ include.journal | escape }}</em> accepted
                 {% endif %}
-            {% else %}
-                <em>{{ include.journal }}</em> accepted
+                {% if include.arxiv and include.arxiv != false %} | {% endif %}
             {% endif %}
-            {% if include.arxiv != false %}
-                |
+            {% if include.arxiv and include.arxiv != false %}
+                <a href="https://arxiv.org/abs/{{ include.arxiv }}"><em>arXiv</em>:{{ include.arxiv }}</a>
+                {% if include.journal == false %} (under review){% endif %}
             {% endif %}
-        {% endif %}
-        {% if include.arxiv != false %}
-            <a href="https://arxiv.org/abs/{{ include.arxiv }}">
-                <em>arXiv</em>:{{ include.arxiv }}</a>
-            {% if include.journal == false %}
-                (under review)
-            {% endif %}
-        {% endif %}
+        </div>
 
-        <!-- PDF Link -->
-        {% if include.pdf != false %}
-            <span style="float: right;font-size: 19px;">
-                <a href="{{ include.pdf }}">#{{ include.number }}</a>
-            </span>
-        {% endif %}
+        <!-- 身份已移到日期后面，序号仍保留在右下角。 -->
+        <div class="paper-card__identity">
+            {% if include.number != nil %}<span class="paper-card__number">#{{ include.number }}</span>{% endif %}
+        </div>
     </div>
-</ul>
-
-<!-- JavaScript for toggling authors -->
-<script>
-    function toggleAuthors(uniqueId) {
-        var full = document.getElementById('author-full-' + uniqueId);
-        var etal = document.getElementById('etal-link-' + uniqueId);
-        if (full.style.display === 'none') {
-            full.style.display = 'inline';
-            etal.style.display = 'none';
-        } else {
-            full.style.display = 'none';
-            etal.style.display = 'inline';
-        }
-    }
-</script>
+</article>

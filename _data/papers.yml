@@ -1,3 +1,7 @@
+# author_order：Jie Wu 的作者顺序（从 1 开始），同时用于作者高亮。
+# author_order 对应作者名后的 * 表示通讯，† 表示共同一作；排序为 1、带 * 或带 † 均归入“我的文章”。
+# 研究页、发表页、统计图和筛选共用 _includes/paper_role.html；共一优先于排序 1，通讯身份可叠加。
+# aliases：沿用 Obsidian 的简称；研究分类通过这些简称关联论文。
 - year: 2026
   title: "Constraining AGN Disk Properties with Gravitational Waves from Inspiraling Stellar-Mass Binary Black Holes in Hierarchical Triple Systems"
   subtitle: false
@@ -9,9 +13,8 @@
   volume: false
   article_number: false
   arxiv: "2609.00945"
-  pdf: " "
-  highlight_author: 1
-  first_or_not: true
+  aliases: ["AGN气体盘"]
+  author_order: 1
   etal: 4
 
 - year: 2026
@@ -25,9 +28,8 @@
   volume: '114'
   article_number: '083507'
   arxiv: "2607.05368"
-  pdf: " "
-  highlight_author: 3
-  first_or_not: false
+  aliases: ["太阳风噪声"]
+  author_order: 3
   etal: 3
 
 - year: 2026
@@ -41,9 +43,8 @@
   volume: '86'
   article_number: '1098'
   arxiv: "2607.04238"
-  pdf: " "
-  highlight_author: 1
-  first_or_not: true
+  aliases: ["解析FIM计算"]
+  author_order: 1
   etal: 4
 
 - year: 2026
@@ -57,9 +58,8 @@
   volume: '113'
   article_number: '124024'
   arxiv: "2606.12784"
-  pdf: " "
-  highlight_author: 1
-  first_or_not: true
+  aliases: ["超大质量黑洞"]
+  author_order: 1
   etal: 3
 
 - year: 2026
@@ -73,9 +73,8 @@
   volume: false
   article_number: false
   arxiv: "2606.11959"
-  pdf: " "
-  highlight_author: 2
-  first_or_not: false
+  aliases: ["g模共振"]
+  author_order: 2
   etal: 3
 
 - year: 2026
@@ -89,9 +88,8 @@
   volume: "113"
   article_number: "103004"
   arxiv: "2511.09107"
-  pdf: " "
-  highlight_author: 2
-  first_or_not: false
+  aliases: ["多波段透镜"]
+  author_order: 2
   etal: 3
 
 - year: 2026
@@ -105,9 +103,8 @@
   volume: '43'
   article_number: '065017'
   arxiv: "2411.03631"
-  pdf: " "
-  highlight_author: 1
-  first_or_not: true
+  aliases: ["TDI极化"]
+  author_order: 1
   etal: 4
 
 - year: 2025
@@ -121,9 +118,8 @@
   volume: "112"
   article_number: "084016"
   arxiv: "2503.19512"
-  pdf: " "
-  highlight_author: 2
-  first_or_not: false
+  aliases: ["潮汐进动波形"]
+  author_order: 2
   etal: 3
 
 - year: 2025
@@ -137,9 +133,8 @@
   volume: "112"
   article_number: "064081"
   arxiv: "2502.11804"
-  pdf: " "
-  highlight_author: 7
-  first_or_not: false
+  aliases: ["宇宙弦机器学习"]
+  author_order: 7
   etal: 3
 
 - year: 2025
@@ -153,9 +148,8 @@
   volume: false
   article_number: false
   arxiv: "2508.04021"
-  pdf: " "
-  highlight_author: 1
-  first_or_not: true
+  aliases: ["球状星团"]
+  author_order: 1
   etal: 4
 
 - year: 2025
@@ -169,9 +163,8 @@
   volume: "112"
   article_number: "024040"
   arxiv: "2502.13710"
-  pdf: " "
-  highlight_author: 1
-  first_or_not: true
+  aliases: ["kick速度"]
+  author_order: 1
   etal: 3
 
 - year: 2025
@@ -185,9 +178,8 @@
   volume: "126"
   article_number: "021602"
   arxiv: false
-  pdf: " "
-  highlight_author: 2
-  first_or_not: false
+  aliases: ["墨滴操控"]
+  author_order: 2
   etal: 3
 
 - year: 2024
@@ -201,9 +193,8 @@
   volume: "110"
   article_number: "084057"
   arxiv: "2407.13590"
-  pdf: " "
-  highlight_author: 1
-  first_or_not: true
+  aliases: ["ppE极化约束"]
+  author_order: 1
   etal: 4
 
 - year: 2024
@@ -217,9 +208,8 @@
   volume: "109"
   article_number: "104014"
   arxiv: "2401.03113"
-  pdf: " "
-  highlight_author: 1
-  first_or_not: true
+  aliases: ["不同阶PN模型"]
+  author_order: 1
   etal: 4
 
 - year: 2023
@@ -233,9 +223,8 @@
   volume: "108"
   article_number: "124047"
   arxiv: "2307.05568"
-  pdf: " "
-  highlight_author: 1
-  first_or_not: true
+  aliases: ["前景噪声"]
+  author_order: 1
   etal: 4
 
 - year: 2023
@@ -249,7 +238,6 @@
   volume: "32"
   article_number: "090401"
   arxiv: false
-  pdf: " "
-  highlight_author: 1
-  first_or_not: true
+  aliases: ["牛顿近似"]
+  author_order: 1
   etal: 4

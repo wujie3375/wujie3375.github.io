@@ -42,10 +42,13 @@
 <!-- Google Webfonts -->
 <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous" />
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
+{% assign layout_stylesheet = site.static_files | where: 'path', '/assets/css/layout.css' | first %}
+<link rel="stylesheet" href="{{ '/assets/css/layout.css' | relative_url }}?v={{ layout_stylesheet.modified_time | date: '%s' }}">
+{% assign profile_stylesheet = site.static_files | where: 'path', '/assets/css/profile.css' | first %}
+<link rel="stylesheet" href="{{ '/assets/css/profile.css' | relative_url }}?v={{ profile_stylesheet.modified_time | date: '%s' }}">
 
 <!--[if (lt IE 9) & (!IEMobile)]>
 <link rel="stylesheet" href="/assets/css/ie.css">
@@ -53,15 +56,13 @@
 
 <meta http-equiv="cleartype" content="on">
 
-<!-- Load Modernizr -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw==" crossorigin="anonymous"></script>
 
 <!-- 16x16 -->
 <link rel="shortcut icon" href="{{ site.url }}/images/fav.ico">
 <!-- 32x32 -->
 <link rel="shortcut icon" href="{{ site.url }}/images/fav.png">
 <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="{{ site.url }}/images/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="{{ site.url }}/images/fav.png">
 <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.url }}/images/fav.png">
 <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->

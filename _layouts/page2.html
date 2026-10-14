@@ -118,10 +118,9 @@
     <h1>Welcome!</h1>
     <h2>Jie Wu's personal website</h2>
     <ul>
-      <li><a href="/about">About</a></li>
-      <li><a href="/publications">Publications</a></li>
-      <li><a href="/awards">Honors</a></li>
-      <li><a href="/file/CV/cv.pdf">CV</a></li>
+      {% for link in site.links %}
+      <li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
+      {% endfor %}
     </ul>
     <br>
   </div>

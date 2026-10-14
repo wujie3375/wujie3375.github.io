@@ -1,0 +1,14 @@
+{
+  "name":"modified-gravity-polarizations",
+  "version":"1.0.0",
+  "private":true,
+  "type":"module",
+  "description":"Non-interactive six-polarization diagrams and a monochromatic GR plus half-frequency comparison",
+  "engines":{"node":">=20"},
+  "scripts":{
+    "dev":"node ../agn-triple/scripts/serve.mjs --modified-gravity",
+    "build":"node ../agn-triple/scripts/build.mjs",
+    "preview":"node ../agn-triple/scripts/serve.mjs --build --modified-gravity",
+    "test":"node --test tests/*.test.js"
+  }
+}

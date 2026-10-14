@@ -1,0 +1,194 @@
+@font-face {
+  font-family: 'ARIAL';
+  src: url('../fonts/ARIAL.TTF') format('truetype');
+}
+@font-face {
+  font-family: 'ARIALBD';
+  src: url('../fonts/ARIALBD.TTF') format('truetype');
+}
+
+/* 仅调整 About 正文，不影响其他页面的宽度和布局。 */
+.about-page p {
+  margin: 0 0 12px;
+  line-height: 1.5;
+}
+.about-page p + p {
+  margin-top: 0;
+  text-indent: 0;
+}
+.about-page h2 {
+  /* 恢复原来的紧凑标题间距；分割线继续使用主题原有间距。 */
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+/* 兴趣小卡片：桌面两列，手机一列；不是可点击按钮。 */
+.about-interests > ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 0;
+  margin: 0 0 1.2em;
+  list-style: none;
+}
+.about-interests > ul > li {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  align-items: center;
+  align-content: start;
+  gap: 10px 18px;
+  list-style: none;
+  margin: 0;
+  padding: 18px 20px;
+  border-radius: 14px;
+  background: #f5f7fa;
+  border: 1px solid #e8edf3;
+  line-height: 1.5;
+  font-size: .95em;
+}
+.about-interests > ul > li:first-child {
+  grid-column: 1 / -1;
+  grid-template-columns: 44px minmax(0, 1fr);
+}
+.hobby-card__icon {
+  font-size: 38px;
+  line-height: 1;
+  text-align: center;
+}
+.about-interests > ul > li:first-child .hobby-card__icon {
+  font-size: 44px;
+}
+.about-page .hobby-card__text p {
+  margin: 0;
+  line-height: 1.55;
+}
+.about-interests strong {
+  display: inline-block;
+  margin-bottom: .3em;
+}
+/* 四张小卡片：图标与标题一行，描述独占下一行，避免被图标挤窄。 */
+.about-interests > ul > li:not(:first-child) .hobby-card__text {
+  display: contents;
+}
+.about-interests > ul > li:not(:first-child) strong {
+  grid-column: 2;
+  margin-bottom: 0;
+}
+.about-interests > ul > li:not(:first-child) .hobby-card__text p {
+  grid-column: 1 / -1;
+  align-self: start;
+}
+
+/* 研究兴趣和技能保留在 Markdown 中，收紧列表而不是增加装饰。 */
+.about-details > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.about-details > ul > li {
+  list-style: none;
+  margin: 0 0 .75em;
+  line-height: 1.5;
+}
+.about-details strong {
+  display: inline-block;
+  margin-bottom: .1em;
+}
+
+/* 研究兴趣：每项左侧一个统一的线性图标，不影响 Skills 列表。 */
+.about-research-interests > ul > li {
+  position: relative;
+  padding-left: 60px;
+  min-height: 42px;
+}
+.research-interest-icon {
+  position: absolute;
+  /* 图标对齐整项文字块的垂直中心，描述换行后仍然居中。 */
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  fill: none;
+  stroke: #596f87;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+/* 统一网页实际线宽，避免不同 viewBox 的图标缩放后粗细不同。 */
+.research-interest-icon > path,
+.research-interest-icon > circle,
+.research-interest-icon > ellipse {
+  vector-effect: non-scaling-stroke;
+}
+
+/* 经历：给标题真正的可换行空间，取消负边距和首行缩进。 */
+.about-page .experience-card {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 18px;
+  margin: 0 0 14px;
+  padding: 18px;
+  border: 1px solid #e3e9f0;
+  border-radius: 14px;
+  background: #f7f9fb;
+  box-shadow: 0 3px 10px rgba(34, 51, 73, .035);
+}
+.about-page .experience-card__logo {
+  width: 92px;
+  height: 92px;
+  object-fit: contain;
+}
+.about-page .experience-card__header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+.about-page .experience-card__title {
+  font-family: 'ARIALBD', Arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.4;
+  margin: 0;
+}
+.about-page .experience-card__date {
+  margin-left: auto;
+  white-space: nowrap;
+  font-size: .85em;
+  color: #606873;
+}
+.about-page .experience-card p {
+  margin: 0 0 4px;
+  text-indent: 0;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+.about-page .experience-card__degree {
+  font-style: italic;
+}
+.about-easter-egg {
+  text-align: center;
+  margin-top: 1.5em;
+}
+.about-easter-egg img {
+  width: 250px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.about-page .about-easter-egg p {
+  margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+  .about-interests > ul { grid-template-columns: minmax(0, 1fr); }
+  .about-page .experience-card {
+    grid-template-columns: 64px minmax(0, 1fr);
+    gap: 12px;
+    padding: 13px;
+  }
+  .about-page .experience-card__logo { width: 64px; height: 64px; }
+  .about-page .experience-card__header { display: block; }
+  .about-page .experience-card__title { font-size: 18px; }
+  .about-page .experience-card__date { display: block; margin-top: 4px; white-space: normal; }
+}

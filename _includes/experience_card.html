@@ -1,23 +1,21 @@
-<div style="display: flex; align-items: flex-start; width: 100%; padding-left: 0px; margin-top: 15px;">
+<div class="experience-card">
     <!-- 学校的 logo -->
-    <img src="{{ include.logo }}" alt="Logo" style="height: 90px; margin-right: -10px; margin-top: {{ include.logo_margin | default: '0' }}px;">
+    <img class="experience-card__logo" src="{{ include.logo | relative_url }}" alt="{{ include.title }} logo">
     
     <!-- 文字内容 -->
-    <div style="flex-grow: 1;">
-      <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+    <div class="experience-card__body">
+      <div class="experience-card__header">
         <!-- 包裹标题的容器 -->
-        <div style="flex-grow: 1; padding-right: 12px; text-indent: 1.5em;">
-          <span style="font-family: 'ARIALBD'; font-size: 19px; display: inline-block; text-indent: 0em; line-height: 1.4; word-break: break-word; white-space: normal;">
+          <span class="experience-card__title">
             {{ include.title }}
           </span>
-        </div>
-        <!-- 日期始终位于第一行右侧 -->
-        <span style="white-space: nowrap;">{{ include.date }}</span>
+        <!-- 小屏幕时日期放在标题下方。 -->
+        <span class="experience-card__date">{{ include.date }}</span>
       </div>
       
       <!-- Degree -->
       {% if include.degree %}
-        <p style="margin: 0; font-style: italic; text-indent: 1.5em;">{{ include.degree }}</p>
+        <p class="experience-card__degree">{{ include.degree }}</p>
       {% endif %}
       
       <!-- Fields (e.g., Advisor, Program) -->
@@ -28,12 +26,12 @@
           {% assign field_name = parts[0] | strip %}
           {% assign field_content = parts[1] | strip %}
           
-          <p style="margin: 0;">{{ field_name }}:
+          <p>{{ field_name }}:
             {% assign content_entries = field_content | split: ',' %}
             {% for item in content_entries %}
               {% assign link_parts = item | split: '|' %}
               {% if link_parts.size == 2 %}
-                <a href="https://{{ link_parts[0] | strip }}" target="_blank">{{ link_parts[1] | strip }}</a>
+                <a href="https://{{ link_parts[0] | strip }}" target="_blank" rel="noopener noreferrer">{{ link_parts[1] | strip }}</a>
               {% else %}
                 {{ item | strip }}
               {% endif %}

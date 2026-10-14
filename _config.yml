@@ -50,6 +50,8 @@ google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
 links:
   - title: About
     url: /about
+  - title: Research
+    url: /research
   - title: Publications
     url: /publications
   - title: Honors
@@ -87,13 +89,41 @@ kramdown:
   #   coderay_css: class
 
 
-# disqus settings:
-disqus:
-  shortname: lancecai
 
 include:
   - ".htaccess"
   - "_data"
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "minimal-mistakes.sublime-project", "minimal-mistakes.sublime-workspace"]
+exclude:
+  - "lib"
+  - "config.rb"
+  - "Capfile"
+  - "config"
+  - "log"
+  - "Rakefile"
+  - "Rakefile.rb"
+  - "tmp"
+  - "less"
+  - "minimal-mistakes.sublime-project"
+  - "minimal-mistakes.sublime-workspace"
+  # 保留工程文件，但不把开发服务器、测试和文档发布到网页。
+  - "js/agn-triple/scripts"
+  - "js/agn-triple/tests"
+  - "js/waveform-modeling/tests"
+  - "js/modified-gravity/tests"
+  - "js/gw-backgrounds/tests"
+  - "js/*/package.json"
+  - "js/*/README.md"
+  - "assets/README.md"
+  # 不发布编译中间文件；照片、字体、CV PDF 和浏览器运行模块不排除。
+  - "texput.log"
+  - "file/CV/*.aux"
+  - "file/CV/*.log"
+  - "file/CV/*.bcf"
+  - "file/CV/*.blg"
+  - "file/CV/*.bbl"
+  - "file/CV/*.out"
+  - "file/CV/*.toc"
+  - "file/CV/*.run.xml"
+  - "**/desktop.ini"
 
 # Latest update in 2023/12/10 by Hanlin Cai.

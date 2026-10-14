@@ -1,0 +1,25 @@
+# 本地预览和依赖：GitHub Desktop 同样会遵守这些忽略规则。
+/_site/
+/.jekyll-cache/
+/.jekyll-metadata
+/.sass-cache/
+**/node_modules/
+
+# 可再生成的编译中间文件；CV 的源文件、字体和最终 PDF 保留。
+/texput.log
+/file/CV/*.aux
+/file/CV/*.log
+/file/CV/*.bcf
+/file/CV/*.blg
+/file/CV/*.bbl
+/file/CV/*.out
+/file/CV/*.toc
+/file/CV/*.run.xml
+/file/CV/*.synctex.gz
+/file/CV/*.fdb_latexmk
+/file/CV/*.fls
+
+# Windows/macOS 目录元数据不参与网页功能。
+[Dd]esktop.ini
+Thumbs.db
+.DS_Store

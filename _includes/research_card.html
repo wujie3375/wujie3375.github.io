@@ -1,0 +1,102 @@
+<!-- Reusable research theme: text from research.md, paper aliases from research.yml. -->
+{% assign research_card_theme = site.data.research | where: 'id', include.id | first %}
+{% assign research_card_papers = site.data.papers | sort: 'sortable_date' | reverse %}
+{% assign research_card_count = 0 %}
+{% for paper in research_card_papers %}
+  {% assign matches_theme = false %}
+  {% for paper_alias in paper.aliases %}
+    {% if research_card_theme.paper_aliases contains paper_alias %}{% assign matches_theme = true %}{% endif %}
+  {% endfor %}
+  {% if matches_theme %}
+    {% assign research_card_count = research_card_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+<section class="research-theme" id="{{ include.id }}" aria-labelledby="{{ include.id }}-title">
+  <div class="research-theme-heading">
+    <h2 id="{{ include.id }}-title">{{ include.title | escape }}</h2>
+  </div>
+  {% if include.question %}<p class="research-question">{{ include.question | escape }}</p>{% endif %}
+  <div class="research-description">{{ include.description | strip | markdownify }}</div>
+
+  {% unless include.animation == false %}
+    {% if include.animation == 'moving-sources' %}
+      <figure class="research-orbit-animation" aria-label="A hierarchical triple: a stellar-mass binary black hole orbiting a supermassive black hole.">
+        <canvas class="research-orbit-canvas" id="moving-sources-canvas">
+          Two stellar-mass black holes orbit their shared center of mass, while the binary orbits a supermassive black hole.
+        </canvas>
+        <canvas class="research-waveform-overlay" id="moving-sources-strain" aria-label="One early-inspiral GW waveform, Doppler-modulated by the existing outer orbit; modulation is visually enhanced."></canvas>
+        <div class="research-animation-labels" aria-hidden="true">
+          <div>Hierarchical Triple</div>
+        </div>
+        <p class="research-animation-error" hidden>Animation unavailable. A browser with WebGL2 is required.</p>
+      </figure>
+    {% elsif include.animation == 'waveform-modeling' %}
+      <figure class="research-orbit-animation research-waveform-animation" aria-label="Unequal-mass binary black-hole coalescence synchronized with a gravitational-wave chirp.">
+        <canvas class="research-orbit-canvas" id="waveform-modeling-source">An unequal-mass black-hole binary inspirals, merges, and settles into a final black hole.</canvas>
+        <canvas class="research-waveform-overlay" id="waveform-modeling-strain" aria-label="One gravitational-wave strain signal, revealed from left to right through inspiral, merger, and ringdown."></canvas>
+        <div class="research-animation-labels" aria-hidden="true"><div>Compact Binary Coalescence</div></div>
+        <p class="research-animation-error" hidden>Animation unavailable. A browser with WebGL2 is required.</p>
+      </figure>
+    {% elsif include.animation == 'modified-gravity' %}
+      <figure class="research-orbit-animation" aria-label="Six polarization bases driven by a GR monochromatic signal, with a half-frequency modified comparison.">
+        <canvas class="research-orbit-canvas" id="modified-gravity-canvas" aria-label="Six polarization modes in tensor, vector and scalar columns, with coordinate axes and GR plus half-frequency-component signals.">
+          Six possible gravitational-wave polarization bases and an illustrative GR plus half-frequency-component comparison.
+        </canvas>
+        <div class="research-animation-labels" aria-hidden="true"><div>Six Polarization Modes</div></div>
+        <p class="research-animation-error" hidden>Animation unavailable. Canvas 2D support is required.</p>
+      </figure>
+    {% elsif include.animation == 'gw-backgrounds' %}
+      <figure class="research-orbit-animation research-waveform-animation" aria-label="Galactic double white dwarf binaries form a confusion foreground.">
+        <canvas class="research-orbit-canvas" id="gw-backgrounds-source">Sixteen double white dwarf systems orbit around fixed barycenters within a stylized Galactic disk.</canvas>
+        <canvas class="research-waveform-overlay" id="gw-backgrounds-strain" aria-label="Forty-eight individual monochromatic components and their DWD confusion sum."></canvas>
+        <div class="research-animation-labels" aria-hidden="true"><div>Confusion Foreground</div></div>
+        <p class="research-animation-error" hidden>Animation unavailable. A browser with WebGL2 is required.</p>
+      </figure>
+    {% else %}
+      <!-- Reserved for a future animation. Load its script from /js. -->
+      <div class="research-animation-slot" data-research-animation="{{ include.id }}" aria-hidden="true"></div>
+    {% endif %}
+  {% endunless %}
+
+  <details class="research-papers">
+    <summary>Related papers <span class="research-count">({{ research_card_count }})</span></summary>
+    <ul class="research-paper-list" aria-label="Papers on {{ include.title | escape }}">
+      {% for paper in research_card_papers %}
+        {% assign matches_theme = false %}
+        {% for paper_alias in paper.aliases %}
+          {% if research_card_theme.paper_aliases contains paper_alias %}{% assign matches_theme = true %}{% endif %}
+        {% endfor %}
+        {% if matches_theme %}
+          {% capture research_role %}{% include paper_role.html authors=paper.authors author_order=paper.author_order %}{% endcapture %}
+          {% assign research_role = research_role | strip %}
+          <li class="research-paper" data-author-role="{{ research_role }}">
+            <div class="research-paper-meta">
+              <span>{{ paper.year }}</span>
+              {% include paper_role.html code=research_role format="tags" %}
+            </div>
+            <h3>{{ paper.title | escape | replace: '$g$', '<i>g</i>' }}</h3>
+            <div class="research-paper-details">
+              {% if paper.journal and paper.journal != false %}
+                {% if paper.volume and paper.volume != false and paper.article_number and paper.article_number != false %}
+                  {% if paper.journal_link and paper.journal_link != false %}
+                    <a href="{{ paper.journal_link | escape }}"><em>{{ paper.journal | escape }}</em> <strong>{{ paper.volume }}</strong>, {{ paper.article_number }}</a>
+                  {% else %}
+                    <em>{{ paper.journal | escape }}</em> <strong>{{ paper.volume }}</strong>, {{ paper.article_number }}
+                  {% endif %}
+                {% else %}
+                  <em>{{ paper.journal | escape }}</em> accepted
+                {% endif %}
+                {% if paper.arxiv and paper.arxiv != false %} | {% endif %}
+              {% endif %}
+              {% if paper.arxiv and paper.arxiv != false %}
+                <a href="https://arxiv.org/abs/{{ paper.arxiv }}"><em>arXiv</em>:{{ paper.arxiv }}</a>
+                {% if paper.journal == false %} (under review){% endif %}
+              {% endif %}
+            </div>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </details>
+</section>

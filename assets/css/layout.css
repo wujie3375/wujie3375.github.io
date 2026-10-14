@@ -1,0 +1,289 @@
+/*
+ * 全站正文页面的共享布局：About、Research、Publications、Honors 等。
+ * 优先调整下面的变量，不必逐个修改页面模板。
+ * px 为固定像素；em 随当前字号变化；rem 随根字号变化；vw/vh 为窗口宽/高的百分比。
+ * 整个布局框架自动居中，因此改变某一栏的宽度或间距也会影响其他栏的位置。
+ */
+:root {
+  /* 中间正文目标宽度：主要调整这里。窄窗口会自动缩小。 */
+  --page-text-width: 720px;
+  /* 两栏布局总宽度：左侧信息栏 + 栏间距 + 正文，通常保留自动计算。 */
+  --page-shell-width: calc(var(--profile-column-width) + var(--page-column-gap) + var(--page-text-width));
+  /* 页面与窗口左右边缘的最小留白：随窗口变化，范围为 40～48px。 */
+  --page-gutter: clamp(40px, 3vw, 48px);
+  /* 左侧个人信息栏宽度：照片、姓名、联系方式所在区域。 */
+  --profile-column-width: 220px;
+  /* 左侧信息栏与中间正文之间的水平空白。 */
+  --page-column-gap: 70px;
+  /* 右侧 Contents 目录框的总宽度，包含框内边距和边框。 */
+  --contents-column-width: 280px;
+  /* 正文与右侧目录之间的水平空白；增大可拉开目录与正文。 */
+  --contents-column-gap: 100px;
+  /* 目录在框架右边缘基础上额外右移；数值越大越靠右，但至少离窗口边缘20px。 */
+  --contents-right-shift: 36px;
+  /* 正文相对屏幕中心的轻微右偏；导航、左栏和页脚跟随，保持左边缘对齐。 */
+  --page-center-bias: 16px;
+  /* 整体水平偏移：宽屏三栏时自动补偿左右侧栏的不等宽，使正文接近屏幕中心。 */
+  --page-center-shift: 0px;
+  /* 黑洞、地球和火箭统一向屏幕中心靠拢的距离；增大时左右装饰都会更靠内。 */
+  --space-icon-inward-shift: 90px;
+}
+
+/* 正文布局框架：普通内容页面用 #main，文章列表模板用 .content-layout。 */
+#main,
+.content-layout {
+  display: grid;
+  grid-template-columns: var(--profile-column-width) minmax(0, 1fr);
+  column-gap: var(--page-column-gap);
+  box-sizing: border-box;
+  width: calc(100% - var(--page-gutter) * 2);
+  max-width: var(--page-shell-width);
+  margin: .5em auto 0; /* 上方留白 / 水平自动居中 / 下方留白。不要换成固定左右margin，否则会与导航错位。 */
+  clear: both;
+}
+
+/* 清除旧模板用于浮动布局的占位元素，避免影响网格位置。 */
+#main::before,
+#main::after {
+  display: none;
+}
+
+/* 左侧信息栏：位置由网格决定，margin 可用于局部微调。 */
+#main > .article-author-top,
+.content-layout > .article-author-top {
+  display: block;
+  float: none;
+  width: auto;
+  min-width: 0;
+  margin: 0;
+}
+
+/* 中间正文：实际宽度由上方 --page-text-width 和窗口可用空间共同决定。 */
+#main > article,
+.content-layout > #index {
+  display: block;
+  float: none;
+  width: auto;
+  min-width: 0;
+  margin: 0 0 2em; /* 上 / 左右 / 下；末值控制正文与下方区域的空白。 */
+}
+
+/* 照片按侧栏宽度缩放。
+ * 照片自身的 width="220" 在 _includes/author-bio.html；对齐和间距在 profile.css。
+ */
+.article-author-top img.bio-photo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 顶部导航：站名对齐左侧信息栏，菜单对齐正文起点。
+ * 上下内边距继承 main.css 的 padding:2em 0 3em；可在这里增加 padding 属性覆盖。
+ */
+.navigation-wrapper {
+  display: grid;
+  grid-template-columns: var(--profile-column-width) minmax(0, 1fr);
+  gap: var(--page-column-gap);
+  box-sizing: border-box;
+  width: calc(100% - var(--page-gutter) * 2);
+  max-width: var(--page-shell-width);
+  margin: 0 auto;
+}
+
+/* 清除旧模板的导航宽度、浮动和外边距，统一使用上方网格定位。 */
+.navigation-wrapper .site-name,
+.navigation-wrapper .top-navigation {
+  display: block;
+  float: none;
+  width: auto;
+  min-width: 0;
+  margin: 0;
+}
+
+.navigation-wrapper .top-navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em 25px; /* 菜单换行后的行间距 / 各菜单项之间的水平间距。 */
+}
+
+.navigation-wrapper .top-navigation li {
+  margin: 0;
+}
+
+/* 页脚文字区域：与正文左边缘对齐；页脚背景仍覆盖整个窗口。 */
+.footer-wrap {
+  position: relative;
+  box-sizing: border-box;
+  /* 两个装饰图的尺寸；地球中心与 right:10rem 的火箭中心对齐，左侧采用镜像位置。 */
+  --footer-icon-size: 96px;
+  --footer-blackhole-size: 144px; /* 黑洞图案本身较扁，单独放大。 */
+  --footer-earth-size: 72px; /* 地球图案较饱满，单独缩小。 */
+  --footer-icon-center-inset: calc(10rem + 23px + var(--space-icon-inward-shift));
+  min-height: calc(var(--footer-icon-size) + 32px);
+}
+
+.footer-space-icon {
+  position: absolute;
+  top: 50%;
+  width: var(--footer-icon-size);
+  height: var(--footer-icon-size);
+  max-width: none;
+  object-fit: contain;
+  transform: translateY(-50%);
+  pointer-events: none;
+  user-select: none;
+}
+
+.footer-space-icon--blackhole {
+  --footer-icon-size: var(--footer-blackhole-size);
+  left: calc(var(--footer-icon-center-inset) - var(--footer-icon-size) / 2);
+}
+
+.footer-space-icon--earth {
+  --footer-icon-size: var(--footer-earth-size);
+  right: calc(var(--footer-icon-center-inset) - var(--footer-icon-size) / 2);
+}
+
+/* 覆盖 rocket.html 的默认 right:10rem；与地球共用靠内距离，保持中心竖直对齐。 */
+body #rocket {
+  right: calc(10rem + var(--space-icon-inward-shift));
+}
+
+/* 与火箭使用同一断点：1400px 及以下不显示装饰图，保留原有小屏页脚高度。 */
+@media screen and (max-width: 1400px) {
+  .footer-wrap {
+    min-height: 0;
+  }
+
+  .footer-space-icon {
+    display: none;
+  }
+}
+
+.footer-wrap footer {
+  display: block;
+  float: none;
+  position: static; /* 装饰图必须以外层 .footer-wrap 定位，不能被文字容器截获定位基准。 */
+  box-sizing: border-box;
+  width: calc(100% - var(--page-gutter) * 2);
+  max-width: var(--page-shell-width);
+  margin: 0 auto;
+  padding-left: calc(var(--profile-column-width) + var(--page-column-gap)); /* 跳过左侧信息栏。 */
+}
+
+/* 有左栏的窗口：两栏模式也向屏幕中心补偿，但左侧至少保留20px。
+ * 较窄窗口不能同时做到固定正文宽度、侧栏完整和精确居中，优先避免溢出。
+ */
+@media screen and (min-width: 900px) {
+  :root {
+    --page-center-shift: calc(max(
+      calc((0px - var(--profile-column-width) - var(--page-column-gap)) / 2),
+      calc(20px - max(var(--page-gutter), (100% - var(--page-shell-width)) / 2))
+    ) + var(--page-center-bias));
+  }
+
+  .navigation-wrapper,
+  #main,
+  .content-layout {
+    position: relative;
+    left: var(--page-center-shift);
+  }
+
+  /* 版权文字使用外边距跟随正文水平偏移，不创建新的绝对定位容器。 */
+  .footer-wrap footer {
+    margin-left: calc(max(var(--page-gutter), (100% - var(--page-shell-width)) / 2) + var(--page-center-shift));
+    margin-right: 0;
+  }
+}
+
+/* 宽屏三栏模式：1401px 及以上显示右侧目录。
+ * 隐藏目录的对应断点在 _includes/toc.html（max-width:1400px），修改时两处要同步。
+ */
+@media screen and (min-width: 1401px) {
+  .page-with-toc {
+    /* 三栏总宽度：在两栏布局基础上加入目录宽度和目录间距。 */
+    --page-shell-width: calc(var(--profile-column-width) + var(--page-column-gap) + var(--page-text-width) + var(--contents-column-width) + var(--contents-column-gap));
+    /* 右侧占位比左侧宽多少，就向右补偿其一半；窗口较窄时限制偏移，保留20px边距。 */
+    --page-center-shift: min(
+      calc((var(--contents-column-width) + var(--contents-column-gap) - var(--profile-column-width) - var(--page-column-gap)) / 2 + var(--page-center-bias)),
+      max(0px, calc(max(var(--page-gutter), (100% - var(--page-shell-width)) / 2) - 20px))
+    );
+  }
+
+  .page-with-toc #main,
+  .page-with-toc .footer-wrap footer {
+    padding-right: calc(var(--contents-column-width) + var(--contents-column-gap)); /* 为目录预留右侧空间。 */
+  }
+
+  .page-with-toc #toc {
+    /* 目录的纵向位置继承 _includes/toc.html 的 top:9rem。
+     * 可在此增加 top:8rem 等值覆盖；数值越大，目录越靠下。
+     * 框内边距、背景和边框也在 toc.html，可在此按需覆盖。
+     */
+    display: block;
+    box-sizing: border-box;
+    width: var(--contents-column-width);
+    /* 目录先对齐同一居中框架，再按 --contents-right-shift 右移。
+     * 最小窗口边距20px，避免较窄的桌面窗口将目录挤出屏幕。
+     */
+    right: max(20px, calc(max(var(--page-gutter), (100% - var(--page-shell-width)) / 2) - var(--page-center-shift) - var(--contents-right-shift)));
+    max-height: calc(100vh - 10rem); /* 目录最大高度；内容超出后在框内滚动。 */
+  }
+}
+
+/* 899px 及以下：隐藏左侧信息栏，正文保留目标宽度，导航改为上下排列。 */
+@media screen and (max-width: 899px) {
+  :root {
+    --page-shell-width: var(--page-text-width);
+  }
+
+  #main,
+  .content-layout {
+    display: block;
+  }
+
+  #main > .article-author-top,
+  .content-layout > .article-author-top {
+    display: none;
+  }
+
+  .navigation-wrapper {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1em; /* 站名与下方菜单之间的纵向距离。 */
+  }
+
+  .footer-wrap footer {
+    padding-left: 0;
+  }
+}
+
+/* 599px 及以下：手机正文使用可用宽度，左右仍保留 --page-gutter。 */
+@media screen and (max-width: 599px) {
+  :root {
+    --page-shell-width: 100%;
+  }
+}
+
+/* 打印模式：正文铺满纸面可用宽度，隐藏左右侧栏。 */
+@media print {
+  .footer-space-icon {
+    display: none;
+  }
+
+  #main,
+  .content-layout {
+    display: block;
+    width: 100%;
+    max-width: none;
+    padding: 0;
+  }
+
+  #main > .article-author-top,
+  .content-layout > .article-author-top,
+  .page-with-toc #toc {
+    display: none;
+  }
+
+  .footer-wrap footer {
+    padding: 0;
+  }
+}

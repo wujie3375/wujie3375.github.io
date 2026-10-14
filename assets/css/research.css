@@ -1,0 +1,213 @@
+/* Research-only styles. Themes always form one vertical column. */
+.research-page {
+  --research-accent: #286b93;
+  --research-line: rgba(128, 128, 128, 0.25);
+  line-height: 1.65;
+}
+
+.research-page p,
+.research-page p + p {
+  margin: 0 0 1em;
+  text-indent: 0;
+}
+
+.research-page .research-intro {
+  margin-bottom: 2.25rem;
+}
+
+.research-page .research-intro h1 {
+  margin-bottom: 1rem;
+}
+
+.research-page .research-themes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.research-page .research-theme {
+  padding: 1.5rem;
+  border: 1px solid var(--research-line);
+  border-radius: 20px;
+  background: rgba(128, 128, 128, 0.035);
+  scroll-margin-top: 6rem;
+}
+
+.research-page .research-theme-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.research-page .research-theme-heading h2 {
+  flex: 1 1 280px;
+  margin: 0;
+  font-size: 1.65rem;
+  line-height: 1.25;
+}
+
+.research-page .research-count {
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0.75;
+}
+
+.research-page .research-question {
+  color: var(--research-accent);
+  font-weight: 600;
+}
+
+.research-page .research-animation-slot {
+  min-height: 180px;
+  margin: 1.35rem 0;
+  border: 1px dashed var(--research-line);
+  border-radius: 14px;
+  background: rgba(128, 128, 128, 0.025);
+}
+
+.research-page .research-orbit-animation {
+  position: relative;
+  /* 两个嵌入动画统一为横向 4:3；高度随页面宽度变化，不裁切画面。 */
+  aspect-ratio: 4 / 3;
+  margin: 1.35rem 0;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #0c1017;
+  color: #e7edf5;
+}
+
+.research-page .research-orbit-canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* 波形透明层只负责下方的一条信号，尺寸与上方 WebGL 画布完全一致。 */
+.research-page .research-waveform-overlay {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.research-page .research-animation-labels {
+  position: absolute;
+  left: 18px;
+  top: 16px;
+  pointer-events: none;
+  font: 16px/1.6 Arial, sans-serif;
+  color: #c8c1b7;
+  text-shadow: 0 1px 4px #000;
+}
+.research-page .research-animation-labels small {
+  display: block;
+  font-size: 10px;
+  color: #a19a91;
+}
+.research-page .research-animation-error {
+  position: absolute;
+  left: 18px;
+  bottom: 14px;
+  font-size: 12px;
+}
+
+.research-page .research-paper-list {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.research-page .research-paper {
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--research-line);
+}
+
+.research-page .research-paper:last-child {
+  padding-bottom: 0;
+}
+
+.research-page .research-paper-meta {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.85rem;
+  font-size: 0.85rem;
+}
+
+.research-page .research-paper-details {
+  font-size: 0.85rem;
+  line-height: 1.65;
+}
+
+.research-page .research-papers summary {
+  display: list-item;
+  padding: 0.7rem 0;
+  color: var(--research-accent);
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  cursor: pointer;
+  list-style-position: inside;
+}
+
+.research-page .research-papers summary:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.research-page .research-papers summary:focus-visible {
+  outline: 2px solid var(--research-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.research-page .research-paper-meta {
+  margin-bottom: 0.4rem;
+  font-family: Arial, sans-serif;
+}
+
+.research-page .research-paper h3 {
+  margin: 0 0 0.5rem;
+  font-family: inherit;
+  font-size: 1.12rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.research-page a,
+.research-page a:visited {
+  color: var(--research-accent);
+}
+
+.research-page a:hover {
+  text-decoration: underline;
+}
+
+.research-page a:focus-visible {
+  outline: 2px solid var(--research-accent);
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .research-page .research-theme {
+    padding: 1rem;
+    border-radius: 16px;
+  }
+
+  .research-page .research-theme-heading h2 {
+    font-size: 1.35rem;
+    flex-basis: 100%;
+  }
+
+  .research-page .research-animation-slot {
+    min-height: 140px;
+  }
+}
