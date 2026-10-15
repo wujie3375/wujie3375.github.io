@@ -119,9 +119,16 @@ description: Research publications by Jie Wu, listed in reverse chronological or
 
 
 
-<div class="checkbox-container">
-  <input type="checkbox" id="show-all" onchange="toggleDisplay()">
-  <label for="show-all">&nbsp;Show first-author papers only</label>
+<p class="publication-filter-hint" id="publication-filter-hint">Choose which publications to display.</p>
+<div class="publication-filters" role="radiogroup" aria-label="Filter publications" aria-describedby="publication-filter-hint">
+  <label class="publication-filter">
+    <input type="radio" name="publication-view" value="all" checked aria-controls="all-articles">
+    <span>All research papers</span>
+  </label>
+  <label class="publication-filter">
+    <input type="radio" name="publication-view" value="first" aria-controls="all-articles">
+    <span>First-author papers</span>
+  </label>
 </div>
 
 <p style="text-indent: 0;">Publications are listed in reverse chronological order.</p>
@@ -166,47 +173,6 @@ description: Research publications by Jie Wu, listed in reverse chronological or
   {% endfor %}
 </div>
 
-<!-- 默认隐藏“我的文章”：排序为 1，或对应作者名带 *（通讯）/†（共一）。按钮名称保持原样。 -->
-<div id="first-author-only" style="display: none;">
-  {% assign filtered_publications = '' | split: ',' %}
-  {% for pub in publications %}
-    {% capture pub_role %}{% include paper_role.html authors=pub.authors author_order=pub.author_order %}{% endcapture %}
-    {% assign pub_role = pub_role | strip %}
-    {% unless pub_role == 'co-author' %}
-      {% assign selected_publication = publications | slice: forloop.index0, 1 %}
-      {% assign filtered_publications = filtered_publications | concat: selected_publication %}
-    {% endunless %}
-  {% endfor %}
-  {% assign total_number = filtered_publications.size %}
-  {% assign filtered_groups = filtered_publications | group_by_exp: "pub", "pub.sortable_date | split: '-' | first" | sort: "name" | reverse %}
-  {% for group in filtered_groups %}
-    {% assign filtered_group_items = group.items %}
-    {% if filtered_group_items.size > 0 %}
-      <section class="publication-year">
-      <h2 class="publication-year__heading" id="first-author-{{ group.name }}">{{ group.name }}</h2>
-      {% for pub in filtered_group_items %}
-      {% capture unique_id %}first-{{ group.name }}-{{ forloop.index }}{% endcapture %}
-      {% include paper_card.html 
-        unique_id=unique_id
-        title=pub.title 
-        subtitle=pub.subtitle 
-        authors=pub.authors 
-        date=pub.date 
-        journal=pub.journal 
-        journal_link=pub.journal_link 
-        volume=pub.volume 
-        article_number=pub.article_number 
-        arxiv=pub.arxiv 
-        aliases=pub.aliases
-        author_order=pub.author_order
-        etal=pub.etal 
-        number=total_number %}
-      {% assign total_number = total_number | plus: -1 %}
-    {% endfor %}
-      </section>
-    {% endif %}
-  {% endfor %}
-</div>
 
 {% assign publication_controls = site.static_files | where: 'path', '/assets/js/publications.js' | first %}
 <script src="{{ '/assets/js/publications.js' | relative_url }}?v={{ publication_controls.modified_time | date: '%s' }}" defer></script>

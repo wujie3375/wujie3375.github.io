@@ -9,22 +9,32 @@ function toggleAuthors(uniqueId) {
   more.setAttribute('aria-expanded', expanding ? 'true' : 'false');
   if (!expanding) more.focus();
 }
-// 同步切换函数
-function toggleDisplay() {
-  const showFirst = document.getElementById("show-all").checked;
-  
-  // 切换文章列表
-  document.getElementById("first-author-only").style.display = showFirst ? "block" : "none";
-  document.getElementById("all-articles").style.display = showFirst ? "none" : "block";
+// 原生 radio 保证两项互斥；保留方框勾选外观与共享身份规则。
+function filterPublications() {
+  const controls = document.querySelectorAll('.publication-filters input[name="publication-view"]');
+  const list = document.getElementById('all-articles');
+  if (!controls.length || !list) return;
+  const showFirst = Array.from(controls).some(input => input.checked && input.value === 'first');
+  const cards = Array.from(list.querySelectorAll('.paper-card'));
+  cards.forEach(card => {
+    // 与原 First author 筛选一致，保留共一/通讯身份的既有归类逻辑。
+    card.hidden = showFirst && card.dataset.authorRole === 'co-author';
+  });
+  const visibleCards = cards.filter(card => !card.hidden);
+  visibleCards.forEach((card, index) => {
+    const number = card.querySelector('.paper-card__number');
+    if (number) number.textContent = '#' + (visibleCards.length - index);
+  });
+  list.querySelectorAll('.publication-year').forEach(section => {
+    section.hidden = !Array.from(section.querySelectorAll('.paper-card')).some(card => !card.hidden);
+  });
   document.dispatchEvent(new Event('toc:refresh'));
-  
-  // 切换统计图表
-  const firstChart = document.getElementById("first-author-chart");
-  const allChart = document.getElementById("all-chart");
-  if (firstChart && allChart) {
-    firstChart.style.display = showFirst ? "block" : "none";
-    allChart.style.display = showFirst ? "none" : "block";
-  }
 }
-// 刷新页面后同步浏览器恢复的复选框状态与目录。
-window.addEventListener('DOMContentLoaded', toggleDisplay);
+window.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.publication-filters input').forEach(input => {
+    input.addEventListener('change', filterPublications);
+  });
+  filterPublications();
+});
+// 包括浏览器后退恢复的单选状态。
+window.addEventListener('pageshow', filterPublications);

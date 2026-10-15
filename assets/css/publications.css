@@ -64,22 +64,77 @@ tr:last-child td {
 }
 
 
-.checkbox-container {
-  font-size: 19px;  
-  display: flex; 
-  align-items: center; 
+.publications-page .publication-filter-hint { margin: 0 0 .5rem; color: #65717e; font-size: 14px; line-height: 1.5; text-indent: 0; }
+.publication-filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 1rem; }
+.publication-filter {
+  position: relative;
+  display: inline-flex;
+  width: 240px;
+  max-width: 100%;
+  margin: 0;
+  cursor: pointer;
 }
-
-#show-all {
-  width: 18px;      
-  height: 18px;     
-  margin: 0 6px 0 0; 
-  accent-color: #36a2eb; 
+/* 保留原生勾选与键盘操作，用清晰的方框和白色勾标展示状态。 */
+.publication-filter input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }
-
-#show-all + label {
-  vertical-align: middle; 
+.publication-filter > span {
+  position: relative;
+  display: inline-flex;
+  box-sizing: border-box;
+  width: 100%;
+  align-items: center;
+  gap: 11px;
+  padding: 10px 18px;
+  border: 1px solid #d4dce3;
+  border-radius: 999px;
+  background: transparent;
+  color: #65717e;
+  font: 400 17px/1.5 Arial, sans-serif;
+  transition: color .15s, background .15s, border-color .15s;
 }
+.publication-filter > span::before {
+  content: '';
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  border: 1.5px solid #9baab7;
+  border-radius: 4px;
+  background: #fff;
+}
+.publication-filter > span::after {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  width: 4px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: translateY(-65%) rotate(45deg);
+  opacity: 0;
+}
+.publication-filter input:checked + span {
+  color: #245779;
+  background: linear-gradient(135deg, #e5f0f8, #f2f7fb);
+  border-color: #b7cfdf;
+}
+.publication-filter input:checked + span::before { background: #34769f; border-color: #34769f; }
+.publication-filter input:checked + span::after { opacity: 1; }
+.publication-filter:hover > span { background: #f2f5f8; border-color: #9fb8ca; }
+.publication-filter:hover input:checked + span { background: linear-gradient(135deg, #d9eaf6, #edf5fa); border-color: #8fb3cc; }
+.publication-filter input:focus-visible + span { outline: 2px solid #286b93; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { .publication-filter > span { transition: none; } }
+.publications-page [hidden] { display: none !important; }
 .publications-page {
   --publication-accent: #286b93;
   --publication-line: rgba(128, 128, 128, .25);
