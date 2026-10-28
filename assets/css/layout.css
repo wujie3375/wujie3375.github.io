@@ -175,10 +175,6 @@ body #rocket {
 /* 版权文字与官方徽章并排，空间不足时自然换行；窄屏也保留徽章。 */
 .footer-wrap .footer-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 24px; }
 .footer-wrap .footer-meta h6 { flex: 1 1 400px; min-width: 0; margin: 0; }
-.footer-wrap .simple-analytics-badge-container { flex: 0 0 auto; }
-.footer-wrap .simple-analytics-badge { display: inline-block; line-height: 0; }
-.footer-wrap .simple-analytics-badge img { display: block; width: 126px; height: 30px; max-width: 100%; }
-.footer-wrap .simple-analytics-badge:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
 
 /* 有左栏的窗口：两栏模式也向屏幕中心补偿，但左侧至少保留20px。
  * 较窄窗口不能同时做到固定正文宽度、侧栏完整和精确居中，优先避免溢出。
