@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  {% include umami_analytics.html %}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jie Wu</title>
   <link rel="icon" href="/images/fav.ico" type="image/x-icon">
@@ -105,6 +106,9 @@
       outline: 1px solid rgba(255, 255, 255, 0.95);
       outline-offset: 2px;
     }
+    .footer-text .simple-analytics-badge-container { margin-top: 10px; }
+    .footer-text .simple-analytics-badge { display: inline-block; line-height: 0; }
+    .footer-text .simple-analytics-badge img { display: block; width: 147px; height: 35px; max-width: 100%; }
     .waveform-image {
       width: 50%;
       margin-bottom: -10px;
@@ -129,6 +133,7 @@
     &copy; 2024-{{ site.time | date: '%Y' }} {{ site.owner.name }}.
     <a href="https://pages.github.com/" target="_blank">Published with GitHub Pages.</a>
     <a href="https://www.ligo.caltech.edu/image/ligo20170601a" target="_blank">Image source: LIGO Laboratory.</a>
+    {% include simple_analytics_badge.html %}
   </div>
 </body>
 </html>

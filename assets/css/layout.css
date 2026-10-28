@@ -118,7 +118,8 @@
   --footer-blackhole-size: 144px; /* 黑洞图案本身较扁，单独放大。 */
   --footer-earth-size: 72px; /* 地球图案较饱满，单独缩小。 */
   --footer-icon-center-inset: calc(10rem + 23px + var(--space-icon-inward-shift));
-  min-height: calc(var(--footer-icon-size) + 32px);
+  /* 确保最大装饰图完全处在黑色背景内，避免底部溢出露出白边。 */
+  min-height: calc(max(var(--footer-blackhole-size), var(--footer-earth-size)) + 16px);
 }
 
 .footer-space-icon {
@@ -146,6 +147,7 @@
 /* 覆盖 rocket.html 的默认 right:10rem；与地球共用靠内距离，保持中心竖直对齐。 */
 body #rocket {
   right: calc(10rem + var(--space-icon-inward-shift));
+  bottom: max(8.8rem, var(--rocket-footer-clearance, 0px));
 }
 
 /* 与火箭使用同一断点：1400px 及以下不显示装饰图，保留原有小屏页脚高度。 */
@@ -169,6 +171,14 @@ body #rocket {
   margin: 0 auto;
   padding-left: calc(var(--profile-column-width) + var(--page-column-gap)); /* 跳过左侧信息栏。 */
 }
+
+/* 版权文字与官方徽章并排，空间不足时自然换行；窄屏也保留徽章。 */
+.footer-wrap .footer-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 24px; }
+.footer-wrap .footer-meta h6 { flex: 1 1 400px; min-width: 0; margin: 0; }
+.footer-wrap .simple-analytics-badge-container { flex: 0 0 auto; }
+.footer-wrap .simple-analytics-badge { display: inline-block; line-height: 0; }
+.footer-wrap .simple-analytics-badge img { display: block; width: 126px; height: 30px; max-width: 100%; }
+.footer-wrap .simple-analytics-badge:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
 
 /* 有左栏的窗口：两栏模式也向屏幕中心补偿，但左侧至少保留20px。
  * 较窄窗口不能同时做到固定正文宽度、侧栏完整和精确居中，优先避免溢出。
