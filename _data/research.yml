@@ -10,6 +10,7 @@
 
 - id: waveform-modeling
   paper_aliases:
+    - '统一AI波形'
     - '牛顿近似'
     - '不同阶PN模型'
     - '潮汐进动波形'
