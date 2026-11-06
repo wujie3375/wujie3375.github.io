@@ -66,12 +66,12 @@
   title: "Identifiability of $g$ mode resonances in eccentric binary neutron stars with multidetector observations"
   subtitle: false
   authors: "Mengfei Sun, Jie Wu, Qianning Hu, Jin Li*, Nan Yang, Xianghe Ma, Borui Wang, Minghui Zhang, Yuanhong Zhong*"
-  date: "Jun 10, 2026"
-  sortable_date: '2026-06-10'
+  date: "Nov 5, 2026"
+  sortable_date: '2026-11-05'
   journal: Phys. Rev. D
-  journal_link: false
-  volume: false
-  article_number: false
+  journal_link: "https://journals.aps.org/prd/abstract/10.1103/6hw2-v6fx"
+  volume: '114'
+  article_number: '103011'
   arxiv: "2606.11959"
   aliases: ["g模共振"]
   author_order: 2
