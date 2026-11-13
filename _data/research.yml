@@ -18,6 +18,7 @@
 
 - id: modified-gravity
   paper_aliases:
+    - 'Massive sGB波形'
     - 'ppE极化约束'
     - 'TDI极化'
     - '解析FIM计算'
