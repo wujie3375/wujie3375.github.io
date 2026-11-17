@@ -3,6 +3,21 @@
 # 研究页、发表页、统计图和筛选共用 _includes/paper_role.html；共一优先于排序 1，通讯身份可叠加。
 # aliases：沿用 Obsidian 的简称；研究分类通过这些简称关联论文。
 - year: 2026
+  title: "Repeated Gravitational-Wave Lensing from Binary Black Holes on Eccentric and Precessing Orbits around Spinning Supermassive Black Holes"
+  subtitle: false
+  authors: "Jie Wu, Mengfei Sun, Jin Li*, Zhoujian Cao*"
+  date: "Nov 16, 2026"
+  sortable_date: '2026-11-16'
+  journal: false
+  journal_link: false
+  volume: false
+  article_number: false
+  arxiv: "2611.20416"
+  aliases: ["层级三体透镜"]
+  author_order: 1
+  etal: 4
+
+- year: 2026
   title: "From Matched Black-Hole Scalar Charges to Gravitational-Wave Inspirals in a Massive Scalar–Gauss–Bonnet Effective Theory"
   subtitle: false
   authors: "Jie Wu, Mengfei Sun, Jin Li*"

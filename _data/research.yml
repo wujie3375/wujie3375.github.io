@@ -3,6 +3,7 @@
 # Bibliographic details remain in papers.yml; animation scripts belong in /js.
 - id: moving-sources
   paper_aliases:
+    - '层级三体透镜'
     - 'kick速度'
     - '球状星团'
     - '超大质量黑洞'

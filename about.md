@@ -76,15 +76,15 @@ If you’d like to talk about gravitational waves, physics, collaboration, or ju
 
 <!-- 静态 BBH 合并波形示意：前 64% 为加速旋近，合并处达到峰值，后段以阻尼振荡表示铃宕；不是数值相对论模板。 -->
 - {% include research_interest_icon.html name="modeling" %} **GW modeling**  
-  Waveform modeling, signal simulation, moving-source and environmental effects.
+  Post-Newtonian waveforms, moving-source effects, environmental interactions, gravitational lensing.
 - {% include research_interest_icon.html name="analysis" %} **Data analysis**  
-  Parameter estimation, Fisher-matrix analysis, signal processing.
+  Parameter estimation, analytical Fisher-matrix methods, signal processing, Galactic binary foreground subtraction.
 - {% include research_interest_icon.html name="detectors" %} **GW detectors**  
   Space- and ground-based detectors, detector response, time-delay interferometry, multiband observations.
 - {% include research_interest_icon.html name="binaries" %} **Compact-binary astrophysics**  
-  Binary black holes, hierarchical triples, AGN disks, globular clusters.
+  Binary black holes, hierarchical triples, supermassive black holes, AGN disks, globular clusters.
 - {% include research_interest_icon.html name="gravity" %} **Tests of gravity**  
-  GW polarizations, parametrized tests of GR, modified gravity.
+  Modified gravity, massive scalar fields, GW polarizations, parametrized tests of GR.
 
 </div>
 

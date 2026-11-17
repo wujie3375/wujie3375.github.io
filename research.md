@@ -15,7 +15,7 @@ description: Research on moving sources, waveform modeling, tests of gravity, an
 
 # Research
 
-Gravitational waves carry clues about compact binaries, their surroundings, and the nature of gravity. My research combines GW modeling and data analysis to explore the physics encoded in individual signals and stochastic backgrounds.
+Gravitational waves carry clues about compact binaries, their environments, and the nature of gravity. My research combines GW modeling and data analysis to connect physical models with observable signals, from individual binaries to stochastic backgrounds.
 
 Explore the themes below through short introductions, illustrative animations, and related papers. Full citations and author lists are available on the [Publications page]({{ '/publications' | relative_url }}).
 
@@ -28,52 +28,52 @@ Explore the themes below through short introductions, illustrative animations, a
 
 <!-- Moving sources -->
 {% capture moving_sources_description %}
-Gravitational waves can carry information not only about a binary, but also about how it moves through its surroundings. My research examines waveform changes caused by recoil, orbital motion, and gas-induced dynamical friction. These studies explore how such effects can reveal kick velocities, globular cluster properties, supermassive black hole masses and spins, and gas densities in active galactic nucleus disks.
+A binary’s gravitational-wave signal can reveal not only its internal dynamics, but also its motion and environment. My work studies recoil, orbital modulation, gas-induced dynamical friction, and repeated lensing in hierarchical systems. These studies explore how waveform changes can probe kick velocities, globular clusters, supermassive black holes, and AGN disks, including how eccentric and precessing outer orbits alter successive lensing events and the information they carry.
 {% endcapture %}
 
 {% include research_card.html
   id="moving-sources"
   title="Moving Sources"
-  question="How does a binary’s motion leave its imprint on gravitational waves?"
+  question="How do a binary’s motion and surroundings shape its gravitational-wave signal?"
   description=moving_sources_description
   animation="moving-sources"
 %}
 
 <!-- Waveform Modeling -->
 {% capture waveform_modeling_description %}
-Reliable gravitational-wave astronomy depends on waveform models that balance accuracy with computational cost. My work examines Newtonian and post-Newtonian approximations and explores fast generation of binary neutron star waveforms with tidal and precession effects. Related studies use deep learning to identify multiband signals lensed by dark matter halos, linking waveform modeling with signal recognition.
+Reliable gravitational-wave astronomy requires waveform models that are both accurate and practical to compute. My work examines Newtonian and post-Newtonian approximations and combines physical modeling with machine learning for rapid waveform generation. Recent collaborative work develops a unified framework for binary black holes, binary neutron stars, and neutron star–black hole binaries. Related studies investigate signal identification, including gravitational waves lensed by dark matter halos.
 {% endcapture %}
 
 {% include research_card.html
   id="waveform-modeling"
   title="Waveform Modeling"
-  question="How can we model and identify gravitational-wave signals accurately and efficiently?"
+  question="How can we generate and identify gravitational-wave signals accurately and efficiently?"
   description=waveform_modeling_description
   animation="waveform-modeling"
 %}
 
 <!-- Tests of Gravity -->
 {% capture modified_gravity_description %}
-General relativity predicts two tensor polarizations and specific gravitational-wave signatures of binary evolution. My research explores how additional polarizations and parametrized waveform deviations could be constrained by observations. These studies examine detector networks, multiband observations, and time-delay interferometry, while developing analytical waveform derivatives for efficient and stable Fisher-matrix forecasts.
+Testing gravity requires understanding both how alternative theories change gravitational-wave signals and how detectors can measure those changes. My work connects black-hole scalar charges with binary dynamics, inspiral waveforms, additional polarizations, and dispersive propagation in massive scalar–Gauss–Bonnet gravity. Complementary studies investigate parametrized deviations from general relativity, detector networks, and time-delay interferometry, and develop analytical waveform derivatives for efficient Fisher-matrix forecasts.
 {% endcapture %}
 
 {% include research_card.html
   id="modified-gravity"
   title="Tests of Gravity"
-  question="How can gravitational waves put general relativity to the test?"
+  question="How can gravitational waves reveal physics beyond general relativity?"
   description=modified_gravity_description
   animation="modified-gravity"
 %}
 
 <!-- Gravitational-Wave Backgrounds -->
 {% capture backgrounds_description %}
-Many weak sources overlap in gravitational-wave data, while correlated detector noise can complicate the search for a cosmic background. My work studies Galactic binary foreground subtraction, parameter estimation for resolvable binaries, and machine-learning identification of cosmic-string backgrounds. It also examines how correlated solar-wind plasma noise can bias network measurements, helping assess the reliability of future space-based background searches.
+Many weak sources overlap in gravitational-wave data, while correlated detector noise can complicate searches for a cosmic background. My work studies Galactic binary foreground subtraction, parameter estimation for resolvable binaries, and machine-learning identification of cosmic-string backgrounds. It also examines how correlated solar-wind plasma noise affects background recovery and parameter inference with space-based detector networks.
 {% endcapture %}
 
 {% include research_card.html
   id="gw-backgrounds"
   title="GW Backgrounds"
-  question="How can we recover gravitational-wave backgrounds amid foregrounds and correlated noise?"
+  question="How can we distinguish gravitational-wave backgrounds from foregrounds and correlated noise?"
   description=backgrounds_description
   animation="gw-backgrounds"
 %}
