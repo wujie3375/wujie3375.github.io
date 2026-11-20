@@ -6,7 +6,7 @@ title: About
 
 <!-- # <span style="color:red">The website is not completed.</span> -->
 
-<link rel="stylesheet" href="{{ '/assets/css/about.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/about.css' | relative_url }}?v=harmonic-series">
 
 <div class="about-page" markdown="1">
 
@@ -93,7 +93,10 @@ If you’d like to talk about gravitational waves, physics, collaboration, or ju
 
 ## Education
 
+<ol class="experience-timeline" aria-label="Education" role="list" markdown="0">
+<li class="experience-timeline__item experience-timeline__item--current">
 {% include experience_card.html 
+  timeline=true
   title="Chongqing University" 
   date="Sep 2022 - Jun 2028 (expected)" 
   degree="PhD in Physics" 
@@ -102,9 +105,11 @@ If you’d like to talk about gravitational waves, physics, collaboration, or ju
   fields="
     Advisor: inspirehep.net/authors/1456898|Prof. Jin Li (李瑾)"
 %}
+</li>
 
-
+<li class="experience-timeline__item">
 {% include experience_card.html 
+  timeline=true
   title="China West Normal University" 
   date="Sep 2018 - Jun 2022" 
   degree="B.S. in Physics" 
@@ -114,22 +119,30 @@ If you’d like to talk about gravitational waves, physics, collaboration, or ju
     Advisors: inspirehep.net/authors/1647692|Assoc. Prof. Di Wu (吴迪),
     inspirehep.net/authors/1275221|Assoc. Prof. Guo-Ping Li (李国平)"
 %}
+</li>
+</ol>
 
 ---
 
-## Research Experience
+## Experience
 
+<ol class="experience-timeline" aria-label="Experience" role="list" markdown="0">
+<li class="experience-timeline__item">
 {% include experience_card.html 
+  timeline=true
   title="Beijing Normal University" 
   date="Feb 2024 - Apr 2024" 
-  degree="Visitor" 
+  degree="Visiting Student" 
   logo="/images/logo2/bnu.png" 
   logo_margin="0"
   fields="
     Advisor: inspirehep.net/authors/1060083|Prof. Zhoujian Cao (曹周键)"
 %}
+</li>
 
+<li class="experience-timeline__item">
 {% include experience_card.html 
+  timeline=true
   title="University of Chinese Academy of Sciences" 
   date="Sep 2020 - Sep 2021" 
   degree="Undergraduate Researcher" 
@@ -139,6 +152,8 @@ If you’d like to talk about gravitational waves, physics, collaboration, or ju
     Advisor: inspirehep.net/authors/1040919|Assoc. Prof. Yong Tang (汤勇);
     Program: astro.ucas.ac.cn/index.php/cn/home/2016-03-17-03-00-27/314-2020-3|College Student Innovation and Practice Program"
 %}
+</li>
+</ol>
 
 ---
 
@@ -162,9 +177,10 @@ If you’d like to talk about gravitational waves, physics, collaboration, or ju
 ---
 
 
-<div class="about-easter-egg">
-  <img src="{{ '/images/eq.png' | relative_url }}" alt="Try to be greater than average">
-  <p>(be greater than average)</p>
+<div class="about-easter-egg" id="physics-formulas" markdown="0">
+  \[\sum_{n=1}^{\infty}\frac{1}{n}=\infty\]
+  <p>Smaller terms. Bigger sums.</p>
 </div>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 </div>

@@ -1,3 +1,12 @@
+{% if include.timeline %}
+  {% assign timeline_date = include.date | split: ' (' %}
+  {% assign timeline_range = timeline_date.first | split: ' - ' %}
+  <div class="experience-timeline__date">
+    <span>{{ timeline_range.first | escape }}</span>
+    {% if timeline_range.size > 1 %}<span class="experience-timeline__date-divider" aria-hidden="true">|</span>{% endif %}
+    <span class="experience-timeline__date-end">{% if timeline_range.size > 1 %}{{ timeline_range.last | escape }}{% endif %}{% if timeline_date.size > 1 %} <small>({{ timeline_date.last | escape }}</small>{% endif %}</span>
+  </div>
+{% endif %}
 <div class="experience-card">
     <!-- 学校的 logo -->
     <img class="experience-card__logo" src="{{ include.logo | relative_url }}" alt="{{ include.title }} logo">
@@ -9,8 +18,7 @@
           <span class="experience-card__title">
             {{ include.title }}
           </span>
-        <!-- 小屏幕时日期放在标题下方。 -->
-        <span class="experience-card__date">{{ include.date }}</span>
+        {% unless include.timeline %}<span class="experience-card__date">{{ include.date }}</span>{% endunless %}
       </div>
       
       <!-- Degree -->
